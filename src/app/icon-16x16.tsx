@@ -1,0 +1,43 @@
+import { ImageResponse } from 'next/og'
+ 
+export const runtime = 'edge'
+ 
+export const alt = 'STANS ABOGADOS'
+export const contentType = 'image/png'
+export const size = {
+  width: 16,
+  height: 16,
+}
+ 
+export default async function Icon16x16() {
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          background: '#191919',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderRadius: '2px',
+        }}
+      >
+        <div
+          style={{
+            fontSize: '10px',
+            fontWeight: 'bold',
+            color: '#A56B37',
+            textAlign: 'center',
+            lineHeight: '1',
+          }}
+        >
+          SA
+        </div>
+      </div>
+    ),
+    {
+      ...size,
+    }
+  )
+}
