@@ -27,14 +27,16 @@ export default function Navigation() {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <Image
-              src="/images/logos/logo-horizontal.png"
-              alt="STANS ABOGADOS"
-              width={180}
-              height={40}
-              className="h-10 w-auto brightness-0 invert"
-              priority
-            />
+            <a href="#inicio" className="block hover:opacity-80 transition-opacity duration-200">
+              <Image
+                src="/images/logos/logo-horizontal.png"
+                alt="STANS ABOGADOS"
+                width={400}
+                height={100}
+                className="h-16 w-auto brightness-0 invert object-contain"
+                priority
+              />
+            </a>
           </motion.div>
 
           {/* Desktop Menu */}

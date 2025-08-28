@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import { Shield, Clock, Languages, Users, Award, Phone, Mail, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import LeadForm from './LeadForm';
+import AnimatedText from './AnimatedText';
+import HoverGlowText from './HoverGlowText';
+import LogoWithHover from './LogoWithHover';
 
 type Props = {
   whatsapp?: string; // ej: "34XXXXXXXXX"
@@ -17,7 +20,7 @@ export default function Hero({ whatsapp = '34611687226', idioma = 'es' }: Props)
       : encodeURIComponent('Hola, necesito ayuda penal urgente.');
 
   return (
-    <section id="inicio" className="relative bg-black text-white pt-16">
+    <section id="inicio" className="relative bg-black text-white pt-20">
       {/* Video de fondo simple */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -56,45 +59,46 @@ export default function Hero({ whatsapp = '34611687226', idioma = 'es' }: Props)
                 {idioma === 'ar' ? 'متخصصون في القانون الجنائي' : 'Especialistas en Defensa Penal'}
               </motion.div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-4xl md:text-5xl font-semibold text-white"
-              >
-                {idioma === 'ar' ? 'دفاع جنائي 24/7 — مدريد وإسبانيا' : 'Defensa Penal 24/7 — Madrid y España'}
-              </motion.h1>
+                             <motion.h1
+                 initial={{ opacity: 0, y: 20 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.8, ease: "easeOut" }}
+                 className="text-4xl md:text-5xl font-semibold text-white"
+               >
+                 <HoverGlowText
+                   text={idioma === 'ar' ? 'دفاع جنائي 24/7\nمدريد وإسبانيا' : 'Defensa Penal 24/7\nMadrid y España'}
+                   delay={0.1}
+                 />
+               </motion.h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              <AnimatedText
+                text={
+                  idioma === 'ar'
+                    ? 'متخصصون في القانون الجنائي. إسباني–عربي. نرد خلال 15 دقيقة.'
+                    : 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.'
+                }
                 className="mt-4 text-white text-lg"
-              >
-                {idioma === 'ar'
-                  ? 'متخصصون في القانون الجنائي. إسباني–عربي. نرد خلال 15 دقيقة.'
-                  : 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.'}
-              </motion.p>
+                delay={0.2}
+              />
             </motion.div>
 
-            {/* Logo oficial STANS ABOGADOS */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-              className="flex-1 flex justify-center lg:justify-end"
-            >
-              <div className="relative w-full max-w-md">
-                <Image
-                  src="/images/logos/logo-horizontal.png"
-                  alt="STANS ABOGADOS - Defensa Penal"
-                  width={400}
-                  height={120}
-                  className="w-full h-auto object-contain drop-shadow-xl brightness-0 invert"
-                  priority
-                />
-              </div>
-            </motion.div>
+                         {/* Logo oficial STANS ABOGADOS */}
+             <motion.div
+               initial={{ opacity: 0, x: 20 }}
+               animate={{ opacity: 1, x: 0 }}
+               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+               className="flex-1 flex justify-center lg:justify-end"
+             >
+               <LogoWithHover
+                 src="/images/logos/logo-horizontal.png"
+                 hoverSrc="/images/logos/STANS HORIZONTALgold.png"
+                 alt="STANS ABOGADOS - Defensa Penal"
+                 width={400}
+                 height={120}
+                 className="w-full max-w-md"
+                 priority
+               />
+             </motion.div>
           </div>
         </div>
 

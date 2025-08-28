@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, Award, Languages, Shield, ArrowRight } from 'lucide-react';
+import { Phone, Award, Languages, Shield, ArrowRight, Clock } from 'lucide-react';
 
 type Props = {
   name: string;
@@ -9,11 +9,12 @@ type Props = {
   summary: string;
   tags?: string[];
   languages?: string[];
+  experience?: string;
   whatsapp?: string;
 };
 
 export default function LawyerCard({
-  name, role = 'Abogado Penalista', summary, tags = [], languages = [], whatsapp
+  name, role = 'Abogado Penalista', summary, tags = [], languages = [], experience, whatsapp
 }: Props) {
   const text = encodeURIComponent(`Hola, quisiera consultar con ${name}.`);
   return (
@@ -23,7 +24,7 @@ export default function LawyerCard({
       whileHover={{ y: -4, scale: 1.02 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="group rounded-2xl border border-apricot/20 bg-charleston p-6 text-offwhite shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-gold/10"
+      className="group rounded-2xl border border-apricot/20 bg-charleston p-6 text-offwhite shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-gold/10 hover:border-gold/30"
     >
       <div className="flex items-center justify-between mb-4">
         <div className="text-gold group-hover:text-apricot transition-colors">
@@ -35,8 +36,16 @@ export default function LawyerCard({
       </div>
 
       <h3 className="text-xl font-semibold group-hover:text-gold transition-colors">{name}</h3>
-      <p className="text-white/70 text-sm mt-1">{role}</p>
-      <p className="mt-3 text-white/80">{summary}</p>
+      <p className="text-white/70 text-sm mt-1 mb-2">{role}</p>
+      
+      {experience && (
+        <div className="flex items-center gap-2 mb-3">
+          <Clock className="h-4 w-4 text-gold" />
+          <span className="text-xs text-gold font-medium">{experience} de experiencia</span>
+        </div>
+      )}
+      
+      <p className="mt-3 text-white/80 text-sm leading-relaxed">{summary}</p>
 
       {!!tags.length && (
         <div className="mt-4">
@@ -74,6 +83,7 @@ export default function LawyerCard({
             className="inline-flex items-center text-sm bg-gold text-black px-3 py-2 rounded-lg hover:opacity-90 transition group"
             href={`https://wa.me/${whatsapp}?text=${text}`}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Phone className="h-4 w-4 mr-2" />
             WhatsApp

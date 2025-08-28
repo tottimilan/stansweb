@@ -15,18 +15,18 @@ export default function Footer() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-1"
+            className="lg:col-span-1 flex flex-col items-center text-center"
           >
             <Image
-              src="/images/logo-vertical.png"
+              src="/images/logos/logo-vertical.png"
               alt="STANS ABOGADOS"
               width={120}
               height={200}
-              className="h-32 w-auto mb-4"
+              className="h-40 w-auto mb-4 brightness-0 invert"
             />
-            <p className="text-offwhite/80 text-sm leading-relaxed">
+            <p className="text-offwhite/80 text-sm leading-relaxed max-w-xs">
               Especialistas en defensa penal con más de 15 años de experiencia. 
-              Atención 24/7 en español y árabe para la comunidad marroquí en España.
+              Atención 24/7 en español y árabe.
             </p>
           </motion.div>
 
@@ -40,19 +40,19 @@ export default function Footer() {
             <h3 className="text-gold font-semibold text-lg mb-4">Contacto</h3>
             <div className="space-y-3">
               <div className="flex items-center text-offwhite/80 text-sm">
-                <Phone className="h-4 w-4 mr-3 text-gold" />
+                <Phone className="h-4 w-4 mr-3 text-gold flex-shrink-0" />
                 <span>+34 611 68 72 26</span>
               </div>
               <div className="flex items-center text-offwhite/80 text-sm">
-                <Mail className="h-4 w-4 mr-3 text-gold" />
+                <Mail className="h-4 w-4 mr-3 text-gold flex-shrink-0" />
                 <span>info@stansabogados.com</span>
               </div>
               <div className="flex items-center text-offwhite/80 text-sm">
-                <MapPin className="h-4 w-4 mr-3 text-gold" />
+                <MapPin className="h-4 w-4 mr-3 text-gold flex-shrink-0" />
                 <span>Madrid, España</span>
               </div>
               <div className="flex items-center text-offwhite/80 text-sm">
-                <Clock className="h-4 w-4 mr-3 text-gold" />
+                <Clock className="h-4 w-4 mr-3 text-gold flex-shrink-0" />
                 <span>Atención 24/7</span>
               </div>
             </div>

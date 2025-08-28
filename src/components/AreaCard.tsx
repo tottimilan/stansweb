@@ -2,12 +2,13 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, Shield, Clock, Users, Award, FileText, Globe } from 'lucide-react';
+import { ArrowRight, Shield, Clock, Users, Award, FileText, Globe, Check } from 'lucide-react';
 
 type Props = {
   title: string;
   excerpt: string;
   href?: string;
+  features?: string[];
 };
 
 const getIcon = (title: string) => {
@@ -20,7 +21,7 @@ const getIcon = (title: string) => {
   return <Shield className="h-6 w-6" />;
 };
 
-export default function AreaCard({ title, excerpt, href = '#' }: Props) {
+export default function AreaCard({ title, excerpt, href = '#', features = [] }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -28,7 +29,7 @@ export default function AreaCard({ title, excerpt, href = '#' }: Props) {
       whileHover={{ y: -4, scale: 1.02 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="group rounded-2xl border border-apricot/20 bg-charleston p-6 text-offwhite shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-gold/10"
+      className="group rounded-2xl border border-apricot/20 bg-charleston p-6 text-offwhite shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-gold/10 hover:border-gold/30"
     >
       <div className="flex items-center justify-between mb-4">
         <div className="text-gold group-hover:text-apricot transition-colors">
@@ -39,8 +40,22 @@ export default function AreaCard({ title, excerpt, href = '#' }: Props) {
         </div>
       </div>
       
-      <h3 className="text-lg font-semibold group-hover:text-gold transition-colors">{title}</h3>
-      <p className="text-white/80 mt-2">{excerpt}</p>
+      <h3 className="text-lg font-semibold group-hover:text-gold transition-colors mb-3">{title}</h3>
+      <p className="text-white/80 text-sm leading-relaxed mb-4">{excerpt}</p>
+      
+      {features.length > 0 && (
+        <div className="mb-4">
+          <div className="space-y-2">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <Check className="h-3 w-3 text-gold flex-shrink-0" />
+                <span className="text-xs text-white/70">{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      
       <Link
         href={href}
         className="inline-flex items-center mt-4 text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
