@@ -28,11 +28,12 @@ export default function Navigation() {
             className="flex-shrink-0"
           >
             <Image
-              src="/images/logo-horizontal.png"
+              src="/images/logos/logo-horizontal.png"
               alt="STANS ABOGADOS"
               width={180}
               height={40}
-              className="h-10 w-auto"
+              className="h-10 w-auto brightness-0 invert"
+              priority
             />
           </motion.div>
 
