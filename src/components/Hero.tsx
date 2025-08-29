@@ -18,11 +18,7 @@ type Props = {
 export default function Hero({ whatsapp = '34611687226' }: Props) {
   const { language } = useLanguage();
   const t = translations[language];
-  const text = encodeURIComponent(
-    language === 'ar' 
-      ? 'مرحباً، أحتاج مساعدة جنائية عاجلة.'
-      : 'Hola, necesito ayuda penal urgente.'
-  );
+  const text = encodeURIComponent(t.hero.holaAyuda);
 
   return (
     <section 
@@ -71,7 +67,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                 aria-label="Especialización en defensa penal"
               >
                 <Shield className="h-4 w-4 mr-2" aria-hidden="true" />
-                {language === 'ar' ? 'متخصصون في القانون الجنائي' : 'Especialistas en Defensa Penal'}
+                {t.hero.especialistas}
               </motion.div>
 
               <motion.h1
@@ -82,17 +78,13 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                 className="text-4xl md:text-5xl font-semibold text-white"
               >
                 <HoverGlowText
-                  text={language === 'ar' ? 'دفاع جنائي 24/7\nمدريد وإسبانيا' : 'Defensa Penal 24/7\nMadrid y España'}
+                  text={t.hero.defensa24h}
                   delay={0.1}
                 />
               </motion.h1>
 
               <AnimatedText
-                text={
-                  language === 'ar'
-                    ? 'متخصصون في القانون الجنائي. إسباني–عربي. نرد خلال 15 دقيقة.'
-                    : 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.'
-                }
+                text={t.hero.descripcionCompleta}
                 className="mt-4 text-white text-lg"
                 delay={0.2}
               />
@@ -139,28 +131,28 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                   role="listitem"
                 >
                   <Clock className="h-4 w-4 mr-3 text-gold" aria-hidden="true" />
-                  <span className="text-sm">Respuesta &lt; 15 min</span>
+                  <span className="text-sm">{t.hero.respuesta15min}</span>
                 </div>
                 <div 
                   className="flex items-center text-white p-3 bg-charleston/50 rounded-lg border border-gold/10"
                   role="listitem"
                 >
                   <Languages className="h-4 w-4 mr-3 text-gold" aria-hidden="true" />
-                  <span className="text-sm">Español–Árabe</span>
+                  <span className="text-sm">{t.hero.espanolArabe}</span>
                 </div>
                 <div 
                   className="flex items-center text-white p-3 bg-charleston/50 rounded-lg border border-gold/10"
                   role="listitem"
                 >
                   <Users className="h-4 w-4 mr-3 text-gold" aria-hidden="true" />
-                  <span className="text-sm">Extradición España–Marruecos</span>
+                  <span className="text-sm">{t.hero.extradicion}</span>
                 </div>
                 <div 
                   className="flex items-center text-white p-3 bg-charleston/50 rounded-lg border border-gold/10"
                   role="listitem"
                 >
                   <Award className="h-4 w-4 mr-3 text-gold" aria-hidden="true" />
-                  <span className="text-sm">Penal Puro</span>
+                  <span className="text-sm">{t.hero.penalPuro}</span>
                 </div>
               </div>
 
@@ -174,7 +166,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                   <a 
                     href="tel:+34611687226"
                     className="hover:text-gold transition-colors"
-                    aria-label="Llamar al +34 611 68 72 26"
+                    aria-label={`${t.common.llamar} +34 611 68 72 26`}
                   >
                     +34 611 68 72 26
                   </a>
@@ -184,7 +176,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                   <a 
                     href="mailto:info@stansabogados.com"
                     className="hover:text-gold transition-colors"
-                    aria-label="Enviar email a info@stansabogados.com"
+                    aria-label={`${t.common.enviarEmail} info@stansabogados.com`}
                   >
                     info@stansabogados.com
                   </a>
@@ -196,7 +188,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-gold transition-colors"
-                    aria-label="Ver ubicación en Google Maps"
+                    aria-label={t.common.verUbicacion}
                   >
                     Madrid, España
                   </a>
@@ -204,9 +196,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
               </address>
 
               <p className="text-xs text-white/70 mb-6">
-                {language === 'ar'
-                  ? 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM'
-                  : 'Abogados penalistas | Idiomas: Español/Árabe | Colegiados ICAM'}
+                {t.hero.abogadosPenalistas}
               </p>
             </motion.div>
 

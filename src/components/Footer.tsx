@@ -30,8 +30,7 @@ export default function Footer() {
               className="h-40 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-offwhite/80 text-sm leading-relaxed max-w-xs">
-              Especialistas en defensa penal con más de 15 años de experiencia. 
-              Atención 24/7 en español y árabe.
+              {t.footer.descripcion}
             </p>
           </motion.div>
 
@@ -42,7 +41,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-1"
           >
-            <h3 className="text-gold font-semibold text-lg mb-4">Contacto</h3>
+            <h3 className="text-gold font-semibold text-lg mb-4">{t.footer.contacto}</h3>
             <div className="space-y-3">
               <div className="flex items-center text-offwhite/80 text-sm">
                 <Phone className="h-4 w-4 mr-3 text-gold flex-shrink-0" />
@@ -58,7 +57,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center text-offwhite/80 text-sm">
                 <Clock className="h-4 w-4 mr-3 text-gold flex-shrink-0" />
-                <span>Atención 24/7</span>
+                <span>{t.footer.atencion24h}</span>
               </div>
             </div>
           </motion.div>
@@ -70,23 +69,23 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-1"
           >
-            <h3 className="text-gold font-semibold text-lg mb-4">Servicios</h3>
+            <h3 className="text-gold font-semibold text-lg mb-4">{t.footer.servicios}</h3>
             <div className="space-y-3">
               <div className="flex items-center text-offwhite/80 text-sm">
                 <Shield className="h-4 w-4 mr-3 text-gold" />
-                <span>Defensa Penal</span>
+                <span>{t.footer.defensaPenal}</span>
               </div>
               <div className="flex items-center text-offwhite/80 text-sm">
                 <Users className="h-4 w-4 mr-3 text-gold" />
-                <span>Extradición España-Marruecos</span>
+                <span>{t.footer.extradicion}</span>
               </div>
               <div className="flex items-center text-offwhite/80 text-sm">
                 <Award className="h-4 w-4 mr-3 text-gold" />
-                <span>Asesoría Legal</span>
+                <span>{t.footer.asesoriaLegal}</span>
               </div>
                              <div className="flex items-center text-offwhite/80 text-sm">
                  <Clock className="h-4 w-4 mr-3 text-gold" />
-                 <span>Respuesta &lt; 15 min</span>
+                 <span>{t.footer.respuesta}</span>
                </div>
             </div>
           </motion.div>
@@ -98,19 +97,19 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:col-span-1"
           >
-            <h3 className="text-gold font-semibold text-lg mb-4">Atención</h3>
+            <h3 className="text-gold font-semibold text-lg mb-4">{t.footer.atencion}</h3>
             <div className="space-y-3">
               <div className="text-offwhite/80 text-sm">
-                <p className="font-medium text-gold">24/7 Disponible</p>
-                <p>Emergencias penales</p>
+                <p className="font-medium text-gold">{t.footer.disponible24h}</p>
+                <p>{t.footer.emergencias}</p>
               </div>
               <div className="text-offwhite/80 text-sm">
-                <p className="font-medium text-gold">Idiomas</p>
-                <p>Español • Árabe</p>
+                <p className="font-medium text-gold">{t.footer.idiomas}</p>
+                <p>{t.footer.espanolArabe}</p>
               </div>
               <div className="text-offwhite/80 text-sm">
-                <p className="font-medium text-gold">Respuesta</p>
-                <p>Menos de 15 minutos</p>
+                <p className="font-medium text-gold">{t.footer.idiomas}</p>
+                <p>{t.footer.respuestaTiempo}</p>
               </div>
             </div>
           </motion.div>
@@ -135,7 +134,7 @@ export default function Footer() {
              <p>{t.footer.derechos}</p>
            </div>
            <div className="flex items-center space-x-4 mt-4 md:mt-0">
-             <a href="/legal" className="hover:text-gold transition-colors">Aviso Legal</a>
+             <a href="/legal" className="hover:text-gold transition-colors">{t.footer.avisoLegal}</a>
              <a href="/privacidad" className="hover:text-gold transition-colors">{t.footer.privacidad}</a>
              <a href="/cookies" className="hover:text-gold transition-colors">{t.footer.cookies}</a>
              <LanguageSelector />

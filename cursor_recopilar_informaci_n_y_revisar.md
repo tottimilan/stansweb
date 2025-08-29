@@ -7242,7 +7242,7 @@ import { Users, Award, Clock, Shield } from 'lucide-react';
 const stats = [
   {
     icon: <Users className="h-8 w-8" />,
-    number: '1000+',
+    number: '200+',
     label: 'Casos Exitosos',
     description: 'Defensas ganadas en tribunales'
   },
@@ -7677,7 +7677,7 @@ Ahora voy a agregar la sección de estadísticas y mejorar las secciones:
 - **Sección de consulta:** CTA específico para consultas especializadas
 
 ### **📊 Nueva Sección de Estadísticas:**
-- **Números impactantes:** 1000+ casos exitosos, 15+ años, etc.
+- **Números impactantes:** 200+ casos exitosos, 15+ años, etc.
 - **Iconos visuales:** Cada estadística con icono representativo
 - **Animaciones suaves:** Efectos de entrada escalonados
 - **Diseño consistente:** Mantiene la identidad visual

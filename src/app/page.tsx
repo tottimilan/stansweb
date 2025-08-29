@@ -12,6 +12,8 @@ import StatsSection from '@/components/StatsSection';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useScrollHighlight } from '@/hooks/useScrollHighlight';
 import ContactSection from '@/components/ContactSection';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/translations';
 
 const WHATSAPP = '34611687226'; // Número real de STANS ABOGADOS
 
@@ -94,6 +96,8 @@ const areas = [
 ];
 
 export default function Page() {
+  const { language } = useLanguage();
+  const t = translations[language];
   const isTeamHighlighted = useScrollHighlight('equipo');
   const isAreasHighlighted = useScrollHighlight('areas');
   const isContactHighlighted = useScrollHighlight('contacto');
@@ -149,11 +153,10 @@ export default function Page() {
               id="team-title" 
               className="text-3xl font-bold text-gold mb-4"
             >
-              Nuestro Equipo de Abogados Penalistas
+              {t.team.nuestroEquipo}
             </h2>
             <p className="text-white/80 text-lg max-w-2xl mx-auto">
-              Abogados penalistas especializados con amplia experiencia en casos complejos. 
-              Defensa integral en español, inglés y árabe.
+              {t.team.descripcionCompleta}
             </p>
           </motion.div>
           
@@ -186,20 +189,19 @@ export default function Page() {
           >
             <article className="bg-charleston border border-apricot/20 rounded-2xl p-8 max-w-2xl mx-auto">
               <h3 className="text-xl font-semibold text-gold mb-4">
-                ¿Necesitas consultar con un abogado específico?
+                {t.team.consultaEspecifica}
               </h3>
               <p className="text-white/80 mb-6">
-                Cada miembro de nuestro equipo tiene especializaciones únicas. 
-                Te conectamos con el abogado más adecuado para tu caso.
+                {t.team.consultaDescripcion}
               </p>
               <a 
-                href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hola, necesito consultar con un abogado especializado. ¿Pueden ayudarme?')}`}
+                href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t.team.consultaWhatsapp)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
-                aria-label="Contactar por WhatsApp para consulta gratuita"
+                aria-label={t.common.contactarWhatsapp}
               >
-                Consulta Gratuita
+                {t.team.consultaGratuita}
               </a>
             </article>
           </motion.div>
@@ -232,18 +234,17 @@ export default function Page() {
               id="areas-title" 
               className="text-3xl font-bold text-gold mb-4"
             >
-              Áreas de Defensa Penal
+              {t.areas.areasDefensa}
             </h2>
             <p className="text-black/70 text-lg max-w-2xl mx-auto">
-              Especialistas en todas las ramas del derecho penal. 
-              Defensa integral desde el primer momento hasta el final del proceso.
+              {t.areas.descripcionCompleta}
             </p>
           </motion.div>
           
           <div 
             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
             role="list"
-            aria-label="Lista de áreas de práctica penal"
+            aria-label={t.common.listaAreas}
           >
             {areas.map((area, index) => (
               <motion.div
@@ -267,15 +268,15 @@ export default function Page() {
             className="text-center mt-12"
           >
             <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-6 py-3 text-gold">
-              <span className="text-sm font-medium">¿No encuentras tu caso?</span>
+              <span className="text-sm font-medium">{t.areas.noEncuentras}</span>
               <a 
-                href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Hola, tengo un caso penal diferente. ¿Pueden ayudarme?')}`}
+                href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t.areas.casoDiferente)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm underline hover:no-underline"
-                aria-label="Consultar caso penal específico por WhatsApp"
+                aria-label={t.common.consultarCaso}
               >
-                Consúltanos
+                {t.areas.consultanos}
               </a>
             </div>
           </motion.div>

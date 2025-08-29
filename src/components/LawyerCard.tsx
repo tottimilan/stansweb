@@ -3,6 +3,7 @@
 import { motion, useMotionValue, useTransform, PanInfo } from 'framer-motion';
 import { Award, Languages, Shield, ArrowRight, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import Image from 'next/image';
 
 type Props = {
@@ -20,6 +21,7 @@ type Props = {
 export default function LawyerCard({
   name, role = 'Abogado Penalista', summary, tags = [], languages = [], experience, image, hoverImage, backgroundImage
 }: Props) {
+  const { language } = useLanguage();
   const [isFlipped, setIsFlipped] = useState(false);
   const [autoFlipTimer, setAutoFlipTimer] = useState<NodeJS.Timeout | null>(null);
   
@@ -249,7 +251,9 @@ export default function LawyerCard({
           <div className="mt-4 transition-all duration-1000 group-hover:translate-x-2">
             <div className="flex items-center mb-2">
               <Languages className="h-4 w-4 mr-2 text-gold transition-all duration-1000 group-hover:scale-110" />
-              <span className="text-xs text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">Idiomas</span>
+                              <span className="text-xs text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">
+                  {language === 'ar' ? 'اللغات' : 'Idiomas'}
+                </span>
             </div>
             <div className="flex gap-2">
               {languages.map(lang => (
