@@ -177,7 +177,7 @@ export default function LawyerCard({
                   <h3 className="text-xl font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
                   <p className="text-white/80 text-sm mt-1 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
                   <div className="mt-2 text-xs text-white/60 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span>← Arrastra para voltear →</span>
+                    <span>Arrastra para voltear →</span>
                   </div>
                 </div>
               </div>
@@ -208,7 +208,7 @@ export default function LawyerCard({
                 src={backgroundImage}
                 alt={`${name} background`}
                 fill
-                className="object-cover blur-[0.5px] opacity-40"
+                className="object-cover md:blur-[0.5px] opacity-40"
                 {...imageProps}
               />
               <div className="absolute inset-0 bg-gradient-to-br from-charleston/60 to-black/50" />

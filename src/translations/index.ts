@@ -18,9 +18,9 @@ export const translations = {
       especialistas: 'Especialistas en Defensa Penal',
       defensa24h: 'Defensa Penal 24/7\nMadrid y España',
       descripcionCompleta: 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.',
-             respuesta15min: 'Respuesta < 15 min urgencias',
+             respuesta15min: 'Respuesta < 1 hr urgencias',
       espanolArabe: 'Español–Árabe',
-      extradicion: 'Extradición España–Marruecos',
+                  extradicion: 'Extradiciones',
       penalPuro: 'Penal Puro',
       abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Árabe | Colegiados ICAM',
       holaAyuda: 'Hola, necesito ayuda penal urgente.'
@@ -35,7 +35,7 @@ export const translations = {
       descripcionCompleta: 'Abogados penalistas especializados con amplia experiencia en casos complejos. Defensa integral en español, inglés y árabe.',
       consultaEspecifica: '¿Necesitas consultar con un abogado específico?',
       consultaDescripcion: 'Cada miembro de nuestro equipo tiene especializaciones únicas. Te conectamos con el abogado más adecuado para tu caso.',
-      consultaGratuita: 'Consulta Gratuita',
+                  consultaGratuita: 'Enviar Consulta',
       consultaWhatsapp: 'Hola, necesito consultar con un abogado especializado. ¿Pueden ayudarme?',
       // Datos de los abogados
       ruben: {
@@ -48,7 +48,7 @@ export const translations = {
       mounir: {
         name: 'Mounir Elyemlahy Chouati',
         role: 'Abogado Penalista',
-        summary: 'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones España-Marruecos.',
+                 summary: 'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones en general.',
         tags: ['Penal', 'Derecho Marroquí', 'Administrativo', 'Extradiciones'],
         experience: '12+ años'
       },
@@ -118,11 +118,11 @@ export const translations = {
         label: 'Años de Experiencia',
         description: 'Especialización en derecho penal'
       },
-      respuesta: {
-        number: '<15',
-        label: 'Minutos de Respuesta',
-        description: 'Asistencia inmediata 24/7'
-      },
+             respuesta: {
+         number: '<1',
+         label: 'Hora de Respuesta',
+         description: 'Asistencia inmediata 24/7'
+       },
       idiomas: {
         number: '3',
         label: 'Idiomas',
@@ -171,19 +171,20 @@ export const translations = {
       privacidad: 'Política de Privacidad',
       cookies: 'Política de Cookies',
       avisoLegal: 'Aviso Legal',
+      terminos: 'Términos de Uso',
       descripcion: 'Especialistas en defensa penal con más de 15 años de experiencia. Atención 24/7 en español y árabe.',
       contacto: 'Contacto',
       servicios: 'Servicios',
       atencion: 'Atención',
       defensaPenal: 'Defensa Penal',
-      extradicion: 'Extradición España-Marruecos',
+             extradicion: 'Extradiciones en general',
       asesoriaLegal: 'Asesoría Legal',
-      respuesta: 'Respuesta < 15 min',
+             respuesta: 'Respuesta < 1 hr',
       disponible24h: '24/7 Disponible',
       emergencias: 'Emergencias penales',
       idiomas: 'Idiomas',
       espanolArabe: 'Español • Árabe',
-      respuestaTiempo: 'Menos de 15 minutos',
+             respuestaTiempo: 'Menos de 1 hora',
       atencion24h: 'Atención 24/7'
     },
     
@@ -228,9 +229,9 @@ export const translations = {
       especialistas: 'متخصصون في الدفاع الجنائي',
       defensa24h: 'الدفاع الجنائي 24/7\nمدريد وإسبانيا',
       descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد في أقل من 15 دقيقة.',
-             respuesta15min: 'الرد < 15 دقيقة طوارئ',
+             respuesta15min: 'الرد < 1 ساعة طوارئ',
       espanolArabe: 'الإسبانية–العربية',
-      extradicion: 'تسليم المجرمين إسبانيا–المغرب',
+                  extradicion: 'تسليم المجرمين بشكل عام',
       penalPuro: 'جنائي خالص',
       abogadosPenalistas: 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM',
       holaAyuda: 'مرحباً، أحتاج مساعدة جنائية عاجلة.'
@@ -245,7 +246,7 @@ export const translations = {
       descripcionCompleta: 'محامون جنائيون متخصصون مع خبرة واسعة في القضايا المعقدة. دفاع شامل باللغات الإسبانية والإنجليزية والعربية.',
       consultaEspecifica: 'هل تحتاج للاستشارة مع محامي متخصص؟',
       consultaDescripcion: 'كل عضو في فريقنا لديه تخصصات فريدة. نربطك بالمحامي الأنسب لقضيتك.',
-      consultaGratuita: 'استشارة مجانية',
+                  consultaGratuita: 'إرسال استشارة',
       consultaWhatsapp: 'مرحباً، أحتاج للاستشارة مع محامي متخصص. هل يمكنكم مساعدتي؟',
       // Datos de los abogados
       ruben: {
@@ -258,7 +259,7 @@ export const translations = {
       mounir: {
         name: 'منير إليملاهي شواتي',
         role: 'محامي جنائي',
-        summary: 'جنائي وإداري. استشارة في القانون المغربي للشركات والأفراد. متخصص في تسليم المجرمين إسبانيا-المغرب.',
+                 summary: 'جنائي وإداري. استشارة في القانون المغربي للشركات والأفراد. متخصص في تسليم المجرمين بشكل عام.',
         tags: ['الجنائي', 'القانون المغربي', 'الإداري', 'تسليم المجرمين'],
         experience: '12+ عاماً'
       },
@@ -381,19 +382,20 @@ export const translations = {
       privacidad: 'سياسة الخصوصية',
       cookies: 'سياسة ملفات تعريف الارتباط',
       avisoLegal: 'إشعار قانوني',
+      terminos: 'شروط الاستخدام',
       descripcion: 'متخصصون في الدفاع الجنائي مع أكثر من 15 عاماً من الخبرة. خدمة 24/7 باللغتين الإسبانية والعربية.',
       contacto: 'اتصل بنا',
       servicios: 'الخدمات',
       atencion: 'الاهتمام',
       defensaPenal: 'الدفاع الجنائي',
-      extradicion: 'تسليم المجرمين إسبانيا-المغرب',
+             extradicion: 'تسليم المجرمين بشكل عام',
       asesoriaLegal: 'الاستشارة القانونية',
-      respuesta: 'الرد < 15 دقيقة',
+             respuesta: 'الرد < 1 ساعة',
       disponible24h: 'متاح 24/7',
       emergencias: 'الطوارئ الجنائية',
       idiomas: 'اللغات',
       espanolArabe: 'الإسبانية • العربية',
-      respuestaTiempo: 'أقل من 15 دقيقة',
+             respuestaTiempo: 'أقل من ساعة واحدة',
       atencion24h: 'الاهتمام 24/7'
     },
     

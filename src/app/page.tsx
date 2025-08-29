@@ -47,9 +47,9 @@ const getLawyers = (t: any) => [
     tags: t.team.diego.tags,
     languages: ['ES'],
     experience: t.team.diego.experience,
-    image: '/images/Equipo/Diego1.webp',
-    hoverImage: '/images/Equipo/Diego4.webp',
-    backgroundImage: '/images/Equipo/Diego3.webp',
+    image: '/images/Equipo/Diego1.webp?v=2',
+    hoverImage: '/images/Equipo/Diego4.webp?v=2',
+    backgroundImage: '/images/Equipo/Diego3.webp?v=2',
   },
 ];
 
@@ -132,7 +132,7 @@ export default function Page() {
         {/* Team Section */}
         <motion.section 
           id="equipo" 
-          className="bg-charleston w-full py-16 text-offwhite team-section"
+          className="bg-charleston w-full py-12 sm:py-16 text-offwhite team-section"
           aria-labelledby="team-title"
           role="region"
           animate={{
@@ -140,7 +140,7 @@ export default function Page() {
           }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -160,7 +160,7 @@ export default function Page() {
           </motion.div>
           
           <div 
-            className="grid md:grid-cols-3 gap-6 lawyer-cards-container"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lawyer-cards-container"
             role="list"
             aria-label="Lista de abogados del equipo"
           >
@@ -186,7 +186,7 @@ export default function Page() {
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <article className="bg-charleston border border-apricot/20 rounded-2xl p-8 max-w-2xl mx-auto">
+            <article className="bg-charleston border border-apricot/20 rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto">
               <h3 className="text-xl font-semibold text-gold mb-4">
                 {t.team.consultaEspecifica}
               </h3>
@@ -194,11 +194,9 @@ export default function Page() {
                 {t.team.consultaDescripcion}
               </p>
               <a 
-                href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t.team.consultaWhatsapp)}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contacto"
                 className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
-                aria-label={t.common.contactarWhatsapp}
+                aria-label="Ir a la sección de contacto"
               >
                 {t.team.consultaGratuita}
               </a>
@@ -213,7 +211,7 @@ export default function Page() {
         {/* Practice Areas Section */}
         <motion.section 
           id="areas" 
-          className="bg-chinese w-full py-16 text-black practice-areas-section"
+          className="bg-chinese w-full py-12 sm:py-16 text-black practice-areas-section"
           aria-labelledby="areas-title"
           role="region"
           animate={{
@@ -221,7 +219,7 @@ export default function Page() {
           }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mx-auto max-w-6xl px-6">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -241,7 +239,7 @@ export default function Page() {
           </motion.div>
           
           <div 
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
             role="list"
             aria-label={t.common.listaAreas}
           >
@@ -259,26 +257,7 @@ export default function Page() {
             ))}
           </div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
-            <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-6 py-3 text-gold">
-              <span className="text-sm font-medium">{t.areas.noEncuentras}</span>
-              <a 
-                href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t.areas.casoDiferente)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm underline hover:no-underline"
-                aria-label={t.common.consultarCaso}
-              >
-                {t.areas.consultanos}
-              </a>
-            </div>
-          </motion.div>
+
           </div>
         </motion.section>
 

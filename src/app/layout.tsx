@@ -3,6 +3,7 @@ import "./globals.css";
 import { ContactProvider } from "../contexts/ContactContext";
 import { LanguageProvider } from "../contexts/LanguageContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import CookieBanner from "../components/CookieBanner";
 
 export const metadata: Metadata = {
   title: "STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España | Abogados Penalistas",
@@ -41,15 +42,15 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png?v=2', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-48x48.png?v=2', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico?v=2',
-    apple: '/apple-touch-icon.png?v=2',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
     other: [
-      { rel: 'android-chrome-192x192', url: '/android-chrome-192x192.png?v=2' },
-      { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.png?v=2' },
+      { rel: 'android-chrome-192x192', url: '/android-chrome-192x192.png' },
+      { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.png' },
     ],
   },
   robots: {
@@ -230,6 +231,7 @@ export default function RootLayout({
         <LanguageProvider>
           <ContactProvider>
             {children}
+            <CookieBanner />
             <SpeedInsights />
           </ContactProvider>
         </LanguageProvider>

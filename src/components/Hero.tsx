@@ -83,16 +83,21 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                 />
               </motion.h1>
 
-              <AnimatedText
-                text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–العربية.' : 'Especialistas en Derecho Penal. Español–Árabe.'}
-                className="mt-4 text-white text-lg"
-                delay={0.2}
-              />
-              <AnimatedText
-                text={language === 'ar' ? 'نرد على الطوارئ في أقل من 15 دقيقة.' : 'Respondemos urgencias en menos de 15 minutos.'}
-                className="mt-2 text-white text-lg"
-                delay={0.4}
-              />
+                             <AnimatedText
+                 text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد على الطوارئ في أقل من ساعة واحدة.' : 'Especialistas en Derecho Penal. Español–Árabe. Respondemos urgencias en menos de 1 hora.'}
+                 className="mt-4 text-white text-lg block sm:block md:hidden"
+                 delay={0.2}
+               />
+               <AnimatedText
+                 text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–العربية.' : 'Especialistas en Derecho Penal. Español–Árabe.'}
+                 className="mt-4 text-white text-lg hidden md:block"
+                 delay={0.2}
+               />
+               <AnimatedText
+                 text={language === 'ar' ? 'نرد على الطوارئ في أقل من ساعة واحدة.' : 'Respondemos urgencias en menos de 1 hora.'}
+                 className="mt-2 text-white text-lg hidden md:block"
+                 delay={0.4}
+               />
             </motion.div>
 
             {/* Logo oficial STANS ABOGADOS - Solo visible en desktop */}

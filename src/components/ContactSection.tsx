@@ -175,7 +175,7 @@ export default function ContactSection() {
   return (
     <motion.section 
       id="contacto" 
-      className="bg-black w-full py-20 text-offwhite"
+      className="bg-black w-full py-12 sm:py-16 text-offwhite"
       aria-labelledby="contact-title"
       role="region"
       animate={{
@@ -183,22 +183,22 @@ export default function ContactSection() {
       }}
       transition={{ duration: 0.5 }}
     >
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
                      <h2 
              id="contact-title" 
-             className="text-4xl md:text-5xl font-bold text-gold mb-6"
+             className="text-3xl font-bold text-gold mb-6"
              style={{ direction: language === 'ar' ? 'rtl' : 'ltr' }}
            >
              {t.contact.title}
            </h2>
-           <p className="text-2xl font-semibold text-offwhite mb-4">
+           <p className="text-lg font-semibold text-offwhite mb-4">
              {t.contact.subtitle}
            </p>
            <p className="text-lg text-offwhite/80 max-w-2xl mx-auto">

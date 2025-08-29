@@ -43,7 +43,7 @@ export default function StatsSection() {
   
   return (
     <section 
-      className="mx-auto max-w-6xl px-6 py-16 text-offwhite stats-section"
+      className="mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-16 text-offwhite stats-section"
       aria-labelledby="stats-title"
       role="region"
     >
@@ -76,7 +76,7 @@ export default function StatsSection() {
       </motion.div>
       
       <div 
-        className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
         role="list"
         aria-label="Estadísticas y logros de STANS ABOGADOS"
       >
@@ -96,7 +96,7 @@ export default function StatsSection() {
               scale: 1.02,
               transition: { duration: 0.3 }
             }}
-            className="text-center p-6 rounded-xl bg-charleston border border-apricot/20 hover:border-gold/30 transition-all duration-500 group"
+            className="text-center p-4 sm:p-6 rounded-xl bg-charleston border border-apricot/20 hover:border-gold/30 transition-all duration-500 group"
             role="listitem"
             itemScope
             itemType="https://schema.org/QuantitativeValue"
@@ -127,7 +127,7 @@ export default function StatsSection() {
 
               {/* Número con animación de entrada */}
               <motion.div 
-                className="text-3xl font-bold text-gold mb-2"
+                className="text-2xl sm:text-3xl font-bold text-gold mb-2"
                 itemProp="value"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -140,7 +140,7 @@ export default function StatsSection() {
 
               {/* Título con animación */}
               <motion.div 
-                className="text-lg font-semibold mb-2"
+                className="text-base sm:text-lg font-semibold mb-2"
                 itemProp="name"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -152,7 +152,7 @@ export default function StatsSection() {
 
               {/* Descripción con animación */}
               <motion.div 
-                className="text-white/70 text-sm"
+                className="text-white/70 text-xs sm:text-sm"
                 itemProp="description"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
