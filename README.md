@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# STANS ABOGADOS - Defensa Penal 24/7
 
-## Getting Started
+Sitio web oficial de STANS ABOGADOS, especialistas en defensa penal en Madrid y España. Desarrollado con Next.js, TypeScript y Tailwind CSS.
 
-First, run the development server:
+## 🚀 Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Defensa Penal Especializada**: Abogados penalistas con más de 15 años de experiencia
+- **Atención 24/7**: Respuesta en menos de 15 minutos para urgencias
+- **Multilingüe**: Soporte completo en Español y Árabe
+- **SEO Optimizado**: Implementación completa de mejores prácticas de SEO
+- **Diseño Responsive**: Optimizado para desktop, tablet y móvil
+- **Animaciones Fluidas**: Interacciones suaves con Framer Motion
+- **Formularios Inteligentes**: Integración con Google Sheets para leads
+
+## 🛠️ Tecnologías
+
+- **Framework**: Next.js 15.5.2
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS
+- **Animaciones**: Framer Motion
+- **Iconos**: Lucide React
+- **Deployment**: Vercel
+
+## 📁 Estructura del Proyecto
+
+```
+stans-web/
+├── src/
+│   ├── app/                 # App Router de Next.js
+│   │   ├── api/            # API Routes
+│   │   ├── globals.css     # Estilos globales
+│   │   ├── layout.tsx      # Layout principal
+│   │   └── page.tsx        # Página principal
+│   ├── components/         # Componentes React
+│   │   ├── Hero.tsx        # Sección principal
+│   │   ├── Navigation.tsx  # Navegación
+│   │   ├── Team.tsx        # Sección equipo
+│   │   ├── Areas.tsx       # Áreas de práctica
+│   │   ├── Stats.tsx       # Estadísticas
+│   │   ├── Contact.tsx     # Formulario de contacto
+│   │   └── Footer.tsx      # Pie de página
+│   ├── contexts/           # Contextos de React
+│   │   ├── LanguageContext.tsx
+│   │   └── ContactContext.tsx
+│   └── translations/       # Traducciones
+│       └── index.ts
+├── public/                 # Archivos estáticos
+│   ├── images/            # Imágenes
+│   └── videos/            # Videos
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Instalación y Desarrollo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerrequisitos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+ 
+- npm o yarn
 
-## Learn More
+### Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clonar el repositorio**
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd stans-web
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Instalar dependencias**
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Configurar variables de entorno**
+```bash
+cp .env.example .env.local
+```
 
-## Deploy on Vercel
+Editar `.env.local` con tus configuraciones:
+```env
+SHEETS_WEBHOOK_URL=tu_url_de_google_apps_script
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Ejecutar en desarrollo**
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El sitio estará disponible en `http://localhost:3000`
+
+## 🌍 Características Multilingües
+
+El sitio soporta dos idiomas:
+- **Español** (por defecto)
+- **Árabe** (con soporte RTL)
+
+### Cambiar idioma
+- Selector en la navegación
+- Selector en el footer
+- Cambio automático de dirección de texto
+
+## 📊 SEO y Performance
+
+### Optimizaciones implementadas:
+- ✅ Meta tags completos
+- ✅ Open Graph y Twitter Cards
+- ✅ Schema.org structured data
+- ✅ Sitemap.xml automático
+- ✅ Robots.txt
+- ✅ PWA manifest
+- ✅ Favicons dinámicos
+- ✅ Optimización de imágenes
+- ✅ Lazy loading
+- ✅ Core Web Vitals optimizados
+
+## 📱 Responsive Design
+
+El sitio está optimizado para:
+- **Desktop**: 1200px+
+- **Tablet**: 768px - 1199px
+- **Móvil**: < 768px
+
+## 🔧 Scripts Disponibles
+
+```bash
+npm run dev          # Desarrollo local
+npm run build        # Build de producción
+npm run start        # Servidor de producción
+npm run lint         # Linting
+npm run type-check   # Verificación de tipos
+```
+
+## 🚀 Deployment en Vercel
+
+### Configuración automática:
+1. Conectar repositorio a Vercel
+2. Configurar variables de entorno en Vercel Dashboard
+3. Deploy automático en cada push a main
+
+### Variables de entorno en Vercel:
+- `SHEETS_WEBHOOK_URL`: URL del Google Apps Script
+
+## 📞 Contacto y Soporte
+
+- **Teléfono**: +34 611 68 72 26
+- **Email**: info@stansabogados.com
+- **Ubicación**: Madrid, España
+
+## 📄 Licencia
+
+© 2024 STANS ABOGADOS. Todos los derechos reservados.
+
+---
+
+**Desarrollado con ❤️ para STANS ABOGADOS**
