@@ -33,22 +33,42 @@ export default function Navigation() {
 
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      const navHeight = 80; // Altura aproximada del nav
-      const targetPosition = targetElement.offsetTop - navHeight;
-      
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
+    
+    // Cerrar el menú móvil si está abierto
+    if (isOpen) {
+      setIsOpen(false);
     }
+    
+    // Esperar un poco para que el menú se cierre antes de hacer scroll
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const navHeight = 80; // Altura fija del nav para todos los dispositivos
+        const targetPosition = targetElement.offsetTop - navHeight;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+        
+        // Log para debugging
+        console.log(`Scrolling to ${targetId}, position: ${targetPosition}`);
+      } else {
+        console.log(`Element with id "${targetId}" not found`);
+      }
+    }, 100); // Pequeño delay para asegurar que el menú se cierre
   };
 
   // Control de scroll para mostrar/ocultar nav
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      
+      // No ocultar el nav si el menú móvil está abierto
+      if (isOpen) {
+        setIsVisible(true);
+        return;
+      }
       
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         // Scroll hacia abajo - ocultar nav
@@ -63,7 +83,7 @@ export default function Navigation() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  }, [lastScrollY, isOpen]);
 
   return (
     <motion.nav 
@@ -192,15 +212,11 @@ export default function Navigation() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                     onClick={(e) => {
-                      setIsOpen(false);
+                      const targetId = item.href.replace('#', '');
                       if (item.name === 'Contacto') {
                         handleContactClick();
-                        const targetId = item.href.replace('#', '');
-                        handleSmoothScroll(e, targetId);
-                      } else {
-                        const targetId = item.href.replace('#', '');
-                        handleSmoothScroll(e, targetId);
                       }
+                      handleSmoothScroll(e, targetId);
                     }}
                     className="text-offwhite hover:text-gold block px-3 py-3 text-base font-medium transition-colors duration-200 rounded-lg hover:bg-charleston/50"
                   >

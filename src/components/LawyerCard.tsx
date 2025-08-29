@@ -165,19 +165,27 @@ export default function LawyerCard({
                   </div>
                   <motion.button
                     onClick={handleFlip}
-                    whileHover={{ scale: 1.3, rotate: 180 }}
-                    whileTap={{ scale: 0.9 }}
+                    whileHover={{ scale: 1.1, rotate: 180 }}
+                    whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="text-gold/60 group-hover:text-apricot transition-all duration-1000 hover:scale-125 transform"
+                    className="relative bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full p-2 group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
                   >
-                    <ArrowRight className="h-6 w-6" />
+                    <ArrowRight className="h-5 w-5 text-gold group-hover:text-apricot transition-all duration-300" />
+                    <motion.div
+                      className="absolute inset-0 rounded-full bg-gold/10"
+                      initial={{ scale: 0 }}
+                      whileHover={{ scale: 1 }}
+                      transition={{ duration: 0.2 }}
+                    />
                   </motion.button>
                 </div>
                 <div className="text-white">
                   <h3 className="text-xl font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
                   <p className="text-white/80 text-sm mt-1 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
-                  <div className="mt-2 text-xs text-white/60 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span>Arrastra para voltear →</span>
+                  <div className="mt-2 text-xs text-white/60 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
+                    <span className="bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full px-3 py-1 text-gold/80 group-hover:text-gold group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300">
+                      Arrastra para voltear →
+                    </span>
                   </div>
                 </div>
               </div>
@@ -224,12 +232,18 @@ export default function LawyerCard({
             </div>
             <motion.button
               onClick={handleFlip}
-              whileHover={{ scale: 1.3, rotate: 180 }}
-              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1, rotate: 180 }}
+              whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="text-gold/60 group-hover:text-apricot transition-all duration-1000 hover:scale-125 transform"
+              className="relative bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full p-2 group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"
             >
-              <ArrowRight className="h-6 w-6" />
+              <ArrowRight className="h-5 w-5 text-gold group-hover:text-apricot transition-all duration-300" />
+              <motion.div
+                className="absolute inset-0 rounded-full bg-gold/10"
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+                transition={{ duration: 0.2 }}
+              />
             </motion.button>
           </div>
 

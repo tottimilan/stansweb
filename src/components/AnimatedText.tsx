@@ -14,20 +14,39 @@ export default function AnimatedText({ text, className = '', delay = 0 }: Animat
   const [spans, setSpans] = useState<React.ReactElement[]>([]);
 
   useEffect(() => {
-    // Spanize the text - wrap each character in a span
-    const spanizedText = text.split('').map((char, index) => (
-      <span
-        key={index}
-        className="inline-block"
-        style={{
-          animation: `letter-glow 0.7s ${delay + (index * 0.05)}s ease both`
-        }}
-      >
-        {char === ' ' ? '\u00A0' : char}
-      </span>
-    ));
+    // Detectar si es móvil
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
     
-    setSpans(spanizedText);
+         if (isMobile) {
+       // En móvil: dividir por palabras para evitar cortes
+       const words = text.split(' ');
+       const spanizedText = words.map((word, wordIndex) => (
+         <span
+           key={wordIndex}
+           className="inline-block"
+           style={{
+             animation: `letter-glow 0.5s ${delay + (wordIndex * 0.04)}s ease both`
+           }}
+         >
+           {word}{wordIndex < words.length - 1 ? '\u00A0' : ''}
+         </span>
+       ));
+       setSpans(spanizedText);
+    } else {
+      // En desktop: mantener el comportamiento original
+      const spanizedText = text.split('').map((char, index) => (
+        <span
+          key={index}
+          className="inline-block"
+          style={{
+            animation: `letter-glow 0.7s ${delay + (index * 0.05)}s ease both`
+          }}
+        >
+          {char === ' ' ? '\u00A0' : char}
+        </span>
+      ));
+      setSpans(spanizedText);
+    }
   }, [text, delay]);
 
   return (
