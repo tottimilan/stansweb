@@ -99,28 +99,35 @@ main {
   will-change: transform;
 }
 
-.lawyer-cards-container:hover > div:not(:hover):not(.flipped-card) {
-  filter: blur(1.5px) brightness(0.8) saturate(0.9);
-  transform: scale(0.99);
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  will-change: filter, transform;
-}
-
-.lawyer-cards-container:hover > div:not(:hover):not(.flipped-card) article {
-  opacity: 0.7;
-  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  will-change: opacity;
+/* Efecto hover original - blur y opacidad (solo en desktop y tablet) */
+@media (min-width: 768px) {
+  .lawyer-cards-container:hover > div:not(:hover):not(.flipped-card) {
+    filter: blur(1.5px) brightness(0.8) saturate(0.9);
+    transform: scale(0.99);
+    opacity: 0.7;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: filter, transform, opacity;
+  }
+  
+  /* Asegurar que las tarjetas volteadas no se vean afectadas por el hover de otras */
+  .lawyer-cards-container:hover > div.flipped-card {
+    filter: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
 }
 
 /* Asegurar que la tarjeta hover mantenga su efecto original */
-.lawyer-cards-container > div:hover {
-  filter: none;
-  transform: none;
-  z-index: 10;
-}
+@media (min-width: 768px) {
+  .lawyer-cards-container > div:hover {
+    filter: none;
+    transform: none;
+    z-index: 10;
+  }
 
-.lawyer-cards-container > div:hover article {
-  opacity: 1;
+  .lawyer-cards-container > div:hover article {
+    opacity: 1;
+  }
 }
 
 /* Estilos para el efecto de flip 3D */
@@ -191,26 +198,9 @@ main {
 /* Estilos para tarjetas volteadas */
 .flipped-card {
   z-index: 20;
-  filter: none !important;
-  transform: none !important;
-}
-
-.flipped-card article {
-  z-index: 20;
-  opacity: 1 !important;
 }
 
 /* Asegurar que las tarjetas volteadas no se vean afectadas por ningún hover */
-.lawyer-cards-container:hover > div.flipped-card {
-  filter: none !important;
-  transform: none !important;
-}
-
-.lawyer-cards-container:hover > div.flipped-card article {
-  opacity: 1 !important;
-}
-
-/* Las tarjetas volteadas no deben cambiar su apariencia */
 .flipped-card:hover {
   filter: none !important;
   transform: none !important;

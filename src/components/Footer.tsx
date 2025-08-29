@@ -102,12 +102,9 @@ export default function Footer() {
               </div>
               <div className="text-offwhite/80 text-sm text-center sm:text-left">
                 <p className="font-medium text-gold text-xs sm:text-sm">{t.footer.idiomas}</p>
-                <p className="text-xs sm:text-sm">{t.footer.espanolArabe}</p>
+                <p className="text-xs sm:text-sm">Español • Inglés • Francés • Árabe</p>
               </div>
-              <div className="text-offwhite/80 text-sm text-center sm:text-left">
-                <p className="font-medium text-gold text-xs sm:text-sm">{t.footer.idiomas}</p>
-                <p className="text-xs sm:text-sm">{t.footer.respuestaTiempo}</p>
-              </div>
+
             </div>
           </motion.div>
         </div>

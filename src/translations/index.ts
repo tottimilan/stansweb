@@ -48,7 +48,7 @@ export const translations = {
       mounir: {
         name: 'Mounir Elyemlahy Chouati',
         role: 'Abogado Penalista',
-                 summary: 'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones en general.',
+                 summary: 'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones.',
         tags: ['Penal', 'Derecho Marroquí', 'Administrativo', 'Extradiciones'],
         experience: '12+ años'
       },
@@ -177,7 +177,7 @@ export const translations = {
       servicios: 'Servicios',
       atencion: 'Atención',
       defensaPenal: 'Defensa Penal',
-             extradicion: 'Extradiciones en general',
+             extradicion: 'Extradiciones',
       asesoriaLegal: 'Asesoría Legal',
              respuesta: 'Respuesta < 1 hr',
       disponible24h: '24/7 Disponible',
@@ -231,7 +231,7 @@ export const translations = {
       descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد في أقل من 15 دقيقة.',
              respuesta15min: 'الرد < 1 ساعة طوارئ',
       espanolArabe: 'الإسبانية–العربية',
-                  extradicion: 'تسليم المجرمين بشكل عام',
+                  extradicion: 'تسليم المجرمين',
       penalPuro: 'جنائي خالص',
       abogadosPenalistas: 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM',
       holaAyuda: 'مرحباً، أحتاج مساعدة جنائية عاجلة.'
@@ -259,7 +259,7 @@ export const translations = {
       mounir: {
         name: 'منير إليملاهي شواتي',
         role: 'محامي جنائي',
-                 summary: 'جنائي وإداري. استشارة في القانون المغربي للشركات والأفراد. متخصص في تسليم المجرمين بشكل عام.',
+                 summary: 'جنائي وإداري. استشارة في القانون المغربي للشركات والأفراد. متخصص في تسليم المجرمين.',
         tags: ['الجنائي', 'القانون المغربي', 'الإداري', 'تسليم المجرمين'],
         experience: '12+ عاماً'
       },
@@ -388,7 +388,7 @@ export const translations = {
       servicios: 'الخدمات',
       atencion: 'الاهتمام',
       defensaPenal: 'الدفاع الجنائي',
-             extradicion: 'تسليم المجرمين بشكل عام',
+             extradicion: 'تسليم المجرمين',
       asesoriaLegal: 'الاستشارة القانونية',
              respuesta: 'الرد < 1 ساعة',
       disponible24h: 'متاح 24/7',

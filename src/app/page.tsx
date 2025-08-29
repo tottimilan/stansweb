@@ -172,7 +172,6 @@ export default function Page() {
                 transition={{ duration: 1.2, delay: index * 0.2, ease: "easeOut" }}
                 viewport={{ once: true }}
                 role="listitem"
-                className="card-hover-effect"
               >
                 <LawyerCard {...lawyer} />
               </motion.div>

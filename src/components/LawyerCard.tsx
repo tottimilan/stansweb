@@ -131,7 +131,7 @@ export default function LawyerCard({
               transformStyle: 'preserve-3d'
             }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="group rounded-2xl border border-apricot/20 bg-charleston text-offwhite shadow-lg hover:shadow-xl transition-all duration-1000 hover:shadow-gold/20 hover:border-gold/50 h-full flex flex-col relative preserve-3d"
+            className="rounded-2xl border border-apricot/20 bg-charleston text-offwhite shadow-lg hover:shadow-xl transition-all duration-1000 hover:shadow-gold/20 hover:border-gold/50 h-full flex flex-col relative preserve-3d"
           >
         {/* Frente de la tarjeta - Foto principal */}
         <div 
@@ -139,12 +139,12 @@ export default function LawyerCard({
           style={{ backfaceVisibility: 'hidden' }}
         >
           {image ? (
-            <div className="relative w-full h-full min-h-[400px] group/image">
+            <div className="relative w-full h-full min-h-[400px] group">
               <Image
                 src={image}
                 alt={`${name} - ${role}`}
                 fill
-                className="object-cover transition-all duration-1000 ease-out group-hover/image:scale-110 group-hover/image:opacity-0"
+                className="object-cover transition-all duration-1000 ease-out group-hover:scale-110 group-hover:opacity-0"
                 onLoad={() => setImageLoaded(true)}
                 {...imageProps}
               />
@@ -153,7 +153,7 @@ export default function LawyerCard({
                   src={hoverImage}
                   alt={`${name} - ${role} (hover)`}
                   fill
-                  className="object-cover opacity-0 transition-all duration-1000 ease-out group-hover/image:opacity-100 group-hover/image:scale-110"
+                  className="object-cover opacity-0 transition-all duration-1000 ease-out group-hover:opacity-100 group-hover:scale-110"
                   {...imageProps}
                 />
               )}
@@ -208,7 +208,8 @@ export default function LawyerCard({
                 src={backgroundImage}
                 alt={`${name} background`}
                 fill
-                className="object-cover md:blur-[0.5px] opacity-40"
+                className="object-cover opacity-40"
+                style={{ filter: 'blur(0.5px)' }}
                 {...imageProps}
               />
               <div className="absolute inset-0 bg-gradient-to-br from-charleston/60 to-black/50" />
