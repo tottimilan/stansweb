@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Users, Award, Clock, Shield } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
-import { translations } from '../translations';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/translations';
 
 const getStats = (t: any) => [
   {
@@ -54,15 +54,25 @@ export default function StatsSection() {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 
+        <motion.h2 
           id="stats-title" 
           className="text-3xl font-bold text-gold mb-4"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           {t.stats.title}
-        </h2>
-        <p className="text-white/80 text-lg max-w-2xl mx-auto">
+        </motion.h2>
+        <motion.p 
+          className="text-white/80 text-lg max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           {t.stats.subtitle}
-        </p>
+        </motion.p>
       </motion.div>
       
       <div 
@@ -73,40 +83,121 @@ export default function StatsSection() {
         {stats.map((stat, index) => (
           <motion.article
             key={stat.label}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ 
+              duration: 0.6, 
+              delay: index * 0.1,
+              ease: "easeOut"
+            }}
             viewport={{ once: true }}
-            whileHover={{ y: -2, scale: 1.02 }}
-            className="text-center p-6 rounded-xl bg-charleston border border-apricot/20 hover:border-gold/30 transition-all"
+            whileHover={{ 
+              y: -4, 
+              scale: 1.02,
+              transition: { duration: 0.3 }
+            }}
+            className="text-center p-6 rounded-xl bg-charleston border border-apricot/20 hover:border-gold/30 transition-all duration-500 group"
             role="listitem"
             itemScope
             itemType="https://schema.org/QuantitativeValue"
           >
-            <div className="text-gold mb-4 flex justify-center">
-              <span aria-hidden="true">{stat.icon}</span>
+            {/* Efecto de brillo sutil en hover */}
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+            
+            <div className="relative">
+              {/* Icono con animación */}
+              <motion.div 
+                className="text-gold mb-4 flex justify-center"
+                whileHover={{ 
+                  scale: 1.1,
+                  rotate: 2,
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.span 
+                  aria-hidden="true"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 + 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  {stat.icon}
+                </motion.span>
+              </motion.div>
+
+              {/* Número con animación de entrada */}
+              <motion.div 
+                className="text-3xl font-bold text-gold mb-2"
+                itemProp="value"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 + 0.4 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+              >
+                {stat.number}
+              </motion.div>
+
+              {/* Título con animación */}
+              <motion.div 
+                className="text-lg font-semibold mb-2"
+                itemProp="name"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 + 0.5 }}
+                viewport={{ once: true }}
+              >
+                {stat.label}
+              </motion.div>
+
+              {/* Descripción con animación */}
+              <motion.div 
+                className="text-white/70 text-sm"
+                itemProp="description"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 + 0.6 }}
+                viewport={{ once: true }}
+              >
+                {stat.description}
+              </motion.div>
+
+              {/* Línea decorativa que aparece */}
+              <motion.div 
+                className="mt-4 h-0.5 bg-gradient-to-r from-transparent via-gold/30 to-transparent"
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                transition={{ duration: 0.8, delay: index * 0.1 + 0.7 }}
+                viewport={{ once: true }}
+              />
             </div>
-            <div 
-              className="text-3xl font-bold text-gold mb-2"
-              itemProp="value"
-            >
-              {stat.number}
-            </div>
-            <div 
-              className="text-lg font-semibold mb-2"
-              itemProp="name"
-            >
-              {stat.label}
-            </div>
-            <div 
-              className="text-white/70 text-sm"
-              itemProp="description"
-            >
-              {stat.description}
-            </div>
+
             <meta itemProp="unitText" content={stat.label} />
             <meta itemProp="value" content={stat.schemaValue} />
           </motion.article>
+        ))}
+      </div>
+
+      {/* Elementos decorativos sutiles */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {[...Array(4)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-gold/20 rounded-full"
+            style={{
+              left: `${20 + i * 20}%`,
+              top: `${30 + (i % 2) * 40}%`,
+            }}
+            animate={{
+              y: [0, -10, 0],
+              opacity: [0.2, 0.4, 0.2],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              delay: i * 0.5,
+            }}
+          />
         ))}
       </div>
 

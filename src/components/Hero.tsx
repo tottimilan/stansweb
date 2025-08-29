@@ -84,18 +84,23 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
               </motion.h1>
 
               <AnimatedText
-                text={t.hero.descripcionCompleta}
+                text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–العربية.' : 'Especialistas en Derecho Penal. Español–Árabe.'}
                 className="mt-4 text-white text-lg"
                 delay={0.2}
               />
+              <AnimatedText
+                text={language === 'ar' ? 'نرد على الطوارئ في أقل من 15 دقيقة.' : 'Respondemos urgencias en menos de 15 minutos.'}
+                className="mt-2 text-white text-lg"
+                delay={0.4}
+              />
             </motion.div>
 
-            {/* Logo oficial STANS ABOGADOS */}
+            {/* Logo oficial STANS ABOGADOS - Solo visible en desktop */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-              className="flex-1 flex justify-center lg:justify-end"
+              className="hidden lg:flex flex-1 justify-center lg:justify-end"
             >
               <LogoWithHover
                 src="/images/logos/logo-horizontal.png"
@@ -118,7 +123,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex-1"
+              className="flex-1 lg:flex-1 w-full"
             >
               {/* Features con iconos */}
               <div 
@@ -205,7 +210,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex-1"
+              className="flex-1 w-full"
             >
               <LeadForm />
             </motion.div>

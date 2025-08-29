@@ -12,16 +12,14 @@
   "categories": ["legal", "business"],
   "icons": [
     {
-      "src": "/images/logos/logo-horizontal.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
     },
     {
-      "src": "/images/logos/logo-horizontal.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ],
   "screenshots": [
@@ -30,20 +28,6 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "WhatsApp Urgencias",
-      "short_name": "WhatsApp",
-      "description": "Contactar por WhatsApp para urgencias penales",
-      "url": "https://wa.me/34611687226?text=Hola,%20necesito%20ayuda%20penal%20urgente.",
-      "icons": [
-        {
-          "src": "/images/logos/logo-horizontal.png",
-          "sizes": "96x96"
-        }
-      ]
     }
   ]
 }

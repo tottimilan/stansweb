@@ -18,7 +18,7 @@ export const translations = {
       especialistas: 'Especialistas en Defensa Penal',
       defensa24h: 'Defensa Penal 24/7\nMadrid y España',
       descripcionCompleta: 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.',
-      respuesta15min: 'Respuesta < 15 min',
+             respuesta15min: 'Respuesta < 15 min urgencias',
       espanolArabe: 'Español–Árabe',
       extradicion: 'Extradición España–Marruecos',
       penalPuro: 'Penal Puro',
@@ -150,7 +150,7 @@ export const translations = {
         privacidad: 'Acepto la Política de Privacidad',
         enviando: 'Enviando…',
         enviar: 'Resolver mi duda',
-        gracias: 'Gracias. Te contactamos en <15 min. Si es urgente, usa WhatsApp 24/7.',
+        gracias: 'Gracias. Te contactaremos en la mayor brevedad posible. Si es urgente, usa WhatsApp 24/7.',
         error: 'Ha ocurrido un error. Inténtalo de nuevo.'
       },
       phrases: [
@@ -228,7 +228,7 @@ export const translations = {
       especialistas: 'متخصصون في الدفاع الجنائي',
       defensa24h: 'الدفاع الجنائي 24/7\nمدريد وإسبانيا',
       descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد في أقل من 15 دقيقة.',
-      respuesta15min: 'الرد < 15 دقيقة',
+             respuesta15min: 'الرد < 15 دقيقة طوارئ',
       espanolArabe: 'الإسبانية–العربية',
       extradicion: 'تسليم المجرمين إسبانيا–المغرب',
       penalPuro: 'جنائي خالص',
@@ -360,7 +360,7 @@ export const translations = {
         privacidad: 'أوافق على سياسة الخصوصية',
         enviando: 'جاري الإرسال…',
         enviar: 'أرسل استفسارك',
-        gracias: 'شكراً لك. سنعاود الاتصال خلال 15 دقيقة. إذا كانت الحالة عاجلة، استخدم واتساب 24/7.',
+        gracias: 'شكرًا لك. سنتواصل معك في أقرب وقت ممكن. في حال وجود أي طارئ، يُرجى استخدام واتساب على مدار الساعة.',
         error: 'خطأ، حاول مرة أخرى'
       },
       phrases: [

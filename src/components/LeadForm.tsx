@@ -34,7 +34,14 @@ export default function LeadForm({ className = '', utm = '' }: Props) {
     const res = await fetch('/api/lead', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, mensaje, idioma: language, utm }),
+      body: JSON.stringify({ 
+        email, 
+        mensaje, 
+        idioma: language, 
+        utm,
+        nombre: '', // LeadForm no tiene nombre
+        telefono: '' // LeadForm no tiene teléfono
+      }),
     });
 
     setLoading(false);

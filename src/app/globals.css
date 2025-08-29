@@ -234,3 +234,65 @@ main {
 .arabic-text {
   font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Efectos sutiles para la sección de estadísticas */
+.stats-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de fondo sutil */
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(165, 107, 55, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(165, 107, 55, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Animación sutil para partículas flotantes */
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-8px);
+    opacity: 0.4;
+  }
+}
+
+/* Efectos de hover mejorados para las tarjetas */
+.stats-section article {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.stats-section article:hover {
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(165, 107, 55, 0.15);
+}
+
+/* Efecto de brillo sutil en hover */
+.stats-section article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(165, 107, 55, 0.03) 50%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: 0.75rem;
+}
+
+.stats-section article:hover::before {
+  opacity: 1;
+}
