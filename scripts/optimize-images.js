@@ -8,7 +8,7 @@ const config = {
   format: 'webp',
   width: 800, // Tamaño máximo para tarjetas
   height: 600,
-  fit: 'cover'
+  fit: 'inside' // Mantener proporción original sin recortar
 };
 
 // Rutas de las imágenes del equipo

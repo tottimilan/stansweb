@@ -20,8 +20,8 @@ export default function Navigation() {
 
   const menuItems = [
     { name: t.nav.inicio, href: '#inicio' },
-    { name: t.nav.areas, href: '#areas' },
     { name: t.nav.equipo, href: '#equipo' },
+    { name: t.nav.areas, href: '#areas' },
     { name: 'Contacto', href: '#contacto' },
   ];
 
