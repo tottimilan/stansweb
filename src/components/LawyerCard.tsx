@@ -2,7 +2,7 @@
 
 import { motion, useMotionValue, useTransform, PanInfo } from 'framer-motion';
 import { Award, Languages, Shield, ArrowRight, Clock } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Image from 'next/image';
 
@@ -24,10 +24,21 @@ export default function LawyerCard({
   const { language } = useLanguage();
   const [isFlipped, setIsFlipped] = useState(false);
   const [autoFlipTimer, setAutoFlipTimer] = useState<NodeJS.Timeout | null>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
   
-  // Motion values para el drag
+  // Motion values para el drag - memoizado para mejor performance
   const dragX = useMotionValue(0);
   const rotateY = useTransform(dragX, [-100, 0, 100], [180, 0, -180]);
+  
+  // Memoizar las props de imagen para evitar re-renders innecesarios
+  const imageProps = useMemo(() => ({
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+    priority: false,
+    loading: "lazy" as const,
+    quality: 85,
+    placeholder: "blur" as const,
+    blurDataURL: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k=",
+  }), []);
 
   const handleFlip = () => {
     if (!isFlipped) {
@@ -134,7 +145,8 @@ export default function LawyerCard({
                 alt={`${name} - ${role}`}
                 fill
                 className="object-cover transition-all duration-1000 ease-out group-hover/image:scale-110 group-hover/image:opacity-0"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                onLoad={() => setImageLoaded(true)}
+                {...imageProps}
               />
               {hoverImage && (
                 <Image
@@ -142,7 +154,7 @@ export default function LawyerCard({
                   alt={`${name} - ${role} (hover)`}
                   fill
                   className="object-cover opacity-0 transition-all duration-1000 ease-out group-hover/image:opacity-100 group-hover/image:scale-110"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  {...imageProps}
                 />
               )}
               <div className="absolute inset-0 bg-black/40 transition-all duration-1000 group-hover:bg-black/20" />
@@ -197,7 +209,7 @@ export default function LawyerCard({
                 alt={`${name} background`}
                 fill
                 className="object-cover blur-[0.5px] opacity-40"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                {...imageProps}
               />
               <div className="absolute inset-0 bg-gradient-to-br from-charleston/60 to-black/50" />
             </div>

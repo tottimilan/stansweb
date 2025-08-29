@@ -25,9 +25,9 @@ const getLawyers = (t: any) => [
     tags: t.team.ruben.tags,
     languages: ['ES', 'EN'],
     experience: t.team.ruben.experience,
-    image: '/images/Equipo/Ruben1.png',
-    hoverImage: '/images/Equipo/Ruben4.png',
-    backgroundImage: '/images/Equipo/Ruben3.png',
+    image: '/images/Equipo/Ruben1.webp',
+    hoverImage: '/images/Equipo/Ruben4.webp',
+    backgroundImage: '/images/Equipo/Ruben3.webp',
   },
   {
     name: t.team.mounir.name,
@@ -36,9 +36,9 @@ const getLawyers = (t: any) => [
     tags: t.team.mounir.tags,
     languages: ['ES', 'EN', 'AR'],
     experience: t.team.mounir.experience,
-    image: '/images/Equipo/Mounir1.png',
-    hoverImage: '/images/Equipo/Mounir4.png',
-    backgroundImage: '/images/Equipo/Mounir3.png',
+    image: '/images/Equipo/Mounir1.webp',
+    hoverImage: '/images/Equipo/Mounir4.webp',
+    backgroundImage: '/images/Equipo/Mounir3.webp',
   },
   {
     name: t.team.diego.name,
@@ -47,9 +47,9 @@ const getLawyers = (t: any) => [
     tags: t.team.diego.tags,
     languages: ['ES'],
     experience: t.team.diego.experience,
-    image: '/images/Equipo/Diego1.png',
-    hoverImage: '/images/Equipo/Diego4.png',
-    backgroundImage: '/images/Equipo/Diego3.png',
+    image: '/images/Equipo/Diego1.webp',
+    hoverImage: '/images/Equipo/Diego4.webp',
+    backgroundImage: '/images/Equipo/Diego3.webp',
   },
 ];
 
