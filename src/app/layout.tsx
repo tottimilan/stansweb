@@ -3,6 +3,7 @@ import "./globals.css";
 import { ContactProvider } from "../contexts/ContactContext";
 import { LanguageProvider } from "../contexts/LanguageContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import CookieBanner from "../components/CookieBanner";
 
 export const metadata: Metadata = {
@@ -233,6 +234,7 @@ export default function RootLayout({
             {children}
             <CookieBanner />
             <SpeedInsights />
+            <Analytics />
           </ContactProvider>
         </LanguageProvider>
       </body>
