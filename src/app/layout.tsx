@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ContactProvider } from "../contexts/ContactContext";
 import { LanguageProvider } from "../contexts/LanguageContext";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España | Abogados Penalistas",
@@ -216,6 +217,7 @@ export default function RootLayout({
         <LanguageProvider>
           <ContactProvider>
             {children}
+            <SpeedInsights />
           </ContactProvider>
         </LanguageProvider>
       </body>
