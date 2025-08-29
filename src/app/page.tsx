@@ -9,6 +9,9 @@ import LeadForm from '@/components/LeadForm';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import Footer from '@/components/Footer';
 import StatsSection from '@/components/StatsSection';
+import ScrollProgress from '@/components/ScrollProgress';
+import { useScrollHighlight } from '@/hooks/useScrollHighlight';
+import ContactSection from '@/components/ContactSection';
 
 const WHATSAPP = '34611687226'; // Número real de STANS ABOGADOS
 
@@ -22,6 +25,8 @@ const lawyers = [
     languages: ['ES', 'EN'],
     experience: '15+ años',
     image: '/images/Equipo/Ruben1.png',
+    hoverImage: '/images/Equipo/Ruben4.png',
+    backgroundImage: '/images/Equipo/Ruben3.png',
   },
   {
     name: 'Mounir Elyemlahy Chouati',
@@ -32,6 +37,8 @@ const lawyers = [
     languages: ['ES', 'EN', 'AR'],
     experience: '12+ años',
     image: '/images/Equipo/Mounir1.png',
+    hoverImage: '/images/Equipo/Mounir4.png',
+    backgroundImage: '/images/Equipo/Mounir3.png',
   },
   {
     name: 'Diego Cardona Valero',
@@ -42,6 +49,8 @@ const lawyers = [
     languages: ['ES'],
     experience: '10+ años',
     image: '/images/Equipo/Diego1.png',
+    hoverImage: '/images/Equipo/Diego4.png',
+    backgroundImage: '/images/Equipo/Diego3.png',
   },
 ];
 
@@ -85,6 +94,10 @@ const areas = [
 ];
 
 export default function Page() {
+  const isTeamHighlighted = useScrollHighlight('equipo');
+  const isAreasHighlighted = useScrollHighlight('areas');
+  const isContactHighlighted = useScrollHighlight('contacto');
+  
   return (
     <>
       {/* Breadcrumb Navigation */}
@@ -100,6 +113,7 @@ export default function Page() {
       </nav>
 
       <main className="bg-black" role="main">
+        <ScrollProgress />
         <Navigation />
         
         {/* Hero Section - Main Landing */}
@@ -113,12 +127,17 @@ export default function Page() {
         </section>
 
         {/* Team Section */}
-        <section 
+        <motion.section 
           id="equipo" 
-          className="mx-auto max-w-6xl px-6 py-16 text-offwhite team-section"
+          className="bg-charleston w-full py-16 text-offwhite team-section"
           aria-labelledby="team-title"
           role="region"
+          animate={{
+            boxShadow: isTeamHighlighted ? "0 0 30px rgba(165, 107, 55, 0.3)" : "none"
+          }}
+          transition={{ duration: 0.5 }}
         >
+          <div className="mx-auto max-w-6xl px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -148,11 +167,12 @@ export default function Page() {
                 key={lawyer.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 1.2, delay: index * 0.2, ease: "easeOut" }}
                 viewport={{ once: true }}
                 role="listitem"
+                className="card-hover-effect"
               >
-                <LawyerCard {...lawyer} whatsapp={WHATSAPP} />
+                <LawyerCard {...lawyer} />
               </motion.div>
             ))}
           </div>
@@ -183,15 +203,24 @@ export default function Page() {
               </a>
             </article>
           </motion.div>
-        </section>
+          </div>
+        </motion.section>
+
+        {/* Separador visual */}
+        <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
 
         {/* Practice Areas Section */}
-        <section 
+        <motion.section 
           id="areas" 
-          className="mx-auto max-w-6xl px-6 py-16 text-offwhite practice-areas-section"
+          className="bg-chinese w-full py-16 text-black practice-areas-section"
           aria-labelledby="areas-title"
           role="region"
+          animate={{
+            boxShadow: isAreasHighlighted ? "0 0 30px rgba(165, 107, 55, 0.3)" : "none"
+          }}
+          transition={{ duration: 0.5 }}
         >
+          <div className="mx-auto max-w-6xl px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -205,7 +234,7 @@ export default function Page() {
             >
               Áreas de Defensa Penal
             </h2>
-            <p className="text-white/80 text-lg max-w-2xl mx-auto">
+            <p className="text-black/70 text-lg max-w-2xl mx-auto">
               Especialistas en todas las ramas del derecho penal. 
               Defensa integral desde el primer momento hasta el final del proceso.
             </p>
@@ -250,38 +279,26 @@ export default function Page() {
               </a>
             </div>
           </motion.div>
-        </section>
+          </div>
+        </motion.section>
+
+        {/* Separador visual */}
+        <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
 
         {/* Statistics Section */}
         <section 
-          className="stats-section"
+          className="bg-black stats-section"
           aria-labelledby="stats-title"
           role="region"
         >
           <StatsSection />
         </section>
 
-        {/* Call to Action Section */}
-        <section 
-          className="mx-auto max-w-6xl px-6 pb-24 cta-section"
-          aria-labelledby="cta-title"
-          role="region"
-        >
-          <article className="rounded-2xl bg-charleston border border-apricot/20 p-8 text-center text-offwhite">
-            <h3 
-              id="cta-title" 
-              className="text-xl font-semibold"
-            >
-              ¿Tienes una duda penal?
-            </h3>
-            <p className="text-white/80 mt-2">
-              Déjanos tu email y te orientamos hoy mismo.
-            </p>
-            <div className="mx-auto max-w-md mt-6">
-              <LeadForm />
-            </div>
-          </article>
-        </section>
+                {/* Separador visual */}
+        <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
+
+        {/* Contact Section */}
+        <ContactSection />
 
         {/* Footer */}
         <Footer />

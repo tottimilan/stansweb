@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ContactProvider } from "../contexts/ContactContext";
+import { LanguageProvider } from "../contexts/LanguageContext";
 
 export const metadata: Metadata = {
   title: "STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España | Abogados Penalistas",
@@ -211,7 +213,11 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        {children}
+        <LanguageProvider>
+          <ContactProvider>
+            {children}
+          </ContactProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

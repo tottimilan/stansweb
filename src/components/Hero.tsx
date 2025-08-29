@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Shield, Clock, Languages, Users, Award, Phone, Mail, MapPin } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations';
 import Image from 'next/image';
 import LeadForm from './LeadForm';
 import AnimatedText from './AnimatedText';
@@ -13,11 +15,14 @@ type Props = {
   idioma?: 'es' | 'ar';
 };
 
-export default function Hero({ whatsapp = '34611687226', idioma = 'es' }: Props) {
-  const text =
-    idioma === 'ar'
-      ? encodeURIComponent('مرحباً، أحتاج مساعدة جنائية عاجلة.')
-      : encodeURIComponent('Hola, necesito ayuda penal urgente.');
+export default function Hero({ whatsapp = '34611687226' }: Props) {
+  const { language } = useLanguage();
+  const t = translations[language];
+  const text = encodeURIComponent(
+    language === 'ar' 
+      ? 'مرحباً، أحتاج مساعدة جنائية عاجلة.'
+      : 'Hola, necesito ayuda penal urgente.'
+  );
 
   return (
     <section 
@@ -66,7 +71,7 @@ export default function Hero({ whatsapp = '34611687226', idioma = 'es' }: Props)
                 aria-label="Especialización en defensa penal"
               >
                 <Shield className="h-4 w-4 mr-2" aria-hidden="true" />
-                {idioma === 'ar' ? 'متخصصون في القانون الجنائي' : 'Especialistas en Defensa Penal'}
+                {language === 'ar' ? 'متخصصون في القانون الجنائي' : 'Especialistas en Defensa Penal'}
               </motion.div>
 
               <motion.h1
@@ -77,14 +82,14 @@ export default function Hero({ whatsapp = '34611687226', idioma = 'es' }: Props)
                 className="text-4xl md:text-5xl font-semibold text-white"
               >
                 <HoverGlowText
-                  text={idioma === 'ar' ? 'دفاع جنائي 24/7\nمدريد وإسبانيا' : 'Defensa Penal 24/7\nMadrid y España'}
+                  text={language === 'ar' ? 'دفاع جنائي 24/7\nمدريد وإسبانيا' : 'Defensa Penal 24/7\nMadrid y España'}
                   delay={0.1}
                 />
               </motion.h1>
 
               <AnimatedText
                 text={
-                  idioma === 'ar'
+                  language === 'ar'
                     ? 'متخصصون في القانون الجنائي. إسباني–عربي. نرد خلال 15 دقيقة.'
                     : 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.'
                 }
@@ -186,12 +191,20 @@ export default function Hero({ whatsapp = '34611687226', idioma = 'es' }: Props)
                 </div>
                 <div className="flex items-center text-white text-sm">
                   <MapPin className="h-4 w-4 mr-2 text-gold" aria-hidden="true" />
-                  <span>Madrid, España</span>
+                  <a 
+                    href="https://maps.app.goo.gl/iYZeyL1QEbAd5yi17"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gold transition-colors"
+                    aria-label="Ver ubicación en Google Maps"
+                  >
+                    Madrid, España
+                  </a>
                 </div>
               </address>
 
               <p className="text-xs text-white/70 mb-6">
-                {idioma === 'ar'
+                {language === 'ar'
                   ? 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM'
                   : 'Abogados penalistas | Idiomas: Español/Árabe | Colegiados ICAM'}
               </p>
@@ -204,7 +217,7 @@ export default function Hero({ whatsapp = '34611687226', idioma = 'es' }: Props)
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex-1"
             >
-              <LeadForm idioma={idioma} />
+              <LeadForm />
             </motion.div>
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function AreaCard({ title, excerpt, href = '#', features = [] }: 
       whileHover={{ y: -4, scale: 1.02 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="group rounded-2xl border border-apricot/20 bg-charleston p-6 text-offwhite shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-gold/10 hover:border-gold/30"
+      className="group rounded-2xl border border-gold/30 bg-white p-6 text-black shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-gold/20 hover:border-gold/50 h-full flex flex-col"
     >
       <div className="flex items-center justify-between mb-4">
         <div className="text-gold group-hover:text-apricot transition-colors">
@@ -41,15 +41,15 @@ export default function AreaCard({ title, excerpt, href = '#', features = [] }: 
       </div>
       
       <h3 className="text-lg font-semibold group-hover:text-gold transition-colors mb-3">{title}</h3>
-      <p className="text-white/80 text-sm leading-relaxed mb-4">{excerpt}</p>
+      <p className="text-black/70 text-sm leading-relaxed mb-4 flex-grow">{excerpt}</p>
       
       {features.length > 0 && (
-        <div className="mb-4">
+        <div className="mb-4 flex-grow">
           <div className="space-y-2">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center gap-2">
                 <Check className="h-3 w-3 text-gold flex-shrink-0" />
-                <span className="text-xs text-white/70">{feature}</span>
+                <span className="text-xs text-black/60">{feature}</span>
               </div>
             ))}
           </div>
@@ -58,7 +58,7 @@ export default function AreaCard({ title, excerpt, href = '#', features = [] }: 
       
       <Link
         href={href}
-        className="inline-flex items-center mt-4 text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
+        className="inline-flex items-center mt-auto text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
       >
         Ver defensa
         <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />

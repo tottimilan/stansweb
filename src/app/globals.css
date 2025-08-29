@@ -47,6 +47,20 @@ main {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Transiciones lentas y elegantes para las tarjetas */
+.transition-slow {
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.transition-slower {
+  transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Efecto de ease-out más suave para hover */
+.hover-ease-out {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 /* Efecto de glow para letras animadas */
 @keyframes letter-glow {
   0% { 
@@ -79,20 +93,20 @@ main {
   }
 }
 
-/* Efecto de blur para tarjetas de abogados */
+/* Efecto de blur para tarjetas de abogados - versión más lenta */
 .lawyer-cards-container {
-  transition: all 0.3s ease;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.lawyer-cards-container:hover > div:not(:hover) {
-  filter: blur(2px) brightness(0.7) saturate(0.8);
-  transform: scale(0.98);
-  transition: all 0.3s ease;
+.lawyer-cards-container:hover > div:not(:hover):not(.flipped-card) {
+  filter: blur(1.5px) brightness(0.8) saturate(0.9);
+  transform: scale(0.99);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.lawyer-cards-container:hover > div:not(:hover) article {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+.lawyer-cards-container:hover > div:not(:hover):not(.flipped-card) article {
+  opacity: 0.7;
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Asegurar que la tarjeta hover mantenga su efecto original */
@@ -132,4 +146,91 @@ main {
 .lawyer-cards-container > div > div > article {
   height: 100%;
   min-height: 500px;
+}
+
+/* Efectos adicionales para transiciones más elegantes */
+.card-hover-effect {
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(165, 107, 55, 0.2);
+}
+
+/* Efecto de zoom suave para imágenes */
+.image-zoom-effect {
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.image-zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/* Efecto de deslizamiento suave para texto */
+.text-slide-effect {
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.text-slide-effect:hover {
+  transform: translateX(8px);
+}
+
+/* Efecto de escala suave para iconos */
+.icon-scale-effect {
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.icon-scale-effect:hover {
+  transform: scale(1.15);
+}
+
+/* Estilos para tarjetas volteadas */
+.flipped-card {
+  z-index: 20;
+  filter: none !important;
+  transform: none !important;
+}
+
+.flipped-card article {
+  z-index: 20;
+  opacity: 1 !important;
+}
+
+/* Asegurar que las tarjetas volteadas no se vean afectadas por ningún hover */
+.lawyer-cards-container:hover > div.flipped-card {
+  filter: none !important;
+  transform: none !important;
+}
+
+.lawyer-cards-container:hover > div.flipped-card article {
+  opacity: 1 !important;
+}
+
+/* Las tarjetas volteadas no deben cambiar su apariencia */
+.flipped-card:hover {
+  filter: none !important;
+  transform: none !important;
+}
+
+.flipped-card:hover article {
+  opacity: 1 !important;
+}
+
+/* Arabic text support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+/* Arabic font support */
+.arabic-text {
+  font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

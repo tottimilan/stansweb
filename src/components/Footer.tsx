@@ -1,10 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations';
+import LanguageSelector from './LanguageSelector';
 import { Phone, Mail, MapPin, Clock, Shield, Users, Award } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Footer() {
+  const { language } = useLanguage();
+  const t = translations[language];
   return (
     <footer className="bg-black border-t border-gold/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -119,22 +124,23 @@ export default function Footer() {
           className="border-t border-gold/20 mt-8 pt-8"
         />
 
-        {/* Copyright */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-col md:flex-row justify-between items-center text-offwhite/60 text-sm"
-        >
-          <div>
-            <p>&copy; 2024 STANS ABOGADOS. Todos los derechos reservados.</p>
-          </div>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="/legal" className="hover:text-gold transition-colors">Aviso Legal</a>
-            <a href="/privacidad" className="hover:text-gold transition-colors">Política de Privacidad</a>
-            <a href="/cookies" className="hover:text-gold transition-colors">Cookies</a>
-          </div>
-        </motion.div>
+                 {/* Copyright */}
+         <motion.div
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           transition={{ duration: 0.6, delay: 0.5 }}
+           className="flex flex-col md:flex-row justify-between items-center text-offwhite/60 text-sm max-w-5xl mx-auto"
+         >
+           <div>
+             <p>{t.footer.derechos}</p>
+           </div>
+           <div className="flex items-center space-x-4 mt-4 md:mt-0">
+             <a href="/legal" className="hover:text-gold transition-colors">Aviso Legal</a>
+             <a href="/privacidad" className="hover:text-gold transition-colors">{t.footer.privacidad}</a>
+             <a href="/cookies" className="hover:text-gold transition-colors">{t.footer.cookies}</a>
+             <LanguageSelector />
+           </div>
+         </motion.div>
       </div>
     </footer>
   );
