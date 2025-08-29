@@ -106,10 +106,28 @@ export const translations = {
     
     // Stats Section
     stats: {
-      casos: 'Casos Exitosos',
-      clientes: 'Clientes Satisfechos',
-      experiencia: 'Años de Experiencia',
-      victorias: 'Victorias Judiciales'
+      title: 'Nuestros Números y Resultados',
+      subtitle: 'Más de una década de experiencia defendiendo los derechos de nuestros clientes. Resultados que hablan por sí mismos.',
+      casos: {
+        number: '200+',
+        label: 'Casos Exitosos',
+        description: 'Defensas ganadas en tribunales'
+      },
+      experiencia: {
+        number: '15+',
+        label: 'Años de Experiencia',
+        description: 'Especialización en derecho penal'
+      },
+      respuesta: {
+        number: '<15',
+        label: 'Minutos de Respuesta',
+        description: 'Asistencia inmediata 24/7'
+      },
+      idiomas: {
+        number: '3',
+        label: 'Idiomas',
+        description: 'Español, Inglés y Árabe'
+      }
     },
     
     // Contact Section
@@ -298,10 +316,28 @@ export const translations = {
     
     // Stats Section
     stats: {
-      casos: 'قضايا ناجحة',
-      clientes: 'عملاء راضون',
-      experiencia: 'سنوات الخبرة',
-      victorias: 'انتصارات قضائية'
+      title: 'أرقامنا ونتائجنا',
+      subtitle: 'أكثر من عقد من الخبرة في الدفاع عن حقوق عملائنا. نتائج تتحدث عن نفسها.',
+      casos: {
+        number: '200+',
+        label: 'قضايا ناجحة',
+        description: 'دفاعات فازت في المحاكم'
+      },
+      experiencia: {
+        number: '15+',
+        label: 'سنوات الخبرة',
+        description: 'تخصص في القانون الجنائي'
+      },
+      respuesta: {
+        number: '<15',
+        label: 'دقائق الاستجابة',
+        description: 'مساعدة فورية 24/7'
+      },
+      idiomas: {
+        number: '3',
+        label: 'اللغات',
+        description: 'الإسبانية والإنجليزية والعربية'
+      }
     },
     
     // Contact Section

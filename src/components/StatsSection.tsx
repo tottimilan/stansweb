@@ -2,39 +2,45 @@
 
 import { motion } from 'framer-motion';
 import { Users, Award, Clock, Shield } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations';
 
-const stats = [
+const getStats = (t: any) => [
   {
     icon: <Users className="h-8 w-8" />,
-    number: '200+',
-    label: 'Casos Exitosos',
-    description: 'Defensas ganadas en tribunales',
+    number: t.stats.casos.number,
+    label: t.stats.casos.label,
+    description: t.stats.casos.description,
     schemaValue: '200'
   },
   {
     icon: <Award className="h-8 w-8" />,
-    number: '15+',
-    label: 'Años de Experiencia',
-    description: 'Especialización en derecho penal',
+    number: t.stats.experiencia.number,
+    label: t.stats.experiencia.label,
+    description: t.stats.experiencia.description,
     schemaValue: '15'
   },
   {
     icon: <Clock className="h-8 w-8" />,
-    number: '<15',
-    label: 'Minutos de Respuesta',
-    description: 'Asistencia inmediata 24/7',
+    number: t.stats.respuesta.number,
+    label: t.stats.respuesta.label,
+    description: t.stats.respuesta.description,
     schemaValue: '15'
   },
   {
     icon: <Shield className="h-8 w-8" />,
-    number: '3',
-    label: 'Idiomas',
-    description: 'Español, Inglés y Árabe',
+    number: t.stats.idiomas.number,
+    label: t.stats.idiomas.label,
+    description: t.stats.idiomas.description,
     schemaValue: '3'
   }
 ];
 
 export default function StatsSection() {
+  const { language } = useLanguage();
+  const t = translations[language];
+  const stats = getStats(t);
+  
   return (
     <section 
       className="mx-auto max-w-6xl px-6 py-16 text-offwhite stats-section"
@@ -52,11 +58,10 @@ export default function StatsSection() {
           id="stats-title" 
           className="text-3xl font-bold text-gold mb-4"
         >
-          Nuestros Números y Resultados
+          {t.stats.title}
         </h2>
         <p className="text-white/80 text-lg max-w-2xl mx-auto">
-          Más de una década de experiencia defendiendo los derechos de nuestros clientes. 
-          Resultados que hablan por sí mismos.
+          {t.stats.subtitle}
         </p>
       </motion.div>
       
