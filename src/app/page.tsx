@@ -17,87 +17,86 @@ import { translations } from '@/translations';
 
 const WHATSAPP = '34611687226'; // Número real de STANS ABOGADOS
 
-const lawyers = [
+const getLawyers = (t: any) => [
   {
-    name: 'Rubén Vaquero Arribas',
-    role: 'Socio Director',
-    summary:
-      'Penal y penal económico, derechos fundamentales, OEDE y extradiciones. Actúa ante cualquier tribunal con más de 15 años de experiencia.',
-    tags: ['Penal Económico', 'OEDE/Extradiciones', 'Derechos Fundamentales', 'Tribunal Supremo'],
+    name: t.team.ruben.name,
+    role: t.team.ruben.role,
+    summary: t.team.ruben.summary,
+    tags: t.team.ruben.tags,
     languages: ['ES', 'EN'],
-    experience: '15+ años',
+    experience: t.team.ruben.experience,
     image: '/images/Equipo/Ruben1.png',
     hoverImage: '/images/Equipo/Ruben4.png',
     backgroundImage: '/images/Equipo/Ruben3.png',
   },
   {
-    name: 'Mounir Elyemlahy Chouati',
-    role: 'Abogado Penalista',
-    summary:
-      'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones España-Marruecos.',
-    tags: ['Penal', 'Derecho Marroquí', 'Administrativo', 'Extradiciones'],
+    name: t.team.mounir.name,
+    role: t.team.mounir.role,
+    summary: t.team.mounir.summary,
+    tags: t.team.mounir.tags,
     languages: ['ES', 'EN', 'AR'],
-    experience: '12+ años',
+    experience: t.team.mounir.experience,
     image: '/images/Equipo/Mounir1.png',
     hoverImage: '/images/Equipo/Mounir4.png',
     backgroundImage: '/images/Equipo/Mounir3.png',
   },
   {
-    name: 'Diego Cardona Valero',
-    role: 'Abogado Penalista (ICAM 135715)',
-    summary:
-      'Defensa en causas complejas: personas, criminalidad organizada, terrorismo y garantías procesales. Especialista en casos de alta complejidad.',
-    tags: ['Delitos contra las Personas', 'Criminalidad Organizada', 'Garantías Procesales', 'Terrorismo'],
+    name: t.team.diego.name,
+    role: t.team.diego.role,
+    summary: t.team.diego.summary,
+    tags: t.team.diego.tags,
     languages: ['ES'],
-    experience: '10+ años',
+    experience: t.team.diego.experience,
     image: '/images/Equipo/Diego1.png',
     hoverImage: '/images/Equipo/Diego4.png',
     backgroundImage: '/images/Equipo/Diego3.png',
   },
 ];
 
-const areas = [
+const getAreas = (t: any) => [
   { 
-    title: 'Robos y Hurtos', 
-    excerpt: 'Actuamos en guardia, comisaría y juzgado. Respuesta <15 min. Defensa integral desde el primer momento.', 
+    title: t.areas.robosHurtos.title, 
+    excerpt: t.areas.robosHurtos.excerpt, 
     href: '/areas/robos-hurtos',
-    features: ['Actuación inmediata', 'Defensa en comisaría', 'Recursos y apelaciones']
+    features: t.areas.robosHurtos.features
   },
   { 
-    title: 'Tráfico de Drogas', 
-    excerpt: 'Estrategia inmediata y defensa integral en todas las fases. Experiencia en casos complejos.', 
+    title: t.areas.traficoDrogas.title, 
+    excerpt: t.areas.traficoDrogas.excerpt, 
     href: '/areas/drogas',
-    features: ['Estrategia defensiva', 'Pruebas periciales', 'Reducción de penas']
+    features: t.areas.traficoDrogas.features
   },
   { 
-    title: 'Conducción & Alcoholemia', 
-    excerpt: 'Asistencia inmediata, pruebas y plazos clave. Protección de tu carnet de conducir.', 
+    title: t.areas.conduccionAlcoholemia.title, 
+    excerpt: t.areas.conduccionAlcoholemia.excerpt, 
     href: '/areas/alcoholemia-trafico',
-    features: ['Asistencia 24/7', 'Recursos administrativos', 'Defensa judicial']
+    features: t.areas.conduccionAlcoholemia.features
   },
   { 
-    title: 'Violencia de Género', 
-    excerpt: 'Protección y garantías para víctimas y acusados. Defensa especializada con perspectiva de género.', 
+    title: t.areas.violenciaGenero.title, 
+    excerpt: t.areas.violenciaGenero.excerpt, 
     href: '/areas/violencia-genero',
-    features: ['Defensa especializada', 'Medidas cautelares', 'Recursos de apelación']
+    features: t.areas.violenciaGenero.features
   },
   { 
-    title: 'Falsedad Documental', 
-    excerpt: 'Documentos, pasaportes, certificaciones y periciales. Defensa técnica especializada.', 
+    title: t.areas.falsedadDocumental.title, 
+    excerpt: t.areas.falsedadDocumental.excerpt, 
     href: '/areas/falsedad-documental',
-    features: ['Periciales técnicas', 'Defensa documental', 'Recursos especializados']
+    features: t.areas.falsedadDocumental.features
   },
   { 
-    title: 'Delitos Informáticos', 
-    excerpt: 'Hacking, phishing, sextorsión y datos personales. Defensa en la era digital.', 
+    title: t.areas.delitosInformaticos.title, 
+    excerpt: t.areas.delitosInformaticos.excerpt, 
     href: '/areas/delitos-informaticos',
-    features: ['Evidencia digital', 'Periciales informáticas', 'Defensa tecnológica']
+    features: t.areas.delitosInformaticos.features
   },
 ];
 
 export default function Page() {
   const { language } = useLanguage();
   const t = translations[language];
+  const lawyers = getLawyers(t);
+  const areas = getAreas(t);
   const isTeamHighlighted = useScrollHighlight('equipo');
   const isAreasHighlighted = useScrollHighlight('areas');
   const isContactHighlighted = useScrollHighlight('contacto');

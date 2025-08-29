@@ -6,10 +6,10 @@ import { Users, Award, Clock, Shield } from 'lucide-react';
 const stats = [
   {
     icon: <Users className="h-8 w-8" />,
-    number: '1000+',
+    number: '200+',
     label: 'Casos Exitosos',
     description: 'Defensas ganadas en tribunales',
-    schemaValue: '1000'
+    schemaValue: '200'
   },
   {
     icon: <Award className="h-8 w-8" />,

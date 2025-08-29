@@ -14,7 +14,16 @@ export const translations = {
       subtitle: 'ABOGADOS PENALISTAS',
       description: 'Defensa penal especializada en Madrid y toda España',
       location: 'Madrid, España',
-      cta: 'Consulta Gratuita'
+      cta: 'Consulta Gratuita',
+      especialistas: 'Especialistas en Defensa Penal',
+      defensa24h: 'Defensa Penal 24/7\nMadrid y España',
+      descripcionCompleta: 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.',
+      respuesta15min: 'Respuesta < 15 min',
+      espanolArabe: 'Español–Árabe',
+      extradicion: 'Extradición España–Marruecos',
+      penalPuro: 'Penal Puro',
+      abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Árabe | Colegiados ICAM',
+      holaAyuda: 'Hola, necesito ayuda penal urgente.'
     },
     
     // Team Section
@@ -22,20 +31,33 @@ export const translations = {
       title: 'NUESTRO EQUIPO',
       subtitle: 'Abogados especialistas en derecho penal',
       description: 'Contamos con un equipo de abogados penalistas con amplia experiencia en la defensa de casos complejos.',
+      nuestroEquipo: 'Nuestro Equipo de Abogados Penalistas',
+      descripcionCompleta: 'Abogados penalistas especializados con amplia experiencia en casos complejos. Defensa integral en español, inglés y árabe.',
+      consultaEspecifica: '¿Necesitas consultar con un abogado específico?',
+      consultaDescripcion: 'Cada miembro de nuestro equipo tiene especializaciones únicas. Te conectamos con el abogado más adecuado para tu caso.',
+      consultaGratuita: 'Consulta Gratuita',
+      consultaWhatsapp: 'Hola, necesito consultar con un abogado especializado. ¿Pueden ayudarme?',
+      // Datos de los abogados
       ruben: {
-        name: 'Rubén Stans',
-        role: 'Abogado Penalista',
-        description: 'Especialista en delitos económicos y corrupción'
+        name: 'Rubén Vaquero Arribas',
+        role: 'Socio Director',
+        summary: 'Penal y penal económico, derechos fundamentales, OEDE y extradiciones. Actúa ante cualquier tribunal con más de 15 años de experiencia.',
+        tags: ['Penal Económico', 'OEDE/Extradiciones', 'Derechos Fundamentales', 'Tribunal Supremo'],
+        experience: '15+ años'
       },
       mounir: {
-        name: 'Mounir Stans',
+        name: 'Mounir Elyemlahy Chouati',
         role: 'Abogado Penalista',
-        description: 'Experto en delitos contra la libertad sexual'
+        summary: 'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones España-Marruecos.',
+        tags: ['Penal', 'Derecho Marroquí', 'Administrativo', 'Extradiciones'],
+        experience: '12+ años'
       },
       diego: {
-        name: 'Diego Stans',
-        role: 'Abogado Penalista',
-        description: 'Especialista en delitos contra la seguridad vial'
+        name: 'Diego Cardona Valero',
+        role: 'Abogado Penalista (ICAM 135715)',
+        summary: 'Defensa en causas complejas: personas, criminalidad organizada, terrorismo y garantías procesales. Especialista en casos de alta complejidad.',
+        tags: ['Delitos contra las Personas', 'Criminalidad Organizada', 'Garantías Procesales', 'Terrorismo'],
+        experience: '10+ años'
       }
     },
     
@@ -44,45 +66,41 @@ export const translations = {
       title: 'ÁREAS DE DEFENSA PENAL',
       subtitle: 'Especialistas en todas las ramas del derecho penal',
       description: 'Ofrecemos defensa especializada en todos los tipos de delitos penales',
+      areasDefensa: 'Áreas de Defensa Penal',
+      descripcionCompleta: 'Especialistas en todas las ramas del derecho penal. Defensa integral desde el primer momento hasta el final del proceso.',
+      noEncuentras: '¿No encuentras tu caso?',
+      consultanos: 'Consúltanos',
+      casoDiferente: 'Hola, tengo un caso penal diferente. ¿Pueden ayudarme?',
+      // Datos de las áreas penales
+      robosHurtos: {
+        title: 'Robos y Hurtos',
+        excerpt: 'Actuamos en guardia, comisaría y juzgado. Respuesta <15 min. Defensa integral desde el primer momento.',
+        features: ['Actuación inmediata', 'Defensa en comisaría', 'Recursos y apelaciones']
+      },
+      traficoDrogas: {
+        title: 'Tráfico de Drogas',
+        excerpt: 'Estrategia inmediata y defensa integral en todas las fases. Experiencia en casos complejos.',
+        features: ['Estrategia defensiva', 'Pruebas periciales', 'Reducción de penas']
+      },
+      conduccionAlcoholemia: {
+        title: 'Conducción & Alcoholemia',
+        excerpt: 'Asistencia inmediata, pruebas y plazos clave. Protección de tu carnet de conducir.',
+        features: ['Asistencia 24/7', 'Recursos administrativos', 'Defensa judicial']
+      },
       violenciaGenero: {
         title: 'Violencia de Género',
-        description: 'Defensa especializada en casos de violencia doméstica y de género',
-        features: ['Acompañamiento integral', 'Defensa técnica especializada', 'Protección de derechos']
+        excerpt: 'Protección y garantías para víctimas y acusados. Defensa especializada con perspectiva de género.',
+        features: ['Defensa especializada', 'Medidas cautelares', 'Recursos de apelación']
       },
-      alcoholemia: {
-        title: 'Alcoholemia',
-        description: 'Defensa en casos de conducción bajo efectos del alcohol',
-        features: ['Análisis de pruebas', 'Defensa de derechos', 'Minimización de sanciones']
-      },
-      robo: {
-        title: 'Robo y Hurto',
-        description: 'Defensa en casos de apropiación indebida y delitos contra la propiedad',
-        features: ['Análisis de pruebas', 'Defensa técnica', 'Negociación con fiscalía']
-      },
-      drogas: {
-        title: 'Tráfico de Drogas',
-        description: 'Defensa especializada en delitos contra la salud pública',
-        features: ['Análisis de pruebas', 'Defensa técnica', 'Reducción de penas']
-      },
-      falsedad: {
+      falsedadDocumental: {
         title: 'Falsedad Documental',
-        description: 'Defensa en casos de falsificación de documentos y certificaciones',
-        features: ['Análisis documental', 'Defensa técnica', 'Protección de derechos']
+        excerpt: 'Documentos, pasaportes, certificaciones y periciales. Defensa técnica especializada.',
+        features: ['Periciales técnicas', 'Defensa documental', 'Recursos especializados']
       },
-      informaticos: {
+      delitosInformaticos: {
         title: 'Delitos Informáticos',
-        description: 'Defensa en casos de ciberdelincuencia y fraudes digitales',
-        features: ['Análisis técnico', 'Defensa especializada', 'Protección digital']
-      },
-      recursos: {
-        title: 'Recursos Penales',
-        description: 'Presentación y defensa de recursos contra sentencias penales',
-        features: ['Análisis de sentencias', 'Recursos de apelación', 'Defensa técnica']
-      },
-      detenciones: {
-        title: 'Detenciones y Declaraciones',
-        description: 'Asistencia inmediata en casos de detención y declaraciones',
-        features: ['Asistencia 24/7', 'Defensa en comisaría', 'Protección de derechos']
+        excerpt: 'Hacking, phishing, sextorsión y datos personales. Defensa en la era digital.',
+        features: ['Evidencia digital', 'Periciales informáticas', 'Defensa tecnológica']
       }
     },
     
@@ -133,19 +151,6 @@ export const translations = {
     footer: {
       derechos: '© 2024 STANS ABOGADOS. Todos los derechos reservados.',
       privacidad: 'Política de Privacidad',
-      cookies: 'Política de Cookies'
-    },
-    
-    // Language Selector
-    language: {
-      es: 'ES',
-      ar: 'AR'
-    },
-    
-    // Footer
-    footer: {
-      derechos: '© 2024 STANS ABOGADOS. Todos los derechos reservados.',
-      privacidad: 'Política de Privacidad',
       cookies: 'Política de Cookies',
       avisoLegal: 'Aviso Legal',
       descripcion: 'Especialistas en defensa penal con más de 15 años de experiencia. Atención 24/7 en español y árabe.',
@@ -164,102 +169,10 @@ export const translations = {
       atencion24h: 'Atención 24/7'
     },
     
-    // Hero Section Additional
-    hero: {
-      title: 'STANS ABOGADOS',
-      subtitle: 'ABOGADOS PENALISTAS',
-      description: 'Defensa penal especializada en Madrid y toda España',
-      location: 'Madrid, España',
-      cta: 'Consulta Gratuita',
-      especialistas: 'Especialistas en Defensa Penal',
-      defensa24h: 'Defensa Penal 24/7\nMadrid y España',
-      descripcionCompleta: 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.',
-      respuesta15min: 'Respuesta < 15 min',
-      espanolArabe: 'Español–Árabe',
-      extradicion: 'Extradición España–Marruecos',
-      penalPuro: 'Penal Puro',
-      abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Árabe | Colegiados ICAM',
-      holaAyuda: 'Hola, necesito ayuda penal urgente.'
-    },
-    
-    // Team Section Additional
-    team: {
-      title: 'NUESTRO EQUIPO',
-      subtitle: 'Abogados especialistas en derecho penal',
-      description: 'Contamos con un equipo de abogados penalistas con amplia experiencia en la defensa de casos complejos.',
-      nuestroEquipo: 'Nuestro Equipo de Abogados Penalistas',
-      descripcionCompleta: 'Abogados penalistas especializados con amplia experiencia en casos complejos. Defensa integral en español, inglés y árabe.',
-      consultaEspecifica: '¿Necesitas consultar con un abogado específico?',
-      consultaDescripcion: 'Cada miembro de nuestro equipo tiene especializaciones únicas. Te conectamos con el abogado más adecuado para tu caso.',
-      consultaGratuita: 'Consulta Gratuita',
-      consultaWhatsapp: 'Hola, necesito consultar con un abogado especializado. ¿Pueden ayudarme?',
-      ruben: {
-        name: 'Rubén Stans',
-        role: 'Abogado Penalista',
-        description: 'Especialista en delitos económicos y corrupción'
-      },
-      mounir: {
-        name: 'Mounir Stans',
-        role: 'Abogado Penalista',
-        description: 'Experto en delitos contra la libertad sexual'
-      },
-      diego: {
-        name: 'Diego Stans',
-        role: 'Abogado Penalista',
-        description: 'Especialista en delitos contra la seguridad vial'
-      }
-    },
-    
-    // Practice Areas Additional
-    areas: {
-      title: 'ÁREAS DE DEFENSA PENAL',
-      subtitle: 'Especialistas en todas las ramas del derecho penal',
-      description: 'Ofrecemos defensa especializada en todos los tipos de delitos penales',
-      areasDefensa: 'Áreas de Defensa Penal',
-      descripcionCompleta: 'Especialistas en todas las ramas del derecho penal. Defensa integral desde el primer momento hasta el final del proceso.',
-      noEncuentras: '¿No encuentras tu caso?',
-      consultanos: 'Consúltanos',
-      casoDiferente: 'Hola, tengo un caso penal diferente. ¿Pueden ayudarme?',
-      violenciaGenero: {
-        title: 'Violencia de Género',
-        description: 'Defensa especializada en casos de violencia doméstica y de género',
-        features: ['Acompañamiento integral', 'Defensa técnica especializada', 'Protección de derechos']
-      },
-      alcoholemia: {
-        title: 'Alcoholemia',
-        description: 'Defensa en casos de conducción bajo efectos del alcohol',
-        features: ['Análisis de pruebas', 'Defensa de derechos', 'Minimización de sanciones']
-      },
-      robo: {
-        title: 'Robo y Hurto',
-        description: 'Defensa en casos de apropiación indebida y delitos contra la propiedad',
-        features: ['Análisis de pruebas', 'Defensa técnica', 'Negociación con fiscalía']
-      },
-      drogas: {
-        title: 'Tráfico de Drogas',
-        description: 'Defensa especializada en delitos contra la salud pública',
-        features: ['Análisis de pruebas', 'Defensa técnica', 'Reducción de penas']
-      },
-      falsedad: {
-        title: 'Falsedad Documental',
-        description: 'Defensa en casos de falsificación de documentos y certificaciones',
-        features: ['Análisis documental', 'Defensa técnica', 'Protección de derechos']
-      },
-      informaticos: {
-        title: 'Delitos Informáticos',
-        description: 'Defensa en casos de ciberdelincuencia y fraudes digitales',
-        features: ['Análisis técnico', 'Defensa especializada', 'Protección digital']
-      },
-      recursos: {
-        title: 'Recursos Penales',
-        description: 'Presentación y defensa de recursos contra sentencias penales',
-        features: ['Análisis de sentencias', 'Recursos de apelación', 'Defensa técnica']
-      },
-      detenciones: {
-        title: 'Detenciones y Declaraciones',
-        description: 'Asistencia inmediata en casos de detención y declaraciones',
-        features: ['Asistencia 24/7', 'Defensa en comisaría', 'Protección de derechos']
-      }
+    // Language Selector
+    language: {
+      es: 'ES',
+      ar: 'AR'
     },
     
     // Common
@@ -293,7 +206,16 @@ export const translations = {
       subtitle: 'محامون جنائيون',
       description: 'دفاع جنائي متخصص في مدريد وجميع أنحاء إسبانيا',
       location: 'مدريد، إسبانيا',
-      cta: 'استشارة مجانية'
+      cta: 'استشارة مجانية',
+      especialistas: 'متخصصون في الدفاع الجنائي',
+      defensa24h: 'الدفاع الجنائي 24/7\nمدريد وإسبانيا',
+      descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد في أقل من 15 دقيقة.',
+      respuesta15min: 'الرد < 15 دقيقة',
+      espanolArabe: 'الإسبانية–العربية',
+      extradicion: 'تسليم المجرمين إسبانيا–المغرب',
+      penalPuro: 'جنائي خالص',
+      abogadosPenalistas: 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM',
+      holaAyuda: 'مرحباً، أحتاج مساعدة جنائية عاجلة.'
     },
     
     // Team Section
@@ -301,20 +223,33 @@ export const translations = {
       title: 'فريقنا',
       subtitle: 'محامون متخصصون في القانون الجنائي',
       description: 'نمتلك فريقاً من المحاميين الجنائيين ذوي الخبرة الواسعة في الدفاع عن القضايا المعقدة.',
+      nuestroEquipo: 'فريقنا من المحاميين الجنائيين',
+      descripcionCompleta: 'محامون جنائيون متخصصون مع خبرة واسعة في القضايا المعقدة. دفاع شامل باللغات الإسبانية والإنجليزية والعربية.',
+      consultaEspecifica: 'هل تحتاج للاستشارة مع محامي متخصص؟',
+      consultaDescripcion: 'كل عضو في فريقنا لديه تخصصات فريدة. نربطك بالمحامي الأنسب لقضيتك.',
+      consultaGratuita: 'استشارة مجانية',
+      consultaWhatsapp: 'مرحباً، أحتاج للاستشارة مع محامي متخصص. هل يمكنكم مساعدتي؟',
+      // Datos de los abogados
       ruben: {
-        name: 'روبين ستانس',
-        role: 'محامي جنائي',
-        description: 'متخصص في الجرائم الاقتصادية والفساد'
+        name: 'روبين فاكيرو أريباس',
+        role: 'شريك مدير',
+        summary: 'جنائي واقتصادي جنائي، حقوق أساسية، OEDE وتسليم المجرمين. يتصرف أمام أي محكمة مع أكثر من 15 عاماً من الخبرة.',
+        tags: ['الجنائي الاقتصادي', 'OEDE/تسليم المجرمين', 'الحقوق الأساسية', 'المحكمة العليا'],
+        experience: '15+ عاماً'
       },
       mounir: {
-        name: 'منير ستانس',
+        name: 'منير إليملاهي شواتي',
         role: 'محامي جنائي',
-        description: 'خبير في الجرائم ضد الحرية الجنسية'
+        summary: 'جنائي وإداري. استشارة في القانون المغربي للشركات والأفراد. متخصص في تسليم المجرمين إسبانيا-المغرب.',
+        tags: ['الجنائي', 'القانون المغربي', 'الإداري', 'تسليم المجرمين'],
+        experience: '12+ عاماً'
       },
       diego: {
-        name: 'دييغو ستانس',
-        role: 'محامي جنائي',
-        description: 'متخصص في الجرائم ضد أمن الطرق'
+        name: 'دييغو كاردونا فالييرو',
+        role: 'محامي جنائي (ICAM 135715)',
+        summary: 'دفاع في قضايا معقدة: الأشخاص، الجريمة المنظمة، الإرهاب وضمانات الإجراءات. متخصص في القضايا عالية التعقيد.',
+        tags: ['الجرائم ضد الأشخاص', 'الجريمة المنظمة', 'ضمانات الإجراءات', 'الإرهاب'],
+        experience: '10+ عاماً'
       }
     },
     
@@ -323,45 +258,41 @@ export const translations = {
       title: 'مجالات الدفاع الجنائي',
       subtitle: 'متخصصون في جميع فروع القانون الجنائي',
       description: 'نقدم دفاعاً متخصصاً في جميع أنواع الجرائم الجنائية',
+      areasDefensa: 'مجالات الدفاع الجنائي',
+      descripcionCompleta: 'متخصصون في جميع فروع القانون الجنائي. دفاع شامل من اللحظة الأولى حتى نهاية الإجراءات.',
+      noEncuentras: 'هل لا تجد قضيتك؟',
+      consultanos: 'استشرنا',
+      casoDiferente: 'مرحباً، لدي قضية جنائية مختلفة. هل يمكنكم مساعدتي؟',
+      // Datos de las áreas penales
+      robosHurtos: {
+        title: 'السرقة والاختلاس',
+        excerpt: 'نعمل في الحرس، مركز الشرطة والمحكمة. الرد <15 دقيقة. دفاع شامل من اللحظة الأولى.',
+        features: ['تصرف فوري', 'دفاع في مركز الشرطة', 'الطعون والاستئنافات']
+      },
+      traficoDrogas: {
+        title: 'تجارة المخدرات',
+        excerpt: 'استراتيجية فورية ودفاع شامل في جميع المراحل. خبرة في القضايا المعقدة.',
+        features: ['استراتيجية دفاعية', 'الخبرات القضائية', 'تقليل العقوبات']
+      },
+      conduccionAlcoholemia: {
+        title: 'القيادة وتأثير الكحول',
+        excerpt: 'مساعدة فورية، أدلة ومواعيد مهمة. حماية رخصة القيادة.',
+        features: ['مساعدة 24/7', 'طعون إدارية', 'دفاع قضائي']
+      },
       violenciaGenero: {
         title: 'العنف ضد المرأة',
-        description: 'دفاع متخصص في قضايا العنف المنزلي والعنف ضد المرأة',
-        features: ['مرافقة شاملة', 'دفاع تقني متخصص', 'حماية الحقوق']
+        excerpt: 'حماية وضمانات للضحايا والمتهمين. دفاع متخصص مع منظور النوع الاجتماعي.',
+        features: ['دفاع متخصص', 'إجراءات احترازية', 'طعون الاستئناف']
       },
-      alcoholemia: {
-        title: 'قيادة تحت تأثير الكحول',
-        description: 'دفاع في قضايا القيادة تحت تأثير الكحول',
-        features: ['تحليل الأدلة', 'دفاع عن الحقوق', 'تقليل العقوبات']
-      },
-      robo: {
-        title: 'السرقة والاختلاس',
-        description: 'دفاع في قضايا الاختلاس والجرائم ضد الملكية',
-        features: ['تحليل الأدلة', 'دفاع تقني', 'تفاوض مع النيابة']
-      },
-      drogas: {
-        title: 'تجارة المخدرات',
-        description: 'دفاع متخصص في الجرائم ضد الصحة العامة',
-        features: ['تحليل الأدلة', 'دفاع تقني', 'تقليل العقوبات']
-      },
-      falsedad: {
+      falsedadDocumental: {
         title: 'تزوير المستندات',
-        description: 'دفاع في قضايا تزوير المستندات والشهادات',
-        features: ['تحليل المستندات', 'دفاع تقني', 'حماية الحقوق']
+        excerpt: 'مستندات، جوازات سفر، شهادات وخبرات. دفاع تقني متخصص.',
+        features: ['خبرات تقنية', 'دفاع مستندي', 'طعون متخصصة']
       },
-      informaticos: {
+      delitosInformaticos: {
         title: 'الجرائم الإلكترونية',
-        description: 'دفاع في قضايا الجرائم السيبرانية والاحتيال الرقمي',
-        features: ['تحليل تقني', 'دفاع متخصص', 'حماية رقمية']
-      },
-      recursos: {
-        title: 'الطعون الجنائية',
-        description: 'تقديم والدفاع عن الطعون ضد الأحكام الجنائية',
-        features: ['تحليل الأحكام', 'طعون الاستئناف', 'دفاع تقني']
-      },
-      detenciones: {
-        title: 'الاعتقالات والتصريحات',
-        description: 'مساعدة فورية في حالات الاعتقال والتصريحات',
-        features: ['مساعدة 24/7', 'دفاع في مركز الشرطة', 'حماية الحقوق']
+        excerpt: 'القرصنة، التصيد، الابتزاز الجنسي والبيانات الشخصية. دفاع في العصر الرقمي.',
+        features: ['أدلة رقمية', 'خبرات معلوماتية', 'دفاع تقني']
       }
     },
     
@@ -412,19 +343,6 @@ export const translations = {
     footer: {
       derechos: '© 2024 ستانس أبودادوس. جميع الحقوق محفوظة.',
       privacidad: 'سياسة الخصوصية',
-      cookies: 'سياسة ملفات تعريف الارتباط'
-    },
-    
-    // Language Selector
-    language: {
-      es: 'إسباني',
-      ar: 'عربي'
-    },
-    
-    // Footer
-    footer: {
-      derechos: '© 2024 ستانس أبودادوس. جميع الحقوق محفوظة.',
-      privacidad: 'سياسة الخصوصية',
       cookies: 'سياسة ملفات تعريف الارتباط',
       avisoLegal: 'إشعار قانوني',
       descripcion: 'متخصصون في الدفاع الجنائي مع أكثر من 15 عاماً من الخبرة. خدمة 24/7 باللغتين الإسبانية والعربية.',
@@ -443,102 +361,10 @@ export const translations = {
       atencion24h: 'الاهتمام 24/7'
     },
     
-    // Hero Section Additional
-    hero: {
-      title: 'ستانس أبودادوس',
-      subtitle: 'محامون جنائيون',
-      description: 'دفاع جنائي متخصص في مدريد وجميع أنحاء إسبانيا',
-      location: 'مدريد، إسبانيا',
-      cta: 'استشارة مجانية',
-      especialistas: 'متخصصون في الدفاع الجنائي',
-      defensa24h: 'الدفاع الجنائي 24/7\nمدريد وإسبانيا',
-      descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد في أقل من 15 دقيقة.',
-      respuesta15min: 'الرد < 15 دقيقة',
-      espanolArabe: 'الإسبانية–العربية',
-      extradicion: 'تسليم المجرمين إسبانيا–المغرب',
-      penalPuro: 'جنائي خالص',
-      abogadosPenalistas: 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM',
-      holaAyuda: 'مرحباً، أحتاج مساعدة جنائية عاجلة.'
-    },
-    
-    // Team Section Additional
-    team: {
-      title: 'فريقنا',
-      subtitle: 'محامون متخصصون في القانون الجنائي',
-      description: 'نمتلك فريقاً من المحاميين الجنائيين ذوي الخبرة الواسعة في الدفاع عن القضايا المعقدة.',
-      nuestroEquipo: 'فريقنا من المحاميين الجنائيين',
-      descripcionCompleta: 'محامون جنائيون متخصصون مع خبرة واسعة في القضايا المعقدة. دفاع شامل باللغات الإسبانية والإنجليزية والعربية.',
-      consultaEspecifica: 'هل تحتاج للاستشارة مع محامي متخصص؟',
-      consultaDescripcion: 'كل عضو في فريقنا لديه تخصصات فريدة. نربطك بالمحامي الأنسب لقضيتك.',
-      consultaGratuita: 'استشارة مجانية',
-      consultaWhatsapp: 'مرحباً، أحتاج للاستشارة مع محامي متخصص. هل يمكنكم مساعدتي؟',
-      ruben: {
-        name: 'روبين ستانس',
-        role: 'محامي جنائي',
-        description: 'متخصص في الجرائم الاقتصادية والفساد'
-      },
-      mounir: {
-        name: 'منير ستانس',
-        role: 'محامي جنائي',
-        description: 'خبير في الجرائم ضد الحرية الجنسية'
-      },
-      diego: {
-        name: 'دييغو ستانس',
-        role: 'محامي جنائي',
-        description: 'متخصص في الجرائم ضد أمن الطرق'
-      }
-    },
-    
-    // Practice Areas Additional
-    areas: {
-      title: 'مجالات الدفاع الجنائي',
-      subtitle: 'متخصصون في جميع فروع القانون الجنائي',
-      description: 'نقدم دفاعاً متخصصاً في جميع أنواع الجرائم الجنائية',
-      areasDefensa: 'مجالات الدفاع الجنائي',
-      descripcionCompleta: 'متخصصون في جميع فروع القانون الجنائي. دفاع شامل من اللحظة الأولى حتى نهاية الإجراءات.',
-      noEncuentras: 'هل لا تجد قضيتك؟',
-      consultanos: 'استشرنا',
-      casoDiferente: 'مرحباً، لدي قضية جنائية مختلفة. هل يمكنكم مساعدتي؟',
-      violenciaGenero: {
-        title: 'العنف ضد المرأة',
-        description: 'دفاع متخصص في قضايا العنف المنزلي والعنف ضد المرأة',
-        features: ['مرافقة شاملة', 'دفاع تقني متخصص', 'حماية الحقوق']
-      },
-      alcoholemia: {
-        title: 'قيادة تحت تأثير الكحول',
-        description: 'دفاع في قضايا القيادة تحت تأثير الكحول',
-        features: ['تحليل الأدلة', 'دفاع عن الحقوق', 'تقليل العقوبات']
-      },
-      robo: {
-        title: 'السرقة والاختلاس',
-        description: 'دفاع في قضايا الاختلاس والجرائم ضد الملكية',
-        features: ['تحليل الأدلة', 'دفاع تقني', 'تفاوض مع النيابة']
-      },
-      drogas: {
-        title: 'تجارة المخدرات',
-        description: 'دفاع متخصص في الجرائم ضد الصحة العامة',
-        features: ['تحليل الأدلة', 'دفاع تقني', 'تقليل العقوبات']
-      },
-      falsedad: {
-        title: 'تزوير المستندات',
-        description: 'دفاع في قضايا تزوير المستندات والشهادات',
-        features: ['تحليل المستندات', 'دفاع تقني', 'حماية الحقوق']
-      },
-      informaticos: {
-        title: 'الجرائم الإلكترونية',
-        description: 'دفاع في قضايا الجرائم السيبرانية والاحتيال الرقمي',
-        features: ['تحليل تقني', 'دفاع متخصص', 'حماية رقمية']
-      },
-      recursos: {
-        title: 'الطعون الجنائية',
-        description: 'تقديم والدفاع عن الطعون ضد الأحكام الجنائية',
-        features: ['تحليل الأحكام', 'طعون الاستئناف', 'دفاع تقني']
-      },
-      detenciones: {
-        title: 'الاعتقالات والتصريحات',
-        description: 'مساعدة فورية في حالات الاعتقال والتصريحات',
-        features: ['مساعدة 24/7', 'دفاع في مركز الشرطة', 'حماية الحقوق']
-      }
+    // Language Selector
+    language: {
+      es: 'إسباني',
+      ar: 'عربي'
     },
     
     // Common
