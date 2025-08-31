@@ -55,40 +55,40 @@ const getLawyers = (t: any) => [
 
 const getAreas = (t: any) => [
   { 
-    title: t.areas.robosHurtos.title, 
-    excerpt: t.areas.robosHurtos.excerpt, 
-    href: '/areas/robos-hurtos',
-    features: t.areas.robosHurtos.features
+    title: t.areas.libertadExpresion.title, 
+    excerpt: t.areas.libertadExpresion.excerpt, 
+    href: '/casos',
+    features: t.areas.libertadExpresion.features
   },
   { 
-    title: t.areas.traficoDrogas.title, 
-    excerpt: t.areas.traficoDrogas.excerpt, 
-    href: '/areas/drogas',
-    features: t.areas.traficoDrogas.features
+    title: t.areas.terrorismo.title, 
+    excerpt: t.areas.terrorismo.excerpt, 
+    href: '/casos',
+    features: t.areas.terrorismo.features
   },
   { 
-    title: t.areas.conduccionAlcoholemia.title, 
-    excerpt: t.areas.conduccionAlcoholemia.excerpt, 
-    href: '/areas/alcoholemia-trafico',
-    features: t.areas.conduccionAlcoholemia.features
+    title: t.areas.delitosPersonas.title, 
+    excerpt: t.areas.delitosPersonas.excerpt, 
+    href: '/casos',
+    features: t.areas.delitosPersonas.features
   },
   { 
-    title: t.areas.violenciaGenero.title, 
-    excerpt: t.areas.violenciaGenero.excerpt, 
-    href: '/areas/violencia-genero',
-    features: t.areas.violenciaGenero.features
+    title: t.areas.robosPatrimonio.title, 
+    excerpt: t.areas.robosPatrimonio.excerpt, 
+    href: '/casos',
+    features: t.areas.robosPatrimonio.features
   },
   { 
-    title: t.areas.falsedadDocumental.title, 
-    excerpt: t.areas.falsedadDocumental.excerpt, 
-    href: '/areas/falsedad-documental',
-    features: t.areas.falsedadDocumental.features
+    title: t.areas.delitosEconomicos.title, 
+    excerpt: t.areas.delitosEconomicos.excerpt, 
+    href: '/casos',
+    features: t.areas.delitosEconomicos.features
   },
   { 
-    title: t.areas.delitosInformaticos.title, 
-    excerpt: t.areas.delitosInformaticos.excerpt, 
-    href: '/areas/delitos-informaticos',
-    features: t.areas.delitosInformaticos.features
+    title: t.areas.ordenPublico.title, 
+    excerpt: t.areas.ordenPublico.excerpt, 
+    href: '/casos',
+    features: t.areas.ordenPublico.features
   },
 ];
 

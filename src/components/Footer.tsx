@@ -102,7 +102,7 @@ export default function Footer() {
               </div>
               <div className="text-offwhite/80 text-sm text-center sm:text-left">
                 <p className="font-medium text-gold text-xs sm:text-sm">{t.footer.idiomas}</p>
-                <p className="text-xs sm:text-sm">Español • Inglés • Francés • Árabe</p>
+                <p className="text-xs sm:text-sm">{t.footer.espanolArabeIngles}</p>
               </div>
 
             </div>

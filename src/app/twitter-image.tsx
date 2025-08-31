@@ -102,7 +102,7 @@ export default async function Image() {
                 boxShadow: '0 4px 12px rgba(165, 107, 55, 0.2)',
               }}
             >
-              🌍 Español–Árabe
+              🌍 Español-Inglés-Árabe
             </div>
           </div>
           <div

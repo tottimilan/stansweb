@@ -5,6 +5,7 @@ export const translations = {
       inicio: 'Inicio',
       areas: 'Áreas',
       equipo: 'Equipo',
+      casos: 'Casos',
       contacto: 'Contacto'
     },
     
@@ -17,12 +18,12 @@ export const translations = {
       cta: 'Consulta Gratuita',
       especialistas: 'Especialistas en Defensa Penal',
       defensa24h: 'Defensa Penal 24/7\nMadrid y España',
-      descripcionCompleta: 'Especialistas en Derecho Penal. Español–Árabe. Respondemos en menos de 15 minutos.',
+      descripcionCompleta: 'Especialistas en Derecho Penal. Español-Inglés-Árabe. Respondemos en menos de 15 minutos.',
              respuesta15min: 'Respuesta < 1 hr urgencias',
-      espanolArabe: 'Español–Árabe',
+      espanolArabeIngles: 'Español-Inglés-Árabe',
                   extradicion: 'Extradiciones',
       penalPuro: 'Penal Puro',
-      abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Árabe | Colegiados ICAM',
+      abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Inglés/Árabe | Colegiados ICAM',
       holaAyuda: 'Hola, necesito ayuda penal urgente.'
     },
     
@@ -72,35 +73,35 @@ export const translations = {
       consultanos: 'Consúltanos',
       casoDiferente: 'Hola, tengo un caso penal diferente. ¿Pueden ayudarme?',
       // Datos de las áreas penales
-      robosHurtos: {
-        title: 'Robos y Hurtos',
-        excerpt: 'Actuamos en guardia, comisaría y juzgado. Respuesta <15 min. Defensa integral desde el primer momento.',
-        features: ['Actuación inmediata', 'Defensa en comisaría', 'Recursos y apelaciones']
+      libertadExpresion: {
+        title: 'Libertad de expresión y delitos de odio',
+        excerpt: 'Defensa especializada en casos de libertad de expresión, delitos de odio y discriminación. Protección de derechos fundamentales.',
+        features: ['Delitos de odio y discriminación', 'Ofensa a sentimientos religiosos', 'Injurias y calumnias', 'Discurso de odio online']
       },
-      traficoDrogas: {
-        title: 'Tráfico de Drogas',
-        excerpt: 'Estrategia inmediata y defensa integral en todas las fases. Experiencia en casos complejos.',
-        features: ['Estrategia defensiva', 'Pruebas periciales', 'Reducción de penas']
+      terrorismo: {
+        title: 'Terrorismo (Audiencia Nacional)',
+        excerpt: 'Defensa especializada ante la Audiencia Nacional en casos de terrorismo. Experiencia en casos de alta complejidad.',
+        features: ['Enaltecimiento del terrorismo', 'Captación y adoctrinamiento', 'Financiación del terrorismo', 'Terrorismo en Internet']
       },
-      conduccionAlcoholemia: {
-        title: 'Conducción & Alcoholemia',
-        excerpt: 'Asistencia inmediata, pruebas y plazos clave. Protección de tu carnet de conducir.',
-        features: ['Asistencia 24/7', 'Recursos administrativos', 'Defensa judicial']
+      delitosPersonas: {
+        title: 'Delitos contra las personas',
+        excerpt: 'Defensa integral en casos de violencia contra las personas. Protección de derechos y garantías procesales.',
+        features: ['Homicidio y lesiones', 'Amenazas y coacciones', 'Detención ilegal', 'Violencia e intimidación']
       },
-      violenciaGenero: {
-        title: 'Violencia de Género',
-        excerpt: 'Protección y garantías para víctimas y acusados. Defensa especializada con perspectiva de género.',
-        features: ['Defensa especializada', 'Medidas cautelares', 'Recursos de apelación']
+      robosPatrimonio: {
+        title: 'Robos, patrimonio y crimen organizado',
+        excerpt: 'Defensa especializada en delitos contra el patrimonio y crimen organizado. Estrategia integral desde la detención.',
+        features: ['Robo con violencia', 'Robo con fuerza', 'Organización criminal', 'Hurtos y receptación']
       },
-      falsedadDocumental: {
-        title: 'Falsedad Documental',
-        excerpt: 'Documentos, pasaportes, certificaciones y periciales. Defensa técnica especializada.',
-        features: ['Periciales técnicas', 'Defensa documental', 'Recursos especializados']
+      delitosEconomicos: {
+        title: 'Delitos económicos y laborales',
+        excerpt: 'Asesoría penal especializada en delitos económicos y laborales. Defensa técnica en casos complejos.',
+        features: ['Estafa y fraudes', 'Blanqueo de capitales', 'Derechos de trabajadores', 'Delitos societarios']
       },
-      delitosInformaticos: {
-        title: 'Delitos Informáticos',
-        excerpt: 'Hacking, phishing, sextorsión y datos personales. Defensa en la era digital.',
-        features: ['Evidencia digital', 'Periciales informáticas', 'Defensa tecnológica']
+      ordenPublico: {
+        title: 'Orden público, drogas y ejecución penal',
+        excerpt: 'Defensa en casos de orden público, drogas y ejecución penal. Asesoramiento integral en todas las fases.',
+        features: ['Resistencia a la autoridad', 'Delitos contra la salud pública', 'Medidas cautelares', 'Ejecución penal']
       }
     },
     
@@ -183,7 +184,7 @@ export const translations = {
       disponible24h: '24/7 Disponible',
       emergencias: 'Emergencias penales',
       idiomas: 'Idiomas',
-      espanolArabe: 'Español • Árabe',
+      espanolArabeIngles: 'Español • Inglés • Árabe',
              respuestaTiempo: 'Menos de 1 hora',
       atencion24h: 'Atención 24/7'
     },
@@ -207,6 +208,83 @@ export const translations = {
       contactarWhatsapp: 'Contactar por WhatsApp para consulta gratuita',
       consultarCaso: 'Consultar caso penal específico por WhatsApp',
       idiomas: 'Idiomas'
+    },
+
+    // Cases Page
+    casos: {
+      title: 'Casos y Resultados',
+      subtitle: 'Descubre algunos de nuestros casos más destacados y los resultados obtenidos para nuestros clientes.',
+      stats: {
+        casosExitosos: '200+ Casos Exitosos',
+        anosExperiencia: '15+ Años Experiencia',
+        defensaEspecializada: 'Defensa Especializada'
+      },
+      filtros: {
+        title: 'Filtrar por categoría:',
+        todasCategorias: 'Todas las categorías',
+        noEncontrados: 'No se encontraron casos para esta categoría.'
+      },
+      casos: {
+        verDetalles: 'Ver detalles',
+        casoPopular: 'Caso Popular',
+        resultado: 'Resultado:',
+        organo: 'Órgano:',
+        tipo: 'Tipo:'
+      },
+      cta: {
+        title: '¿Tienes un caso similar?',
+        description: 'Nuestro equipo de abogados penalistas está listo para defender tus derechos. Consulta gratuita disponible 24/7.',
+        consultarCaso: 'Consultar tu caso',
+        llamarAhora: 'Llamar Ahora'
+      },
+      privacidad: {
+        title: 'Nota de Privacidad',
+        description: 'Por motivos de confidencialidad y protección de datos, solo se muestran en esta web una selección representativa de nuestros casos. Si necesitas más ejemplos específicos o tienes un caso similar, no dudes en consultarlo directamente con nuestro equipo.',
+        consultarEquipo: 'Consultar con nuestro equipo'
+      }
+    },
+
+    // Individual Case Page
+    caso: {
+      volverCasos: 'Volver a casos',
+      casoNoEncontrado: 'Caso no encontrado',
+      casoPopular: 'Caso Popular',
+      botones: {
+        fichaRapida: 'Ficha Rápida',
+        expandirTodas: 'Expandir todas las secciones',
+        comprimirTodas: 'Comprimir todas las secciones'
+      },
+      secciones: {
+        resumen: 'Resumen',
+        hechos: 'Hechos',
+        estrategia: 'Estrategia de Defensa',
+        pruebas: 'Pruebas Clave',
+        resolucion: 'Resolución',
+        marcoLegal: 'Marco Legal',
+        imagenes: 'Imágenes del Expediente',
+        enlaces: 'Enlaces y Notas'
+      },
+      fichaRapida: {
+        title: 'Ficha Rápida',
+        categoria: 'Categoría',
+        delitoPrincipal: 'Delito Principal',
+        resultado: 'Resultado',
+        tipoResolucion: 'Tipo de Resolución',
+        faseProcesal: 'Fase Procesal',
+        medidasCautelares: 'Medidas Cautelares',
+        observaciones: 'Observaciones',
+        etiquetas: 'Etiquetas'
+      },
+      enlaces: {
+        noticiasRelacionadas: 'Noticias relacionadas:',
+        enlacesOficiales: 'Enlaces oficiales:',
+        verNoticia: 'Ver noticia'
+      },
+      privacidad: {
+        title: 'Nota de Privacidad',
+        description: 'Por motivos de confidencialidad y protección de datos, solo se muestran en esta web una selección representativa de nuestros casos. Si necesitas más ejemplos específicos o tienes un caso similar, no dudes en consultarlo directamente con nuestro equipo.',
+        consultarEquipo: 'Consultar con nuestro equipo'
+      }
     }
   },
   
@@ -216,6 +294,7 @@ export const translations = {
       inicio: 'الرئيسية',
       areas: 'المجالات',
       equipo: 'الفريق',
+      casos: 'القضايا',
       contacto: 'اتصل بنا'
     },
     
@@ -228,9 +307,9 @@ export const translations = {
       cta: 'استشارة مجانية',
       especialistas: 'متخصصون في الدفاع الجنائي',
       defensa24h: 'الدفاع الجنائي 24/7\nمدريد وإسبانيا',
-      descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد في أقل من 15 دقيقة.',
+      descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–الإنجليزية–العربية. نرد في أقل من 15 دقيقة.',
              respuesta15min: 'الرد < 1 ساعة طوارئ',
-      espanolArabe: 'الإسبانية–العربية',
+      espanolArabeIngles: 'الإسبانية–الإنجليزية–العربية',
                   extradicion: 'تسليم المجرمين',
       penalPuro: 'جنائي خالص',
       abogadosPenalistas: 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM',
@@ -283,35 +362,35 @@ export const translations = {
       consultanos: 'استشرنا',
       casoDiferente: 'مرحباً، لدي قضية جنائية مختلفة. هل يمكنكم مساعدتي؟',
       // Datos de las áreas penales
-      robosHurtos: {
-        title: 'السرقة والاختلاس',
-        excerpt: 'نعمل في الحرس، مركز الشرطة والمحكمة. الرد <15 دقيقة. دفاع شامل من اللحظة الأولى.',
-        features: ['تصرف فوري', 'دفاع في مركز الشرطة', 'الطعون والاستئنافات']
+      libertadExpresion: {
+        title: 'حرية التعبير وجرائم الكراهية',
+        excerpt: 'دفاع متخصص في قضايا حرية التعبير وجرائم الكراهية والتمييز. حماية الحقوق الأساسية.',
+        features: ['جرائم الكراهية والتمييز', 'إهانة المشاعر الدينية', 'القذف والافتراء', 'خطاب الكراهية عبر الإنترنت']
       },
-      traficoDrogas: {
-        title: 'تجارة المخدرات',
-        excerpt: 'استراتيجية فورية ودفاع شامل في جميع المراحل. خبرة في القضايا المعقدة.',
-        features: ['استراتيجية دفاعية', 'الخبرات القضائية', 'تقليل العقوبات']
+      terrorismo: {
+        title: 'الإرهاب (المحكمة الوطنية)',
+        excerpt: 'دفاع متخصص أمام المحكمة الوطنية في قضايا الإرهاب. خبرة في القضايا عالية التعقيد.',
+        features: ['تمجيد الإرهاب', 'التجنيد والتلقين الجهادي', 'تمويل الإرهاب', 'الإرهاب عبر الإنترنت']
       },
-      conduccionAlcoholemia: {
-        title: 'القيادة وتأثير الكحول',
-        excerpt: 'مساعدة فورية، أدلة ومواعيد مهمة. حماية رخصة القيادة.',
-        features: ['مساعدة 24/7', 'طعون إدارية', 'دفاع قضائي']
+      delitosPersonas: {
+        title: 'الجرائم ضد الأشخاص',
+        excerpt: 'دفاع شامل في قضايا العنف ضد الأشخاص. حماية الحقوق وضمانات الإجراءات.',
+        features: ['القتل والإصابات', 'التهديدات والإكراه', 'الاعتقال غير القانوني', 'العنف والتخويف']
       },
-      violenciaGenero: {
-        title: 'العنف ضد المرأة',
-        excerpt: 'حماية وضمانات للضحايا والمتهمين. دفاع متخصص مع منظور النوع الاجتماعي.',
-        features: ['دفاع متخصص', 'إجراءات احترازية', 'طعون الاستئناف']
+      robosPatrimonio: {
+        title: 'السرقة والممتلكات والجريمة المنظمة',
+        excerpt: 'دفاع متخصص في الجرائم ضد الممتلكات والجريمة المنظمة. استراتيجية شاملة من الاعتقال.',
+        features: ['السرقة مع العنف', 'السرقة بالقوة', 'المنظمات الإجرامية', 'الاختلاس والاستقبال']
       },
-      falsedadDocumental: {
-        title: 'تزوير المستندات',
-        excerpt: 'مستندات، جوازات سفر، شهادات وخبرات. دفاع تقني متخصص.',
-        features: ['خبرات تقنية', 'دفاع مستندي', 'طعون متخصصة']
+      delitosEconomicos: {
+        title: 'الجرائم الاقتصادية والعمالية',
+        excerpt: 'استشارة جنائية متخصصة في الجرائم الاقتصادية والعمالية. دفاع تقني في القضايا المعقدة.',
+        features: ['الاحتيال والغش', 'غسيل الأموال', 'حقوق العمال', 'الجرائم المجتمعية']
       },
-      delitosInformaticos: {
-        title: 'الجرائم الإلكترونية',
-        excerpt: 'القرصنة، التصيد، الابتزاز الجنسي والبيانات الشخصية. دفاع في العصر الرقمي.',
-        features: ['أدلة رقمية', 'خبرات معلوماتية', 'دفاع تقني']
+      ordenPublico: {
+        title: 'النظام العام والمخدرات والتنفيذ الجنائي',
+        excerpt: 'دفاع في قضايا النظام العام والمخدرات والتنفيذ الجنائي. استشارة شاملة في جميع المراحل.',
+        features: ['مقاومة السلطة', 'الجرائم ضد الصحة العامة', 'الإجراءات الاحترازية', 'التنفيذ الجنائي']
       }
     },
     
@@ -394,7 +473,7 @@ export const translations = {
       disponible24h: 'متاح 24/7',
       emergencias: 'الطوارئ الجنائية',
       idiomas: 'اللغات',
-      espanolArabe: 'الإسبانية • العربية',
+      espanolArabeIngles: 'الإسبانية • الإنجليزية • العربية',
              respuestaTiempo: 'أقل من ساعة واحدة',
       atencion24h: 'الاهتمام 24/7'
     },
@@ -418,6 +497,83 @@ export const translations = {
       contactarWhatsapp: 'تواصل عبر واتساب للحصول على استشارة مجانية',
       consultarCaso: 'استشر قضية جنائية محددة عبر واتساب',
       idiomas: 'اللغات'
+    },
+
+    // Cases Page
+    casos: {
+      title: 'القضايا والنتائج',
+      subtitle: 'اكتشف بعض من أبرز قضايانا والنتائج التي حصلنا عليها لعملائنا.',
+      stats: {
+        casosExitosos: '200+ قضية ناجحة',
+        anosExperiencia: '15+ سنوات خبرة',
+        defensaEspecializada: 'دفاع متخصص'
+      },
+      filtros: {
+        title: 'تصفية حسب الفئة:',
+        todasCategorias: 'جميع الفئات',
+        noEncontrados: 'لم يتم العثور على قضايا لهذه الفئة.'
+      },
+      casos: {
+        verDetalles: 'عرض التفاصيل',
+        casoPopular: 'قضية شائعة',
+        resultado: 'النتيجة:',
+        organo: 'الجهة:',
+        tipo: 'النوع:'
+      },
+      cta: {
+        title: 'هل لديك قضية مماثلة؟',
+        description: 'فريقنا من المحاميين الجنائيين مستعد للدفاع عن حقوقك. استشارة مجانية متاحة 24/7.',
+        consultarCaso: 'استشارة قضيتك',
+        llamarAhora: 'اتصل الآن'
+      },
+      privacidad: {
+        title: 'ملاحظة الخصوصية',
+        description: 'لأسباب السرية وحماية البيانات، يتم عرض مجموعة تمثيلية فقط من قضايانا في هذا الموقع. إذا كنت تحتاج إلى المزيد من الأمثلة المحددة أو لديك قضية مماثلة، لا تتردد في استشارتها مباشرة مع فريقنا.',
+        consultarEquipo: 'استشارة فريقنا'
+      }
+    },
+
+    // Individual Case Page
+    caso: {
+      volverCasos: 'العودة إلى القضايا',
+      casoNoEncontrado: 'القضية غير موجودة',
+      casoPopular: 'قضية شائعة',
+      botones: {
+        fichaRapida: 'البطاقة السريعة',
+        expandirTodas: 'توسيع جميع الأقسام',
+        comprimirTodas: 'ضغط جميع الأقسام'
+      },
+      secciones: {
+        resumen: 'الملخص',
+        hechos: 'الوقائع',
+        estrategia: 'استراتيجية الدفاع',
+        pruebas: 'الأدلة الرئيسية',
+        resolucion: 'القرار',
+        marcoLegal: 'الإطار القانوني',
+        imagenes: 'صور الملف',
+        enlaces: 'الروابط والملاحظات'
+      },
+      fichaRapida: {
+        title: 'البطاقة السريعة',
+        categoria: 'الفئة',
+        delitoPrincipal: 'الجريمة الرئيسية',
+        resultado: 'النتيجة',
+        tipoResolucion: 'نوع القرار',
+        faseProcesal: 'المرحلة الإجرائية',
+        medidasCautelares: 'الإجراءات الاحترازية',
+        observaciones: 'الملاحظات',
+        etiquetas: 'العلامات'
+      },
+      enlaces: {
+        noticiasRelacionadas: 'الأخبار ذات الصلة:',
+        enlacesOficiales: 'الروابط الرسمية:',
+        verNoticia: 'عرض الخبر'
+      },
+      privacidad: {
+        title: 'ملاحظة الخصوصية',
+        description: 'لأسباب السرية وحماية البيانات، يتم عرض مجموعة تمثيلية فقط من قضايانا في هذا الموقع. إذا كنت تحتاج إلى المزيد من الأمثلة المحددة أو لديك قضية مماثلة، لا تتردد في استشارتها مباشرة مع فريقنا.',
+        consultarEquipo: 'استشارة فريقنا'
+      }
     }
   }
 };

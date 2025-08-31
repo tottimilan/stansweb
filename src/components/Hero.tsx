@@ -84,12 +84,12 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
               </motion.h1>
 
                              <AnimatedText
-                 text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–العربية. نرد على الطوارئ في أقل من ساعة واحدة.' : 'Especialistas en Derecho Penal. Español–Árabe. Respondemos urgencias en menos de 1 hora.'}
+                 text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–الإنجليزية–العربية. نرد على الطوارئ في أقل من ساعة واحدة.' : 'Especialistas en Derecho Penal. Español-Inglés-Árabe. Respondemos urgencias en menos de 1 hora.'}
                  className="mt-4 text-white text-lg block sm:block md:hidden"
                  delay={0.2}
                />
                <AnimatedText
-                 text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–العربية.' : 'Especialistas en Derecho Penal. Español–Árabe.'}
+                 text={language === 'ar' ? 'متخصصون في القانون الجنائي. الإسبانية–الإنجليزية–العربية.' : 'Especialistas en Derecho Penal. Español-Inglés-Árabe.'}
                  className="mt-4 text-white text-lg hidden md:block"
                  delay={0.2}
                />
@@ -148,7 +148,7 @@ export default function Hero({ whatsapp = '34611687226' }: Props) {
                   role="listitem"
                 >
                   <Languages className="h-4 w-4 mr-3 text-gold" aria-hidden="true" />
-                  <span className="text-sm">{t.hero.espanolArabe}</span>
+                  <span className="text-sm">{t.hero.espanolArabeIngles}</span>
                 </div>
                 <div 
                   className="flex items-center text-white p-3 bg-charleston/50 rounded-lg border border-gold/10"

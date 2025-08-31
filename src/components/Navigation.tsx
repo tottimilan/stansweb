@@ -22,6 +22,7 @@ export default function Navigation() {
     { name: t.nav.inicio, href: '#inicio' },
     { name: t.nav.equipo, href: '#equipo' },
     { name: t.nav.areas, href: '#areas' },
+    { name: t.nav.casos, href: '/casos' },
     { name: 'Contacto', href: '#contacto' },
   ];
 
@@ -37,6 +38,12 @@ export default function Navigation() {
     // Cerrar el menú móvil si está abierto
     if (isOpen) {
       setIsOpen(false);
+    }
+    
+    // Si estamos en una página diferente a la principal, redirigir
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${targetId}`;
+      return;
     }
     
     // Esperar un poco para que el menú se cierre antes de hacer scroll
@@ -108,7 +115,7 @@ export default function Navigation() {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0"
           >
-            <a href="#inicio" className="block hover:opacity-80 transition-opacity duration-200">
+            <a href="/" className="block hover:opacity-80 transition-opacity duration-200">
               <Image
                 src="/images/logos/logo-horizontal.png"
                 alt="STANS ABOGADOS"
@@ -132,7 +139,10 @@ export default function Navigation() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="text-offwhite hover:text-gold px-3 py-2 text-sm font-medium transition-colors duration-200"
                   onClick={(e) => {
-                    if (item.name === 'Contacto') {
+                    if (item.href.startsWith('/')) {
+                      // Enlace externo - no hacer scroll
+                      return;
+                    } else if (item.name === 'Contacto') {
                       handleContactClick();
                       const targetId = item.href.replace('#', '');
                       handleSmoothScroll(e, targetId);
@@ -212,11 +222,16 @@ export default function Navigation() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                     onClick={(e) => {
-                      const targetId = item.href.replace('#', '');
-                      if (item.name === 'Contacto') {
-                        handleContactClick();
+                      if (item.href.startsWith('/')) {
+                        // Enlace externo - no hacer scroll
+                        return;
+                      } else {
+                        const targetId = item.href.replace('#', '');
+                        if (item.name === 'Contacto') {
+                          handleContactClick();
+                        }
+                        handleSmoothScroll(e, targetId);
                       }
-                      handleSmoothScroll(e, targetId);
                     }}
                     className="text-offwhite hover:text-gold block px-3 py-3 text-base font-medium transition-colors duration-200 rounded-lg hover:bg-charleston/50"
                   >
