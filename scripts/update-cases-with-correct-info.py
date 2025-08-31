@@ -64,6 +64,17 @@ class CasesUpdater:
         # Extraer solo el texto, eliminando tags HTML
         text = re.sub(r'<[^>]+>', '', section_html)
         
+        # Eliminar el título de la sección del contenido
+        # Buscar y eliminar el título al inicio del texto
+        text = re.sub(rf'^{section_name}\s*', '', text, flags=re.IGNORECASE)
+        
+        # Para la sección "Imágenes (anexos del expediente)", extraer solo el primer párrafo
+        if "imágenes" in section_name.lower():
+            # Dividir por saltos de línea y tomar solo el primer párrafo no vacío
+            paragraphs = [p.strip() for p in text.split('\n') if p.strip()]
+            if paragraphs:
+                text = paragraphs[0]
+        
         # Limpiar el texto
         return self.clean_text(text)
     
@@ -95,6 +106,26 @@ class CasesUpdater:
             print(f"❌ Error cargando {json_file}: {e}")
             return None
     
+    def clean_resolution_type(self, resolution_type: str) -> str:
+        """Limpia el tipo de resolución para que sea solo 'Sobreseimiento'"""
+        if not resolution_type:
+            return resolution_type
+        
+        # Convertir a minúsculas para comparación
+        resolution_lower = resolution_type.lower()
+        
+        # Si contiene "sobreseimiento", reemplazar con "Sobreseimiento"
+        if "sobreseimiento" in resolution_lower:
+            # Reemplazar "Sobreseimiento provisional", "Sobreseimiento libre", etc. con solo "Sobreseimiento"
+            cleaned = re.sub(r'sobreseimiento\s+(provisional|libre|definitivo)', 'Sobreseimiento', resolution_type, flags=re.IGNORECASE)
+            # Si el texto original era solo "Sobreseimiento provisional", devolver solo "Sobreseimiento"
+            if cleaned.lower().strip() == "sobreseimiento":
+                return "Sobreseimiento"
+            return cleaned
+        
+        # Si no, devolver el original
+        return resolution_type
+
     def update_case_data(self, case_number: int, current_case: Dict) -> Dict:
         """Actualiza los datos de un caso con información extraída"""
         print(f"📝 Procesando caso {case_number}...")
@@ -105,11 +136,27 @@ class CasesUpdater:
             print(f"⚠️  No se pudo cargar el caso {case_number} extraído")
             return current_case
         
-        # Obtener HTML del caso extraído
-        html_content = extracted_case.get('raw_html', '')
-        if not html_content:
-            print(f"⚠️  No hay contenido HTML para el caso {case_number}")
+        # Obtener secciones ya extraídas (NO HTML)
+        sections = extracted_case.get('sections', {})
+        if not sections:
+            print(f"⚠️  No hay secciones extraídas para el caso {case_number}")
             return current_case
+        
+        # Limpiar campos relacionados con resolución
+        fields_to_clean = ['tipo_resolucion', 'resultado', 'nombre']
+        for field in fields_to_clean:
+            if field in current_case:
+                old_value = current_case[field]
+                new_value = self.clean_resolution_type(old_value)
+                if old_value != new_value:
+                    current_case[field] = new_value
+                    print(f"  🔄 Campo '{field}' actualizado: '{old_value}' -> '{new_value}'")
+        
+        # Eliminar información de fase procesal
+        if 'fase_procesal' in current_case:
+            old_fase = current_case['fase_procesal']
+            current_case['fase_procesal'] = ""
+            print(f"  🗑️  Fase procesal eliminada: '{old_fase}' -> ''")
         
         # Mapeo de secciones extraídas a campos camelCase del código
         section_mapping = {
@@ -126,16 +173,21 @@ class CasesUpdater:
         if 'contenido' not in current_case:
             current_case['contenido'] = {}
         
-        # Actualizar contenido de cada sección
+        # Actualizar contenido de cada sección usando las secciones ya extraídas
         updated_sections = 0
         for extracted_section, camel_case_field in section_mapping.items():
-            content = self.extract_section_content(html_content, extracted_section)
-            if content:
-                current_case['contenido'][camel_case_field] = content
-                print(f"  ✅ Actualizada sección: {extracted_section} -> {camel_case_field}")
-                updated_sections += 1
+            if extracted_section in sections:
+                content = sections[extracted_section]
+                if content:
+                    # Limpiar el contenido
+                    cleaned_content = self.clean_text(content)
+                    current_case['contenido'][camel_case_field] = cleaned_content
+                    print(f"  ✅ Actualizada sección: {extracted_section} -> {camel_case_field}")
+                    updated_sections += 1
+                else:
+                    print(f"  ⚠️  Sección vacía: {extracted_section}")
             else:
-                print(f"  ⚠️  No se encontró contenido para: {extracted_section}")
+                print(f"  ⚠️  No se encontró sección: {extracted_section}")
         
         # Mantener enlaces actuales (NO actualizar "Enlaces y notas")
         print(f"  🔗 Manteniendo enlaces actuales")
@@ -172,8 +224,8 @@ class CasesUpdater:
         # Cargar caso extraído
         extracted_case = self.load_extracted_case(case_number)
         if extracted_case:
-            html_content = extracted_case.get('raw_html', '')
-            new_resumen = self.extract_section_content(html_content, 'Resumen')
+            sections = extracted_case.get('sections', {})
+            new_resumen = sections.get('Resumen', '')
             print(f"\n📄 RESUMEN EXTRAÍDO (primeros 200 caracteres):")
             print(f"   {new_resumen[:200]}...")
             

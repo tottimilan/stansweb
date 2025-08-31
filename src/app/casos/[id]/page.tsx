@@ -31,7 +31,6 @@ interface CasoDetails {
   órgano?: string
   sección?: string
   localidad?: string
-  fase_procesal?: string
   tipo_de_resolución?: string
   favorabilidad?: string
   fecha?: string
@@ -48,7 +47,6 @@ interface Caso {
   resultado: string
   tipo_resolucion: string
   favorabilidad: string
-  fase_procesal: string
   organo: string
   organo_nivel: string
   seccion: string
@@ -606,28 +604,28 @@ export default function CasoDetailPage() {
                        </div>
                      )}
                      
-                     {/* Mostrar enlaces del Excel si existen */}
-                     {caso.links && (
-                       <div>
-                         <h3 className="text-lg font-semibold text-gold mb-3">
-                           Enlaces oficiales:
-                         </h3>
-                         <div className="space-y-2">
-                           {caso.links.split('\n').map((link, index) => (
-                             <a
-                               key={index}
-                               href={link.trim()}
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               className="inline-flex items-center gap-2 text-gold hover:text-apricot hover:underline transition-colors"
-                             >
-                               <ExternalLink className="w-4 h-4" />
-                               Ver noticia {index + 1}
-                             </a>
-                           ))}
-                         </div>
-                       </div>
-                     )}
+                                           {/* Mostrar enlaces del Excel si existen */}
+                      {caso.links && (
+                        <div>
+                          <h3 className="text-lg font-semibold text-gold mb-3">
+                            Enlaces oficiales:
+                          </h3>
+                          <div className="space-y-2">
+                            {caso.links.split('\n').map((link, index) => (
+                              <a
+                                key={index}
+                                href={link.trim()}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-gold hover:text-apricot hover:underline transition-colors"
+                              >
+                                <ExternalLink className="w-4 h-4" />
+                                Ver noticia {index + 1}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                      
                      
                    </div>
@@ -688,10 +686,6 @@ export default function CasoDetailPage() {
                   <div>
                     <dt className="text-sm font-medium text-gold mb-1">Tipo de Resolución</dt>
                     <dd className="text-sm text-offwhite/80">{caso.tipo_resolucion}</dd>
-                  </div>
-                  <div>
-                    <dt className="text-sm font-medium text-gold mb-1">Fase Procesal</dt>
-                    <dd className="text-sm text-offwhite/80">{caso.fase_procesal}</dd>
                   </div>
                   {caso.medidas_cautelares && (
                     <div>
