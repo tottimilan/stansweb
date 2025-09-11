@@ -14,55 +14,87 @@ import { translations } from '@/translations';
 
 const WHATSAPP = '34611687226';
 
-// Estructura del índice para navegación
-const tableOfContents = [
-  {
-    id: 'introduccion',
-    title: 'Introducción',
-    level: 1
-  },
-  {
-    id: 'derechos-fundamentales',
-    title: 'Derechos Constitucionales Fundamentales',
-    level: 1
-  },
-  {
-    id: 'garantias-procesales',
-    title: 'Garantías Procesales Prácticas',
-    level: 1
-  },
-  {
-    id: 'vulneraciones-comunes',
-    title: 'Vulneraciones Constitucionales Comunes',
-    level: 1
-  },
-  {
-    id: 'proteccion-especial',
-    title: 'Protección Especial para Grupos Vulnerables',
-    level: 1,
-    children: [
-      { id: 'menores-edad', title: 'Menores de Edad', level: 2 },
-      { id: 'extranjeros', title: 'Extranjeros', level: 2 },
-      { id: 'personas-discapacidad', title: 'Personas con Discapacidad', level: 2 },
-      { id: 'victimas-violencia', title: 'Víctimas de Violencia', level: 2 }
-    ]
-  },
-  {
-    id: 'preguntas-frecuentes',
-    title: 'Preguntas Frecuentes',
-    level: 1
-  },
-  {
-    id: 'legislacion-referencias',
-    title: 'Legislación y Referencias',
-    level: 1
-  },
-  {
-    id: 'conclusion',
-    title: 'Conclusión',
-    level: 1
-  }
-];
+// Función para generar el índice con traducciones dinámicas
+function getTableOfContents(language: string, translations: any) {
+  const blogTranslations = language === 'ar' ? {
+    sections: {
+      introduccion: 'المقدمة',
+      derechosFundamentales: 'الحقوق الدستورية الأساسية',
+      garantiasProcesales: 'الضمانات الإجرائية العملية',
+      vulneracionesComunes: 'الانتهاكات الدستورية الشائعة',
+      proteccionEspecial: 'الحماية الخاصة للفئات الضعيفة'
+    },
+    subsections: {
+      menoresEdad: 'القاصرون',
+      extranjeros: 'الأجانب',
+      personasDiscapacidad: 'ذوي الاحتياجات الخاصة',
+      victimasViolencia: 'ضحايا العنف'
+    }
+  } : {
+    sections: {
+      introduccion: 'Introducción',
+      derechosFundamentales: 'Derechos Constitucionales Fundamentales',
+      garantiasProcesales: 'Garantías Procesales Prácticas',
+      vulneracionesComunes: 'Vulneraciones Constitucionales Comunes',
+      proteccionEspecial: 'Protección Especial para Grupos Vulnerables'
+    },
+    subsections: {
+      menoresEdad: 'Menores de Edad',
+      extranjeros: 'Extranjeros',
+      personasDiscapacidad: 'Personas con Discapacidad',
+      victimasViolencia: 'Víctimas de Violencia'
+    }
+  };
+
+  return [
+    {
+      id: 'introduccion',
+      title: blogTranslations.sections.introduccion,
+      level: 1
+    },
+    {
+      id: 'derechos-fundamentales',
+      title: blogTranslations.sections.derechosFundamentales,
+      level: 1
+    },
+    {
+      id: 'garantias-procesales',
+      title: blogTranslations.sections.garantiasProcesales,
+      level: 1
+    },
+    {
+      id: 'vulneraciones-comunes',
+      title: blogTranslations.sections.vulneracionesComunes,
+      level: 1
+    },
+    {
+      id: 'proteccion-especial',
+      title: blogTranslations.sections.proteccionEspecial,
+      level: 1,
+      children: [
+        { id: 'menores-edad', title: blogTranslations.subsections.menoresEdad, level: 2 },
+        { id: 'extranjeros', title: blogTranslations.subsections.extranjeros, level: 2 },
+        { id: 'personas-discapacidad', title: blogTranslations.subsections.personasDiscapacidad, level: 2 },
+        { id: 'victimas-violencia', title: blogTranslations.subsections.victimasViolencia, level: 2 }
+      ]
+    },
+    {
+      id: 'preguntas-frecuentes',
+      title: language === 'ar' ? 'الأسئلة الشائعة' : 'Preguntas Frecuentes',
+      level: 1
+    },
+    {
+      id: 'legislacion-referencias',
+      title: language === 'ar' ? 'التشريع والمراجع' : 'Legislación y Referencias',
+      level: 1
+    },
+    {
+      id: 'conclusion',
+      title: language === 'ar' ? 'الخاتمة' : 'Conclusión',
+      level: 1
+    }
+  ];
+}
 
 const derechosFAQ = [
   {
@@ -252,10 +284,56 @@ export default function DerechosConstitucionalesPage() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  // Generar índice con traducciones dinámicas
+  const tableOfContents = getTableOfContents(language, t);
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز حقوق المعتقلين',
+      title: 'الحقوق الدستورية للمعتقل',
+      subtitle: 'الحماية الدستورية الكاملة للمعتقلين في إسبانيا',
+      description: 'دليل شامل لحقوقك الدستورية عند الاعتقال. من الدستور الإسباني إلى المعاهدات الدولية، conoce tus garantías fundamentales.'
+    },
+    sections: {
+      introduccion: 'المقدمة',
+      derechosFundamentales: 'الحقوق الدستورية الأساسية',
+      garantiasProcesales: 'الضمانات الإجرائية العملية',
+      vulneracionesComunes: 'الانتهاكات الدستورية الشائعة',
+      proteccionEspecial: 'الحماية الخاصة للفئات الضعيفة'
+    },
+    subsections: {
+      menoresEdad: 'القاصرون',
+      extranjeros: 'الأجانب',
+      personasDiscapacidad: 'ذوي الاحتياجات الخاصة',
+      victimasViolencia: 'ضحايا العنف'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Derechos de Detenidos',
+      title: 'Derechos Constitucionales del Detenido',
+      subtitle: 'Protección Constitucional Completa para Detenidos en España',
+      description: 'Guía completa de tus derechos constitucionales en detención. Desde la Constitución Española hasta tratados internacionales, conoce tus garantías fundamentales.'
+    },
+    sections: {
+      introduccion: 'Introducción',
+      derechosFundamentales: 'Derechos Constitucionales Fundamentales',
+      garantiasProcesales: 'Garantías Procesales Prácticas',
+      vulneracionesComunes: 'Vulneraciones Constitucionales Comunes',
+      proteccionEspecial: 'Protección Especial para Grupos Vulnerables'
+    },
+    subsections: {
+      menoresEdad: 'Menores de Edad',
+      extranjeros: 'Extranjeros',
+      personasDiscapacidad: 'Personas con Discapacidad',
+      victimasViolencia: 'Víctimas de Violencia'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
-    { label: 'Derechos Constitucionales del Detenido' }
+    { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: blogTranslations.hero.title }
   ];
 
   return (
@@ -281,12 +359,12 @@ export default function DerechosConstitucionalesPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Derechos de Detenidos
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Derechos de Detenidos
+                  {language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -295,12 +373,15 @@ export default function DerechosConstitucionalesPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derechos Constitucionales del Detenido
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Garantías irrenunciables durante la detención. Protección constitucional
-                contra vulneraciones y cómo ejercer tus derechos fundamentales.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
