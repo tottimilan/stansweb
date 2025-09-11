@@ -99,6 +99,53 @@ export default function DerechosInmediatosPage() {
         titulo: 'معلومات مهمة',
         descripcion: 'الدقائق الأولى بعد الاعتقال حاسمة. حافظ على الهدوء، لا تقاوم واطلب فوراً مساعدة قانونية.'
       }
+    },
+    fasesProceso: {
+      titulo: 'مراحل إجراء الاعتقال',
+      descripcion: 'الإجراءات التي تتبع عند الاعتقال تتبع تسلسلاً زمنياً محدداً. من المهم معرفة هذه المراحل لفهم حقوقك في كل لحظة.',
+      fases: [
+        {
+          titulo: 'المرحلة الأولى: الاعتقال الأولي',
+          descripcion: 'اللحظة الفعلية للاعتقال. يجب إبلاغك بسبب الاعتقال وحقوقك الأساسية.',
+          tiempo: 'حتى 72 ساعة كحد أقصى'
+        },
+        {
+          titulo: 'المرحلة الثانية: الوضع تحت تصرف القضاء',
+          descripcion: 'النقل إلى مركز الشرطة وإبلاغ القاضي. لحظة حاسمة لتحديد التدابير الاحترازية.',
+          tiempo: 'خلال 24 ساعة من الاعتقال'
+        },
+        {
+          titulo: 'المرحلة الثالثة: الإجراءات القضائية الأولى',
+          descripcion: 'الحضور أمام القاضي وتحديد التدابير الاحترازية. هنا se decide sobre libertad o prisión.',
+          tiempo: 'خلال 72 ساعة من الاعتقال'
+        }
+      ]
+    },
+    derechosEspecificos: {
+      titulo: 'الحقوق المحددة في الاعتقال',
+      descripcion: 'بالإضافة إلى الحقوق الأساسية، لديك حقوق محددة في cada fase del proceso de detención.',
+      derechos: [
+        {
+          titulo: 'حق في التواصل الفوري',
+          descripcion: 'Puedes comunicar tu detención a un familiar o persona de confianza inmediatamente.',
+          detalle: 'Llamada telefónica gratuita, sin restricciones de horario.'
+        },
+        {
+          titulo: 'حق في asistencia médica',
+          descripcion: 'Si sufres cualquier dolencia, tienes derecho a atención médica inmediata.',
+          detalle: 'Reconocimiento médico obligatorio, atención especializada si es necesaria.'
+        },
+        {
+          titulo: 'حق en intérprete',
+          descripcion: 'Si no comprendes el español, tienes derecho a un intérprete oficial.',
+          detalle: 'Presencia en todas las declaraciones, traducción simultánea.'
+        },
+        {
+          titulo: 'حق a no declarar',
+          descripcion: 'Puedes mantener el silencio sin que esto perjudique tu defensa.',
+          detalle: 'Derecho a no autoincriminarse, declaración solo con abogado presente.'
+        }
+      ]
     }
   } : {
     introduccion: {
@@ -109,6 +156,53 @@ export default function DerechosInmediatosPage() {
         titulo: 'Información Importante',
         descripcion: 'Los primeros minutos tras la detención son críticos. Mantén la calma, no opongas resistencia y solicita inmediatamente asistencia letrada.'
       }
+    },
+    fasesProceso: {
+      titulo: 'Fases del Proceso de Detención',
+      descripcion: 'Los procedimientos que se siguen tras la detención siguen un orden temporal específico. Es importante conocer estas fases para entender tus derechos en cada momento.',
+      fases: [
+        {
+          titulo: 'Fase 1: Detención Inicial',
+          descripcion: 'El momento efectivo del arresto. Deben informarte del motivo de la detención y tus derechos básicos.',
+          tiempo: 'Hasta 72 horas como máximo'
+        },
+        {
+          titulo: 'Fase 2: Puesta a Disposición Judicial',
+          descripcion: 'El traslado a comisaría y comunicación al juez. Momento crucial para determinar las medidas cautelares.',
+          tiempo: 'Dentro de 24 horas desde la detención'
+        },
+        {
+          titulo: 'Fase 3: Tramitación Judicial Inicial',
+          descripcion: 'La comparecencia ante el juez y determinación de medidas cautelares. Aquí se decide sobre libertad o prisión.',
+          tiempo: 'Dentro de 72 horas desde la detención'
+        }
+      ]
+    },
+    derechosEspecificos: {
+      titulo: 'Derechos Específicos en la Detención',
+      descripcion: 'Además de los derechos básicos, tienes derechos específicos en cada fase del proceso de detención.',
+      derechos: [
+        {
+          titulo: 'Derecho de Comunicación Inmediata',
+          descripcion: 'Puedes comunicar tu detención a un familiar o persona de confianza inmediatamente.',
+          detalle: 'Llamada telefónica gratuita, sin restricciones de horario.'
+        },
+        {
+          titulo: 'Derecho a Asistencia Médica',
+          descripcion: 'Si sufres cualquier dolencia, tienes derecho a atención médica inmediata.',
+          detalle: 'Reconocimiento médico obligatorio, atención especializada si es necesaria.'
+        },
+        {
+          titulo: 'Derecho a Intérprete',
+          descripcion: 'Si no comprendes el español, tienes derecho a un intérprete oficial.',
+          detalle: 'Presencia en todas las declaraciones, traducción simultánea.'
+        },
+        {
+          titulo: 'Derecho a no Declarar',
+          descripcion: 'Puedes mantener el silencio sin que esto perjudique tu defensa.',
+          detalle: 'Derecho a no autoinculparse, declaración solo con abogado presente.'
+        }
+      ]
     }
   };
   
@@ -149,7 +243,7 @@ export default function DerechosInmediatosPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {language === 'ar' ? 'العودة إلى مركز الدفاع الجنائي العاجل' : 'Volver al hub de Defensa Penal Urgente'}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
@@ -228,7 +322,7 @@ export default function DerechosInmediatosPage() {
                 className="mb-12"
               >
                 <h2 id="fases-inmediatas-de-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Fases Inmediatas de la Detención
+                  {blogTranslations.fasesProceso.titulo}
                 </h2>
 
                 <div className="space-y-8">
@@ -247,7 +341,9 @@ export default function DerechosInmediatosPage() {
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                          <h4 className="font-semibold text-gold mb-2">Derechos que te asisten:</h4>
+                          <h4 className="font-semibold text-gold mb-2">
+                            {language === 'ar' ? 'الحقوق التي تتمتع بها:' : 'Derechos que te asisten:'}
+                          </h4>
                           <ul className="space-y-1">
                             {fase.derechos.map((derecho, idx) => (
                               <li key={idx} className="flex items-center gap-2 text-white/90 text-sm">
@@ -259,7 +355,9 @@ export default function DerechosInmediatosPage() {
                         </div>
 
                         <div>
-                          <h4 className="font-semibold text-gold mb-2">Acciones recomendadas:</h4>
+                          <h4 className="font-semibold text-gold mb-2">
+                            {language === 'ar' ? 'الإجراءات الموصى بها:' : 'Acciones recomendadas:'}
+                          </h4>
                           <ul className="space-y-1">
                             {fase.acciones.map((accion, idx) => (
                               <li key={idx} className="flex items-center gap-2 text-white/90 text-sm">
