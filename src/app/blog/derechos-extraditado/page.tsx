@@ -194,22 +194,78 @@ const relatedArticles = [
 export default function DerechosExtraditadoPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز إجراءات التسليم',
+      title: 'حقوق المُسلم',
+      subtitle: 'الحماية الشاملة لحقوقك أثناء التسليم',
+      description: 'دليل شامل لحقوقك أثناء عملية التسليم. من الحقوق الدستورية إلى الحماية الدولية، كيف تحمي حقوقك الإنسانية خلال التسليم.'
+    },
+    sections: {
+      derechosConstitucionales: 'الحقوق الدستورية للمُسلم',
+      derechosHumanos: 'الحقوق الإنسانية الدولية',
+      derechosVulnerables: 'حقوق الفئات الضعيفة',
+      derechosSalud: 'الحقوق في مجال الصحة والكرامة',
+      derechosEjecucion: 'الحقوق أثناء تنفيذ التسليم',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول حقوق المُسلم',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Procedimientos de Extradición',
+      title: 'Derechos del Extraditado',
+      subtitle: 'Protección Integral de tus Derechos durante la Extradición',
+      description: 'Guía completa de tus derechos durante el proceso de extradición. Desde derechos constitucionales hasta protección internacional, cómo proteger tus derechos humanos durante la extradición.'
+    },
+    sections: {
+      derechosConstitucionales: 'Derechos Constitucionales del Extraditado',
+      derechosHumanos: 'Derechos Humanos Internacionales',
+      derechosVulnerables: 'Derechos de Grupos Vulnerables',
+      derechosSalud: 'Derechos en Materia de Salud y Dignidad',
+      derechosEjecucion: 'Derechos durante la Ejecución de la Extradición',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Derechos del Extraditado',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'حقوق المُسلم محمية بالكامل بموجب النظام القانوني الإسباني، سواء على المستوى الدستوري أو الدولي. ينص الدستور الإسباني على ضمانات غير قابلة للتنازل يجب احترامها في كامل إجراء التسليم، من تلقي الطلب حتى التسليم المحتمل للبلد الطالب.',
+      parrafo2: 'يحدد هذا الدليل الحقوق الدستورية، الحقوق الإنسانية الدولية، والحمايات الخاصة للفئات الضعيفة، بناءً على قضاء المحكمة الدستورية، المحكمة العليا، والمحكمة الأوروبية لحقوق الإنسان.'
+    },
+    derechosConstitucionales: {
+      titulo: 'الحقوق الدستورية للمُسلم'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Los derechos del extraditado están plenamente protegidos por el ordenamiento jurídico español, tanto a nivel constitucional como internacional. La <strong>Constitución Española</strong> establece garantías irrenunciables que deben respetarse en todo el procedimiento de extradición, desde la recepción de la solicitud hasta la eventual entrega al país solicitante.',
+      parrafo2: 'Esta guía detalla los derechos constitucionales, derechos humanos internacionales, y protecciones especiales para grupos vulnerables, basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong>, <strong>Tribunal Supremo</strong> y <strong>Tribunal Europeo de Derechos Humanos</strong>.'
+    },
+    derechosConstitucionales: {
+      titulo: 'Derechos Constitucionales del Extraditado'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
-    { label: 'Derechos del Extraditado' }
+    { label: language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'derechos-constitucionales-del-extraditado', title: 'Derechos Constitucionales del Extraditado', level: 2 },
-    { id: 'derechos-humanos-internacionales', title: 'Derechos Humanos Internacionales', level: 2 },
-    { id: 'derechos-de-grupos-vulnerables', title: 'Derechos de Grupos Vulnerables', level: 2 },
-    { id: 'derechos-en-materia-de-salud-y-dignidad', title: 'Derechos en Materia de Salud y Dignidad', level: 2 },
-    { id: 'derechos-durante-la-ejecucion-de-la-extradicion', title: 'Derechos durante la Ejecución de la Extradición', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-derechos-del-extraditado', title: 'Preguntas Frecuentes sobre Derechos del Extraditado', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'derechos-constitucionales-del-extraditado', title: blogTranslations.sections.derechosConstitucionales, level: 2 },
+    { id: 'derechos-humanos-internacionales', title: blogTranslations.sections.derechosHumanos, level: 2 },
+    { id: 'derechos-de-grupos-vulnerables', title: blogTranslations.sections.derechosVulnerables, level: 2 },
+    { id: 'derechos-en-materia-de-salud-y-dignidad', title: blogTranslations.sections.derechosSalud, level: 2 },
+    { id: 'derechos-durante-la-ejecucion-de-la-extradicion', title: blogTranslations.sections.derechosEjecucion, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-del-extraditado', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -234,12 +290,12 @@ export default function DerechosExtraditadoPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Procedimientos de Extradición
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Procedimientos de Extradición
+                  {language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -248,12 +304,15 @@ export default function DerechosExtraditadoPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derechos del Extraditado en España
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Garantías constitucionales y derechos humanos durante procesos de extradición.
-                Situaciones especiales y protección de grupos vulnerables.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -285,16 +344,10 @@ export default function DerechosExtraditadoPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los derechos del extraditado están plenamente protegidos por el ordenamiento jurídico español,
-                  tanto a nivel constitucional como internacional. La <strong>Constitución Española</strong> establece
-                  garantías irrenunciables que deben respetarse en todo el procedimiento de extradición,
-                  desde la recepción de la solicitud hasta la eventual entrega al país solicitante.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía detalla los derechos constitucionales, derechos humanos internacionales,
-                  y protecciones especiales para grupos vulnerables, basándose en la jurisprudencia
-                  del <strong>Tribunal Constitucional</strong>, <strong>Tribunal Supremo</strong> y
-                  <strong>Tribunal Europeo de Derechos Humanos</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -307,7 +360,7 @@ export default function DerechosExtraditadoPage() {
                 className="mb-12"
               >
                 <h2 id="derechos-constitucionales-del-extraditado" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Derechos Constitucionales del Extraditado
+                  {contentTranslations.derechosConstitucionales.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
