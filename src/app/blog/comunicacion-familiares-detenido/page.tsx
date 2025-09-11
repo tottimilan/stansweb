@@ -184,21 +184,75 @@ const relatedArticles = [
 export default function ComunicacionFamiliarPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز الدفاع الجنائي العاجل',
+      title: 'التواصل مع العائلة للمعتقل',
+      subtitle: 'حقوق التواصل الأسري أثناء الاعتقال',
+      description: 'دليل شامل لحقوقك في التواصل مع عائلتك أثناء الاعتقال. كيفية التواصل، الحقوق المضمونة، والإجراءات الخاصة.'
+    },
+    sections: {
+      fasesComunicacion: 'مراحل التواصل الأسري',
+      derechosFamiliares: 'حقوق العائلة',
+      situacionesEspeciales: 'الحالات الخاصة',
+      protocoloActuacion: 'بروتوكول التصرف للعائلة',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول التواصل الأسري',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Defensa Penal Urgente',
+      title: 'Comunicación con Familiares del Detenido',
+      subtitle: 'Derechos de Comunicación Familiar durante la Detención',
+      description: 'Guía completa de tus derechos de comunicación con tu familia durante la detención. Cómo comunicarte, derechos garantizados y procedimientos especiales.'
+    },
+    sections: {
+      fasesComunicacion: 'Fases de la Comunicación Familiar',
+      derechosFamiliares: 'Derechos de los Familiares',
+      situacionesEspeciales: 'Situaciones Especiales',
+      protocoloActuacion: 'Protocolo de Actuación para Familiares',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Comunicación Familiar',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'حق التواصل الأسري هو أحد أهم الحقوق الأساسية أثناء الإجراء الجنائي العاجل. منصوص عليه في المادة 520 من قانون الإجراءات الجنائية ومحمي بموجب المادة 8 من الاتفاقية الأوروبية لحقوق الإنسان، يهدف هذا الحق إلى الحفاظ على الرابط العاطفي وتسهيل المساعدة القانونية والشخصية.',
+      parrafo2: 'يشرح هذا الدليل كيفية ممارسة حق التواصل الأسري أثناء الاعتقال، القيود التي يمكن تطبيقها، والحالات الخاصة التي تتطلب اعتبارات إضافية، بناءً على قضاء المحكمة الأوروبية لحقوق الإنسان وتعليمات وزارة الداخلية.'
+    },
+    fasesComunicacion: {
+      titulo: 'مراحل التواصل الأسري'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'El <strong>derecho a la comunicación familiar</strong> es uno de los derechos fundamentales más importantes durante un proceso penal urgente. Regulado por el <strong>artículo 520 de la Ley de Enjuiciamiento Criminal</strong> y protegido por el <strong>artículo 8 del Convenio Europeo de Derechos Humanos</strong>, este derecho busca mantener el vínculo emocional y facilitar la asistencia jurídica y personal.',
+      parrafo2: 'Esta guía explica cómo ejercer el derecho de comunicación familiar durante la detención, las restricciones que pueden aplicarse, y las situaciones especiales que requieren consideraciones adicionales, basándose en la jurisprudencia del <strong>Tribunal Europeo de Derechos Humanos</strong> y las instrucciones del <strong>Ministerio del Interior</strong>.'
+    },
+    fasesComunicacion: {
+      titulo: 'Fases de la Comunicación Familiar'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Comunicación con Familiares del Detenido' }
+    { label: language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'fases-de-la-comunicacion-familiar', title: 'Fases de la Comunicación Familiar', level: 2 },
-    { id: 'derechos-de-los-familiares', title: 'Derechos de los Familiares', level: 2 },
-    { id: 'situaciones-especiales', title: 'Situaciones Especiales', level: 2 },
-    { id: 'protocolo-de-actuacion-para-familiares', title: 'Protocolo de Actuación para Familiares', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-comunicacion-familiar', title: 'Preguntas Frecuentes sobre Comunicación Familiar', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'fases-de-la-comunicacion-familiar', title: blogTranslations.sections.fasesComunicacion, level: 2 },
+    { id: 'derechos-de-los-familiares', title: blogTranslations.sections.derechosFamiliares, level: 2 },
+    { id: 'situaciones-especiales', title: blogTranslations.sections.situacionesEspeciales, level: 2 },
+    { id: 'protocolo-de-actuacion-para-familiares', title: blogTranslations.sections.protocoloActuacion, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-comunicacion-familiar', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -223,12 +277,12 @@ export default function ComunicacionFamiliarPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Defensa Penal Urgente
+                  {language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -237,12 +291,15 @@ export default function ComunicacionFamiliarPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Comunicación con Familiares durante la Detención
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Derechos de comunicación familiar, restricciones, situaciones especiales.
-                Cómo mantener el contacto durante el proceso penal urgente.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -274,17 +331,10 @@ export default function ComunicacionFamiliarPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  El <strong>derecho a la comunicación familiar</strong> es uno de los derechos fundamentales
-                  más importantes durante un proceso penal urgente. Regulado por el <strong>artículo 520
-                  de la Ley de Enjuiciamiento Criminal</strong> y protegido por el <strong>artículo 8
-                  del Convenio Europeo de Derechos Humanos</strong>, este derecho busca mantener el vínculo
-                  emocional y facilitar la asistencia jurídica y personal.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía explica cómo ejercer el derecho de comunicación familiar durante la detención,
-                  las restricciones que pueden aplicarse, y las situaciones especiales que requieren
-                  consideraciones adicionales, basándose en la jurisprudencia del <strong>Tribunal Europeo
-                  de Derechos Humanos</strong> y las instrucciones del <strong>Ministerio del Interior</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -297,7 +347,7 @@ export default function ComunicacionFamiliarPage() {
                 className="mb-12"
               >
                 <h2 id="fases-de-la-comunicacion-familiar" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Fases de la Comunicación Familiar
+                  {contentTranslations.fasesComunicacion.titulo}
                 </h2>
 
                 <div className="space-y-8">
