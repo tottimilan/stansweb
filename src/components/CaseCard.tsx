@@ -76,11 +76,13 @@ export default function CaseCard({ caso }: Props) {
         <div className="text-gold group-hover:text-apricot transition-colors">
           {getIcon(caso.categoria)}
         </div>
-        {caso.favorabilidad === 'Favorable' && (
-          <span className="bg-emerald-700 text-emerald-100 text-xs px-2 py-1 rounded-full font-medium">
-            FAVORABLE
-          </span>
-        )}
+        <span className={`text-xs px-2 py-1 rounded-full font-medium ${
+          caso.id === 19
+            ? 'bg-blue-600 text-blue-100'
+            : 'bg-emerald-700 text-emerald-100'
+        }`}>
+          {caso.id === 19 ? (language === 'ar' ? 'قيد التنفيذ' : 'EN CURSO') : (language === 'ar' ? 'مؤاتي' : 'FAVORABLE')}
+        </span>
       </div>
 
       {/* Categoría */}
@@ -96,13 +98,13 @@ export default function CaseCard({ caso }: Props) {
       {/* Información del caso */}
       <div className="space-y-2 mb-4 flex-grow">
         <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.organo}</span> {caso.organo}
-        </div>
-        <div className="text-sm text-black/70">
           <span className="font-medium text-black">{t.casosDestacados.resultado}</span> {caso.resultado}
         </div>
         <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.año}</span> {caso.año}
+          <span className="font-medium text-black">{t.casosDestacados.organo}</span> {caso.organo}
+        </div>
+        <div className="text-sm text-black/70">
+          <span className="font-medium text-black">{t.casosDestacados.tipo}</span> {caso.tipo_resolucion}
         </div>
       </div>
 

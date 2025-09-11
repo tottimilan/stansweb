@@ -251,7 +251,7 @@ export const translations = {
       verCasoCompleto: 'Ver caso completo',
       organo: 'Órgano:',
       resultado: 'Resultado:',
-      año: 'Año:',
+      tipo: 'Tipo:',
       verTodosCasos: 'Ver todos los casos'
     },
 
@@ -551,7 +551,7 @@ export const translations = {
       verCasoCompleto: 'عرض القضية كاملة',
       organo: 'الجهة:',
       resultado: 'النتيجة:',
-      año: 'السنة:',
+      tipo: 'النوع:',
       verTodosCasos: 'عرض جميع القضايا'
     },
 
