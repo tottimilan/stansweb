@@ -146,6 +146,28 @@ export default function DerechosInmediatosPage() {
           detalle: 'Derecho a no autoincriminarse, declaración solo con abogado presente.'
         }
       ]
+    },
+    derechosEspecificosDetencion: {
+      titulo: 'الحقوق المحددة في الاعتقال',
+      descripcion: 'بالإضافة إلى الحقوق الأساسية، لديك حقوق محددة في كل مرحلة من مراحل الاعتقال.',
+      procesales: {
+        titulo: 'الحقوق الإجرائية',
+        items: [
+          { titulo: 'مساعدة قانونية فورية', descripcion: 'حق في محامٍ منذ اللحظة الأولى' },
+          { titulo: 'حق في المعلومات', descripcion: 'أسباب الاعتقال كتابة' },
+          { titulo: 'حق في عدم الإدلاء بأقوال', descripcion: 'دون حضور محامٍ' },
+          { titulo: 'الحق في الحماية القضائية', descripcion: 'رقابة قضائية فعالة' }
+        ]
+      },
+      personales: {
+        titulo: 'الحقوق الشخصية',
+        items: [
+          { titulo: 'حق في الكرامة', descripcion: 'معاملة محترمة في جميع الأوقات' },
+          { titulo: 'حق في الخصوصية', descripcion: 'حماية البيانات الشخصية' },
+          { titulo: 'حق في التواصل', descripcion: 'الاتصال بقريب أو محامٍ' },
+          { titulo: 'حق في الرعاية الطبية', descripcion: 'رعاية صحية فورية' }
+        ]
+      }
     }
   } : {
     introduccion: {
@@ -203,6 +225,28 @@ export default function DerechosInmediatosPage() {
           detalle: 'Derecho a no autoinculparse, declaración solo con abogado presente.'
         }
       ]
+    },
+    derechosEspecificosDetencion: {
+      titulo: 'Derechos Específicos en la Detención',
+      descripcion: 'Además de los derechos básicos, tienes derechos específicos en cada fase del proceso de detención.',
+      procesales: {
+        titulo: 'Derechos Procesales',
+        items: [
+          { titulo: 'Asistencia letrada inmediata', descripcion: 'Derecho a abogado desde el primer momento' },
+          { titulo: 'Derecho a la información', descripcion: 'Motivos de detención por escrito' },
+          { titulo: 'Derecho a no declarar', descripcion: 'Sin presencia de abogado' },
+          { titulo: 'Derecho a la tutela judicial', descripcion: 'Control judicial efectivo' }
+        ]
+      },
+      personales: {
+        titulo: 'Derechos Personales',
+        items: [
+          { titulo: 'Derecho a la dignidad', descripcion: 'Trato respetuoso en todo momento' },
+          { titulo: 'Derecho a la intimidad', descripcion: 'Protección de datos personales' },
+          { titulo: 'Derecho a la comunicación', descripcion: 'Contacto con familiar o abogado' },
+          { titulo: 'Derecho a asistencia médica', descripcion: 'Atención sanitaria inmediata' }
+        ]
+      }
     }
   };
   
@@ -213,12 +257,12 @@ export default function DerechosInmediatosPage() {
   ];
 
   const tocItems = [
-    { id: 'fases-inmediatas-de-la-detencion', title: 'Fases Inmediatas de la Detención', level: 2 },
-    { id: 'derechos-especificos-en-la-detencion', title: 'Derechos Específicos en la Detención', level: 2 },
-    { id: 'protocolo-de-actuacion-recomendado', title: 'Protocolo de Actuación Recomendado', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-derechos-inmediatos', title: 'Preguntas Frecuentes sobre Derechos Inmediatos', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'fases-inmediatas-de-la-detencion', title: language === 'ar' ? 'مراحل الاعتقال الفورية' : 'Fases Inmediatas de la Detención', level: 2 },
+    { id: 'derechos-especificos-en-la-detencion', title: language === 'ar' ? 'الحقوق المحددة في الاعتقال' : 'Derechos Específicos en la Detención', level: 2 },
+    { id: 'protocolo-de-actuacion-recomendado', title: language === 'ar' ? 'البروتوكول الموصى به للتصرف' : 'Protocolo de Actuación Recomendado', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-inmediatos', title: language === 'ar' ? 'الأسئلة الشائعة حول الحقوق الفورية' : 'Preguntas Frecuentes sobre Derechos Inmediatos', level: 2 },
+    { id: 'legislacion-y-referencias', title: language === 'ar' ? 'التشريع والمراجع' : 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: language === 'ar' ? 'الخاتمة' : 'Conclusión', level: 2 }
   ];
 
   return (
@@ -382,31 +426,31 @@ export default function DerechosInmediatosPage() {
                 className="mb-12"
               >
                 <h2 id="derechos-especificos-en-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Derechos Específicos en la Detención
+                  {blogTranslations.derechosEspecificosDetencion.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-green-50 border border-green-200 rounded-lg p-6">
                     <div className="flex items-center gap-3 mb-4">
                       <Shield className="h-6 w-6 text-green-600" />
-                      <h3 className="text-lg font-semibold text-black">Derechos Procesales</h3>
+                      <h3 className="text-lg font-semibold text-black">{blogTranslations.derechosEspecificosDetencion.procesales.titulo}</h3>
                     </div>
                     <ul className="space-y-3 text-black/80">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Asistencia letrada inmediata</strong> - Derecho a abogado desde el primer momento</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.procesales.items[0].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.procesales.items[0].descripcion}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Derecho a la información</strong> - Motivos de detención por escrito</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.procesales.items[1].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.procesales.items[1].descripcion}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Derecho a no declarar</strong> - Sin presencia de abogado</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.procesales.items[2].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.procesales.items[2].descripcion}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Derecho a la tutela judicial</strong> - Control judicial efectivo</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.procesales.items[3].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.procesales.items[3].descripcion}</span>
                       </li>
                     </ul>
                   </div>
@@ -414,24 +458,24 @@ export default function DerechosInmediatosPage() {
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
                     <div className="flex items-center gap-3 mb-4">
                       <UserCheck className="h-6 w-6 text-blue-600" />
-                      <h3 className="text-lg font-semibold text-black">Derechos Personales</h3>
+                      <h3 className="text-lg font-semibold text-black">{blogTranslations.derechosEspecificosDetencion.personales.titulo}</h3>
                     </div>
                     <ul className="space-y-3 text-black/80">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Derecho a la dignidad</strong> - Trato respetuoso en todo momento</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.personales.items[0].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.personales.items[0].descripcion}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Derecho a la intimidad</strong> - Protección de datos personales</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.personales.items[1].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.personales.items[1].descripcion}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Derecho a la comunicación</strong> - Contacto con familiar o abogado</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.personales.items[2].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.personales.items[2].descripcion}</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Derecho a asistencia médica</strong> - Atención sanitaria inmediata</span>
+                        <span><strong>{blogTranslations.derechosEspecificosDetencion.personales.items[3].titulo}</strong> - {blogTranslations.derechosEspecificosDetencion.personales.items[3].descripcion}</span>
                       </li>
                     </ul>
                   </div>
