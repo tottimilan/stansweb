@@ -6,6 +6,7 @@ export const translations = {
       areas: 'Áreas',
       equipo: 'Equipo',
       casos: 'Casos',
+      blog: 'Blog',
       contacto: 'Contacto'
     },
     
@@ -306,6 +307,7 @@ export const translations = {
       areas: 'المجالات',
       equipo: 'الفريق',
       casos: 'القضايا',
+      blog: 'المدونة',
       contacto: 'اتصل بنا'
     },
     

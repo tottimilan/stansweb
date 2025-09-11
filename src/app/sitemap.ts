@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/equipo`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
@@ -49,6 +55,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
+  // Páginas del blog (hubs/pillars)
+  const blogHubPages = [
+    "/blog/defensa-penal-urgente",
+    "/blog/procedimientos-extradicion",
+    "/blog/derechos-detenidos"
+  ].map(path => ({
+    url: `${baseUrl}${path}`,
+    lastModified: currentDate,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }))
+
+  // Artículos del blog (spokes)
+  const blogArticlePages = [
+    "/blog/defensa-penal-urgente-guia-completa",
+    "/blog/procedimientos-extradicion-espana",
+    "/blog/derechos-detenidos-garantias-procesales",
+    "/blog/delitos-salud-publica-drogas-consecuencias",
+    "/blog/terrorismo-internet-enaltecimiento-captacion",
+    "/blog/blanqueo-capitales-detectar-defenderse"
+  ].map(path => ({
+    url: `${baseUrl}${path}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }))
+
   // Páginas de casos individuales (CRÍTICO PARA SEO)
   const casePages = casosData.map((caso: any) => {
     const casoSeoInfo = (seoInfo as any)[caso.id]
@@ -75,5 +108,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.3,
   }))
 
-  return [...mainPages, ...areaPages, ...casePages, ...legalPages]
+  return [...mainPages, ...areaPages, ...blogHubPages, ...blogArticlePages, ...casePages, ...legalPages]
 }

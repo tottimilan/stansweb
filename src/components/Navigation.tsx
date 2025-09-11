@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
+import { Menu, X, Mail } from 'lucide-react';
 import Image from 'next/image';
 import { useContact } from '../contexts/ContactContext';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -23,6 +23,7 @@ export default function Navigation() {
     { name: t.nav.equipo, href: '#equipo' },
     { name: t.nav.areas, href: '#areas' },
     { name: t.nav.casos, href: '/casos' },
+    { name: t.nav.blog, href: '/blog' },
     { name: 'Contacto', href: '#contacto' },
   ];
 
@@ -158,31 +159,6 @@ export default function Navigation() {
             </div>
           </div>
 
-          {/* Contact Info - Desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <motion.div 
-              className="flex items-center text-offwhite text-sm"
-              animate={contactClicked ? { 
-                color: "#D4AF37",
-                scale: 1.05,
-                transition: { duration: 0.3, ease: "easeInOut" }
-              } : {}}
-            >
-              <Phone className="h-4 w-4 mr-2 text-gold" />
-              <span>+34 611 68 72 26</span>
-            </motion.div>
-            <motion.div 
-              className="flex items-center text-offwhite text-sm"
-              animate={contactClicked ? { 
-                color: "#D4AF37",
-                scale: 1.05,
-                transition: { duration: 0.3, ease: "easeInOut" }
-              } : {}}
-            >
-              <Mail className="h-4 w-4 mr-2 text-gold" />
-              <span>info@stansabogados.com</span>
-            </motion.div>
-          </div>
           
           {/* Language Selector - Right aligned */}
           <div className="hidden lg:flex items-center ml-4">
@@ -247,21 +223,6 @@ export default function Navigation() {
                   </div>
                 </div>
                 
-                {/* Mobile Contact Info */}
-                <div className="pt-4 pb-3 border-t border-gold/20">
-                  <div className="flex items-center text-offwhite text-sm px-3 py-2">
-                    <Phone className="h-4 w-4 mr-3 text-gold" />
-                    <span>+34 611 68 72 26</span>
-                  </div>
-                  <div className="flex items-center text-offwhite text-sm px-3 py-2">
-                    <Mail className="h-4 w-4 mr-3 text-gold" />
-                    <span>info@stansabogados.com</span>
-                  </div>
-                  <div className="flex items-center text-offwhite text-sm px-3 py-2">
-                    <MapPin className="h-4 w-4 mr-3 text-gold" />
-                    <span>Madrid, España</span>
-                  </div>
-                </div>
               </div>
             </motion.div>
           )}
