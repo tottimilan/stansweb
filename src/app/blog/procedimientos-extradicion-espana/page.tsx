@@ -149,7 +149,42 @@ export default function ExtradicionEspanaPage() {
       infoImportante: {
         titulo: 'معلومات حاسمة',
         descripcion: 'يمكن أن تكون إجراءات التسليم لها عواقب لا رجعة فيها. تصرف خاطئ يمكن أن يسهل التسليم عندما يجب رفضه.'
+      },
+      articulo: {
+        parrafo1: 'التسليم هو <strong>إجراء معقد</strong> يتضمن التعاون الدولي بين الدول لملاحقة الجرائم. إسبانيا، كدولة عضو في الاتحاد الأوروبي وموقعة على العديد من المعاهدات الدولية، لديها إطار قانوني متطور لإدارة هذه الإجراءات.',
+        parrafo2: 'يحلل هذا الدليل الشامل عملية التسليم من منظور إسباني، بناءً على <strong>القانون 4/2019</strong> المؤرخ 18 ديسمبر، <strong>القانون العضوي 3/2003</strong> وقضاء <strong>المحكمة العليا</strong> و<strong>المحكمة الدستورية</strong>.'
       }
+    },
+    tiposExtradicion: {
+      titulo: 'أنواع التسليم في إسبانيا',
+      ue: {
+        titulo: 'تسليم الاتحاد الأوروبي',
+        descripcion: 'إجراء مبسط بين الدول الأعضاء في فضاء شنغن. منظم بـ<strong>قرار الإطار 2002/584/JAI</strong>.',
+        caracteristicas: [
+          'مهل أقصر (30-60 يوماً)',
+          'إجراءات إدارية أقل',
+          'مبدأ الاعتراف المتبادل',
+          'تعاون قضائي مباشر'
+        ]
+      },
+      internacional: {
+        titulo: 'التسليم الدولي',
+        descripcion: 'إجراء تقليدي مع دول غير أوروبية. يتطلب معاهدة ثنائية محددة.',
+        caracteristicas: [
+          'مهل أطول (3-12 شهراً)',
+          'متطلبات أكثر صرامة',
+          'فحص أكثر تفصيلاً',
+          'إمكانية استئنافات إضافية'
+        ]
+      },
+      excepciones: {
+        titulo: 'استثناءات مهمة',
+        descripcion: 'لا يمكن تسليم المواطنين الإسبان <strong>بجرائم سياسية</strong> (المادة 13.3 من الدستور). كما لا يتم التسليم بجرائم عسكرية في وقت السلم أو بسبب الآراء السياسية، وفقاً لـ<strong>اتفاقية حقوق الإنسان الأوروبية</strong>.'
+      }
+    },
+    fasesProcedimiento: {
+      titulo: 'مراحل إجراء التسليم',
+      descripcion: 'يتبع إجراء التسليم مراحل محددة بوضوح من التشريع الإسباني.'
     }
   } : {
     introduccion: {
@@ -159,7 +194,42 @@ export default function ExtradicionEspanaPage() {
       infoImportante: {
         titulo: 'Información Crítica',
         descripcion: 'Los procedimientos de extradición pueden tener consecuencias irreversibles. Una actuación incorrecta puede facilitar la extradición cuando debería ser denegada.'
+      },
+      articulo: {
+        parrafo1: 'La extradición es un <strong>procedimiento complejo</strong> que involucra la cooperación internacional entre Estados para la persecución del delito. España, como país miembro de la Unión Europea y firmante de numerosos tratados internacionales, tiene un marco legal sofisticado para gestionar estos procedimientos.',
+        parrafo2: 'Esta guía completa analiza el proceso de extradición desde la perspectiva española, basándose en la <strong>Ley 4/2019</strong> de 18 diciembre, la <strong>Ley Orgánica 3/2003</strong> y la jurisprudencia del <strong>Tribunal Supremo</strong> y <strong>Tribunal Constitucional</strong>.'
       }
+    },
+    tiposExtradicion: {
+      titulo: 'Tipos de Extradición en España',
+      ue: {
+        titulo: 'Extradición UE',
+        descripcion: 'Procedimiento simplificado entre países miembros del espacio Schengen. Regulado por la <strong>Decisión Marco 2002/584/JAI</strong>.',
+        caracteristicas: [
+          'Plazos más cortos (30-60 días)',
+          'Menos formalidades burocráticas',
+          'Principio de reconocimiento mutuo',
+          'Cooperación judicial directa'
+        ]
+      },
+      internacional: {
+        titulo: 'Extradición Internacional',
+        descripcion: 'Procedimiento tradicional con países no comunitarios. Requiere tratado bilateral específico.',
+        caracteristicas: [
+          'Plazos más largos (3-12 meses)',
+          'Requisitos más estrictos',
+          'Examen más detallado',
+          'Posibles recursos adicionales'
+        ]
+      },
+      excepciones: {
+        titulo: 'Excepciones Importantes',
+        descripcion: 'Los ciudadanos españoles <strong>no pueden ser extraditados</strong> por delitos políticos (artículo 13.3 CE). Tampoco se extradita por delitos militares en tiempo de paz o por opiniones políticas, según el <strong>Convenio Europeo de Derechos Humanos</strong>.'
+      }
+    },
+    fasesProcedimiento: {
+      titulo: 'Fases del Procedimiento de Extradición',
+      descripcion: 'El proceso de extradición sigue unas fases claramente definidas por la legislación española.'
     }
   };
   
@@ -170,8 +240,8 @@ export default function ExtradicionEspanaPage() {
   ];
 
   const tocItems = [
-    { id: 'tipos-de-extradicion-en-espana', title: 'Tipos de Extradición en España', level: 2 },
-    { id: 'fases-del-procedimiento-de-extradicion', title: 'Fases del Procedimiento de Extradición', level: 2 },
+    { id: 'tipos-de-extradicion-en-espana', title: language === 'ar' ? 'أنواع التسليم في إسبانيا' : 'Tipos de Extradición en España', level: 2 },
+    { id: 'fases-del-procedimiento-de-extradicion', title: language === 'ar' ? 'مراحل إجراء التسليم' : 'Fases del Procedimiento de Extradición', level: 2 },
     { id: 'derechos-del-extraditado', title: 'Derechos del Extraditado', level: 2 },
     { id: 'tratados-internacionales-de-espana', title: 'Tratados Internacionales de España', level: 2 },
     { id: 'preguntas-frecuentes-sobre-extradicion', title: 'Preguntas Frecuentes sobre Extradición', level: 2 },
@@ -251,14 +321,10 @@ export default function ExtradicionEspanaPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La extradición es un <strong>procedimiento complejo</strong> que involucra la cooperación internacional
-                  entre Estados para la persecución del delito. España, como país miembro de la Unión Europea y firmante
-                  de numerosos tratados internacionales, tiene un marco legal sofisticado para gestionar estos procedimientos.
+                  {blogTranslations.introduccion.articulo.parrafo1}
                 </p>
                 <p>
-                  Esta guía completa analiza el proceso de extradición desde la perspectiva española,
-                  basándose en la <strong>Ley 4/2019</strong> de 18 diciembre, la <strong>Ley Orgánica 3/2003</strong>
-                  y la jurisprudencia del <strong>Tribunal Supremo</strong> y <strong>Tribunal Constitucional</strong>.
+                  {blogTranslations.introduccion.articulo.parrafo2}
                 </p>
               </div>
 
@@ -271,41 +337,39 @@ export default function ExtradicionEspanaPage() {
                 className="mb-12"
               >
                 <h2 id="tipos-de-extradicion-en-espana" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Tipos de Extradición en España
+                  {blogTranslations.tiposExtradicion.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
                     <div className="flex items-center gap-3 mb-4">
                       <Globe className="h-8 w-8 text-blue-600" />
-                      <h3 className="text-lg font-semibold text-black">Extradición UE</h3>
+                      <h3 className="text-lg font-semibold text-black">{blogTranslations.tiposExtradicion.ue.titulo}</h3>
                     </div>
                     <p className="text-black/80 mb-4">
-                      Procedimiento simplificado entre países miembros del espacio Schengen.
-                      Regulado por la <strong>Decisión Marco 2002/584/JAI</strong>.
+                      {blogTranslations.tiposExtradicion.ue.descripcion}
                     </p>
                     <ul className="space-y-2 text-sm text-black/70">
-                      <li>• Plazos más cortos (30-60 días)</li>
-                      <li>• Menos formalidades burocráticas</li>
-                      <li>• Principio de reconocimiento mutuo</li>
-                      <li>• Cooperación judicial directa</li>
+                      <li>• {blogTranslations.tiposExtradicion.ue.caracteristicas[0]}</li>
+                      <li>• {blogTranslations.tiposExtradicion.ue.caracteristicas[1]}</li>
+                      <li>• {blogTranslations.tiposExtradicion.ue.caracteristicas[2]}</li>
+                      <li>• {blogTranslations.tiposExtradicion.ue.caracteristicas[3]}</li>
                     </ul>
                   </div>
 
                   <div className="bg-green-50 border border-green-200 rounded-lg p-6">
                     <div className="flex items-center gap-3 mb-4">
                       <Scale className="h-8 w-8 text-green-600" />
-                      <h3 className="text-lg font-semibold text-black">Extradición Internacional</h3>
+                      <h3 className="text-lg font-semibold text-black">{blogTranslations.tiposExtradicion.internacional.titulo}</h3>
                     </div>
                     <p className="text-black/80 mb-4">
-                      Procedimiento tradicional con países no comunitarios.
-                      Requiere tratado bilateral específico.
+                      {blogTranslations.tiposExtradicion.internacional.descripcion}
                     </p>
                     <ul className="space-y-2 text-sm text-black/70">
-                      <li>• Plazos más largos (3-12 meses)</li>
-                      <li>• Requisitos más estrictos</li>
-                      <li>• Examen más detallado</li>
-                      <li>• Posibles recursos adicionales</li>
+                      <li>• {blogTranslations.tiposExtradicion.internacional.caracteristicas[0]}</li>
+                      <li>• {blogTranslations.tiposExtradicion.internacional.caracteristicas[1]}</li>
+                      <li>• {blogTranslations.tiposExtradicion.internacional.caracteristicas[2]}</li>
+                      <li>• {blogTranslations.tiposExtradicion.internacional.caracteristicas[3]}</li>
                     </ul>
                   </div>
                 </div>
@@ -314,11 +378,9 @@ export default function ExtradicionEspanaPage() {
                   <div className="flex items-start gap-3">
                     <AlertTriangle className="h-6 w-6 text-yellow-600 mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="text-lg font-semibold text-black mb-2">Excepciones Importantes</h3>
+                      <h3 className="text-lg font-semibold text-black mb-2">{blogTranslations.tiposExtradicion.excepciones.titulo}</h3>
                       <p className="text-black/80">
-                        Los ciudadanos españoles <strong>no pueden ser extraditados</strong> por delitos políticos
-                        (artículo 13.3 CE). Tampoco se extradita por delitos militares en tiempo de paz o
-                        por opiniones políticas, según el <strong>Convenio Europeo de Derechos Humanos</strong>.
+                        {blogTranslations.tiposExtradicion.excepciones.descripcion}
                       </p>
                     </div>
                   </div>
@@ -334,7 +396,7 @@ export default function ExtradicionEspanaPage() {
                 className="mb-12"
               >
                 <h2 id="fases-del-procedimiento-de-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Fases del Procedimiento de Extradición
+                  {blogTranslations.fasesProcedimiento.titulo}
                 </h2>
 
                 <div className="space-y-8">
