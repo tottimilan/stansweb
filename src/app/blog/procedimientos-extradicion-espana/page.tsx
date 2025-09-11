@@ -139,11 +139,34 @@ const relatedArticles = [
 export default function ExtradicionEspanaPage() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    introduccion: {
+      titulo: 'إجراءات التسليم في إسبانيا',
+      parrafo1: 'التسليم إجراء معقد يتطلب معرفة مفصلة بالمعاهدات الدولية والتشريعات الوطنية. يحلل هذا المقال بعمق كيفية عمل نظام التسليم الإسباني.',
+      parrafo2: 'معرفة إجراءات التسليم أمر أساسي لممارسة حقوقك بشكل فعال وإعداد دفاع مناسب أمام طلب تسليم.',
+      infoImportante: {
+        titulo: 'معلومات حاسمة',
+        descripcion: 'يمكن أن تكون إجراءات التسليم لها عواقب لا رجعة فيها. تصرف خاطئ يمكن أن يسهل التسليم عندما يجب رفضه.'
+      }
+    }
+  } : {
+    introduccion: {
+      titulo: 'Procedimientos de Extradición en España',
+      parrafo1: 'La extradición es un procedimiento complejo que requiere un conocimiento detallado de los tratados internacionales y la legislación nacional. Este artículo analiza en profundidad cómo funciona el sistema de extradición español.',
+      parrafo2: 'Conocer los procedimientos de extradición es fundamental para poder ejercer efectivamente tus derechos y preparar una defensa adecuada ante una solicitud de extradición.',
+      infoImportante: {
+        titulo: 'Información Crítica',
+        descripcion: 'Los procedimientos de extradición pueden tener consecuencias irreversibles. Una actuación incorrecta puede facilitar la extradición cuando debería ser denegada.'
+      }
+    }
+  };
   
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
-    { label: 'Procedimientos de Extradición en España' }
+    { label: blogTranslations.introduccion.titulo }
   ];
 
   const tocItems = [
@@ -178,7 +201,7 @@ export default function ExtradicionEspanaPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al blog
+                {language === 'ar' ? 'العودة إلى المدونة' : 'Volver al blog'}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
@@ -192,12 +215,11 @@ export default function ExtradicionEspanaPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Procedimientos de Extradición en España: Guía Completa
+                {blogTranslations.introduccion.titulo}: {language === 'ar' ? 'دليل شامل' : 'Guía Completa'}
               </h1>
 
               <p className="text-lg text-white/80 mb-6">
-                Análisis exhaustivo del proceso de extradición española: tipos, plazos,
-                derechos del extraditado y estrategias de defensa internacional.
+                {blogTranslations.introduccion.parrafo1}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">

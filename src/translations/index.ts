@@ -1490,6 +1490,416 @@ export const translations = {
         titulo: 'الخاتمة',
         descripcion: 'معرفة حقوقك وممارستها بشكل صحيح من اللحظة الأولى للاعتقال يمكن أن يحدث فرقاً بين نتيجة إيجابية وسلبية في إجرائك القضائي.'
       }
+    },
+
+    // Blog Articles - Procedimientos de Extradición en España
+    procedimientosExtradicionEspana: {
+      introduccion: {
+        titulo: 'Procedimientos de Extradición en España',
+        parrafo1: 'La extradición es un procedimiento complejo que requiere un conocimiento detallado de los tratados internacionales y la legislación nacional. Este artículo analiza en profundidad cómo funciona el sistema de extradición español.',
+        parrafo2: 'Conocer los procedimientos de extradición es fundamental para poder ejercer efectivamente tus derechos y preparar una defensa adecuada ante una solicitud de extradición.',
+        infoImportante: {
+          titulo: 'Información Crítica',
+          descripcion: 'Los procedimientos de extradición pueden tener consecuencias irreversibles. Una actuación incorrecta puede facilitar la extradición cuando debería ser denegada.'
+        }
+      },
+      tiposExtradicion: {
+        titulo: 'Tipos de Extradición en España',
+        descripcion: 'Existen diferentes tipos de extradición según el país requirente y las circunstancias del caso.',
+        tipos: [
+          {
+            titulo: 'Extradición de la Unión Europea',
+            descripcion: 'Procedimiento simplificado entre países miembros del espacio Schengen.',
+            caracteristicas: [
+              'Procedimiento más ágil (30-60 días)',
+              'Menos formalidades administrativas',
+              'Regulado por Decisión Marco 2002/584/JAI',
+              'Principio de reconocimiento mutuo'
+            ]
+          },
+          {
+            titulo: 'Extradición Internacional',
+            descripcion: 'Procedimiento con países no pertenecientes a la UE.',
+            caracteristicas: [
+              'Procedimiento más complejo',
+              'Requiere tratado bilateral',
+              'Más trámites administrativos',
+              'Posibilidad de condiciones'
+            ]
+          },
+          {
+            titulo: 'Extradición por Delitos Graves',
+            descripcion: 'Casos de terrorismo, crimen organizado o delitos de especial gravedad.',
+            caracteristicas: [
+              'Procedimiento prioritario',
+              'Menos plazos para impugnación',
+              'Mayor colaboración internacional',
+              'Posible entrega acelerada'
+            ]
+          }
+        ]
+      },
+      fasesProcedimiento: {
+        titulo: 'Fases del Procedimiento de Extradición',
+        descripcion: 'El proceso de extradición sigue unas fases claramente definidas por la legislación española.',
+        fases: [
+          {
+            titulo: 'Fase 1: Recepción de la Solicitud',
+            descripcion: 'El Ministerio de Justicia recibe la solicitud formal del país requirente.',
+            tiempo: 'Variable',
+            acciones: [
+              'Verificación de competencia',
+              'Registro de la solicitud',
+              'Designación de juez instructor',
+              'Notificación al interesado'
+            ]
+          },
+          {
+            titulo: 'Fase 2: Control Judicial',
+            descripcion: 'El juez competente examina la solicitud y decide sobre su admisión.',
+            tiempo: '15-30 días',
+            acciones: [
+              'Examen de formalidades',
+              'Verificación de doble incriminación',
+              'Valoración de motivos de denegación',
+              'Decisión sobre admisión a trámite'
+            ]
+          },
+          {
+            titulo: 'Fase 3: Audiencia del Extraditado',
+            descripcion: 'Se celebra vista donde el extraditado puede impugnar la solicitud.',
+            tiempo: '30-60 días',
+            acciones: [
+              'Comparecencia personal',
+              'Derecho a la última palabra',
+              'Posible suspensión del procedimiento',
+              'Decisión sobre medidas cautelares'
+            ]
+          },
+          {
+            titulo: 'Fase 4: Resolución Judicial',
+            descripcion: 'El juez decide sobre la extradición y medidas cautelares.',
+            tiempo: '30-90 días',
+            acciones: [
+              'Auto motivado sobre la extradición',
+              'Determinación de medidas cautelares',
+              'Posible entrega condicionada',
+              'Derecho a recurrir la decisión'
+            ]
+          },
+          {
+            titulo: 'Fase 5: Recursos',
+            descripcion: 'Posibilidad de recurrir la decisión ante instancias superiores.',
+            tiempo: '15-30 días',
+            acciones: [
+              'Recurso de reforma',
+              'Recurso de apelación',
+              'Recurso de amparo constitucional',
+              'Posible suspensión cautelar'
+            ]
+          },
+          {
+            titulo: 'Fase 6: Entrega',
+            descripcion: 'Si es aprobada, se produce la entrega al país requirente.',
+            tiempo: '10 días después de firmeza',
+            acciones: [
+              'Preparación del expediente',
+              'Coordinación con autoridades requirentes',
+              'Entrega física del extraditado',
+              'Posible tránsito por terceros países'
+            ]
+          }
+        ]
+      },
+      derechosExtraditado: {
+        titulo: 'Derechos del Extraditado',
+        descripcion: 'Durante todo el procedimiento de extradición tienes derechos fundamentales protegidos.',
+        derechos: [
+          {
+            titulo: 'Derecho a la Información',
+            descripcion: 'Derecho a conocer detalladamente los motivos de la extradición y los cargos.',
+            garantia: 'Artículo 24 Constitución Española'
+          },
+          {
+            titulo: 'Derecho a la Defensa',
+            descripcion: 'Derecho a asistencia letrada desde el primer momento del procedimiento.',
+            garantia: 'Artículo 24.2 Constitución Española'
+          },
+          {
+            titulo: 'Derecho a Traducción e Interpretación',
+            descripcion: 'Derecho a traducción de documentos y asistencia de intérprete.',
+            garantia: 'Directiva 2010/64/UE'
+          },
+          {
+            titulo: 'Derecho a no Ser Juzgado dos Veces',
+            descripcion: 'Principio ne bis in idem en extradiciones de la UE.',
+            garantia: 'Artículo 54 Constitución Española'
+          }
+        ]
+      },
+      tratadosInternacionales: {
+        titulo: 'Tratados Internacionales de España',
+        descripcion: 'España mantiene acuerdos de extradición con numerosos países del mundo.',
+        categorias: [
+          {
+            titulo: 'Tratados Bilaterales',
+            descripcion: 'Acuerdos específicos con países individuales.',
+            ejemplos: ['Marruecos', 'Argelia', 'México', 'Colombia']
+          },
+          {
+            titulo: 'Convenios Multilaterales',
+            descripcion: 'Acuerdos entre múltiples países.',
+            ejemplos: ['Convenio Europeo de Extradición', 'ONU', 'Interpol']
+          },
+          {
+            titulo: 'Acuerdos de la UE',
+            descripcion: 'Normativa comunitaria aplicable.',
+            ejemplos: ['Decisión Marco 2002/584/JAI', 'Espacio Schengen']
+          }
+        ]
+      },
+      preguntasFrecuentes: {
+        titulo: 'Preguntas Frecuentes sobre Extradición',
+        descripcion: 'Respuestas a las cuestiones más comunes sobre procedimientos de extradición.',
+        faqs: [
+          {
+            pregunta: '¿Qué es la extradición y cuándo se aplica?',
+            respuesta: 'La extradición es el procedimiento por el cual un Estado entrega a una persona acusada o condenada a otro Estado para que sea juzgada o cumpla condena. Se aplica cuando existe una solicitud formal de un país extranjero y se cumplen los requisitos legales establecidos en tratados internacionales.'
+          },
+          {
+            pregunta: '¿Cuánto tiempo dura un procedimiento de extradición?',
+            respuesta: 'La duración varía según el país requirente y el tipo de extradición. Las extradiciones UE suelen tardar 30-60 días, mientras que las internacionales pueden prolongarse hasta 6-12 meses o más, dependiendo de la complejidad del caso.'
+          },
+          {
+            pregunta: '¿Puedo impugnar una solicitud de extradición?',
+            respuesta: 'Sí, existen múltiples motivos para impugnar: defectos formales en la solicitud, prescripción del delito, riesgo de trato degradante, persecución por motivos políticos o religiosos, o vulneración del principio de ne bis in idem.'
+          },
+          {
+            pregunta: '¿Qué derechos tiene el extraditado durante el procedimiento?',
+            respuesta: 'Tienes derecho a asistencia letrada, traducción e interpretación, información detallada sobre los cargos, impugnación de la solicitud, y en casos UE, derecho a no ser juzgado dos veces por el mismo hecho.'
+          }
+        ]
+      },
+      legislacionReferencias: {
+        titulo: 'Legislación y Referencias',
+        descripcion: 'Marco legal aplicable a los procedimientos de extradición en España.',
+        referencias: [
+          'Ley Orgánica 4/2015 de protección de la seguridad ciudadana',
+          'Ley 23/2014 de reconocimiento mutuo de resoluciones penales',
+          'Constitución Española (artículos 17, 18, 24)',
+          'Código Penal (artículos 889-926)',
+          'Ley de Enjuiciamiento Criminal (artículos 824-876)'
+        ]
+      },
+      conclusion: {
+        titulo: 'Conclusión',
+        descripcion: 'Los procedimientos de extradición requieren una defensa especializada y conocimiento profundo de la legislación internacional. Una actuación estratégica desde el primer momento puede marcar la diferencia entre la extradición o la libertad.'
+      }
+    },
+
+    // Blog Articles - Procedimientos de Extradición en España (Arabic)
+    procedimientosExtradicionEspanaAr: {
+      introduccion: {
+        titulo: 'إجراءات التسليم في إسبانيا',
+        parrafo1: 'التسليم إجراء معقد يتطلب معرفة مفصلة بالمعاهدات الدولية والتشريعات الوطنية. يحلل هذا المقال بعمق كيفية عمل نظام التسليم الإسباني.',
+        parrafo2: 'معرفة إجراءات التسليم أمر أساسي لممارسة حقوقك بشكل فعال وإعداد دفاع مناسب أمام طلب تسليم.',
+        infoImportante: {
+          titulo: 'معلومات حاسمة',
+          descripcion: 'يمكن أن تكون إجراءات التسليم لها عواقب لا رجعة فيها. تصرف خاطئ يمكن أن يسهل التسليم عندما يجب رفضه.'
+        }
+      },
+      tiposExtradicion: {
+        titulo: 'أنواع التسليم في إسبانيا',
+        descripcion: 'توجد أنواع مختلفة من التسليم حسب البلد الطالب والظروف القضية.',
+        tipos: [
+          {
+            titulo: 'تسليم الاتحاد الأوروبي',
+            descripcion: 'إجراء مبسط بين الدول الأعضاء في فضاء شنغن.',
+            caracteristicas: [
+              'إجراء أكثر سرعة (30-60 يوماً)',
+              'أقل إجراءات إدارية',
+              'منظم بقرار إطار 2002/584/JAI',
+              'مبدأ الاعتراف المتبادل'
+            ]
+          },
+          {
+            titulo: 'التسليم الدولي',
+            descripcion: 'إجراء مع دول غير تابعة للاتحاد الأوروبي.',
+            caracteristicas: [
+              'إجراء أكثر تعقيداً',
+              'يتطلب معاهدة ثنائية',
+              'مزيد من الإجراءات الإدارية',
+              'إمكانية الشروط'
+            ]
+          },
+          {
+            titulo: 'التسليم بجرائم خطيرة',
+            descripcion: 'قضايا إرهاب أو جريمة منظمة أو جرائم ذات خطورة خاصة.',
+            caracteristicas: [
+              'إجراء ذو أولوية',
+              'أقل مهل للطعن',
+              'تعاون دولي أكبر',
+              'إمكانية تسليم مسرع'
+            ]
+          }
+        ]
+      },
+      fasesProcedimiento: {
+        titulo: 'مراحل إجراء التسليم',
+        descripcion: 'يتبع إجراء التسليم مراحل محددة بوضوح من التشريع الإسباني.',
+        fases: [
+          {
+            titulo: 'المرحلة 1: استلام الطلب',
+            descripcion: 'يتلقى وزارة العدل الطلب الرسمي من البلد الطالب.',
+            tiempo: 'متغير',
+            acciones: [
+              'التحقق من الاختصاص',
+              'تسجيل الطلب',
+              'تعيين قاضي محلف',
+              'إخطار المهتم'
+            ]
+          },
+          {
+            titulo: 'المرحلة 2: الرقابة القضائية',
+            descripcion: 'يفحص القاضي المختص الطلب ويقرر بشأن قبوله.',
+            tiempo: '15-30 يوماً',
+            acciones: [
+              'فحص الإجراءات',
+              'التحقق من الإدانة المزدوجة',
+              'تقييم أسباب الرفض',
+              'قرار بشأن القبول للإجراء'
+            ]
+          },
+          {
+            titulo: 'المرحلة 3: جلسة المسلم',
+            descripcion: 'يُعقد جلسة حيث يمكن للمسلم الطعن في الطلب.',
+            tiempo: '30-60 يوماً',
+            acciones: [
+              'الحضور الشخصي',
+              'الحق في الكلمة الأخيرة',
+              'إمكانية تعليق الإجراء',
+              'قرار بشأن التدابير الاحترازية'
+            ]
+          },
+          {
+            titulo: 'المرحلة 4: القرار القضائي',
+            descripcion: 'يقرر القاضي بشأن التسليم والتدابير الاحترازية.',
+            tiempo: '30-90 يوماً',
+            acciones: [
+              'قرار مسبب بشأن التسليم',
+              'تحديد التدابير الاحترازية',
+              'إمكانية تسليم مشروط',
+              'الحق في استئناف القرار'
+            ]
+          },
+          {
+            titulo: 'المرحلة 5: الاستئنافات',
+            descripcion: 'إمكانية استئناف القرار أمام الجهات العليا.',
+            tiempo: '15-30 يوماً',
+            acciones: [
+              'استئناف الإصلاح',
+              'استئناف الاستئناف',
+              'استئناف الحماية الدستورية',
+              'إمكانية تعليق احترازي'
+            ]
+          },
+          {
+            titulo: 'المرحلة 6: التسليم',
+            descripcion: 'في حال الموافقة، يتم التسليم للبلد الطالب.',
+            tiempo: '10 أيام بعد النفاذ',
+            acciones: [
+              'إعداد الملف',
+              'التنسيق مع السلطات الطالبة',
+              'التسليم الجسدي للمسلم',
+              'إمكانية العبور عبر دول ثالثة'
+            ]
+          }
+        ]
+      },
+      derechosExtraditado: {
+        titulo: 'حقوق المسلم',
+        descripcion: 'طوال إجراء التسليم لديك حقوق أساسية محمية.',
+        derechos: [
+          {
+            titulo: 'الحق في المعلومات',
+            descripcion: 'الحق في معرفة تفاصيل أسباب التسليم والتهم.',
+            garantia: 'المادة 24 الدستور الإسباني'
+          },
+          {
+            titulo: 'الحق في الدفاع',
+            descripcion: 'الحق في مساعدة قانونية منذ اللحظة الأولى للإجراء.',
+            garantia: 'المادة 24.2 الدستور الإسباني'
+          },
+          {
+            titulo: 'الحق في الترجمة والتفسير',
+            descripcion: 'الحق في ترجمة الوثائق ومساعدة مترجم.',
+            garantia: 'التوجيه 2010/64/UE'
+          },
+          {
+            titulo: 'الحق في عدم المحاكمة مرتين',
+            descripcion: 'مبدأ لا يُعاد محاكمته في تسليمات الاتحاد الأوروبي.',
+            garantia: 'المادة 54 الدستور الإسباني'
+          }
+        ]
+      },
+      tratadosInternacionales: {
+        titulo: 'المعاهدات الدولية لإسبانيا',
+        descripcion: 'تحافظ إسبانيا على اتفاقيات تسليم مع دول عديدة في العالم.',
+        categorias: [
+          {
+            titulo: 'المعاهدات الثنائية',
+            descripcion: 'اتفاقيات محددة مع دول فردية.',
+            ejemplos: ['المغرب', 'الجزائر', 'المكسيك', 'كولومبيا']
+          },
+          {
+            titulo: 'الاتفاقيات متعددة الأطراف',
+            descripcion: 'اتفاقيات بين دول متعددة.',
+            ejemplos: ['اتفاقية التسليم الأوروبية', 'الأمم المتحدة', 'الإنتربول']
+          },
+          {
+            titulo: 'اتفاقيات الاتحاد الأوروبي',
+            descripcion: 'التشريعات المجتمعية المطبقة.',
+            ejemplos: ['قرار الإطار 2002/584/JAI', 'فضاء شنغن']
+          }
+        ]
+      },
+      preguntasFrecuentes: {
+        titulo: 'الأسئلة الشائعة حول التسليم',
+        descripcion: 'إجابات على الأسئلة الأكثر شيوعاً حول إجراءات التسليم.',
+        faqs: [
+          {
+            pregunta: 'ما هو التسليم ومتى يُطبق؟',
+            respuesta: 'التسليم هو الإجراء الذي يسلم به دولة شخصاً متهماً أو محكوماً إلى دولة أخرى ليُحاكم أو يقضي عقوبته. يُطبق عند وجود طلب رسمي من دولة أجنبية واستيفاء المتطلبات القانونية المحددة في المعاهدات الدولية.'
+          },
+          {
+            pregunta: 'كم من الوقت يستغرق إجراء التسليم؟',
+            respuesta: 'المدة تختلف حسب البلد الطالب ونوع التسليم. عادة ما تستغرق تسليمات الاتحاد الأوروبي 30-60 يوماً، بينما يمكن أن تطول الدولية حتى 6-12 شهراً أو أكثر، حسب تعقيد القضية.'
+          },
+          {
+            pregunta: 'هل يمكنني الطعن في طلب التسليم؟',
+            respuesta: 'نعم، توجد أسباب متعددة للطعن: عيوب شكلية في الطلب، تقادم الجريمة، خطر معاملة مهينة، ملاحقة لأسباب سياسية أو دينية، أو انتهاك مبدأ لا يُعاد محاكمته.'
+          },
+          {
+            pregunta: 'ما هي حقوق المسلم أثناء الإجراء؟',
+            respuesta: 'لديك حق في مساعدة قانونية، ترجمة وتفسير، معلومات مفصلة عن التهم، طعن في الطلب، وفي حالات الاتحاد الأوروبي، حق في عدم المحاكمة مرتين لنفس الفعل.'
+          }
+        ]
+      },
+      legislacionReferencias: {
+        titulo: 'التشريع والمراجع',
+        descripcion: 'الإطار القانوني المطبق على إجراءات التسليم في إسبانيا.',
+        referencias: [
+          'القانون العضوي 4/2015 لحماية الأمن المدني',
+          'القانون 23/2014 للاعتراف المتبادل بالقرارات الجنائية',
+          'الدستور الإسباني (المواد 17، 18، 24)',
+          'القانون الجنائي (المواد 889-926)',
+          'قانون الإجراءات الجنائية (المواد 824-876)'
+        ]
+      },
+      conclusion: {
+        titulo: 'الخاتمة',
+        descripcion: 'تتطلب إجراءات التسليم دفاعاً متخصصاً ومعرفة عميقة بالتشريعات الدولية. تصرف استراتيجي منذ اللحظة الأولى يمكن أن يحدث فرقاً بين التسليم أو الحرية.'
+      }
     }
   }
 };
