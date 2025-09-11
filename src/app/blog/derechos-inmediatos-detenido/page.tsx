@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, ArrowRight, Phone, AlertTriangle, CheckCircle, FileText, Shield, UserCheck } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, Share2, ArrowRight, Phone, AlertTriangle, CheckCircle, FileText, Shield, UserCheck } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -484,7 +484,7 @@ export default function DerechosInmediatosPage() {
                         title: 'Derechos Inmediatos al Ser Detenido',
                         text: 'Guía completa sobre tus derechos inmediatos cuando eres detenido.',
                         url: window.location.href,
-                      }).catch((err) => console.log('Error sharing:', err));
+                      }).catch((err) => console.error('Error sharing:', err));
                     } else {
                       navigator.clipboard.writeText(window.location.href).then(() => {
                         alert('URL copiada al portapapeles');

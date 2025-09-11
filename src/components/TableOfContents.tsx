@@ -60,19 +60,13 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
 
   // Scroll suave a sección
   const scrollToSection = (sectionId: string) => {
-    console.log(`Attempting to scroll to: ${sectionId}`);
-    
     // Esperar un frame para asegurar que el DOM esté listo
     requestAnimationFrame(() => {
       const element = document.getElementById(sectionId);
       
       if (element) {
-        console.log(`Element found:`, element);
-        
         // Verificar si el elemento es visible
         const rect = element.getBoundingClientRect();
-        console.log(`Element position:`, rect);
-        
         const headerOffset = 120;
         const elementPosition = rect.top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -92,7 +86,6 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
         // Verificar después del scroll
         setTimeout(() => {
           const newRect = element.getBoundingClientRect();
-          console.log(`After scroll - element position:`, newRect.top);
         }, 1000);
         
       } else {
@@ -101,7 +94,6 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
         // Listar todos los IDs disponibles para debug
         const allElements = document.querySelectorAll('[id]');
         const allIds = Array.from(allElements).map(element => element.id);
-        console.log('Available IDs:', allIds);
       }
     });
   };
@@ -194,7 +186,6 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                             onClick={(e) => {
                               e.preventDefault();
                               e.stopPropagation();
-                              console.log(`Desktop TOC clicked: ${item.id}`);
                               scrollToSection(item.id);
                             }}
                             className={`block w-full text-left text-sm py-2 px-3 rounded-lg transition-all duration-200 hover:bg-gold/10 ${
@@ -214,7 +205,6 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                               onClick={(e) => {
                                 e.preventDefault();
                                 e.stopPropagation();
-                                console.log(`Desktop TOC sub-item clicked: ${child.id}`);
                                 scrollToSection(child.id);
                               }}
                               className={`block w-full text-left text-xs py-1 px-3 rounded-lg transition-all duration-200 hover:bg-gold/5 ml-4 ${
@@ -306,7 +296,6 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                             onClick={(e) => {
                               e.preventDefault();
                               e.stopPropagation();
-                              console.log(`Mobile TOC clicked: ${item.id}`);
                               scrollToSection(item.id);
                               setIsExpanded(false);
                             }}
@@ -326,7 +315,6 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                               onClick={(e) => {
                                 e.preventDefault();
                                 e.stopPropagation();
-                                console.log(`Mobile TOC sub-item clicked: ${child.id}`);
                                 scrollToSection(child.id);
                                 setIsExpanded(false);
                               }}

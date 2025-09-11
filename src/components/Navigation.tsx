@@ -60,9 +60,7 @@ export default function Navigation() {
         });
         
         // Log para debugging
-        console.log(`Scrolling to ${targetId}, position: ${targetPosition}`);
       } else {
-        console.log(`Element with id "${targetId}" not found`);
       }
     }, 100); // Pequeño delay para asegurar que el menú se cierre
   };

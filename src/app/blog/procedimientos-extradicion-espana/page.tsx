@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, ArrowRight, Phone, AlertTriangle, CheckCircle, FileText, Globe, Scale } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, Share2, ArrowRight, Phone, AlertTriangle, CheckCircle, FileText, Globe, Scale } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -550,7 +550,7 @@ export default function ExtradicionEspanaPage() {
                         title: 'Procedimientos de Extradición en España',
                         text: 'Guía completa sobre procedimientos de extradición en España.',
                         url: window.location.href,
-                      }).catch((err) => console.log('Error sharing:', err));
+                      }).catch((err) => console.error('Error sharing:', err));
                     } else {
                       navigator.clipboard.writeText(window.location.href).then(() => {
                         alert('URL copiada al portapapeles');

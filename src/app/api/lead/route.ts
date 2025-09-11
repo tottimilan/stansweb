@@ -15,8 +15,6 @@ export async function POST(req: Request) {
     const ip = req.headers.get('x-forwarded-for')?.split(',')[0] || '0.0.0.0';
 
     // Log del lead recibido
-    console.log('Lead recibido:', { nombre, email, telefono, mensaje, idioma, utm, ip });
-
     // 2) Guardar en Sheets
     if (process.env.SHEETS_WEBHOOK_URL) {
       try {
@@ -43,7 +41,6 @@ export async function POST(req: Request) {
           console.error('Status:', sheetsResponse.status);
           console.error('Status Text:', sheetsResponse.statusText);
         } else {
-          console.log('Lead enviado exitosamente a Google Sheets');
         }
       } catch (sheetsError) {
         console.error('Error enviando a Google Sheets:', sheetsError);
