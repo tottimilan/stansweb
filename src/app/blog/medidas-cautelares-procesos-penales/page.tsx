@@ -165,21 +165,75 @@ const relatedArticles = [
 export default function MedidasCautelaresPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز الدفاع الجنائي العاجل',
+      title: 'التدابير الاحتياطية في الإجراءات الجنائية',
+      subtitle: 'فهم ومواجهة التدابير الاحتياطية في الإجراءات الجنائية',
+      description: 'دليل شامل لفهم التدابير الاحتياطية في الإجراءات الجنائية. كيفية الطعن فيها، تعديلها، وإدارتها بفعالية.'
+    },
+    sections: {
+      tiposMedidas: 'أنواع التدابير الاحتياطية',
+      criteriosJuez: 'المعايير التي يعتبرها القاضي',
+      estrategiasImpugnar: 'استراتيجيات للطعن أو التعديل',
+      plazosImpugnar: 'المواعيد للطعن في التدابير الاحتياطية',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول التدابير الاحتياطية',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Defensa Penal Urgente',
+      title: 'Medidas Cautelares en Procesos Penales',
+      subtitle: 'Entender y Enfrentar las Medidas Cautelares en Procesos Penales',
+      description: 'Guía completa para entender las medidas cautelares en procesos penales. Cómo impugnarlas, modificarlas y gestionarlas efectivamente.'
+    },
+    sections: {
+      tiposMedidas: 'Tipos de Medidas Cautelares',
+      criteriosJuez: 'Criterios que Considera el Juez',
+      estrategiasImpugnar: 'Estrategias para Impugnar o Modificar',
+      plazosImpugnar: 'Plazos para Impugnar Medidas Cautelares',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Medidas Cautelares',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'التدابير الاحتياطية هي قرارات قضائية تحد من الحقوق الأساسية مؤقتاً لضمان سير الإجراء الجنائي بشكل صحيح. منصوص عليها في المواد 503 وما يليها من قانون الإجراءات الجنائية، تهدف إلى ضمان حضور المتهم في الإجراء، منع تدمير الأدلة، أو حماية الضحايا والشهود.',
+      parrafo2: 'في حالات الطوارئ الجنائية، تُفرض هذه التدابير أثناء تقديم المتهم للقضاء أو في الجلسات اللاحقة. يشرح هذا الدليل أنواع التدابير الاحتياطية، متطلباتها القانونية، واستراتيجيات الطعن فيها أو الحصول على تعديلها، بناءً على قضاء المحكمة العليا والمحكمة الدستورية.'
+    },
+    tiposCautelares: {
+      titulo: 'أنواع التدابير الاحتياطية'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Las <strong>medidas cautelares</strong> son decisiones judiciales que limitan temporalmente derechos fundamentales para asegurar el correcto desarrollo del proceso penal. Reguladas por los <strong>artículos 503 y siguientes de la Ley de Enjuiciamiento Criminal</strong>, buscan garantizar la presencia del imputado en el proceso, evitar la destrucción de pruebas, o proteger a víctimas y testigos.',
+      parrafo2: 'En situaciones de urgencia penal, estas medidas se imponen durante la puesta a disposición judicial o en comparecencias posteriores. Esta guía explica los tipos de medidas cautelares, sus requisitos legales, y las estrategias para impugnarlas o conseguir su modificación, basándose en la jurisprudencia del <strong>Tribunal Supremo</strong> y <strong>Tribunal Constitucional</strong>.'
+    },
+    tiposCautelares: {
+      titulo: 'Tipos de Medidas Cautelares'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Medidas Cautelares en Procesos Penales' }
+    { label: language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'tipos-de-medidas-cautelares', title: 'Tipos de Medidas Cautelares', level: 2 },
-    { id: 'criterios-que-considera-el-juez', title: 'Criterios que Considera el Juez', level: 2 },
-    { id: 'estrategias-para-impugnar-o-modificar', title: 'Estrategias para Impugnar o Modificar', level: 2 },
-    { id: 'plazos-para-impugnar-medidas-cautelares', title: 'Plazos para Impugnar Medidas Cautelares', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-medidas-cautelares', title: 'Preguntas Frecuentes sobre Medidas Cautelares', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'tipos-de-medidas-cautelares', title: blogTranslations.sections.tiposMedidas, level: 2 },
+    { id: 'criterios-que-considera-el-juez', title: blogTranslations.sections.criteriosJuez, level: 2 },
+    { id: 'estrategias-para-impugnar-o-modificar', title: blogTranslations.sections.estrategiasImpugnar, level: 2 },
+    { id: 'plazos-para-impugnar-medidas-cautelares', title: blogTranslations.sections.plazosImpugnar, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-medidas-cautelares', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -204,12 +258,12 @@ export default function MedidasCautelaresPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Defensa Penal Urgente
+                  {language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -218,12 +272,15 @@ export default function MedidasCautelaresPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Medidas Cautelares en Procesos Penales
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Prisión provisional, libertad con fianza, retirada de pasaporte.
-                Cómo impugnar y modificar medidas cautelares restrictivas.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -255,17 +312,10 @@ export default function MedidasCautelaresPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Las <strong>medidas cautelares</strong> son decisiones judiciales que limitan temporalmente
-                  derechos fundamentales para asegurar el correcto desarrollo del proceso penal. Reguladas
-                  por los <strong>artículos 503 y siguientes de la Ley de Enjuiciamiento Criminal</strong>,
-                  buscan garantizar la presencia del imputado en el proceso, evitar la destrucción de pruebas,
-                  o proteger a víctimas y testigos.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  En situaciones de urgencia penal, estas medidas se imponen durante la puesta a disposición
-                  judicial o en comparecencias posteriores. Esta guía explica los tipos de medidas cautelares,
-                  sus requisitos legales, y las estrategias para impugnarlas o conseguir su modificación,
-                  basándose en la jurisprudencia del <strong>Tribunal Supremo</strong> y <strong>Tribunal Constitucional</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -278,7 +328,7 @@ export default function MedidasCautelaresPage() {
                 className="mb-12"
               >
                 <h2 id="tipos-de-medidas-cautelares" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Tipos de Medidas Cautelares
+                  {contentTranslations.tiposCautelares.titulo}
                 </h2>
 
                 <div className="space-y-6">
