@@ -155,21 +155,75 @@ const relatedArticles = [
 export default function HabeasCorpusPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز الدفاع الجنائي العاجل',
+      title: 'الاعتقال غير القانوني واستئناف الحماية',
+      subtitle: 'الحماية الدستورية العاجلة ضد الاعتقال غير القانوني',
+      description: 'دليل شامل لاستخدام الاعتقال غير القانوني واستئناف الحماية. كيفية حماية حقوقك الدستورية عند الاعتقال غير القانوني أو التعذيب.'
+    },
+    sections: {
+      motivosInterponer: 'أسباب تقديم الاعتقال غير القانوني',
+      procedimientoInterponer: 'إجراء تقديم الاعتقال غير القانوني',
+      casosExitosos: 'قضايا ناجحة للاعتقال غير القانوني',
+      diferenciasRecursos: 'الاختلافات مع الموارد الأخرى',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول الاعتقال غير القانوني',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Defensa Penal Urgente',
+      title: 'Habeas Corpus y Recurso de Amparo',
+      subtitle: 'Protección Constitucional Urgente contra Detenciones Ilegales',
+      description: 'Guía completa para el uso del habeas corpus y recurso de amparo. Cómo proteger tus derechos constitucionales ante detenciones ilegales o torturas.'
+    },
+    sections: {
+      motivosInterponer: 'Motivos para Interponer Habeas Corpus',
+      procedimientoInterponer: 'Procedimiento para Interponer Habeas Corpus',
+      casosExitosos: 'Casos Exitosos de Habeas Corpus',
+      diferenciasRecursos: 'Diferencias con Otros Recursos',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Habeas Corpus',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'الاعتقال غير القانوني هو أحد أقوى الموارد الدستورية لحماية الحرية الشخصية. منصوص عليه في المادة 17.4 من الدستور الإسباني ومطور بموجب القانون العضوي 2/1979، يسمح بطعن أي حرمان من الحرية ينتهك الحقوق الأساسية.',
+      parrafo2: 'على عكس الموارد العادية، يتوجه الاعتقال غير القانوني مباشرة إلى المحكمة الدستورية، متجاوزاً الطريق القضائي العادي عندما تكون الموارد مستنفدة أو عند وجود إلحاح واضح. يشرح هذا الدليل متى وكيف يتم تقديم هذا المورد الاستثنائي للحماية.'
+    },
+    motivosHabeas: {
+      titulo: 'أسباب تقديم الاعتقال غير القانوني'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'El <strong>habeas corpus</strong> es uno de los recursos constitucionales más poderosos para proteger la libertad personal. Regulado por el <strong>artículo 17.4 de la Constitución Española</strong> y desarrollado por la <strong>Ley Orgánica 2/1979</strong>, permite impugnar cualquier privación de libertad que vulnere derechos fundamentales.',
+      parrafo2: 'A diferencia de los recursos ordinarios, el habeas corpus se dirige directamente al <strong>Tribunal Constitucional</strong>, saltándose la vía judicial ordinaria cuando se han agotado los recursos o cuando existe urgencia manifiesta. Esta guía explica cuándo y cómo interponer este recurso extraordinario de protección.'
+    },
+    motivosHabeas: {
+      titulo: 'Motivos para Interponer Habeas Corpus'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Habeas Corpus y Recurso de Amparo' }
+    { label: language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'motivos-para-interponer-habeas-corpus', title: 'Motivos para Interponer Habeas Corpus', level: 2 },
-    { id: 'procedimiento-para-interponer-habeas-corpus', title: 'Procedimiento para Interponer Habeas Corpus', level: 2 },
-    { id: 'casos-exitosos-de-habeas-corpus', title: 'Casos Exitosos de Habeas Corpus', level: 2 },
-    { id: 'diferencias-con-otros-recursos', title: 'Diferencias con Otros Recursos', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-habeas-corpus', title: 'Preguntas Frecuentes sobre Habeas Corpus', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'motivos-para-interponer-habeas-corpus', title: blogTranslations.sections.motivosInterponer, level: 2 },
+    { id: 'procedimiento-para-interponer-habeas-corpus', title: blogTranslations.sections.procedimientoInterponer, level: 2 },
+    { id: 'casos-exitosos-de-habeas-corpus', title: blogTranslations.sections.casosExitosos, level: 2 },
+    { id: 'diferencias-con-otros-recursos', title: blogTranslations.sections.diferenciasRecursos, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-habeas-corpus', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -194,12 +248,12 @@ export default function HabeasCorpusPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Defensa Penal Urgente
+                  {language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -208,12 +262,15 @@ export default function HabeasCorpusPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Habeas Corpus: Recurso de Amparo
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Protección constitucional contra detenciones ilegales.
-                Cómo interponer habeas corpus y cuándo es efectivo.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -245,16 +302,10 @@ export default function HabeasCorpusPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  El <strong>habeas corpus</strong> es uno de los recursos constitucionales más poderosos
-                  para proteger la libertad personal. Regulado por el <strong>artículo 17.4 de la Constitución Española</strong>
-                  y desarrollado por la <strong>Ley Orgánica 2/1979</strong>, permite impugnar cualquier
-                  privación de libertad que vulnere derechos fundamentales.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  A diferencia de los recursos ordinarios, el habeas corpus se dirige directamente al
-                  <strong>Tribunal Constitucional</strong>, saltándose la vía judicial ordinaria cuando
-                  se han agotado los recursos o cuando existe urgencia manifiesta. Esta guía explica
-                  cuándo y cómo interponer este recurso extraordinario de protección.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -267,7 +318,7 @@ export default function HabeasCorpusPage() {
                 className="mb-12"
               >
                 <h2 id="motivos-para-interponer-habeas-corpus" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Motivos para Interponer Habeas Corpus
+                  {contentTranslations.motivosHabeas.titulo}
                 </h2>
 
                 <div className="space-y-6">
