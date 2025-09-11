@@ -436,6 +436,7 @@ export const translations = {
         },
         procesoDetencion: {
           titulo: 'Procedimientos y Plazos de Detención',
+          descripcion: 'El proceso de detención sigue unos plazos estrictos que debes conocer. Cualquier vulneración de estos puede ser motivo de recurso:',
           plazosMaximos: {
             titulo: 'Plazos Máximos de Detención',
             descripcion: 'La ley española establece plazos máximos específicos para cada fase de la detención:',
@@ -444,7 +445,11 @@ export const translations = {
               'Comparecencia ante el juez: dentro de 24 horas desde la detención',
               'Pronunciamiento de libertad o prisión: dentro de 72 horas desde la comparecencia judicial',
               'Libertad provisional: si no se toma decisión definitiva en los plazos establecidos'
-            ]
+            ],
+            computo: {
+              titulo: 'Cómputo de Plazos',
+              descripcion: 'Los plazos se cuentan desde el momento efectivo de la detención, no desde el ingreso en comisaría. Weekend y festivos no interrumpen el cómputo para la detención preventiva.'
+            }
           }
         },
         fasesProceso: {
@@ -452,19 +457,51 @@ export const translations = {
           fases: [
             {
               titulo: 'Fase 1: Detención en la Calle',
-              descripcion: 'Alguien te detiene en vía pública. Deben informarte de tus derechos y el motivo de la detención.'
+              descripcion: 'Alguien te detiene en vía pública. Deben informarte de tus derechos y el motivo de la detención.',
+              subtitulo: '1. Detención Inicial',
+              descripcionCorta: 'Momento en que pierdes tu libertad por actuación policial.',
+              items: [
+                'Identificación de agentes',
+                'Lectura de derechos',
+                'Registro personal si procede',
+                'Traslado a dependencias'
+              ]
             },
             {
               titulo: 'Fase 2: Citación para declarar como imputado',
-              descripcion: 'Te citan para declarar como imputado ante la policía. Tienes derecho a tener abogado presente.'
+              descripcion: 'Te citan para declarar como imputado ante la policía. Tienes derecho a tener abogado presente.',
+              subtitulo: '2. Ingreso en Comisaría',
+              descripcionCorta: 'Formalización del ingreso y apertura del expediente.',
+              items: [
+                'Registro de entrada',
+                'Inventario de pertenencias',
+                'Comunicación de derechos por escrito',
+                'Solicitud de abogado y familiar'
+              ]
             },
             {
               titulo: 'Fase 3: Registro Policial',
-              descripcion: 'La policía quiere entrar en tu casa para registrar. Necesitan autorización judicial o tu consentimiento.'
+              descripcion: 'La policía quiere entrar en tu casa para registrar. Necesitan autorización judicial o tu consentimiento.',
+              subtitulo: '3. Investigación Policial',
+              descripcionCorta: 'Período de investigación con presencia de abogado obligatoria.',
+              items: [
+                'Declaración con abogado presente',
+                'Diligencias de investigación',
+                'Recogida de pruebas',
+                'Entrevistas con testigos'
+              ]
             },
             {
               titulo: 'Fase 4: Citación Judicial',
-              descripcion: 'Recibes una citación para comparecer ante el juez. Es un momento crucial en el procedimiento.'
+              descripcion: 'Recibes una citación para comparecer ante el juez. Es un momento crucial en el procedimiento.',
+              subtitulo: '4. Puesta a Disposición Judicial',
+              descripcionCorta: 'Decisión judicial sobre tu situación procesal.',
+              items: [
+                'Comparecencia ante el juez',
+                'Decisión sobre medidas cautelares',
+                'Posible libertad o prisión provisional',
+                'Fijación de fianza si procede'
+              ]
             },
             {
               titulo: 'Fase 5: Orden de Detención',
@@ -990,6 +1027,7 @@ export const translations = {
         },
         procesoDetencion: {
           titulo: 'الإجراءات والمهل الزمنية للاعتقال',
+          descripcion: 'إجراء الاعتقال يتبع مهل زمنية صارمة يجب أن تعرفها. أي انتهاك لهذه المهل يمكن أن يكون سبباً للطعن:',
           plazosMaximos: {
             titulo: 'المهل الزمنية القصوى للاعتقال',
             descripcion: 'القانون الإسباني يحدد مهل زمنية محددة لكل مرحلة من مراحل الاعتقال:',
@@ -998,7 +1036,11 @@ export const translations = {
               'حضور أمام القاضي: في غضون 24 ساعة من الاعتقال',
               'إصدار قرار الإفراج أو الاحتجاز: في غضون 72 ساعة من الحضور أمام القاضي',
               'الإفراج المؤقت: إذا لم يتم اتخاذ قرار نهائي في المهل المحددة'
-            ]
+            ],
+            computo: {
+              titulo: 'حساب المهل الزمنية',
+              descripcion: 'تحسب المهل من لحظة الاعتقال الفعال، لا من دخول مركز الشرطة. العطل والأعياد لا تقاطع حساب المهل بالنسبة للاحتجاز الوقائي.'
+            }
           }
         },
         fasesProceso: {
@@ -1006,19 +1048,51 @@ export const translations = {
           fases: [
             {
               titulo: 'المرحلة الأولى: الاعتقال في الشارع',
-              descripcion: 'شخص يعتقلك في الشارع العام. يجب أن يعرفك بحقوقك وسبب الاعتقال.'
+              descripcion: 'شخص يعتقلك في الشارع العام. يجب أن يعرفك بحقوقك وسبب الاعتقال.',
+              subtitulo: '1. الاعتقال الأولي',
+              descripcionCorta: 'اللحظة التي تفقد فيها حريتك بسبب إجراء شرطي.',
+              items: [
+                'تحديد هوية العملاء',
+                'قراءة الحقوق',
+                'التسجيل الشخصي إذا لزم الأمر',
+                'النقل إلى التبعيات'
+              ]
             },
             {
               titulo: 'المرحلة الثانية: الاستدعاء للإدلاء بأقوال كمشتبه به',
-              descripcion: 'يتم استدعاؤك للإدلاء بأقوال كمشتبه به أمام الشرطة. يحق لك حضور محامي.'
+              descripcion: 'يتم استدعاؤك للإدلاء بأقوال كمشتبه به أمام الشرطة. يحق لك حضور محامي.',
+              subtitulo: '2. الدخول إلى مركز الشرطة',
+              descripcionCorta: 'رسمية الدخول وفتح الملف.',
+              items: [
+                'تسجيل الدخول',
+                'جرد الممتلكات',
+                'إبلاغ الحقوق كتابياً',
+                'طلب محامي وعائلة'
+              ]
             },
             {
               titulo: 'المرحلة الثالثة: التسجيل الشرطي',
-              descripcion: 'الشرطة تريد دخول منزلك للتفتيش. يحتاجون إلى إذن قضائي أو موافقتك.'
+              descripcion: 'الشرطة تريد دخول منزلك للتفتيش. يحتاجون إلى إذن قضائي أو موافقتك.',
+              subtitulo: '3. التحقيق الشرطي',
+              descripcionCorta: 'فترة التحقيق مع حضور المحامي إلزامياً.',
+              items: [
+                'التصريح بحضور المحامي',
+                'إجراءات التحقيق',
+                'جمع الأدلة',
+                'مقابلات مع الشهود'
+              ]
             },
             {
               titulo: 'المرحلة الرابعة: الاستدعاء القضائي',
-              descripcion: 'تتلقى استدعاءً للحضور أمام القاضي. هذه لحظة حاسمة في الإجراءات.'
+              descripcion: 'تتلقى استدعاءً للحضور أمام القاضي. هذه لحظة حاسمة في الإجراءات.',
+              subtitulo: '4. الوضع تحت تصرف القضاء',
+              descripcionCorta: 'قرار قضائي بشأن وضعك الإجرائي.',
+              items: [
+                'الحضور أمام القاضي',
+                'قرار بشأن التدابير الاحترازية',
+                'إمكانية الإفراج أو الحبس الاحتياطي',
+                'تحديد الكفالة إذا لزم الأمر'
+              ]
             },
             {
               titulo: 'المرحلة الخامسة: أمر الاعتقال',

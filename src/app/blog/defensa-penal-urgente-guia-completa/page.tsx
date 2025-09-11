@@ -224,7 +224,7 @@ export default function DefensaPenalUrgentePage() {
 
                   <div className="space-y-6">
                     <p className="text-black/80 leading-relaxed">
-                      {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.descripcion}
+                      {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.descripcion}
                     </p>
                     
                     <div className="bg-gray-50 p-6 rounded-xl">
@@ -250,10 +250,9 @@ export default function DefensaPenalUrgentePage() {
                     </div>
 
                     <div className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
-                      <h4 className="font-semibold text-yellow-900 mb-2">⏰ Cómputo de Plazos</h4>
+                      <h4 className="font-semibold text-yellow-900 mb-2">⏰ {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.computo.titulo}</h4>
                       <p className="text-yellow-800 text-sm">
-                        Los plazos se cuentan desde el momento efectivo de la detención, no desde el ingreso en comisaría. 
-                        Weekend y festivos no interrumpen el cómputo para la detención preventiva.
+                        {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.computo.descripcion}
                       </p>
                     </div>
                   </div>
@@ -261,53 +260,43 @@ export default function DefensaPenalUrgentePage() {
 
                 {/* Fases del Proceso */}
                 <section id="fases-proceso">
-                  <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6">Fases del Proceso de Detención</h2>
-                  
+                  <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6">{t.blogArticles.defensaPenalUrgenteGuia.fasesProceso.titulo}</h2>
+
                   <div className="space-y-6">
                     <div className="grid gap-6">
-                      <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
-                        <h3 className="font-semibold text-blue-900 mb-3">1. Detención Inicial</h3>
-                        <p className="text-blue-800 text-sm mb-3">Momento en que pierdes tu libertad por actuación policial.</p>
-                        <ul className="text-blue-700 text-sm space-y-1">
-                          <li>• Identificación de agentes</li>
-                          <li>• Lectura de derechos</li>
-                          <li>• Registro personal si procede</li>
-                          <li>• Traslado a dependencias</li>
-                        </ul>
-                      </div>
-
-                      <div className="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
-                        <h3 className="font-semibold text-green-900 mb-3">2. Ingreso en Comisaría</h3>
-                        <p className="text-green-800 text-sm mb-3">Formalización del ingreso y apertura del expediente.</p>
-                        <ul className="text-green-700 text-sm space-y-1">
-                          <li>• Registro de entrada</li>
-                          <li>• Inventario de pertenencias</li>
-                          <li>• Comunicación de derechos por escrito</li>
-                          <li>• Solicitud de abogado y familiar</li>
-                        </ul>
-                      </div>
-
-                      <div className="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500">
-                        <h3 className="font-semibold text-purple-900 mb-3">3. Investigación Policial</h3>
-                        <p className="text-purple-800 text-sm mb-3">Período de investigación con presencia de abogado obligatoria.</p>
-                        <ul className="text-purple-700 text-sm space-y-1">
-                          <li>• Declaración con abogado presente</li>
-                          <li>• Diligencias de investigación</li>
-                          <li>• Recogida de pruebas</li>
-                          <li>• Entrevistas con testigos</li>
-                        </ul>
-                      </div>
-
-                      <div className="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500">
-                        <h3 className="font-semibold text-orange-900 mb-3">4. Puesta a Disposición Judicial</h3>
-                        <p className="text-orange-800 text-sm mb-3">Decisión judicial sobre tu situación procesal.</p>
-                        <ul className="text-orange-700 text-sm space-y-1">
-                          <li>• Comparecencia ante el juez</li>
-                          <li>• Decisión sobre medidas cautelares</li>
-                          <li>• Posible libertad o prisión provisional</li>
-                          <li>• Fijación de fianza si procede</li>
-                        </ul>
-                      </div>
+                      {t.blogArticles.defensaPenalUrgenteGuia.fasesProceso.fases.slice(0, 4).map((fase, index) => (
+                        <div key={index} className={`p-6 rounded-xl border-l-4 ${
+                          index === 0 ? 'bg-blue-50 border-blue-500' :
+                          index === 1 ? 'bg-green-50 border-green-500' :
+                          index === 2 ? 'bg-purple-50 border-purple-500' :
+                          'bg-orange-50 border-orange-500'
+                        }`}>
+                          <h3 className={`font-semibold mb-3 ${
+                            index === 0 ? 'text-blue-900' :
+                            index === 1 ? 'text-green-900' :
+                            index === 2 ? 'text-purple-900' :
+                            'text-orange-900'
+                          }`}>{fase.subtitulo}</h3>
+                          <p className={`text-sm mb-3 ${
+                            index === 0 ? 'text-blue-800' :
+                            index === 1 ? 'text-green-800' :
+                            index === 2 ? 'text-purple-800' :
+                            'text-orange-800'
+                          }`}>{fase.descripcionCorta}</p>
+                          {fase.items && (
+                            <ul className={`text-sm space-y-1 ${
+                              index === 0 ? 'text-blue-700' :
+                              index === 1 ? 'text-green-700' :
+                              index === 2 ? 'text-purple-700' :
+                              'text-orange-700'
+                            }`}>
+                              {fase.items.map((item, itemIndex) => (
+                                <li key={itemIndex}>• {item}</li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </section>
