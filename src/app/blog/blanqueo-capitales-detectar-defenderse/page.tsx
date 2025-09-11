@@ -139,20 +139,55 @@ const relatedArticles = [
 export default function BlanqueoCapitalesPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى المدونة',
+      title: 'غسيل الأموال: كيفية الكشف عنه والدفاع عن النفس',
+      subtitle: 'الحماية الجنائية الكاملة ضد جرائم غسيل الأموال في إسبانيا',
+      description: 'دليل شامل لفهم جرائم غسيل الأموال، كيفية اكتشافها، والاستراتيجيات القانونية للدفاع. من الكشف عن العمليات المشبوهة إلى الدفاع الجنائي الفعال.'
+    },
+    sections: {
+      marcoLegal: 'الإطار القانوني لغسيل الأموال',
+      tresFases: 'المراحل الثلاث لغسيل الأموال',
+      metodosComunes: 'طرق غسيل الأموال الأكثر شيوعاً',
+      casosReales: 'قضايا حقيقية لغسيل الأموال في إسبانيا',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول غسيل الأموال',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al blog',
+      title: 'Blanqueo de Capitales: Cómo Detectarlo y Defenderse',
+      subtitle: 'Protección Penal Completa contra Delitos de Blanqueo en España',
+      description: 'Guía completa para entender los delitos de blanqueo de capitales, cómo detectarlos y las estrategias legales de defensa. Desde identificar operaciones sospechosas hasta defensa penal efectiva.'
+    },
+    sections: {
+      marcoLegal: 'Marco Legal del Blanqueo de Capitales',
+      tresFases: 'Las Tres Fases del Blanqueo de Capitales',
+      metodosComunes: 'Métodos de Blanqueo Más Comunes',
+      casosReales: 'Casos Reales de Blanqueo en España',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Blanqueo de Capitales',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Blanqueo de Capitales: Cómo Detectarlo y Defenderse' }
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'marco-legal-del-blanqueo-de-capitales', title: 'Marco Legal del Blanqueo de Capitales', level: 2 },
-    { id: 'las-tres-fases-del-blanqueo-de-capitales', title: 'Las Tres Fases del Blanqueo de Capitales', level: 2 },
-    { id: 'metodos-de-blanqueo-mas-comunes', title: 'Métodos de Blanqueo Más Comunes', level: 2 },
-    { id: 'casos-reales-de-blanqueo-en-espana', title: 'Casos Reales de Blanqueo en España', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-blanqueo-de-capitales', title: 'Preguntas Frecuentes sobre Blanqueo de Capitales', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'marco-legal-del-blanqueo-de-capitales', title: blogTranslations.sections.marcoLegal, level: 2 },
+    { id: 'las-tres-fases-del-blanqueo-de-capitales', title: blogTranslations.sections.tresFases, level: 2 },
+    { id: 'metodos-de-blanqueo-mas-comunes', title: blogTranslations.sections.metodosComunes, level: 2 },
+    { id: 'casos-reales-de-blanqueo-en-espana', title: blogTranslations.sections.casosReales, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-blanqueo-de-capitales', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -177,12 +212,12 @@ export default function BlanqueoCapitalesPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al blog
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Delitos Económicos
+                  {language === 'ar' ? 'الجرائم الاقتصادية' : 'Delitos Económicos'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -191,12 +226,15 @@ export default function BlanqueoCapitalesPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Blanqueo de Capitales: Cómo Detectarlo y Defenderse
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Guía completa sobre el delito de blanqueo: origen de fondos, técnicas de lavado,
-                responsabilidad penal y estrategias de defensa en España.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
