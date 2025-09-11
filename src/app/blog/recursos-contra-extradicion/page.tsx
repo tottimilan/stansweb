@@ -178,22 +178,78 @@ const relatedArticles = [
 export default function RecursosExtradicionPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز إجراءات التسليم',
+      title: 'الموارد ضد التسليم',
+      subtitle: 'استراتيجيات قانونية للطعن في قرارات التسليم',
+      description: 'دليل شامل للموارد القانونية ضد التسليم. كيفية تقديم الطعون، استراتيجيات الدفاع، والموارد الدولية المتاحة.'
+    },
+    sections: {
+      tiposRecursos: 'أنواع الموارد ضد التسليم',
+      estrategiaRecursos: 'استراتيجية الموارد حسب المراحل',
+      medidasCautelares: 'التدابير الاحتياطية أثناء الموارد',
+      casosExito: 'قضايا ناجحة بالموارد',
+      recursosInternacionales: 'الموارد الدولية',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول الموارد ضد التسليم',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Procedimientos de Extradición',
+      title: 'Recursos Contra la Extradición',
+      subtitle: 'Estrategias Legales para Impugnar Decisiones de Extradición',
+      description: 'Guía completa de recursos legales contra la extradición. Cómo interponer apelaciones, estrategias de defensa y recursos internacionales disponibles.'
+    },
+    sections: {
+      tiposRecursos: 'Tipos de Recursos contra la Extradición',
+      estrategiaRecursos: 'Estrategia de Recursos por Fases',
+      medidasCautelares: 'Medidas Cautelares durante Recursos',
+      casosExito: 'Casos de Éxito con Recursos',
+      recursosInternacionales: 'Recursos Internacionales',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Recursos contra Extradición',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'تشكل الموارد ضد قرارات التسليم أحد أهم الآليات لحماية حقوق المطلوب. تنظم القانون العضوي 3/2003 والقانون 29/1998 نظاماً شاملاً من الموارد يسمح بالطعن في كل من القرارات القضائية والأعمال الإدارية المتعلقة بإجراء التسليم.',
+      parrafo2: 'يشرح هذا الدليل الأنواع المختلفة من الموارد المتاحة، مواعيدها وأسسها، واستراتيجيات الدفاع الأكثر فعالية، والتدابير الاحتياطية التي يمكن تطبيقها أثناء معالجة الموارد، بناءً على قضاء المحكمة العليا، المحكمة الدستورية، والمحكمة الأوروبية لحقوق الإنسان.'
+    },
+    tiposRecursos: {
+      titulo: 'أنواع الموارد ضد التسليم'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Los recursos contra decisiones de extradición constituyen uno de los mecanismos más importantes para proteger los derechos del reclamado. La <strong>Ley Orgánica 3/2003</strong> y la <strong>Ley 29/1998</strong> regulan un sistema completo de recursos que permite impugnar tanto las resoluciones judiciales como los actos administrativos relacionados con el procedimiento de extradición.',
+      parrafo2: 'Esta guía explica los diferentes tipos de recursos disponibles, sus plazos y fundamentos, las estrategias de defensa más efectivas, y las medidas cautelares que pueden aplicarse durante la tramitación de los recursos, basándose en la jurisprudencia del <strong>Tribunal Supremo</strong>, <strong>Tribunal Constitucional</strong> y <strong>Tribunal Europeo de Derechos Humanos</strong>.'
+    },
+    tiposRecursos: {
+      titulo: 'Tipos de Recursos contra la Extradición'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
-    { label: 'Recursos Contra la Extradición' }
+    { label: language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'tipos-de-recursos-contra-la-extradicion', title: 'Tipos de Recursos contra la Extradición', level: 2 },
-    { id: 'estrategia-de-recursos-por-fases', title: 'Estrategia de Recursos por Fases', level: 2 },
-    { id: 'medidas-cautelares-durante-recursos', title: 'Medidas Cautelares durante Recursos', level: 2 },
-    { id: 'casos-de-exito-con-recursos', title: 'Casos de Éxito con Recursos', level: 2 },
-    { id: 'recursos-internacionales', title: 'Recursos Internacionales', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-recursos-contra-extradicion', title: 'Preguntas Frecuentes sobre Recursos contra Extradición', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'tipos-de-recursos-contra-la-extradicion', title: blogTranslations.sections.tiposRecursos, level: 2 },
+    { id: 'estrategia-de-recursos-por-fases', title: blogTranslations.sections.estrategiaRecursos, level: 2 },
+    { id: 'medidas-cautelares-durante-recursos', title: blogTranslations.sections.medidasCautelares, level: 2 },
+    { id: 'casos-de-exito-con-recursos', title: blogTranslations.sections.casosExito, level: 2 },
+    { id: 'recursos-internacionales', title: blogTranslations.sections.recursosInternacionales, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-recursos-contra-extradicion', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -218,12 +274,12 @@ export default function RecursosExtradicionPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Procedimientos de Extradición
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Procedimientos de Extradición
+                  {language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -232,12 +288,15 @@ export default function RecursosExtradicionPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Recursos contra la Extradición
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Reforma, apelación, casación y amparo. Estrategias para impugnar
-                decisiones de extradición y medidas cautelares durante recursos.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -269,18 +328,10 @@ export default function RecursosExtradicionPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los recursos contra decisiones de extradición constituyen uno de los mecanismos
-                  más importantes para proteger los derechos del reclamado. La <strong>Ley Orgánica 3/2003</strong>
-                  y la <strong>Ley 29/1998</strong> regulan un sistema completo de recursos que permite
-                  impugnar tanto las resoluciones judiciales como los actos administrativos relacionados
-                  con el procedimiento de extradición.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía explica los diferentes tipos de recursos disponibles, sus plazos y fundamentos,
-                  las estrategias de defensa más efectivas, y las medidas cautelares que pueden aplicarse
-                  durante la tramitación de los recursos, basándose en la jurisprudencia del
-                  <strong>Tribunal Supremo</strong>, <strong>Tribunal Constitucional</strong> y
-                  <strong>Tribunal Europeo de Derechos Humanos</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -293,7 +344,7 @@ export default function RecursosExtradicionPage() {
                 className="mb-12"
               >
                 <h2 id="tipos-de-recursos-contra-la-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Tipos de Recursos contra la Extradición
+                  {contentTranslations.tiposRecursos.titulo}
                 </h2>
 
                 <div className="space-y-6">
