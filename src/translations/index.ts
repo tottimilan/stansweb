@@ -1178,6 +1178,318 @@ export const translations = {
           descripcion: 'الدفاع الجنائي العاجل هو عملية معقدة تتطلب معرفة دقيقة بالقانون والإجراءات. من الضروري التصرف بسرعة وفعالية لضمان حماية حقوقك وحسن سير الإجراءات.'
         }
       }
+    },
+
+    // Blog Articles - Derechos Inmediatos del Detenido
+    derechosInmediatosDetenido: {
+      introduccion: {
+        titulo: 'Derechos Inmediatos al Ser Detenido',
+        parrafo1: 'Conocer tus derechos desde el primer momento es fundamental para protegerte durante el proceso de detención. Esta guía completa te informa sobre todos los derechos que te asisten inmediatamente tras ser detenido.',
+        parrafo2: 'La falta de conocimiento de estos derechos puede tener consecuencias graves en tu defensa. Por eso, es crucial mantener la calma y ejercer correctamente cada derecho.',
+        infoImportante: {
+          titulo: 'Información Importante',
+          descripcion: 'Los primeros minutos tras la detención son críticos. Mantén la calma, no opongas resistencia y solicita inmediatamente asistencia letrada.'
+        }
+      },
+      derechosPrincipales: {
+        titulo: 'Derechos Principales al Ser Detenido',
+        descripcion: 'Estos son los derechos fundamentales que te asisten desde el momento exacto de la detención:',
+        derechos: [
+          {
+            titulo: 'Derecho al Silencio',
+            descripcion: 'Tienes derecho a no declarar nada que pueda perjudicarte. Mantener el silencio es una estrategia defensiva válida.',
+            icono: 'Silencio'
+          },
+          {
+            titulo: 'Derecho a Abogado',
+            descripcion: 'Puedes solicitar un abogado de oficio gratuito inmediatamente. Tiene derecho a estar presente en todas las diligencias.',
+            icono: 'Abogado'
+          },
+          {
+            titulo: 'Derecho a Comunicación',
+            descripcion: 'Puedes informar a un familiar o persona de confianza sobre tu detención y solicitar asistencia.',
+            icono: 'Comunicación'
+          },
+          {
+            titulo: 'Derecho a Intérprete',
+            descripcion: 'Si no comprendes el español, tienes derecho a un intérprete oficial durante todo el procedimiento.',
+            icono: 'Intérprete'
+          },
+          {
+            titulo: 'Derecho a Asistencia Médica',
+            descripcion: 'Si necesitas atención médica, tienes derecho a recibirla inmediatamente.',
+            icono: 'Médica'
+          },
+          {
+            titulo: 'Derecho a Información',
+            descripcion: 'Tienes derecho a conocer los motivos de tu detención y los cargos que se te imputan.',
+            icono: 'Información'
+          }
+        ]
+      },
+      protocoloAccion: {
+        titulo: 'Protocolo de Acción Inmediata',
+        descripcion: 'Sigue estos pasos inmediatamente tras ser detenido:',
+        pasos: [
+          'Mantén la calma y no opongas resistencia física',
+          'Identifícate si te lo solicitan, pero no declares nada más',
+          'Solicita inmediatamente un abogado de oficio',
+          'Informa sobre tu detención a un familiar',
+          'No firmes ningún documento sin leerlo previamente',
+          'Solicita atención médica si la necesitas'
+        ]
+      },
+      queNoHacer: {
+        titulo: 'Qué NO Debes Hacer',
+        descripcion: 'Evita estos errores comunes que pueden perjudicar tu defensa:',
+        errores: [
+          'No declares nada sin abogado presente',
+          'No firmes documentos sin entender su contenido',
+          'No contactes con testigos o víctimas',
+          'No intentes huir o resistirte físicamente',
+          'No admitas culpabilidad bajo presión',
+          'No proporciones información innecesaria'
+        ]
+      },
+      asistenciaLetrada: {
+        titulo: 'Asistencia Letrada de Urgencia',
+        descripcion: 'La presencia de un abogado desde el primer momento es fundamental:',
+        aspectos: [
+          'El abogado debe estar presente en todas las diligencias',
+          'Puedes elegir abogado privado o solicitar de oficio gratuito',
+          'El abogado puede solicitar medidas cautelares alternativas',
+          'Tiene derecho a consultar el expediente completo'
+        ]
+      },
+      derechosFamiliares: {
+        titulo: 'Derechos de Comunicación Familiar',
+        descripcion: 'Tus familiares también tienen derechos durante tu detención:',
+        derechos: [
+          'Derecho a ser informados de tu detención',
+          'Derecho a visitarte en determinados supuestos',
+          'Derecho a contratar abogado privado para ti',
+          'Derecho a impugnar medidas cautelares'
+        ]
+      },
+      plazosLegales: {
+        titulo: 'Plazos Legales Importantes',
+        descripcion: 'Conoce los tiempos máximos que establece la ley:',
+        plazos: [
+          {
+            concepto: 'Retención policial sin orden judicial',
+            tiempo: 'Hasta 72 horas',
+            descripcion: 'En casos graves o terrorismo hasta 5 días'
+          },
+          {
+            concepto: 'Comparecencia ante juez',
+            tiempo: 'Dentro de 24 horas',
+            descripcion: 'Desde el momento efectivo de la detención'
+          },
+          {
+            concepto: 'Resolución judicial',
+            tiempo: 'Dentro de 72 horas',
+            descripcion: 'Desde la comparecencia judicial'
+          }
+        ]
+      },
+      medidasCautelares: {
+        titulo: 'Medidas Cautelares Posibles',
+        descripcion: 'Dependiendo de la gravedad del delito, el juez puede decretar:',
+        medidas: [
+          'Libertad provisional sin fianza',
+          'Libertad provisional con fianza económica',
+          'Prisión provisional en centro penitenciario',
+          'Arraigo domiciliario',
+          'Prohibición de aproximación',
+          'Depósito del pasaporte'
+        ]
+      },
+      casosPracticos: {
+        titulo: 'Casos Prácticos',
+        descripcion: 'Ejemplos reales de aplicación de derechos en detenciones:',
+        casos: [
+          {
+            titulo: 'Caso de Detención por Presunta Agresión',
+            descripcion: 'El cliente fue liberado en 24 horas tras invocar correctamente el derecho al silencio y solicitar abogado de urgencia.',
+            resultado: 'Resultado: Sobreseimiento provisional'
+          },
+          {
+            titulo: 'Caso de Detención por Tráfico de Drogas',
+            descripcion: 'Se impugnó la legalidad de la detención por falta de motivación judicial, consiguiendo la libertad provisional.',
+            resultado: 'Resultado: Libertad provisional con medidas cautelares'
+          }
+        ]
+      },
+      marcoLegal: {
+        titulo: 'Marco Legal',
+        descripcion: 'Los derechos del detenido están regulados por:',
+        referencias: [
+          'Constitución Española: Artículos 17, 18, 24',
+          'Ley de Enjuiciamiento Criminal',
+          'Ley Orgánica del Poder Judicial',
+          'Ley Orgánica 6/1985 de Fuerza y Seguridad'
+        ]
+      },
+      conclusion: {
+        titulo: 'Conclusión',
+        descripcion: 'Conocer y ejercer correctamente tus derechos desde el primer momento de la detención puede marcar la diferencia entre un resultado favorable y uno negativo en tu proceso judicial.'
+      }
+    },
+
+    // Blog Articles - Derechos Inmediatos del Detenido (Arabic)
+    derechosInmediatosDetenidoAr: {
+      introduccion: {
+        titulo: 'الحقوق الفورية عند الاعتقال',
+        parrafo1: 'معرفة حقوقك من اللحظة الأولى أمر أساسي لحمايتك أثناء عملية الاعتقال. يوفر لك هذا الدليل الكامل معلومات عن جميع الحقوق التي تتمتع بها فور اعتقالك.',
+        parrafo2: 'عدم معرفة هذه الحقوق يمكن أن يكون له عواقب خطيرة على دفاعك. لذلك، من المهم الحفاظ على الهدوء وممارسة كل حق بشكل صحيح.',
+        infoImportante: {
+          titulo: 'معلومات مهمة',
+          descripcion: 'الدقائق الأولى بعد الاعتقال حاسمة. حافظ على الهدوء، لا تقاوم واطلب فوراً مساعدة قانونية.'
+        }
+      },
+      derechosPrincipales: {
+        titulo: 'الحقوق الأساسية عند الاعتقال',
+        descripcion: 'هذه هي الحقوق الأساسية التي تتمتع بها من لحظة الاعتقال بالضبط:',
+        derechos: [
+          {
+            titulo: 'حق في الصمت',
+            descripcion: 'لديك حق في عدم الإدلاء بأي شيء يمكن أن يضرك. الحفاظ على الصمت هو استراتيجية دفاعية صالحة.',
+            icono: 'الصمت'
+          },
+          {
+            titulo: 'حق في محامي',
+            descripcion: 'يمكنك طلب محامي من مكتب المساعدة القضائية مجاناً فوراً. له الحق في الحضور في جميع الإجراءات.',
+            icono: 'المحامي'
+          },
+          {
+            titulo: 'حق في التواصل',
+            descripcion: 'يمكنك إبلاغ عائلتك أو شخص موثوق به عن اعتقالك وطلب المساعدة.',
+            icono: 'الاتصال'
+          },
+          {
+            titulo: 'حق في مترجم',
+            descripcion: 'إذا كنت لا تفهم الإسبانية، لديك حق في مترجم رسمي طوال الإجراء.',
+            icono: 'المترجم'
+          },
+          {
+            titulo: 'حق في المساعدة الطبية',
+            descripcion: 'إذا كنت بحاجة إلى رعاية طبية، لديك حق في تلقيها فوراً.',
+            icono: 'طبية'
+          },
+          {
+            titulo: 'حق في المعلومات',
+            descripcion: 'لديك حق في معرفة أسباب اعتقالك والتهم الموجهة ضدك.',
+            icono: 'المعلومات'
+          }
+        ]
+      },
+      protocoloAccion: {
+        titulo: 'بروتوكول العمل الفوري',
+        descripcion: 'اتبع هذه الخطوات فوراً بعد اعتقالك:',
+        pasos: [
+          'حافظ على الهدوء ولا تقاوم جسدياً',
+          'قدم هويتك إذا طُلب منك ذلك، لكن لا تعلن شيئاً آخر',
+          'اطلب محامياً من مكتب المساعدة القضائية فوراً',
+          'أبلغ عن اعتقالك إلى عائلتك',
+          'لا توقع على أي وثيقة دون قراءتها مسبقاً',
+          'اطلب رعاية طبية إذا كنت بحاجة إليها'
+        ]
+      },
+      queNoHacer: {
+        titulo: 'ما لا يجب عليك فعله',
+        descripcion: 'تجنب هذه الأخطاء الشائعة التي يمكن أن تضر بدفاعك:',
+        errores: [
+          'لا تعلن شيئاً بدون حضور محامي',
+          'لا توقع على وثائق دون فهم محتواها',
+          'لا تتصل بالشهود أو الضحايا',
+          'لا تحاول الهروب أو المقاومة جسدياً',
+          'لا تعترف بالذنب تحت الضغط',
+          'لا تقدم معلومات غير ضرورية'
+        ]
+      },
+      asistenciaLetrada: {
+        titulo: 'المساعدة القانونية العاجلة',
+        descripcion: 'حضور المحامي من اللحظة الأولى أمر أساسي:',
+        aspectos: [
+          'يجب أن يكون المحامي حاضراً في جميع الإجراءات',
+          'يمكنك اختيار محامي خاص أو طلب محامي مجاني من مكتب المساعدة',
+          'يمكن للمحامي طلب تدابير احترازية بديلة',
+          'له الحق في استشارة الملف الكامل'
+        ]
+      },
+      derechosFamiliares: {
+        titulo: 'حقوق التواصل العائلي',
+        descripcion: 'لدى عائلتك أيضاً حقوق أثناء اعتقالك:',
+        derechos: [
+          'الحق في إبلاغهم باعتقالك',
+          'الحق في زيارتك في حالات معينة',
+          'الحق في توظيف محامي خاص لك',
+          'الحق في الطعن على التدابير الاحترازية'
+        ]
+      },
+      plazosLegales: {
+        titulo: 'المهل القانونية المهمة',
+        descripcion: 'تعرف على المهل القصوى التي يحددها القانون:',
+        plazos: [
+          {
+            concepto: 'الحجز الشرطي بدون أمر قضائي',
+            tiempo: 'حتى 72 ساعة',
+            descripcion: 'في القضايا الخطيرة أو الإرهاب حتى 5 أيام'
+          },
+          {
+            concepto: 'الحضور أمام القاضي',
+            tiempo: 'خلال 24 ساعة',
+            descripcion: 'من لحظة الاعتقال الفعال'
+          },
+          {
+            concepto: 'القرار القضائي',
+            tiempo: 'خلال 72 ساعة',
+            descripcion: 'من الحضور القضائي'
+          }
+        ]
+      },
+      medidasCautelares: {
+        titulo: 'التدابير الاحترازية الممكنة',
+        descripcion: 'اعتماداً على خطورة الجريمة، يمكن للقاضي أن يقرر:',
+        medidas: [
+          'الإفراج المؤقت بدون كفالة',
+          'الإفراج المؤقت مع كفالة مالية',
+          'الحبس الاحتياطي في مركز سجني',
+          'الإقامة الجبرية',
+          'حظر الاقتراب',
+          'إيداع جواز السفر'
+        ]
+      },
+      casosPracticos: {
+        titulo: 'حالات عملية',
+        descripcion: 'أمثلة حقيقية لتطبيق الحقوق في حالات الاعتقال:',
+        casos: [
+          {
+            titulo: 'قضية اعتقال بتهمة اعتداء',
+            descripcion: 'تم إطلاق سراح العميل خلال 24 ساعة بعد استدعاء الحق في الصمت وطلب محامي عاجل.',
+            resultado: 'النتيجة: إسقاط مؤقت'
+          },
+          {
+            titulo: 'قضية اعتقال بتهمة تهريب المخدرات',
+            descripcion: 'تم الطعن على قانونية الاعتقال لعدم وجود دافع قضائي، مما أدى إلى الحصول على الإفراج المؤقت.',
+            resultado: 'النتيجة: إفراج مؤقت مع تدابير احترازية'
+          }
+        ]
+      },
+      marcoLegal: {
+        titulo: 'الإطار القانوني',
+        descripcion: 'حقوق المعتقل منظمة من قبل:',
+        referencias: [
+          'الدستور الإسباني: المواد 17، 18، 24',
+          'قانون الإجراءات الجنائية',
+          'القانون العضوي للسلطة القضائية',
+          'القانون العضوي 6/1985 للقوة والأمن'
+        ]
+      },
+      conclusion: {
+        titulo: 'الخاتمة',
+        descripcion: 'معرفة حقوقك وممارستها بشكل صحيح من اللحظة الأولى للاعتقال يمكن أن يحدث فرقاً بين نتيجة إيجابية وسلبية في إجرائك القضائي.'
+      }
     }
   }
 };

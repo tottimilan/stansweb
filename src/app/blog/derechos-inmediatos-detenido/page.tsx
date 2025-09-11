@@ -88,11 +88,34 @@ const relatedArticles = [
 export default function DerechosInmediatosPage() {
   const { language } = useLanguage();
   const t = translations[language];
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    introduccion: {
+      titulo: 'الحقوق الفورية عند الاعتقال',
+      parrafo1: 'معرفة حقوقك من اللحظة الأولى أمر أساسي لحمايتك أثناء عملية الاعتقال. يوفر لك هذا الدليل الكامل معلومات عن جميع الحقوق التي تتمتع بها فور اعتقالك.',
+      parrafo2: 'عدم معرفة هذه الحقوق يمكن أن يكون له عواقب خطيرة على دفاعك. لذلك، من المهم الحفاظ على الهدوء وممارسة كل حق بشكل صحيح.',
+      infoImportante: {
+        titulo: 'معلومات مهمة',
+        descripcion: 'الدقائق الأولى بعد الاعتقال حاسمة. حافظ على الهدوء، لا تقاوم واطلب فوراً مساعدة قانونية.'
+      }
+    }
+  } : {
+    introduccion: {
+      titulo: 'Derechos Inmediatos al Ser Detenido',
+      parrafo1: 'Conocer tus derechos desde el primer momento es fundamental para protegerte durante el proceso de detención. Esta guía completa te informa sobre todos los derechos que te asisten inmediatamente tras ser detenido.',
+      parrafo2: 'La falta de conocimiento de estos derechos puede tener consecuencias graves en tu defensa. Por eso, es crucial mantener la calma y ejercer correctamente cada derecho.',
+      infoImportante: {
+        titulo: 'Información Importante',
+        descripcion: 'Los primeros minutos tras la detención son críticos. Mantén la calma, no opongas resistencia y solicita inmediatamente asistencia letrada.'
+      }
+    }
+  };
   
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Derechos Inmediatos al Ser Detenido' }
+    { label: blogTranslations.introduccion.titulo }
   ];
 
   const tocItems = [
@@ -140,12 +163,12 @@ export default function DerechosInmediatosPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derechos Inmediatos al Ser Detenido
+                {blogTranslations.introduccion.titulo}
               </h1>
 
               <p className="text-lg text-white/80 mb-6">
-                Conoce tus derechos desde el momento exacto de la detención.
-                Guía práctica para afrontar una situación de urgencia penal con garantías.
+                {blogTranslations.introduccion.parrafo1}
+                {blogTranslations.introduccion.parrafo2}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -177,15 +200,23 @@ export default function DerechosInmediatosPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los primeros momentos después de una detención son <strong>cruciales</strong> para determinar
-                  el desarrollo del procedimiento penal. Conocer tus derechos constitucionales y saber cómo
-                  ejercerlos puede marcar la diferencia entre una defensa efectiva y complicaciones innecesarias.
+                  {blogTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía detalla los derechos que te asisten desde el momento exacto de la detención,
-                  basándose en la <strong>Constitución Española</strong>, la <strong>Ley de Enjuiciamiento Criminal</strong>
-                  y la jurisprudencia del <strong>Tribunal Constitucional</strong>.
+                  {blogTranslations.introduccion.parrafo2}
                 </p>
+
+                <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 mt-8">
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-semibold text-blue-900 mb-2">{blogTranslations.introduccion.infoImportante.titulo}</h3>
+                      <p className="text-blue-800">
+                        {blogTranslations.introduccion.infoImportante.descripcion}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Fases Iniciales */}
