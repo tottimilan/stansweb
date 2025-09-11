@@ -307,6 +307,12 @@ export default function DerechosConstitucionalesPage() {
       extranjeros: 'الأجانب',
       personasDiscapacidad: 'ذوي الاحتياجات الخاصة',
       victimasViolencia: 'ضحايا العنف'
+    },
+    content: {
+      introduccion: {
+        parrafo1: 'الحقوق الدستورية للمعتقل هي الضمانات الأساسية التي تحمي الحرية وكرامة كل شخص محروم من الحرية. منصوص عليها في الباب الأول من الدستور الإسباني (المواد 14-29)، هذه الحقوق غير قابلة للتنازل وغير قابلة للتقادم، وتشكل حدوداً لا يمكن تجاوزها لأي إجراء شرطي أو قضائي.',
+        parrafo2: 'يحلل هذا الدليل الشامل كل حق دستوري قابل للتطبيق أثناء الاعتقال، ضماناته العملية، وعواقب انتهاكه، بناءً على قضاء المحكمة الدستورية والمحكمة الأوروبية لحقوق الإنسان، التي طورت هذه الحقوق على مدى عقود من الأحكام.'
+      }
     }
   } : {
     hero: {
@@ -327,6 +333,12 @@ export default function DerechosConstitucionalesPage() {
       extranjeros: 'Extranjeros',
       personasDiscapacidad: 'Personas con Discapacidad',
       victimasViolencia: 'Víctimas de Violencia'
+    },
+    content: {
+      introduccion: {
+        parrafo1: 'Los <strong>derechos constitucionales del detenido</strong> son las garantías fundamentales que protegen la libertad y dignidad de toda persona privada de libertad. Recogidos en el <strong>Título I de la Constitución Española</strong> (arts. 14-29), estos derechos son <strong>irrenunciables</strong> e imprescribibles, constituyendo límites infranqueables para cualquier actuación policial o judicial.',
+        parrafo2: 'Esta guía exhaustiva analiza cada derecho constitucional aplicable durante la detención, sus garantías prácticas, y las consecuencias de su vulneración, basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong> y el <strong>Tribunal Europeo de Derechos Humanos</strong>, que han desarrollado estos derechos a través de décadas de pronunciamientos.'
+      }
     }
   };
 
@@ -410,18 +422,10 @@ export default function DerechosConstitucionalesPage() {
               {/* Introduction */}
               <div id="introduccion" className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los <strong>derechos constitucionales del detenido</strong> son las garantías fundamentales
-                  que protegen la libertad y dignidad de toda persona privada de libertad. Recogidos en el
-                  <strong>Título I de la Constitución Española</strong> (arts. 14-29), estos derechos son
-                  <strong>irrenunciables</strong> e imprescribibles, constituyendo límites infranqueables
-                  para cualquier actuación policial o judicial.
+                  {blogTranslations.content.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía exhaustiva analiza cada derecho constitucional aplicable durante la detención,
-                  sus garantías prácticas, y las consecuencias de su vulneración, basándose en la
-                  jurisprudencia del <strong>Tribunal Constitucional</strong> y el <strong>Tribunal Europeo
-                  de Derechos Humanos</strong>, que han desarrollado estos derechos a través de décadas
-                  de pronunciamientos.
+                  {blogTranslations.content.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -435,7 +439,7 @@ export default function DerechosConstitucionalesPage() {
                 className="mb-12"
               >
                 <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Derechos Constitucionales Fundamentales
+                  {blogTranslations.sections.derechosFundamentales}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -490,7 +494,7 @@ export default function DerechosConstitucionalesPage() {
                 className="mb-12"
               >
                 <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Garantías Procesales Prácticas
+                  {blogTranslations.sections.garantiasProcesales}
                 </h2>
 
                 <div className="space-y-6">
@@ -513,12 +517,12 @@ export default function DerechosConstitucionalesPage() {
                           </p>
                         </div>
                         <span className="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded">
-                          Plazo: {garantia.plazo}
+                          {language === 'ar' ? 'المهلة:' : 'Plazo:'} {garantia.plazo}
                         </span>
                       </div>
 
                       <div>
-                        <h4 className="font-semibold text-black mb-2">Procedimiento:</h4>
+                        <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الإجراء:' : 'Procedimiento:'}</h4>
                         <p className="text-black/80 text-sm">
                           {garantia.procedimiento}
                         </p>
@@ -538,14 +542,16 @@ export default function DerechosConstitucionalesPage() {
                 className="mb-12"
               >
                 <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Vulneraciones Constitucionales Comunes
+                  {blogTranslations.sections.vulneracionesComunes}
                 </h2>
 
                 <div className="bg-yellow-50 border-l-4 border-yellow-600 p-8">
                   <div className="flex items-start gap-3 mb-6">
                     <AlertTriangle className="h-6 w-6 text-yellow-600 mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="text-lg font-semibold text-black mb-2">Prevención y Detección</h3>
+                      <h3 className="text-lg font-semibold text-black mb-2">
+                        {language === 'ar' ? 'الوقاية والكشف' : 'Prevención y Detección'}
+                      </h3>
                       <p className="text-black/80">
                         Conocer las vulneraciones más comunes permite prevenirlas y actuar
                         rápidamente cuando ocurren. Toda vulneración constitucional debe ser
@@ -568,7 +574,9 @@ export default function DerechosConstitucionalesPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           <div>
-                            <h5 className="font-medium text-red-700 mb-2">Consecuencias:</h5>
+                            <h5 className="font-medium text-red-700 mb-2">
+                              {language === 'ar' ? 'العواقب:' : 'Consecuencias:'}
+                            </h5>
                             <ul className="text-sm text-black/80 space-y-1">
                               {vulneracion.consecuencias.map((consecuencia, idx) => (
                                 <li key={idx}>• {consecuencia}</li>
@@ -576,7 +584,9 @@ export default function DerechosConstitucionalesPage() {
                             </ul>
                           </div>
                           <div>
-                            <h5 className="font-medium text-green-700 mb-2">Prevención:</h5>
+                            <h5 className="font-medium text-green-700 mb-2">
+                              {language === 'ar' ? 'الوقاية:' : 'Prevención:'}
+                            </h5>
                             <ul className="text-sm text-black/80 space-y-1">
                               {Array.isArray(vulneracion.prevencion)
                                 ? vulneracion.prevencion.map((prevencion, idx) => (
@@ -603,16 +613,18 @@ export default function DerechosConstitucionalesPage() {
                 className="mb-12"
               >
                 <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Protección Especial para Grupos Vulnerables
+                  {blogTranslations.sections.proteccionEspecial}
                 </h2>
 
                 <div className="bg-purple-50 border border-purple-200 rounded-lg p-8">
                   <div className="flex items-center gap-3 mb-6">
                     <Shield className="h-8 w-8 text-purple-600" />
                     <div>
-                      <h3 className="text-xl font-semibold text-black">Derechos Reforzados</h3>
+                      <h3 className="text-xl font-semibold text-black">
+                        {language === 'ar' ? 'الحقوق المعززة' : 'Derechos Reforzados'}
+                      </h3>
                       <p className="text-black/80 mt-1">
-                        Grupos vulnerables tienen protecciones constitucionales adicionales
+                        {language === 'ar' ? 'الفئات الضعيفة لديها حمايات دستورية إضافية' : 'Grupos vulnerables tienen protecciones constitucionales adicionales'}
                       </p>
                     </div>
                   </div>
@@ -620,7 +632,7 @@ export default function DerechosConstitucionalesPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-4">
                       <div id="menores-edad" className="bg-white p-4 rounded-lg">
-                        <h4 className="font-semibold text-black mb-2">Menores de Edad</h4>
+                        <h4 className="font-semibold text-black mb-2">{blogTranslations.subsections.menoresEdad}</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Derecho a presencia familiar</li>
                           <li>• Abogado especializado en menores</li>
@@ -630,7 +642,7 @@ export default function DerechosConstitucionalesPage() {
                       </div>
 
                       <div id="extranjeros" className="bg-white p-4 rounded-lg">
-                        <h4 className="font-semibold text-black mb-2">Extranjeros</h4>
+                        <h4 className="font-semibold text-black mb-2">{blogTranslations.subsections.extranjeros}</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Derecho a traducción oficial</li>
                           <li>• Comunicación consular</li>
@@ -642,7 +654,7 @@ export default function DerechosConstitucionalesPage() {
 
                     <div className="space-y-4">
                       <div id="personas-discapacidad" className="bg-white p-4 rounded-lg">
-                        <h4 className="font-semibold text-black mb-2">Personas con Discapacidad</h4>
+                        <h4 className="font-semibold text-black mb-2">{blogTranslations.subsections.personasDiscapacidad}</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Adaptaciones razonables</li>
                           <li>• Apoyo especializado</li>
@@ -652,7 +664,7 @@ export default function DerechosConstitucionalesPage() {
                       </div>
 
                       <div id="victimas-violencia" className="bg-white p-4 rounded-lg">
-                        <h4 className="font-semibold text-black mb-2">Víctimas de Violencia</h4>
+                        <h4 className="font-semibold text-black mb-2">{blogTranslations.subsections.victimasViolencia}</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Protección especial</li>
                           <li>• Alejamiento de agresores</li>
