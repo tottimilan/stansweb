@@ -9,6 +9,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const WHATSAPP = '34611687226';
 
@@ -122,24 +123,63 @@ export default function BlogPage() {
     <>
       <ScrollProgress />
       <Navigation />
-
       <main className="bg-black">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-charleston to-black text-offwhite py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <section className="bg-gradient-to-br from-charleston to-black text-offwhite py-20 sm:py-24 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-center"
             >
-              <BookOpen className="h-16 w-16 text-gold mx-auto mb-6" />
-              <h1 className="text-4xl sm:text-5xl font-bold text-gold mb-6">
-                Blog Jurídico STANS
-              </h1>
-              <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-                Conocimiento especializado en derecho penal. Artículos, guías y análisis sobre temas legales que afectan a nuestra sociedad.
-              </p>
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl mb-8 mx-auto border border-gold/30"
+              >
+                <BookOpen className="h-10 w-10 text-gold" />
+              </motion.div>
+              
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gold mb-6 tracking-tight"
+              >
+                {t.blog.title}
+              </motion.h1>
+              
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-lg sm:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-8"
+              >
+                {t.blog.subtitle}
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="flex flex-wrap justify-center gap-6 text-sm text-white/70"
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-gold rounded-full"></div>
+                  <span>{t.blog.legalExpert}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-gold rounded-full"></div>
+                  <span>{t.blog.actualizacionSemanal}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-gold rounded-full"></div>
+                  <span>{t.blog.casosReales}</span>
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </section>
@@ -155,10 +195,10 @@ export default function BlogPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-gold mb-4">
-                Hubs de Contenido
+                {t.blog.hubsTitle}
               </h2>
               <p className="text-white/80 text-lg">
-                Guías completas sobre temas específicos del derecho penal
+                {t.blog.hubsSubtitle}
               </p>
             </motion.div>
 
@@ -168,8 +208,8 @@ export default function BlogPage() {
                   key={pillar.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.2) }}
+                  viewport={{ once: true, margin: "-50px" }}
                   className="group"
                 >
                   <Link href={`/blog/${pillar.slug}`}>
@@ -185,7 +225,7 @@ export default function BlogPage() {
                       </p>
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-gold font-medium">
-                          {pillar.articles} artículos
+                          {pillar.articles} {t.blog.articles}
                         </span>
                         <ArrowRight className="h-4 w-4 text-gold group-hover:translate-x-1 transition-transform" />
                       </div>
@@ -208,10 +248,10 @@ export default function BlogPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-black mb-4">
-                Artículos Recientes
+                {t.blog.articulosRecientes}
               </h2>
               <p className="text-black/70 text-lg">
-                Mantente informado con nuestros últimos análisis y guías legales
+                {t.blog.articulosSubtitle}
               </p>
             </motion.div>
 
@@ -221,8 +261,8 @@ export default function BlogPage() {
                   key={post.id}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.2) }}
+                  viewport={{ once: true, margin: "-50px" }}
                   className="group bg-white border border-gold/20 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-gold/50"
                 >
                   <Link href={`/blog/${post.slug}`}>
@@ -280,7 +320,7 @@ export default function BlogPage() {
               className="text-center mt-12"
             >
               <button className="inline-flex items-center gap-2 bg-gold text-black px-8 py-3 rounded-lg font-medium hover:opacity-90 transition">
-                Cargar más artículos
+                {t.blog.cargarMas}
                 <ArrowRight className="h-4 w-4" />
               </button>
             </motion.div>
@@ -298,21 +338,21 @@ export default function BlogPage() {
               className="text-center"
             >
               <h2 className="text-3xl font-bold text-gold mb-4">
-                Mantente Informado
+                {t.blog.mantenerseInformado}
               </h2>
               <p className="text-white/80 text-lg mb-8">
-                Recibe nuestros últimos artículos y actualizaciones legales en tu correo electrónico.
+                {t.blog.newsletterDescription}
               </p>
 
               <div className="max-w-md mx-auto">
                 <div className="flex gap-3">
                   <input
                     type="email"
-                    placeholder="Tu correo electrónico"
+                    placeholder={t.blog.placeholder}
                     className="flex-1 px-4 py-3 rounded-lg border border-gold/30 bg-white text-black placeholder-black/50 focus:outline-none focus:border-gold"
                   />
                   <button className="bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
-                    Suscribirse
+                    {t.blog.suscribirse}
                   </button>
                 </div>
               </div>

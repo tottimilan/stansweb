@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -136,29 +138,39 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function AbogadoUrgenciaPage({ params }: Props) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function AbogadoUrgenciaPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: 'Asistencia Letrada de Urgencia' }
+  ];
+
+  const tocItems = [
+    { id: 'funciones-del-abogado-de-urgencia', title: 'Funciones del Abogado de Urgencia', level: 2 },
+    { id: 'tipos-de-abogados-en-urgencias', title: 'Tipos de Abogados en Urgencias', level: 2 },
+    { id: 'derechos-adicionales-con-abogado-presente', title: 'Derechos Adicionales con Abogado Presente', level: 2 },
+    { id: 'como-solicitar-asistencia-letrada-de-urgencia', title: 'Cómo Solicitar Asistencia Letrada de Urgencia', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-abogados-de-urgencia', title: 'Preguntas Frecuentes sobre Abogados de Urgencia', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -208,6 +220,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

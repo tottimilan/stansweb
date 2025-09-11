@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -142,29 +144,38 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function DisposicionJudicialPage({ params }: Props) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function DisposicionJudicialPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: 'Puesta a Disposición Judicial' }
+  ];
+
+  const tocItems = [
+    { id: 'fases-de-la-audiencia-judicial', title: 'Fases de la Audiencia Judicial', level: 2 },
+    { id: 'medidas-cautelares-posibles', title: 'Medidas Cautelares Posibles', level: 2 },
+    { id: 'derechos-en-la-audiencia-judicial', title: 'Derechos en la Audiencia Judicial', level: 2 },
+    { id: 'preparacion-de-la-defensa', title: 'Preparación de la Defensa', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-puesta-a-disposicion-judicial', title: 'Preguntas Frecuentes sobre Puesta a Disposición Judicial', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -214,6 +225,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

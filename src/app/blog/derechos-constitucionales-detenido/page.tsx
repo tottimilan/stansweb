@@ -7,10 +7,62 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import TableOfContents from '@/components/TableOfContents';
+import Breadcrumb from '@/components/Breadcrumb';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
 const WHATSAPP = '34611687226';
+
+// Estructura del índice para navegación
+const tableOfContents = [
+  {
+    id: 'introduccion',
+    title: 'Introducción',
+    level: 1
+  },
+  {
+    id: 'derechos-fundamentales',
+    title: 'Derechos Constitucionales Fundamentales',
+    level: 1
+  },
+  {
+    id: 'garantias-procesales',
+    title: 'Garantías Procesales Prácticas',
+    level: 1
+  },
+  {
+    id: 'vulneraciones-comunes',
+    title: 'Vulneraciones Constitucionales Comunes',
+    level: 1
+  },
+  {
+    id: 'proteccion-especial',
+    title: 'Protección Especial para Grupos Vulnerables',
+    level: 1,
+    children: [
+      { id: 'menores-edad', title: 'Menores de Edad', level: 2 },
+      { id: 'extranjeros', title: 'Extranjeros', level: 2 },
+      { id: 'personas-discapacidad', title: 'Personas con Discapacidad', level: 2 },
+      { id: 'victimas-violencia', title: 'Víctimas de Violencia', level: 2 }
+    ]
+  },
+  {
+    id: 'preguntas-frecuentes',
+    title: 'Preguntas Frecuentes',
+    level: 1
+  },
+  {
+    id: 'legislacion-referencias',
+    title: 'Legislación y Referencias',
+    level: 1
+  },
+  {
+    id: 'conclusion',
+    title: 'Conclusión',
+    level: 1
+  }
+];
 
 const derechosFAQ = [
   {
@@ -196,20 +248,37 @@ const relatedArticles = [
   }
 ];
 
-export default async function DerechosConstitucionalesPage({ params }: Promise<{ slug: string }>) {
-  return <BlogPostContent />;
+interface Props {
+  params: Promise<{
+    slug: string;
+  }>;
 }
 
-function BlogPostContent() {
+export default async function DerechosConstitucionalesPage({ params }: Props) {
+  const { slug } = await params;
+  return <BlogPostContent slug={slug} />;
+}
+
+function BlogPostContent({ slug }: { slug: string }) {
   const { language } = useLanguage();
   const t = translations[language];
+
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: 'Derechos Constitucionales del Detenido' }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="bg-black">
+        {/* Table of Contents */}
+        <TableOfContents items={tableOfContents} />
+
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -269,7 +338,7 @@ function BlogPostContent() {
               className="prose prose-lg max-w-none"
             >
               {/* Introduction */}
-              <div className="text-black/80 leading-relaxed mb-12 text-lg">
+              <div id="introduccion" className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
                   Los <strong>derechos constitucionales del detenido</strong> son las garantías fundamentales
                   que protegen la libertad y dignidad de toda persona privada de libertad. Recogidos en el
@@ -288,6 +357,7 @@ function BlogPostContent() {
 
               {/* Derechos Fundamentales */}
               <motion.div
+                id="derechos-fundamentales"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -342,6 +412,7 @@ function BlogPostContent() {
 
               {/* Garantías Procesales */}
               <motion.div
+                id="garantias-procesales"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -389,6 +460,7 @@ function BlogPostContent() {
 
               {/* Vulneraciones Comunes */}
               <motion.div
+                id="vulneraciones-comunes"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -436,9 +508,12 @@ function BlogPostContent() {
                           <div>
                             <h5 className="font-medium text-green-700 mb-2">Prevención:</h5>
                             <ul className="text-sm text-black/80 space-y-1">
-                              {vulneracion.prevencion.map((prevencion, idx) => (
-                                <li key={idx}>• {prevencion}</li>
-                              ))}
+                              {Array.isArray(vulneracion.prevencion)
+                                ? vulneracion.prevencion.map((prevencion, idx) => (
+                                    <li key={idx}>• {prevencion}</li>
+                                  ))
+                                : <li>• {vulneracion.prevencion}</li>
+                              }
                             </ul>
                           </div>
                         </div>
@@ -450,6 +525,7 @@ function BlogPostContent() {
 
               {/* Protección Especial */}
               <motion.div
+                id="proteccion-especial"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -473,7 +549,7 @@ function BlogPostContent() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-4">
-                      <div className="bg-white p-4 rounded-lg">
+                      <div id="menores-edad" className="bg-white p-4 rounded-lg">
                         <h4 className="font-semibold text-black mb-2">Menores de Edad</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Derecho a presencia familiar</li>
@@ -483,7 +559,7 @@ function BlogPostContent() {
                         </ul>
                       </div>
 
-                      <div className="bg-white p-4 rounded-lg">
+                      <div id="extranjeros" className="bg-white p-4 rounded-lg">
                         <h4 className="font-semibold text-black mb-2">Extranjeros</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Derecho a traducción oficial</li>
@@ -495,7 +571,7 @@ function BlogPostContent() {
                     </div>
 
                     <div className="space-y-4">
-                      <div className="bg-white p-4 rounded-lg">
+                      <div id="personas-discapacidad" className="bg-white p-4 rounded-lg">
                         <h4 className="font-semibold text-black mb-2">Personas con Discapacidad</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Adaptaciones razonables</li>
@@ -505,7 +581,7 @@ function BlogPostContent() {
                         </ul>
                       </div>
 
-                      <div className="bg-white p-4 rounded-lg">
+                      <div id="victimas-violencia" className="bg-white p-4 rounded-lg">
                         <h4 className="font-semibold text-black mb-2">Víctimas de Violencia</h4>
                         <ul className="text-sm text-black/80 space-y-1">
                           <li>• Protección especial</li>
@@ -521,6 +597,7 @@ function BlogPostContent() {
 
               {/* FAQ Section */}
               <motion.div
+                id="preguntas-frecuentes"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -557,6 +634,7 @@ function BlogPostContent() {
 
               {/* Referencias */}
               <motion.div
+                id="legislacion-referencias"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -622,7 +700,7 @@ function BlogPostContent() {
               </motion.div>
 
               {/* Conclusion */}
-              <div className="bg-charleston text-white p-8 rounded-2xl">
+              <div id="conclusion" className="bg-charleston text-white p-8 rounded-2xl">
                 <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los derechos constitucionales del detenido son la base fundamental del Estado de Derecho

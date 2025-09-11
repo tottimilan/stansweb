@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -177,29 +179,39 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function RegistroDependenciasPage({ params }: Props) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function RegistroDependenciasPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: 'Registro de Dependencias del Detenido' }
+  ];
+
+  const tocItems = [
+    { id: 'tipos-de-registros-durante-la-detencion', title: 'Tipos de Registros durante la Detención', level: 2 },
+    { id: 'fases-de-un-registro-domiciliario', title: 'Fases de un Registro Domiciliario', level: 2 },
+    { id: 'garantias-procesales-en-los-registros', title: 'Garantías Procesales en los Registros', level: 2 },
+    { id: 'documentacion-obligatoria', title: 'Documentación Obligatoria', level: 2 },
+    { id: 'protocolo-de-defensa-ante-un-registro', title: 'Protocolo de Defensa ante un Registro', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-registros', title: 'Preguntas Frecuentes sobre Registros', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -249,6 +261,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

@@ -7,6 +7,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -16,13 +17,13 @@ const extraditionArticles = [
   {
     title: 'Extradición en la Unión Europea',
     excerpt: 'Procedimientos simplificados entre países miembros del espacio Schengen.',
-    slug: 'extradicion-union-europea',
+    slug: 'tipos-extradicion-espana',
     readTime: '12 min'
   },
   {
     title: 'Extradición Internacional',
     excerpt: 'Procedimientos con países no comunitarios y tratados bilaterales.',
-    slug: 'extradicion-internacional',
+    slug: 'procedimientos-extradicion-espana',
     readTime: '15 min'
   },
   {
@@ -34,19 +35,19 @@ const extraditionArticles = [
   {
     title: 'Defensas contra la Extradición',
     excerpt: 'Motivos para impugnar una solicitud de extradición.',
-    slug: 'defensas-contra-extradicion',
+    slug: 'recursos-contra-extradicion',
     readTime: '14 min'
   },
   {
     title: 'Extradición por Terrorismo',
     excerpt: 'Consideraciones especiales en casos de terrorismo internacional.',
-    slug: 'extradicion-terrorismo',
+    slug: 'tipos-extradicion-espana',
     readTime: '16 min'
   },
   {
     title: 'Extradición por Delitos Económicos',
     excerpt: 'Aspectos específicos de extradición en casos de blanqueo y corrupción.',
-    slug: 'extradicion-delitos-economicos',
+    slug: 'requisitos-extradicion-espana',
     readTime: '13 min'
   }
 ];
@@ -102,10 +103,16 @@ export default function ProcedimientosExtradicionPage() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Procedimientos de Extradición' }
+  ];
+
   return (
     <>
       <ScrollProgress />
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="bg-black">
         {/* Hero Section */}
@@ -134,7 +141,7 @@ export default function ProcedimientosExtradicionPage() {
                   Consulta Extradición
                 </a>
                 <Link
-                  href="/contacto"
+                  href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold hover:bg-gold hover:text-black transition"
                 >
                   Asesoría Internacional
@@ -389,7 +396,7 @@ export default function ProcedimientosExtradicionPage() {
                   Consulta Urgente
                 </a>
                 <Link
-                  href="/contacto"
+                  href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition"
                 >
                   Asesoría Internacional

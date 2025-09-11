@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -227,23 +229,39 @@ const relatedArticles = [
   }
 ];
 
-export default async function ProteccionTorturasPage({ params }: Promise<{ slug: string }>) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function ProteccionTorturasPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: 'Protección contra Torturas y Tratos Inhumanos' }
+  ];
+
+  const tocItems = [
+    { id: 'tipos-de-maltrato-prohibidos', title: 'Tipos de Maltrato Prohibidos', level: 2 },
+    { id: 'garantias-de-proteccion-y-deteccion', title: 'Garantías de Protección y Detección', level: 2 },
+    { id: 'protocolo-de-deteccion-y-denuncia', title: 'Protocolo de Detección y Denuncia', level: 2 },
+    { id: 'organizaciones-de-apoyo-a-victimas', title: 'Organizaciones de Apoyo a Víctimas', level: 2 },
+    { id: 'derechos-a-la-reparacion-integral', title: 'Derechos a la Reparación Integral', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-torturas-y-maltratos', title: 'Preguntas Frecuentes sobre Torturas y Maltratos', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-red-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -293,6 +311,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

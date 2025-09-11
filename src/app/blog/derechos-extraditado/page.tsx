@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -83,7 +85,7 @@ const derechosConstitucionales = [
     descripcion: "Procedimiento respetuoso con garantías procesales",
     fundamento: "Artículo 24 CE",
     aplicacion: "Plazos, recursos y garantías procesales"
-  }
+  },
 ];
 
 const derechosHumanos = [
@@ -122,7 +124,7 @@ const derechosHumanos = [
     descripcion: "Trato igualitario sin discriminaciones",
     fundamento: "CEDH Artículo 14",
     garantia: "No discriminación por origen o condición"
-  }
+  },
 ];
 
 const derechosEspeciales = [
@@ -145,7 +147,7 @@ const derechosEspeciales = [
     grupo: "Víctimas de Violencia",
     derechosAdicionales: ["Protección especial", "Alejamiento de agresores", "Apoyo psicológico", "Medidas de seguridad"],
     consideraciones: "Ley Integral Violencia Género"
-  }
+  },
 ];
 
 const derechosSalud = [
@@ -168,7 +170,7 @@ const derechosSalud = [
     aspecto: "Necesidades Especiales",
     derechos: ["Dieta especial por religión", "Medicamentos específicos", "Ayudas técnicas", "Adaptaciones necesarias"],
     garantia: "Derecho a la igualdad"
-  }
+  },
 ];
 
 const relatedArticles = [
@@ -186,26 +188,42 @@ const relatedArticles = [
     title: 'Recursos contra Extradición',
     slug: 'recursos-contra-extradicion',
     category: 'Recursos Procesales'
-  }
+  },
 ];
 
-export default async function DerechosExtraditadoPage({ params }: Promise<{ slug: string } }) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function DerechosExtraditadoPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: 'Derechos del Extraditado' }
+  ];
+
+  const tocItems = [
+    { id: 'derechos-constitucionales-del-extraditado', title: 'Derechos Constitucionales del Extraditado', level: 2 },
+    { id: 'derechos-humanos-internacionales', title: 'Derechos Humanos Internacionales', level: 2 },
+    { id: 'derechos-de-grupos-vulnerables', title: 'Derechos de Grupos Vulnerables', level: 2 },
+    { id: 'derechos-en-materia-de-salud-y-dignidad', title: 'Derechos en Materia de Salud y Dignidad', level: 2 },
+    { id: 'derechos-durante-la-ejecucion-de-la-extradicion', title: 'Derechos durante la Ejecución de la Extradición', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-del-extraditado', title: 'Preguntas Frecuentes sobre Derechos del Extraditado', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -255,6 +273,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

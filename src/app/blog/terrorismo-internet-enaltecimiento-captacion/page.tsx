@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -140,29 +142,37 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function TerrorismoInternetPage({ params }: Props) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function TerrorismoInternetPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Terrorismo en Internet: Enaltecimiento y Captación' }
+  ];
+
+  const tocItems = [
+    { id: 'marco-legal-del-terrorismo-digital', title: 'Marco Legal del Terrorismo Digital', level: 2 },
+    { id: 'tipos-de-delitos-de-terrorismo-en-internet', title: 'Tipos de Delitos de Terrorismo en Internet', level: 2 },
+    { id: 'casos-reales-y-jurisprudencia', title: 'Casos Reales y Jurisprudencia', level: 2 },
+    { id: 'responsabilidad-de-plataformas-digitales', title: 'Responsabilidad de Plataformas Digitales', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-terrorismo-en-internet', title: 'Preguntas Frecuentes sobre Terrorismo en Internet', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-gray-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -212,6 +222,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

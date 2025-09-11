@@ -7,6 +7,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -22,19 +23,19 @@ const rightsArticles = [
   {
     title: 'Asistencia Letrada Inmediata',
     excerpt: 'Tu derecho a tener un abogado desde el primer momento.',
-    slug: 'asistencia-letrada-inmediata',
+    slug: 'derecho-asistencia-letrada-detenido',
     readTime: '6 min'
   },
   {
     title: 'Derecho a la Información',
     excerpt: 'Conocer los motivos de tu detención y tus derechos.',
-    slug: 'derecho-informacion-detenido',
+    slug: 'derechos-constitucionales-detenido',
     readTime: '5 min'
   },
   {
     title: 'Derecho a No Declarar',
     excerpt: 'Cuándo y cómo ejercer tu derecho a no declarar.',
-    slug: 'derecho-no-declarar',
+    slug: 'derechos-constitucionales-detenido',
     readTime: '7 min'
   },
   {
@@ -52,25 +53,25 @@ const rightsArticles = [
   {
     title: 'Condiciones de Detención',
     excerpt: 'Estándares mínimos de dignidad en centros penitenciarios.',
-    slug: 'condiciones-detencion-derechos',
+    slug: 'derechos-dependencias-policiales',
     readTime: '10 min'
   },
   {
     title: 'Derechos durante el Interrogatorio',
     excerpt: 'Garantías procesales durante la declaración policial.',
-    slug: 'derechos-interrogatorio',
+    slug: 'derechos-procesales-recursos-detenido',
     readTime: '7 min'
   },
   {
     title: 'Derecho a la Asistencia Médica',
     excerpt: 'Atención sanitaria durante la detención.',
-    slug: 'derecho-asistencia-medica-detencion',
+    slug: 'proteccion-torturas-tratos-inhumanos',
     readTime: '6 min'
   },
   {
     title: 'Protección de Menores Detenidos',
     excerpt: 'Consideraciones especiales para menores de edad.',
-    slug: 'proteccion-menores-detenidos',
+    slug: 'derechos-grupos-vulnerables-detenidos',
     readTime: '8 min'
   }
 ];
@@ -133,10 +134,16 @@ export default function DerechosDetenidosPage() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Derechos de Detenidos' }
+  ];
+
   return (
     <>
       <ScrollProgress />
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="bg-black">
         {/* Hero Section */}
@@ -166,7 +173,7 @@ export default function DerechosDetenidosPage() {
                   Consulta Urgente
                 </a>
                 <Link
-                  href="/contacto"
+                  href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold hover:bg-gold hover:text-black transition"
                 >
                   Información Legal
@@ -470,10 +477,10 @@ export default function DerechosDetenidosPage() {
                   Denuncia Violación
                 </a>
                 <Link
-                  href="/contacto"
+                  href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition"
                 >
-                  Consulta Gratuita
+                  Contacta Ahora
                 </Link>
               </div>
             </motion.div>

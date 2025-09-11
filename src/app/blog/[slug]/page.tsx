@@ -253,7 +253,7 @@ function BlogPostContent({ slug }: { slug: string }) {
                   </button>
                 </div>
                 <Link
-                  href="/contacto"
+                  href="/#contacto"
                   className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
                 >
                   Consultar caso similar

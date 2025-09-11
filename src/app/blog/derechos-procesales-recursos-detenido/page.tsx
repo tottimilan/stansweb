@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -83,7 +85,7 @@ const derechosInvestigacion = [
     descripcion: "Impugnación de decisiones judiciales",
     procedimiento: "Recursos ordinarios y extraordinarios",
     momento: "Contra resoluciones judiciales"
-  }
+  },
 ];
 
 const tiposRecursos = [
@@ -128,7 +130,7 @@ const tiposRecursos = [
     plazo: "Sin límite temporal",
     organo: "Audiencia Nacional",
     efectos: "Liberación inmediata si prospera"
-  }
+  },
 ];
 
 const garantiasAudiencia = [
@@ -167,7 +169,7 @@ const garantiasAudiencia = [
     descripcion: "Juicio público salvo excepciones",
     procedimiento: "Acceso público a la sala",
     evidencia: "Artículo 24.2 CE"
-  }
+  },
 ];
 
 const medidasCautelares = [
@@ -194,7 +196,7 @@ const medidasCautelares = [
     descripcion: "Libertad con control policial",
     requisitos: ["Domicilio fijo", "Aceptación medidas", "No reincidencia"],
     alternativas: ["Control telefónico", "Limitación geográfica", "Horario restringido"]
-  }
+  },
 ];
 
 const estrategiasDefensa = [
@@ -217,7 +219,7 @@ const estrategiasDefensa = [
     fase: "Recursos",
     objetivos: ["Impugnar errores judiciales", "Conseguir nueva valoración", "Proteger derechos constitucionales", "Evitar consecuencias penales"],
     acciones: ["Preparación técnica de recursos", "Fundamentación jurídica", "Presentación en plazo", "Seguimiento de resoluciones"]
-  }
+  },
 ];
 
 const relatedArticles = [
@@ -235,26 +237,43 @@ const relatedArticles = [
     title: 'Derechos en Dependencias Policiales',
     slug: 'derechos-dependencias-policiales',
     category: 'Derechos en Detención'
-  }
+  },
 ];
 
-export default async function DerechosProcesalesPage({ params }: Promise<{ slug: string } }) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function DerechosProcesalesPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: 'Derechos Procesales y Recursos del Detenido' }
+  ];
+
+  const tocItems = [
+    { id: 'derechos-durante-la-investigacion', title: 'Derechos durante la Investigación', level: 2 },
+    { id: 'sistema-de-recursos-contra-decisiones-judiciales', title: 'Sistema de Recursos contra Decisiones Judiciales', level: 2 },
+    { id: 'garantias-en-la-audiencia-judicial', title: 'Garantías en la Audiencia Judicial', level: 2 },
+    { id: 'medidas-cautelares-durante-el-proceso', title: 'Medidas Cautelares durante el Proceso', level: 2 },
+    { id: 'estrategias-de-defensa-por-fases-procesales', title: 'Estrategias de Defensa por Fases Procesales', level: 2 },
+    { id: 'proteccion-contra-dilaciones-indebidas', title: 'Protección contra Dilaciones Indebidas', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-procesales', title: 'Preguntas Frecuentes sobre Derechos Procesales', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-green-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -304,6 +323,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 import { notFound } from 'next/navigation';
@@ -134,29 +136,38 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function ExtradicionEspanaPage({ params }: Props) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function ExtradicionEspanaPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: 'Procedimientos de Extradición en España' }
+  ];
+
+  const tocItems = [
+    { id: 'tipos-de-extradicion-en-espana', title: 'Tipos de Extradición en España', level: 2 },
+    { id: 'fases-del-procedimiento-de-extradicion', title: 'Fases del Procedimiento de Extradición', level: 2 },
+    { id: 'derechos-del-extraditado', title: 'Derechos del Extraditado', level: 2 },
+    { id: 'tratados-internacionales-de-espana', title: 'Tratados Internacionales de España', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-extradicion', title: 'Preguntas Frecuentes sobre Extradición', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-purple-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -206,6 +217,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

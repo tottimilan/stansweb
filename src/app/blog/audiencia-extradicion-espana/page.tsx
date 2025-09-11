@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -192,23 +194,39 @@ const relatedArticles = [
   }
 ];
 
-export default async function AudienciaExtradicionPage({ params }: Promise<{ slug: string }>) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function AudienciaExtradicionPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: 'Audiencia de Extradición en España' }
+  ];
+
+  const tocItems = [
+    { id: 'fases-de-la-audiencia-de-extradicion', title: 'Fases de la Audiencia de Extradición', level: 2 },
+    { id: 'derechos-del-extraditado-en-la-audiencia', title: 'Derechos del Extraditado en la Audiencia', level: 2 },
+    { id: 'estrategia-de-defensa-en-la-audiencia', title: 'Estrategia de Defensa en la Audiencia', level: 2 },
+    { id: 'tipos-de-resolucion-judicial', title: 'Tipos de Resolución Judicial', level: 2 },
+    { id: 'preparacion-previa-a-la-audiencia', title: 'Preparación Previa a la Audiencia', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-audiencia-de-extradicion', title: 'Preguntas Frecuentes sobre Audiencia de Extradición', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -258,6 +276,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

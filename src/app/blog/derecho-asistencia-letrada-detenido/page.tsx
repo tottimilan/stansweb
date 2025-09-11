@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -203,23 +205,40 @@ const relatedArticles = [
   }
 ];
 
-export default async function DerechoAsistenciaLetradaPage({ params }: Promise<{ slug: string }>) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function DerechoAsistenciaLetradaPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: 'Derecho a Asistencia Letrada del Detenido' }
+  ];
+
+  const tocItems = [
+    { id: 'funciones-del-abogado-durante-la-detencion', title: 'Funciones del Abogado durante la Detención', level: 2 },
+    { id: 'tipos-de-asistencia-juridica', title: 'Tipos de Asistencia Jurídica', level: 2 },
+    { id: 'derechos-adicionales-con-asistencia-letrada', title: 'Derechos Adicionales con Asistencia Letrada', level: 2 },
+    { id: 'plazos-constitucionales-de-asistencia-letrada', title: 'Plazos Constitucionales de Asistencia Letrada', level: 2 },
+    { id: 'proceso-de-designacion-de-abogado', title: 'Proceso de Designación de Abogado', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-asistencia-letrada', title: 'Preguntas Frecuentes sobre Asistencia Letrada', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -269,6 +288,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -221,23 +223,40 @@ const relatedArticles = [
   }
 ];
 
-export default async function RequisitosExtradicionPage({ params }: Promise<{ slug: string }>) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function RequisitosExtradicionPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: 'Requisitos de Extradición en España' }
+  ];
+
+  const tocItems = [
+    { id: 'requisitos-sustantivos-obligatorios', title: 'Requisitos Sustantivos Obligatorios', level: 2 },
+    { id: 'requisitos-formales-de-la-solicitud', title: 'Requisitos Formales de la Solicitud', level: 2 },
+    { id: 'causas-de-denegacion-de-la-extradicion', title: 'Causas de Denegación de la Extradición', level: 2 },
+    { id: 'diferencias-ue-vs-extradicion-internacional', title: 'Diferencias UE vs Extradición Internacional', level: 2 },
+    { id: 'protocolo-de-verificacion-de-requisitos', title: 'Protocolo de Verificación de Requisitos', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-requisitos-de-extradicion', title: 'Preguntas Frecuentes sobre Requisitos de Extradición', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -287,6 +306,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

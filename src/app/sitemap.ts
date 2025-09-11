@@ -6,6 +6,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://stansabogados.com"
   const currentDate = new Date()
   
+  // Fechas específicas para diferentes tipos de contenido
+  const blogContentDate = new Date('2024-12-15') // Fecha de actualización del blog
+  const casesContentDate = new Date('2024-12-10') // Fecha de última actualización de casos
+  
   // Páginas principales
   const mainPages = [
     {
@@ -22,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: currentDate,
+      lastModified: blogContentDate,
       changeFrequency: "daily" as const,
       priority: 0.9,
     },
@@ -62,22 +66,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/derechos-detenidos"
   ].map(path => ({
     url: `${baseUrl}${path}`,
-    lastModified: currentDate,
+    lastModified: blogContentDate,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }))
 
-  // Artículos del blog (spokes)
+  // Artículos del blog (spokes) - COMPLETO Y ACTUALIZADO
   const blogArticlePages = [
+    // Hub: Defensa Penal Urgente (8 artículos)
     "/blog/defensa-penal-urgente-guia-completa",
+    "/blog/derechos-inmediatos-detenido",
+    "/blog/primeros-pasos-comisaria",
+    "/blog/asistencia-letrada-urgencia",
+    "/blog/puesta-disposicion-judicial",
+    "/blog/habeas-corpus-recurso-amparo",
+    "/blog/medidas-cautelares-procesos-penales",
+    "/blog/comunicacion-familiares-detenido",
+    "/blog/registro-dependencias-detenido",
+    
+    // Hub: Procedimientos de Extradición (5 artículos)
     "/blog/procedimientos-extradicion-espana",
+    "/blog/tipos-extradicion-espana",
+    "/blog/requisitos-extradicion-espana",
+    "/blog/audiencia-extradicion-espana",
+    "/blog/recursos-contra-extradicion",
+    "/blog/derechos-extraditado",
+    
+    // Hub: Derechos de Detenidos (6 artículos)
     "/blog/derechos-detenidos-garantias-procesales",
+    "/blog/derechos-constitucionales-detenido",
+    "/blog/derecho-asistencia-letrada-detenido",
+    "/blog/proteccion-torturas-tratos-inhumanos",
+    "/blog/derechos-grupos-vulnerables-detenidos",
+    "/blog/derechos-dependencias-policiales",
+    "/blog/derechos-procesales-recursos-detenido",
+    
+    // Artículos especializados adicionales
     "/blog/delitos-salud-publica-drogas-consecuencias",
     "/blog/terrorismo-internet-enaltecimiento-captacion",
     "/blog/blanqueo-capitales-detectar-defenderse"
   ].map(path => ({
     url: `${baseUrl}${path}`,
-    lastModified: currentDate,
+    lastModified: blogContentDate,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }))
@@ -89,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     return {
       url,
-      lastModified: currentDate,
+      lastModified: casesContentDate,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }

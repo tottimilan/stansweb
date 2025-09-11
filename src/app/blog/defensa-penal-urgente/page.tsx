@@ -7,6 +7,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -46,7 +47,7 @@ const relatedArticles = [
   {
     title: 'Medidas Cautelares Urgentes',
     excerpt: 'Prisión provisional, libertad condicional y otras medidas.',
-    slug: 'medidas-cautelares-urgentes',
+    slug: 'medidas-cautelares-procesos-penales',
     readTime: '10 min'
   },
   {
@@ -58,7 +59,7 @@ const relatedArticles = [
   {
     title: 'Registro de Dependencias',
     excerpt: 'Cómo actuar durante un registro policial en tu domicilio.',
-    slug: 'registro-dependencias-derechos',
+    slug: 'registro-dependencias-detenido',
     readTime: '7 min'
   }
 ];
@@ -94,10 +95,16 @@ export default function DefensaPenalUrgentePage() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Defensa Penal Urgente' }
+  ];
+
   return (
     <>
       <ScrollProgress />
       <Navigation />
+      <Breadcrumb items={breadcrumbItems} />
 
       <main className="bg-black">
         {/* Hero Section */}
@@ -127,10 +134,10 @@ export default function DefensaPenalUrgentePage() {
                   Asistencia Urgente 24/7
                 </a>
                 <Link
-                  href="/contacto"
+                  href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold hover:bg-gold hover:text-black transition"
                 >
-                  Consulta Inicial Gratuita
+                  Contacta Ahora
                 </Link>
               </div>
             </motion.div>
@@ -342,10 +349,10 @@ export default function DefensaPenalUrgentePage() {
                   Llamar Ahora - Urgente
                 </a>
                 <Link
-                  href="/contacto"
+                  href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition"
                 >
-                  Consulta Gratuita
+                  Contacta Ahora
                 </Link>
               </div>
             </motion.div>

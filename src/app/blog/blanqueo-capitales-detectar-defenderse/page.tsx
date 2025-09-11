@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import Breadcrumb from '@/components/Breadcrumb';
+import TableOfContents from '@/components/TableOfContents';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -134,29 +136,37 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function BlanqueoCapitalesPage({ params }: Props) {
-  return <BlogPostContent />;
-}
-
-function BlogPostContent() {
+export default function BlanqueoCapitalesPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  
+  const breadcrumbItems = [
+    { label: 'Blog', href: '/blog' },
+    { label: 'Blanqueo de Capitales: Cómo Detectarlo y Defenderse' }
+  ];
+
+  const tocItems = [
+    { id: 'marco-legal-del-blanqueo-de-capitales', title: 'Marco Legal del Blanqueo de Capitales', level: 2 },
+    { id: 'las-tres-fases-del-blanqueo-de-capitales', title: 'Las Tres Fases del Blanqueo de Capitales', level: 2 },
+    { id: 'metodos-de-blanqueo-mas-comunes', title: 'Métodos de Blanqueo Más Comunes', level: 2 },
+    { id: 'casos-reales-de-blanqueo-en-espana', title: 'Casos Reales de Blanqueo en España', level: 2 },
+    { id: 'preguntas-frecuentes-sobre-blanqueo-de-capitales', title: 'Preguntas Frecuentes sobre Blanqueo de Capitales', level: 2 },
+    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
+    { id: 'conclusion', title: 'Conclusión', level: 2 }
+  ];
 
   return (
     <>
       <ScrollProgress />
       <Navigation />
-
+      <Breadcrumb items={breadcrumbItems} />
       <main className="bg-black">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-emerald-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -206,6 +216,9 @@ function BlogPostContent() {
         {/* Article Content */}
         <article className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            {/* Table of Contents */}
+            <TableOfContents items={tocItems} />
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

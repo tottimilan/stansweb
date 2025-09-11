@@ -206,7 +206,7 @@ export const translations = {
       informacionContacto: 'Información de contacto',
       listaAbogados: 'Lista de abogados del equipo',
       listaAreas: 'Lista de áreas de práctica penal',
-      contactarWhatsapp: 'Contactar por WhatsApp para consulta gratuita',
+      contactarWhatsapp: 'Contacta ahora por WhatsApp',
       consultarCaso: 'Consultar caso penal específico por WhatsApp',
       idiomas: 'Idiomas'
     },
@@ -234,7 +234,7 @@ export const translations = {
       },
       cta: {
         title: '¿Tienes un caso similar?',
-        description: 'Nuestro equipo de abogados penalistas está listo para defender tus derechos. Consulta gratuita disponible 24/7.',
+        description: 'Nuestro equipo de abogados penalistas está listo para defender tus derechos. Contacta ahora 24/7.',
         consultarCaso: 'Consultar tu caso',
         llamarAhora: 'Llamar Ahora'
       },
@@ -297,6 +297,40 @@ export const translations = {
         description: 'Por motivos de confidencialidad y protección de datos, solo se muestran en esta web una selección representativa de nuestros casos. Si necesitas más ejemplos específicos o tienes un caso similar, no dudes en consultarlo directamente con nuestro equipo.',
         consultarEquipo: 'Consultar con nuestro equipo'
       }
+    },
+
+    // Blog Section
+    blog: {
+      title: 'Blog Jurídico STANS',
+      subtitle: 'Conocimiento especializado en derecho penal. Artículos, guías y análisis sobre temas legales que afectan a nuestra sociedad.',
+      hubsTitle: 'Hubs de Contenido',
+      hubsSubtitle: 'Guías completas sobre temas específicos del derecho penal',
+      articulosRecientes: 'Artículos Recientes',
+      articulosSubtitle: 'Mantente informado con nuestros últimos análisis y guías legales',
+      mantenerseInformado: 'Mantente Informado',
+      newsletterDescription: 'Recibe nuestros últimos artículos y actualizaciones legales en tu correo electrónico.',
+      placeholder: 'Tu correo electrónico',
+      suscribirse: 'Suscribirse',
+      cargarMas: 'Cargar más artículos',
+      legalExpert: 'Análisis Legal Experto',
+      actualizacionSemanal: 'Actualización Semanal',
+      casosReales: 'Casos Reales',
+      min: 'min',
+      articles: 'artículos'
+    },
+
+    // Breadcrumb Component
+    breadcrumb: {
+      inicio: 'Inicio',
+      volver: 'Volver',
+      navegacion: 'Navegación de ruta'
+    },
+
+    // Table of Contents Component
+    tableOfContents: {
+      title: 'Índice del Artículo',
+      expandir: 'Expandir índice',
+      comprimir: 'Comprimir índice'
     }
   },
   
@@ -598,6 +632,40 @@ export const translations = {
         description: 'لأسباب السرية وحماية البيانات، يتم عرض مجموعة تمثيلية فقط من قضايانا في هذا الموقع. إذا كنت تحتاج إلى المزيد من الأمثلة المحددة أو لديك قضية مماثلة، لا تتردد في استشارتها مباشرة مع فريقنا.',
         consultarEquipo: 'استشارة فريقنا'
       }
+    },
+
+    // Blog Section
+    blog: {
+      title: 'المدونة القانونية لستانس',
+      subtitle: 'معرفة متخصصة في القانون الجنائي. مقالات وأدلة وتحليلات حول القضايا القانونية التي تؤثر على مجتمعنا.',
+      hubsTitle: 'مراكز المحتوى',
+      hubsSubtitle: 'أدلة شاملة حول مواضيع محددة في القانون الجنائي',
+      articulosRecientes: 'المقالات الحديثة',
+      articulosSubtitle: 'ابق على اطلاع بأحدث تحليلاتنا والأدلة القانونية',
+      mantenerseInformado: 'ابق على اطلاع',
+      newsletterDescription: 'احصل على أحدث مقالاتنا والتحديثات القانونية في بريدك الإلكتروني.',
+      placeholder: 'بريدك الإلكتروني',
+      suscribirse: 'اشترك',
+      cargarMas: 'تحميل المزيد من المقالات',
+      legalExpert: 'تحليل قانوني خبير',
+      actualizacionSemanal: 'تحديث أسبوعي',
+      casosReales: 'قضايا حقيقية',
+      min: 'دقيقة',
+      articles: 'مقالات'
+    },
+
+    // Breadcrumb Component
+    breadcrumb: {
+      inicio: 'الرئيسية',
+      volver: 'رجوع',
+      navegacion: 'التنقل في المسار'
+    },
+
+    // Table of Contents Component
+    tableOfContents: {
+      title: 'فهرس المقال',
+      expandir: 'توسيع الفهرس',
+      comprimir: 'ضغط الفهرس'
     }
   }
 };
