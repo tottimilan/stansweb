@@ -1,0 +1,179 @@
+Requisitos Extradicion Espana
+=============================
+
+
+Introducción
+------------
+
+Volver al hub de Procedimientos de Extradición
+
+
+Procedimientos de Extradición
+-----------------------------
+
+Requisitos para la Extradición en España
+
+Requisitos sustantivos y formales, causas de denegación.
+                Diferencias entre extradición UE e internacional.
+
+
+30 dic 2024
+-----------
+
+La extradición española está sujeta a requisitos estrictos que garantizan el respeto
+                  a los derechos fundamentales del reclamado y la legalidad del procedimiento. La
+
+
+Ley Orgánica 3/2003
+-------------------
+
+establece los requisitos sustantivos y formales
+                  que deben cumplirse para que una solicitud de extradición sea admitida y concedida.
+
+Esta guía detalla todos los requisitos necesarios, las diferencias entre extradición
+                  UE e internacional, y las causas que pueden llevar a la denegación de la extradición,
+                  basándose en la jurisprudencia del
+
+
+Traducción
+----------
+
+Causas de Denegación de la Extradición
+
+
+Verificación Sistemática
+------------------------
+
+El Ministerio de Justicia y Audiencia Nacional verifican cada requisito
+                        de manera exhaustiva antes de admitir la solicitud a trámite.
+
+
+• Competencia de autoridad solicitante
+--------------------------------------
+
+• Calidad de perseguido (no refugiado político)
+
+
+• Delito punible en España
+--------------------------
+
+• Pena adecuada (mínimo 1 año)
+
+
+❌ Verificaciones Negativas
+--------------------------
+
+• No delito político o conexo
+
+• No pena de muerte prevista
+
+• No riesgo de tortura o tratos inhumanos
+
+• No discriminación por motivos políticos
+
+• No persecución por raza, religión u opinión
+
+• No condiciones inhumanas de detención
+
+• No dilaciones indebidas en el proceso
+
+• No vulneración de derechos fundamentales
+
+Preguntas Frecuentes sobre Requisitos de Extradición
+
+
+Constitución Española
+---------------------
+
+Artículos 13.3, 15, 17 y 24
+
+
+Convención contra la Tortura (1984)
+-----------------------------------
+
+Prohibición de torturas y tratos inhumanos
+
+
+STC 91/2000
+-----------
+
+- Límites constitucionales de la extradición
+
+
+STS 47/2018
+-----------
+
+- Requisitos formales de la solicitud
+
+
+STJUE Caso Melloni
+------------------
+
+- Confianza mutua en extradición UE
+
+Los requisitos para la extradición española buscan equilibrar la cooperación
+                  internacional en la lucha contra el delito con la protección de los derechos
+                  fundamentales del reclamado. Tanto los requisitos sustantivos como los formales
+                  garantizan que solo se concedan extradiciones legalmente fundadas y respetuosas
+                  con los derechos humanos.
+
+Las diferencias entre extradición UE e internacional reflejan el grado de confianza
+                  institucional entre países miembros, pero en todos los casos se mantienen garantías
+                  básicas de protección contra vulneraciones de derechos fundamentales. Una defensa
+                  especializada puede identificar las mejores estrategias para impugnar requisitos
+                  defectuosos o acreditar causas de denegación.
+
+
+Consulta Requisitos Extradición
+-------------------------------
+
+Más información sobre procedimientos de extradición
+
+
+Requisitos Formales de la Solicitud
+-----------------------------------
+
+Causas de Denegación de la Extradición
+
+
+Protocolo de Verificación de Requisitos
+---------------------------------------
+
+Preguntas Frecuentes sobre Requisitos de Extradición
+
+
+Conclusión
+----------
+
+P: ¿Es obligatorio que el delito sea igual en ambos países?
+
+R: Sí, se requiere doble incriminación: el delito debe estar tipificado como tal en las legislaciones de ambos países. Sin embargo, la extradición UE no exige identidad absoluta, basta con que sea un delito análogo.
+
+P: ¿Puede denegarse la extradición por pena de muerte?
+
+R: Sí, España tiene prohibida la pena de muerte por su Constitución (artículo 15). Si el país solicitante aplica pena capital, la extradición se deniega o se exige garantía de no aplicación.
+
+P: ¿Qué pasa si el delito ya prescribió en España?
+
+R: Si el delito prescribió según la legislación española, la extradición puede denegarse. Sin embargo, si no prescribió en el país solicitante, puede concederse con limitaciones en la pena aplicable.
+
+P: ¿Se puede extraditar por delitos menores?
+
+R: No, se requiere pena mínima de 1 año de prisión en el delito principal. Delitos menores o faltas administrativas no dan lugar a extradición.
+
+P: ¿Qué documentación debe aportar el país solicitante?
+
+R: Debe aportar: orden de detención, descripción del delito, elementos probatorios, identidad del reclamado, autoridad competente, y garantías procesales. Todo traducido al español.
+
+P: ¿Puede España extraditar sin tratado internacional?
+
+R: Sí, en casos excepcionales y con reciprocidad, España puede conceder extradición sin tratado. Sin embargo, se aplican todos los requisitos legales y se requiere autorización judicial especial.
+
+P: ¿Qué ocurre con la extradición de menores?
+
+R: Los menores tienen protección especial. Se requiere informe del Ministerio Fiscal de Menores, consideración de su interés superior, y garantías de que serán tratados conforme a la Convención de Derechos del Niño.
+
+P: ¿Puede denegarse por razones humanitarias?
+
+R: Sí, la Ley permite denegar extradición por razones humanitarias: riesgo de tortura, persecución política, condiciones inhumanas de detención, o discriminación por género, raza u orientación sexual.
+

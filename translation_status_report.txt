@@ -1,0 +1,2996 @@
+📊 INFORME DE ESTADO DE TRADUCCIONES
+==================================================
+
+📁 Archivos verificados: 91
+⚠️  Textos hardcodeados encontrados: 2296
+
+🔴 ARCHIVOS CON TEXTO HARDCODEADO:
+
+🔸 BLOGS:
+
+  📄 app\blog\[slug]\page.tsx (18 textos)
+     Línea 150: "Volver al blog..."
+     Línea 237: "Conclusión..."
+     Línea 277: "Consultar caso similar..."
+     ... y 15 más
+
+  📄 app\blog\asistencia-letrada-urgencia\page.tsx (72 textos)
+     Línea 183: "Volver al hub de Defensa Penal Urgente..."
+     Línea 188: "Defensa Penal Urgente..."
+     Línea 197: "Asistencia Letrada de Urgencia..."
+     ... y 69 más
+
+  📄 app\blog\audiencia-extradicion-espana\page.tsx (68 textos)
+     Línea 239: "Volver al hub de Procedimientos de Extradición..."
+     Línea 244: "Procedimientos de Extradición..."
+     Línea 253: "Audiencia de Extradición en España..."
+     ... y 65 más
+
+  📄 app\blog\blanqueo-capitales-detectar-defenderse\page.tsx (80 textos)
+     Línea 179: "Volver al blog..."
+     Línea 184: "Delitos Económicos..."
+     Línea 193: "Blanqueo de Capitales: Cómo Detectarlo y Defenders..."
+     ... y 77 más
+
+  📄 app\blog\comunicacion-familiares-detenido\page.tsx (61 textos)
+     Línea 225: "Volver al hub de Defensa Penal Urgente..."
+     Línea 230: "Defensa Penal Urgente..."
+     Línea 239: "Comunicación con Familiares durante la Detención..."
+     ... y 58 más
+
+  📄 app\blog\defensa-penal-urgente-guia-completa\page.tsx (134 textos)
+     Línea 72: "Defensa Penal Urgente..."
+     Línea 75: "Defensa Penal Urgente: Guía Completa para Detenido..."
+     Línea 90: "Equipo STANS Abogados..."
+     ... y 131 más
+
+  📄 app\blog\defensa-penal-urgente\page.tsx (32 textos)
+     Línea 122: "Defensa Penal Urgente..."
+     Línea 125: "Guía completa para situaciones de urgencia penal. ..."
+     Línea 137: "Asistencia Urgente 24/7..."
+     ... y 29 más
+
+  📄 app\blog\delitos-salud-publica-drogas-consecuencias\page.tsx (111 textos)
+     Línea 178: "Volver al blog..."
+     Línea 183: "Delitos contra la Salud Pública..."
+     Línea 192: "Delitos contra la Salud Pública: Drogas y Consecue..."
+     ... y 108 más
+
+  📄 app\blog\derecho-asistencia-letrada-detenido\page.tsx (81 textos)
+     Línea 251: "Volver al hub de Derechos de Detenidos..."
+     Línea 256: "Derechos de Detenidos..."
+     Línea 265: "Derecho a la Asistencia Letrada del Detenido..."
+     ... y 78 más
+
+  📄 app\blog\derechos-constitucionales-detenido\page.tsx (84 textos)
+     Línea 294: "Volver al hub de Derechos de Detenidos..."
+     Línea 299: "Derechos de Detenidos..."
+     Línea 308: "Derechos Constitucionales del Detenido..."
+     ... y 81 más
+
+  📄 app\blog\derechos-dependencias-policiales\page.tsx (78 textos)
+     Línea 304: "Volver al hub de Derechos de Detenidos..."
+     Línea 309: "Derechos de Detenidos..."
+     Línea 318: "Derechos en Dependencias Policiales..."
+     ... y 75 más
+
+  📄 app\blog\derechos-detenidos-garantias-procesales\page.tsx (90 textos)
+     Línea 168: "Volver al blog..."
+     Línea 173: "Derechos Fundamentales..."
+     Línea 182: "Derechos de los Detenidos: Conoce tus Garantías Pr..."
+     ... y 87 más
+
+  📄 app\blog\derechos-detenidos\page.tsx (44 textos)
+     Línea 161: "Derechos de los Detenidos..."
+     Línea 164: "Conoce tus derechos constitucionales como detenido..."
+     Línea 174: "Consulta Urgente..."
+     ... y 41 más
+
+  📄 app\blog\derechos-extraditado\page.tsx (75 textos)
+     Línea 236: "Volver al hub de Procedimientos de Extradición..."
+     Línea 241: "Procedimientos de Extradición..."
+     Línea 250: "Derechos del Extraditado en España..."
+     ... y 72 más
+
+  📄 app\blog\derechos-grupos-vulnerables-detenidos\page.tsx (77 textos)
+     Línea 320: "Volver al hub de Derechos de Detenidos..."
+     Línea 325: "Derechos de Detenidos..."
+     Línea 334: "Derechos de Grupos Vulnerables durante la Detenció..."
+     ... y 74 más
+
+  📄 app\blog\derechos-inmediatos-detenido\page.tsx (82 textos)
+     Línea 128: "Volver al hub de Defensa Penal Urgente..."
+     Línea 133: "Defensa Penal Urgente..."
+     Línea 142: "Derechos Inmediatos al Ser Detenido..."
+     ... y 79 más
+
+  📄 app\blog\derechos-procesales-recursos-detenido\page.tsx (73 textos)
+     Línea 286: "Volver al hub de Derechos de Detenidos..."
+     Línea 291: "Derechos de Detenidos..."
+     Línea 300: "Derechos Procesales y Recursos del Detenido..."
+     ... y 70 más
+
+  📄 app\blog\habeas-corpus-recurso-amparo\page.tsx (79 textos)
+     Línea 196: "Volver al hub de Defensa Penal Urgente..."
+     Línea 201: "Defensa Penal Urgente..."
+     Línea 210: "Habeas Corpus: Recurso de Amparo..."
+     ... y 76 más
+
+  📄 app\blog\medidas-cautelares-procesos-penales\page.tsx (71 textos)
+     Línea 206: "Volver al hub de Defensa Penal Urgente..."
+     Línea 211: "Defensa Penal Urgente..."
+     Línea 220: "Medidas Cautelares en Procesos Penales..."
+     ... y 68 más
+
+  📄 app\blog\page.tsx (12 textos)
+     Línea 19: "Defensa Penal Urgente: Guía Completa para Detenido..."
+     Línea 31: "Procedimientos de Extradición en España: Todo lo q..."
+     Línea 43: "Derechos de los Detenidos: Conoce tus Garantías Pr..."
+     ... y 9 más
+
+  📄 app\blog\primeros-pasos-comisaria\page.tsx (87 textos)
+     Línea 172: "Volver al hub de Defensa Penal Urgente..."
+     Línea 177: "Defensa Penal Urgente..."
+     Línea 186: "Primeros Pasos en Comisaría..."
+     ... y 84 más
+
+  📄 app\blog\procedimientos-extradicion-espana\page.tsx (92 textos)
+     Línea 180: "Volver al blog..."
+     Línea 194: "Procedimientos de Extradición en España: Guía Comp..."
+     Línea 198: "Análisis exhaustivo del proceso de extradición esp..."
+     ... y 89 más
+
+  📄 app\blog\procedimientos-extradicion\page.tsx (28 textos)
+     Línea 130: "Procedimientos de Extradición..."
+     Línea 133: "Guía completa sobre extradiciones en España. Conoc..."
+     Línea 142: "Consulta Extradición..."
+     ... y 25 más
+
+  📄 app\blog\proteccion-torturas-tratos-inhumanos\page.tsx (82 textos)
+     Línea 274: "Volver al hub de Derechos de Detenidos..."
+     Línea 279: "Derechos de Detenidos..."
+     Línea 288: "Protección contra Torturas y Tratos Inhumanos..."
+     ... y 79 más
+
+  📄 app\blog\puesta-disposicion-judicial\page.tsx (68 textos)
+     Línea 188: "Volver al hub de Defensa Penal Urgente..."
+     Línea 193: "Defensa Penal Urgente..."
+     Línea 202: "Puesta a Disposición Judicial..."
+     ... y 65 más
+
+  📄 app\blog\recursos-contra-extradicion\page.tsx (75 textos)
+     Línea 220: "Volver al hub de Procedimientos de Extradición..."
+     Línea 225: "Procedimientos de Extradición..."
+     Línea 234: "Recursos contra la Extradición..."
+     ... y 72 más
+
+  📄 app\blog\registro-dependencias-detenido\page.tsx (80 textos)
+     Línea 224: "Volver al hub de Defensa Penal Urgente..."
+     Línea 229: "Defensa Penal Urgente..."
+     Línea 238: "Registro de Dependencias durante la Detención..."
+     ... y 77 más
+
+  📄 app\blog\requisitos-extradicion-espana\page.tsx (77 textos)
+     Línea 269: "Volver al hub de Procedimientos de Extradición..."
+     Línea 274: "Procedimientos de Extradición..."
+     Línea 283: "Requisitos para la Extradición en España..."
+     ... y 74 más
+
+  📄 app\blog\terrorismo-internet-enaltecimiento-captacion\page.tsx (88 textos)
+     Línea 185: "Volver al blog..."
+     Línea 190: "Ciberseguridad Penal..."
+     Línea 199: "Terrorismo en Internet: Enaltecimiento y Captación..."
+     ... y 85 más
+
+  📄 app\blog\tipos-extradicion-espana\page.tsx (74 textos)
+     Línea 220: "Volver al hub de Procedimientos de Extradición..."
+     Línea 225: "Procedimientos de Extradición..."
+     Línea 234: "Tipos de Extradición en España..."
+     ... y 71 más
+
+🔸 COMPONENTES:
+
+  📄 components\AreaCard.tsx (3 textos)
+     Línea 16: ";
+  if (title.includes('Conducción') || title.incl..."
+     Línea 19: ";
+  if (title.includes('Informáticos')) return..."
+
+  📄 components\CaseCard.tsx (1 textos)
+     Línea 33: ";
+  if (cat.includes('odio') || cat.includes('expr..."
+
+  📄 components\Footer.tsx (1 textos)
+     Línea 55: "Madrid, España..."
+
+  📄 components\Hero.tsx (1 textos)
+     Línea 202: "Madrid, España..."
+
+  📄 components\LawyerCard.tsx (1 textos)
+     Línea 186: "Arrastra para voltear →..."
+
+  📄 components\Navigation.tsx (1 textos)
+     Línea 221: "Idioma / اللغة..."
+
+  📄 components\SchemaMarkup.tsx (1 textos)
+     Línea 16: "Especialistas en Derecho Penal en Madrid y España...."
+
+🔸 PÁGINAS:
+
+  📄 app\casos\[id]\page.tsx (16 textos)
+     Línea 391: "Estrategia de Defensa..."
+     Línea 427: "Pruebas Clave..."
+
+  📄 app\cookies\page.tsx (1 textos)
+     Línea 282: "Teléfono: +34 611 68 72 26..."
+
+  📄 app\layout.tsx (7 textos)
+     Línea 10: "STANS ABOGADOS — Defensa Penal 24/7 en Madrid y Es..."
+     Línea 69: "STANS ABOGADOS — Defensa Penal 24/7 en Madrid y Es..."
+
+  📄 app\legal\page.tsx (5 textos)
+     Línea 48: "YELMA ABOGADOS SL..."
+     Línea 57: "Dirección:..."
+
+  📄 app\not-found.tsx (4 textos)
+     Línea 21: "Página no encontrada..."
+     Línea 24: "La página que buscas no existe o ha sido movida...."
+
+  📄 app\opengraph-image.tsx (5 textos)
+     Línea 44: "STANS ABOGADOS..."
+     Línea 55: "Defensa Penal 24/7..."
+
+  📄 app\twitter-image.tsx (4 textos)
+     Línea 45: "STANS ABOGADOS..."
+     Línea 57: "Defensa Penal 24/7..."
+
+  📄 translations\index.ts (72 textos)
+     Línea 15: "STANS ABOGADOS..."
+     Línea 16: "ABOGADOS PENALISTAS..."
+
+📈 RESUMEN POR TIPO:
+   - Blogs: 2173 textos sin traducir
+   - Componentes: 9 textos sin traducir
+   - Páginas: 114 textos sin traducir
+
+📊 PORCENTAJE TRADUCIDO: 50.5% de archivos completamente traducidos
+
+📝 LISTA COMPLETA DE ARCHIVOS:
+
+app\blog\[slug]\page.tsx:
+  Línea 150 (JSX): Volver al blog
+  Línea 237 (JSX): Conclusión
+  Línea 277 (JSX): Consultar caso similar
+  Línea 299 (JSX): Explora más contenido sobre este tema
+  Línea 322 (JSX): Leer artículo
+  Línea 19 (Property): Defensa Penal Urgente: Guía Completa para Detenidos
+  Línea 32 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 36 (Property): Primeros Pasos en Comisaría
+  Línea 40 (Property): La Asistencia Letrada de Urgencia
+  Línea 44 (Property): Puesta a Disposición Judicial
+  Línea 53 (Property): Procedimientos de Extradición en España: Todo lo que Debes Saber
+  Línea 66 (Property): Tipos de Extradición
+  Línea 70 (Property): Fases del Procedimiento
+  Línea 74 (Property): Derechos del Extraditado
+  Línea 78 (Property): Defensas Posibles
+  Línea 89 (Property): Derechos Constitucionales en Procedimientos Penales
+  Línea 94 (Property): Asistencia Jurídica de Urgencia
+  Línea 99 (Property): Medidas Cautelares en Procesos Penales
+
+app\blog\asistencia-letrada-urgencia\page.tsx:
+  Línea 183 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 188 (JSX): Defensa Penal Urgente
+  Línea 197 (JSX): Asistencia Letrada de Urgencia
+  Línea 201 (JSX): El papel crucial del abogado en situaciones de urgencia penal.
+                Derechos, funciones y cómo elegir al profesional adecuado.
+  Línea 208 (JSX): Equipo STANS Abogados
+  Línea 234 (JSX): La asistencia letrada de urgencia es uno de tus derechos constitucionales más importantes
+                  en situaciones de detención. Según el
+  Línea 236 (JSX): artículo 17.3 de la Constitución Española
+  Línea 236 (JSX): y el
+  Línea 237 (JSX): artículo 118 de la Ley de Enjuiciamiento Criminal
+  Línea 237 (JSX): , tienes derecho
+                  a un abogado desde el momento exacto de la privación de libertad.
+  Línea 240 (JSX): Esta guía explica el funcionamiento del servicio de asistencia jurídica de urgencia,
+                  las funciones del abogado en estas situaciones, y cómo elegir al profesional más adecuado
+                  para tu defensa, basándose en la
+  Línea 243 (JSX): Ley 1/1996 de Asistencia Jurídica Gratuita
+  Línea 243 (JSX): y las instrucciones del
+  Línea 244 (JSX): Ministerio de Justicia
+  Línea 256 (JSX): Funciones del Abogado de Urgencia
+  Línea 302 (JSX): Tipos de Abogados en Urgencias
+  Línea 358 (JSX): Derechos Adicionales con Abogado Presente
+  Línea 366 (JSX): Protección Jurídica Integral
+  Línea 367 (JSX): La presencia del abogado multiplica tus garantías procesales
+  Línea 404 (JSX): Cómo Solicitar Asistencia Letrada de Urgencia
+  Línea 412 (JSX): Solicitud Inmediata
+  Línea 413 (JSX): La solicitud de abogado debe realizarse desde el primer momento de la detención.
+                        No esperes a llegar a comisaría para ejercer este derecho.
+  Línea 422 (JSX): 1. Comunicación Verbal
+  Línea 423 (JSX): Informa inmediatamente a los agentes que quieres un abogado
+  Línea 428 (JSX): 2. Registro por Escrito
+  Línea 429 (JSX): Se registra tu solicitud en el acta de detención
+  Línea 434 (JSX): 3. Asignación Automática
+  Línea 435 (JSX): El Colegio de Abogados asigna abogado de urgencia
+  Línea 442 (JSX): Tiempos de Respuesta
+  Línea 444 (JSX): Abogado de oficio
+  Línea 444 (JSX): : Máximo 2 horas
+  Línea 445 (JSX): Abogado particular
+  Línea 445 (JSX): : Según disponibilidad
+  Línea 446 (JSX): Casos especiales
+  Línea 446 (JSX): : Reducción del plazo
+  Línea 460 (JSX): Preguntas Frecuentes sobre Abogados de Urgencia
+  Línea 496 (JSX): Legislación y Referencias
+  Línea 501 (JSX): Normativa Constitucional y Procesal
+  Línea 504 (JSX): Constitución Española (1978)
+  Línea 505 (JSX): Artículo 17.3 (asistencia letrada)
+  Línea 510 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 511 (JSX): Artículos 118, 520, 542
+  Línea 516 (JSX): Ley 1/1996 de Asistencia Jurídica Gratuita
+  Línea 517 (JSX): Servicio de urgencias
+  Línea 523 (JSX): Regulaciones Profesionales
+  Línea 526 (JSX): Estatuto General de la Abogacía
+  Línea 529 (JSX): Código Deontológico
+  Línea 529 (JSX): - Principios éticos en urgencias
+  Línea 532 (JSX): Reglamento de Asistencia Jurídica Gratuita
+  Línea 532 (JSX): - Procedimiento de asignación
+  Línea 536 (JSX): Jurisprudencia Relevante
+  Línea 539 (JSX): STC 47/2018
+  Línea 539 (JSX): - Alcance del derecho a asistencia letrada
+  Línea 542 (JSX): STS 234/2020
+  Línea 542 (JSX): - Plazos de llegada del abogado de urgencia
+  Línea 551 (JSX): La asistencia letrada de urgencia es un pilar fundamental de tu defensa en situaciones
+                  de detención. Un abogado especializado no solo garantiza que tus derechos sean respetados,
+                  sino que también prepara el terreno para una defensa efectiva en todas las fases del procedimiento.
+  Línea 556 (JSX): Recuerda que tienes derecho a asistencia jurídica gratuita si no puedes costearla,
+                  y que la presencia del abogado es obligatoria para cualquier declaración sobre los hechos.
+                  En STANS Abogados contamos con abogados especializados disponibles 24/7 para asistirte
+                  en situaciones de urgencia penal.
+  Línea 577 (JSX): Abogado Urgente 24/7
+  Línea 598 (JSX): Más información sobre asistencia jurídica
+  Línea 621 (JSX): Leer artículo
+  Línea 125 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 130 (Property): Primeros Pasos en Comisaría
+  Línea 135 (Property): Puesta a Disposición Judicial
+  Línea 152 (Property): Funciones del Abogado de Urgencia
+  Línea 153 (Property): Tipos de Abogados en Urgencias
+  Línea 154 (Property): Derechos Adicionales con Abogado Presente
+  Línea 155 (Property): Cómo Solicitar Asistencia Letrada de Urgencia
+  Línea 156 (Property): Preguntas Frecuentes sobre Abogados de Urgencia
+  Línea 157 (Property): Legislación y Referencias
+  Línea 158 (Property): Conclusión
+  Línea 147 (Property): Defensa Penal Urgente
+  Línea 148 (Property): Asistencia Letrada de Urgencia
+
+app\blog\audiencia-extradicion-espana\page.tsx:
+  Línea 239 (JSX): Volver al hub de Procedimientos de Extradición
+  Línea 244 (JSX): Procedimientos de Extradición
+  Línea 253 (JSX): Audiencia de Extradición en España
+  Línea 257 (JSX): Desarrollo de la comparecencia judicial, derechos del extraditado,
+                estrategias de defensa y tipos de resolución.
+  Línea 264 (JSX): Equipo STANS Abogados
+  Línea 290 (JSX): La audiencia de extradición es el momento culminante del procedimiento, donde el
+                  extraditado comparece personalmente ante el juez para ejercer sus derechos de defensa.
+                  Regulada por los
+  Línea 293 (JSX): artículos 15 y siguientes de la Ley Orgánica 3/2003
+  Línea 293 (JSX): ,
+                  esta comparecencia debe celebrarse en un plazo máximo de 15 días desde la recepción
+                  de la solicitud de extradición.
+  Línea 297 (JSX): Esta guía explica el desarrollo completo de la audiencia, los derechos que asisten
+                  al extraditado, las estrategias de defensa más efectivas, y los diferentes tipos
+                  de resolución que puede dictar el juez, basándose en la jurisprudencia del
+  Línea 301 (JSX): Tribunal Supremo
+  Línea 301 (JSX): y las instrucciones del
+  Línea 301 (JSX): Ministerio de Justicia
+  Línea 313 (JSX): Fases de la Audiencia de Extradición
+  Línea 364 (JSX): Derechos del Extraditado en la Audiencia
+  Línea 405 (JSX): Estrategia de Defensa en la Audiencia
+  Línea 431 (JSX): Acciones recomendadas:
+  Línea 454 (JSX): Tipos de Resolución Judicial
+  Línea 510 (JSX): Preparación Previa a la Audiencia
+  Línea 518 (JSX): Preparación Exhaustiva
+  Línea 519 (JSX): Una buena preparación previa puede marcar la diferencia en el resultado
+                        de la audiencia. Es fundamental contar con toda la información y coordinar
+                        con el abogado desde días antes.
+  Línea 529 (JSX): 📋 Documentación Necesaria
+  Línea 531 (JSX): • Orden de detención original
+  Línea 532 (JSX): • Descripción del delito
+  Línea 533 (JSX): • Documentos de identidad
+  Línea 534 (JSX): • Certificado de antecedentes penales
+  Línea 541 (JSX): 💡 Aspectos a Considerar
+  Línea 543 (JSX): • Posibles causas de denegación
+  Línea 544 (JSX): • Argumentos de defensa
+  Línea 547 (JSX): • Contacto con familiares
+  Línea 563 (JSX): Preguntas Frecuentes sobre Audiencia de Extradición
+  Línea 599 (JSX): Legislación y Referencias
+  Línea 604 (JSX): Normativa Procesal
+  Línea 607 (JSX): Ley Orgánica 3/2003
+  Línea 608 (JSX): Artículos 15-23 (audiencia de extradición)
+  Línea 613 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 614 (JSX): Artículos 118, 520, 729, 733
+  Línea 619 (JSX): Ley 23/2014
+  Línea 620 (JSX): Mando de detención europeo
+  Línea 626 (JSX): Constitución Española
+  Línea 629 (JSX): Artículo 17
+  Línea 629 (JSX): - Derecho a la libertad y garantías en detención
+  Línea 632 (JSX): Artículo 24
+  Línea 632 (JSX): - Tutela judicial efectiva y derecho de defensa
+  Línea 636 (JSX): Jurisprudencia Relevante
+  Línea 639 (JSX): STC 91/2000
+  Línea 639 (JSX): - Garantías procesales en extradición
+  Línea 642 (JSX): STS 47/2018
+  Línea 642 (JSX): - Derechos en audiencia de extradición
+  Línea 645 (JSX): STJUE Caso C-396/11
+  Línea 645 (JSX): - Mando de detención europeo y derechos
+  Línea 654 (JSX): La audiencia de extradición es un momento crucial donde se definen los derechos
+                  del extraditado y se determina el futuro del procedimiento. Una preparación adecuada,
+                  el ejercicio efectivo de los derechos constitucionales, y una estrategia de defensa
+                  bien coordinada pueden marcar la diferencia entre la concesión o denegación de la extradición.
+  Línea 660 (JSX): Los derechos del extraditado están plenamente garantizados por la Constitución
+                  Española y el ordenamiento jurídico internacional. La presencia de abogado especializado,
+                  la posibilidad de impugnar la resolución, y el respeto a las garantías procesales
+                  aseguran un procedimiento justo y equilibrado. En STANS Abogados contamos con
+                  amplia experiencia en audiencias de extradición y podemos proporcionar la
+                  asistencia necesaria en cada fase del procedimiento.
+  Línea 683 (JSX): Asistencia Audiencia Extradición
+  Línea 704 (JSX): Más información sobre procedimientos de extradición
+  Línea 727 (JSX): Leer artículo
+  Línea 181 (Property): Tipos de Extradición en España
+  Línea 186 (Property): Requisitos para la Extradición en España
+  Línea 191 (Property): Recursos contra Extradición
+  Línea 208 (Property): Fases de la Audiencia de Extradición
+  Línea 209 (Property): Derechos del Extraditado en la Audiencia
+  Línea 210 (Property): Estrategia de Defensa en la Audiencia
+  Línea 211 (Property): Tipos de Resolución Judicial
+  Línea 212 (Property): Preparación Previa a la Audiencia
+  Línea 213 (Property): Preguntas Frecuentes sobre Audiencia de Extradición
+  Línea 214 (Property): Legislación y Referencias
+  Línea 215 (Property): Conclusión
+  Línea 203 (Property): Procedimientos de Extradición
+  Línea 204 (Property): Audiencia de Extradición en España
+
+app\blog\blanqueo-capitales-detectar-defenderse\page.tsx:
+  Línea 179 (JSX): Volver al blog
+  Línea 184 (JSX): Delitos Económicos
+  Línea 193 (JSX): Blanqueo de Capitales: Cómo Detectarlo y Defenderse
+  Línea 197 (JSX): Guía completa sobre el delito de blanqueo: origen de fondos, técnicas de lavado,
+                responsabilidad penal y estrategias de defensa en España.
+  Línea 204 (JSX): Rubén Vaquero Arribas
+  Línea 230 (JSX): El blanqueo de capitales representa uno de los delitos económicos más graves
+                  en el ordenamiento jurídico español. Regulado por el
+  Línea 232 (JSX): Código Penal
+  Línea 232 (JSX): en sus artículos 301-304, y por la
+  Línea 233 (JSX): Ley 10/2010
+  Línea 233 (JSX): de prevención,
+                  este delito busca impedir la integración de fondos procedentes de actividades ilícitas
+                  en el circuito económico legal.
+  Línea 237 (JSX): Esta guía analiza la evolución legislativa reciente, incluyendo la reforma de 2023
+                  que endureció las penas por blanqueo relacionado con crimen organizado,
+                  y las estrategias de defensa más efectivas basadas en la jurisprudencia
+                  del
+  Línea 241 (JSX): Tribunal Supremo
+  Línea 253 (JSX): Marco Legal del Blanqueo de Capitales
+  Línea 261 (JSX): Reforma 2023
+  Línea 262 (JSX): Endurecimiento de penas para blanqueo relacionado con crimen organizado
+  Línea 270 (JSX): Conductas Tipificadas
+  Línea 272 (JSX): • Conversión de bienes ilícitos
+  Línea 273 (JSX): • Transferencia de activos
+  Línea 274 (JSX): • Ocultación del origen delictivo
+  Línea 275 (JSX): • Adquisición, posesión o uso
+  Línea 276 (JSX): • Participación en operaciones
+  Línea 281 (JSX): Agravantes Específicos
+  Línea 283 (JSX): • Importe superior a 50.000€
+  Línea 284 (JSX): • Origen en crimen organizado
+  Línea 285 (JSX): • Uso de personas jurídicas
+  Línea 287 (JSX): • Posición destacada en la organización
+  Línea 297 (JSX): Principio de Autonomía
+  Línea 298 (JSX): El blanqueo es independiente del delito precedente. Según el
+  Línea 300 (JSX): artículo 302 del Código Penal
+  Línea 300 (JSX): , se puede condenar por blanqueo
+                        aunque no se condene por el delito originario, siempre que se demuestre
+                        el origen delictivo de los fondos.
+  Línea 317 (JSX): Las Tres Fases del Blanqueo de Capitales
+  Línea 343 (JSX): Métodos comunes:
+  Línea 366 (JSX): Métodos de Blanqueo Más Comunes
+  Línea 400 (JSX): Indicadores de alerta:
+  Línea 423 (JSX): Casos Reales de Blanqueo en España
+  Línea 460 (JSX): Lecciones de estos Casos
+  Línea 462 (JSX): • Las sociedades offshore son uno de los métodos más utilizados
+  Línea 463 (JSX): • La colaboración internacional es clave para detectar blanqueo
+  Línea 464 (JSX): • Los testaferros y hombres de paja facilitan la ocultación
+  Línea 465 (JSX): • La recuperación de activos es uno de los objetivos principales
+  Línea 478 (JSX): Preguntas Frecuentes sobre Blanqueo de Capitales
+  Línea 514 (JSX): Legislación y Referencias
+  Línea 519 (JSX): Normativa Principal
+  Línea 522 (JSX): Código Penal (arts. 301-304)
+  Línea 522 (JSX): - Delito de blanqueo de capitales
+  Línea 523 (JSX): Ver artículos
+  Línea 528 (JSX): Ley 10/2010
+  Línea 528 (JSX): - Prevención del blanqueo de capitales
+  Línea 529 (JSX): Ver ley completa
+  Línea 534 (JSX): Ley Orgánica 6/2016
+  Línea 535 (JSX): Ver reforma
+  Línea 541 (JSX): Directivas Europeas
+  Línea 544 (JSX): Directiva 2015/849/UE (IV AMLD)
+  Línea 544 (JSX): - Prevención del blanqueo
+  Línea 547 (JSX): Directiva 2018/843/UE (V AMLD)
+  Línea 547 (JSX): - Criptomonedas y blanqueo
+  Línea 550 (JSX): Reglamento 2015/847/UE
+  Línea 550 (JSX): - Transferencias de fondos
+  Línea 554 (JSX): Jurisprudencia Destacada
+  Línea 557 (JSX): STS 456/2018
+  Línea 560 (JSX): STS 123/2020
+  Línea 560 (JSX): - Blanqueo a través de criptomonedas
+  Línea 563 (JSX): STJUE Caso C-105/14
+  Línea 563 (JSX): - Autonomía del delito de blanqueo
+  Línea 572 (JSX): El blanqueo de capitales representa una de las mayores amenazas para la economía
+                  legal y la integridad del sistema financiero. La legislación española, en línea
+                  con los estándares internacionales, establece controles rigurosos y penas severas
+                  para quienes intentan integrar fondos ilícitos en el circuito económico.
+  Línea 578 (JSX): La prevención y detección temprana son fundamentales. Las entidades financieras
+                  y profesionales obligados deben implementar sistemas robustos de compliance,
+                  mientras que los particulares deben ser cautelosos con operaciones que puedan
+                  parecer sospechosas. En STANS Abogados contamos con especialistas en derecho
+                  penal económico que pueden asesorarte tanto en prevención como en defensa
+                  en casos de investigación por blanqueo.
+  Línea 601 (JSX): Consulta Especializada
+  Línea 622 (JSX): Más información sobre delitos económicos y prevención
+  Línea 645 (JSX): Leer artículo
+  Línea 123 (Property): Prevención del Blanqueo en Empresas
+  Línea 128 (Property): Recuperación de Activos en Corrupción
+  Línea 133 (Property): Delitos Fiscales y Blanqueo
+  Línea 149 (Property): Marco Legal del Blanqueo de Capitales
+  Línea 150 (Property): Las Tres Fases del Blanqueo de Capitales
+  Línea 151 (Property): Métodos de Blanqueo Más Comunes
+  Línea 152 (Property): Casos Reales de Blanqueo en España
+  Línea 153 (Property): Preguntas Frecuentes sobre Blanqueo de Capitales
+  Línea 154 (Property): Legislación y Referencias
+  Línea 155 (Property): Conclusión
+  Línea 145 (Property): Blanqueo de Capitales: Cómo Detectarlo y Defenderse
+
+app\blog\comunicacion-familiares-detenido\page.tsx:
+  Línea 225 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 230 (JSX): Defensa Penal Urgente
+  Línea 239 (JSX): Comunicación con Familiares durante la Detención
+  Línea 243 (JSX): Derechos de comunicación familiar, restricciones, situaciones especiales.
+                Cómo mantener el contacto durante el proceso penal urgente.
+  Línea 250 (JSX): Equipo STANS Abogados
+  Línea 277 (JSX): derecho a la comunicación familiar
+  Línea 277 (JSX): es uno de los derechos fundamentales
+                  más importantes durante un proceso penal urgente. Regulado por el
+  Línea 278 (JSX): artículo 520
+                  de la Ley de Enjuiciamiento Criminal
+  Línea 279 (JSX): y protegido por el
+  Línea 279 (JSX): artículo 8
+                  del Convenio Europeo de Derechos Humanos
+  Línea 280 (JSX): , este derecho busca mantener el vínculo
+                  emocional y facilitar la asistencia jurídica y personal.
+  Línea 283 (JSX): Esta guía explica cómo ejercer el derecho de comunicación familiar durante la detención,
+                  las restricciones que pueden aplicarse, y las situaciones especiales que requieren
+                  consideraciones adicionales, basándose en la jurisprudencia del
+  Línea 286 (JSX): Tribunal Europeo
+                  de Derechos Humanos
+  Línea 287 (JSX): y las instrucciones del
+  Línea 287 (JSX): Ministerio del Interior
+  Línea 299 (JSX): Fases de la Comunicación Familiar
+  Línea 324 (JSX): Derechos que asisten:
+  Línea 335 (JSX): Restricciones aplicables:
+  Línea 359 (JSX): Derechos de los Familiares
+  Línea 367 (JSX): Apoyo Familiar en la Crisis
+  Línea 368 (JSX): Los familiares tienen derechos específicos para apoyar al detenido
+  Línea 412 (JSX): Situaciones Especiales
+  Línea 441 (JSX): Derechos especiales:
+  Línea 470 (JSX): Protocolo de Actuación para Familiares
+  Línea 499 (JSX): Acciones recomendadas:
+  Línea 522 (JSX): Preguntas Frecuentes sobre Comunicación Familiar
+  Línea 558 (JSX): Legislación y Referencias
+  Línea 563 (JSX): Normativa Española
+  Línea 566 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 567 (JSX): Artículos 118, 520 (comunicación familiar)
+  Línea 572 (JSX): Ley Orgánica 1/1979
+  Línea 573 (JSX): Derechos de los detenidos
+  Línea 578 (JSX): Ley 39/2015
+  Línea 579 (JSX): Procedimiento administrativo común
+  Línea 585 (JSX): Derecho Internacional
+  Línea 588 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 589 (JSX): Artículo 8 (derecho a la vida privada)
+  Línea 594 (JSX): Convención de Viena
+  Línea 595 (JSX): Relaciones consulares (extranjeros)
+  Línea 601 (JSX): Jurisprudencia Destacada
+  Línea 604 (JSX): STC 47/2018
+  Línea 604 (JSX): - Comunicación familiar en detención
+  Línea 607 (JSX): STEDH caso Olsson vs Suecia
+  Línea 607 (JSX): - Contacto familiar durante detención
+  Línea 616 (JSX): La comunicación familiar es un derecho fundamental que no solo proporciona apoyo emocional,
+                  sino que también facilita la coordinación de la defensa jurídica. Mantener este vínculo
+                  durante la detención es crucial para afrontar la situación con garantías y minimizar
+                  el impacto psicológico de la privación de libertad.
+  Línea 622 (JSX): Los familiares desempeñan un papel fundamental en el apoyo al detenido, desde la designación
+                  de abogado hasta el seguimiento del proceso. Conocer sus derechos y obligaciones les permite
+                  ofrecer un apoyo efectivo y coordinado con la defensa jurídica profesional.
+  Línea 642 (JSX): Consulta Comunicación Familiar
+  Línea 663 (JSX): Más información sobre derechos durante la detención
+  Línea 686 (JSX): Leer artículo
+  Línea 168 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 173 (Property): Asistencia Letrada de Urgencia
+  Línea 178 (Property): Primeros Pasos en Comisaría
+  Línea 195 (Property): Fases de la Comunicación Familiar
+  Línea 196 (Property): Derechos de los Familiares
+  Línea 197 (Property): Situaciones Especiales
+  Línea 198 (Property): Protocolo de Actuación para Familiares
+  Línea 199 (Property): Preguntas Frecuentes sobre Comunicación Familiar
+  Línea 200 (Property): Legislación y Referencias
+  Línea 201 (Property): Conclusión
+  Línea 190 (Property): Defensa Penal Urgente
+  Línea 191 (Property): Comunicación con Familiares del Detenido
+
+app\blog\defensa-penal-urgente-guia-completa\page.tsx:
+  Línea 72 (JSX): Defensa Penal Urgente
+  Línea 75 (JSX): Defensa Penal Urgente: Guía Completa para Detenidos
+  Línea 90 (JSX): Equipo STANS Abogados
+  Línea 94 (JSX): Todo lo que necesitas saber cuando eres detenido: derechos, procedimiento y cómo actuar. Guía práctica completa para situaciones de urgencia penal con información actualizada 2024.
+  Línea 115 (JSX): es el conjunto de actuaciones legales inmediatas que se activan cuando una persona es detenida o está bajo investigación criminal. Esta guía te proporciona toda la información esencial para proteger tus derechos desde el primer momento, evitar errores costosos y maximizar las posibilidades de un resultado favorable.
+  Línea 122 (JSX): Información Crítica
+  Línea 123 (JSX): Los primeros momentos tras una detención son cruciales. Conocer tus derechos y cómo ejercerlos puede determinar el resultado de todo el proceso penal. Una actuación incorrecta en las primeras horas puede comprometer gravemente tu defensa.
+  Línea 143 (JSX): Derechos Inmediatos al Ser Detenido
+  Línea 148 (JSX): Desde el momento de la detención, tienes derechos fundamentales que nadie puede vulnerar. Es esencial conocerlos y ejercerlos correctamente:
+  Línea 155 (JSX): Derecho a la Información
+  Línea 158 (JSX): Deben informarte de los motivos de tu detención, tus derechos y las acusaciones en tu contra.
+  Línea 162 (JSX): • Motivos específicos de la detención
+  Línea 163 (JSX): • Derechos que te asisten
+  Línea 165 (JSX): • Duración máxima de la detención
+  Línea 171 (JSX): Asistencia Letrada
+  Línea 174 (JSX): Derecho a un abogado desde el primer momento. Puede ser de oficio o de tu elección.
+  Línea 179 (JSX): • Abogado de oficio gratuito
+  Línea 180 (JSX): • Derecho a elegir abogado privado
+  Línea 181 (JSX): • Presencia en todas las diligencias
+  Línea 187 (JSX): Derecho a No Declarar
+  Línea 190 (JSX): No estás obligado a declarar contra ti mismo. Puedes guardar silencio sin consecuencias.
+  Línea 196 (JSX): • Declarar solo con abogado
+  Línea 197 (JSX): • Evitar autoincriminación
+  Línea 203 (JSX): Comunicación
+  Línea 206 (JSX): Derecho a comunicar tu detención a un familiar y al consulado si eres extranjero.
+  Línea 210 (JSX): • Avisar a un familiar
+  Línea 212 (JSX): • Llamada telefónica
+  Línea 213 (JSX): • Comunicación inmediata
+  Línea 225 (JSX): Proceso y Plazos de Detención
+  Línea 230 (JSX): El proceso de detención sigue unos plazos estrictos que debes conocer. Cualquier vulneración de estos puede ser motivo de recurso:
+  Línea 235 (JSX): Plazos Máximos de Detención
+  Línea 238 (JSX): Detención preventiva
+  Línea 239 (JSX): 72 horas máximo
+  Línea 242 (JSX): Delitos de terrorismo
+  Línea 243 (JSX): 5 días máximo
+  Línea 246 (JSX): Organizaciones criminales
+  Línea 247 (JSX): 5 días máximo
+  Línea 250 (JSX): Prisión provisional
+  Línea 251 (JSX): Según gravedad del caso
+  Línea 257 (JSX): ⏰ Cómputo de Plazos
+  Línea 258 (JSX): Los plazos se cuentan desde el momento efectivo de la detención, no desde el ingreso en comisaría. 
+                        Weekend y festivos no interrumpen el cómputo para la detención preventiva.
+  Línea 268 (JSX): Fases del Proceso de Detención
+  Línea 273 (JSX): 1. Detención Inicial
+  Línea 274 (JSX): Momento en que pierdes tu libertad por actuación policial.
+  Línea 276 (JSX): • Identificación de agentes
+  Línea 277 (JSX): • Lectura de derechos
+  Línea 279 (JSX): • Traslado a dependencias
+  Línea 284 (JSX): 2. Ingreso en Comisaría
+  Línea 285 (JSX): Formalización del ingreso y apertura del expediente.
+  Línea 287 (JSX): • Registro de entrada
+  Línea 288 (JSX): • Inventario de pertenencias
+  Línea 289 (JSX): • Comunicación de derechos por escrito
+  Línea 290 (JSX): • Solicitud de abogado y familiar
+  Línea 295 (JSX): 3. Investigación Policial
+  Línea 296 (JSX): Período de investigación con presencia de abogado obligatoria.
+  Línea 298 (JSX): • Declaración con abogado presente
+  Línea 299 (JSX): • Diligencias de investigación
+  Línea 300 (JSX): • Recogida de pruebas
+  Línea 301 (JSX): • Entrevistas con testigos
+  Línea 306 (JSX): 4. Puesta a Disposición Judicial
+  Línea 307 (JSX): Decisión judicial sobre tu situación procesal.
+  Línea 309 (JSX): • Comparecencia ante el juez
+  Línea 310 (JSX): • Decisión sobre medidas cautelares
+  Línea 311 (JSX): • Posible libertad o prisión provisional
+  Línea 312 (JSX): • Fijación de fianza si procede
+  Línea 321 (JSX): Qué Hacer y Qué NO Hacer
+  Línea 326 (JSX): QUÉ SÍ HACER
+  Línea 332 (JSX): Solicitar inmediatamente un abogado
+  Línea 332 (JSX): - Es tu derecho más importante
+  Línea 336 (JSX): Permanecer calmado y cooperativo
+  Línea 336 (JSX): - La agresividad empeora tu situación
+  Línea 340 (JSX): Pedir que informen a tu familia
+  Línea 340 (JSX): - Derecho básico de comunicación
+  Línea 344 (JSX): Recordar y anotar todos los detalles
+  Línea 344 (JSX): - Números de placa, nombres, horas
+  Línea 348 (JSX): Solicitar atención médica si la necesitas
+  Línea 348 (JSX): - Derecho a la salud
+  Línea 352 (JSX): Preguntar sobre los motivos de detención
+  Línea 352 (JSX): - Derecho a la información
+  Línea 359 (JSX): QUÉ NO HACER
+  Línea 365 (JSX): No resistirse físicamente
+  Línea 365 (JSX): - Puede añadir cargos de resistencia
+  Línea 369 (JSX): No declarar sin abogado presente
+  Línea 373 (JSX): No firmar documentos sin asesoramiento
+  Línea 373 (JSX): - Podrían ser confesiones
+  Línea 377 (JSX): No dar información adicional
+  Línea 377 (JSX): - Solo la estrictamente necesaria
+  Línea 381 (JSX): No mentir a la policía
+  Línea 381 (JSX): - Es mejor guardar silencio
+  Línea 385 (JSX): No discutir con los agentes
+  Línea 385 (JSX): - Guarda tus argumentos para el abogado
+  Línea 394 (JSX): Medidas Cautelares Posibles
+  Línea 397 (JSX): Tras la puesta a disposición judicial, el juez puede adoptar diferentes medidas cautelares según la gravedad del caso:
+  Línea 404 (JSX): La medida más favorable. Quedas en libertad sin condiciones económicas.
+  Línea 408 (JSX): 🔵 Libertad Con Fianza
+  Línea 409 (JSX): Libertad condicionada al pago de una cantidad económica como garantía.
+  Línea 413 (JSX): 🟡 Libertad Con Condiciones
+  Línea 414 (JSX): Prohibición de salir del país, comparecencias periódicas, alejamiento de víctimas.
+  Línea 418 (JSX): 🟠 Prisión Provisional
+  Línea 419 (JSX): Ingreso en centro penitenciario mientras dura la investigación.
+  Línea 427 (JSX): Recursos Legales Disponibles
+  Línea 430 (JSX): Si consideras que se han vulnerado tus derechos durante la detención, dispones de varios recursos legales:
+  Línea 436 (JSX): Habeas Corpus
+  Línea 437 (JSX): Procedimiento urgente para revisar la legalidad de la detención.
+  Línea 441 (JSX): • Resolución en 24 horas
+  Línea 442 (JSX): • Puede solicitar el detenido o terceros
+  Línea 443 (JSX): • Revisa legalidad de la detención
+  Línea 448 (JSX): Recurso de Amparo
+  Línea 449 (JSX): Recurso ante el Tribunal Constitucional por vulneración de derechos fundamentales.
+  Línea 453 (JSX): • Plazo: 30 días
+  Línea 454 (JSX): • Vulneración derechos fundamentales
+  Línea 455 (JSX): • Última instancia judicial
+  Línea 460 (JSX): Recurso de Apelación
+  Línea 461 (JSX): Contra las resoluciones sobre medidas cautelares.
+  Línea 465 (JSX): • Plazo: 3 días
+  Línea 466 (JSX): • Contra prisión provisional
+  Línea 472 (JSX): Denuncia Disciplinaria
+  Línea 473 (JSX): Contra agentes que vulneren tus derechos durante la detención.
+  Línea 479 (JSX): • Indemnización por daños
+  Línea 492 (JSX): Nuestro equipo de abogados penalistas está disponible 24/7 para proteger tus derechos desde el primer momento. 
+                      No esperes, cada minuto cuenta en tu defensa.
+  Línea 502 (JSX): WhatsApp 24/7 - URGENTE
+  Línea 530 (JSX): Amplía tu conocimiento sobre defensa penal con estos artículos especializados
+  Línea 554 (JSX): Leer artículo
+  Línea 19 (Property): Derechos Constitucionales del Detenido
+  Línea 24 (Property): Primeros Pasos en Comisaría
+  Línea 29 (Property): Asistencia Letrada de Urgencia
+  Línea 46 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 47 (Property): Proceso y Plazos de Detención
+  Línea 48 (Property): Fases del Proceso de Detención
+  Línea 49 (Property): Qué Hacer y Qué NO Hacer
+  Línea 50 (Property): Medidas Cautelares Posibles
+  Línea 51 (Property): Recursos Legales Disponibles
+  Línea 41 (Property): Defensa Penal Urgente
+  Línea 42 (Property): Guía Completa de Defensa Penal Urgente
+
+app\blog\defensa-penal-urgente\page.tsx:
+  Línea 122 (JSX): Defensa Penal Urgente
+  Línea 125 (JSX): Guía completa para situaciones de urgencia penal. Conoce tus derechos,
+                procedimientos y cómo actuar cuando más lo necesitas.
+  Línea 137 (JSX): Asistencia Urgente 24/7
+  Línea 138 (JSX): Asistencia 24/7
+  Línea 162 (JSX): Situaciones de Urgencia Comunes
+  Línea 165 (JSX): ¿Qué hacer en cada escenario de urgencia penal?
+  Línea 206 (JSX): Tus Derechos en Situaciones de Urgencia
+  Línea 209 (JSX): Derechos fundamentales que nunca debes olvidar
+  Línea 223 (JSX): Derechos Inmediatos
+  Línea 228 (JSX): Asistencia letrada inmediata (24h)
+  Línea 232 (JSX): Comunicación con familiar o persona de confianza
+  Línea 236 (JSX): Conocer los motivos de la detención
+  Línea 240 (JSX): No declarar sin presencia de abogado
+  Línea 254 (JSX): Lo que NO Debes Hacer
+  Línea 259 (JSX): Declarar sin abogado presente
+  Línea 263 (JSX): Firmar documentos sin leerlos
+  Línea 267 (JSX): Hablar con otros detenidos sobre tu caso
+  Línea 271 (JSX): Oponer resistencia física a la detención
+  Línea 293 (JSX): Profundiza en cada aspecto de la defensa penal urgente
+  Línea 343 (JSX): Nuestro equipo está disponible 24/7 para asistirte en situaciones críticas.
+                No estás solo, estamos aquí para proteger tus derechos.
+  Línea 353 (JSX): Llamar Ahora - Urgente
+  Línea 18 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 24 (Property): Primeros Pasos en Comisaría
+  Línea 30 (Property): Asistencia Letrada de Urgencia
+  Línea 36 (Property): Puesta a Disposición Judicial
+  Línea 42 (Property): Habeas Corpus: Recurso de Amparo
+  Línea 48 (Property): Medidas Cautelares Urgentes
+  Línea 54 (Property): Comunicación con Familiares
+  Línea 60 (Property): Registro de Dependencias
+  Línea 88 (Property): Declaración Inminente
+  Línea 89 (Property): Te van a tomar declaración
+  Línea 100 (Property): Defensa Penal Urgente
+
+app\blog\delitos-salud-publica-drogas-consecuencias\page.tsx:
+  Línea 178 (JSX): Volver al blog
+  Línea 183 (JSX): Delitos contra la Salud Pública
+  Línea 192 (JSX): Delitos contra la Salud Pública: Drogas y Consecuencias Legales
+  Línea 196 (JSX): Análisis completo de los delitos relacionados con sustancias estupefacientes:
+                tipos, penas, atenuantes y estrategias de defensa en España.
+  Línea 203 (JSX): Diego Cardona Valero
+  Línea 229 (JSX): Los delitos contra la salud pública relacionados con sustancias estupefacientes
+                  constituyen una de las infracciones penales más comunes en España. La
+  Línea 232 (JSX): Ley Orgánica 4/2015
+  Línea 232 (JSX): de Protección de la Seguridad Ciudadana regula
+                  estos delitos con especial rigor, estableciendo penas que pueden alcanzar hasta 9 años de prisión.
+  Línea 235 (JSX): Esta guía analiza exhaustivamente el marco legal aplicable, basándose en la
+                  jurisprudencia del
+  Línea 237 (JSX): Tribunal Supremo
+  Línea 237 (JSX): , las estadísticas del
+  Línea 238 (JSX): Ministerio del Interior
+  Línea 238 (JSX): y las directrices de la
+  Línea 238 (JSX): Fiscalía General del Estado
+  Línea 250 (JSX): Marco Legal de los Delitos de Drogas
+  Línea 258 (JSX): Ley Orgánica 4/2015
+  Línea 259 (JSX): Regulación integral de los delitos contra la salud pública
+  Línea 267 (JSX): Ámbito de Aplicación
+  Línea 269 (JSX): • Producción y elaboración
+  Línea 270 (JSX): • Tráfico y distribución
+  Línea 271 (JSX): • Posesión con ánimo de distribución
+  Línea 272 (JSX): • Cultivo y plantaciones
+  Línea 273 (JSX): • Promoción y favorecimiento
+  Línea 278 (JSX): Sustancias Reguladas
+  Línea 280 (JSX): • Cocaína y derivados
+  Línea 281 (JSX): • Heroína y opioides
+  Línea 282 (JSX): • Cannabis y hachís
+  Línea 283 (JSX): • MDMA y anfetaminas
+  Línea 284 (JSX): • Alucinógenos sintéticos
+  Línea 294 (JSX): Criterios de Distinción
+  Línea 295 (JSX): La jurisprudencia establece que se considera tráfico cuando existe
+  Línea 297 (JSX): ánimo de lucro
+  Línea 297 (JSX): , las cantidades superan lo razonable para consumo personal,
+                        o existen instrumentos para preparación/distribución, según las
+  Línea 299 (JSX): Sentencias del Tribunal Supremo 1234/2019 y 567/2022
+  Línea 314 (JSX): Tipos de Drogas y Escala Penal
+  Línea 323 (JSX): Categoría
+  Línea 324 (JSX): Pena Básica
+  Línea 357 (JSX): Sistema de Graduación
+  Línea 360 (JSX): Pequeña Cantidad
+  Línea 363 (JSX): 3 meses - 3 años
+  Línea 366 (JSX): Mediana Cantidad
+  Línea 369 (JSX): 1 - 5 años
+  Línea 372 (JSX): Gran Cantidad
+  Línea 375 (JSX): 3 - 9 años
+  Línea 389 (JSX): Atenuantes y Estrategias de Defensa
+  Línea 418 (JSX): Defensas Técnicas Comunes
+  Línea 421 (JSX): Defensas de Fondo
+  Línea 423 (JSX): • Falta de ánimo de lucro
+  Línea 424 (JSX): • Posesión para consumo personal
+  Línea 425 (JSX): • Cadena de custodia defectuosa
+  Línea 426 (JSX): • Error en determinación de sustancia
+  Línea 430 (JSX): Defensas Procesales
+  Línea 432 (JSX): • Vulneración de derechos fundamentales
+  Línea 434 (JSX): • Falta de motivación judicial
+  Línea 435 (JSX): • Prescripción del delito
+  Línea 450 (JSX): Consecuencias Legales y Administrativas
+  Línea 457 (JSX): Consecuencias Penales
+  Línea 462 (JSX): Penas de Prisión
+  Línea 464 (JSX): • 3 meses a 3 años (cantidades pequeñas)
+  Línea 465 (JSX): • 1 a 5 años (cantidades medias)
+  Línea 466 (JSX): • 3 a 9 años (cantidades grandes)
+  Línea 467 (JSX): • Hasta 12 años (tráfico organizado)
+  Línea 471 (JSX): Penas Accesorias
+  Línea 473 (JSX): • Multas económicas elevadas
+  Línea 474 (JSX): • Inhabilitación profesional
+  Línea 475 (JSX): • Pérdida de permisos y licencias
+  Línea 476 (JSX): • Responsabilidad civil por daños
+  Línea 484 (JSX): Consecuencias Administrativas
+  Línea 487 (JSX): Paralelamente al proceso penal, se pueden imponer sanciones administrativas
+                      según la Ley Orgánica 4/2015:
+  Línea 496 (JSX): Hasta 601€
+  Línea 505 (JSX): Muy Graves
+  Línea 523 (JSX): Preguntas Frecuentes sobre Delitos de Drogas
+  Línea 559 (JSX): Legislación y Jurisprudencia
+  Línea 564 (JSX): Normativa Principal
+  Línea 567 (JSX): Ley Orgánica 4/2015
+  Línea 567 (JSX): - Protección de la Seguridad Ciudadana
+  Línea 568 (JSX): Ver ley completa
+  Línea 573 (JSX): Código Penal (artículos 368-378)
+  Línea 573 (JSX): - Delitos contra la salud pública
+  Línea 574 (JSX): Ver código penal
+  Línea 579 (JSX): Ley Orgánica 1/1992
+  Línea 579 (JSX): - Protección de la seguridad ciudadana
+  Línea 580 (JSX): Ver ley completa
+  Línea 586 (JSX): Jurisprudencia Relevante
+  Línea 589 (JSX): STS 1234/2019
+  Línea 589 (JSX): - Criterios para distinguir posesión de tráfico
+  Línea 592 (JSX): STS 567/2022
+  Línea 592 (JSX): - Aplicación de atenuantes en delitos de drogas
+  Línea 595 (JSX): STEDH caso X vs España
+  Línea 595 (JSX): - Derechos en procedimientos por drogas
+  Línea 599 (JSX): Convenios Internacionales
+  Línea 602 (JSX): Convención Única de 1961
+  Línea 602 (JSX): sobre Estupefacientes (ratificada por España)
+  Línea 605 (JSX): Convención de 1988
+  Línea 605 (JSX): contra el tráfico ilícito de estupefacientes
+  Línea 614 (JSX): Los delitos contra la salud pública relacionados con drogas tienen consecuencias
+                  graves que afectan no solo a la libertad personal, sino también a la vida profesional
+                  y familiar. Sin embargo, existen múltiples estrategias de defensa que pueden
+                  reducir significativamente las penas o incluso evitar la condena.
+  Línea 620 (JSX): La clave está en una defensa especializada que conozca los matices de la legislación
+                  española sobre drogas y sepa aplicar las jurisprudencias más favorables.
+                  En STANS Abogados contamos con amplia experiencia en este tipo de casos,
+                  ofreciendo estrategias personalizadas según cada situación particular.
+  Línea 641 (JSX): Consulta Especializada
+  Línea 662 (JSX): Más información sobre delitos contra la salud pública
+  Línea 685 (JSX): Leer artículo
+  Línea 122 (Property): Defensa Penal Urgente por Drogas
+  Línea 127 (Property): Consecuencias Legales del Consumo
+  Línea 132 (Property): Tratamientos Alternativos a la Cárcel
+  Línea 148 (Property): Marco Legal de los Delitos de Drogas
+  Línea 149 (Property): Tipos de Drogas y Escala Penal
+  Línea 150 (Property): Atenuantes y Estrategias de Defensa
+  Línea 151 (Property): Consecuencias Legales y Administrativas
+  Línea 152 (Property): Preguntas Frecuentes sobre Delitos de Drogas
+  Línea 153 (Property): Legislación y Jurisprudencia
+  Línea 154 (Property): Conclusión
+  Línea 144 (Property): Delitos contra la Salud Pública: Drogas y Consecuencias
+
+app\blog\derecho-asistencia-letrada-detenido\page.tsx:
+  Línea 251 (JSX): Volver al hub de Derechos de Detenidos
+  Línea 256 (JSX): Derechos de Detenidos
+  Línea 265 (JSX): Derecho a la Asistencia Letrada del Detenido
+  Línea 269 (JSX): Asistencia jurídica gratuita y obligatoria. Funciones del abogado,
+                tipos de asistencia y plazos constitucionales durante la detención.
+  Línea 276 (JSX): Equipo STANS Abogados
+  Línea 303 (JSX): derecho a la asistencia letrada
+  Línea 303 (JSX): es uno de los derechos constitucionales
+                  más importantes durante la detención. Reconocido en el
+  Línea 304 (JSX): artículo 24.2 de la Constitución Española
+  Línea 304 (JSX): y desarrollado por la
+  Línea 305 (JSX): Ley 1/1996 de Asistencia Jurídica Gratuita
+  Línea 305 (JSX): , garantiza
+                  que toda persona privada de libertad cuente con un abogado desde el primer momento.
+  Línea 308 (JSX): Esta guía completa explica el alcance del derecho a la asistencia letrada, las diferentes
+                  modalidades de asistencia jurídica, las funciones del abogado durante la detención, y las
+                  consecuencias de su vulneración, basándose en la jurisprudencia del
+  Línea 311 (JSX): Tribunal Constitucional
+  Línea 311 (JSX): y las instrucciones del
+  Línea 312 (JSX): Ministerio de Justicia
+  Línea 324 (JSX): Funciones del Abogado durante la Detención
+  Línea 367 (JSX): Tipos de Asistencia Jurídica
+  Línea 423 (JSX): Derechos Adicionales con Asistencia Letrada
+  Línea 431 (JSX): Protección Jurídica Integral
+  Línea 432 (JSX): La presencia del abogado multiplica las garantías procesales
+  Línea 476 (JSX): Plazos Constitucionales de Asistencia Letrada
+  Línea 513 (JSX): Consecuencias de la Falta de Asistencia
+  Línea 515 (JSX): Nulidad de declaraciones
+  Línea 516 (JSX): Inadmisión de pruebas
+  Línea 516 (JSX): obtenidas sin garantías procesales
+  Línea 517 (JSX): Responsabilidad disciplinaria
+  Línea 517 (JSX): de los agentes implicados
+  Línea 518 (JSX): Indemnización por daños
+  Línea 518 (JSX): si se demuestra vulneración
+  Línea 519 (JSX): Recursos extraordinarios
+  Línea 519 (JSX): ante el Tribunal Constitucional
+  Línea 532 (JSX): Proceso de Designación de Abogado
+  Línea 540 (JSX): Designación Automática
+  Línea 541 (JSX): El sistema de designación de abogados de urgencia garantiza asistencia inmediata
+                        en cualquier momento y lugar, 24 horas al día, 365 días al año.
+  Línea 551 (JSX): Manifestar expresamente el deseo de tener abogado
+  Línea 556 (JSX): 2. Comunicación
+  Línea 557 (JSX): Colegio de Abogados recibe la solicitud
+  Línea 562 (JSX): 3. Designación
+  Línea 563 (JSX): Abogado de guardia es designado automáticamente
+  Línea 570 (JSX): Abogados de Guardia por Provincia
+  Línea 571 (JSX): Cada provincia española cuenta con servicios de abogados de guardia que rotan
+                      semanalmente, garantizando cobertura 24/7. Los colegios profesionales coordinan
+                      estos servicios para asegurar asistencia inmediata en cualquier circunstancia.
+  Línea 588 (JSX): Preguntas Frecuentes sobre Asistencia Letrada
+  Línea 624 (JSX): Legislación y Referencias
+  Línea 629 (JSX): Normativa Constitucional y Procesal
+  Línea 632 (JSX): Constitución Española (1978)
+  Línea 633 (JSX): Artículo 24.2 (derecho a la defensa)
+  Línea 638 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 639 (JSX): Artículos 118, 520, 542 (asistencia letrada)
+  Línea 644 (JSX): Ley 1/1996 de Asistencia Jurídica Gratuita
+  Línea 645 (JSX): Servicio de urgencias y justicia gratuita
+  Línea 651 (JSX): Regulaciones Profesionales
+  Línea 654 (JSX): Estatuto General de la Abogacía
+  Línea 657 (JSX): Código Deontológico
+  Línea 657 (JSX): - Principios éticos en urgencias
+  Línea 660 (JSX): Reglamento de Asistencia Jurídica Gratuita
+  Línea 660 (JSX): - Procedimiento de designación
+  Línea 664 (JSX): Jurisprudencia Relevante
+  Línea 667 (JSX): STC 47/2018
+  Línea 667 (JSX): - Alcance del derecho a asistencia letrada
+  Línea 670 (JSX): STS 234/2020
+  Línea 670 (JSX): - Plazos de llegada del abogado de urgencia
+  Línea 673 (JSX): STEDH Caso Mammadov vs Azerbaiyán
+  Línea 673 (JSX): - Derechos humanos en detención
+  Línea 682 (JSX): El derecho a la asistencia letrada es fundamental para garantizar un proceso justo
+                  y respetuoso con los derechos constitucionales. Desde el primer momento de la detención,
+                  el abogado actúa como garante de tus derechos, controlador de la legalidad policial,
+                  y preparador de tu estrategia de defensa.
+  Línea 688 (JSX): La asistencia jurídica gratuita y la obligación de presencia letrada en interrogatorios
+                  son conquistas democráticas que igualan las posiciones procesales. Cualquier vulneración
+                  de este derecho puede anular todo el procedimiento y dar lugar a responsabilidades
+                  disciplinarias, penales y patrimoniales. En STANS Abogados garantizamos asistencia
+                  especializada desde el primer momento de cualquier detención.
+  Línea 710 (JSX): Abogado de Urgencia 24/7
+  Línea 730 (JSX): Más información sobre derechos de detenidos
+  Línea 753 (JSX): Leer artículo
+  Línea 192 (Property): Derechos Constitucionales del Detenido
+  Línea 197 (Property): Asistencia Letrada de Urgencia
+  Línea 202 (Property): Primeros Pasos en Comisaría
+  Línea 219 (Property): Funciones del Abogado durante la Detención
+  Línea 220 (Property): Tipos de Asistencia Jurídica
+  Línea 221 (Property): Derechos Adicionales con Asistencia Letrada
+  Línea 222 (Property): Plazos Constitucionales de Asistencia Letrada
+  Línea 223 (Property): Proceso de Designación de Abogado
+  Línea 224 (Property): Preguntas Frecuentes sobre Asistencia Letrada
+  Línea 225 (Property): Legislación y Referencias
+  Línea 226 (Property): Conclusión
+  Línea 214 (Property): Derechos de Detenidos
+  Línea 215 (Property): Derecho a Asistencia Letrada del Detenido
+
+app\blog\derechos-constitucionales-detenido\page.tsx:
+  Línea 294 (JSX): Volver al hub de Derechos de Detenidos
+  Línea 299 (JSX): Derechos de Detenidos
+  Línea 308 (JSX): Derechos Constitucionales del Detenido
+  Línea 312 (JSX): Garantías irrenunciables durante la detención. Protección constitucional
+                contra vulneraciones y cómo ejercer tus derechos fundamentales.
+  Línea 319 (JSX): Equipo STANS Abogados
+  Línea 342 (JSX): Los
+  Línea 343 (JSX): derechos constitucionales del detenido
+  Línea 343 (JSX): son las garantías fundamentales
+                  que protegen la libertad y dignidad de toda persona privada de libertad. Recogidos en el
+  Línea 345 (JSX): Título I de la Constitución Española
+  Línea 346 (JSX): e imprescribibles, constituyendo límites infranqueables
+                  para cualquier actuación policial o judicial.
+  Línea 349 (JSX): Esta guía exhaustiva analiza cada derecho constitucional aplicable durante la detención,
+                  sus garantías prácticas, y las consecuencias de su vulneración, basándose en la
+                  jurisprudencia del
+  Línea 352 (JSX): Tribunal Constitucional
+  Línea 352 (JSX): y el
+  Línea 352 (JSX): Tribunal Europeo
+                  de Derechos Humanos
+  Línea 353 (JSX): , que han desarrollado estos derechos a través de décadas
+                  de pronunciamientos.
+  Línea 367 (JSX): Derechos Constitucionales Fundamentales
+  Línea 401 (JSX): Garantías:
+  Línea 422 (JSX): Garantías Procesales Prácticas
+  Línea 470 (JSX): Vulneraciones Constitucionales Comunes
+  Línea 478 (JSX): Prevención y Detección
+  Línea 479 (JSX): Conocer las vulneraciones más comunes permite prevenirlas y actuar
+                        rápidamente cuando ocurren. Toda vulneración constitucional debe ser
+                        documentada y denunciada inmediatamente.
+  Línea 509 (JSX): Prevención:
+  Línea 535 (JSX): Protección Especial para Grupos Vulnerables
+  Línea 543 (JSX): Derechos Reforzados
+  Línea 544 (JSX): Grupos vulnerables tienen protecciones constitucionales adicionales
+  Línea 553 (JSX): Menores de Edad
+  Línea 555 (JSX): • Derecho a presencia familiar
+  Línea 556 (JSX): • Abogado especializado en menores
+  Línea 557 (JSX): • Consideración del interés superior
+  Línea 558 (JSX): • Prohibición de incomunicación
+  Línea 565 (JSX): • Derecho a traducción oficial
+  Línea 566 (JSX): • Comunicación consular
+  Línea 567 (JSX): • Información en idioma nativo
+  Línea 568 (JSX): • Protección diplomática
+  Línea 575 (JSX): Personas con Discapacidad
+  Línea 579 (JSX): • Comunicación accesible
+  Línea 580 (JSX): • Medidas de apoyo técnico
+  Línea 585 (JSX): Víctimas de Violencia
+  Línea 587 (JSX): • Protección especial
+  Línea 588 (JSX): • Alejamiento de agresores
+  Línea 589 (JSX): • Apoyo psicológico
+  Línea 590 (JSX): • Medidas de seguridad
+  Línea 607 (JSX): Preguntas Frecuentes sobre Derechos Constitucionales
+  Línea 644 (JSX): Legislación y Referencias
+  Línea 649 (JSX): Normativa Constitucional
+  Línea 652 (JSX): Constitución Española (1978)
+  Línea 653 (JSX): Título I, arts. 14-29 (Derechos fundamentales)
+  Línea 658 (JSX): Ley Orgánica 4/2015
+  Línea 659 (JSX): Protección Seguridad Ciudadana
+  Línea 664 (JSX): Ley Orgánica 1/1979
+  Línea 665 (JSX): Derechos de los detenidos
+  Línea 671 (JSX): Derecho Internacional
+  Línea 674 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 675 (JSX): Arts. 5, 6, 8 (Libertad, proceso justo, vida privada)
+  Línea 680 (JSX): Pacto Internacional de Derechos Civiles y Políticos
+  Línea 681 (JSX): Arts. 9, 14 (Libertad, proceso justo)
+  Línea 687 (JSX): Jurisprudencia Destacada
+  Línea 690 (JSX): STC 47/2018
+  Línea 690 (JSX): - Límites constitucionales de la detención
+  Línea 693 (JSX): STC 114/2017
+  Línea 693 (JSX): - Derechos fundamentales en comisaría
+  Línea 696 (JSX): STEDH Caso Mammadov
+  Línea 696 (JSX): - Derechos humanos en detención
+  Línea 705 (JSX): Los derechos constitucionales del detenido son la base fundamental del Estado de Derecho
+                  y la protección de la dignidad humana. Estos derechos, irrenunciables e imprescriptibles,
+                  constituyen límites infranqueables para cualquier actuación policial o judicial, garantizando
+                  que la privación de libertad se realice siempre de manera legítima y respetuosa.
+  Línea 711 (JSX): Su efectividad práctica depende tanto del conocimiento de estos derechos como de la
+                  determinación para ejercerlos. Cualquier vulneración debe ser documentada y denunciada
+                  inmediatamente, utilizando todos los recursos procesales disponibles. En STANS Abogados
+                  contamos con amplia experiencia en la defensa de derechos constitucionales vulnerados
+                  durante la detención.
+  Línea 733 (JSX): Consulta Derechos Constitucionales
+  Línea 753 (JSX): Más información sobre derechos de detenidos
+  Línea 776 (JSX): Leer artículo
+  Línea 21 (Property): Introducción
+  Línea 26 (Property): Derechos Constitucionales Fundamentales
+  Línea 31 (Property): Garantías Procesales Prácticas
+  Línea 36 (Property): Vulneraciones Constitucionales Comunes
+  Línea 41 (Property): Protección Especial para Grupos Vulnerables
+  Línea 44 (Property): Menores de Edad
+  Línea 46 (Property): Personas con Discapacidad
+  Línea 47 (Property): Víctimas de Violencia
+  Línea 52 (Property): Preguntas Frecuentes
+  Línea 57 (Property): Legislación y Referencias
+  Línea 62 (Property): Conclusión
+  Línea 235 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 240 (Property): Asistencia Letrada de Urgencia
+  Línea 245 (Property): Primeros Pasos en Comisaría
+  Línea 268 (Property): Derechos de Detenidos
+  Línea 269 (Property): Derechos Constitucionales del Detenido
+
+app\blog\derechos-dependencias-policiales\page.tsx:
+  Línea 304 (JSX): Volver al hub de Derechos de Detenidos
+  Línea 309 (JSX): Derechos de Detenidos
+  Línea 318 (JSX): Derechos en Dependencias Policiales
+  Línea 322 (JSX): Condiciones mínimas, derechos diarios y garantías durante la estancia
+                en comisaría. Protocolos y plazos constitucionales.
+  Línea 329 (JSX): Equipo STANS Abogados
+  Línea 355 (JSX): Los
+  Línea 356 (JSX): derechos en dependencias policiales
+  Línea 356 (JSX): están regulados por la
+  Línea 357 (JSX): Ley Orgánica 1/1979
+  Línea 357 (JSX): y el
+  Línea 357 (JSX): Reglamento de Comisarías
+  Línea 357 (JSX): ,
+                  que establecen las condiciones mínimas que deben respetarse durante la detención.
+                  Estos derechos garantizan que la privación de libertad se realice de manera
+                  digna y respetuosa con los derechos fundamentales.
+  Línea 362 (JSX): Esta guía detalla todos los derechos durante la estancia en comisaría, desde
+                  las condiciones mínimas de habitabilidad hasta los derechos diarios, pasando
+                  por los plazos constitucionales y las garantías procesales. Se basa en la
+                  jurisprudencia del
+  Línea 366 (JSX): Tribunal Constitucional
+  Línea 366 (JSX): y las instrucciones
+                  del
+  Línea 367 (JSX): Ministerio del Interior
+  Línea 367 (JSX): sobre el régimen de detención.
+  Línea 379 (JSX): Derechos Básicos en Comisaría
+  Línea 420 (JSX): Fases de la Detención en Comisaría
+  Línea 450 (JSX): Derechos en esta fase:
+  Línea 458 (JSX): Acciones recomendadas:
+  Línea 479 (JSX): Condiciones Mínimas Legales
+  Línea 488 (JSX): Mínimo Legal
+  Línea 489 (JSX): Descripción
+  Línea 490 (JSX): Evidencia Legal
+  Línea 523 (JSX): Derechos Diarios durante la Detención
+  Línea 567 (JSX): Derechos Especiales por Situación
+  Línea 591 (JSX): Derechos adicionales:
+  Línea 599 (JSX): Medidas específicas:
+  Línea 620 (JSX): Control de Legalidad y Quejas
+  Línea 628 (JSX): Sistema de Quejas
+  Línea 629 (JSX): Todo detenido tiene derecho a formular quejas y reclamaciones sobre
+                        las condiciones o el trato recibido en comisaría. Estas quejas deben
+                        ser atendidas y pueden dar lugar a responsabilidades disciplinarias.
+  Línea 639 (JSX): Libro de Quejas
+  Línea 640 (JSX): Disponible 24h en todas las comisarías
+  Línea 645 (JSX): Defensor del Pueblo
+  Línea 646 (JSX): Institución independiente para quejas
+  Línea 651 (JSX): Fiscalía de Derechos Humanos
+  Línea 652 (JSX): Investigación de vulneraciones graves
+  Línea 668 (JSX): Preguntas Frecuentes sobre Derechos en Comisaría
+  Línea 704 (JSX): Legislación y Referencias
+  Línea 709 (JSX): Normativa Española
+  Línea 712 (JSX): Ley Orgánica 1/1979
+  Línea 713 (JSX): Derechos de los detenidos
+  Línea 718 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 719 (JSX): Régimen de detención (arts. 489-529)
+  Línea 724 (JSX): Reglamento de Comisarías
+  Línea 725 (JSX): Condiciones de detención
+  Línea 731 (JSX): Derecho Internacional
+  Línea 734 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 735 (JSX): Artículos 3, 5, 6 (Tratos inhumanos, libertad, proceso justo)
+  Línea 740 (JSX): Reglas Mínimas Naciones Unidas
+  Línea 741 (JSX): Tratamiento de reclusos
+  Línea 747 (JSX): Jurisprudencia Destacada
+  Línea 750 (JSX): STC 47/2018
+  Línea 750 (JSX): - Condiciones de detención en comisaría
+  Línea 753 (JSX): STC 114/2017
+  Línea 753 (JSX): - Derechos durante la detención policial
+  Línea 756 (JSX): STEDH Caso Mammadov
+  Línea 756 (JSX): - Condiciones de detención inhumanas
+  Línea 765 (JSX): Los derechos en dependencias policiales garantizan que la privación de libertad
+                  se realice respetando la dignidad humana y los derechos constitucionales. Desde
+                  el momento de la detención hasta la puesta a disposición judicial, el detenido
+                  mantiene todos sus derechos fundamentales, con protecciones específicas para
+                  garantizar condiciones dignas durante la estancia en comisaría.
+  Línea 772 (JSX): El conocimiento de estos derechos permite ejercerlos efectivamente y denunciar
+                  cualquier vulneración. Las condiciones mínimas legales, los derechos diarios y
+                  las garantías procesales aseguran que la detención sea un mecanismo legítimo
+                  de la administración de justicia, no una forma de castigo anticipado. En STANS
+                  Abogados defendemos activamente estos derechos en todas las fases del procedimiento.
+  Línea 794 (JSX): Derechos en Comisaría
+  Línea 814 (JSX): Más información sobre derechos de detenidos
+  Línea 837 (JSX): Leer artículo
+  Línea 245 (Property): Derechos Constitucionales del Detenido
+  Línea 250 (Property): Primeros Pasos en Comisaría
+  Línea 255 (Property): Derecho a la Asistencia Letrada del Detenido
+  Línea 272 (Property): Derechos Básicos en Comisaría
+  Línea 273 (Property): Fases de la Detención en Comisaría
+  Línea 274 (Property): Condiciones Mínimas Legales
+  Línea 275 (Property): Derechos Diarios durante la Detención
+  Línea 276 (Property): Derechos Especiales por Situación
+  Línea 277 (Property): Control de Legalidad y Quejas
+  Línea 278 (Property): Preguntas Frecuentes sobre Derechos en Comisaría
+  Línea 279 (Property): Legislación y Referencias
+  Línea 280 (Property): Conclusión
+  Línea 267 (Property): Derechos de Detenidos
+  Línea 268 (Property): Derechos en Dependencias Policiales
+
+app\blog\derechos-detenidos-garantias-procesales\page.tsx:
+  Línea 168 (JSX): Volver al blog
+  Línea 173 (JSX): Derechos Fundamentales
+  Línea 182 (JSX): Derechos de los Detenidos: Conoce tus Garantías Procesales
+  Línea 186 (JSX): Guía completa de tus derechos constitucionales como detenido en España:
+                garantías procesales, procedimiento legal y protección jurídica.
+  Línea 193 (JSX): Mounir Elyemlahy Chouati
+  Línea 219 (JSX): Ser detenido supone una
+  Línea 220 (JSX): situación de especial vulnerabilidad
+  Línea 220 (JSX): que requiere
+                  el máximo respeto a los derechos fundamentales. La Constitución Española y el
+  Línea 222 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 222 (JSX): establecen un conjunto de garantías
+                  que protegen a toda persona privada de libertad.
+  Línea 225 (JSX): Esta guía exhaustiva analiza tus derechos constitucionales como detenido,
+                  basándose en la jurisprudencia del
+  Línea 227 (JSX): Tribunal Constitucional
+  Línea 228 (JSX): Tribunal Europeo de Derechos Humanos
+  Línea 228 (JSX): y la legislación española aplicable.
+  Línea 240 (JSX): Derechos Constitucionales del Detenido
+  Línea 248 (JSX): Garantías Fundamentales
+  Línea 249 (JSX): Protecciones constitucionales irrenunciables durante la detención
+  Línea 287 (JSX): Derecho Europeo de Protección
+  Línea 288 (JSX): Además de los derechos constitucionales, el
+  Línea 289 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 289 (JSX): establece protecciones adicionales contra tratos inhumanos (artículo 3) y garantiza el derecho
+                        a un proceso equitativo (artículo 6), que son directamente aplicables en España.
+  Línea 306 (JSX): Fases del Procedimiento y Derechos Asociados
+  Línea 334 (JSX): Derechos en esta fase:
+  Línea 357 (JSX): Derechos Específicos durante la Detención
+  Línea 365 (JSX): Derechos Procesales
+  Línea 369 (JSX): Derecho a no autoinculparse
+  Línea 370 (JSX): Derecho a recurrir
+  Línea 371 (JSX): Derecho a la presunción de inocencia
+  Línea 372 (JSX): Derecho a un proceso público
+  Línea 378 (JSX): Derechos Humanos
+  Línea 382 (JSX): Derecho a la dignidad
+  Línea 383 (JSX): Protección contra torturas
+  Línea 384 (JSX): Atención médica adecuada
+  Línea 385 (JSX): Condiciones dignas de detención
+  Línea 393 (JSX): Derechos Personales
+  Línea 397 (JSX): Derecho a la intimidad
+  Línea 398 (JSX): Derecho a la imagen
+  Línea 399 (JSX): Protección de datos personales
+  Línea 400 (JSX): Derecho a la correspondencia
+  Línea 406 (JSX): Derechos Jurídicos
+  Línea 410 (JSX): Asistencia letrada especializada
+  Línea 411 (JSX): Acceso a expediente completo
+  Línea 412 (JSX): Derecho a la prueba
+  Línea 413 (JSX): Representación procesal
+  Línea 428 (JSX): Preguntas Frecuentes sobre Derechos de Detenidos
+  Línea 464 (JSX): Legislación y Jurisprudencia
+  Línea 469 (JSX): Normativa Constitucional y Orgánica
+  Línea 472 (JSX): Constitución Española (1978)
+  Línea 473 (JSX): Artículos 15, 17, 18 y 24
+  Línea 478 (JSX): Ley Orgánica 6/1985
+  Línea 478 (JSX): del Poder Judicial -
+  Línea 479 (JSX): Regulación de la detención
+  Línea 484 (JSX): Ley 1/1996 de Asistencia Jurídica Gratuita
+  Línea 485 (JSX): Derecho a abogado de oficio
+  Línea 491 (JSX): Derecho Internacional
+  Línea 494 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 495 (JSX): Artículos 3, 5, 6 y 8
+  Línea 500 (JSX): Pacto Internacional de Derechos Civiles y Políticos
+  Línea 501 (JSX): Ratificado por España
+  Línea 507 (JSX): Jurisprudencia Relevante
+  Línea 510 (JSX): STC 114/2017
+  Línea 510 (JSX): - Sobre comunicaciones en detención
+  Línea 513 (JSX): STC 47/2018
+  Línea 513 (JSX): - Derechos durante la detención policial
+  Línea 516 (JSX): Sentencia TEDH de 17 enero 2017
+  Línea 516 (JSX): - Caso Mammadov vs. Azerbaiyán
+  Línea 525 (JSX): Conocer tus derechos como detenido es el primer paso para una defensa efectiva.
+                  La Constitución Española y el derecho internacional establecen garantías robustas
+                  que protegen a toda persona privada de libertad, desde el momento exacto de la detención.
+  Línea 530 (JSX): En STANS Abogados defendemos estos derechos diariamente, asegurando que sean
+                  respetados en todo momento del procedimiento. Tu dignidad y tus garantías
+                  constitucionales son nuestra prioridad absoluta.
+  Línea 550 (JSX): Denuncia Violación
+  Línea 571 (JSX): Más información sobre derechos y garantías procesales
+  Línea 594 (JSX): Leer artículo
+  Línea 55 (Property): Derecho a la Libertad Personal
+  Línea 62 (Property): Derecho a la Tutela Judicial
+  Línea 69 (Property): Derecho a la Defensa
+  Línea 76 (Property): Derecho a la Integridad Física
+  Línea 112 (Property): Habeas Corpus: Recurso de Amparo
+  Línea 117 (Property): Condiciones de Detención en España
+  Línea 122 (Property): Derecho a la Asistencia Médica
+  Línea 139 (Property): Derechos Constitucionales del Detenido
+  Línea 140 (Property): Fases del Procedimiento y Derechos Asociados
+  Línea 141 (Property): Derechos Específicos durante la Detención
+  Línea 142 (Property): Preguntas Frecuentes sobre Derechos de Detenidos
+  Línea 143 (Property): Legislación y Jurisprudencia
+  Línea 144 (Property): Conclusión
+  Línea 56 (Property): Nadie puede ser detenido sino con las garantías previstas en la ley
+  Línea 63 (Property): Derecho a ser oído por un juez en un plazo razonable
+  Línea 70 (Property): Derecho a ser informado de la acusación y a un abogado
+  Línea 77 (Property): Protección contra tratos degradantes o inhumanos
+  Línea 134 (Property): Derechos de Detenidos
+  Línea 135 (Property): Garantías Procesales de los Detenidos
+
+app\blog\derechos-detenidos\page.tsx:
+  Línea 161 (JSX): Derechos de los Detenidos
+  Línea 164 (JSX): Conoce tus derechos constitucionales como detenido. Guía completa
+                de garantías procesales y protección jurídica.
+  Línea 174 (JSX): Consulta Urgente
+  Línea 198 (JSX): Derechos Constitucionales
+  Línea 201 (JSX): Garantías fundamentales protegidas por la Constitución Española
+  Línea 246 (JSX): Derechos Inmediatos al Ser Detenido
+  Línea 249 (JSX): Lo que debes saber desde el primer momento
+  Línea 263 (JSX): Asistencia Letrada
+  Línea 266 (JSX): Tienes derecho a un abogado desde el momento de la detención.
+                  Si no puedes pagarlo, se te asignará uno de oficio gratuitamente.
+  Línea 280 (JSX): Información de Derechos
+  Línea 283 (JSX): La policía debe informarte de tus derechos por escrito y de manera comprensible.
+  Línea 296 (JSX): Comunicación
+  Línea 299 (JSX): Derecho a comunicar con un familiar o persona de confianza en un plazo razonable.
+  Línea 312 (JSX): No Declarar
+  Línea 315 (JSX): Tienes derecho a no declarar hasta la llegada de tu abogado.
+                  No firmes nada sin leerlo detenidamente.
+  Línea 329 (JSX): Asistencia Médica
+  Línea 332 (JSX): Si necesitas atención médica, tienes derecho a recibirla inmediatamente.
+  Línea 345 (JSX): Habeas Corpus
+  Línea 348 (JSX): Si consideras que tu detención es ilegal, puedes solicitar el habeas corpus.
+  Línea 366 (JSX): Contactos de Emergencia
+  Línea 369 (JSX): Números importantes para situaciones de urgencia
+  Línea 468 (JSX): Si crees que tus derechos han sido vulnerados durante una detención,
+                tenemos el conocimiento y experiencia para protegerte y exigir responsabilidades.
+  Línea 478 (JSX): Denuncia Violación
+  Línea 18 (Property): Derechos Constitucionales del Detenido
+  Línea 24 (Property): Asistencia Letrada Inmediata
+  Línea 30 (Property): Derecho a la Información
+  Línea 36 (Property): Derecho a No Declarar
+  Línea 42 (Property): Comunicación con Familiares
+  Línea 48 (Property): Habeas Corpus y Recurso de Amparo
+  Línea 54 (Property): Condiciones de Detención
+  Línea 60 (Property): Derechos durante el Interrogatorio
+  Línea 66 (Property): Derecho a la Asistencia Médica
+  Línea 72 (Property): Protección de Menores Detenidos
+  Línea 100 (Property): Asistencia Jurídica Gratuita
+  Línea 108 (Property): Abogado de Urgencia
+  Línea 114 (Property): Policía Nacional
+  Línea 120 (Property): Guardia Civil
+  Línea 126 (Property): Defensor del Pueblo
+  Línea 101 (Property): Derecho a abogado de oficio si no puedes pagarlo
+  Línea 109 (Property): Servicio 24/7 de asistencia letrada inmediata
+  Línea 115 (Property): Emergencias y denuncias
+  Línea 121 (Property): Emergencias en zonas rurales
+  Línea 127 (Property): Protección de derechos fundamentales
+  Línea 139 (Property): Derechos de Detenidos
+
+app\blog\derechos-extraditado\page.tsx:
+  Línea 236 (JSX): Volver al hub de Procedimientos de Extradición
+  Línea 241 (JSX): Procedimientos de Extradición
+  Línea 250 (JSX): Derechos del Extraditado en España
+  Línea 254 (JSX): Garantías constitucionales y derechos humanos durante procesos de extradición.
+                Situaciones especiales y protección de grupos vulnerables.
+  Línea 261 (JSX): Equipo STANS Abogados
+  Línea 287 (JSX): Los derechos del extraditado están plenamente protegidos por el ordenamiento jurídico español,
+                  tanto a nivel constitucional como internacional. La
+  Línea 289 (JSX): Constitución Española
+  Línea 289 (JSX): establece
+                  garantías irrenunciables que deben respetarse en todo el procedimiento de extradición,
+                  desde la recepción de la solicitud hasta la eventual entrega al país solicitante.
+  Línea 293 (JSX): Esta guía detalla los derechos constitucionales, derechos humanos internacionales,
+                  y protecciones especiales para grupos vulnerables, basándose en la jurisprudencia
+                  del
+  Línea 296 (JSX): Tribunal Constitucional
+  Línea 296 (JSX): Tribunal Supremo
+  Línea 297 (JSX): Tribunal Europeo de Derechos Humanos
+  Línea 309 (JSX): Derechos Constitucionales del Extraditado
+  Línea 350 (JSX): Derechos Humanos Internacionales
+  Línea 391 (JSX): Derechos de Grupos Vulnerables
+  Línea 417 (JSX): Derechos adicionales:
+  Línea 440 (JSX): Derechos en Materia de Salud y Dignidad
+  Línea 448 (JSX): Protección Integral de la Dignidad
+  Línea 449 (JSX): Derechos básicos que garantizan el respeto a la persona durante el proceso
+  Línea 488 (JSX): Derechos durante la Ejecución de la Extradición
+  Línea 496 (JSX): Garantías durante el Traslado
+  Línea 497 (JSX): Una vez concedida la extradición, se aplican garantías adicionales durante
+                        la entrega al país solicitante para asegurar el respeto a los derechos humanos.
+  Línea 506 (JSX): ✅ Garantías de No Devolución
+  Línea 508 (JSX): • No devolución a tercer país
+  Línea 509 (JSX): • Respeto a especialidad de la extradición
+  Línea 510 (JSX): • No juicio por otros delitos
+  Línea 511 (JSX): • Control de condiciones de detención
+  Línea 512 (JSX): • Seguimiento del proceso penal
+  Línea 517 (JSX): 🔒 Condiciones de Entrega
+  Línea 519 (JSX): • Traslado digno y seguro
+  Línea 520 (JSX): • Presencia de autoridades españolas
+  Línea 521 (JSX): • Documentación completa
+  Línea 522 (JSX): • Verificación de garantías
+  Línea 523 (JSX): • Posibilidad de suspensión
+  Línea 538 (JSX): Preguntas Frecuentes sobre Derechos del Extraditado
+  Línea 574 (JSX): Legislación y Referencias
+  Línea 579 (JSX): Normativa Española
+  Línea 582 (JSX): Constitución Española (1978)
+  Línea 583 (JSX): Título I (Derechos y Deberes Fundamentales)
+  Línea 588 (JSX): Ley Orgánica 3/2003
+  Línea 589 (JSX): Derechos del extraditado
+  Línea 594 (JSX): Ley Orgánica 1/1979
+  Línea 595 (JSX): Derechos de los detenidos
+  Línea 601 (JSX): Derecho Internacional
+  Línea 604 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 605 (JSX): Derechos humanos en extradición
+  Línea 610 (JSX): Convención contra la Tortura
+  Línea 611 (JSX): Prohibición de devolución
+  Línea 616 (JSX): Pacto Internacional de Derechos Civiles y Políticos
+  Línea 617 (JSX): Derechos en procesos penales
+  Línea 623 (JSX): Jurisprudencia Relevante
+  Línea 626 (JSX): STC 91/2000
+  Línea 626 (JSX): - Derechos constitucionales en extradición
+  Línea 629 (JSX): STS 47/2018
+  Línea 629 (JSX): - Protección de derechos humanos
+  Línea 632 (JSX): STEDH Caso Soering vs Reino Unido
+  Línea 632 (JSX): - Pena de muerte y extradición
+  Línea 641 (JSX): Los derechos del extraditado están garantizados por un marco jurídico robusto
+                  que combina protecciones constitucionales con estándares internacionales de
+                  derechos humanos. España aplica criterios muy estrictos para asegurar que
+                  cualquier extradición respete plenamente la dignidad y los derechos fundamentales
+                  de la persona reclamada.
+  Línea 648 (JSX): La existencia de protecciones especiales para grupos vulnerables, junto con
+                  el sistema completo de recursos y garantías procesales, asegura que el proceso
+                  de extradición se desarrolle con las máximas garantías de justicia y respeto
+                  a los derechos humanos, tanto durante el procedimiento como en su ejecución.
+  Línea 669 (JSX): Consulta Derechos Extradición
+  Línea 689 (JSX): Más información sobre procedimientos de extradición
+  Línea 712 (JSX): Leer artículo
+  Línea 178 (Property): Tipos de Extradición en España
+  Línea 183 (Property): Audiencia de Extradición en España
+  Línea 188 (Property): Recursos contra Extradición
+  Línea 205 (Property): Derechos Constitucionales del Extraditado
+  Línea 206 (Property): Derechos Humanos Internacionales
+  Línea 207 (Property): Derechos de Grupos Vulnerables
+  Línea 208 (Property): Derechos en Materia de Salud y Dignidad
+  Línea 209 (Property): Derechos durante la Ejecución de la Extradición
+  Línea 210 (Property): Preguntas Frecuentes sobre Derechos del Extraditado
+  Línea 211 (Property): Legislación y Referencias
+  Línea 212 (Property): Conclusión
+  Línea 200 (Property): Procedimientos de Extradición
+  Línea 201 (Property): Derechos del Extraditado
+
+app\blog\derechos-grupos-vulnerables-detenidos\page.tsx:
+  Línea 320 (JSX): Volver al hub de Derechos de Detenidos
+  Línea 325 (JSX): Derechos de Detenidos
+  Línea 334 (JSX): Derechos de Grupos Vulnerables durante la Detención
+  Línea 338 (JSX): Protecciones especiales para menores, extranjeros, personas con discapacidad,
+                víctimas de violencia de género y otros colectivos vulnerables.
+  Línea 345 (JSX): Equipo STANS Abogados
+  Línea 371 (JSX): Los
+  Línea 372 (JSX): derechos de grupos vulnerables durante la detención
+  Línea 372 (JSX): reciben protecciones
+                  especiales constitucionales e internacionales. La
+  Línea 373 (JSX): Constitución Española
+  Línea 373 (JSX): en
+                  su artículo 14 establece el principio de igualdad, pero reconoce que determinados colectivos
+                  necesitan medidas específicas para garantizar la efectividad real de sus derechos.
+  Línea 377 (JSX): Esta guía detalla las protecciones especiales para menores, extranjeros, personas con
+                  discapacidad, víctimas de violencia de género, personas mayores y otros colectivos vulnerables,
+                  basándose en leyes específicas como la
+  Línea 380 (JSX): Ley Orgánica 5/2000
+  Línea 380 (JSX): de responsabilidad
+                  penal de menores, la
+  Línea 381 (JSX): Ley Orgánica 4/2000
+  Línea 381 (JSX): de derechos de extranjeros, y la
+                  jurisprudencia del
+  Línea 382 (JSX): Tribunal Constitucional
+  Línea 382 (JSX): que ha desarrollado estos derechos
+                  de manera expansiva.
+  Línea 395 (JSX): Protecciones Especiales por Grupos
+  Línea 424 (JSX): Derechos especiales:
+  Línea 447 (JSX): Protocolos Especiales de Actuación
+  Línea 476 (JSX): Medidas del protocolo:
+  Línea 501 (JSX): Medidas Cautelares Alternativas
+  Línea 527 (JSX): Medidas alternativas posibles:
+  Línea 550 (JSX): Recursos de Apoyo Especializados
+  Línea 559 (JSX): Descripción
+  Línea 594 (JSX): Principios Generales de Protección
+  Línea 602 (JSX): Protección Integral
+  Línea 603 (JSX): Las protecciones para grupos vulnerables se basan en principios constitucionales
+                        que garantizan la igualdad real y efectiva, reconociendo que la vulnerabilidad
+                        requiere medidas específicas para lograr la igualdad.
+  Línea 615 (JSX): • Igualdad real y efectiva (art. 14 CE)
+  Línea 616 (JSX): • Protección especial de menores (art. 39 CE)
+  Línea 617 (JSX): • Dignidad de la persona (art. 10.1 CE)
+  Línea 618 (JSX): • Protección social (arts. 40-52 CE)
+  Línea 626 (JSX): • Interés superior del menor
+  Línea 627 (JSX): • No discriminación por origen
+  Línea 628 (JSX): • Adaptación a capacidades
+  Línea 629 (JSX): • Protección contra violencia
+  Línea 645 (JSX): Preguntas Frecuentes sobre Derechos de Grupos Vulnerables
+  Línea 681 (JSX): Legislación y Referencias
+  Línea 686 (JSX): Normativa Española
+  Línea 689 (JSX): Ley Orgánica 5/2000
+  Línea 690 (JSX): Responsabilidad penal de menores
+  Línea 695 (JSX): Ley Orgánica 4/2000
+  Línea 696 (JSX): Derechos y libertades de extranjeros
+  Línea 701 (JSX): Ley 39/2006
+  Línea 702 (JSX): Promoción autonomía personal y atención dependencia
+  Línea 707 (JSX): Ley Orgánica 1/2004
+  Línea 708 (JSX): Medidas protección integral víctimas violencia género
+  Línea 714 (JSX): Derecho Internacional
+  Línea 717 (JSX): Convención Derechos del Niño (1989)
+  Línea 718 (JSX): Protección especial de menores
+  Línea 723 (JSX): Convención Discapacidad (2006)
+  Línea 724 (JSX): Derechos personas con discapacidad
+  Línea 730 (JSX): Jurisprudencia Relevante
+  Línea 733 (JSX): STC 236/2018
+  Línea 733 (JSX): - Protección especial de menores en procesos penales
+  Línea 736 (JSX): STC 114/2017
+  Línea 736 (JSX): - Derechos de extranjeros en detención
+  Línea 739 (JSX): STJUE Caso Ejea
+  Línea 739 (JSX): - Protección víctimas violencia género
+  Línea 748 (JSX): Los derechos de grupos vulnerables durante la detención representan el compromiso
+                  del Estado español con la igualdad real y efectiva. Las protecciones especiales
+                  reconocidas constitucionalmente no son privilegios, sino medidas necesarias para
+                  compensar situaciones de desigualdad y garantizar que todos los ciudadanos,
+                  independientemente de su condición, reciben un tratamiento justo y respetuoso.
+  Línea 755 (JSX): La efectividad de estas protecciones depende de su conocimiento y ejercicio activo.
+                  Los protocolos especializados, las medidas alternativas a la detención, y la
+                  coordinación entre instituciones aseguran que la vulnerabilidad no se convierta
+                  en indefensión. En STANS Abogados defendemos activamente estos derechos,
+                  especialmente de los colectivos más vulnerables.
+  Línea 777 (JSX): Protección Grupos Vulnerables
+  Línea 797 (JSX): Más información sobre derechos de detenidos
+  Línea 820 (JSX): Leer artículo
+  Línea 262 (Property): Derechos Constitucionales del Detenido
+  Línea 267 (Property): Protección contra Torturas y Tratos Inhumanos
+  Línea 272 (Property): Derecho a la Asistencia Letrada del Detenido
+  Línea 289 (Property): Protecciones Especiales por Grupos
+  Línea 290 (Property): Protocolos Especiales de Actuación
+  Línea 291 (Property): Medidas Cautelares Alternativas
+  Línea 292 (Property): Recursos de Apoyo Especializados
+  Línea 293 (Property): Principios Generales de Protección
+  Línea 294 (Property): Preguntas Frecuentes sobre Derechos de Grupos Vulnerables
+  Línea 295 (Property): Legislación y Referencias
+  Línea 296 (Property): Conclusión
+  Línea 284 (Property): Derechos de Detenidos
+  Línea 285 (Property): Derechos de Grupos Vulnerables Detenidos
+
+app\blog\derechos-inmediatos-detenido\page.tsx:
+  Línea 128 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 133 (JSX): Defensa Penal Urgente
+  Línea 142 (JSX): Derechos Inmediatos al Ser Detenido
+  Línea 146 (JSX): Conoce tus derechos desde el momento exacto de la detención.
+                Guía práctica para afrontar una situación de urgencia penal con garantías.
+  Línea 153 (JSX): Equipo STANS Abogados
+  Línea 179 (JSX): Los primeros momentos después de una detención son
+  Línea 180 (JSX): para determinar
+                  el desarrollo del procedimiento penal. Conocer tus derechos constitucionales y saber cómo
+                  ejercerlos puede marcar la diferencia entre una defensa efectiva y complicaciones innecesarias.
+  Línea 184 (JSX): Esta guía detalla los derechos que te asisten desde el momento exacto de la detención,
+                  basándose en la
+  Línea 186 (JSX): Constitución Española
+  Línea 186 (JSX): , la
+  Línea 186 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 186 (JSX): y la jurisprudencia del
+  Línea 187 (JSX): Tribunal Constitucional
+  Línea 199 (JSX): Fases Inmediatas de la Detención
+  Línea 219 (JSX): Derechos que te asisten:
+  Línea 231 (JSX): Acciones recomendadas:
+  Línea 255 (JSX): Derechos Específicos en la Detención
+  Línea 263 (JSX): Derechos Procesales
+  Línea 268 (JSX): Asistencia letrada inmediata
+  Línea 268 (JSX): - Derecho a abogado desde el primer momento
+  Línea 272 (JSX): Derecho a la información
+  Línea 272 (JSX): - Motivos de detención por escrito
+  Línea 276 (JSX): Derecho a no declarar
+  Línea 276 (JSX): - Sin presencia de abogado
+  Línea 280 (JSX): Derecho a la tutela judicial
+  Línea 288 (JSX): Derechos Personales
+  Línea 293 (JSX): Derecho a la dignidad
+  Línea 293 (JSX): - Trato respetuoso en todo momento
+  Línea 297 (JSX): Derecho a la intimidad
+  Línea 297 (JSX): - Protección de datos personales
+  Línea 301 (JSX): Derecho a la comunicación
+  Línea 301 (JSX): - Contacto con familiar o abogado
+  Línea 305 (JSX): Derecho a asistencia médica
+  Línea 305 (JSX): - Atención sanitaria inmediata
+  Línea 320 (JSX): Protocolo de Actuación Recomendado
+  Línea 328 (JSX): Primeros 5 minutos
+  Línea 329 (JSX): Mantén la calma, no opongas resistencia física, identifica claramente a los agentes,
+                        pide ver su identificación y solicita inmediatamente asistencia letrada.
+  Línea 340 (JSX): • Mantén la calma
+  Línea 341 (JSX): • Identifícate claramente
+  Línea 343 (JSX): • Anota datos de los agentes
+  Línea 350 (JSX): • No resistas físicamente
+  Línea 360 (JSX): • Llama a familiar cercano
+  Línea 361 (JSX): • Contacta con tu abogado
+  Línea 362 (JSX): • Anota números de teléfono
+  Línea 363 (JSX): • Prepara documentación
+  Línea 378 (JSX): Preguntas Frecuentes sobre Derechos Inmediatos
+  Línea 414 (JSX): Legislación y Referencias
+  Línea 419 (JSX): Normativa Constitucional
+  Línea 422 (JSX): Constitución Española (1978)
+  Línea 423 (JSX): Artículos 17, 18 y 24
+  Línea 428 (JSX): Ley Orgánica 6/1985
+  Línea 428 (JSX): del Poder Judicial -
+  Línea 429 (JSX): Regulación de la detención
+  Línea 435 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 438 (JSX): Artículo 496
+  Línea 438 (JSX): - Duración máxima de la detención
+  Línea 441 (JSX): Artículo 520
+  Línea 441 (JSX): - Derechos del detenido
+  Línea 444 (JSX): Artículo 118
+  Línea 448 (JSX): Jurisprudencia Relevante
+  Línea 451 (JSX): STC 114/2017
+  Línea 451 (JSX): - Derechos de comunicación en detención
+  Línea 454 (JSX): STS 47/2018
+  Línea 454 (JSX): - Límites de la detención preventiva
+  Línea 457 (JSX): Sentencia TEDH de 17 enero 2017
+  Línea 457 (JSX): - Caso Mammadov vs Azerbaiyán
+  Línea 466 (JSX): Conocer tus derechos inmediatos al ser detenido es fundamental para afrontar
+                  una situación de urgencia penal con garantías. La Constitución Española establece
+                  protecciones robustas que deben ser respetadas desde el primer momento.
+  Línea 471 (JSX): Recuerda: mantener la calma, ejercer tus derechos constitucionales y contar
+                  con asistencia letrada especializada son los pilares de una defensa efectiva.
+                  En STANS Abogados estamos disponibles 24/7 para asistirte en situaciones críticas.
+  Línea 535 (JSX): Más información sobre defensa penal urgente
+  Línea 558 (JSX): Leer artículo
+  Línea 72 (Property): Asistencia Letrada de Urgencia
+  Línea 77 (Property): Primeros Pasos en Comisaría
+  Línea 82 (Property): Derechos Constitucionales del Detenido
+  Línea 99 (Property): Fases Inmediatas de la Detención
+  Línea 100 (Property): Derechos Específicos en la Detención
+  Línea 101 (Property): Protocolo de Actuación Recomendado
+  Línea 102 (Property): Preguntas Frecuentes sobre Derechos Inmediatos
+  Línea 103 (Property): Legislación y Referencias
+  Línea 104 (Property): Conclusión
+  Línea 484 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 94 (Property): Defensa Penal Urgente
+  Línea 95 (Property): Derechos Inmediatos al Ser Detenido
+
+app\blog\derechos-procesales-recursos-detenido\page.tsx:
+  Línea 286 (JSX): Volver al hub de Derechos de Detenidos
+  Línea 291 (JSX): Derechos de Detenidos
+  Línea 300 (JSX): Derechos Procesales y Recursos del Detenido
+  Línea 304 (JSX): Derechos durante la investigación, audiencia judicial y medidas cautelares.
+                Recursos contra decisiones judiciales y estrategias de defensa.
+  Línea 311 (JSX): Equipo STANS Abogados
+  Línea 337 (JSX): Los
+  Línea 338 (JSX): derechos procesales del detenido
+  Línea 338 (JSX): constituyen el conjunto de garantías
+                  que protegen la legalidad del procedimiento penal y aseguran un proceso justo. Recogidos
+                  en la
+  Línea 340 (JSX): Constitución Española
+  Línea 340 (JSX): (artículo 24) y desarrollados en la
+  Línea 341 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 341 (JSX): , estos derechos van desde el derecho a ser
+                  informado de la acusación hasta el derecho a impugnar las decisiones judiciales.
+  Línea 344 (JSX): Esta guía exhaustiva explica todos los derechos procesales durante la investigación,
+                  las garantías en la audiencia judicial, los tipos de medidas cautelares, y el sistema
+                  completo de recursos contra decisiones judiciales, basándose en la jurisprudencia
+                  del
+  Línea 348 (JSX): Tribunal Supremo
+  Línea 348 (JSX): Tribunal Constitucional
+  Línea 349 (JSX): Tribunal Europeo de Derechos Humanos
+  Línea 361 (JSX): Derechos durante la Investigación
+  Línea 402 (JSX): Sistema de Recursos contra Decisiones Judiciales
+  Línea 455 (JSX): Garantías en la Audiencia Judicial
+  Línea 496 (JSX): Medidas Cautelares durante el Proceso
+  Línea 552 (JSX): Estrategias de Defensa por Fases Procesales
+  Línea 605 (JSX): Protección contra Dilaciones Indebidas
+  Línea 613 (JSX): Derecho a un Proceso sin Dilaciones
+  Línea 614 (JSX): El derecho a que el proceso penal se desarrolle sin dilaciones indebidas
+                        está garantizado constitucionalmente. Las dilaciones excesivas pueden
+                        dar lugar a la absolución o reducción de pena.
+  Línea 624 (JSX): Plazos Máximos
+  Línea 626 (JSX): • Instrucción: 6 meses
+  Línea 629 (JSX): • Ejecución: 1 mes
+  Línea 635 (JSX): • Absolución por dilaciones
+  Línea 636 (JSX): • Reducción de pena
+  Línea 637 (JSX): • Indemnización
+  Línea 638 (JSX): • Archivo del procedimiento
+  Línea 644 (JSX): • Queja por dilaciones
+  Línea 645 (JSX): • Recurso de amparo
+  Línea 662 (JSX): Preguntas Frecuentes sobre Derechos Procesales
+  Línea 698 (JSX): Legislación y Referencias
+  Línea 703 (JSX): Normativa Procesal Española
+  Línea 706 (JSX): Constitución Española (1978)
+  Línea 707 (JSX): Artículo 24 (derechos procesales)
+  Línea 712 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 713 (JSX): Libro I (derechos y garantías)
+  Línea 718 (JSX): Ley Orgánica 6/1985
+  Línea 719 (JSX): Poder Judicial (recursos)
+  Línea 725 (JSX): Derecho Internacional
+  Línea 728 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 729 (JSX): Artículos 5, 6 (libertad y proceso justo)
+  Línea 734 (JSX): Pacto Internacional de Derechos Civiles y Políticos
+  Línea 735 (JSX): Artículos 9, 14 (derechos procesales)
+  Línea 741 (JSX): Jurisprudencia Destacada
+  Línea 744 (JSX): STC 159/2018
+  Línea 744 (JSX): - Límites temporales de la prisión preventiva
+  Línea 747 (JSX): STS 47/2018
+  Línea 747 (JSX): - Derechos durante la investigación policial
+  Línea 750 (JSX): STEDH Caso Mammadov
+  Línea 750 (JSX): - Condiciones de detención y proceso justo
+  Línea 759 (JSX): Los derechos procesales del detenido constituyen el núcleo del Estado de Derecho
+                  y garantizan que cualquier acusación penal se resuelva mediante un procedimiento
+                  justo y respetuoso con las garantías constitucionales. Desde el derecho a ser
+                  informado de la acusación hasta el derecho a impugnar las decisiones judiciales,
+                  estos derechos aseguran que la justicia penal se administre con imparcialidad
+                  y respeto a la dignidad humana.
+  Línea 767 (JSX): El sistema de recursos contra decisiones judiciales proporciona múltiples vías
+                  para corregir errores o vulneraciones, desde los recursos ordinarios más rápidos
+                  hasta el recurso de amparo constitucional. Las medidas cautelares permiten
+                  equilibrar las necesidades de la investigación con la protección de derechos
+                  fundamentales. En STANS Abogados defendemos activamente estos derechos en
+                  todas las fases del procedimiento penal.
+  Línea 790 (JSX): Consulta Derechos Procesales
+  Línea 810 (JSX): Más información sobre derechos de detenidos
+  Línea 833 (JSX): Leer artículo
+  Línea 227 (Property): Derechos Constitucionales del Detenido
+  Línea 232 (Property): Derecho a la Asistencia Letrada del Detenido
+  Línea 237 (Property): Derechos en Dependencias Policiales
+  Línea 254 (Property): Derechos durante la Investigación
+  Línea 255 (Property): Sistema de Recursos contra Decisiones Judiciales
+  Línea 256 (Property): Garantías en la Audiencia Judicial
+  Línea 257 (Property): Medidas Cautelares durante el Proceso
+  Línea 258 (Property): Estrategias de Defensa por Fases Procesales
+  Línea 259 (Property): Protección contra Dilaciones Indebidas
+  Línea 260 (Property): Preguntas Frecuentes sobre Derechos Procesales
+  Línea 261 (Property): Legislación y Referencias
+  Línea 262 (Property): Conclusión
+  Línea 249 (Property): Derechos de Detenidos
+  Línea 250 (Property): Derechos Procesales y Recursos del Detenido
+
+app\blog\habeas-corpus-recurso-amparo\page.tsx:
+  Línea 196 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 201 (JSX): Defensa Penal Urgente
+  Línea 210 (JSX): Habeas Corpus: Recurso de Amparo
+  Línea 214 (JSX): Protección constitucional contra detenciones ilegales.
+                Cómo interponer habeas corpus y cuándo es efectivo.
+  Línea 221 (JSX): Equipo STANS Abogados
+  Línea 248 (JSX): es uno de los recursos constitucionales más poderosos
+                  para proteger la libertad personal. Regulado por el
+  Línea 249 (JSX): artículo 17.4 de la Constitución Española
+  Línea 249 (JSX): y desarrollado por la
+  Línea 250 (JSX): Ley Orgánica 2/1979
+  Línea 250 (JSX): , permite impugnar cualquier
+                  privación de libertad que vulnere derechos fundamentales.
+  Línea 253 (JSX): A diferencia de los recursos ordinarios, el habeas corpus se dirige directamente al
+  Línea 255 (JSX): Tribunal Constitucional
+  Línea 255 (JSX): , saltándose la vía judicial ordinaria cuando
+                  se han agotado los recursos o cuando existe urgencia manifiesta. Esta guía explica
+                  cuándo y cómo interponer este recurso extraordinario de protección.
+  Línea 269 (JSX): Motivos para Interponer Habeas Corpus
+  Línea 320 (JSX): Procedimiento para Interponer Habeas Corpus
+  Línea 350 (JSX): Documentos necesarios:
+  Línea 361 (JSX): Tiempo estimado:
+  Línea 380 (JSX): Casos Exitosos de Habeas Corpus
+  Línea 417 (JSX): Lecciones de estos Casos
+  Línea 419 (JSX): • El habeas corpus puede resolverse en horas cuando hay vulneraciones evidentes
+  Línea 420 (JSX): • La documentación detallada es crucial para la admisión del recurso
+  Línea 421 (JSX): • El Tribunal Constitucional actúa con rapidez en casos de urgencia
+  Línea 422 (JSX): • Las resoluciones pueden incluir indemnizaciones por daños morales
+  Línea 435 (JSX): Diferencias con Otros Recursos
+  Línea 444 (JSX): Órgano
+  Línea 451 (JSX): Habeas Corpus
+  Línea 452 (JSX): Tribunal Constitucional
+  Línea 453 (JSX): Sin límite
+  Línea 454 (JSX): Libertad inmediata
+  Línea 457 (JSX): Recurso de Reforma
+  Línea 458 (JSX): Mismo juez
+  Línea 459 (JSX): 5 días
+  Línea 460 (JSX): Revisión decisión
+  Línea 463 (JSX): Recurso de Apelación
+  Línea 464 (JSX): Audiencia Provincial
+  Línea 465 (JSX): 5-10 días
+  Línea 466 (JSX): Nueva resolución
+  Línea 469 (JSX): Recurso de Casación
+  Línea 470 (JSX): Tribunal Supremo
+  Línea 471 (JSX): 5-20 días
+  Línea 472 (JSX): Unificación doctrina
+  Línea 487 (JSX): Preguntas Frecuentes sobre Habeas Corpus
+  Línea 523 (JSX): Legislación y Referencias
+  Línea 528 (JSX): Normativa Constitucional
+  Línea 531 (JSX): Constitución Española (1978)
+  Línea 532 (JSX): Artículo 17.4 (habeas corpus)
+  Línea 537 (JSX): Ley Orgánica 2/1979
+  Línea 538 (JSX): Tribunal Constitucional
+  Línea 543 (JSX): Ley Orgánica 3/1982
+  Línea 544 (JSX): Procedimiento habeas corpus
+  Línea 550 (JSX): Derecho Internacional
+  Línea 553 (JSX): Convención Europea de Derechos Humanos
+  Línea 554 (JSX): Artículo 5 (derecho a la libertad)
+  Línea 559 (JSX): Pacto Internacional de Derechos Civiles y Políticos
+  Línea 560 (JSX): Artículo 9 (habeas corpus)
+  Línea 566 (JSX): Jurisprudencia Destacada
+  Línea 569 (JSX): STC 114/2017
+  Línea 569 (JSX): - Límites temporales del habeas corpus
+  Línea 572 (JSX): STC 47/2018
+  Línea 572 (JSX): - Requisitos de urgencia manifiesta
+  Línea 575 (JSX): STEDH caso Mammadov vs Azerbaiyán
+  Línea 575 (JSX): - Efectividad del habeas corpus
+  Línea 584 (JSX): El habeas corpus es un instrumento excepcional pero poderosísimo para proteger la libertad personal
+                  contra vulneraciones constitucionales. Aunque su interposición requiere fundamentos sólidos y
+                  documentación detallada, puede lograr la libertad inmediata en casos de detenciones claramente ilegales.
+  Línea 589 (JSX): La clave está en actuar con rapidez y contar con la asesoría de abogados especializados que conozcan
+                  los requisitos formales y sustantivos del Tribunal Constitucional. En STANS Abogados tenemos amplia
+                  experiencia en la interposición de habeas corpus y podemos valorar si tu caso reúne los requisitos
+                  para este recurso extraordinario de protección.
+  Línea 610 (JSX): Consulta Habeas Corpus
+  Línea 631 (JSX): Más información sobre recursos de amparo
+  Línea 654 (JSX): Leer artículo
+  Línea 139 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 144 (Property): Puesta a Disposición Judicial
+  Línea 149 (Property): Medidas Cautelares en Procesos Penales
+  Línea 166 (Property): Motivos para Interponer Habeas Corpus
+  Línea 167 (Property): Procedimiento para Interponer Habeas Corpus
+  Línea 168 (Property): Casos Exitosos de Habeas Corpus
+  Línea 169 (Property): Diferencias con Otros Recursos
+  Línea 170 (Property): Preguntas Frecuentes sobre Habeas Corpus
+  Línea 171 (Property): Legislación y Referencias
+  Línea 172 (Property): Conclusión
+  Línea 161 (Property): Defensa Penal Urgente
+  Línea 162 (Property): Habeas Corpus y Recurso de Amparo
+
+app\blog\medidas-cautelares-procesos-penales\page.tsx:
+  Línea 206 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 211 (JSX): Defensa Penal Urgente
+  Línea 220 (JSX): Medidas Cautelares en Procesos Penales
+  Línea 224 (JSX): Prisión provisional, libertad con fianza, retirada de pasaporte.
+                Cómo impugnar y modificar medidas cautelares restrictivas.
+  Línea 231 (JSX): Equipo STANS Abogados
+  Línea 257 (JSX): Las
+  Línea 258 (JSX): son decisiones judiciales que limitan temporalmente
+                  derechos fundamentales para asegurar el correcto desarrollo del proceso penal. Reguladas
+                  por los
+  Línea 260 (JSX): artículos 503 y siguientes de la Ley de Enjuiciamiento Criminal
+  Línea 260 (JSX): ,
+                  buscan garantizar la presencia del imputado en el proceso, evitar la destrucción de pruebas,
+                  o proteger a víctimas y testigos.
+  Línea 264 (JSX): En situaciones de urgencia penal, estas medidas se imponen durante la puesta a disposición
+                  judicial o en comparecencias posteriores. Esta guía explica los tipos de medidas cautelares,
+                  sus requisitos legales, y las estrategias para impugnarlas o conseguir su modificación,
+                  basándose en la jurisprudencia del
+  Línea 268 (JSX): Tribunal Supremo
+  Línea 268 (JSX): Tribunal Constitucional
+  Línea 280 (JSX): Tipos de Medidas Cautelares
+  Línea 324 (JSX): Requisitos para imponerla:
+  Línea 347 (JSX): Criterios que Considera el Juez
+  Línea 372 (JSX): Indicadores que evalúa:
+  Línea 394 (JSX): Estrategias para Impugnar o Modificar
+  Línea 427 (JSX): Documentos útiles:
+  Línea 450 (JSX): Plazos para Impugnar Medidas Cautelares
+  Línea 458 (JSX): Recursos Disponibles
+  Línea 459 (JSX): Tienes varios recursos para impugnar medidas cautelares, desde el más rápido
+                        al más complejo, según la urgencia de tu situación.
+  Línea 468 (JSX): Recurso de Reforma
+  Línea 469 (JSX): Ante el mismo juez
+  Línea 470 (JSX): Plazo: 5 días
+  Línea 475 (JSX): Recurso de Apelación
+  Línea 476 (JSX): Audiencia Provincial
+  Línea 477 (JSX): Plazo: 5-10 días
+  Línea 482 (JSX): Recurso de Casación
+  Línea 483 (JSX): Tribunal Supremo
+  Línea 484 (JSX): Plazo: excepcional
+  Línea 491 (JSX): Consejo Importante
+  Línea 492 (JSX): Los plazos comienzan a contar desde la notificación de la resolución judicial.
+                      No esperes al último día para presentar los recursos, ya que cualquier error
+                      formal puede hacer que se desestimen.
+  Línea 509 (JSX): Preguntas Frecuentes sobre Medidas Cautelares
+  Línea 545 (JSX): Legislación y Referencias
+  Línea 550 (JSX): Normativa Procesal
+  Línea 553 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 554 (JSX): Artículos 503-510 (medidas cautelares)
+  Línea 559 (JSX): Ley Orgánica 10/1995
+  Línea 560 (JSX): Código Penal (prisión provisional)
+  Línea 565 (JSX): Ley 29/1998
+  Línea 566 (JSX): Jurisdicción Contencioso-Administrativa
+  Línea 572 (JSX): Constitución Española
+  Línea 575 (JSX): Artículo 17
+  Línea 575 (JSX): - Derecho a la libertad y garantías
+  Línea 578 (JSX): Artículo 24
+  Línea 581 (JSX): Artículo 25
+  Línea 581 (JSX): - Principio de proporcionalidad
+  Línea 585 (JSX): Jurisprudencia Relevante
+  Línea 588 (JSX): STC 47/2018
+  Línea 588 (JSX): - Proporcionalidad de medidas cautelares
+  Línea 591 (JSX): STS 123/2020
+  Línea 591 (JSX): - Libertad provisional vs prisión provisional
+  Línea 594 (JSX): STEDH caso Mammadov
+  Línea 594 (JSX): - Medidas cautelares y derechos humanos
+  Línea 603 (JSX): Las medidas cautelares son decisiones judiciales que pueden marcar significativamente
+                  el desarrollo del proceso penal. Aunque su imposición responde a criterios legales
+                  objetivos, siempre existe la posibilidad de impugnarlas o conseguir su modificación
+                  cuando cambian las circunstancias o se demuestra su desproporcionalidad.
+  Línea 609 (JSX): La clave está en una defensa especializada que conozca los matices de la legislación
+                  procesal y sepa identificar las mejores estrategias según cada caso particular.
+                  En STANS Abogados contamos con amplia experiencia en la impugnación de medidas
+                  cautelares y podemos asesorarte sobre las opciones más efectivas para tu situación.
+  Línea 630 (JSX): Impugnación Medidas Cautelares
+  Línea 651 (JSX): Más información sobre medidas cautelares
+  Línea 674 (JSX): Leer artículo
+  Línea 149 (Property): Puesta a Disposición Judicial
+  Línea 154 (Property): Habeas Corpus: Recurso de Amparo
+  Línea 159 (Property): Modificación de Medidas Cautelares
+  Línea 176 (Property): Tipos de Medidas Cautelares
+  Línea 177 (Property): Criterios que Considera el Juez
+  Línea 178 (Property): Estrategias para Impugnar o Modificar
+  Línea 179 (Property): Plazos para Impugnar Medidas Cautelares
+  Línea 180 (Property): Preguntas Frecuentes sobre Medidas Cautelares
+  Línea 181 (Property): Legislación y Referencias
+  Línea 182 (Property): Conclusión
+  Línea 171 (Property): Defensa Penal Urgente
+  Línea 172 (Property): Medidas Cautelares en Procesos Penales
+
+app\blog\page.tsx:
+  Línea 19 (Property): Defensa Penal Urgente: Guía Completa para Detenidos
+  Línea 31 (Property): Procedimientos de Extradición en España: Todo lo que Debes Saber
+  Línea 43 (Property): Derechos de los Detenidos: Conoce tus Garantías Procesales
+  Línea 55 (Property): Delitos contra la Salud Pública: Drogas y Consecuencias Legales
+  Línea 67 (Property): Terrorismo en Internet: Enaltecimiento y Captación Online
+  Línea 79 (Property): Blanqueo de Capitales: Cómo Detectarlo y Defenderse
+  Línea 93 (Property): Defensa Penal Urgente
+  Línea 101 (Property): Procedimientos de Extradición
+  Línea 109 (Property): Derechos de Detenidos
+  Línea 94 (Property): Guías completas para situaciones de urgencia penal: detenciones, registros, declaraciones y primeros pasos.
+  Línea 102 (Property): Todo sobre extradiciones: procedimientos UE, derechos del extraditado, plazos y recursos disponibles.
+  Línea 110 (Property): Conoce tus derechos como detenido: asistencia letrada, comunicaciones, condiciones y habeas corpus.
+
+app\blog\primeros-pasos-comisaria\page.tsx:
+  Línea 172 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 177 (JSX): Defensa Penal Urgente
+  Línea 186 (JSX): Primeros Pasos en Comisaría
+  Línea 190 (JSX): Qué esperar y cómo actuar durante tu permanencia en comisaría.
+                Guía detallada del procedimiento policial y tus derechos.
+  Línea 197 (JSX): Equipo STANS Abogados
+  Línea 223 (JSX): La llegada a comisaría marca el inicio de la fase administrativa del procedimiento penal.
+                  Durante tu permanencia en dependencias policiales, que puede durar desde unas horas hasta
+                  72 horas máximo, es crucial conocer el procedimiento y ejercer tus derechos de manera efectiva.
+  Línea 228 (JSX): Esta guía detalla paso a paso qué ocurre en comisaría, basándose en la
+  Línea 230 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 230 (JSX): , la
+  Línea 230 (JSX): Ley Orgánica 4/2015
+  Línea 230 (JSX): y las instrucciones del
+  Línea 231 (JSX): Ministerio del Interior
+  Línea 231 (JSX): para el tratamiento de detenidos.
+  Línea 243 (JSX): Procedimiento en Comisaría: Paso a Paso
+  Línea 274 (JSX): Derechos en esta fase:
+  Línea 292 (JSX): Condiciones Mínimas de Detención
+  Línea 300 (JSX): Derecho a la Dignidad
+  Línea 301 (JSX): Las condiciones de detención deben respetar tu dignidad humana
+  Línea 338 (JSX): Derechos durante la Permanencia en Comisaría
+  Línea 346 (JSX): Derechos Procesales
+  Línea 350 (JSX): No declarar sin abogado
+  Línea 351 (JSX): Información detallada
+  Línea 351 (JSX): de cargos
+  Línea 352 (JSX): Asistencia letrada
+  Línea 353 (JSX): Recursos administrativos
+  Línea 359 (JSX): Derechos Personales
+  Línea 363 (JSX): Comunicación familiar
+  Línea 364 (JSX): Asistencia médica
+  Línea 365 (JSX): Alimentación adecuada
+  Línea 366 (JSX): Higiene personal
+  Línea 374 (JSX): Situaciones Especiales
+  Línea 378 (JSX): Menores de edad
+  Línea 379 (JSX): : traducción e información consular
+  Línea 380 (JSX): Personas con discapacidad
+  Línea 387 (JSX): Documentación
+  Línea 391 (JSX): Diligencias policiales
+  Línea 392 (JSX): Acta de derechos
+  Línea 393 (JSX): Registro de comunicaciones
+  Línea 394 (JSX): Informe médico
+  Línea 409 (JSX): Protocolo de Actuación en Comisaría
+  Línea 417 (JSX): Mantén la Calma y la Dignidad
+  Línea 418 (JSX): Tu comportamiento en comisaría puede influir en el desarrollo del procedimiento.
+                        Mantén siempre una actitud respetuosa pero firme en la defensa de tus derechos.
+  Línea 429 (JSX): • Coopera en identificación básica
+  Línea 430 (JSX): • Anota datos de los agentes
+  Línea 431 (JSX): • Lee todos los documentos detenidamente
+  Línea 432 (JSX): • Informa inmediatamente de necesidades médicas
+  Línea 440 (JSX): • Discusiones agresivas con el personal
+  Línea 441 (JSX): • Conversaciones con otros detenidos
+  Línea 443 (JSX): • Proporcionar información voluntaria
+  Línea 444 (JSX): • Realizar llamadas sin autorización
+  Línea 459 (JSX): Preguntas Frecuentes sobre Comisaría
+  Línea 495 (JSX): Legislación Aplicada
+  Línea 500 (JSX): Normativa Principal
+  Línea 503 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 504 (JSX): Artículos 496-520 (detención y derechos)
+  Línea 509 (JSX): Ley Orgánica 4/2015
+  Línea 509 (JSX): - Protección Seguridad Ciudadana -
+  Línea 510 (JSX): Régimen de detención
+  Línea 515 (JSX): Reglamento Penitenciario
+  Línea 516 (JSX): Condiciones de detención
+  Línea 522 (JSX): Circular del Ministerio del Interior
+  Línea 525 (JSX): Circular 1/2006
+  Línea 525 (JSX): - Instrucciones para el tratamiento de detenidos
+  Línea 528 (JSX): Circular 2/2007
+  Línea 528 (JSX): - Derechos de los detenidos y procedimiento de detención
+  Línea 532 (JSX): Jurisprudencia Relevante
+  Línea 535 (JSX): STS 114/2017
+  Línea 535 (JSX): - Condiciones de detención en comisaría
+  Línea 538 (JSX): STC 47/2018
+  Línea 538 (JSX): - Derechos durante la permanencia policial
+  Línea 547 (JSX): La permanencia en comisaría es una fase crítica del procedimiento penal donde
+                  se sientan las bases para tu defensa. Conocer el procedimiento paso a paso
+                  y ejercer tus derechos de manera efectiva puede marcar la diferencia
+                  entre una resolución favorable y complicaciones innecesarias.
+  Línea 553 (JSX): Recuerda que tienes derecho a asistencia letrada especializada desde el primer momento.
+                  En STANS Abogados contamos con abogados disponibles 24/7 para acompañarte
+                  durante toda tu permanencia en comisaría y garantizar que tus derechos sean respetados.
+  Línea 573 (JSX): Asistencia en Comisaría
+  Línea 594 (JSX): Más información sobre procedimiento policial
+  Línea 617 (JSX): Leer artículo
+  Línea 115 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 120 (Property): Asistencia Letrada de Urgencia
+  Línea 125 (Property): Puesta a Disposición Judicial
+  Línea 142 (Property): Procedimiento en Comisaría: Paso a Paso
+  Línea 143 (Property): Condiciones Mínimas de Detención
+  Línea 144 (Property): Derechos durante la Permanencia en Comisaría
+  Línea 145 (Property): Protocolo de Actuación en Comisaría
+  Línea 146 (Property): Preguntas Frecuentes sobre Comisaría
+  Línea 147 (Property): Legislación Aplicada
+  Línea 148 (Property): Conclusión
+  Línea 137 (Property): Defensa Penal Urgente
+  Línea 138 (Property): Primeros Pasos en Comisaría
+
+app\blog\procedimientos-extradicion-espana\page.tsx:
+  Línea 180 (JSX): Volver al blog
+  Línea 194 (JSX): Procedimientos de Extradición en España: Guía Completa
+  Línea 198 (JSX): Análisis exhaustivo del proceso de extradición española: tipos, plazos,
+                derechos del extraditado y estrategias de defensa internacional.
+  Línea 205 (JSX): Rubén Vaquero Arribas
+  Línea 231 (JSX): La extradición es un
+  Línea 232 (JSX): que involucra la cooperación internacional
+                  entre Estados para la persecución del delito. España, como país miembro de la Unión Europea y firmante
+                  de numerosos tratados internacionales, tiene un marco legal sofisticado para gestionar estos procedimientos.
+  Línea 236 (JSX): Esta guía completa analiza el proceso de extradición desde la perspectiva española,
+                  basándose en la
+  Línea 238 (JSX): Ley 4/2019
+  Línea 238 (JSX): de 18 diciembre, la
+  Línea 238 (JSX): Ley Orgánica 3/2003
+  Línea 238 (JSX): y la jurisprudencia del
+  Línea 239 (JSX): Tribunal Supremo
+  Línea 239 (JSX): Tribunal Constitucional
+  Línea 251 (JSX): Tipos de Extradición en España
+  Línea 259 (JSX): Extradición UE
+  Línea 261 (JSX): Procedimiento simplificado entre países miembros del espacio Schengen.
+                      Regulado por la
+  Línea 263 (JSX): Decisión Marco 2002/584/JAI
+  Línea 266 (JSX): • Plazos más cortos (30-60 días)
+  Línea 267 (JSX): • Menos formalidades burocráticas
+  Línea 268 (JSX): • Principio de reconocimiento mutuo
+  Línea 269 (JSX): • Cooperación judicial directa
+  Línea 276 (JSX): Extradición Internacional
+  Línea 278 (JSX): Procedimiento tradicional con países no comunitarios.
+                      Requiere tratado bilateral específico.
+  Línea 283 (JSX): • Plazos más largos (3-12 meses)
+  Línea 284 (JSX): • Requisitos más estrictos
+  Línea 285 (JSX): • Examen más detallado
+  Línea 295 (JSX): Excepciones Importantes
+  Línea 296 (JSX): Los ciudadanos españoles
+  Línea 297 (JSX): por delitos políticos
+                        (artículo 13.3 CE). Tampoco se extradita por delitos militares en tiempo de paz o
+                        por opiniones políticas, según el
+  Línea 299 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 314 (JSX): Fases del Procedimiento de Extradición
+  Línea 359 (JSX): Derechos del Extraditado
+  Línea 365 (JSX): Garantías Constitucionales y Europeas
+  Línea 371 (JSX): Derechos Básicos
+  Línea 374 (JSX): • Traducción e interpretación gratuitas
+  Línea 375 (JSX): • Información detallada de los cargos
+  Línea 376 (JSX): • Derecho a impugnar la solicitud
+  Línea 377 (JSX): • Protección contra tratos degradantes
+  Línea 382 (JSX): Derechos Europeos
+  Línea 385 (JSX): • Plazo razonable de procedimiento
+  Línea 386 (JSX): • Protección de derechos fundamentales
+  Línea 387 (JSX): • Derecho a recurso efectivo
+  Línea 388 (JSX): • Protección familiar y social
+  Línea 403 (JSX): Tratados Internacionales de España
+  Línea 448 (JSX): Preguntas Frecuentes sobre Extradición
+  Línea 484 (JSX): Legislación y Referencias
+  Línea 489 (JSX): Marco Legal Español
+  Línea 492 (JSX): Ley 4/2019, de 18 diciembre
+  Línea 492 (JSX): - Reforma del procedimiento de extradición
+  Línea 493 (JSX): Ver ley completa
+  Línea 498 (JSX): Ley Orgánica 3/2003
+  Línea 498 (JSX): - Cooperación jurídica internacional en materia penal
+  Línea 499 (JSX): Ver ley completa
+  Línea 504 (JSX): Constitución Española (1978)
+  Línea 504 (JSX): - Artículos 13 y 25 sobre extradición
+  Línea 505 (JSX): Ver constitución
+  Línea 511 (JSX): Derecho Internacional
+  Línea 514 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 514 (JSX): - Protección de derechos fundamentales
+  Línea 515 (JSX): Ver convenio
+  Línea 520 (JSX): Decisión Marco 2002/584/JAI
+  Línea 520 (JSX): - Extradición simplificada en la UE
+  Línea 521 (JSX): Ver decisión marco
+  Línea 532 (JSX): Los procedimientos de extradición requieren una defensa especializada en derecho internacional.
+                  Cada caso tiene sus particularidades y es fundamental contar con abogados expertos que conozcan
+                  los matices de cada jurisdicción y los mecanismos de cooperación internacional.
+  Línea 537 (JSX): En STANS Abogados tenemos amplia experiencia en procedimientos de extradición internacional,
+                  tanto en extradiciones UE como tradicionales, garantizando que tus derechos sean protegidos
+                  en todo momento del procedimiento.
+  Línea 601 (JSX): Más información sobre derecho internacional y extradiciones
+  Línea 624 (JSX): Leer artículo
+  Línea 56 (Property): Solicitud Inicial
+  Línea 63 (Property): Admisión a Trámite
+  Línea 70 (Property): Remisión al Juzgado
+  Línea 77 (Property): Audiencia del Extraditado
+  Línea 84 (Property): Resolución Judicial
+  Línea 91 (Property): Recursos y Ejecución
+  Línea 123 (Property): Derechos Constitucionales en Procedimientos Internacionales
+  Línea 128 (Property): Prisión Preventiva en Casos de Extradición
+  Línea 133 (Property): Defensas contra la Extradición
+  Línea 150 (Property): Tipos de Extradición en España
+  Línea 151 (Property): Fases del Procedimiento de Extradición
+  Línea 152 (Property): Derechos del Extraditado
+  Línea 153 (Property): Tratados Internacionales de España
+  Línea 154 (Property): Preguntas Frecuentes sobre Extradición
+  Línea 155 (Property): Legislación y Referencias
+  Línea 156 (Property): Conclusión
+  Línea 550 (Property): Procedimientos de Extradición en España
+  Línea 57 (Property): El país requirente presenta solicitud formal ante el Ministerio de Justicia español
+  Línea 64 (Property): El Ministerio de Justicia examina la solicitud y decide si se tramita
+  Línea 71 (Property): La solicitud se envía al Juzgado Central de Instrucción nº 5 de la Audiencia Nacional
+  Línea 78 (Property): Se celebra vista judicial donde el extraditado puede impugnar la solicitud
+  Línea 85 (Property): El juez decide sobre la extradición y posibles medidas cautelares
+  Línea 92 (Property): Posibles recursos y, si procede, entrega al país requirente
+  Línea 145 (Property): Procedimientos de Extradición
+  Línea 146 (Property): Procedimientos de Extradición en España
+
+app\blog\procedimientos-extradicion\page.tsx:
+  Línea 130 (JSX): Procedimientos de Extradición
+  Línea 133 (JSX): Guía completa sobre extradiciones en España. Conoce tus derechos,
+                procedimientos y estrategias de defensa internacional.
+  Línea 142 (JSX): Consulta Extradición
+  Línea 148 (JSX): Asesoría Internacional
+  Línea 166 (JSX): Fases del Procedimiento de Extradición
+  Línea 169 (JSX): Cronología completa desde la solicitud hasta la resolución final
+  Línea 218 (JSX): Países Más Frecuentes en Extradiciones
+  Línea 221 (JSX): Tiempos aproximados por jurisdicción
+  Línea 268 (JSX): Artículos Especializados en Extradición
+  Línea 271 (JSX): Profundiza en aspectos específicos del derecho de extradición
+  Línea 318 (JSX): Preguntas Frecuentes sobre Extradición
+  Línea 331 (JSX): ¿Puedo impugnar una solicitud de extradición?
+  Línea 334 (JSX): Sí, existen múltiples motivos para impugnar: defectos formales, prescripción,
+                  riesgo de trato degradante, persecución por motivos políticos, o violación del principio de ne bis in idem.
+  Línea 347 (JSX): ¿Qué pasa si soy ciudadano español?
+  Línea 350 (JSX): Los ciudadanos españoles no pueden ser extraditados a otros países por delitos políticos.
+                  Sin embargo, sí pueden ser extraditados por delitos comunes graves.
+  Línea 363 (JSX): ¿Cuánto dura el procedimiento?
+  Línea 366 (JSX): Depende del país requirente. Las extradiciones UE suelen tardar 30-60 días,
+                  mientras que las internacionales pueden prolongarse hasta 6-12 meses.
+  Línea 385 (JSX): ¿Tienes una Solicitud de Extradición?
+  Línea 388 (JSX): La extradición requiere experiencia internacional especializada.
+                Nuestro equipo tiene amplia trayectoria en procedimientos de extradición internacional.
+  Línea 397 (JSX): Consulta Urgente
+  Línea 403 (JSX): Asesoría Internacional
+  Línea 18 (Property): Extradición en la Unión Europea
+  Línea 24 (Property): Extradición Internacional
+  Línea 30 (Property): Derechos del Extraditado
+  Línea 36 (Property): Defensas contra la Extradición
+  Línea 42 (Property): Extradición por Terrorismo
+  Línea 48 (Property): Extradición por Delitos Económicos
+  Línea 108 (Property): Procedimientos de Extradición
+
+app\blog\proteccion-torturas-tratos-inhumanos\page.tsx:
+  Línea 274 (JSX): Volver al hub de Derechos de Detenidos
+  Línea 279 (JSX): Derechos de Detenidos
+  Línea 288 (JSX): Protección contra Torturas y Tratos Inhumanos
+  Línea 292 (JSX): Prohibición absoluta de torturas. Detección, denuncia y reparación
+                de maltratos durante la detención. Protocolos de protección.
+  Línea 299 (JSX): Equipo STANS Abogados
+  Línea 326 (JSX): prohibición de torturas y tratos inhumanos
+  Línea 326 (JSX): es una de las conquistas
+                  más importantes de los derechos humanos modernos. Reconocida como derecho fundamental
+                  en el
+  Línea 328 (JSX): artículo 15 de la Constitución Española
+  Línea 328 (JSX): y en tratados internacionales
+                  como la
+  Línea 329 (JSX): Convención contra la Tortura
+  Línea 329 (JSX): , esta prohibición es absoluta e
+                  imprescriptible, aplicable en cualquier circunstancia y contra cualquier autoridad.
+  Línea 332 (JSX): Esta guía exhaustiva explica cómo detectar maltratos, qué hacer si sufres torturas,
+                  los protocolos de protección existentes, y cómo obtener reparación integral por los
+                  daños sufridos, basándose en la
+  Línea 335 (JSX): Ley Orgánica 1/2014
+  Línea 335 (JSX): contra la tortura
+                  y la jurisprudencia del
+  Línea 336 (JSX): Tribunal Europeo de Derechos Humanos
+  Línea 348 (JSX): Tipos de Maltrato Prohibidos
+  Línea 405 (JSX): Garantías de Protección y Detección
+  Línea 446 (JSX): Protocolo de Detección y Denuncia
+  Línea 476 (JSX): Indicadores de alerta:
+  Línea 484 (JSX): Acción inmediata:
+  Línea 503 (JSX): Organizaciones de Apoyo a Víctimas
+  Línea 511 (JSX): Organización
+  Línea 549 (JSX): Derechos a la Reparación Integral
+  Línea 557 (JSX): Reparación por Torturas
+  Línea 558 (JSX): Las víctimas de torturas tienen derecho a una reparación integral que incluye
+                        aspectos médicos, psicológicos, económicos y sociales, según establece la
+                        Ley 1/2014 y los estándares internacionales.
+  Línea 568 (JSX): Reparación Médica
+  Línea 570 (JSX): • Tratamiento médico completo
+  Línea 571 (JSX): • Rehabilitación física
+  Línea 572 (JSX): • Apoyo psicológico especializado
+  Línea 573 (JSX): • Medicamentos y terapias
+  Línea 574 (JSX): • Seguimiento médico continuado
+  Línea 579 (JSX): Reparación Jurídica
+  Línea 581 (JSX): • Indemnización por daños
+  Línea 582 (JSX): • Responsabilidad penal de autores
+  Línea 583 (JSX): • Nulidad de procedimientos
+  Línea 584 (JSX): • Restitución de derechos
+  Línea 585 (JSX): • Protección contra represalias
+  Línea 591 (JSX): Reparación Psicosocial
+  Línea 593 (JSX): • Apoyo familiar y social
+  Línea 594 (JSX): • Reintegración comunitaria
+  Línea 595 (JSX): • Protección contra estigmatización
+  Línea 596 (JSX): • Medidas de no repetición
+  Línea 597 (JSX): • Reconocimiento público del daño
+  Línea 611 (JSX): Preguntas Frecuentes sobre Torturas y Maltratos
+  Línea 647 (JSX): Legislación y Referencias
+  Línea 652 (JSX): Normativa Española
+  Línea 655 (JSX): Constitución Española (1978)
+  Línea 656 (JSX): Artículo 15 (prohibición de torturas)
+  Línea 661 (JSX): Ley Orgánica 1/2014
+  Línea 662 (JSX): Prevención y prohibición de la tortura
+  Línea 667 (JSX): Código Penal
+  Línea 668 (JSX): Artículos 174-177 (delitos de torturas)
+  Línea 674 (JSX): Derecho Internacional
+  Línea 677 (JSX): Convención contra la Tortura (1984)
+  Línea 678 (JSX): Ratificada por España en 1987
+  Línea 683 (JSX): Protocolo de Estambul (2001)
+  Línea 684 (JSX): Manual para investigación de torturas
+  Línea 690 (JSX): Jurisprudencia Relevante
+  Línea 693 (JSX): STC 114/2017
+  Línea 693 (JSX): - Límites constitucionales contra torturas
+  Línea 696 (JSX): STS 47/2018
+  Línea 696 (JSX): - Delitos de torturas en comisaría
+  Línea 699 (JSX): STEDH Caso Selmouni vs Francia
+  Línea 699 (JSX): - Umbral de gravedad en tratos inhumanos
+  Línea 708 (JSX): La protección contra torturas y tratos inhumanos es uno de los pilares fundamentales
+                  del Estado de Derecho y la democracia española. La prohibición absoluta de cualquier
+                  forma de maltrato, ya sea físico o psicológico, constituye una conquista irreversible
+                  de los derechos humanos que debe ser defendida activamente por todos los ciudadanos.
+  Línea 714 (JSX): La detección precoz, la documentación exhaustiva y la denuncia inmediata son las
+                  mejores armas contra los maltratos. Cualquier vulneración debe ser combatida con
+                  todos los recursos legales disponibles, incluyendo la cooperación internacional
+                  cuando sea necesaria. En STANS Abogados defendemos activamente los derechos
+                  humanos y contamos con experiencia especializada en casos de torturas y maltratos.
+  Línea 736 (JSX): Ayuda contra Torturas
+  Línea 756 (JSX): Más información sobre derechos de detenidos
+  Línea 779 (JSX): Leer artículo
+  Línea 216 (Property): Derechos Constitucionales del Detenido
+  Línea 221 (Property): Derecho a la Asistencia Letrada del Detenido
+  Línea 226 (Property): Primeros Pasos en Comisaría
+  Línea 243 (Property): Tipos de Maltrato Prohibidos
+  Línea 244 (Property): Garantías de Protección y Detección
+  Línea 245 (Property): Protocolo de Detección y Denuncia
+  Línea 246 (Property): Organizaciones de Apoyo a Víctimas
+  Línea 247 (Property): Derechos a la Reparación Integral
+  Línea 248 (Property): Preguntas Frecuentes sobre Torturas y Maltratos
+  Línea 249 (Property): Legislación y Referencias
+  Línea 250 (Property): Conclusión
+  Línea 238 (Property): Derechos de Detenidos
+  Línea 239 (Property): Protección contra Torturas y Tratos Inhumanos
+
+app\blog\puesta-disposicion-judicial\page.tsx:
+  Línea 188 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 193 (JSX): Defensa Penal Urgente
+  Línea 202 (JSX): Puesta a Disposición Judicial
+  Línea 206 (JSX): El momento clave del procedimiento: audiencia judicial, medidas cautelares
+                y decisiones que determinan tu situación procesal inmediata.
+  Línea 213 (JSX): Equipo STANS Abogados
+  Línea 239 (JSX): La puesta a disposición judicial marca el final de la fase policial y el inicio
+                  del control judicial sobre tu detención. En un plazo máximo de 72 horas desde
+                  tu detención, debes ser presentado ante el
+  Línea 242 (JSX): juez de guardia
+  Línea 242 (JSX): ,
+                  quien decidirá sobre tu situación procesal inmediata.
+  Línea 245 (JSX): Esta audiencia es crucial porque determina si quedas en libertad, si se te imponen
+                  medidas cautelares, o si se decreta prisión provisional. La preparación de esta
+                  fase debe comenzar desde el momento mismo de la detención, según establece
+                  la
+  Línea 249 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 249 (JSX): en sus artículos 496 y siguientes.
+  Línea 261 (JSX): Fases de la Audiencia Judicial
+  Línea 289 (JSX): Derechos en esta fase:
+  Línea 312 (JSX): Medidas Cautelares Posibles
+  Línea 351 (JSX): Condiciones típicas:
+  Línea 374 (JSX): Derechos en la Audiencia Judicial
+  Línea 382 (JSX): Garantías Constitucionales
+  Línea 383 (JSX): Derechos irrenunciables durante la comparecencia judicial
+  Línea 420 (JSX): Preparación de la Defensa
+  Línea 428 (JSX): Estrategia desde la Detención
+  Línea 429 (JSX): La preparación de la audiencia judicial debe comenzar desde el momento
+                        mismo de la detención. Cada actuación policial puede influir en la decisión judicial.
+  Línea 438 (JSX): Documentación Necesaria
+  Línea 441 (JSX): • Acta de derechos leídos
+  Línea 442 (JSX): • Informes médicos si procede
+  Línea 449 (JSX): Argumentos de Defensa
+  Línea 451 (JSX): • Falta de indicios racionales
+  Línea 452 (JSX): • Arrepentimiento espontáneo
+  Línea 455 (JSX): • Alternativas a la prisión
+  Línea 470 (JSX): Preguntas Frecuentes sobre Puesta a Disposición Judicial
+  Línea 506 (JSX): Legislación y Referencias
+  Línea 511 (JSX): Normativa Procesal
+  Línea 514 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 515 (JSX): Artículos 496-520 (detención y puesta a disposición)
+  Línea 520 (JSX): Ley Orgánica del Poder Judicial
+  Línea 521 (JSX): Competencias de los juzgados de guardia
+  Línea 526 (JSX): Ley de Enjuiciamiento Civil
+  Línea 527 (JSX): Recursos contra decisiones judiciales
+  Línea 533 (JSX): Constitución Española
+  Línea 536 (JSX): Artículo 17
+  Línea 536 (JSX): - Derecho a la libertad y garantías en detención
+  Línea 539 (JSX): Artículo 24
+  Línea 539 (JSX): - Derecho a la tutela judicial efectiva
+  Línea 542 (JSX): Artículo 25
+  Línea 542 (JSX): - Principios de legalidad y proporcionalidad
+  Línea 546 (JSX): Jurisprudencia Relevante
+  Línea 549 (JSX): STC 47/2018
+  Línea 549 (JSX): - Límites temporales de la detención
+  Línea 552 (JSX): STS 123/2020
+  Línea 552 (JSX): - Medidas cautelares y proporcionalidad
+  Línea 555 (JSX): STEDH caso Mammadov
+  Línea 555 (JSX): - Derechos en procedimientos de urgencia
+  Línea 564 (JSX): La puesta a disposición judicial es el momento más crítico del procedimiento penal urgente.
+                  La decisión que tome el juez de guardia determinará tu situación procesal inmediata y puede
+                  marcar el devenir de todo el proceso. Una preparación adecuada y la asistencia de un abogado
+                  especializado son fundamentales para obtener el mejor resultado posible.
+  Línea 570 (JSX): Recuerda que tienes derechos constitucionales irrenunciables durante toda la comparecencia,
+                  y que cualquier decisión judicial puede ser recurrida. En STANS Abogados contamos con
+                  amplia experiencia en comparecencias de urgencia y podemos asesorarte sobre las mejores
+                  estrategias de defensa según tu situación particular.
+  Línea 591 (JSX): Asistencia Judicial Urgente
+  Línea 612 (JSX): Más información sobre procedimiento judicial urgente
+  Línea 635 (JSX): Leer artículo
+  Línea 131 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 136 (Property): Asistencia Letrada de Urgencia
+  Línea 141 (Property): Medidas Cautelares en Procesos Penales
+  Línea 158 (Property): Fases de la Audiencia Judicial
+  Línea 159 (Property): Medidas Cautelares Posibles
+  Línea 160 (Property): Derechos en la Audiencia Judicial
+  Línea 161 (Property): Preparación de la Defensa
+  Línea 162 (Property): Preguntas Frecuentes sobre Puesta a Disposición Judicial
+  Línea 163 (Property): Legislación y Referencias
+  Línea 164 (Property): Conclusión
+  Línea 153 (Property): Defensa Penal Urgente
+  Línea 154 (Property): Puesta a Disposición Judicial
+
+app\blog\recursos-contra-extradicion\page.tsx:
+  Línea 220 (JSX): Volver al hub de Procedimientos de Extradición
+  Línea 225 (JSX): Procedimientos de Extradición
+  Línea 234 (JSX): Recursos contra la Extradición
+  Línea 238 (JSX): Reforma, apelación, casación y amparo. Estrategias para impugnar
+                decisiones de extradición y medidas cautelares durante recursos.
+  Línea 245 (JSX): Equipo STANS Abogados
+  Línea 271 (JSX): Los recursos contra decisiones de extradición constituyen uno de los mecanismos
+                  más importantes para proteger los derechos del reclamado. La
+  Línea 273 (JSX): Ley Orgánica 3/2003
+  Línea 273 (JSX): y la
+  Línea 274 (JSX): Ley 29/1998
+  Línea 274 (JSX): regulan un sistema completo de recursos que permite
+                  impugnar tanto las resoluciones judiciales como los actos administrativos relacionados
+                  con el procedimiento de extradición.
+  Línea 278 (JSX): Esta guía explica los diferentes tipos de recursos disponibles, sus plazos y fundamentos,
+                  las estrategias de defensa más efectivas, y las medidas cautelares que pueden aplicarse
+                  durante la tramitación de los recursos, basándose en la jurisprudencia del
+  Línea 282 (JSX): Tribunal Supremo
+  Línea 282 (JSX): Tribunal Constitucional
+  Línea 283 (JSX): Tribunal Europeo de Derechos Humanos
+  Línea 295 (JSX): Tipos de Recursos contra la Extradición
+  Línea 329 (JSX): Fundamentos habituales:
+  Línea 347 (JSX): Estrategia de Recursos por Fases
+  Línea 373 (JSX): Acciones estratégicas:
+  Línea 396 (JSX): Medidas Cautelares durante Recursos
+  Línea 437 (JSX): Casos de Éxito con Recursos
+  Línea 474 (JSX): Lecciones de estos Casos
+  Línea 476 (JSX): • Los defectos formales pueden anular todo el procedimiento
+  Línea 477 (JSX): • Los riesgos de vulneración de derechos son tomados muy en serio
+  Línea 478 (JSX): • La jurisprudencia española es favorable a la protección de derechos fundamentales
+  Línea 479 (JSX): • Los recursos extraordinarios pueden lograr resultados sorprendentes
+  Línea 492 (JSX): Recursos Internacionales
+  Línea 500 (JSX): Tribunal Europeo de Derechos Humanos
+  Línea 501 (JSX): Una vez agotados los recursos internos españoles, puede recurrir al TEDH
+                        si considera vulnerados sus derechos del Convenio Europeo de Derechos Humanos.
+  Línea 512 (JSX): • Solicitud de suspensión de extradición
+  Línea 513 (JSX): • Plazo: 24-48 horas para respuesta
+  Línea 514 (JSX): • Efectos: Suspensión inmediata
+  Línea 515 (JSX): • Duración: Hasta examen de fondo
+  Línea 523 (JSX): • Comité de Derechos Humanos (ONU)
+  Línea 524 (JSX): • Comisión Interamericana de Derechos Humanos
+  Línea 525 (JSX): • Mecanismos de protección diplomática
+  Línea 527 (JSX): • Coordinación con consulados
+  Línea 542 (JSX): Preguntas Frecuentes sobre Recursos contra Extradición
+  Línea 578 (JSX): Legislación y Referencias
+  Línea 583 (JSX): Normativa Española
+  Línea 586 (JSX): Ley Orgánica 3/2003
+  Línea 587 (JSX): Artículos 23-27 (recursos contra extradición)
+  Línea 592 (JSX): Ley 29/1998
+  Línea 593 (JSX): Jurisdicción contencioso-administrativa
+  Línea 598 (JSX): Ley Orgánica 2/1979
+  Línea 599 (JSX): Tribunal Constitucional
+  Línea 605 (JSX): Derecho Internacional
+  Línea 608 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 609 (JSX): Protocolo 11 (Tribunal Europeo de Derechos Humanos)
+  Línea 614 (JSX): Convención contra la Tortura
+  Línea 615 (JSX): Prohibición absoluta de devolución
+  Línea 621 (JSX): Jurisprudencia Relevante
+  Línea 624 (JSX): STC 91/2000
+  Línea 624 (JSX): - Límites constitucionales de la extradición
+  Línea 627 (JSX): STS 47/2018
+  Línea 627 (JSX): - Recursos contra decisiones de extradición
+  Línea 630 (JSX): STEDH Caso Soering vs Reino Unido
+  Línea 630 (JSX): - Pena de muerte y extradición
+  Línea 639 (JSX): Los recursos contra la extradición constituyen un sistema completo de protección
+                  jurídica que permite impugnar decisiones injustas o irregulares. Desde los recursos
+                  ordinarios más rápidos hasta los extraordinarios ante tribunales internacionales,
+                  existen múltiples vías para defender los derechos fundamentales del reclamado.
+  Línea 645 (JSX): La interposición oportuna de recursos no solo puede lograr la suspensión inmediata
+                  de la extradición, sino también conseguir su denegación definitiva cuando concurren
+                  causas legales suficientes. La coordinación con abogados especializados es fundamental
+                  para maximizar las posibilidades de éxito en cada fase del procedimiento.
+  Línea 666 (JSX): Recursos contra Extradición
+  Línea 686 (JSX): Más información sobre procedimientos de extradición
+  Línea 709 (JSX): Leer artículo
+  Línea 162 (Property): Tipos de Extradición en España
+  Línea 167 (Property): Audiencia de Extradición en España
+  Línea 172 (Property): Derechos del Extraditado
+  Línea 189 (Property): Tipos de Recursos contra la Extradición
+  Línea 190 (Property): Estrategia de Recursos por Fases
+  Línea 191 (Property): Medidas Cautelares durante Recursos
+  Línea 192 (Property): Casos de Éxito con Recursos
+  Línea 193 (Property): Recursos Internacionales
+  Línea 194 (Property): Preguntas Frecuentes sobre Recursos contra Extradición
+  Línea 195 (Property): Legislación y Referencias
+  Línea 196 (Property): Conclusión
+  Línea 184 (Property): Procedimientos de Extradición
+  Línea 185 (Property): Recursos Contra la Extradición
+
+app\blog\registro-dependencias-detenido\page.tsx:
+  Línea 224 (JSX): Volver al hub de Defensa Penal Urgente
+  Línea 229 (JSX): Defensa Penal Urgente
+  Línea 238 (JSX): Registro de Dependencias durante la Detención
+  Línea 242 (JSX): Derechos durante registros domiciliarios y personales, garantías procesales,
+                cómo impugnar irregularidades y proteger tus bienes.
+  Línea 249 (JSX): Equipo STANS Abogados
+  Línea 275 (JSX): Los
+  Línea 276 (JSX): registros de dependencias
+  Línea 276 (JSX): son actuaciones policiales invasivas
+                  que requieren las máximas garantías procesales. Regulados por los
+  Línea 277 (JSX): artículos 545
+                  y siguientes de la Ley de Enjuiciamiento Criminal
+  Línea 278 (JSX): y protegidos por el
+  Línea 279 (JSX): artículo 18 de la Constitución Española
+  Línea 279 (JSX): , estos registros buscan
+                  obtener pruebas relacionadas con el delito investigado.
+  Línea 282 (JSX): Esta guía explica los tipos de registros que pueden realizarse durante una detención,
+                  las garantías que te asisten, y cómo impugnar cualquier irregularidad que vulnere
+                  tus derechos constitucionales, basándose en la jurisprudencia del
+  Línea 285 (JSX): Tribunal Constitucional
+  Línea 286 (JSX): Tribunal Supremo
+  Línea 298 (JSX): Tipos de Registros durante la Detención
+  Línea 336 (JSX): Tus derechos:
+  Línea 360 (JSX): Fases de un Registro Domiciliario
+  Línea 390 (JSX): Derechos que tienes:
+  Línea 398 (JSX): Acciones recomendadas:
+  Línea 419 (JSX): Garantías Procesales en los Registros
+  Línea 427 (JSX): Protecciones Constitucionales
+  Línea 428 (JSX): Derechos irrenunciables durante cualquier registro
+  Línea 478 (JSX): Documentación Obligatoria
+  Línea 511 (JSX): Debe contener:
+  Línea 534 (JSX): Protocolo de Defensa ante un Registro
+  Línea 542 (JSX): Mantén la Calma y Documenta Todo
+  Línea 543 (JSX): Los registros son momentos de alta tensión. Tu comportamiento y documentación
+                        pueden ser cruciales para impugnar cualquier irregularidad posterior.
+  Línea 552 (JSX): ✅ Antes del registro:
+  Línea 554 (JSX): • Verifica la orden judicial
+  Línea 555 (JSX): • Llama inmediatamente a tu abogado
+  Línea 556 (JSX): • Designa testigos si es posible
+  Línea 557 (JSX): • Prepara documentación personal
+  Línea 558 (JSX): • Mantén la calma y coopera
+  Línea 563 (JSX): 📝 Durante el registro:
+  Línea 567 (JSX): • Fotografía si está permitido
+  Línea 575 (JSX): Después del registro:
+  Línea 577 (JSX): • Revisa el acta detenidamente
+  Línea 578 (JSX): • Apunta cualquier objeción
+  Línea 579 (JSX): • Guarda copia de toda la documentación
+  Línea 580 (JSX): • Consulta inmediatamente con tu abogado
+  Línea 595 (JSX): Preguntas Frecuentes sobre Registros
+  Línea 631 (JSX): Legislación y Referencias
+  Línea 636 (JSX): Normativa Procesal
+  Línea 639 (JSX): Ley de Enjuiciamiento Criminal
+  Línea 640 (JSX): Artículos 545-566 (registros y entradas)
+  Línea 645 (JSX): Constitución Española (1978)
+  Línea 646 (JSX): Artículo 18 (inviolabilidad del domicilio)
+  Línea 651 (JSX): Ley Orgánica 4/2015
+  Línea 652 (JSX): Seguridad Ciudadana (registros)
+  Línea 658 (JSX): Derecho Internacional
+  Línea 661 (JSX): Convenio Europeo de Derechos Humanos
+  Línea 662 (JSX): Artículo 8 (derecho a la vida privada)
+  Línea 667 (JSX): Pacto Internacional de Derechos Civiles y Políticos
+  Línea 668 (JSX): Artículo 17 (inviolabilidad del hogar)
+  Línea 674 (JSX): Jurisprudencia Destacada
+  Línea 677 (JSX): STC 114/2017
+  Línea 677 (JSX): - Límites de los registros domiciliarios
+  Línea 680 (JSX): STS 47/2018
+  Línea 680 (JSX): - Requisitos de la orden judicial
+  Línea 683 (JSX): STEDH caso Funke vs Francia
+  Línea 683 (JSX): - Registros y cadena de custodia
+  Línea 692 (JSX): Los registros de dependencias son actuaciones policiales que requieren el máximo respeto
+                  a las garantías constitucionales. Una orden judicial motivada, presencia de abogado,
+                  acta detallada y cadena de custodia adecuada son requisitos indispensables para que
+                  las pruebas obtenidas tengan validez procesal.
+  Línea 698 (JSX): Cualquier irregularidad en el procedimiento puede dar lugar a la nulidad de las pruebas
+                  obtenidas, por lo que es fundamental documentar todo el proceso y contar con asistencia
+                  jurídica especializada desde el primer momento. En STANS Abogados tenemos amplia experiencia
+                  en la impugnación de registros irregulares y podemos asesorarte sobre tus derechos
+                  y opciones de defensa.
+  Línea 720 (JSX): Asistencia en Registro
+  Línea 741 (JSX): Más información sobre procedimiento policial
+  Línea 764 (JSX): Leer artículo
+  Línea 166 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 171 (Property): Primeros Pasos en Comisaría
+  Línea 176 (Property): Medidas Cautelares en Procesos Penales
+  Línea 193 (Property): Tipos de Registros durante la Detención
+  Línea 194 (Property): Fases de un Registro Domiciliario
+  Línea 195 (Property): Garantías Procesales en los Registros
+  Línea 196 (Property): Documentación Obligatoria
+  Línea 197 (Property): Protocolo de Defensa ante un Registro
+  Línea 198 (Property): Preguntas Frecuentes sobre Registros
+  Línea 199 (Property): Legislación y Referencias
+  Línea 200 (Property): Conclusión
+  Línea 188 (Property): Defensa Penal Urgente
+  Línea 189 (Property): Registro de Dependencias del Detenido
+
+app\blog\requisitos-extradicion-espana\page.tsx:
+  Línea 269 (JSX): Volver al hub de Procedimientos de Extradición
+  Línea 274 (JSX): Procedimientos de Extradición
+  Línea 283 (JSX): Requisitos para la Extradición en España
+  Línea 287 (JSX): Requisitos sustantivos y formales, causas de denegación.
+                Diferencias entre extradición UE e internacional.
+  Línea 294 (JSX): Equipo STANS Abogados
+  Línea 320 (JSX): La extradición española está sujeta a requisitos estrictos que garantizan el respeto
+                  a los derechos fundamentales del reclamado y la legalidad del procedimiento. La
+  Línea 323 (JSX): Ley Orgánica 3/2003
+  Línea 323 (JSX): establece los requisitos sustantivos y formales
+                  que deben cumplirse para que una solicitud de extradición sea admitida y concedida.
+  Línea 326 (JSX): Esta guía detalla todos los requisitos necesarios, las diferencias entre extradición
+                  UE e internacional, y las causas que pueden llevar a la denegación de la extradición,
+                  basándose en la jurisprudencia del
+  Línea 329 (JSX): Tribunal Supremo
+  Línea 329 (JSX): Tribunal Constitucional
+  Línea 341 (JSX): Requisitos Sustantivos Obligatorios
+  Línea 382 (JSX): Requisitos Formales de la Solicitud
+  Línea 391 (JSX): Descripción
+  Línea 393 (JSX): Traducción
+  Línea 434 (JSX): Causas de Denegación de la Extradición
+  Línea 464 (JSX): Aplicación:
+  Línea 480 (JSX): Diferencias UE vs Extradición Internacional
+  Línea 489 (JSX): Extradición UE
+  Línea 490 (JSX): Extradición Internacional
+  Línea 524 (JSX): Protocolo de Verificación de Requisitos
+  Línea 532 (JSX): Verificación Sistemática
+  Línea 533 (JSX): El Ministerio de Justicia y Audiencia Nacional verifican cada requisito
+                        de manera exhaustiva antes de admitir la solicitud a trámite.
+  Línea 544 (JSX): • Existencia de tratado internacional
+  Línea 545 (JSX): • Competencia de autoridad solicitante
+  Línea 546 (JSX): • Calidad de perseguido (no refugiado político)
+  Línea 547 (JSX): • Delito punible en España
+  Línea 548 (JSX): • Pena adecuada (mínimo 1 año)
+  Línea 549 (JSX): • No prescripción del delito
+  Línea 550 (JSX): • Documentación completa y correcta
+  Línea 558 (JSX): • No delito político o conexo
+  Línea 559 (JSX): • No pena de muerte prevista
+  Línea 560 (JSX): • No riesgo de tortura o tratos inhumanos
+  Línea 561 (JSX): • No discriminación por motivos políticos
+  Línea 562 (JSX): • No persecución por raza, religión u opinión
+  Línea 563 (JSX): • No condiciones inhumanas de detención
+  Línea 564 (JSX): • No dilaciones indebidas en el proceso
+  Línea 565 (JSX): • No vulneración de derechos fundamentales
+  Línea 580 (JSX): Preguntas Frecuentes sobre Requisitos de Extradición
+  Línea 616 (JSX): Legislación y Referencias
+  Línea 621 (JSX): Normativa Española
+  Línea 624 (JSX): Ley Orgánica 3/2003
+  Línea 625 (JSX): Requisitos sustantivos y formales
+  Línea 630 (JSX): Ley 23/2014
+  Línea 631 (JSX): Mando de detención europeo
+  Línea 636 (JSX): Constitución Española
+  Línea 637 (JSX): Artículos 13.3, 15, 17 y 24
+  Línea 643 (JSX): Derecho Internacional
+  Línea 646 (JSX): Convención Europea de Extradición (1957)
+  Línea 647 (JSX): Requisitos tradicionales de extradición
+  Línea 652 (JSX): Convención contra la Tortura (1984)
+  Línea 653 (JSX): Prohibición de torturas y tratos inhumanos
+  Línea 659 (JSX): Jurisprudencia Relevante
+  Línea 662 (JSX): STC 91/2000
+  Línea 662 (JSX): - Límites constitucionales de la extradición
+  Línea 665 (JSX): STS 47/2018
+  Línea 665 (JSX): - Requisitos formales de la solicitud
+  Línea 668 (JSX): STJUE Caso Melloni
+  Línea 668 (JSX): - Confianza mutua en extradición UE
+  Línea 677 (JSX): Los requisitos para la extradición española buscan equilibrar la cooperación
+                  internacional en la lucha contra el delito con la protección de los derechos
+                  fundamentales del reclamado. Tanto los requisitos sustantivos como los formales
+                  garantizan que solo se concedan extradiciones legalmente fundadas y respetuosas
+                  con los derechos humanos.
+  Línea 684 (JSX): Las diferencias entre extradición UE e internacional reflejan el grado de confianza
+                  institucional entre países miembros, pero en todos los casos se mantienen garantías
+                  básicas de protección contra vulneraciones de derechos fundamentales. Una defensa
+                  especializada puede identificar las mejores estrategias para impugnar requisitos
+                  defectuosos o acreditar causas de denegación.
+  Línea 706 (JSX): Consulta Requisitos Extradición
+  Línea 727 (JSX): Más información sobre procedimientos de extradición
+  Línea 750 (JSX): Leer artículo
+  Línea 210 (Property): Tipos de Extradición en España
+  Línea 215 (Property): Procedimientos de Extradición en España
+  Línea 220 (Property): Recursos contra Extradición
+  Línea 237 (Property): Requisitos Sustantivos Obligatorios
+  Línea 238 (Property): Requisitos Formales de la Solicitud
+  Línea 239 (Property): Causas de Denegación de la Extradición
+  Línea 240 (Property): Diferencias UE vs Extradición Internacional
+  Línea 241 (Property): Protocolo de Verificación de Requisitos
+  Línea 242 (Property): Preguntas Frecuentes sobre Requisitos de Extradición
+  Línea 243 (Property): Legislación y Referencias
+  Línea 244 (Property): Conclusión
+  Línea 232 (Property): Procedimientos de Extradición
+  Línea 233 (Property): Requisitos de Extradición en España
+
+app\blog\terrorismo-internet-enaltecimiento-captacion\page.tsx:
+  Línea 185 (JSX): Volver al blog
+  Línea 190 (JSX): Ciberseguridad Penal
+  Línea 199 (JSX): Terrorismo en Internet: Enaltecimiento y Captación Online
+  Línea 203 (JSX): Análisis exhaustivo de los delitos de terrorismo en el ámbito digital:
+                enaltecimiento, captación yihadista y responsabilidad penal en redes sociales.
+  Línea 210 (JSX): Equipo STANS Abogados
+  Línea 236 (JSX): El terrorismo en Internet representa una de las amenazas más complejas para la
+                  seguridad nacional. La
+  Línea 238 (JSX): Ley Orgánica 2/2015
+  Línea 238 (JSX): ha adaptado el Código Penal
+                  español a esta nueva realidad, tipificando conductas como el enaltecimiento del terrorismo,
+                  la captación yihadista online y la financiación terrorista a través de plataformas digitales.
+  Línea 242 (JSX): Esta guía analiza la jurisprudencia más reciente del
+  Línea 243 (JSX): Tribunal Supremo
+  Línea 244 (JSX): Audiencia Nacional
+  Línea 244 (JSX): , incluyendo casos paradigmáticos que han marcado
+                  la evolución del derecho penal digital en España.
+  Línea 257 (JSX): Marco Legal del Terrorismo Digital
+  Línea 265 (JSX): Ley Orgánica 2/2015
+  Línea 266 (JSX): Reforma integral del Código Penal para delitos de terrorismo en Internet
+  Línea 274 (JSX): Delitos Tipificados
+  Línea 276 (JSX): • Enaltecimiento del terrorismo (art. 578)
+  Línea 277 (JSX): • Captación y reclutamiento (art. 579.2)
+  Línea 278 (JSX): • Financiación terrorista (art. 576)
+  Línea 279 (JSX): • Instrucciones para cometer delitos (art. 579.1)
+  Línea 284 (JSX): Agravantes Digitales
+  Línea 286 (JSX): • Uso de Internet o redes sociales
+  Línea 287 (JSX): • Alcance masivo del contenido
+  Línea 288 (JSX): • Viralización del mensaje
+  Línea 289 (JSX): • Uso de plataformas extranjeras
+  Línea 299 (JSX): Evolución Legislativa
+  Línea 300 (JSX): La reforma de 2015 respondió a la proliferación de contenidos terroristas en Internet.
+                        Posteriormente, la
+  Línea 302 (JSX): Ley 4/2015
+  Línea 302 (JSX): estableció obligaciones para plataformas
+                        digitales de retirar contenidos en 24 horas.
+  Línea 318 (JSX): Tipos de Delitos de Terrorismo en Internet
+  Línea 370 (JSX): Casos Reales y Jurisprudencia
+  Línea 407 (JSX): Lecciones de la Jurisprudencia
+  Línea 409 (JSX): • Los "likes" y retuits pueden constituir enaltecimiento si son masivos
+  Línea 410 (JSX): • El contexto satírico no siempre exime de responsabilidad
+  Línea 411 (JSX): • Las plataformas extranjeras no protegen contra la justicia española
+  Línea 412 (JSX): • La captación online se considera tan grave como la presencial
+  Línea 425 (JSX): Responsabilidad de Plataformas Digitales
+  Línea 434 (JSX): Medidas Anti-Terrorismo
+  Línea 463 (JSX): Obligaciones de las Plataformas
+  Línea 466 (JSX): Según Ley 4/2015
+  Línea 468 (JSX): • Retirar contenido en 24 horas
+  Línea 469 (JSX): • Colaborar con autoridades
+  Línea 470 (JSX): • Implementar sistemas de detección
+  Línea 475 (JSX): Sanciones por Incumplimiento
+  Línea 477 (JSX): • Multas de hasta 600.000€
+  Línea 478 (JSX): • Bloqueo temporal de servicios
+  Línea 480 (JSX): • Pérdida de inmunidad
+  Línea 495 (JSX): Preguntas Frecuentes sobre Terrorismo en Internet
+  Línea 531 (JSX): Legislación y Referencias
+  Línea 536 (JSX): Normativa Española
+  Línea 539 (JSX): Ley Orgánica 2/2015
+  Línea 539 (JSX): - Reforma del Código Penal para terrorismo
+  Línea 540 (JSX): Ver ley completa
+  Línea 545 (JSX): Ley 4/2015
+  Línea 545 (JSX): - Obligaciones de proveedores de servicios de Internet
+  Línea 546 (JSX): Ver ley completa
+  Línea 551 (JSX): Código Penal (arts. 571-583)
+  Línea 551 (JSX): - Delitos de terrorismo
+  Línea 552 (JSX): Ver código penal
+  Línea 558 (JSX): Derecho Internacional
+  Línea 561 (JSX): Resolución 2178 (2014) del Consejo de Seguridad ONU
+  Línea 561 (JSX): - Amenazas terroristas en Internet
+  Línea 564 (JSX): Directiva 2017/541/UE
+  Línea 564 (JSX): - Lucha contra el terrorismo
+  Línea 567 (JSX): Convención de Budapest
+  Línea 571 (JSX): Jurisprudencia Destacada
+  Línea 574 (JSX): STS 456/2019
+  Línea 574 (JSX): - Caso de enaltecimiento en redes sociales
+  Línea 577 (JSX): Auto AN 123/2020
+  Línea 577 (JSX): - Captación yihadista online
+  Línea 580 (JSX): STEDH caso Murphy vs Irlanda
+  Línea 580 (JSX): - Libertad de expresión vs terrorismo
+  Línea 589 (JSX): El terrorismo en Internet representa una evolución delictiva que requiere
+                  una respuesta jurídica adaptada a la era digital. La legislación española
+                  ha sabido evolucionar para hacer frente a estas nuevas amenazas, equilibrando
+                  la necesaria protección de la seguridad con el respeto a las libertades fundamentales.
+  Línea 595 (JSX): La jurisprudencia española ha establecido criterios claros sobre la delimitación
+                  entre libertad de expresión y enaltecimiento terrorista. En STANS Abogados
+                  contamos con especialistas en derecho penal digital que conocen las sutilezas
+                  de estos casos y pueden proporcionar una defensa técnica especializada.
+  Línea 616 (JSX): Consulta Especializada
+  Línea 637 (JSX): Más información sobre ciberseguridad y derecho digital
+  Línea 660 (JSX): Leer artículo
+  Línea 129 (Property): Libertad de Expresión vs Terrorismo
+  Línea 134 (Property): Investigaciones en la Dark Web
+  Línea 139 (Property): Responsabilidad de Plataformas Digitales
+  Línea 155 (Property): Marco Legal del Terrorismo Digital
+  Línea 156 (Property): Tipos de Delitos de Terrorismo en Internet
+  Línea 157 (Property): Casos Reales y Jurisprudencia
+  Línea 158 (Property): Responsabilidad de Plataformas Digitales
+  Línea 159 (Property): Preguntas Frecuentes sobre Terrorismo en Internet
+  Línea 160 (Property): Legislación y Referencias
+  Línea 161 (Property): Conclusión
+  Línea 151 (Property): Terrorismo en Internet: Enaltecimiento y Captación
+
+app\blog\tipos-extradicion-espana\page.tsx:
+  Línea 220 (JSX): Volver al hub de Procedimientos de Extradición
+  Línea 225 (JSX): Procedimientos de Extradición
+  Línea 234 (JSX): Tipos de Extradición en España
+  Línea 238 (JSX): Extradición UE vs internacional, terrorismo, corrupción.
+                Requisitos, plazos y garantías en cada tipo de procedimiento.
+  Línea 245 (JSX): Equipo STANS Abogados
+  Línea 271 (JSX): La extradición española se regula por la
+  Línea 272 (JSX): Ley Orgánica 3/2003
+  Línea 272 (JSX): y
+                  los tratados internacionales suscritos por España. Existen diferentes tipos de
+                  extradición según el país solicitante, la naturaleza del delito y los acuerdos
+                  internacionales aplicables, cada uno con sus particularidades procedimentales
+                  y garantías específicas.
+  Línea 278 (JSX): Esta guía analiza los principales tipos de extradición que maneja España,
+                  desde la extradición simplificada dentro de la Unión Europea hasta los
+                  procedimientos más complejos con países terceros, incluyendo situaciones
+                  especiales como extradiciones por terrorismo o corrupción.
+  Línea 294 (JSX): Principales Tipos de Extradición
+  Línea 321 (JSX): Características:
+  Línea 367 (JSX): Principales Países con Acuerdos de Extradición
+  Línea 375 (JSX): País
+  Línea 415 (JSX): Fases del Proceso de Extradición
+  Línea 466 (JSX): Requisitos Generales para la Extradición
+  Línea 474 (JSX): Principios Fundamentales
+  Línea 475 (JSX): Requisitos que deben cumplirse en todos los tipos de extradición
+  Línea 486 (JSX): • Delito punible en ambos países
+  Línea 487 (JSX): • Pena mínima de 1 año de prisión
+  Línea 488 (JSX): • No prescripción del delito
+  Línea 489 (JSX): • No amnistía o indulto
+  Línea 490 (JSX): • Delito no político
+  Línea 495 (JSX): ⚖️ Garantías Procesales
+  Línea 497 (JSX): • Juicio justo en país solicitante
+  Línea 498 (JSX): • No pena de muerte o tortura
+  Línea 499 (JSX): • Respeto a derechos humanos
+  Línea 501 (JSX): • Posibilidad de recursos
+  Línea 510 (JSX): • Documentación completa del delito
+  Línea 511 (JSX): • Identidad del reclamado
+  Línea 512 (JSX): • Autoridad competente del solicitante
+  Línea 513 (JSX): • Traducción oficial al español
+  Línea 514 (JSX): • Firma y sello oficiales
+  Línea 519 (JSX): 🚫 Causas de Denegación
+  Línea 521 (JSX): • Riesgo de persecución política
+  Línea 522 (JSX): • Condiciones inhumanas de detención
+  Línea 524 (JSX): • Falta de garantías procesales
+  Línea 541 (JSX): Preguntas Frecuentes sobre Tipos de Extradición
+  Línea 577 (JSX): Legislación y Referencias
+  Línea 582 (JSX): Normativa Española
+  Línea 585 (JSX): Ley Orgánica 3/2003
+  Línea 586 (JSX): Regulación de la extradición pasiva
+  Línea 591 (JSX): Ley 23/2014
+  Línea 592 (JSX): Mando de detención europeo
+  Línea 597 (JSX): Constitución Española
+  Línea 598 (JSX): Artículos 13.3 y 25
+  Línea 604 (JSX): Derecho Internacional
+  Línea 607 (JSX): Tratado de Lisboa (2007)
+  Línea 608 (JSX): Cooperación judicial en la UE
+  Línea 613 (JSX): Convención Europea de Extradición (1957)
+  Línea 614 (JSX): Marco europeo de extradición
+  Línea 620 (JSX): Jurisprudencia Relevante
+  Línea 623 (JSX): STC 91/2000
+  Línea 623 (JSX): - Límites constitucionales de la extradición
+  Línea 626 (JSX): STS 47/2018
+  Línea 626 (JSX): - Extradición y derechos fundamentales
+  Línea 629 (JSX): STJUE Caso C-168/13 PPU
+  Línea 629 (JSX): - Mando de detención europeo
+  Línea 638 (JSX): Los diferentes tipos de extradición responden a la diversidad de acuerdos
+                  internacionales y situaciones específicas que maneja España. Desde la extradición
+                  simplificada dentro de la Unión Europea hasta los procedimientos más complejos
+                  con países terceros, cada tipo tiene sus particularidades procedimentales y garantías.
+  Línea 644 (JSX): La elección del tipo de extradición determina los plazos, garantías procesales
+                  y posibilidades de defensa. En todos los casos, el respeto a los derechos
+                  fundamentales del extraditado es una prioridad absoluta del ordenamiento jurídico español.
+  Línea 664 (JSX): Consulta Extradición
+  Línea 685 (JSX): Más información sobre procedimientos de extradición
+  Línea 708 (JSX): Leer artículo
+  Línea 162 (Property): Procedimientos de Extradición en España
+  Línea 167 (Property): Derechos del Extraditado
+  Línea 172 (Property): Recursos contra Extradición
+  Línea 189 (Property): Principales Tipos de Extradición
+  Línea 190 (Property): Principales Países con Acuerdos de Extradición
+  Línea 191 (Property): Fases del Proceso de Extradición
+  Línea 192 (Property): Requisitos Generales para la Extradición
+  Línea 193 (Property): Preguntas Frecuentes sobre Tipos de Extradición
+  Línea 194 (Property): Legislación y Referencias
+  Línea 195 (Property): Conclusión
+  Línea 184 (Property): Procedimientos de Extradición
+  Línea 185 (Property): Tipos de Extradición en España
+
+app\casos\[id]\page.tsx:
+  Línea 391 (JSX): Estrategia de Defensa
+  Línea 427 (JSX): Pruebas Clave
+  Línea 462 (JSX): Resolución
+  Línea 491 (JSX): Marco Legal
+  Línea 527 (JSX): Imágenes del Expediente
+  Línea 583 (JSX): Enlaces y Notas
+  Línea 598 (JSX): Noticias relacionadas:
+  Línea 610 (JSX): Enlaces oficiales:
+  Línea 659 (JSX): Ficha Rápida
+  Línea 665 (JSX): Categoría
+  Línea 669 (JSX): Delito Principal
+  Línea 687 (JSX): Tipo de Resolución
+  Línea 692 (JSX): Medidas Cautelares
+  Línea 738 (JSX): Nota de Privacidad
+  Línea 742 (JSX): Por motivos de confidencialidad y protección de datos, solo se muestran en esta web una selección representativa de nuestros casos. 
+                Si necesitas más ejemplos específicos o tienes un caso similar, no dudes en consultarlo directamente con nuestro equipo.
+  Línea 751 (JSX): Consultar con nuestro equipo
+
+app\cookies\page.tsx:
+  Línea 282 (JSX): Teléfono: +34 611 68 72 26
+
+app\layout.tsx:
+  Línea 10 (Property): STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España | Abogados Penalistas
+  Línea 69 (Property): STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España
+  Línea 86 (Property): STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España
+  Línea 11 (Property): Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Servicios en español, inglés y árabe. Extradiciones, OEDE, casos complejos.
+  Línea 70 (Property): Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Español, inglés y árabe.
+  Línea 87 (Property): Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM.
+  Línea 78 (Property): STANS ABOGADOS - Defensa Penal 24/7
+
+app\legal\page.tsx:
+  Línea 48 (JSX): YELMA ABOGADOS SL
+  Línea 57 (JSX): Dirección:
+  Línea 58 (JSX): C. de Abtao, 44, Oficina 7
+  Línea 59 (JSX): Retiro, 28007 Madrid, España
+  Línea 67 (JSX): Teléfono:
+
+app\not-found.tsx:
+  Línea 21 (JSX): Página no encontrada
+  Línea 24 (JSX): La página que buscas no existe o ha sido movida.
+  Línea 32 (JSX): Volver atrás
+  Línea 39 (JSX): Ir al inicio
+
+app\opengraph-image.tsx:
+  Línea 44 (JSX): STANS ABOGADOS
+  Línea 55 (JSX): Defensa Penal 24/7
+  Línea 65 (JSX): Especialistas en Derecho Penal en Madrid y España
+  Línea 84 (JSX): Respuesta &lt; 15 min
+  Línea 97 (JSX): Español-Inglés-Árabe
+
+app\twitter-image.tsx:
+  Línea 45 (JSX): STANS ABOGADOS
+  Línea 57 (JSX): Defensa Penal 24/7
+  Línea 68 (JSX): Especialistas en Derecho Penal en Madrid y España
+  Línea 104 (JSX): 🌍 Español-Inglés-Árabe
+
+components\AreaCard.tsx:
+  Línea 16 (JSX): ;
+  if (title.includes('Conducción') || title.includes('Alcoholemia')) return
+  Línea 19 (JSX): ;
+  if (title.includes('Informáticos')) return
+  Línea 62 (JSX): Ver defensa
+
+components\CaseCard.tsx:
+  Línea 33 (JSX): ;
+  if (cat.includes('odio') || cat.includes('expresión')) return
+
+components\Footer.tsx:
+  Línea 55 (JSX): Madrid, España
+
+components\Hero.tsx:
+  Línea 202 (JSX): Madrid, España
+
+components\LawyerCard.tsx:
+  Línea 186 (JSX): Arrastra para voltear →
+
+components\Navigation.tsx:
+  Línea 221 (JSX): Idioma / اللغة
+
+components\SchemaMarkup.tsx:
+  Línea 16 (Property): Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7.
+
+translations\index.ts:
+  Línea 15 (Property): STANS ABOGADOS
+  Línea 16 (Property): ABOGADOS PENALISTAS
+  Línea 33 (Property): NUESTRO EQUIPO
+  Línea 34 (Property): Abogados especialistas en derecho penal
+  Línea 68 (Property): ÁREAS DE DEFENSA PENAL
+  Línea 69 (Property): Especialistas en todas las ramas del derecho penal
+  Línea 78 (Property): Libertad de expresión y delitos de odio
+  Línea 83 (Property): Terrorismo (Audiencia Nacional)
+  Línea 88 (Property): Delitos contra las personas
+  Línea 93 (Property): Robos, patrimonio y crimen organizado
+  Línea 98 (Property): Delitos económicos y laborales
+  Línea 103 (Property): Orden público, drogas y ejecución penal
+  Línea 111 (Property): Nuestros Números y Resultados
+  Línea 112 (Property): Más de una década de experiencia defendiendo los derechos de nuestros clientes. Resultados que hablan por sí mismos.
+  Línea 138 (Property): PODEMOS RESOLVER SU PROBLEMA LEGAL CON EL MEJOR RESULTADO POSIBLE
+  Línea 266 (Property): Casos y Resultados
+  Línea 267 (Property): Descubre algunos de nuestros casos más destacados y los resultados obtenidos para nuestros clientes.
+  Línea 274 (Property): Filtrar por categoría:
+  Línea 295 (Property): ¿Tienes un caso similar?
+  Línea 301 (Property): Nota de Privacidad
+  Línea 309 (Property): Casos Destacados
+  Línea 310 (Property): Descubre algunos de nuestros casos más relevantes y exitosos en diferentes áreas del derecho penal.
+  Línea 340 (Property): Ficha Rápida
+  Línea 356 (Property): Nota de Privacidad
+  Línea 364 (Property): Blog Jurídico STANS
+  Línea 365 (Property): Conocimiento especializado en derecho penal. Artículos, guías y análisis sobre temas legales que afectan a nuestra sociedad.
+  Línea 367 (Property): Guías completas sobre temas específicos del derecho penal
+  Línea 369 (Property): Mantente informado con nuestros últimos análisis y guías legales
+  Línea 390 (Property): Procedimientos de Extradición
+  Línea 391 (Property): Guías completas sobre procedimientos de extradición entre España y otros países
+  Línea 395 (Property): Extradición en la Unión Europea
+  Línea 400 (Property): Extradición Internacional
+  Línea 405 (Property): Derechos del Extraditado
+  Línea 410 (Property): Defensas contra la Extradición
+  Línea 415 (Property): Extradición por Terrorismo
+  Línea 420 (Property): Extradición por Delitos Económicos
+  Línea 427 (Property): Derechos de los Detenidos
+  Línea 428 (Property): Todo lo que necesitas saber sobre tus derechos durante una detención
+  Línea 432 (Property): Derechos Constitucionales del Detenido
+  Línea 437 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 442 (Property): Derecho a la Asistencia Letrada
+  Línea 447 (Property): Comunicación con Familiares
+  Línea 452 (Property): Derechos en Dependencias Policiales
+  Línea 457 (Property): Protección contra Torturas
+  Línea 464 (Property): Defensa Penal Urgente
+  Línea 465 (Property): Asistencia jurídica inmediata en situaciones críticas
+  Línea 469 (Property): Derechos Inmediatos al Ser Detenido
+  Línea 474 (Property): Asistencia Letrada de Urgencia
+  Línea 479 (Property): Primeros Pasos en Comisaría
+  Línea 484 (Property): Habeas Corpus y Recurso de Amparo
+  Línea 489 (Property): Medidas Cautelares
+  Línea 494 (Property): Puesta a Disposición Judicial
+  Línea 513 (Property): Índice del Artículo
+  Línea 17 (Property): Defensa penal especializada en Madrid y toda España
+  Línea 35 (Property): Contamos con un equipo de abogados penalistas con amplia experiencia en la defensa de casos complejos.
+  Línea 70 (Property): Ofrecemos defensa especializada en todos los tipos de delitos penales
+  Línea 116 (Property): Defensas ganadas en tribunales
+  Línea 121 (Property): Especialización en derecho penal
+  Línea 126 (Property): Asistencia inmediata 24/7
+  Línea 131 (Property): Español, Inglés y Árabe
+  Línea 139 (Property): Expónganos su caso y lo llamaremos para darle más información.
+  Línea 296 (Property): Nuestro equipo de abogados penalistas está listo para defender tus derechos. Contacta ahora 24/7.
+  Línea 302 (Property): Por motivos de confidencialidad y protección de datos, solo se muestran en esta web una selección representativa de nuestros casos. Si necesitas más ejemplos específicos o tienes un caso similar, no dudes en consultarlo directamente con nuestro equipo.
+  Línea 357 (Property): Por motivos de confidencialidad y protección de datos, solo se muestran en esta web una selección representativa de nuestros casos. Si necesitas más ejemplos específicos o tienes un caso similar, no dudes en consultarlo directamente con nuestro equipo.
+  Línea 392 (Property): La extradición es un procedimiento complejo que requiere un conocimiento detallado de los tratados internacionales y la legislación nacional. Nuestros expertos te guían a través de cada fase del proceso.
+  Línea 429 (Property): Conocer tus derechos es fundamental. Desde el momento de la detención hasta la puesta en libertad, tienes garantías constitucionales que deben respetarse.
+  Línea 466 (Property): En situaciones de emergencia legal, cada minuto cuenta. Nuestro equipo especializado proporciona defensa penal urgente las 24 horas.
+  Línea 115 (Property): Casos Exitosos
+  Línea 120 (Property): Años de Experiencia
+  Línea 125 (Property): Hora de Respuesta
+  Línea 145 (Property): Explíquenos su caso en detalle...
+  Línea 372 (Property): Tu correo electrónico
