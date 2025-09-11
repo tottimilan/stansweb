@@ -175,6 +175,111 @@ export default function BlanqueoCapitalesPage() {
     }
   };
 
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'يُعد غسيل الأموال أحد أخطر الجرائم الاقتصادية في النظام القانوني الإسباني. منصوص عليه في <strong>القانون الجنائي</strong> في المواد 301-304، وفي <strong>القانون 10/2010</strong> للوقاية، يهدف هذا الجريمة إلى منع دمج الأموال الناتجة عن الأنشطة غير المشروعة في الدورة الاقتصادية القانونية.',
+      parrafo2: 'تحلل هذه الدليل التطور التشريعي الأخير، بما في ذلك الإصلاح لعام 2023 الذي شدد العقوبات على غسيل الأموال المرتبط بالجريمة المنظمة، واستراتيجيات الدفاع الأكثر فعالية بناءً على قضاء <strong>المحكمة العليا</strong>.'
+    },
+    marcoLegal: {
+      titulo: 'الإطار القانوني لغسيل الأموال',
+      reforma2023: {
+        titulo: 'إصلاح 2023',
+        descripcion: 'شدد إصلاح 2023 بشكل كبير العقوبات على غسيل الأموال المرتبط بالجريمة المنظمة، مما رفع الحد الأدنى للعقوبات وأضاف ظرفاً مشدداً محدداً.'
+      },
+      regulacion: {
+        titulo: 'التنظيم الشامل',
+        descripcion: 'يُنظم غسيل الأموال بموجب قوانين متعددة تشكل نظاماً شاملاً للوقاية والقمع.'
+      },
+      conductasTipificadas: 'السلوكيات المعاقب عليها',
+      agravantesEspecificos: 'الظروف المشددة الخاصة'
+    },
+    fasesBlanqueo: {
+      titulo: 'المراحل الثلاث لغسيل الأموال',
+      colocacion: {
+        titulo: 'المرحلة 1: التوطين',
+        descripcion: 'إدخال الأموال غير المشروعة في النظام المالي الرسمي.',
+        metodos: [
+          'الإيداعات المصرفية',
+          'شراء الأصول',
+          'التحويلات الدولية',
+          'الاستثمارات العقارية'
+        ]
+      },
+      layering: {
+        titulo: 'المرحلة 2: الطبقات',
+        descripcion: 'إنشاء طبقات متعددة من المعاملات لإخفاء الأصل.',
+        metodos: [
+          'التحويلات المعقدة',
+          'تحويل العملات',
+          'إنشاء شركات واجهة',
+          'العمليات في المناطق المعفاة من الضرائب'
+        ]
+      },
+      integracion: {
+        titulo: 'المرحلة 3: الدمج',
+        descripcion: 'إعادة دمج في الدورة الاقتصادية القانونية كأموال تبدو نظيفة.',
+        metodos: [
+          'شراء السلع الفاخرة',
+          'الاستثمارات الشرعية',
+          'الاستهلاك الواضح',
+          'إعادة الاستثمار التجاري'
+        ]
+      }
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'El blanqueo de capitales representa uno de los delitos económicos más graves en el ordenamiento jurídico español. Regulado por el <strong>Código Penal</strong> en sus artículos 301-304, y por la <strong>Ley 10/2010</strong> de prevención, este delito busca impedir la integración de fondos procedentes de actividades ilícitas en el circuito económico legal.',
+      parrafo2: 'Esta guía analiza la evolución legislativa reciente, incluyendo la reforma de 2023 que endureció las penas por blanqueo relacionado con crimen organizado, y las estrategias de defensa más efectivas basadas en la jurisprudencia del <strong>Tribunal Supremo</strong>.'
+    },
+    marcoLegal: {
+      titulo: 'Marco Legal del Blanqueo de Capitales',
+      reforma2023: {
+        titulo: 'Reforma 2023',
+        descripcion: 'La reforma de 2023 endureció significativamente las penas por blanqueo relacionado con crimen organizado, elevando las penas mínimas y añadiendo agravantes específicos.'
+      },
+      regulacion: {
+        titulo: 'Regulación Integral',
+        descripcion: 'El blanqueo está regulado por múltiples normas que conforman un sistema integral de prevención y represión.'
+      },
+      conductasTipificadas: 'Conductas Tipificadas',
+      agravantesEspecificos: 'Agravantes Específicos'
+    },
+    fasesBlanqueo: {
+      titulo: 'Las Tres Fases del Blanqueo de Capitales',
+      colocacion: {
+        titulo: 'Fase 1: Colocación',
+        descripcion: 'Introducción de fondos ilícitos en el sistema financiero formal.',
+        metodos: [
+          'Depósitos bancarios',
+          'Compra de activos',
+          'Transferencias internacionales',
+          'Inversiones inmobiliarias'
+        ]
+      },
+      layering: {
+        titulo: 'Fase 2: Capas (Layering)',
+        descripcion: 'Creación de múltiples capas de transacciones para ocultar el origen.',
+        metodos: [
+          'Transferencias complejas',
+          'Conversión de divisas',
+          'Creación de sociedades pantalla',
+          'Operaciones offshore'
+        ]
+      },
+      integracion: {
+        titulo: 'Fase 3: Integración',
+        descripcion: 'Reincorporación al circuito económico legal como fondos aparentemente limpios.',
+        metodos: [
+          'Compra de bienes de lujo',
+          'Inversiones legítimas',
+          'Consumo ostentoso',
+          'Reinversión empresarial'
+        ]
+      }
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
     { label: blogTranslations.hero.title }
@@ -266,17 +371,10 @@ export default function BlanqueoCapitalesPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  El blanqueo de capitales representa uno de los delitos económicos más graves
-                  en el ordenamiento jurídico español. Regulado por el <strong>Código Penal</strong>
-                  en sus artículos 301-304, y por la <strong>Ley 10/2010</strong> de prevención,
-                  este delito busca impedir la integración de fondos procedentes de actividades ilícitas
-                  en el circuito económico legal.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía analiza la evolución legislativa reciente, incluyendo la reforma de 2023
-                  que endureció las penas por blanqueo relacionado con crimen organizado,
-                  y las estrategias de defensa más efectivas basadas en la jurisprudencia
-                  del <strong>Tribunal Supremo</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -289,23 +387,25 @@ export default function BlanqueoCapitalesPage() {
                 className="mb-12"
               >
                 <h2 id="marco-legal-del-blanqueo-de-capitales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Marco Legal del Blanqueo de Capitales
+                  {contentTranslations.marcoLegal.titulo}
                 </h2>
 
                 <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-8 mb-8">
                   <div className="flex items-center gap-3 mb-6">
                     <Banknote className="h-8 w-8 text-emerald-600" />
                     <div>
-                      <h3 className="text-xl font-semibold text-black">Reforma 2023</h3>
+                      <h3 className="text-xl font-semibold text-black">{contentTranslations.marcoLegal.reforma2023.titulo}</h3>
                       <p className="text-black/80 mt-1">
-                        Endurecimiento de penas para blanqueo relacionado con crimen organizado
+                        {contentTranslations.marcoLegal.reforma2023.descripcion}
                       </p>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-black mb-3">Conductas Tipificadas</h4>
+                      <h4 className="font-semibold text-black mb-3">
+                        {contentTranslations.marcoLegal.conductasTipificadas}
+                      </h4>
                       <ul className="space-y-2 text-black/80">
                         <li>• Conversión de bienes ilícitos</li>
                         <li>• Transferencia de activos</li>
@@ -316,7 +416,9 @@ export default function BlanqueoCapitalesPage() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-black mb-3">Agravantes Específicos</h4>
+                      <h4 className="font-semibold text-black mb-3">
+                        {contentTranslations.marcoLegal.agravantesEspecificos}
+                      </h4>
                       <ul className="space-y-2 text-black/80">
                         <li>• Importe superior a 50.000€</li>
                         <li>• Origen en crimen organizado</li>
@@ -353,7 +455,7 @@ export default function BlanqueoCapitalesPage() {
                 className="mb-12"
               >
                 <h2 id="las-tres-fases-del-blanqueo-de-capitales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Las Tres Fases del Blanqueo de Capitales
+                  {contentTranslations.fasesBlanqueo.titulo}
                 </h2>
 
                 <div className="space-y-8">
