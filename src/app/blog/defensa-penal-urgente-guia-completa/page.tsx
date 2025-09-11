@@ -35,7 +35,102 @@ const relatedArticles = [
 export default function DefensaPenalUrgentePage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    recursosLegales: {
+      titulo: 'الموارد القانونية المتاحة',
+      descripcion: 'إذا كنت تعتقد أن حقوقك قد انتُهكت أثناء الاعتقال، يتوفر لديك عدة موارد قانونية:',
+      habeasCorpus: {
+        titulo: 'الاعتقال غير القانوني',
+        descripcion: 'إجراء عاجل لمراجعة قانونية الاعتقال.',
+        caracteristicas: [
+          'قرار خلال 24 ساعة',
+          'يمكن للمعتقل أو الغير طلبها',
+          'يراجع قانونية الاعتقال'
+        ]
+      },
+      recursoAmparo: {
+        titulo: 'استئناف الحماية',
+        descripcion: 'استئناف أمام المحكمة الدستورية بسبب انتهاك حقوق أساسية.',
+        caracteristicas: [
+          'مهلة: 30 يوماً',
+          'انتهاك حقوق أساسية',
+          'آخر مرحلة قضائية'
+        ]
+      },
+      recursoApelacion: {
+        titulo: 'استئناف الاستئناف',
+        descripcion: 'ضد القرارات المتعلقة بالتدابير الاحترازية.',
+        caracteristicas: [
+          'مهلة: 3 أيام',
+          'ضد السجن المؤقت',
+          'أمام المحكمة الإقليمية'
+        ]
+      },
+      denunciaDisciplinaria: {
+        titulo: 'الشكوى التأديبية',
+        descripcion: 'ضد الضباط الذين ينتهكون حقوقك أثناء الاعتقال.',
+        caracteristicas: [
+          'أمام الجهات الشرطية',
+          'عقوبات تأديبية',
+          'تعويض عن الأضرار'
+        ]
+      }
+    },
+    ctaSection: {
+      titulo: 'هل تحتاج دفاعاً جنائياً عاجلاً؟',
+      descripcion: 'فريقنا من المحامين الجنائيين متاح 24/7 لحماية حقوقك منذ اللحظة الأولى. لا تنتظر، كل دقيقة مهمة في دفاعك.',
+      whatsappText: 'مرحباً، أحتاج دفاعاً جنائياً عاجلاً. إنه طوارئ.'
+    }
+  } : {
+    recursosLegales: {
+      titulo: 'Recursos Legales Disponibles',
+      descripcion: 'Si consideras que se han vulnerado tus derechos durante la detención, dispones de varios recursos legales:',
+      habeasCorpus: {
+        titulo: 'Habeas Corpus',
+        descripcion: 'Procedimiento urgente para revisar la legalidad de la detención.',
+        caracteristicas: [
+          'Resolución en 24 horas',
+          'Puede solicitar el detenido o terceros',
+          'Revisa legalidad de la detención'
+        ]
+      },
+      recursoAmparo: {
+        titulo: 'Recurso de Amparo',
+        descripcion: 'Recurso ante el Tribunal Constitucional por vulneración de derechos fundamentales.',
+        caracteristicas: [
+          'Plazo: 30 días',
+          'Vulneración derechos fundamentales',
+          'Última instancia judicial'
+        ]
+      },
+      recursoApelacion: {
+        titulo: 'Recurso de Apelación',
+        descripcion: 'Contra las resoluciones sobre medidas cautelares.',
+        caracteristicas: [
+          'Plazo: 3 días',
+          'Contra prisión provisional',
+          'Ante Audiencia Provincial'
+        ]
+      },
+      denunciaDisciplinaria: {
+        titulo: 'Denuncia Disciplinaria',
+        descripcion: 'Contra agentes que vulneren tus derechos durante la detención.',
+        caracteristicas: [
+          'Ante organismos policiales',
+          'Sanciones disciplinarias',
+          'Indemnización por daños'
+        ]
+      }
+    },
+    ctaSection: {
+      titulo: '¿Necesitas Defensa Penal Urgente?',
+      descripcion: 'Nuestro equipo de abogados penalistas está disponible 24/7 para proteger tus derechos desde el primer momento. No esperes, cada minuto cuenta en tu defensa.',
+      whatsappText: 'Hola, necesito defensa penal urgente. Es una emergencia.'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
@@ -43,12 +138,12 @@ export default function DefensaPenalUrgentePage() {
   ];
 
   const tocItems = [
-    { id: 'derechos-inmediatos', title: 'Derechos Inmediatos al Ser Detenido', level: 2 },
-    { id: 'proceso-detencion', title: 'Proceso y Plazos de Detención', level: 2 },
-    { id: 'fases-proceso', title: 'Fases del Proceso de Detención', level: 2 },
-    { id: 'que-hacer-no-hacer', title: 'Qué Hacer y Qué NO Hacer', level: 2 },
-    { id: 'medidas-cautelares', title: 'Medidas Cautelares Posibles', level: 2 },
-    { id: 'recursos-disponibles', title: 'Recursos Legales Disponibles', level: 2 }
+    { id: 'derechos-inmediatos', title: language === 'ar' ? 'الحقوق الفورية عند الاعتقال' : 'Derechos Inmediatos al Ser Detenido', level: 2 },
+    { id: 'proceso-detencion', title: language === 'ar' ? 'إجراءات ومواعيد الاعتقال' : 'Proceso y Plazos de Detención', level: 2 },
+    { id: 'fases-proceso', title: language === 'ar' ? 'مراحل إجراء الاعتقال' : 'Fases del Proceso de Detención', level: 2 },
+    { id: 'que-hacer-no-hacer', title: language === 'ar' ? 'ما يجب فعله وما لا يجب فعله' : 'Qué Hacer y Qué NO Hacer', level: 2 },
+    { id: 'medidas-cautelares', title: language === 'ar' ? 'التدابير الاحترازية الممكنة' : 'Medidas Cautelares Posibles', level: 2 },
+    { id: 'recursos-disponibles', title: language === 'ar' ? 'الموارد القانونية المتاحة' : 'Recursos Legales Disponibles', level: 2 }
   ];
 
   return (
@@ -409,59 +504,59 @@ export default function DefensaPenalUrgentePage() {
 
                 {/* Recursos Disponibles */}
                 <section id="recursos-disponibles">
-                  <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6">Recursos Legales Disponibles</h2>
-                  
+                  <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6">{blogTranslations.recursosLegales.titulo}</h2>
+
                   <div className="space-y-6">
                     <p className="text-black/80 leading-relaxed">
-                      Si consideras que se han vulnerado tus derechos durante la detención, dispones de varios recursos legales:
+                      {blogTranslations.recursosLegales.descripcion}
                     </p>
-                    
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       <div className="bg-blue-50 p-6 rounded-xl">
-                        <h3 className="font-semibold text-blue-900 mb-3">Habeas Corpus</h3>
+                        <h3 className="font-semibold text-blue-900 mb-3">{blogTranslations.recursosLegales.habeasCorpus.titulo}</h3>
                         <p className="text-blue-800 text-sm mb-3">
-                          Procedimiento urgente para revisar la legalidad de la detención.
+                          {blogTranslations.recursosLegales.habeasCorpus.descripcion}
                         </p>
                         <ul className="text-blue-700 text-xs space-y-1">
-                          <li>• Resolución en 24 horas</li>
-                          <li>• Puede solicitar el detenido o terceros</li>
-                          <li>• Revisa legalidad de la detención</li>
+                          <li>• {blogTranslations.recursosLegales.habeasCorpus.caracteristicas[0]}</li>
+                          <li>• {blogTranslations.recursosLegales.habeasCorpus.caracteristicas[1]}</li>
+                          <li>• {blogTranslations.recursosLegales.habeasCorpus.caracteristicas[2]}</li>
                         </ul>
                       </div>
-                      
+
                       <div className="bg-purple-50 p-6 rounded-xl">
-                        <h3 className="font-semibold text-purple-900 mb-3">Recurso de Amparo</h3>
+                        <h3 className="font-semibold text-purple-900 mb-3">{blogTranslations.recursosLegales.recursoAmparo.titulo}</h3>
                         <p className="text-purple-800 text-sm mb-3">
-                          Recurso ante el Tribunal Constitucional por vulneración de derechos fundamentales.
+                          {blogTranslations.recursosLegales.recursoAmparo.descripcion}
                         </p>
                         <ul className="text-purple-700 text-xs space-y-1">
-                          <li>• Plazo: 30 días</li>
-                          <li>• Vulneración derechos fundamentales</li>
-                          <li>• Última instancia judicial</li>
+                          <li>• {blogTranslations.recursosLegales.recursoAmparo.caracteristicas[0]}</li>
+                          <li>• {blogTranslations.recursosLegales.recursoAmparo.caracteristicas[1]}</li>
+                          <li>• {blogTranslations.recursosLegales.recursoAmparo.caracteristicas[2]}</li>
                         </ul>
                       </div>
-                      
+
                       <div className="bg-green-50 p-6 rounded-xl">
-                        <h3 className="font-semibold text-green-900 mb-3">Recurso de Apelación</h3>
+                        <h3 className="font-semibold text-green-900 mb-3">{blogTranslations.recursosLegales.recursoApelacion.titulo}</h3>
                         <p className="text-green-800 text-sm mb-3">
-                          Contra las resoluciones sobre medidas cautelares.
+                          {blogTranslations.recursosLegales.recursoApelacion.descripcion}
                         </p>
                         <ul className="text-green-700 text-xs space-y-1">
-                          <li>• Plazo: 3 días</li>
-                          <li>• Contra prisión provisional</li>
-                          <li>• Ante Audiencia Provincial</li>
+                          <li>• {blogTranslations.recursosLegales.recursoApelacion.caracteristicas[0]}</li>
+                          <li>• {blogTranslations.recursosLegales.recursoApelacion.caracteristicas[1]}</li>
+                          <li>• {blogTranslations.recursosLegales.recursoApelacion.caracteristicas[2]}</li>
                         </ul>
                       </div>
-                      
+
                       <div className="bg-orange-50 p-6 rounded-xl">
-                        <h3 className="font-semibold text-orange-900 mb-3">Denuncia Disciplinaria</h3>
+                        <h3 className="font-semibold text-orange-900 mb-3">{blogTranslations.recursosLegales.denunciaDisciplinaria.titulo}</h3>
                         <p className="text-orange-800 text-sm mb-3">
-                          Contra agentes que vulneren tus derechos durante la detención.
+                          {blogTranslations.recursosLegales.denunciaDisciplinaria.descripcion}
                         </p>
                         <ul className="text-orange-700 text-xs space-y-1">
-                          <li>• Ante organismos policiales</li>
-                          <li>• Sanciones disciplinarias</li>
-                          <li>• Indemnización por daños</li>
+                          <li>• {blogTranslations.recursosLegales.denunciaDisciplinaria.caracteristicas[0]}</li>
+                          <li>• {blogTranslations.recursosLegales.denunciaDisciplinaria.caracteristicas[1]}</li>
+                          <li>• {blogTranslations.recursosLegales.denunciaDisciplinaria.caracteristicas[2]}</li>
                         </ul>
                       </div>
                     </div>
@@ -472,20 +567,23 @@ export default function DefensaPenalUrgentePage() {
                 <section className="bg-charleston text-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl mx-2 sm:mx-0">
                   <div className="text-center">
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gold mb-3 sm:mb-4">
-                      ¿Necesitas Defensa Penal Urgente?
+                      {blogTranslations.ctaSection.titulo}
                     </h3>
                     <p className="text-white/90 mb-4 sm:mb-6 max-w-2xl mx-auto text-sm sm:text-base">
-                      Nuestro equipo de abogados penalistas está disponible 24/7 para proteger tus derechos desde el primer momento. 
-                      No esperes, cada minuto cuenta en tu defensa.
+                      {blogTranslations.ctaSection.descripcion}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                       <Link
-                        href={`https://wa.me/${WHATSAPP}?text=Hola, necesito defensa penal urgente. Es una emergencia.`}
+                        href={`https://wa.me/${WHATSAPP}?text=${blogTranslations.ctaSection.whatsappText}`}
                         className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-3 sm:px-6 py-2.5 sm:py-3 rounded-lg text-xs sm:text-base font-semibold hover:bg-green-700 transition w-full sm:w-auto max-w-xs sm:max-w-none"
                       >
                         <Phone className="h-4 w-4 flex-shrink-0" />
-                        <span className="hidden sm:inline whitespace-nowrap">WhatsApp 24/7 - URGENTE</span>
-                        <span className="sm:hidden text-center leading-tight">WhatsApp 24/7</span>
+                        <span className="hidden sm:inline whitespace-nowrap">
+                          {language === 'ar' ? 'واتساب 24/7 - طوارئ' : 'WhatsApp 24/7 - URGENTE'}
+                        </span>
+                        <span className="sm:hidden text-center leading-tight">
+                          {language === 'ar' ? 'واتساب 24/7' : 'WhatsApp 24/7'}
+                        </span>
                       </Link>
                       <Link
                         href="/#contacto"
