@@ -14,21 +14,22 @@ import { ChevronDown, Filter, Award, Users, Clock, Shield, FileText, Scale, MapP
 import casosData from '../../../public/casos/casos-procesados.json';
 import seoInfo from '../../../public/casos/seo-info.json';
 
-// Categorías únicas para el filtro
-const categorias = [
-  'Todos',
-  'Delitos de odio y libertad de expresión',
-  'Terrorismo y Audiencia Nacional',
-  'Robos con violencia y grupo criminal',
-  'Delitos contra las personas',
-  'Delitos económicos y contra el patrimonio',
-  'Delitos contra el orden público, drogas y ejecución penal'
+// Función para obtener categorías traducidas
+const getCategorias = (t: any) => [
+  t.casos.filtros.todos,
+  t.casos.categorias.delitosOdio,
+  t.casos.categorias.terrorismo,
+  t.casos.categorias.robosViolencia,
+  t.casos.categorias.delitosPersonas,
+  t.casos.categorias.delitosEconomicos,
+  t.casos.categorias.ordenPublico
 ];
 
 export default function CasosPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  const [categoriaFiltro, setCategoriaFiltro] = useState<string>('Todos');
+  const categorias = getCategorias(t);
+  const [categoriaFiltro, setCategoriaFiltro] = useState<string>(t.casos.filtros.todos);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const filterRef = useRef<HTMLDivElement>(null);
 
@@ -49,12 +50,24 @@ export default function CasosPage() {
     };
   }, [isFilterOpen]);
 
+  // Mapa de categorías traducidas a las originales del JSON
+  const categoriaMap: Record<string, string> = {
+    [t.casos.filtros.todos]: 'Todos',
+    [t.casos.categorias.delitosOdio]: 'Delitos de odio y libertad de expresión',
+    [t.casos.categorias.terrorismo]: 'Terrorismo y Audiencia Nacional',
+    [t.casos.categorias.robosViolencia]: 'Robos con violencia y grupo criminal',
+    [t.casos.categorias.delitosPersonas]: 'Delitos contra las personas',
+    [t.casos.categorias.delitosEconomicos]: 'Delitos económicos y contra el patrimonio',
+    [t.casos.categorias.ordenPublico]: 'Delitos contra el orden público, drogas y ejecución penal'
+  };
+
   const casosFiltrados = useMemo(() => {
-    if (categoriaFiltro === 'Todos') {
+    const categoriaOriginal = categoriaMap[categoriaFiltro];
+    if (categoriaOriginal === 'Todos') {
       return casosData;
     }
-    return casosData.filter(caso => caso.categoria === categoriaFiltro);
-  }, [categoriaFiltro]);
+    return casosData.filter(caso => caso.categoria === categoriaOriginal);
+  }, [categoriaFiltro, categoriaMap]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -133,11 +146,11 @@ export default function CasosPage() {
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
                 className="flex items-center justify-between w-full sm:w-auto gap-2 bg-black/50 hover:bg-black/70 border border-gold/30 hover:border-apricot/50 px-4 py-3 sm:px-4 sm:py-2 rounded-lg transition-all duration-300"
               >
-                                 <span className="text-offwhite">
-                   {categoriaFiltro === 'Todos' 
-                     ? t.casos.filtros.todasCategorias
-                     : categoriaFiltro
-                   }
+                <span className="text-offwhite">
+                  {categoriaFiltro === t.casos.filtros.todos 
+                    ? t.casos.filtros.todasCategorias
+                    : categoriaFiltro
+                  }
                  </span>
                 <ChevronDown className={`w-4 h-4 text-gold transition-transform duration-300 ${isFilterOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -153,11 +166,11 @@ export default function CasosPage() {
                   <div className="py-2">
                                          <button
                        onClick={() => {
-                         setCategoriaFiltro('Todos');
+                         setCategoriaFiltro(t.casos.filtros.todos);
                          setIsFilterOpen(false);
                        }}
                        className={`w-full text-left px-4 py-2 hover:bg-black/30 transition-colors ${
-                         categoriaFiltro === 'Todos' ? 'text-gold bg-black/20' : 'text-offwhite'
+                         categoriaFiltro === t.casos.filtros.todos ? 'text-gold bg-black/20' : 'text-offwhite'
                        }`}
                      >
                        {t.casos.filtros.todasCategorias}

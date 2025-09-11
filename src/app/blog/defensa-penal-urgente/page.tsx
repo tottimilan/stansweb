@@ -96,7 +96,7 @@ export default function DefensaPenalUrgentePage() {
   const t = translations[language];
 
   const breadcrumbItems = [
-    { label: 'Blog', href: '/blog' },
+    { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Defensa Penal Urgente' }
   ];
 
@@ -137,7 +137,7 @@ export default function DefensaPenalUrgentePage() {
                   href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold hover:bg-gold hover:text-black transition"
                 >
-                  Contacta Ahora
+                  {t.blog.contactaAhora}
                 </Link>
               </div>
             </motion.div>
@@ -283,7 +283,7 @@ export default function DefensaPenalUrgentePage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-black mb-4">
-                Artículos Relacionados
+                {t.blog.articulosRelacionados}
               </h2>
               <p className="text-black/70 text-lg">
                 Profundiza en cada aspecto de la defensa penal urgente
@@ -352,7 +352,7 @@ export default function DefensaPenalUrgentePage() {
                   href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition"
                 >
-                  Contacta Ahora
+                  {t.blog.contactaAhora}
                 </Link>
               </div>
             </motion.div>

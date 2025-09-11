@@ -180,7 +180,7 @@ export default function RecursosExtradicionPage() {
   const t = translations[language];
   
   const breadcrumbItems = [
-    { label: 'Blog', href: '/blog' },
+    { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
     { label: 'Recursos Contra la Extradición' }
   ];
@@ -227,7 +227,7 @@ export default function RecursosExtradicionPage() {
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
-                  14 min de lectura
+                  14 {t.blog.minLectura}
                 </div>
               </div>
 
@@ -684,7 +684,7 @@ export default function RecursosExtradicionPage() {
               viewport={{ once: true }}
               className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gold mb-4">
-                Artículos Relacionados
+                {t.blog.articulosRelacionados}
               </h2>
               <p className="text-white/80">
                 Más información sobre procedimientos de extradición

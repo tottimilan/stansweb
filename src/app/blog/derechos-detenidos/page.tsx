@@ -135,7 +135,7 @@ export default function DerechosDetenidosPage() {
   const t = translations[language];
 
   const breadcrumbItems = [
-    { label: 'Blog', href: '/blog' },
+    { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Derechos de Detenidos' }
   ];
 
@@ -480,7 +480,7 @@ export default function DerechosDetenidosPage() {
                   href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-black text-black px-8 py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition"
                 >
-                  Contacta Ahora
+                  {t.blog.contactaAhora}
                 </Link>
               </div>
             </motion.div>

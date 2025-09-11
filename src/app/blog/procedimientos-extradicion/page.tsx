@@ -104,7 +104,7 @@ export default function ProcedimientosExtradicionPage() {
   const t = translations[language];
 
   const breadcrumbItems = [
-    { label: 'Blog', href: '/blog' },
+    { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Procedimientos de Extradición' }
   ];
 

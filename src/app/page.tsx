@@ -109,7 +109,7 @@ export default function Page() {
         <ol itemScope itemType="https://schema.org/BreadcrumbList">
           <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
             <a itemProp="item" href="/">
-              <span itemProp="name">Inicio</span>
+              <span itemProp="name">{t.breadcrumb.inicio}</span>
             </a>
             <meta itemProp="position" content="1" />
           </li>
@@ -169,7 +169,7 @@ export default function Page() {
           <div 
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lawyer-cards-container"
             role="list"
-            aria-label="Lista de abogados del equipo"
+            aria-label={t.common.listaAbogados}
           >
             {lawyers.map((lawyer, index) => (
               <motion.div

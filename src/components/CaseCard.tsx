@@ -81,7 +81,7 @@ export default function CaseCard({ caso }: Props) {
             ? 'bg-blue-600 text-blue-100'
             : 'bg-emerald-700 text-emerald-100'
         }`}>
-          {caso.id === 19 ? (language === 'ar' ? 'قيد التنفيذ' : 'EN CURSO') : (language === 'ar' ? 'مؤاتي' : 'FAVORABLE')}
+          {caso.id === 19 ? t.casosDestacados.enCurso : t.casosDestacados.favorable}
         </span>
       </div>
 

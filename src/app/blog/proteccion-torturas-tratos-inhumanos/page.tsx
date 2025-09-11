@@ -234,7 +234,7 @@ export default function ProteccionTorturasPage() {
   const t = translations[language];
   
   const breadcrumbItems = [
-    { label: 'Blog', href: '/blog' },
+    { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
     { label: 'Protección contra Torturas y Tratos Inhumanos' }
   ];
@@ -281,7 +281,7 @@ export default function ProteccionTorturasPage() {
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
-                  16 min de lectura
+                  16 {t.blog.minLectura}
                 </div>
               </div>
 
@@ -754,7 +754,7 @@ export default function ProteccionTorturasPage() {
               viewport={{ once: true }}
               className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gold mb-4">
-                Artículos Relacionados
+                {t.blog.articulosRelacionados}
               </h2>
               <p className="text-white/80">
                 Más información sobre derechos de detenidos

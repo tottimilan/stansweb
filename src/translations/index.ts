@@ -223,7 +223,16 @@ export const translations = {
       filtros: {
         title: 'Filtrar por categoría:',
         todasCategorias: 'Todas las categorías',
-        noEncontrados: 'No se encontraron casos para esta categoría.'
+        noEncontrados: 'No se encontraron casos para esta categoría.',
+        todos: 'Todos'
+      },
+      categorias: {
+        delitosOdio: 'Delitos de odio y libertad de expresión',
+        terrorismo: 'Terrorismo y Audiencia Nacional', 
+        robosViolencia: 'Robos con violencia y grupo criminal',
+        delitosPersonas: 'Delitos contra las personas',
+        delitosEconomicos: 'Delitos económicos y contra el patrimonio',
+        ordenPublico: 'Delitos contra el orden público, drogas y ejecución penal'
       },
       casos: {
         verDetalles: 'Ver detalles',
@@ -253,7 +262,9 @@ export const translations = {
       organo: 'Órgano:',
       resultado: 'Resultado:',
       tipo: 'Tipo:',
-      verTodosCasos: 'Ver todos los casos'
+      verTodosCasos: 'Ver todos los casos',
+      favorable: 'FAVORABLE',
+      enCurso: 'EN CURSO'
     },
 
     // Individual Case Page
@@ -316,14 +327,21 @@ export const translations = {
       actualizacionSemanal: 'Actualización Semanal',
       casosReales: 'Casos Reales',
       min: 'min',
-      articles: 'artículos'
+      articles: 'artículos',
+      contactaAhora: 'Contacta Ahora',
+      articulosRelacionados: 'Artículos Relacionados',
+      verMas: 'Ver más',
+      leerMas: 'Leer más',
+      minutosLectura: 'minutos de lectura',
+      minLectura: 'min de lectura'
     },
 
     // Breadcrumb Component
     breadcrumb: {
       inicio: 'Inicio',
       volver: 'Volver',
-      navegacion: 'Navegación de ruta'
+      navegacion: 'Navegación de ruta',
+      blog: 'Blog'
     },
 
     // Table of Contents Component
@@ -558,7 +576,16 @@ export const translations = {
       filtros: {
         title: 'تصفية حسب الفئة:',
         todasCategorias: 'جميع الفئات',
-        noEncontrados: 'لم يتم العثور على قضايا لهذه الفئة.'
+        noEncontrados: 'لم يتم العثور على قضايا لهذه الفئة.',
+        todos: 'الجميع'
+      },
+      categorias: {
+        delitosOdio: 'جرائم الكراهية وحرية التعبير',
+        terrorismo: 'الإرهاب والمحكمة الوطنية',
+        robosViolencia: 'السرقة بالعنف والجماعة الإجرامية',
+        delitosPersonas: 'الجرائم ضد الأشخاص',
+        delitosEconomicos: 'الجرائم الاقتصادية وضد الممتلكات',
+        ordenPublico: 'الجرائم ضد النظام العام والمخدرات والتنفيذ الجنائي'
       },
       casos: {
         verDetalles: 'عرض التفاصيل',
@@ -588,7 +615,9 @@ export const translations = {
       organo: 'الجهة:',
       resultado: 'النتيجة:',
       tipo: 'النوع:',
-      verTodosCasos: 'عرض جميع القضايا'
+      verTodosCasos: 'عرض جميع القضايا',
+      favorable: 'مؤاتي',
+      enCurso: 'قيد التنفيذ'
     },
 
     // Individual Case Page
@@ -651,14 +680,21 @@ export const translations = {
       actualizacionSemanal: 'تحديث أسبوعي',
       casosReales: 'قضايا حقيقية',
       min: 'دقيقة',
-      articles: 'مقالات'
+      articles: 'مقالات',
+      contactaAhora: 'تواصل الآن',
+      articulosRelacionados: 'المقالات ذات الصلة',
+      verMas: 'عرض المزيد',
+      leerMas: 'اقرأ المزيد',
+      minutosLectura: 'دقائق للقراءة',
+      minLectura: 'دقيقة للقراءة'
     },
 
     // Breadcrumb Component
     breadcrumb: {
       inicio: 'الرئيسية',
       volver: 'رجوع',
-      navegacion: 'التنقل في المسار'
+      navegacion: 'التنقل في المسار',
+      blog: 'المدونة'
     },
 
     // Table of Contents Component

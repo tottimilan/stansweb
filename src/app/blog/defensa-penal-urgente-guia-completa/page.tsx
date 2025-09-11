@@ -37,7 +37,7 @@ export default function DefensaPenalUrgentePage() {
   const t = translations[language];
   
   const breadcrumbItems = [
-    { label: 'Blog', href: '/blog' },
+    { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
     { label: 'Guía Completa de Defensa Penal Urgente' }
   ];
@@ -526,7 +526,7 @@ export default function DefensaPenalUrgentePage() {
               viewport={{ once: true }}
               className="text-center mb-8 sm:mb-12"
             >
-              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-3 sm:mb-4">Artículos Relacionados</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-3 sm:mb-4">{t.blog.articulosRelacionados}</h2>
               <p className="text-black/70 text-sm sm:text-base lg:text-lg px-4">
                 Amplía tu conocimiento sobre defensa penal con estos artículos especializados
               </p>

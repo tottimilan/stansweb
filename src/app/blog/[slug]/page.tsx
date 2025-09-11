@@ -275,7 +275,7 @@ function BlogPostContent({ slug }: { slug: string }) {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-gold mb-4">
-                Artículos Relacionados
+                {t.blog.articulosRelacionados}
               </h2>
               <p className="text-white/80">
                 Explora más contenido sobre este tema

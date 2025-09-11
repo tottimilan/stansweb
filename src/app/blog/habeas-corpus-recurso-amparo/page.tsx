@@ -157,7 +157,7 @@ export default function HabeasCorpusPage() {
   const t = translations[language];
   
   const breadcrumbItems = [
-    { label: 'Blog', href: '/blog' },
+    { label: t.breadcrumb.blog, href: '/blog' },
     { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
     { label: 'Habeas Corpus y Recurso de Amparo' }
   ];
@@ -203,7 +203,7 @@ export default function HabeasCorpusPage() {
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
-                  12 min de lectura
+                  12 {t.blog.minLectura}
                 </div>
               </div>
 
@@ -629,7 +629,7 @@ export default function HabeasCorpusPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-gold mb-4">
-                Artículos Relacionados
+                {t.blog.articulosRelacionados}
               </h2>
               <p className="text-white/80">
                 Más información sobre recursos de amparo
