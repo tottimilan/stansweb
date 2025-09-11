@@ -244,6 +244,17 @@ export const translations = {
       }
     },
 
+    // Cases Highlight Section (Home Page)
+    casosDestacados: {
+      title: 'Casos Destacados',
+      subtitle: 'Descubre algunos de nuestros casos más relevantes y exitosos en diferentes áreas del derecho penal.',
+      verCasoCompleto: 'Ver caso completo',
+      organo: 'Órgano:',
+      resultado: 'Resultado:',
+      año: 'Año:',
+      verTodosCasos: 'Ver todos los casos'
+    },
+
     // Individual Case Page
     caso: {
       volverCasos: 'Volver a casos',
@@ -531,6 +542,17 @@ export const translations = {
         description: 'لأسباب السرية وحماية البيانات، يتم عرض مجموعة تمثيلية فقط من قضايانا في هذا الموقع. إذا كنت تحتاج إلى المزيد من الأمثلة المحددة أو لديك قضية مماثلة، لا تتردد في استشارتها مباشرة مع فريقنا.',
         consultarEquipo: 'استشارة فريقنا'
       }
+    },
+
+    // Cases Highlight Section (Home Page)
+    casosDestacados: {
+      title: 'القضايا المميزة',
+      subtitle: 'اكتشف بعض من أبرز قضايانا والأكثر نجاحاً في مختلف مجالات القانون الجنائي.',
+      verCasoCompleto: 'عرض القضية كاملة',
+      organo: 'الجهة:',
+      resultado: 'النتيجة:',
+      año: 'السنة:',
+      verTodosCasos: 'عرض جميع القضايا'
     },
 
     // Individual Case Page

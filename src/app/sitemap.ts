@@ -1,82 +1,79 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next"
+import casosData from "../../public/casos/casos-procesados.json"
+import seoInfo from "../../public/casos/seo-info.json"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://stansabogados.com'
+  const baseUrl = "https://stansabogados.com"
+  const currentDate = new Date()
   
-  return [
+  // Páginas principales
+  const mainPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/casos`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    // Áreas de práctica
-    {
-      url: `${baseUrl}/areas/libertad-expresion-delitos-odio`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/areas/terrorismo-audiencia-nacional`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/areas/delitos-contra-las-personas`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/areas/robos-patrimonio-crimen-organizado`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/areas/delitos-economicos-laborales`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/areas/orden-publico-drogas-ejecucion-penal`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    // Páginas legales
-    {
-      url: `${baseUrl}/legal`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${baseUrl}/equipo`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/privacidad`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/cookies`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/terminos`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${baseUrl}/contacto`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
       priority: 0.8,
     },
   ]
+
+  // Áreas de práctica
+  const areaPages = [
+    "/areas/libertad-expresion-delitos-odio",
+    "/areas/terrorismo-audiencia-nacional",
+    "/areas/delitos-contra-las-personas",
+    "/areas/robos-patrimonio-crimen-organizado",
+    "/areas/delitos-economicos-laborales",
+    "/areas/orden-publico-drogas-ejecucion-penal"
+  ].map(path => ({
+    url: `${baseUrl}${path}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }))
+
+  // Páginas de casos individuales (CRÍTICO PARA SEO)
+  const casePages = casosData.map((caso: any) => {
+    const casoSeoInfo = (seoInfo as any)[caso.id]
+    const url = casoSeoInfo?.url ? `${baseUrl}${casoSeoInfo.url}` : `${baseUrl}/casos/${caso.id}`
+    
+    return {
+      url,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }
+  })
+
+  // Páginas legales
+  const legalPages = [
+    "/legal",
+    "/privacidad", 
+    "/cookies",
+    "/terminos"
+  ].map(path => ({
+    url: `${baseUrl}${path}`,
+    lastModified: currentDate,
+    changeFrequency: "yearly" as const,
+    priority: 0.3,
+  }))
+
+  return [...mainPages, ...areaPages, ...casePages, ...legalPages]
 }

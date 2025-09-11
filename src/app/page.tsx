@@ -12,6 +12,7 @@ import StatsSection from '@/components/StatsSection';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useScrollHighlight } from '@/hooks/useScrollHighlight';
 import ContactSection from '@/components/ContactSection';
+import CasesSection from '@/components/CasesSection';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -128,6 +129,12 @@ export default function Page() {
         >
           <Hero whatsapp={WHATSAPP} />
         </section>
+
+        {/* Cases Section */}
+        <CasesSection />
+
+        {/* Separador visual */}
+        <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
 
         {/* Team Section */}
         <motion.section 

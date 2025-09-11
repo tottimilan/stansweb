@@ -7,13 +7,41 @@ Sitemap: https://stansabogados.com/sitemap.xml
 # Crawl-delay
 Crawl-delay: 1
 
-# Disallow admin areas (if any)
+# Disallow admin areas
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
+Disallow: /scripts/
+Disallow: /*.json$
 
 # Allow important pages
 Allow: /legal
 Allow: /privacidad
 Allow: /cookies
 Allow: /terminos
+Allow: /casos/
+Allow: /areas/
+
+# SEO optimizations
+# Allow CSS and JS for better rendering
+Allow: /_next/static/
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing specific  
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Block known bad bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
