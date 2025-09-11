@@ -9,7 +9,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 
 const WHATSAPP = '34611687226';
 
@@ -102,27 +102,12 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function BlogPostPage({ params }: Props) {
-  const resolvedParams = await params;
-  const post = blogPosts.find(p => p.slug === resolvedParams.slug);
-
-  if (!post) {
-    notFound();
-  }
-
-  return <BlogPostContent slug={resolvedParams.slug} />;
-}
-
-function BlogPostContent({ slug }: { slug: string }) {
+export default function BlogPostPage() {
+  const params = useParams();
+  const slug = params.slug as string;
   const { language } = useLanguage();
   const t = translations[language];
-
+  
   const post = blogPosts.find(p => p.slug === slug);
 
   if (!post) {

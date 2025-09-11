@@ -248,18 +248,7 @@ const relatedArticles = [
   }
 ];
 
-interface Props {
-  params: Promise<{
-    slug: string;
-  }>;
-}
-
-export default async function DerechosConstitucionalesPage({ params }: Props) {
-  const { slug } = await params;
-  return <BlogPostContent slug={slug} />;
-}
-
-function BlogPostContent({ slug }: { slug: string }) {
+export default function DerechosConstitucionalesPage() {
   const { language } = useLanguage();
   const t = translations[language];
 
