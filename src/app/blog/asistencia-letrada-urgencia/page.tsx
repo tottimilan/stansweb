@@ -141,21 +141,75 @@ const relatedArticles = [
 export default function AbogadoUrgenciaPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز الدفاع الجنائي العاجل',
+      title: 'المساعدة القانونية العاجلة',
+      subtitle: 'الحق في محامٍ فوري في حالات الطوارئ',
+      description: 'دليل شامل لحقك في المساعدة القانونية العاجلة. كيفية طلب محامٍ، أنواع المحامين، وحقوقك أثناء الإجراءات العاجلة.'
+    },
+    sections: {
+      funcionesAbogado: 'مهام المحامي العاجل',
+      tiposAbogados: 'أنواع المحامين في حالات الطوارئ',
+      derechosAdicionales: 'الحقوق الإضافية مع وجود محامٍ',
+      comoSolicitar: 'كيفية طلب المساعدة القانونية العاجلة',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول المحامين العاجلين',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Defensa Penal Urgente',
+      title: 'Asistencia Letrada de Urgencia',
+      subtitle: 'El Derecho a un Abogado Inmediato en Situaciones de Emergencia',
+      description: 'Guía completa de tu derecho a asistencia jurídica urgente. Cómo solicitar un abogado, tipos de abogados disponibles y tus derechos durante procedimientos de urgencia.'
+    },
+    sections: {
+      funcionesAbogado: 'Funciones del Abogado de Urgencia',
+      tiposAbogados: 'Tipos de Abogados en Urgencias',
+      derechosAdicionales: 'Derechos Adicionales con Abogado Presente',
+      comoSolicitar: 'Cómo Solicitar Asistencia Letrada de Urgencia',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Abogados de Urgencia',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'المساعدة القانونية العاجلة هي أحد حقوقك الدستورية الأكثر أهمية في حالات الاعتقال. وفقاً للمادة 17.3 من الدستور الإسباني والمادة 118 من قانون الإجراءات الجنائية، لديك الحق في محامٍ من اللحظة الدقيقة لحرمانك من الحرية.',
+      parrafo2: 'يشرح هذا الدليل عمل خدمة المساعدة القانونية العاجلة، مهام المحامي في هذه الحالات، وكيفية اختيار المهني الأنسب لدفاعك، بناءً على القانون 1/1996 للمساعدة القانونية المجانية وتعليمات وزارة العدل.'
+    },
+    funcionesAbogado: {
+      titulo: 'مهام المحامي العاجل'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'La asistencia letrada de urgencia es uno de tus derechos constitucionales más importantes en situaciones de detención. Según el <strong>artículo 17.3 de la Constitución Española</strong> y el <strong>artículo 118 de la Ley de Enjuiciamiento Criminal</strong>, tienes derecho a un abogado desde el momento exacto de la privación de libertad.',
+      parrafo2: 'Esta guía explica el funcionamiento del servicio de asistencia jurídica de urgencia, las funciones del abogado en estas situaciones, y cómo elegir al profesional más adecuado para tu defensa, basándose en la <strong>Ley 1/1996 de Asistencia Jurídica Gratuita</strong> y las instrucciones del <strong>Ministerio de Justicia</strong>.'
+    },
+    funcionesAbogado: {
+      titulo: 'Funciones del Abogado de Urgencia'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Asistencia Letrada de Urgencia' }
+    { label: language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'funciones-del-abogado-de-urgencia', title: 'Funciones del Abogado de Urgencia', level: 2 },
-    { id: 'tipos-de-abogados-en-urgencias', title: 'Tipos de Abogados en Urgencias', level: 2 },
-    { id: 'derechos-adicionales-con-abogado-presente', title: 'Derechos Adicionales con Abogado Presente', level: 2 },
-    { id: 'como-solicitar-asistencia-letrada-de-urgencia', title: 'Cómo Solicitar Asistencia Letrada de Urgencia', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-abogados-de-urgencia', title: 'Preguntas Frecuentes sobre Abogados de Urgencia', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'funciones-del-abogado-de-urgencia', title: blogTranslations.sections.funcionesAbogado, level: 2 },
+    { id: 'tipos-de-abogados-en-urgencias', title: blogTranslations.sections.tiposAbogados, level: 2 },
+    { id: 'derechos-adicionales-con-abogado-presente', title: blogTranslations.sections.derechosAdicionales, level: 2 },
+    { id: 'como-solicitar-asistencia-letrada-de-urgencia', title: blogTranslations.sections.comoSolicitar, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-abogados-de-urgencia', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -181,12 +235,12 @@ export default function AbogadoUrgenciaPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Defensa Penal Urgente
+                  {language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -195,12 +249,15 @@ export default function AbogadoUrgenciaPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Asistencia Letrada de Urgencia
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                El papel crucial del abogado en situaciones de urgencia penal.
-                Derechos, funciones y cómo elegir al profesional adecuado.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -232,16 +289,10 @@ export default function AbogadoUrgenciaPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La asistencia letrada de urgencia es uno de tus derechos constitucionales más importantes
-                  en situaciones de detención. Según el <strong>artículo 17.3 de la Constitución Española</strong>
-                  y el <strong>artículo 118 de la Ley de Enjuiciamiento Criminal</strong>, tienes derecho
-                  a un abogado desde el momento exacto de la privación de libertad.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía explica el funcionamiento del servicio de asistencia jurídica de urgencia,
-                  las funciones del abogado en estas situaciones, y cómo elegir al profesional más adecuado
-                  para tu defensa, basándose en la <strong>Ley 1/1996 de Asistencia Jurídica Gratuita</strong>
-                  y las instrucciones del <strong>Ministerio de Justicia</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -254,7 +305,7 @@ export default function AbogadoUrgenciaPage() {
                 className="mb-12"
               >
                 <h2 id="funciones-del-abogado-de-urgencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Funciones del Abogado de Urgencia
+                  {contentTranslations.funcionesAbogado.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
