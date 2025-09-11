@@ -197,7 +197,7 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden fixed bottom-6 right-6 z-50"
+            className="lg:hidden fixed bottom-20 right-6 z-40"
           >
             <div className="relative">
               {/* Floating Progress Ring */}
