@@ -134,9 +134,56 @@ export default function DerechosDetenidosPage() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      title: 'حقوق المعتقلين',
+      subtitle: 'الدليل الشامل لحقوقك الدستورية كمعتقل',
+      description: 'اعرف حقوقك الدستورية كمعتقل. دليل شامل للضمانات الإجرائية وحماية الحقوق القانونية.',
+      consultaUrgente: 'استشارة عاجلة',
+      informacionLegal: 'معلومات قانونية'
+    },
+    sections: {
+      derechosEsenciales: 'الحقوق الأساسية',
+      derechosComplementarios: 'الحقوق التكميلية',
+      derechosEspeciales: 'الحقوق الخاصة',
+      recursosDisponibles: 'الموارد المتاحة'
+    },
+    cards: {
+      constitucionales: 'الحقوق الدستورية للمعتقل',
+      asistencia: 'المساعدة القانونية الفورية',
+      informacion: 'الحق في المعلومات',
+      noDeclarar: 'الحق في عدم الإدلاء بأقوال',
+      comunicacion: 'التواصل مع العائلة',
+      habeas: 'الاعتقال غير القانوني واستئناف الحماية'
+    }
+  } : {
+    hero: {
+      title: 'Derechos de los Detenidos',
+      subtitle: 'Guía Completa de tus Derechos Constitucionales como Detenido',
+      description: 'Conoce tus derechos constitucionales como detenido. Guía completa de garantías procesales y protección jurídica.',
+      consultaUrgente: 'Consulta Urgente',
+      informacionLegal: 'Información Legal'
+    },
+    sections: {
+      derechosEsenciales: 'Derechos Esenciales',
+      derechosComplementarios: 'Derechos Complementarios',
+      derechosEspeciales: 'Derechos Especiales',
+      recursosDisponibles: 'Recursos Disponibles'
+    },
+    cards: {
+      constitucionales: 'Derechos Constitucionales del Detenido',
+      asistencia: 'Asistencia Letrada Inmediata',
+      informacion: 'Derecho a la Información',
+      noDeclarar: 'Derecho a No Declarar',
+      comunicacion: 'Comunicación con Familiares',
+      habeas: 'Habeas Corpus y Recurso de Amparo'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos' }
+    { label: blogTranslations.hero.title }
   ];
 
   return (
@@ -157,11 +204,13 @@ export default function DerechosDetenidosPage() {
             >
               <Shield className="h-20 w-20 text-gold mx-auto mb-6" />
               <h1 className="text-4xl sm:text-5xl font-bold text-gold mb-6">
-                Derechos de los Detenidos
+                {blogTranslations.hero.title}
               </h1>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
               <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8">
-                Conoce tus derechos constitucionales como detenido. Guía completa
-                de garantías procesales y protección jurídica.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -170,13 +219,13 @@ export default function DerechosDetenidosPage() {
                   className="inline-flex items-center justify-center gap-2 bg-gold text-black px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
                 >
                   <Phone className="h-5 w-5" />
-                  Consulta Urgente
+                  {blogTranslations.hero.consultaUrgente}
                 </a>
                 <Link
                   href="/#contacto"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold hover:bg-gold hover:text-black transition"
                 >
-                  Información Legal
+                  {blogTranslations.hero.informacionLegal}
                 </Link>
               </div>
             </motion.div>
@@ -242,10 +291,10 @@ export default function DerechosDetenidosPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-gold mb-4">
-                Derechos Inmediatos al Ser Detenido
+                {language === 'ar' ? 'الحقوق الفورية عند الاعتقال' : 'Derechos Inmediatos al Ser Detenido'}
               </h2>
               <p className="text-white/80 text-lg">
-                Lo que debes saber desde el primer momento
+                {language === 'ar' ? 'ما يجب أن تعرفه من اللحظة الأولى' : 'Lo que debes saber desde el primer momento'}
               </p>
             </motion.div>
 
@@ -292,7 +341,7 @@ export default function DerechosDetenidosPage() {
               >
                 <CheckCircle className="h-8 w-8 text-green-600 mb-4" />
                 <h3 className="text-lg font-semibold text-black mb-3">
-                  Comunicación
+                  {language === 'ar' ? 'التواصل' : 'Comunicación'}
                 </h3>
                 <p className="text-black/70 text-sm">
                   Derecho a comunicar con un familiar o persona de confianza en un plazo razonable.
@@ -308,7 +357,7 @@ export default function DerechosDetenidosPage() {
               >
                 <AlertTriangle className="h-8 w-8 text-red-600 mb-4" />
                 <h3 className="text-lg font-semibold text-black mb-3">
-                  No Declarar
+                  {language === 'ar' ? 'عدم الإدلاء بأقوال' : 'No Declarar'}
                 </h3>
                 <p className="text-black/70 text-sm">
                   Tienes derecho a no declarar hasta la llegada de tu abogado.
@@ -325,7 +374,7 @@ export default function DerechosDetenidosPage() {
               >
                 <CheckCircle className="h-8 w-8 text-green-600 mb-4" />
                 <h3 className="text-lg font-semibold text-black mb-3">
-                  Asistencia Médica
+                  {language === 'ar' ? 'المساعدة الطبية' : 'Asistencia Médica'}
                 </h3>
                 <p className="text-black/70 text-sm">
                   Si necesitas atención médica, tienes derecho a recibirla inmediatamente.
@@ -341,7 +390,7 @@ export default function DerechosDetenidosPage() {
               >
                 <CheckCircle className="h-8 w-8 text-green-600 mb-4" />
                 <h3 className="text-lg font-semibold text-black mb-3">
-                  Habeas Corpus
+                  {language === 'ar' ? 'الاعتقال غير القانوني' : 'Habeas Corpus'}
                 </h3>
                 <p className="text-black/70 text-sm">
                   Si consideras que tu detención es ilegal, puedes solicitar el habeas corpus.
@@ -362,7 +411,7 @@ export default function DerechosDetenidosPage() {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold text-black mb-4">
-                Contactos de Emergencia
+                {language === 'ar' ? 'جهات الاتصال في حالات الطوارئ' : 'Contactos de Emergencia'}
               </h2>
               <p className="text-black/70 text-lg">
                 Números importantes para situaciones de urgencia
