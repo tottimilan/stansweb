@@ -278,22 +278,78 @@ const relatedArticles = [
 export default function DerechosGruposVulnerablesPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز حقوق المعتقلين',
+      title: 'حقوق الفئات الضعيفة المعتقلة',
+      subtitle: 'الحماية الخاصة للفئات الأكثر ضعفاً أثناء الاعتقال',
+      description: 'دليل شامل لحماية حقوق الفئات الضعيفة أثناء الاعتقال. القاصرون، الأجانب، ذوي الاحتياجات الخاصة، والمجموعات الأخرى المعرضة للخطر.'
+    },
+    sections: {
+      proteccionesEspeciales: 'الحمايات الخاصة حسب المجموعات',
+      protocolosEspeciales: 'البروتوكولات الخاصة للتصرف',
+      medidasAlternativas: 'التدابير الاحتياطية البديلة',
+      recursosApoyo: 'موارد الدعم المتخصصة',
+      principiosGenerales: 'المبادئ العامة للحماية',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول حقوق الفئات الضعيفة',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Derechos de Detenidos',
+      title: 'Derechos de Grupos Vulnerables Detenidos',
+      subtitle: 'Protección Especial para Grupos más Vulnerables durante la Detención',
+      description: 'Guía completa de protección de derechos de grupos vulnerables durante la detención. Menores, extranjeros, personas con discapacidad y otros grupos en situación de riesgo.'
+    },
+    sections: {
+      proteccionesEspeciales: 'Protecciones Especiales por Grupos',
+      protocolosEspeciales: 'Protocolos Especiales de Actuación',
+      medidasAlternativas: 'Medidas Cautelares Alternativas',
+      recursosApoyo: 'Recursos de Apoyo Especializados',
+      principiosGenerales: 'Principios Generales de Protección',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Derechos de Grupos Vulnerables',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'تحصل حقوق الفئات الضعيفة أثناء الاعتقال على حمايات خاصة دستورية ودولية. تنص الدستور الإسباني في المادة 14 على مبدأ المساواة، ولكنه يعترف بأن مجموعات معينة تحتاج إلى تدابير محددة لضمان فعالية حقوقهم الفعلية.',
+      parrafo2: 'يحدد هذا الدليل الحمايات الخاصة للقاصرين، الأجانب، ذوي الاحتياجات الخاصة، ضحايا العنف الجنسي، كبار السن والمجموعات الضعيفة الأخرى، بناءً على قوانين محددة مثل القانون العضوي 5/2000 للمسؤولية الجنائية للقاصرين، القانون العضوي 4/2000 لحقوق الأجانب، وقضاء المحكمة الدستورية التي طورت هذه الحقوق بشكل موسع.'
+    },
+    proteccionesGrupos: {
+      titulo: 'الحمايات الخاصة حسب المجموعات'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Los <strong>derechos de grupos vulnerables durante la detención</strong> reciben protecciones especiales constitucionales e internacionales. La <strong>Constitución Española</strong> en su artículo 14 establece el principio de igualdad, pero reconoce que determinados colectivos necesitan medidas específicas para garantizar la efectividad real de sus derechos.',
+      parrafo2: 'Esta guía detalla las protecciones especiales para menores, extranjeros, personas con discapacidad, víctimas de violencia de género, personas mayores y otros colectivos vulnerables, basándose en leyes específicas como la <strong>Ley Orgánica 5/2000</strong> de responsabilidad penal de menores, la <strong>Ley Orgánica 4/2000</strong> de derechos de extranjeros, y la jurisprudencia del <strong>Tribunal Constitucional</strong> que ha desarrollado estos derechos de manera expansiva.'
+    },
+    proteccionesGrupos: {
+      titulo: 'Protecciones Especiales por Grupos'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
-    { label: 'Derechos de Grupos Vulnerables Detenidos' }
+    { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'protecciones-especiales-por-grupos', title: 'Protecciones Especiales por Grupos', level: 2 },
-    { id: 'protocolos-especiales-de-actuacion', title: 'Protocolos Especiales de Actuación', level: 2 },
-    { id: 'medidas-cautelares-alternativas', title: 'Medidas Cautelares Alternativas', level: 2 },
-    { id: 'recursos-de-apoyo-especializados', title: 'Recursos de Apoyo Especializados', level: 2 },
-    { id: 'principios-generales-de-proteccion', title: 'Principios Generales de Protección', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-derechos-de-grupos-vulnerables', title: 'Preguntas Frecuentes sobre Derechos de Grupos Vulnerables', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'protecciones-especiales-por-grupos', title: blogTranslations.sections.proteccionesEspeciales, level: 2 },
+    { id: 'protocolos-especiales-de-actuacion', title: blogTranslations.sections.protocolosEspeciales, level: 2 },
+    { id: 'medidas-cautelares-alternativas', title: blogTranslations.sections.medidasAlternativas, level: 2 },
+    { id: 'recursos-de-apoyo-especializados', title: blogTranslations.sections.recursosApoyo, level: 2 },
+    { id: 'principios-generales-de-proteccion', title: blogTranslations.sections.principiosGenerales, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-de-grupos-vulnerables', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -318,12 +374,12 @@ export default function DerechosGruposVulnerablesPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Derechos de Detenidos
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Derechos de Detenidos
+                  {language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -332,12 +388,15 @@ export default function DerechosGruposVulnerablesPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derechos de Grupos Vulnerables durante la Detención
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Protecciones especiales para menores, extranjeros, personas con discapacidad,
-                víctimas de violencia de género y otros colectivos vulnerables.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -369,18 +428,10 @@ export default function DerechosGruposVulnerablesPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los <strong>derechos de grupos vulnerables durante la detención</strong> reciben protecciones
-                  especiales constitucionales e internacionales. La <strong>Constitución Española</strong> en
-                  su artículo 14 establece el principio de igualdad, pero reconoce que determinados colectivos
-                  necesitan medidas específicas para garantizar la efectividad real de sus derechos.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía detalla las protecciones especiales para menores, extranjeros, personas con
-                  discapacidad, víctimas de violencia de género, personas mayores y otros colectivos vulnerables,
-                  basándose en leyes específicas como la <strong>Ley Orgánica 5/2000</strong> de responsabilidad
-                  penal de menores, la <strong>Ley Orgánica 4/2000</strong> de derechos de extranjeros, y la
-                  jurisprudencia del <strong>Tribunal Constitucional</strong> que ha desarrollado estos derechos
-                  de manera expansiva.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -393,7 +444,7 @@ export default function DerechosGruposVulnerablesPage() {
                 className="mb-12"
               >
                 <h2 id="protecciones-especiales-por-grupos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Protecciones Especiales por Grupos
+                  {contentTranslations.proteccionesGrupos.titulo}
                 </h2>
 
                 <div className="space-y-8">
