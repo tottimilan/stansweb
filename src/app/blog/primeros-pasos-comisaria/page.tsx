@@ -131,21 +131,75 @@ const relatedArticles = [
 export default function ComisariaPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز الدفاع الجنائي العاجل',
+      title: 'الخطوات الأولى في مركز الشرطة',
+      subtitle: 'كيف تتصرف عند الوصول إلى مركز الشرطة',
+      description: 'دليل شامل لمعرفة ما يحدث في مركز الشرطة. حقوقك، إجراءاتك، وكيفية التعامل مع الوضع الأولي.'
+    },
+    sections: {
+      procedimientoPasoAPaso: 'الإجراء في مركز الشرطة خطوة بخطوة',
+      condicionesMinimas: 'الشروط الدنيا للاحتجاز',
+      derechosPermanencia: 'الحقوق أثناء الإقامة في مركز الشرطة',
+      protocoloActuacion: 'بروتوكول التصرف في مركز الشرطة',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول مركز الشرطة',
+      legislacionAplicada: 'التشريع المطبق',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Defensa Penal Urgente',
+      title: 'Primeros Pasos en Comisaría',
+      subtitle: 'Cómo Actuar al Llegar a una Comisaría',
+      description: 'Guía completa para saber qué ocurre en comisaría. Tus derechos, los procedimientos y cómo manejar la situación inicial.'
+    },
+    sections: {
+      procedimientoPasoAPaso: 'Procedimiento en Comisaría: Paso a Paso',
+      condicionesMinimas: 'Condiciones Mínimas de Detención',
+      derechosPermanencia: 'Derechos durante la Permanencia en Comisaría',
+      protocoloActuacion: 'Protocolo de Actuación en Comisaría',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Comisaría',
+      legislacionAplicada: 'Legislación Aplicada',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'يُشير الوصول إلى مركز الشرطة إلى بداية المرحلة الإدارية للإجراء الجنائي. أثناء إقامتك في التبعيات الشرطية، والتي قد تستمر من ساعات إلى 72 ساعة كحد أقصى، من المهم معرفة الإجراء وممارسة حقوقك بفعالية.',
+      parrafo2: 'يحدد هذا الدليل خطوة بخطوة ما يحدث في مركز الشرطة، بناءً على قانون الإجراءات الجنائية، القانون العضوي 4/2015، وتعليمات وزارة الداخلية لمعاملة المحتجزين.'
+    },
+    procedimientoPasoAPaso: {
+      titulo: 'الإجراء في مركز الشرطة خطوة بخطوة'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'La llegada a comisaría marca el inicio de la fase administrativa del procedimiento penal. Durante tu permanencia en dependencias policiales, que puede durar desde unas horas hasta 72 horas máximo, es crucial conocer el procedimiento y ejercer tus derechos de manera efectiva.',
+      parrafo2: 'Esta guía detalla paso a paso qué ocurre en comisaría, basándose en la <strong>Ley de Enjuiciamiento Criminal</strong>, la <strong>Ley Orgánica 4/2015</strong> y las instrucciones del <strong>Ministerio del Interior</strong> para el tratamiento de detenidos.'
+    },
+    procedimientoPasoAPaso: {
+      titulo: 'Procedimiento en Comisaría: Paso a Paso'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Primeros Pasos en Comisaría' }
+    { label: language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'procedimiento-en-comisaria-paso-a-paso', title: 'Procedimiento en Comisaría: Paso a Paso', level: 2 },
-    { id: 'condiciones-minimas-de-detencion', title: 'Condiciones Mínimas de Detención', level: 2 },
-    { id: 'derechos-durante-la-permanencia-en-comisaria', title: 'Derechos durante la Permanencia en Comisaría', level: 2 },
-    { id: 'protocolo-de-actuacion-en-comisaria', title: 'Protocolo de Actuación en Comisaría', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-comisaria', title: 'Preguntas Frecuentes sobre Comisaría', level: 2 },
-    { id: 'legislacion-aplicada', title: 'Legislación Aplicada', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'procedimiento-en-comisaria-paso-a-paso', title: blogTranslations.sections.procedimientoPasoAPaso, level: 2 },
+    { id: 'condiciones-minimas-de-detencion', title: blogTranslations.sections.condicionesMinimas, level: 2 },
+    { id: 'derechos-durante-la-permanencia-en-comisaria', title: blogTranslations.sections.derechosPermanencia, level: 2 },
+    { id: 'protocolo-de-actuacion-en-comisaria', title: blogTranslations.sections.protocoloActuacion, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-comisaria', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-aplicada', title: blogTranslations.sections.legislacionAplicada, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -170,12 +224,12 @@ export default function ComisariaPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Defensa Penal Urgente
+                  {language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -184,12 +238,15 @@ export default function ComisariaPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Primeros Pasos en Comisaría
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Qué esperar y cómo actuar durante tu permanencia en comisaría.
-                Guía detallada del procedimiento policial y tus derechos.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -221,14 +278,10 @@ export default function ComisariaPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La llegada a comisaría marca el inicio de la fase administrativa del procedimiento penal.
-                  Durante tu permanencia en dependencias policiales, que puede durar desde unas horas hasta
-                  72 horas máximo, es crucial conocer el procedimiento y ejercer tus derechos de manera efectiva.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía detalla paso a paso qué ocurre en comisaría, basándose en la
-                  <strong>Ley de Enjuiciamiento Criminal</strong>, la <strong>Ley Orgánica 4/2015</strong>
-                  y las instrucciones del <strong>Ministerio del Interior</strong> para el tratamiento de detenidos.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -241,7 +294,7 @@ export default function ComisariaPage() {
                 className="mb-12"
               >
                 <h2 id="procedimiento-en-comisaria-paso-a-paso" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Procedimiento en Comisaría: Paso a Paso
+                  {contentTranslations.procedimientoPasoAPaso.titulo}
                 </h2>
 
                 <div className="space-y-6">
