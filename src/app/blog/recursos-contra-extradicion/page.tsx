@@ -292,7 +292,7 @@ export default function RecursosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-recursos-contra-la-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Recursos contra la Extradición
                 </h2>
 
@@ -344,7 +344,7 @@ export default function RecursosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="estrategia-de-recursos-por-fases" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Estrategia de Recursos por Fases
                 </h2>
 
@@ -393,7 +393,7 @@ export default function RecursosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="medidas-cautelares-durante-recursos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Medidas Cautelares durante Recursos
                 </h2>
 
@@ -434,7 +434,7 @@ export default function RecursosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="casos-de-exito-con-recursos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Casos de Éxito con Recursos
                 </h2>
 
@@ -489,7 +489,7 @@ export default function RecursosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="recursos-internacionales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Recursos Internacionales
                 </h2>
 
@@ -539,7 +539,7 @@ export default function RecursosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-recursos-contra-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Recursos contra Extradición
                 </h2>
 
@@ -575,7 +575,7 @@ export default function RecursosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -635,7 +635,7 @@ export default function RecursosExtradicionPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los recursos contra la extradición constituyen un sistema completo de protección
                   jurídica que permite impugnar decisiones injustas o irregulares. Desde los recursos
@@ -655,12 +655,9 @@ export default function RecursosExtradicionPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, necesito impugnar una decisión de extradición`}

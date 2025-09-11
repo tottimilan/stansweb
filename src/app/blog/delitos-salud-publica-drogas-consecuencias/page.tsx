@@ -247,7 +247,7 @@ export default function DrogasDelitosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="marco-legal-de-los-delitos-de-drogas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Marco Legal de los Delitos de Drogas
                 </h2>
 
@@ -311,7 +311,7 @@ export default function DrogasDelitosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-drogas-y-escala-penal" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Drogas y Escala Penal
                 </h2>
 
@@ -386,7 +386,7 @@ export default function DrogasDelitosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="atenuantes-y-estrategias-de-defensa" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Atenuantes y Estrategias de Defensa
                 </h2>
 
@@ -447,7 +447,7 @@ export default function DrogasDelitosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="consecuencias-legales-y-administrativas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Consecuencias Legales y Administrativas
                 </h2>
 
@@ -520,7 +520,7 @@ export default function DrogasDelitosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-delitos-de-drogas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Delitos de Drogas
                 </h2>
 
@@ -556,7 +556,7 @@ export default function DrogasDelitosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-jurisprudencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Jurisprudencia
                 </h2>
 
@@ -610,7 +610,7 @@ export default function DrogasDelitosPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los delitos contra la salud pública relacionados con drogas tienen consecuencias
                   graves que afectan no solo a la libertad personal, sino también a la vida profesional
@@ -630,12 +630,9 @@ export default function DrogasDelitosPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, necesito asesoramiento sobre un caso de drogas`}

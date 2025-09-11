@@ -266,7 +266,7 @@ export default function HabeasCorpusPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="motivos-para-interponer-habeas-corpus" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Motivos para Interponer Habeas Corpus
                 </h2>
 
@@ -317,7 +317,7 @@ export default function HabeasCorpusPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="procedimiento-para-interponer-habeas-corpus" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Procedimiento para Interponer Habeas Corpus
                 </h2>
 
@@ -377,7 +377,7 @@ export default function HabeasCorpusPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="casos-exitosos-de-habeas-corpus" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Casos Exitosos de Habeas Corpus
                 </h2>
 
@@ -432,7 +432,7 @@ export default function HabeasCorpusPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="diferencias-con-otros-recursos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Diferencias con Otros Recursos
                 </h2>
 
@@ -484,7 +484,7 @@ export default function HabeasCorpusPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-habeas-corpus" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Habeas Corpus
                 </h2>
 
@@ -520,7 +520,7 @@ export default function HabeasCorpusPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -580,7 +580,7 @@ export default function HabeasCorpusPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   El habeas corpus es un instrumento excepcional pero poderosísimo para proteger la libertad personal
                   contra vulneraciones constitucionales. Aunque su interposición requiere fundamentos sólidos y
@@ -599,12 +599,9 @@ export default function HabeasCorpusPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, creo que necesito interponer habeas corpus`}

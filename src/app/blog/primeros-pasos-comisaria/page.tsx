@@ -240,7 +240,7 @@ export default function ComisariaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="procedimiento-en-comisaria-paso-a-paso" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Procedimiento en Comisaría: Paso a Paso
                 </h2>
 
@@ -289,7 +289,7 @@ export default function ComisariaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="condiciones-minimas-de-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Condiciones Mínimas de Detención
                 </h2>
 
@@ -335,7 +335,7 @@ export default function ComisariaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-durante-la-permanencia-en-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos durante la Permanencia en Comisaría
                 </h2>
 
@@ -406,7 +406,7 @@ export default function ComisariaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protocolo-de-actuacion-en-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protocolo de Actuación en Comisaría
                 </h2>
 
@@ -456,7 +456,7 @@ export default function ComisariaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Comisaría
                 </h2>
 
@@ -492,7 +492,7 @@ export default function ComisariaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-aplicada" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación Aplicada
                 </h2>
 
@@ -543,7 +543,7 @@ export default function ComisariaPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   La permanencia en comisaría es una fase crítica del procedimiento penal donde
                   se sientan las bases para tu defensa. Conocer el procedimiento paso a paso
@@ -562,12 +562,9 @@ export default function ComisariaPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, estoy en comisaría y necesito asistencia letrada inmediata`}

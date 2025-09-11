@@ -310,7 +310,7 @@ export default function AudienciaExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-de-la-audiencia-de-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases de la Audiencia de Extradición
                 </h2>
 
@@ -361,7 +361,7 @@ export default function AudienciaExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-del-extraditado-en-la-audiencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos del Extraditado en la Audiencia
                 </h2>
 
@@ -402,7 +402,7 @@ export default function AudienciaExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="estrategia-de-defensa-en-la-audiencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Estrategia de Defensa en la Audiencia
                 </h2>
 
@@ -451,7 +451,7 @@ export default function AudienciaExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-resolucion-judicial" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Resolución Judicial
                 </h2>
 
@@ -507,7 +507,7 @@ export default function AudienciaExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preparacion-previa-a-la-audiencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preparación Previa a la Audiencia
                 </h2>
 
@@ -560,7 +560,7 @@ export default function AudienciaExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-audiencia-de-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Audiencia de Extradición
                 </h2>
 
@@ -596,7 +596,7 @@ export default function AudienciaExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -650,7 +650,7 @@ export default function AudienciaExtradicionPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   La audiencia de extradición es un momento crucial donde se definen los derechos
                   del extraditado y se determina el futuro del procedimiento. Una preparación adecuada,
@@ -672,12 +672,9 @@ export default function AudienciaExtradicionPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, tengo una audiencia de extradición y necesito asistencia`}

@@ -345,7 +345,7 @@ export default function ProteccionTorturasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-maltrato-prohibidos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Maltrato Prohibidos
                 </h2>
 
@@ -402,7 +402,7 @@ export default function ProteccionTorturasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="garantias-de-proteccion-y-deteccion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Garantías de Protección y Detección
                 </h2>
 
@@ -443,7 +443,7 @@ export default function ProteccionTorturasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protocolo-de-deteccion-y-denuncia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protocolo de Detección y Denuncia
                 </h2>
 
@@ -500,7 +500,7 @@ export default function ProteccionTorturasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="organizaciones-de-apoyo-a-victimas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Organizaciones de Apoyo a Víctimas
                 </h2>
 
@@ -546,7 +546,7 @@ export default function ProteccionTorturasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-a-la-reparacion-integral" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos a la Reparación Integral
                 </h2>
 
@@ -608,7 +608,7 @@ export default function ProteccionTorturasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-torturas-y-maltratos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Torturas y Maltratos
                 </h2>
 
@@ -644,7 +644,7 @@ export default function ProteccionTorturasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -704,7 +704,7 @@ export default function ProteccionTorturasPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   La protección contra torturas y tratos inhumanos es uno de los pilares fundamentales
                   del Estado de Derecho y la democracia española. La prohibición absoluta de cualquier
@@ -725,12 +725,9 @@ export default function ProteccionTorturasPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, he sufrido maltratos durante la detención y necesito ayuda inmediata`}

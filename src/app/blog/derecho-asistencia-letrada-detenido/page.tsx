@@ -321,7 +321,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="funciones-del-abogado-durante-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Funciones del Abogado durante la Detención
                 </h2>
 
@@ -364,7 +364,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-asistencia-juridica" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Asistencia Jurídica
                 </h2>
 
@@ -420,7 +420,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-adicionales-con-asistencia-letrada" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Adicionales con Asistencia Letrada
                 </h2>
 
@@ -473,7 +473,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="plazos-constitucionales-de-asistencia-letrada" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Plazos Constitucionales de Asistencia Letrada
                 </h2>
 
@@ -529,7 +529,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="proceso-de-designacion-de-abogado" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Proceso de Designación de Abogado
                 </h2>
 
@@ -585,7 +585,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-asistencia-letrada" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Asistencia Letrada
                 </h2>
 
@@ -621,7 +621,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -678,7 +678,7 @@ export default function DerechoAsistenciaLetradaPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   El derecho a la asistencia letrada es fundamental para garantizar un proceso justo
                   y respetuoso con los derechos constitucionales. Desde el primer momento de la detención,
@@ -699,12 +699,9 @@ export default function DerechoAsistenciaLetradaPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, estoy detenido y necesito un abogado urgentemente`}

@@ -29,20 +29,25 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
   useEffect(() => {
     const handleScroll = () => {
       const sections = items.flatMap(item => [item, ...(item.children || [])]);
+      let currentSection = '';
 
-      for (const section of sections.reverse()) {
+      // Buscar la sección más cercana al top de la pantalla
+      for (const section of sections) {
         const element = document.getElementById(section.id);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= 150 && rect.bottom >= 150) {
-            setActiveSection(section.id);
-            break;
+          // Una sección está activa si está a menos de 200px del top
+          if (rect.top <= 200) {
+            currentSection = section.id;
           }
         }
       }
 
+      if (currentSection && currentSection !== activeSection) {
+        setActiveSection(currentSection);
+      }
+
       // Mostrar/ocultar TOC basado en scroll
-      // Mostrar el TOC después de hacer un poco de scroll
       const scrollPosition = window.pageYOffset;
       setIsVisible(scrollPosition > 300);
     };
@@ -51,21 +56,54 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
     handleScroll(); // Ejecutar una vez al montar
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [items]);
+  }, [items, activeSection]);
 
   // Scroll suave a sección
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerOffset = 100; // Offset para el header fijo
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    console.log(`Attempting to scroll to: ${sectionId}`);
+    
+    // Esperar un frame para asegurar que el DOM esté listo
+    requestAnimationFrame(() => {
+      const element = document.getElementById(sectionId);
+      
+      if (element) {
+        console.log(`Element found:`, element);
+        
+        // Verificar si el elemento es visible
+        const rect = element.getBoundingClientRect();
+        console.log(`Element position:`, rect);
+        
+        const headerOffset = 120;
+        const elementPosition = rect.top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+        console.log(`Scrolling to position:`, {
+          elementTop: rect.top,
+          windowScrollY: window.pageYOffset,
+          headerOffset,
+          finalPosition: offsetPosition
+        });
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+        
+        // Verificar después del scroll
+        setTimeout(() => {
+          const newRect = element.getBoundingClientRect();
+          console.log(`After scroll - element position:`, newRect.top);
+        }, 1000);
+        
+      } else {
+        console.warn(`Element with id "${sectionId}" not found`);
+        
+        // Listar todos los IDs disponibles para debug
+        const allElements = document.querySelectorAll('[id]');
+        const allIds = Array.from(allElements).map(element => element.id);
+        console.log('Available IDs:', allIds);
+      }
+    });
   };
 
   // Calcular progreso de lectura
@@ -106,14 +144,14 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.3 }}
-            className={`hidden lg:block fixed right-6 top-1/2 transform -translate-y-1/2 z-40 ${className}`}
+            className={`hidden lg:block fixed right-6 top-1/4 transform -translate-y-1/2 z-20 ${className}`}
           >
             <div className="bg-white/95 backdrop-blur-sm border border-gold/20 rounded-2xl shadow-xl p-6 max-w-xs">
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-sm font-bold text-black flex items-center gap-2">
                   <List className="h-4 w-4 text-gold" />
-                  Índice
+                  {t.tableOfContents.title}
                 </h3>
                 <button
                   onClick={() => setIsExpanded(!isExpanded)}
@@ -153,7 +191,12 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                       {items.map((item) => (
                         <div key={item.id}>
                           <button
-                            onClick={() => scrollToSection(item.id)}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              console.log(`Desktop TOC clicked: ${item.id}`);
+                              scrollToSection(item.id);
+                            }}
                             className={`block w-full text-left text-sm py-2 px-3 rounded-lg transition-all duration-200 hover:bg-gold/10 ${
                               activeSection === item.id
                                 ? 'bg-gold/20 text-gold font-medium border-l-2 border-gold'
@@ -168,7 +211,12 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                           {item.children && item.children.map((child) => (
                             <button
                               key={child.id}
-                              onClick={() => scrollToSection(child.id)}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                console.log(`Desktop TOC sub-item clicked: ${child.id}`);
+                                scrollToSection(child.id);
+                              }}
                               className={`block w-full text-left text-xs py-1 px-3 rounded-lg transition-all duration-200 hover:bg-gold/5 ml-4 ${
                                 activeSection === child.id
                                   ? 'bg-gold/10 text-gold font-medium'
@@ -197,7 +245,7 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden fixed bottom-20 right-6 z-40"
+            className="lg:hidden fixed bottom-20 right-6 z-30"
           >
             <div className="relative">
               {/* Floating Progress Ring */}
@@ -255,7 +303,10 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                       {items.map((item) => (
                         <div key={item.id}>
                           <button
-                            onClick={() => {
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              console.log(`Mobile TOC clicked: ${item.id}`);
                               scrollToSection(item.id);
                               setIsExpanded(false);
                             }}
@@ -272,7 +323,10 @@ export default function TableOfContents({ items, className = '' }: TableOfConten
                           {item.children && item.children.map((child) => (
                             <button
                               key={child.id}
-                              onClick={() => {
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                console.log(`Mobile TOC sub-item clicked: ${child.id}`);
                                 scrollToSection(child.id);
                                 setIsExpanded(false);
                               }}

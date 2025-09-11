@@ -254,7 +254,7 @@ export default function TerrorismoInternetPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="marco-legal-del-terrorismo-digital" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Marco Legal del Terrorismo Digital
                 </h2>
 
@@ -315,7 +315,7 @@ export default function TerrorismoInternetPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-delitos-de-terrorismo-en-internet" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Delitos de Terrorismo en Internet
                 </h2>
 
@@ -367,7 +367,7 @@ export default function TerrorismoInternetPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="casos-reales-y-jurisprudencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Casos Reales y Jurisprudencia
                 </h2>
 
@@ -422,7 +422,7 @@ export default function TerrorismoInternetPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="responsabilidad-de-plataformas-digitales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Responsabilidad de Plataformas Digitales
                 </h2>
 
@@ -492,7 +492,7 @@ export default function TerrorismoInternetPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-terrorismo-en-internet" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Terrorismo en Internet
                 </h2>
 
@@ -528,7 +528,7 @@ export default function TerrorismoInternetPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -585,7 +585,7 @@ export default function TerrorismoInternetPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   El terrorismo en Internet representa una evolución delictiva que requiere
                   una respuesta jurídica adaptada a la era digital. La legislación española
@@ -605,12 +605,9 @@ export default function TerrorismoInternetPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, necesito asesoramiento sobre un caso de terrorismo en internet`}

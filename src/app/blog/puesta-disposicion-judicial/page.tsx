@@ -258,7 +258,7 @@ export default function DisposicionJudicialPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-de-la-audiencia-judicial" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases de la Audiencia Judicial
                 </h2>
 
@@ -309,7 +309,7 @@ export default function DisposicionJudicialPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="medidas-cautelares-posibles" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Medidas Cautelares Posibles
                 </h2>
 
@@ -371,7 +371,7 @@ export default function DisposicionJudicialPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-en-la-audiencia-judicial" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos en la Audiencia Judicial
                 </h2>
 
@@ -417,7 +417,7 @@ export default function DisposicionJudicialPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preparacion-de-la-defensa" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preparación de la Defensa
                 </h2>
 
@@ -467,7 +467,7 @@ export default function DisposicionJudicialPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-puesta-a-disposicion-judicial" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Puesta a Disposición Judicial
                 </h2>
 
@@ -503,7 +503,7 @@ export default function DisposicionJudicialPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -560,7 +560,7 @@ export default function DisposicionJudicialPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   La puesta a disposición judicial es el momento más crítico del procedimiento penal urgente.
                   La decisión que tome el juez de guardia determinará tu situación procesal inmediata y puede
@@ -580,12 +580,9 @@ export default function DisposicionJudicialPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, tengo una puesta a disposición judicial y necesito asesoramiento urgente`}

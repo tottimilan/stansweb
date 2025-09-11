@@ -333,7 +333,8 @@ export const translations = {
       verMas: 'Ver más',
       leerMas: 'Leer más',
       minutosLectura: 'minutos de lectura',
-      minLectura: 'min de lectura'
+      minLectura: 'min de lectura',
+      compartirArticulo: 'Compartir artículo'
     },
 
     // Breadcrumb Component
@@ -686,7 +687,8 @@ export const translations = {
       verMas: 'عرض المزيد',
       leerMas: 'اقرأ المزيد',
       minutosLectura: 'دقائق للقراءة',
-      minLectura: 'دقيقة للقراءة'
+      minLectura: 'دقيقة للقراءة',
+      compartirArticulo: 'مشاركة المقال'
     },
 
     // Breadcrumb Component

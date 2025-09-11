@@ -196,7 +196,7 @@ export default function DerechosInmediatosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-inmediatas-de-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases Inmediatas de la Detención
                 </h2>
 
@@ -252,7 +252,7 @@ export default function DerechosInmediatosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-especificos-en-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Específicos en la Detención
                 </h2>
 
@@ -317,7 +317,7 @@ export default function DerechosInmediatosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protocolo-de-actuacion-recomendado" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protocolo de Actuación Recomendado
                 </h2>
 
@@ -375,7 +375,7 @@ export default function DerechosInmediatosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-derechos-inmediatos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Derechos Inmediatos
                 </h2>
 
@@ -411,7 +411,7 @@ export default function DerechosInmediatosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -462,7 +462,7 @@ export default function DerechosInmediatosPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Conocer tus derechos inmediatos al ser detenido es fundamental para afrontar
                   una situación de urgencia penal con garantías. La Constitución Española establece
@@ -476,23 +476,43 @@ export default function DerechosInmediatosPage() {
               </div>
 
               {/* CTA */}
-              <div className="flex items-center justify-between mt-12 pt-8 border-t border-gold/20">
-                <div className="flex items-center gap-4">
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Share2 className="h-4 w-4" />
-                    Compartir artículo
-                  </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
-                </div>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-12 pt-8 border-t border-gold/20">
+                <button 
+                  onClick={() => {
+                    if (navigator.share) {
+                      navigator.share({
+                        title: 'Derechos Inmediatos al Ser Detenido',
+                        text: 'Guía completa sobre tus derechos inmediatos cuando eres detenido.',
+                        url: window.location.href,
+                      }).catch((err) => console.log('Error sharing:', err));
+                    } else {
+                      navigator.clipboard.writeText(window.location.href).then(() => {
+                        alert('URL copiada al portapapeles');
+                      }).catch(() => {
+                        const textArea = document.createElement('textarea');
+                        textArea.value = window.location.href;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                        alert('URL copiada al portapapeles');
+                      });
+                    }
+                  }}
+                  className="flex items-center gap-2 text-black/70 hover:text-gold transition bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg"
+                >
+                  <Share2 className="h-4 w-4" />
+                  {t.blog.compartirArticulo}
+                </button>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, acabo de ser detenido y necesito asistencia inmediata`}
-                  className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                  className="inline-flex items-center gap-2 bg-gold text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium hover:opacity-90 transition text-sm sm:text-base w-full sm:w-auto max-w-xs sm:max-w-none"
                 >
-                  <Phone className="h-4 w-4" />
-                  Asistencia Urgente
+                  <Phone className="h-4 w-4 flex-shrink-0" />
+                  <span className="whitespace-nowrap">
+                    <span className="hidden sm:inline">Asistencia Urgente</span>
+                    <span className="sm:hidden">Asistencia</span>
+                  </span>
                 </a>
               </div>
             </motion.div>

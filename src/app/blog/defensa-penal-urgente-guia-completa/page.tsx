@@ -493,20 +493,20 @@ export default function DefensaPenalUrgentePage() {
                       Nuestro equipo de abogados penalistas está disponible 24/7 para proteger tus derechos desde el primer momento. 
                       No esperes, cada minuto cuenta en tu defensa.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                       <Link
                         href={`https://wa.me/${WHATSAPP}?text=Hola, necesito defensa penal urgente. Es una emergencia.`}
-                        className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-green-700 transition"
+                        className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-3 sm:px-6 py-2.5 sm:py-3 rounded-lg text-xs sm:text-base font-semibold hover:bg-green-700 transition w-full sm:w-auto max-w-xs sm:max-w-none"
                       >
-                        <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                        <span className="hidden sm:inline">WhatsApp 24/7 - URGENTE</span>
-                        <span className="sm:hidden">WhatsApp - URGENTE</span>
+                        <Phone className="h-4 w-4 flex-shrink-0" />
+                        <span className="hidden sm:inline whitespace-nowrap">WhatsApp 24/7 - URGENTE</span>
+                        <span className="sm:hidden text-center leading-tight">WhatsApp 24/7</span>
                       </Link>
                       <Link
                         href="/#contacto"
-                        className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gold hover:text-black transition"
+                        className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gold hover:text-black transition w-full sm:w-auto max-w-xs sm:max-w-none"
                       >
-                        Contactar Ahora
+                        {t.blog.contactaAhora}
                       </Link>
                     </div>
                   </div>

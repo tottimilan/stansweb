@@ -338,7 +338,7 @@ export default function RequisitosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="requisitos-sustantivos-obligatorios" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Requisitos Sustantivos Obligatorios
                 </h2>
 
@@ -379,7 +379,7 @@ export default function RequisitosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="requisitos-formales-de-la-solicitud" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Requisitos Formales de la Solicitud
                 </h2>
 
@@ -431,7 +431,7 @@ export default function RequisitosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="causas-de-denegacion-de-la-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Causas de Denegación de la Extradición
                 </h2>
 
@@ -477,7 +477,7 @@ export default function RequisitosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="diferencias-ue-vs-extradicion-internacional" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Diferencias UE vs Extradición Internacional
                 </h2>
 
@@ -521,7 +521,7 @@ export default function RequisitosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protocolo-de-verificacion-de-requisitos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protocolo de Verificación de Requisitos
                 </h2>
 
@@ -577,7 +577,7 @@ export default function RequisitosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-requisitos-de-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Requisitos de Extradición
                 </h2>
 
@@ -613,7 +613,7 @@ export default function RequisitosExtradicionPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -673,7 +673,7 @@ export default function RequisitosExtradicionPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los requisitos para la extradición española buscan equilibrar la cooperación
                   internacional en la lucha contra el delito con la protección de los derechos
@@ -695,12 +695,9 @@ export default function RequisitosExtradicionPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, necesito asesoramiento sobre requisitos de extradición`}

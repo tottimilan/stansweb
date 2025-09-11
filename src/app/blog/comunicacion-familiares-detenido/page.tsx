@@ -296,7 +296,7 @@ export default function ComunicacionFamiliarPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-de-la-comunicacion-familiar" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases de la Comunicación Familiar
                 </h2>
 
@@ -356,7 +356,7 @@ export default function ComunicacionFamiliarPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-de-los-familiares" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos de los Familiares
                 </h2>
 
@@ -409,7 +409,7 @@ export default function ComunicacionFamiliarPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="situaciones-especiales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Situaciones Especiales
                 </h2>
 
@@ -467,7 +467,7 @@ export default function ComunicacionFamiliarPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protocolo-de-actuacion-para-familiares" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protocolo de Actuación para Familiares
                 </h2>
 
@@ -519,7 +519,7 @@ export default function ComunicacionFamiliarPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-comunicacion-familiar" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Comunicación Familiar
                 </h2>
 
@@ -555,7 +555,7 @@ export default function ComunicacionFamiliarPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -612,7 +612,7 @@ export default function ComunicacionFamiliarPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   La comunicación familiar es un derecho fundamental que no solo proporciona apoyo emocional,
                   sino que también facilita la coordinación de la defensa jurídica. Mantener este vínculo
@@ -631,12 +631,9 @@ export default function ComunicacionFamiliarPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, mi familiar ha sido detenido y necesito información sobre derechos de comunicación`}

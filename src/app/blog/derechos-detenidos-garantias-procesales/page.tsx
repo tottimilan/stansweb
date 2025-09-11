@@ -237,7 +237,7 @@ export default function DerechosDetenidosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-constitucionales-del-detenido" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Constitucionales del Detenido
                 </h2>
 
@@ -303,7 +303,7 @@ export default function DerechosDetenidosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-del-procedimiento-y-derechos-asociados" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases del Procedimiento y Derechos Asociados
                 </h2>
 
@@ -354,7 +354,7 @@ export default function DerechosDetenidosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-especificos-durante-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Específicos durante la Detención
                 </h2>
 
@@ -425,7 +425,7 @@ export default function DerechosDetenidosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-derechos-de-detenidos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Derechos de Detenidos
                 </h2>
 
@@ -461,7 +461,7 @@ export default function DerechosDetenidosPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-jurisprudencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Jurisprudencia
                 </h2>
 
@@ -521,7 +521,7 @@ export default function DerechosDetenidosPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Conocer tus derechos como detenido es el primer paso para una defensa efectiva.
                   La Constitución Española y el derecho internacional establecen garantías robustas
@@ -539,12 +539,9 @@ export default function DerechosDetenidosPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, creo que han violado mis derechos durante la detención`}

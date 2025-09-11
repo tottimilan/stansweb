@@ -306,7 +306,7 @@ export default function DerechosExtraditadoPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-constitucionales-del-extraditado" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Constitucionales del Extraditado
                 </h2>
 
@@ -347,7 +347,7 @@ export default function DerechosExtraditadoPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-humanos-internacionales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Humanos Internacionales
                 </h2>
 
@@ -388,7 +388,7 @@ export default function DerechosExtraditadoPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-de-grupos-vulnerables" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos de Grupos Vulnerables
                 </h2>
 
@@ -437,7 +437,7 @@ export default function DerechosExtraditadoPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-en-materia-de-salud-y-dignidad" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos en Materia de Salud y Dignidad
                 </h2>
 
@@ -485,7 +485,7 @@ export default function DerechosExtraditadoPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-durante-la-ejecucion-de-la-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos durante la Ejecución de la Extradición
                 </h2>
 
@@ -535,7 +535,7 @@ export default function DerechosExtraditadoPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-derechos-del-extraditado" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Derechos del Extraditado
                 </h2>
 
@@ -571,7 +571,7 @@ export default function DerechosExtraditadoPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -637,7 +637,7 @@ export default function DerechosExtraditadoPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los derechos del extraditado están garantizados por un marco jurídico robusto
                   que combina protecciones constitucionales con estándares internacionales de
@@ -658,12 +658,9 @@ export default function DerechosExtraditadoPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, necesito información sobre mis derechos en un proceso de extradición`}

@@ -125,17 +125,20 @@ export default function DefensaPenalUrgentePage() {
                 procedimientos y cómo actuar cuando más lo necesitas.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, necesito asistencia legal urgente`}
-                  className="inline-flex items-center justify-center gap-2 bg-gold text-black px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
+                  className="inline-flex items-center justify-center gap-2 bg-gold text-black px-4 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:opacity-90 transition text-sm sm:text-base w-full sm:w-auto max-w-xs sm:max-w-none"
                 >
-                  <Phone className="h-5 w-5" />
-                  Asistencia Urgente 24/7
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                  <span className="whitespace-nowrap">
+                    <span className="hidden sm:inline">Asistencia Urgente 24/7</span>
+                    <span className="sm:hidden">Asistencia 24/7</span>
+                  </span>
                 </a>
                 <Link
                   href="/#contacto"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold hover:bg-gold hover:text-black transition"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold px-4 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gold hover:text-black transition text-sm sm:text-base w-full sm:w-auto max-w-xs sm:max-w-none"
                 >
                   {t.blog.contactaAhora}
                 </Link>

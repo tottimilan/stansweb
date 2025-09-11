@@ -392,7 +392,7 @@ export default function DerechosGruposVulnerablesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protecciones-especiales-por-grupos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protecciones Especiales por Grupos
                 </h2>
 
@@ -444,7 +444,7 @@ export default function DerechosGruposVulnerablesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protocolos-especiales-de-actuacion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protocolos Especiales de Actuación
                 </h2>
 
@@ -498,7 +498,7 @@ export default function DerechosGruposVulnerablesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="medidas-cautelares-alternativas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Medidas Cautelares Alternativas
                 </h2>
 
@@ -547,7 +547,7 @@ export default function DerechosGruposVulnerablesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="recursos-de-apoyo-especializados" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Recursos de Apoyo Especializados
                 </h2>
 
@@ -591,7 +591,7 @@ export default function DerechosGruposVulnerablesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="principios-generales-de-proteccion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Principios Generales de Protección
                 </h2>
 
@@ -642,7 +642,7 @@ export default function DerechosGruposVulnerablesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-derechos-de-grupos-vulnerables" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Derechos de Grupos Vulnerables
                 </h2>
 
@@ -678,7 +678,7 @@ export default function DerechosGruposVulnerablesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -744,7 +744,7 @@ export default function DerechosGruposVulnerablesPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los derechos de grupos vulnerables durante la detención representan el compromiso
                   del Estado español con la igualdad real y efectiva. Las protecciones especiales
@@ -766,12 +766,9 @@ export default function DerechosGruposVulnerablesPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, pertenezco a un grupo vulnerable y necesito protección especial durante mi detención`}

@@ -376,7 +376,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-basicos-en-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Básicos en Comisaría
                 </h2>
 
@@ -417,7 +417,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-de-la-detencion-en-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases de la Detención en Comisaría
                 </h2>
 
@@ -476,7 +476,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="condiciones-minimas-legales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Condiciones Mínimas Legales
                 </h2>
 
@@ -520,7 +520,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-diarios-durante-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Diarios durante la Detención
                 </h2>
 
@@ -564,7 +564,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-especiales-por-situacion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos Especiales por Situación
                 </h2>
 
@@ -617,7 +617,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="control-de-legalidad-y-quejas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Control de Legalidad y Quejas
                 </h2>
 
@@ -665,7 +665,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-derechos-en-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Derechos en Comisaría
                 </h2>
 
@@ -701,7 +701,7 @@ export default function DerechosDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -761,7 +761,7 @@ export default function DerechosDependenciasPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los derechos en dependencias policiales garantizan que la privación de libertad
                   se realice respetando la dignidad humana y los derechos constitucionales. Desde
@@ -783,12 +783,9 @@ export default function DerechosDependenciasPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, estoy detenido en comisaría y necesito información sobre mis derechos`}

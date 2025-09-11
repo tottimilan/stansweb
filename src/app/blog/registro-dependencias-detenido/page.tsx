@@ -295,7 +295,7 @@ export default function RegistroDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-registros-durante-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Registros durante la Detención
                 </h2>
 
@@ -357,7 +357,7 @@ export default function RegistroDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-de-un-registro-domiciliario" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases de un Registro Domiciliario
                 </h2>
 
@@ -416,7 +416,7 @@ export default function RegistroDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="garantias-procesales-en-los-registros" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Garantías Procesales en los Registros
                 </h2>
 
@@ -475,7 +475,7 @@ export default function RegistroDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="documentacion-obligatoria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Documentación Obligatoria
                 </h2>
 
@@ -531,7 +531,7 @@ export default function RegistroDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="protocolo-de-defensa-ante-un-registro" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protocolo de Defensa ante un Registro
                 </h2>
 
@@ -592,7 +592,7 @@ export default function RegistroDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-registros" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Registros
                 </h2>
 
@@ -628,7 +628,7 @@ export default function RegistroDependenciasPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -688,7 +688,7 @@ export default function RegistroDependenciasPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los registros de dependencias son actuaciones policiales que requieren el máximo respeto
                   a las garantías constitucionales. Una orden judicial motivada, presencia de abogado,
@@ -709,12 +709,9 @@ export default function RegistroDependenciasPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, están registrando mi domicilio y necesito asistencia inmediata`}

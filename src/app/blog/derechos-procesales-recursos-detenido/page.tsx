@@ -358,7 +358,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-durante-la-investigacion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos durante la Investigación
                 </h2>
 
@@ -399,7 +399,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="sistema-de-recursos-contra-decisiones-judiciales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Sistema de Recursos contra Decisiones Judiciales
                 </h2>
 
@@ -452,7 +452,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="garantias-en-la-audiencia-judicial" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Garantías en la Audiencia Judicial
                 </h2>
 
@@ -493,7 +493,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="medidas-cautelares-durante-el-proceso" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Medidas Cautelares durante el Proceso
                 </h2>
 
@@ -549,7 +549,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="estrategias-de-defensa-por-fases-procesales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Estrategias de Defensa por Fases Procesales
                 </h2>
 
@@ -602,7 +602,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="proteccion-contra-dilaciones-indebidas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Protección contra Dilaciones Indebidas
                 </h2>
 
@@ -659,7 +659,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-derechos-procesales" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Derechos Procesales
                 </h2>
 
@@ -695,7 +695,7 @@ export default function DerechosProcesalesPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -755,7 +755,7 @@ export default function DerechosProcesalesPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los derechos procesales del detenido constituyen el núcleo del Estado de Derecho
                   y garantizan que cualquier acusación penal se resuelva mediante un procedimiento
@@ -779,12 +779,9 @@ export default function DerechosProcesalesPage() {
                 <div className="flex items-center gap-4">
                   <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
                     <Share2 className="h-4 w-4" />
-                    Compartir artículo
+                    {t.blog.compartirArticulo}
                   </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
+
                 </div>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, necesito asesoramiento sobre mis derechos procesales durante un procedimiento penal`}

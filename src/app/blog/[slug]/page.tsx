@@ -240,21 +240,40 @@ function BlogPostContent({ slug }: { slug: string }) {
                 </p>
               </div>
 
-              {/* Share and Bookmark */}
-              <div className="flex items-center justify-between mt-12 pt-8 border-t border-gold/20">
-                <div className="flex items-center gap-4">
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Share2 className="h-4 w-4" />
-                    Compartir
-                  </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar
-                  </button>
-                </div>
+              {/* Share Section */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-12 pt-8 border-t border-gold/20">
+                <button 
+                  onClick={() => {
+                    if (navigator.share) {
+                      navigator.share({
+                        title: post.title,
+                        text: post.excerpt,
+                        url: window.location.href,
+                      }).catch((err) => console.log('Error sharing:', err));
+                    } else {
+                      // Fallback: copiar URL al portapapeles
+                      navigator.clipboard.writeText(window.location.href).then(() => {
+                        alert('URL copiada al portapapeles');
+                      }).catch(() => {
+                        // Fallback para navegadores sin clipboard API
+                        const textArea = document.createElement('textarea');
+                        textArea.value = window.location.href;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                        alert('URL copiada al portapapeles');
+                      });
+                    }
+                  }}
+                  className="flex items-center gap-2 text-black/70 hover:text-gold transition bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg"
+                >
+                  <Share2 className="h-4 w-4" />
+                  {t.blog.compartirArticulo}
+                </button>
                 <Link
                   href="/#contacto"
-                  className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                  className="inline-flex items-center gap-2 bg-gold text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium hover:opacity-90 transition text-sm sm:text-base"
                 >
                   Consultar caso similar
                   <ArrowRight className="h-4 w-4" />

@@ -248,7 +248,7 @@ export default function ExtradicionEspanaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tipos-de-extradicion-en-espana" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tipos de Extradición en España
                 </h2>
 
@@ -311,7 +311,7 @@ export default function ExtradicionEspanaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="fases-del-procedimiento-de-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Fases del Procedimiento de Extradición
                 </h2>
 
@@ -356,7 +356,7 @@ export default function ExtradicionEspanaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="derechos-del-extraditado" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Derechos del Extraditado
                 </h2>
 
@@ -400,7 +400,7 @@ export default function ExtradicionEspanaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="tratados-internacionales-de-espana" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Tratados Internacionales de España
                 </h2>
 
@@ -445,7 +445,7 @@ export default function ExtradicionEspanaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="preguntas-frecuentes-sobre-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Preguntas Frecuentes sobre Extradición
                 </h2>
 
@@ -481,7 +481,7 @@ export default function ExtradicionEspanaPage() {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                <h2 id="legislacion-y-referencias" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
                   Legislación y Referencias
                 </h2>
 
@@ -528,7 +528,7 @@ export default function ExtradicionEspanaPage() {
 
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h2 className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
+                <h2 id="conclusion" className="text-2xl font-bold text-gold mb-4">Conclusión</h2>
                 <p className="text-white/90 leading-relaxed mb-6">
                   Los procedimientos de extradición requieren una defensa especializada en derecho internacional.
                   Cada caso tiene sus particularidades y es fundamental contar con abogados expertos que conozcan
@@ -542,23 +542,43 @@ export default function ExtradicionEspanaPage() {
               </div>
 
               {/* CTA */}
-              <div className="flex items-center justify-between mt-12 pt-8 border-t border-gold/20">
-                <div className="flex items-center gap-4">
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Share2 className="h-4 w-4" />
-                    Compartir artículo
-                  </button>
-                  <button className="flex items-center gap-2 text-black/70 hover:text-gold transition">
-                    <Bookmark className="h-4 w-4" />
-                    Guardar artículo
-                  </button>
-                </div>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-12 pt-8 border-t border-gold/20">
+                <button 
+                  onClick={() => {
+                    if (navigator.share) {
+                      navigator.share({
+                        title: 'Procedimientos de Extradición en España',
+                        text: 'Guía completa sobre procedimientos de extradición en España.',
+                        url: window.location.href,
+                      }).catch((err) => console.log('Error sharing:', err));
+                    } else {
+                      navigator.clipboard.writeText(window.location.href).then(() => {
+                        alert('URL copiada al portapapeles');
+                      }).catch(() => {
+                        const textArea = document.createElement('textarea');
+                        textArea.value = window.location.href;
+                        document.body.appendChild(textArea);
+                        textArea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textArea);
+                        alert('URL copiada al portapapeles');
+                      });
+                    }
+                  }}
+                  className="flex items-center gap-2 text-black/70 hover:text-gold transition bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg"
+                >
+                  <Share2 className="h-4 w-4" />
+                  {t.blog.compartirArticulo}
+                </button>
                 <a
                   href={`https://wa.me/${WHATSAPP}?text=Hola, tengo una solicitud de extradición y necesito asesoramiento especializado`}
-                  className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                  className="inline-flex items-center gap-2 bg-gold text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium hover:opacity-90 transition text-sm sm:text-base w-full sm:w-auto max-w-xs sm:max-w-none"
                 >
-                  <Phone className="h-4 w-4" />
-                  Consulta Especializada
+                  <Phone className="h-4 w-4 flex-shrink-0" />
+                  <span className="whitespace-nowrap">
+                    <span className="hidden sm:inline">Consulta Especializada</span>
+                    <span className="sm:hidden">Consulta</span>
+                  </span>
                 </a>
               </div>
             </motion.div>
