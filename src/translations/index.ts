@@ -350,9 +350,209 @@ export const translations = {
       title: 'Índice del Artículo',
       expandir: 'Expandir índice',
       comprimir: 'Comprimir índice'
+    },
+
+    // Blog Articles - Defensa Penal Urgente Guía Completa
+    blogArticles: {
+      defensaPenalUrgenteGuia: {
+        introduccion: {
+          parrafo1: 'La defensa penal urgente es el conjunto de actuaciones legales inmediatas que se activan cuando una persona es detenida o está bajo investigación criminal. Esta guía te proporciona toda la información esencial para proteger tus derechos desde el primer momento, evitar errores costosos y maximizar las posibilidades de un resultado favorable.',
+          infoCritica: {
+            titulo: 'Información Crítica',
+            descripcion: 'Los primeros momentos tras una detención son cruciales. Conocer tus derechos y cómo ejercerlos puede determinar el resultado de todo el proceso penal. Una actuación incorrecta en las primeras horas puede comprometer gravemente tu defensa.'
+          }
+        },
+        derechosInmediatos: {
+          titulo: 'Derechos Inmediatos al Ser Detenido',
+          descripcion: 'Desde el momento de la detención, tienes derechos fundamentales que nadie puede vulnerar. Es esencial conocerlos y ejercerlos correctamente:',
+          derechos: [
+            'Derecho al silencio y no puedes ser obligado a declarar',
+            'Derecho a tener abogado desde el primer momento',
+            'Derecho a notificar a tu familia o persona cercana',
+            'Derecho a intérprete si el español no es tu lengua materna',
+            'Derecho a atención médica si es necesaria',
+            'Derecho a conocer las causas de la detención'
+          ],
+          informacion: {
+            titulo: 'Derecho a la Información',
+            descripcion: 'Deben informarte de los motivos de tu detención, tus derechos y las acusaciones en tu contra.',
+            items: [
+              'Motivos específicos de la detención',
+              'Derechos que te asisten',
+              'Posibles cargos o acusaciones',
+              'Duración máxima de la detención'
+            ]
+          },
+          asistenciaLetrada: {
+            titulo: 'Asistencia Letrada',
+            descripcion: 'Derecho a un abogado desde el primer momento. Puede ser de oficio o de tu elección.',
+            items: [
+              'Asistencia inmediata 24/7',
+              'Abogado de oficio gratuito',
+              'Derecho a elegir abogado privado',
+              'Presencia en todas las diligencias'
+            ]
+          },
+          silencio: {
+            titulo: 'Derecho al Silencio',
+            descripcion: 'No puedes ser obligado a declarar contra ti mismo. Mantener el silencio es una estrategia defensiva.',
+            items: [
+              'No declarar sin abogado presente',
+              'Derecho a no autoinculparse',
+              'Posibilidad de retractación',
+              'Protección contra la coacción'
+            ]
+          },
+          comunicacion: {
+            titulo: 'Comunicación Familiar',
+            descripcion: 'Derecho a notificar a tu familia o persona de confianza sobre tu detención.',
+            items: [
+              'Llamada telefónica inmediata',
+              'Comunicación privada',
+              'Sin restricciones de horario',
+              'Derecho a la confidencialidad'
+            ]
+          },
+          interprete: {
+            titulo: 'Asistencia de Intérprete',
+            descripcion: 'Si no comprendes el español, tienes derecho a un intérprete oficial durante todo el proceso.',
+            items: [
+              'Intérprete oficial acreditado',
+              'Presencia en todas las declaraciones',
+              'Traducción simultánea',
+              'Derecho a la comprensión plena'
+            ]
+          },
+          asistenciaMedica: {
+            titulo: 'Asistencia Médica',
+            descripcion: 'Derecho a atención médica inmediata si es necesaria por cualquier motivo.',
+            items: [
+              'Reconocimiento médico obligatorio',
+              'Atención médica especializada',
+              'Documentación de lesiones',
+              'Protección de la salud'
+            ]
+          }
+        },
+        procesoDetencion: {
+          titulo: 'Procedimientos y Plazos de Detención',
+          plazosMaximos: {
+            titulo: 'Plazos Máximos de Detención',
+            descripcion: 'La ley española establece plazos máximos específicos para cada fase de la detención:',
+            fases: [
+              'Detención inicial: hasta 72 horas como máximo',
+              'Comparecencia ante el juez: dentro de 24 horas desde la detención',
+              'Pronunciamiento de libertad o prisión: dentro de 72 horas desde la comparecencia judicial',
+              'Libertad provisional: si no se toma decisión definitiva en los plazos establecidos'
+            ]
+          }
+        },
+        fasesProceso: {
+          titulo: 'Fases del Proceso de Detención',
+          fases: [
+            {
+              titulo: 'Fase 1: Detención en la Calle',
+              descripcion: 'Alguien te detiene en vía pública. Deben informarte de tus derechos y el motivo de la detención.'
+            },
+            {
+              titulo: 'Fase 2: Citación para declarar como imputado',
+              descripcion: 'Te citan para declarar como imputado ante la policía. Tienes derecho a tener abogado presente.'
+            },
+            {
+              titulo: 'Fase 3: Registro Policial',
+              descripcion: 'La policía quiere entrar en tu casa para registrar. Necesitan autorización judicial o tu consentimiento.'
+            },
+            {
+              titulo: 'Fase 4: Citación Judicial',
+              descripcion: 'Recibes una citación para comparecer ante el juez. Es un momento crucial en el procedimiento.'
+            },
+            {
+              titulo: 'Fase 5: Orden de Detención',
+              descripcion: 'Existe una orden de búsqueda y detención contra ti. La policía puede detenerte en cualquier momento.'
+            },
+            {
+              titulo: 'Fase 6: Investigación en Curso',
+              descripcion: 'Sospechas que estás siendo investigado. Tienes derecho a saberlo y designar abogado.'
+            }
+          ]
+        },
+        queHacerNoHacer: {
+          titulo: 'Qué Hacer y Qué NO Hacer',
+          queHacer: {
+            titulo: 'Qué Hacer',
+            items: [
+              'Mantener el silencio si eres imputado',
+              'Solicitar abogado inmediatamente',
+              'Notificar a tu familia o amigo',
+              'Registrar todos los procedimientos',
+              'Colaborar solo con tu abogado',
+              'Mantener la calma'
+            ]
+          },
+          queNoHacer: {
+            titulo: 'Qué NO Hacer',
+            items: [
+              'Declarar sin abogado presente',
+              'Firmar cualquier documento sin leerlo',
+              'Confesar bajo presión',
+              'Contactar con testigos o víctimas',
+              'Huír o intentar escapar',
+              'Deshacerse de pruebas'
+            ]
+          }
+        },
+        medidasCautelares: {
+          titulo: 'Medidas Cautelares Posibles',
+          descripcion: 'En función de la gravedad del delito y riesgos de fuga, el juez puede imponer medidas cautelares:',
+          medidas: [
+            'Libertad provisional sin fianza',
+            'Libertad provisional con fianza económica',
+            'Prisión preventiva en cárcel',
+            'Arraigo domiciliario',
+            'Prohibición de aproximación a la víctima',
+            'Depósito del pasaporte'
+          ]
+        },
+        casosPracticos: {
+          titulo: 'Casos Prácticos',
+          descripcion: 'Ejemplos reales de casos que han sido manejados con éxito:',
+          casos: [
+            {
+              titulo: 'Caso de Robo con Violencia',
+              descripcion: 'Se liberó al cliente en menos de 24 horas. Se probó la inexistencia de intención delictiva.',
+              resultado: 'Resultado: Sobreseimiento'
+            },
+            {
+              titulo: 'Caso de Drogas',
+              descripcion: 'Se dictó libertad provisional con medidas cautelares. Se evitó la prisión preventiva.',
+              resultado: 'Resultado: Libertad provisional'
+            },
+            {
+              titulo: 'Caso de Violencia Doméstica',
+              descripcion: 'Se dictó orden de protección para la víctima con arraigo domiciliario. Se evitó la cárcel.',
+              resultado: 'Resultado: Medidas alternativas'
+            }
+          ]
+        },
+        legislacionReferencias: {
+          titulo: 'Legislación y Referencias',
+          descripcion: 'El marco legal del derecho de defensa penal urgente:',
+          articulos: [
+            'Artículo 17 de la Constitución Española: Derecho a la libertad personal',
+            'Artículo 24 de la Constitución Española: Derechos y garantías en el proceso penal',
+            'Ley 5/2015 de asistencia jurídica gratuita',
+            'Ley Orgánica 6/1985 de Fuerza y Seguridad',
+            'Ley Orgánica 10/1995 de Código Penal'
+          ]
+        },
+        conclusion: {
+          titulo: 'Conclusión',
+          descripcion: 'La defensa penal urgente es un proceso complejo que requiere un conocimiento preciso de la ley y los procedimientos. Es necesario actuar con rapidez y eficacia para garantizar la protección de tus derechos y el buen desarrollo de los trámites.'
+        }
+      }
     }
   },
-  
+
   ar: {
     // Navigation
     nav: {
@@ -704,6 +904,206 @@ export const translations = {
       title: 'فهرس المقال',
       expandir: 'توسيع الفهرس',
       comprimir: 'ضغط الفهرس'
+    },
+
+    // Blog Articles - Defensa Penal Urgente Guía Completa
+    blogArticles: {
+      defensaPenalUrgenteGuia: {
+        introduccion: {
+          parrafo1: 'الدفاع الجنائي العاجل هو مجموعة الإجراءات القانونية الفورية التي تفعل عندما يتم اعتقال شخص أو يكون تحت التحقيق الجنائي. يوفر لك هذا الدليل جميع المعلومات الأساسية لحماية حقوقك من اللحظة الأولى، تجنب الأخطاء الباهظة التكلفة، وتعظيم فرص الحصول على نتيجة إيجابية.',
+          infoCritica: {
+            titulo: 'معلومات حاسمة',
+            descripcion: 'اللحظات الأولى بعد الاعتقال حاسمة. معرفة حقوقك وكيفية ممارستها يمكن أن تحدد نتيجة كامل الإجراء الجنائي. تصرف خاطئ في الساعات الأولى يمكن أن يعرض دفاعك للخطر بشكل خطير.'
+          }
+        },
+        derechosInmediatos: {
+          titulo: 'الحقوق الفورية عند الاعتقال',
+          descripcion: 'منذ لحظة الاعتقال، لديك حقوق أساسية لا يمكن لأحد انتهاكها. من الضروري معرفتها وممارستها بشكل صحيح:',
+          derechos: [
+            'حق في الصمت ولا يمكن إجبارك على الإدلاء بأقوال',
+            'حق في حضور محامي منذ اللحظة الأولى',
+            'حق في إخطار عائلتك أو شخص قريب',
+            'حق في مترجم إذا كان الإسبانية ليست لغتك الأم',
+            'حق في الرعاية الطبية في حال الحاجة',
+            'حق في معرفة أسباب الاعتقال'
+          ],
+          informacion: {
+            titulo: 'حق في المعلومات',
+            descripcion: 'يجب إبلاغك بأسباب اعتقالك وحقوقك والتهم الموجهة ضدك.',
+            items: [
+              'أسباب محددة للاعتقال',
+              'الحقوق التي تتمتع بها',
+              'التهم أو الاتهامات المحتملة',
+              'المدة القصوى للاعتقال'
+            ]
+          },
+          asistenciaLetrada: {
+            titulo: 'المساعدة القانونية',
+            descripcion: 'حق في محامٍ منذ اللحظة الأولى. يمكن أن يكون محامياً من مكتب المساعدة القضائية أو محامياً خاصاً.',
+            items: [
+              'مساعدة فورية 24/7',
+              'محامي مجاني من مكتب المساعدة',
+              'حق في اختيار محامٍ خاص',
+              'حضور في جميع الإجراءات'
+            ]
+          },
+          silencio: {
+            titulo: 'حق في الصمت',
+            descripcion: 'لا يمكن إجبارك على الإدلاء بأقوال ضد نفسك. الحفاظ على الصمت هو استراتيجية دفاعية.',
+            items: [
+              'عدم الإدلاء بأقوال بدون محامٍ حاضر',
+              'حق في عدم الإقرار بالذنب',
+              'إمكانية التراجع',
+              'الحماية من الإكراه'
+            ]
+          },
+          comunicacion: {
+            titulo: 'الاتصال العائلي',
+            descripcion: 'حق في إبلاغ عائلتك أو شخص موثوق به عن اعتقالك.',
+            items: [
+              'مكالمة هاتفية فورية',
+              'اتصال خاص',
+              'بدون قيود زمنية',
+              'حق في السرية'
+            ]
+          },
+          interprete: {
+            titulo: 'مساعدة المترجم',
+            descripcion: 'إذا كنت لا تفهم الإسبانية، لديك حق في مترجم رسمي طوال الإجراء.',
+            items: [
+              'مترجم رسمي معتمد',
+              'حضور في جميع التصريحات',
+              'ترجمة متزامنة',
+              'حق في الفهم الكامل'
+            ]
+          },
+          asistenciaMedica: {
+            titulo: 'المساعدة الطبية',
+            descripcion: 'حق في الرعاية الطبية الفورية إذا لزم الأمر لأي سبب.',
+            items: [
+              'فحص طبي إلزامي',
+              'رعاية طبية متخصصة',
+              'توثيق الإصابات',
+              'حماية الصحة'
+            ]
+          }
+        },
+        procesoDetencion: {
+          titulo: 'الإجراءات والمهل الزمنية للاعتقال',
+          plazosMaximos: {
+            titulo: 'المهل الزمنية القصوى للاعتقال',
+            descripcion: 'القانون الإسباني يحدد مهل زمنية محددة لكل مرحلة من مراحل الاعتقال:',
+            fases: [
+              'الاعتقال الأولي: حتى 72 ساعة كحد أقصى',
+              'حضور أمام القاضي: في غضون 24 ساعة من الاعتقال',
+              'إصدار قرار الإفراج أو الاحتجاز: في غضون 72 ساعة من الحضور أمام القاضي',
+              'الإفراج المؤقت: إذا لم يتم اتخاذ قرار نهائي في المهل المحددة'
+            ]
+          }
+        },
+        fasesProceso: {
+          titulo: 'مراحل إجراء الاعتقال',
+          fases: [
+            {
+              titulo: 'المرحلة الأولى: الاعتقال في الشارع',
+              descripcion: 'شخص يعتقلك في الشارع العام. يجب أن يعرفك بحقوقك وسبب الاعتقال.'
+            },
+            {
+              titulo: 'المرحلة الثانية: الاستدعاء للإدلاء بأقوال كمشتبه به',
+              descripcion: 'يتم استدعاؤك للإدلاء بأقوال كمشتبه به أمام الشرطة. يحق لك حضور محامي.'
+            },
+            {
+              titulo: 'المرحلة الثالثة: التسجيل الشرطي',
+              descripcion: 'الشرطة تريد دخول منزلك للتفتيش. يحتاجون إلى إذن قضائي أو موافقتك.'
+            },
+            {
+              titulo: 'المرحلة الرابعة: الاستدعاء القضائي',
+              descripcion: 'تتلقى استدعاءً للحضور أمام القاضي. هذه لحظة حاسمة في الإجراءات.'
+            },
+            {
+              titulo: 'المرحلة الخامسة: أمر الاعتقال',
+              descripcion: 'يوجد أمر بحث واعتقال ضدك. يمكن للشرطة اعتقالك في أي وقت.'
+            },
+            {
+              titulo: 'المرحلة السادسة: التحقيق جارٍ',
+              descripcion: 'تشك في أنك تخضع للتحقيق. يحق لك معرفة ذلك وتعيين محامٍ.'
+            }
+          ]
+        },
+        queHacerNoHacer: {
+          titulo: 'ما يجب فعله وما لا يجب فعله',
+          queHacer: {
+            titulo: 'ما يجب فعله',
+            items: [
+              'الصمت إذا كنت متهماً',
+              'طلب محامٍ فوراً',
+              'إخطار عائلتك أو صديق',
+              'تسجيل جميع الإجراءات',
+              'التعاون مع محاميك فقط',
+              'الحفاظ على الهدوء'
+            ]
+          },
+          queNoHacer: {
+            titulo: 'ما لا يجب فعله',
+            items: [
+              'الإدلاء بأقوال بدون محامٍ',
+              'التوقيع على أي وثيقة بدون قراءتها',
+              'الاعتراف بالذنب تحت الضغط',
+              'التواصل مع الشهود أو الضحايا',
+              'الفرار أو محاولة الهروب',
+              'التخلص من الأدلة'
+            ]
+          }
+        },
+        medidasCautelares: {
+          titulo: 'التدابير الاحترازية الممكنة',
+          descripcion: 'بناءً على خطورة الجريمة ومخاطر الهروب، يمكن للقاضي فرض تدابير احترازية:',
+          medidas: [
+            'الإفراج المؤقت بدون كفالة',
+            'الإفراج المؤقت مع كفالة مالية',
+            'الحبس الاحتياطي في السجن',
+            'الإقامة الجبرية',
+            'حظر الاقتراب من الضحية',
+            'تسليم الجواز'
+          ]
+        },
+        casosPracticos: {
+          titulo: 'حالات عملية',
+          descripcion: 'أمثلة حقيقية من قضايا تم التعامل معها بنجاح:',
+          casos: [
+            {
+              titulo: 'قضية سرقة مع عنف',
+              descripcion: 'تم إطلاق سراح العميل في غضون 24 ساعة. تم إثبات عدم وجود نية إجرامية.',
+              resultado: 'النتيجة: إسقاط التهم'
+            },
+            {
+              titulo: 'قضية مخدرات',
+              descripcion: 'تم إصدار أمر إفراج مؤقت مع تدابير احترازية. تم تجنب الحبس الاحتياطي.',
+              resultado: 'النتيجة: إفراج مؤقت'
+            },
+            {
+              titulo: 'قضية عنف أسري',
+              descripcion: 'تم إصدار أمر حماية للضحية مع إقامة جبرية. تم تجنب السجن.',
+              resultado: 'النتيجة: تدابير بديلة'
+            }
+          ]
+        },
+        legislacionReferencias: {
+          titulo: 'التشريع والمراجع',
+          descripcion: 'الأساس القانوني للدفاع الجنائي العاجل:',
+          articulos: [
+            'المادة 17 من الدستور الإسباني: الحق في الحرية الشخصية',
+            'المادة 24 من الدستور الإسباني: الحقوق والضمانات في الإجراءات الجنائية',
+            'القانون 5/2015 للمساعدة القضائية المجانية',
+            'القانون العضوي 6/1985 لقوة الأمن',
+            'القانون العضوي 10/1995 للإجراءات الجنائية'
+          ]
+        },
+        conclusion: {
+          titulo: 'الخاتمة',
+          descripcion: 'الدفاع الجنائي العاجل هو عملية معقدة تتطلب معرفة دقيقة بالقانون والإجراءات. من الضروري التصرف بسرعة وفعالية لضمان حماية حقوقك وحسن سير الإجراءات.'
+        }
+      }
     }
   }
 };

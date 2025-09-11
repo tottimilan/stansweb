@@ -112,16 +112,16 @@ export default function DefensaPenalUrgentePage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-8 sm:mb-12 text-sm sm:text-base lg:text-lg">
                 <p className="mb-6">
-                  La <strong>defensa penal urgente</strong> es el conjunto de actuaciones legales inmediatas que se activan cuando una persona es detenida o está bajo investigación criminal. Esta guía te proporciona toda la información esencial para proteger tus derechos desde el primer momento, evitar errores costosos y maximizar las posibilidades de un resultado favorable.
+                  {t.blogArticles.defensaPenalUrgenteGuia.introduccion.parrafo1}
                 </p>
-                
+
                 <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 mb-8">
                   <div className="flex items-start gap-3">
                     <AlertTriangle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-semibold text-blue-900 mb-2">Información Crítica</h3>
+                      <h3 className="font-semibold text-blue-900 mb-2">{t.blogArticles.defensaPenalUrgenteGuia.introduccion.infoCritica.titulo}</h3>
                       <p className="text-blue-800">
-                        Los primeros momentos tras una detención son cruciales. Conocer tus derechos y cómo ejercerlos puede determinar el resultado de todo el proceso penal. Una actuación incorrecta en las primeras horas puede comprometer gravemente tu defensa.
+                        {t.blogArticles.defensaPenalUrgenteGuia.introduccion.infoCritica.descripcion}
                       </p>
                     </div>
                   </div>
@@ -141,76 +141,72 @@ export default function DefensaPenalUrgentePage() {
                     <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                       <Shield className="h-5 w-5 text-white" />
                     </div>
-                    Derechos Inmediatos al Ser Detenido
+                    {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.titulo}
                   </h2>
-                  
+
                   <div className="space-y-6">
                     <p className="text-black/80 leading-relaxed">
-                      Desde el momento de la detención, tienes derechos fundamentales que nadie puede vulnerar. Es esencial conocerlos y ejercerlos correctamente:
+                      {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.descripcion}
                     </p>
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       <div className="bg-green-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-green-900 mb-3 flex items-center gap-2">
                           <CheckCircle className="h-5 w-5 text-green-600" />
-                          Derecho a la Información
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.informacion.titulo}
                         </h3>
                         <p className="text-green-800 text-sm mb-3">
-                          Deben informarte de los motivos de tu detención, tus derechos y las acusaciones en tu contra.
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.informacion.descripcion}
                         </p>
                         <ul className="text-green-700 text-xs space-y-1">
-                          <li>• Motivos específicos de la detención</li>
-                          <li>• Derechos que te asisten</li>
-                          <li>• Posibles cargos o acusaciones</li>
-                          <li>• Duración máxima de la detención</li>
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.informacion.items.map((item, index) => (
+                            <li key={index}>• {item}</li>
+                          ))}
                         </ul>
                       </div>
                       
                       <div className="bg-blue-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-blue-900 mb-3 flex items-center gap-2">
                           <CheckCircle className="h-5 w-5 text-blue-600" />
-                          Asistencia Letrada
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.asistenciaLetrada.titulo}
                         </h3>
                         <p className="text-blue-800 text-sm mb-3">
-                          Derecho a un abogado desde el primer momento. Puede ser de oficio o de tu elección.
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.asistenciaLetrada.descripcion}
                         </p>
                         <ul className="text-blue-700 text-xs space-y-1">
-                          <li>• Asistencia inmediata 24/7</li>
-                          <li>• Abogado de oficio gratuito</li>
-                          <li>• Derecho a elegir abogado privado</li>
-                          <li>• Presencia en todas las diligencias</li>
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.asistenciaLetrada.items.map((item, index) => (
+                            <li key={index}>• {item}</li>
+                          ))}
                         </ul>
                       </div>
                       
                       <div className="bg-purple-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-purple-900 mb-3 flex items-center gap-2">
                           <CheckCircle className="h-5 w-5 text-purple-600" />
-                          Derecho a No Declarar
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.silencio.titulo}
                         </h3>
                         <p className="text-purple-800 text-sm mb-3">
-                          No estás obligado a declarar contra ti mismo. Puedes guardar silencio sin consecuencias.
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.silencio.descripcion}
                         </p>
                         <ul className="text-purple-700 text-xs space-y-1">
-                          <li>• Silencio total permitido</li>
-                          <li>• No implica culpabilidad</li>
-                          <li>• Declarar solo con abogado</li>
-                          <li>• Evitar autoincriminación</li>
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.silencio.items.map((item, index) => (
+                            <li key={index}>• {item}</li>
+                          ))}
                         </ul>
                       </div>
                       
                       <div className="bg-orange-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-orange-900 mb-3 flex items-center gap-2">
                           <CheckCircle className="h-5 w-5 text-orange-600" />
-                          Comunicación
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.comunicacion.titulo}
                         </h3>
                         <p className="text-orange-800 text-sm mb-3">
-                          Derecho a comunicar tu detención a un familiar y al consulado si eres extranjero.
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.comunicacion.descripcion}
                         </p>
                         <ul className="text-orange-700 text-xs space-y-1">
-                          <li>• Avisar a un familiar</li>
-                          <li>• Contacto consular (extranjeros)</li>
-                          <li>• Llamada telefónica</li>
-                          <li>• Comunicación inmediata</li>
+                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.comunicacion.items.map((item, index) => (
+                            <li key={index}>• {item}</li>
+                          ))}
                         </ul>
                       </div>
                     </div>
@@ -223,16 +219,16 @@ export default function DefensaPenalUrgentePage() {
                     <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
                       <FileText className="h-5 w-5 text-white" />
                     </div>
-                    Proceso y Plazos de Detención
+                    {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.titulo}
                   </h2>
-                  
+
                   <div className="space-y-6">
                     <p className="text-black/80 leading-relaxed">
-                      El proceso de detención sigue unos plazos estrictos que debes conocer. Cualquier vulneración de estos puede ser motivo de recurso:
+                      {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.descripcion}
                     </p>
                     
                     <div className="bg-gray-50 p-6 rounded-xl">
-                      <h3 className="font-semibold text-gray-900 mb-4">Plazos Máximos de Detención</h3>
+                      <h3 className="font-semibold text-gray-900 mb-4">{t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.titulo}</h3>
                       <div className="space-y-3 text-sm">
                         <div className="flex justify-between items-center py-2 border-b border-gray-200">
                           <span className="font-medium text-gray-900">Detención preventiva</span>
