@@ -117,9 +117,7 @@ const getTranslatedOrgano = (organo: string, language: string) => {
     'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'محكمة التحقيق المركزية رقم 6 (المحكمة الوطنية)',
     'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'محكمة التحقيق رقم 4 في بوزويلو دي ألاركون',
     'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد',
-    'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)',
-    'Juzgado de lo Penal nº 21 de Madrid': 'محكمة الجنايات رقم 21 في مدريد',
-    'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد'
+    'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)'
   };
 
   return organoMap[organo] || organo;
