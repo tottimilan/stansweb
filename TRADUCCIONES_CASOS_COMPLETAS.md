@@ -65,7 +65,7 @@ const typeMap = {
 
 ## 📊 **TRADUCCIONES COMPLETADAS**
 
-### **Casos Traducidos (18/18):**
+### **Casos Traducidos (20/20):**
 1. ✅ QUEQUE ABOGADOS CRISTIANOS SOBRESEIMIENTO
 2. ✅ NORDIN WORKOUT
 3. ✅ ALVARO GARCIA
@@ -84,6 +84,8 @@ const typeMap = {
 16. ✅ SOFIA NAVARRO
 17. ✅ RAFAEL GIL
 18. ✅ ELENA CASTRO
+19. ✅ **ABDERRAHIM AKKOUH – POLICÍA LOCAL DE TORREJÓN** ⭐ **AGREGADO**
+20. ✅ **OPERACIÓN BOP** ⭐ **AGREGADO**
 
 ### **Campos Traducidos:**
 - ✅ **Títulos** (nombres de casos)
@@ -118,6 +120,22 @@ Sobreseimiento
 إغلاق الدعوى
 [الملخص باللغة العربية...]
 ```
+
+## 🆕 **NUEVAS TRADUCCIONES AGREGADAS**
+
+### **Casos 19-20 Agregados:**
+- ✅ **Caso 19:** ABDERRAHIM AKKOUH – POLICÍA LOCAL DE TORREJÓN
+  - Título: "قضية عبد الرحيم عكوش - شرطة توريخون المحلية"
+  - Resumen completo traducido al árabe
+
+- ✅ **Caso 20:** OPERACIÓN BOP
+  - Título: "عملية بوب"
+  - Resumen completo traducido al árabe
+
+### **Nuevos Tipos de Resolución:**
+- ✅ **Libertad provisional** → الحرية المؤقتة
+- ✅ **Investigación en curso** → التحقيق جارٍ
+- ✅ **Pendiente** → معلق
 
 ## 📁 **ARCHIVOS MODIFICADOS**
 

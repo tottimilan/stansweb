@@ -72,6 +72,14 @@ export const casesTranslations = {
       18: {
         nombre: "CASO ELENA CASTRO",
         resumen: "La cliente fue detenida por la Guardia Civil acusada de delito contra la autoridad. Tras la instrucción, el Juzgado de lo Penal nº 21 de Madrid decretó el sobreseimiento."
+      },
+      19: {
+        nombre: "CASO ABDERRAHIM AKKOUH – POLICÍA LOCAL DE TORREJÓN",
+        resumen: "El 18 de junio de 2025, el agente de la Policía Municipal de Madrid Juan C. redujo y mantuvo inmovilizado a Abderrahim Akkouh, quien presuntamente había intentado robarle el móvil en Torrejón de Ardoz. La víctima falleció por anoxia. La jueza de Instrucción n.º 4 imputó al agente por homicidio y le dejó en libertad provisional con medidas cautelares. Nuestro despacho representa a la familia de la víctima como acusación particular, solicitando la calificación de asesinato y el ingreso en prisión preventiva del investigado."
+      },
+      20: {
+        nombre: "OPERACIÓN BOP",
+        resumen: "La operación «BOP» es una investigación policial centrada en un presunto grupo organizado dedicado al tráfico de estupefacientes. Varios investigados fueron detenidos en 2025 y algunos permanecen en prisión provisional. Nuestro despacho asume la defensa de uno de ellos, sosteniendo que carece de vínculo con la organización y que su detención se debió a una mera relación de amistad con uno de los implicados. El procedimiento está en fase inicial y se están practicando diligencias."
       }
     }
   },
@@ -148,6 +156,14 @@ export const casesTranslations = {
       18: {
         nombre: "قضية إيلينا كاسترو",
         resumen: "تم اعتقال العميلة من قبل الحرس المدني متهمة بجريمة ضد السلطة. بعد التحقيق، أمر قاضي الجنايات رقم 21 في مدريد بإغلاق الدعوى."
+      },
+      19: {
+        nombre: "قضية عبد الرحيم عكوش - شرطة توريخون المحلية",
+        resumen: "في 18 يونيو 2025، قام شرطي من الشرطة البلدية في مدريد خوان ك. بتخفيض وإبقاء عبد الرحيم عكوش غير متحرك، الذي حاول سرقة هاتفه في توريخون دي أردوز. توفي الضحية بسبب نقص الأكسجين. قاضية التحقيق رقم 4 أسندت للشرطي تهمة القتل وأطلقت سراحه مؤقتاً مع إجراءات احترازية. مكتبنا يمثل عائلة الضحية كاتهام خاص، يطلب تصنيف الفعل كقتل عمد وإيداع المتهم في السجن الاحتياطي."
+      },
+      20: {
+        nombre: "عملية بوب",
+        resumen: "عملية 'بوب' هي تحقيق شرطي يركز على مجموعة منظمة مشتبه بها متخصصة في تهريب المخدرات. تم اعتقال عدة مشتبه بهم في عام 2025 وبعضهم لا يزالون في السجن الاحتياطي. مكتبنا يتولى الدفاع عن أحدهم، مدعياً أنه لا يمتلك صلة بالمنظمة وأن اعتقاله كان بسبب مجرد علاقة صداقة مع أحد المتورطين. الإجراء في مرحلة أولية ويتم ممارسة التحقيقات."
       }
     }
   }

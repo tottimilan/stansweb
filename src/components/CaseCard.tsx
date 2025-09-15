@@ -87,7 +87,8 @@ const getTranslatedResult = (resultado: string, language: string, t: any) => {
     'Audiencia Provincial estima recurso y archiva la causa': 'تقبل محكمة الاستئناف الاستئناف وتحفظ القضية',
     'Auto de sobreseimiento y archivo': 'قرار إغلاق الدعوى وحفظها',
     'Revocación de orden de búsqueda y captura': 'إلغاء أمر البحث والقبض',
-    'Investigación en curso': 'التحقيق جارٍ'
+    'Investigación en curso': 'التحقيق جارٍ',
+    'Auto concediendo libertad provisional': 'قرار منح الحرية المؤقتة'
   };
 
   return resultMap[resultado] || resultado;
@@ -102,7 +103,15 @@ const getTranslatedResolutionType = (tipo: string, language: string, t: any) => 
     'Sentencia': 'حكم',
     'Auto': 'قرار',
     'Diligencias': 'إجراءات',
-    'Archivo': 'حفظ'
+    'Archivo': 'حفظ',
+    'Libertad provisional': 'الحرية المؤقتة',
+    'Investigación en curso': 'التحقيق جارٍ',
+    'Pendiente': 'معلق',
+    'Absolución': 'البراءة',
+    'Sustitución de prisión por libertad provisional': 'استبدال السجن بالحرية المؤقتة',
+    'Sobreseimiento provisional': 'إغلاق الدعوى المؤقت',
+    'Revocación / Archivo': 'إلغاء / حفظ',
+    'Revocación': 'إلغاء'
   };
 
   return typeMap[tipo] || tipo;
@@ -130,7 +139,14 @@ const getTranslatedOrgano = (organo: string, language: string) => {
     'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'محكمة التحقيق المركزية رقم 6 (المحكمة الوطنية)',
     'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'محكمة التحقيق رقم 4 في بوزويلو دي ألاركون',
     'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد',
-    'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)'
+    'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)',
+    'Juzgado de lo Penal nº 3 de Jaén': 'محكمة الجنايات رقم 3 في خاين',
+    'Juzgado de lo Penal nº 22 de Madrid': 'محكمة الجنايات رقم 22 في مدريد',
+    'Juzgado de Instrucción nº 13 de Madrid': 'محكمة التحقيق رقم 13 في مدريد',
+    'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو',
+    'Juzgado de Instrucción nº 1 de Móstoles': 'محكمة التحقيق رقم 1 في موستوليس',
+    'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو',
+    'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية'
   };
 
   return organoMap[organo] || organo;

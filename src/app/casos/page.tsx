@@ -34,6 +34,126 @@ const getCategorias = (t: any) => [
   t.casos.categorias.delitosIntegridad
 ];
 
+// Funciones de traducción para casos
+const organoMap: { [key: string]: string } = {
+  'Juzgado de Instrucción nº 38 de Madrid': 'محكمة التحقيق رقم 38 في مدريد',
+  'Audiencia Provincial de Madrid': 'محكمة الاستئناف في مدريد',
+  'Juzgado de lo Penal nº 21 de Madrid': 'محكمة الجنايات رقم 21 في مدريد',
+  'Juzgado Central de Instrucción nº 2': 'محكمة التحقيق المركزية رقم 2',
+  'Juzgado de Instrucción nº 30 de Madrid': 'محكمة التحقيق رقم 30 في مدريد',
+  'Juzgado de lo Penal nº 25 de Madrid': 'محكمة الجنايات رقم 25 في مدريد',
+  'Juzgado de lo Penal nº 3 de Madrid': 'محكمة الجنايات رقم 3 في مدريد',
+  'Audiencia Provincial de Jaén': 'محكمة الاستئناف في خاين',
+  'Juzgado de Instrucción nº 1 de Jaén': 'محكمة التحقيق رقم 1 في خاين',
+  'Juzgado de Instrucción nº 12 de Madrid': 'محكمة التحقيق رقم 12 في مدريد',
+  'Juzgado de Instrucción nº 15 de Madrid': 'محكمة التحقيق رقم 15 في مدريد',
+  'Juzgado de lo Penal nº 4 de Madrid': 'محكمة الجنايات رقم 4 في مدريد',
+  'Juzgado de Instrucción nº 8 de Madrid': 'محكمة التحقيق رقم 8 في مدريد',
+  'Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe': 'محكمة الدرجة الأولى والتحقيق رقم 6 في خيتافي',
+  'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'محكمة التحقيق المركزية رقم 6 (المحكمة الوطنية)',
+  'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'محكمة التحقيق رقم 4 في بوزويلو دي ألاركون',
+  'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد',
+  'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)',
+  'Juzgado de lo Penal nº 3 de Jaén': 'محكمة الجنايات رقم 3 في خاين',
+  'Juzgado de lo Penal nº 22 de Madrid': 'محكمة الجنايات رقم 22 في مدريد',
+  'Juzgado de Instrucción nº 13 de Madrid': 'محكمة التحقيق رقم 13 في مدريد',
+  'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو',
+  'Juzgado de Instrucción nº 1 de Móstoles': 'محكمة التحقيق رقم 1 في موستوليس',
+  'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو',
+  'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية'
+};
+
+const resultMap: { [key: string]: string } = {
+  'Sobreseimiento': 'إغلاق الدعوى',
+  'Absolución': 'البراءة',
+  'Condena': 'الإدانة',
+  'Archivo de Diligencias': 'حفظ الإجراءات',
+  'Auto de Sobreseimiento': 'قرار إغلاق الدعوى',
+  'Sentencia Absolutoria': 'حكم بالبراءة',
+  'Sentencia Condenatoria': 'حكم بالإدانة',
+  'La Audiencia Provincial decreta el Sobreseimiento': 'تصدر محكمة الاستئناف قرار إغلاق الدعوى',
+  'Sobreseimiento sólo para nuestro cliente': 'إغلاق الدعوى لعميلنا فقط',
+  'Absolución con todos los pronunciamientos favorables': 'البراءة مع جميع الأحكام المواتية',
+  'Modificación de prisión provisional a libertad provisional sin fianza': 'تعديل السجن المؤقت إلى الحرية المؤقتة بدون كفالة',
+  'Auto de sobreseimiento provisional': 'قرار إغلاق الدعوى المؤقت',
+  'Audiencia Provincial estima recurso y archiva la causa': 'تقبل محكمة الاستئناف الاستئناف وتحفظ القضية',
+  'Auto de sobreseimiento y archivo': 'قرار إغلاق الدعوى وحفظها',
+  'Revocación de orden de búsqueda y captura': 'إلغاء أمر البحث والقبض',
+  'Investigación en curso': 'التحقيق جارٍ',
+  'Auto concediendo libertad provisional': 'قرار منح الحرية المؤقتة'
+};
+
+const tipoMap: { [key: string]: string } = {
+  'Sobreseimiento': 'إغلاق الدعوى',
+  'Sentencia': 'حكم',
+  'Auto': 'قرار',
+  'Diligencias': 'إجراءات',
+  'Archivo': 'حفظ',
+  'Libertad provisional': 'الحرية المؤقتة',
+  'Investigación en curso': 'التحقيق جارٍ',
+  'Pendiente': 'معلق',
+  'Absolución': 'البراءة',
+  'Sustitución de prisión por libertad provisional': 'استبدال السجن بالحرية المؤقتة',
+  'Sobreseimiento provisional': 'إغلاق الدعوى المؤقت',
+  'Revocación / Archivo': 'إلغاء / حفظ',
+  'Revocación': 'إلغاء'
+};
+
+// Función para traducir títulos de casos
+const getTranslatedCaseName = (caseId: number, originalName: string, language: string) => {
+  if (language === 'es') return originalName;
+
+  const casesTranslations = {
+    1: "قضية كيكي - محامون مسيحيون - إغلاق الدعوى",
+    2: "قضية نوردين وورك أوت",
+    3: "قضية ألفارو غارسيا",
+    4: "قضية لا مانتشا",
+    5: "قضية خورخي سانشيز",
+    6: "قضية ماريا خيسوس",
+    7: "قضية أنطونيو لوبيز",
+    8: "قضية كارلوس مارتينيز",
+    9: "قضية آنا غوميز",
+    10: "قضية بيدرو رودريغيز",
+    11: "قضية لويس فيرنانديز",
+    12: "قضية كارمن دياز",
+    13: "قضية ميغيل هيرنانديز",
+    14: "قضية إيزابيل راموس",
+    15: "قضية ديفيد مورينو",
+    16: "قضية صوفيا نافارو",
+    17: "قضية رافائيل خيل",
+    18: "قضية إيلينا كاسترو",
+    19: "قضية عبد الرحيم عكوش - شرطة توريخون المحلية",
+    20: "عملية بوب"
+  };
+
+  return casesTranslations[caseId as keyof typeof casesTranslations] || originalName;
+};
+
+// Función para traducir categorías
+const getTranslatedCategory = (categoria: string, language: string, t: any) => {
+  if (language === 'es') return categoria;
+
+  const categoryMap: { [key: string]: string } = {
+    'Delitos de odio y libertad de expresión': t.casos.categorias.delitosOdio,
+    'Terrorismo y Audiencia Nacional': t.casos.categorias.terrorismo,
+    'Robos con violencia y grupo criminal': t.casos.categorias.robosViolencia,
+    'Delitos contra las personas': t.casos.categorias.delitosPersonas,
+    'Delitos económicos y contra el patrimonio': t.casos.categorias.delitosEconomicos,
+    'Delitos contra el orden público, drogas y ejecución penal': t.casos.categorias.ordenPublico,
+    'Delitos contra la salud pública': t.casos.categorias.delitosSaludPublica,
+    'Delitos contra la autoridad': t.casos.categorias.delitosAutoridad,
+    'Delitos patrimoniales': t.casos.categorias.delitosPatrimoniales,
+    'Delitos contra la libertad': t.casos.categorias.delitosLibertad,
+    'Delitos contra los derechos de los trabajadores': t.casos.categorias.delitosTrabajadores,
+    'Ejecución penal': t.casos.categorias.ejecucionPenal,
+    'Delitos contra la vida': t.casos.categorias.delitosVida,
+    'Pertenencia a organización criminal': t.casos.categorias.organizacionCriminal,
+    'Delitos contra la integridad física': t.casos.categorias.delitosIntegridad
+  };
+
+  return categoryMap[categoria] || categoria;
+};
+
 export default function CasosPage() {
   const { language } = useLanguage();
   const t = translations[language];
@@ -290,10 +410,10 @@ export default function CasosPage() {
                       {caso.delito_principal}
                     </span>
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-offwhite group-hover:text-gold transition-colors mb-2 line-clamp-2">
-                      {caso.nombre}
+                      {getTranslatedCaseName(caso.id, caso.nombre, language)}
                     </h3>
                     <p className="text-offwhite/60 text-sm">
-                      {caso.categoria}
+                      {getTranslatedCategory(caso.categoria, language, t)}
                     </p>
                   </div>
 
@@ -313,19 +433,19 @@ export default function CasosPage() {
                          'bg-gold'
                        }`}></div>
                                              <span className="text-sm text-offwhite/80">
-                         <strong className="text-gold">{t.casos.casos.resultado}</strong> {caso.resultado}
+                         <strong className="text-gold">{t.casos.casos.resultado}</strong> {language === 'es' ? caso.resultado : (resultMap[caso.resultado] || caso.resultado)}
                        </span>
                     </div>
                                          <div className="flex items-center gap-3">
                        <div className="w-2 h-2 bg-gold rounded-full"></div>
                        <span className="text-sm text-offwhite/80">
-                         <strong className="text-gold">{t.casos.casos.organo}</strong> {caso.organo}
+                         <strong className="text-gold">{t.casos.casos.organo}</strong> {language === 'es' ? caso.organo : (organoMap[caso.organo] || caso.organo)}
                        </span>
                      </div>
                      <div className="flex items-center gap-3">
                        <div className="w-2 h-2 bg-apricot rounded-full"></div>
                        <span className="text-sm text-offwhite/80">
-                         <strong className="text-gold">{t.casos.casos.tipo}</strong> {caso.tipo_resolucion}
+                         <strong className="text-gold">{t.casos.casos.tipo}</strong> {language === 'es' ? caso.tipo_resolucion : (tipoMap[caso.tipo_resolucion] || caso.tipo_resolucion)}
                        </span>
                      </div>
                   </div>
