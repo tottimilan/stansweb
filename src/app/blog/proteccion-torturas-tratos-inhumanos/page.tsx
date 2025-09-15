@@ -232,22 +232,78 @@ const relatedArticles = [
 export default function ProteccionTorturasPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز حقوق المعتقلين',
+      title: 'الحماية من التعذيب والمعاملة غير الإنسانية',
+      subtitle: 'الكشف والشكوى والإصلاح الكامل للإساءات',
+      description: 'الحظر المطلق للتعذيب. الكشف والشكوى والإصلاح الكامل للإساءات أثناء الاعتقال. بروتوكولات الحماية.'
+    },
+    sections: {
+      tiposMaltrato: 'أنواع الإساءات المحظورة',
+      garantiasProteccion: 'ضمانات الحماية والكشف',
+      protocoloDeteccion: 'بروتوكول الكشف والشكوى',
+      organizacionesApoyo: 'منظمات دعم الضحايا',
+      derechosReparacion: 'حقوق الإصلاح الكامل',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول التعذيب والإساءات',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Derechos de Detenidos',
+      title: 'Protección contra Torturas y Tratos Inhumanos',
+      subtitle: 'Detección, Denuncia y Reparación de Maltratos',
+      description: 'Prohibición absoluta de torturas. Detección, denuncia y reparación de maltratos durante la detención. Protocolos de protección.'
+    },
+    sections: {
+      tiposMaltrato: 'Tipos de Maltrato Prohibidos',
+      garantiasProteccion: 'Garantías de Protección y Detección',
+      protocoloDeteccion: 'Protocolo de Detección y Denuncia',
+      organizacionesApoyo: 'Organizaciones de Apoyo a Víctimas',
+      derechosReparacion: 'Derechos a la Reparación Integral',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Torturas y Maltratos',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'حظر التعذيب والمعاملة غير الإنسانية هو أحد أهم إنجازات حقوق الإنسان الحديثة. معترف به كحق أساسي في المادة 15 من الدستور الإسباني وفي المعاهدات الدولية مثل اتفاقية مناهضة التعذيب، هذا الحظر مطلق وغير قابل للتقادم، ينطبق في أي ظرف و ضد أي سلطة.',
+      parrafo2: 'توضح هذه الدليل الشامل كيفية كشف الإساءات، ما يجب فعله إذا تعرضت للتعذيب، بروتوكولات الحماية الموجودة، وكيفية الحصول على الإصلاح الكامل للأضرار التي لحقت، بناءً على القانون العضوي 1/2014 ضد التعذيب وقضاء المحكمة الأوروبية لحقوق الإنسان.'
+    },
+    tiposMaltrato: {
+      titulo: 'أنواع الإساءات المحظورة'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'La <strong>prohibición de torturas y tratos inhumanos</strong> es una de las conquistas más importantes de los derechos humanos modernos. Reconocida como derecho fundamental en el <strong>artículo 15 de la Constitución Española</strong> y en tratados internacionales como la <strong>Convención contra la Tortura</strong>, esta prohibición es absoluta e imprescriptible, aplicable en cualquier circunstancia y contra cualquier autoridad.',
+      parrafo2: 'Esta guía exhaustiva explica cómo detectar maltratos, qué hacer si sufres torturas, los protocolos de protección existentes, y cómo obtener reparación integral por los daños sufridos, basándose en la <strong>Ley Orgánica 1/2014</strong> contra la tortura y la jurisprudencia del <strong>Tribunal Europeo de Derechos Humanos</strong>.'
+    },
+    tiposMaltrato: {
+      titulo: 'Tipos de Maltrato Prohibidos'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
-    { label: 'Protección contra Torturas y Tratos Inhumanos' }
+    { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'tipos-de-maltrato-prohibidos', title: 'Tipos de Maltrato Prohibidos', level: 2 },
-    { id: 'garantias-de-proteccion-y-deteccion', title: 'Garantías de Protección y Detección', level: 2 },
-    { id: 'protocolo-de-deteccion-y-denuncia', title: 'Protocolo de Detección y Denuncia', level: 2 },
-    { id: 'organizaciones-de-apoyo-a-victimas', title: 'Organizaciones de Apoyo a Víctimas', level: 2 },
-    { id: 'derechos-a-la-reparacion-integral', title: 'Derechos a la Reparación Integral', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-torturas-y-maltratos', title: 'Preguntas Frecuentes sobre Torturas y Maltratos', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'tipos-de-maltrato-prohibidos', title: blogTranslations.sections.tiposMaltrato, level: 2 },
+    { id: 'garantias-de-proteccion-y-deteccion', title: blogTranslations.sections.garantiasProteccion, level: 2 },
+    { id: 'protocolo-de-deteccion-y-denuncia', title: blogTranslations.sections.protocoloDeteccion, level: 2 },
+    { id: 'organizaciones-de-apoyo-a-victimas', title: blogTranslations.sections.organizacionesApoyo, level: 2 },
+    { id: 'derechos-a-la-reparacion-integral', title: blogTranslations.sections.derechosReparacion, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-torturas-y-maltratos', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -272,12 +328,12 @@ export default function ProteccionTorturasPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Derechos de Detenidos
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Derechos de Detenidos
+                  {language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -286,12 +342,15 @@ export default function ProteccionTorturasPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Protección contra Torturas y Tratos Inhumanos
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Prohibición absoluta de torturas. Detección, denuncia y reparación
-                de maltratos durante la detención. Protocolos de protección.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -323,17 +382,10 @@ export default function ProteccionTorturasPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La <strong>prohibición de torturas y tratos inhumanos</strong> es una de las conquistas
-                  más importantes de los derechos humanos modernos. Reconocida como derecho fundamental
-                  en el <strong>artículo 15 de la Constitución Española</strong> y en tratados internacionales
-                  como la <strong>Convención contra la Tortura</strong>, esta prohibición es absoluta e
-                  imprescriptible, aplicable en cualquier circunstancia y contra cualquier autoridad.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía exhaustiva explica cómo detectar maltratos, qué hacer si sufres torturas,
-                  los protocolos de protección existentes, y cómo obtener reparación integral por los
-                  daños sufridos, basándose en la <strong>Ley Orgánica 1/2014</strong> contra la tortura
-                  y la jurisprudencia del <strong>Tribunal Europeo de Derechos Humanos</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -346,7 +398,7 @@ export default function ProteccionTorturasPage() {
                 className="mb-12"
               >
                 <h2 id="tipos-de-maltrato-prohibidos" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Tipos de Maltrato Prohibidos
+                  {contentTranslations.tiposMaltrato.titulo}
                 </h2>
 
                 <div className="space-y-6">
