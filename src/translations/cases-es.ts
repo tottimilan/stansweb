@@ -251,5 +251,33 @@ export const casesES = {
       resolucion: "El Juzgado de Instrucción nº 15 de Madrid dictó auto de sobreseimiento provisional al considerar que los hechos no constituían delito.",
       marco_legal: "El delito de injuria está regulado en el artículo 205 del Código Penal. La jurisprudencia establece que requiere expresiones graves con ánimo específico de ofender."
     }
+  },
+  // Caso 19 - ABDERRAHIM AKKOUH – POLICÍA LOCAL DE TORREJÓN
+  19: {
+    nombre: "CASO ABDERRAHIM AKKOUH – POLICÍA LOCAL DE TORREJÓN",
+    delito_principal: "Homicidio imprudente/doloso (investigación)",
+    resultado: "Investigación en curso",
+    contenido: {
+      resumen: "El 18 de junio de 2025, el agente de la Policía Municipal de Madrid Juan C. redujo y mantuvo inmovilizado a Abderrahim Akkouh, quien presuntamente había intentado robarle el móvil en Torrejón de Ardoz. La víctima falleció por anoxia. La jueza de Instrucción n.º 4 imputó al agente por homicidio y le dejó en libertad provisional con medidas cautelares. Nuestro despacho representa a la familia de la víctima como acusación particular, solicitando la calificación de asesinato y el ingreso en prisión preventiva del investigado.",
+      hechos: "Los hechos ocurrieron en la tarde del 18 de junio de 2025 en las inmediaciones de una discoteca en Torrejón de Ardoz. El agente Juan C. intervino tras recibir una llamada alertando de un presunto intento de robo. Durante la reducción, el agente aplicó técnicas de inmovilización que causaron la muerte por asfixia de Abderrahim Akkouh. Testigos presenciales grabaron el incidente con sus teléfonos móviles, mostrando una intervención de varios minutos donde la víctima solicitaba auxilio.",
+      estrategia: "Como acusación particular en representación de la familia, solicitamos la calificación de los hechos como asesinato (art. 139 CP) por la existencia de alevosía y ensañamiento en la actuación policial. Pedimos la prisión provisional del investigado por riesgo de fuga y reiteración delictiva. Insistimos en la práctica de todas las diligencias necesarias, incluyendo autopsia completa, análisis de las cámaras de seguridad y declaración de todos los testigos.",
+      pruebas: "Se han aportado vídeos grabados por vecinos, informes forenses preliminares y declaraciones de testigos. La acusación insiste en recabar las grabaciones completas de cámaras de seguridad. La autopsia preliminar apunta a una muerte violenta por asfixia. La Fiscalía se ha sumado a la petición de calificar los hechos como homicidio doloso.",
+      resolucion: "Actualmente, la causa se encuentra en fase de instrucción. La jueza mantiene al investigado en libertad provisional, con retirada de pasaporte y obligación de comparecer semanalmente. La acusación particular continúa impulsando diligencias y prepara recurso para que se revise la calificación y se acuerde prisión provisional.",
+      marco_legal: "Se manejan los artículos 138 (homicidio) y 139 (asesinato) del Código Penal, así como el artículo 142 (homicidio imprudente). También se citan los artículos 503 y 504 de la LECrim sobre la prisión provisional y el principio de proporcionalidad en las medidas cautelares."
+    }
+  },
+  // Caso 20 - OPERACIÓN BOP
+  20: {
+    nombre: "OPERACIÓN BOP",
+    delito_principal: "Pertenencia a grupo criminal y robos con violencia",
+    resultado: "Auto concediendo libertad provisional",
+    contenido: {
+      resumen: "La operación «BOP» es una investigación policial centrada en un presunto grupo organizado dedicado al tráfico de estupefacientes. Varios investigados fueron detenidos en 2025 y algunos permanecen en prisión provisional. Nuestro despacho asume la defensa de uno de ellos, sosteniendo que carece de vínculo con la organización y que su detención se debió a una mera relación de amistad con uno de los implicados. El procedimiento está en fase inicial y se están practicando diligencias.",
+      hechos: "Según las investigaciones policiales, la organización adquiría grandes cantidades de sustancias estupefacientes para su posterior distribución. Se practicaron entradas y registros en varias localidades de Madrid en los que se intervinieron drogas y dinero en efectivo. Nuestro defendido fue detenido por su presencia en uno de los domicilios registrados, sin que se encontrase droga en su poder.",
+      estrategia: "La defensa trabaja en demostrar que la mera presencia del acusado en el domicilio no implica pertenencia a la organización. Se solicitará la libertad provisional con la imposición de fianza, alegando arraigo y falta de antecedentes. Además se pedirá practicar pruebas periciales sobre la titularidad de los bienes incautados y la trazabilidad de las conversaciones intervenidas.",
+      pruebas: "Aún se están analizando las diligencias policiales y los atestados. El procedimiento se basa en intervenciones telefónicas, informes de seguimiento y decomisos de droga. La defensa propondrá testigos de descargo y periciales informáticas.",
+      resolucion: "Al cierre de este informe, la causa permanece en fase de instrucción. No se ha dictado resolución definitiva respecto de nuestro cliente.",
+      marco_legal: "Resultan de aplicación los artículos 368 y siguientes del Código Penal sobre tráfico de drogas y el artículo 570 bis relativo a pertenencia a organización criminal. Se tendrán en cuenta las directrices jurisprudenciales sobre participación mínima y consumación."
+    }
   }
 };
