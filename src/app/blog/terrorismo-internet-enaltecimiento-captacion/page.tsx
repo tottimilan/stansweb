@@ -145,20 +145,74 @@ const relatedArticles = [
 export default function TerrorismoInternetPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى المدونة',
+      title: 'الإرهاب على الإنترنت: التمجيد والتجنيد عبر الإنترنت',
+      subtitle: 'تحليل شامل لجرائم الإرهاب في المجال الرقمي',
+      description: 'التمجيد والتجنيد الجهادي والمسؤولية الجنائية في وسائل التواصل الاجتماعي.'
+    },
+    sections: {
+      marcoLegal: 'الإطار القانوني للإرهاب الرقمي',
+      tiposDelitos: 'أنواع جرائم الإرهاب على الإنترنت',
+      casosJurisprudencia: 'القضايا الواقعية والقضاء',
+      responsabilidadPlataformas: 'مسؤولية المنصات الرقمية',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول الإرهاب على الإنترنت',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al blog',
+      title: 'Terrorismo en Internet: Enaltecimiento y Captación Online',
+      subtitle: 'Análisis Exhaustivo de los Delitos de Terrorismo Digital',
+      description: 'Enaltecimiento, captación yihadista y responsabilidad penal en redes sociales.'
+    },
+    sections: {
+      marcoLegal: 'Marco Legal del Terrorismo Digital',
+      tiposDelitos: 'Tipos de Delitos de Terrorismo en Internet',
+      casosJurisprudencia: 'Casos Reales y Jurisprudencia',
+      responsabilidadPlataformas: 'Responsabilidad de Plataformas Digitales',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Terrorismo en Internet',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'الإرهاب على الإنترنت يمثل واحدة من أكثر التهديدات تعقيداً للأمن القومي. القانون العضوي 2/2015 قد أدخل تعديلات على القانون الجنائي الإسباني لتكييفه مع هذه الواقع الجديد، حيث يُجرّم سلوكيات مثل التمجيد للإرهاب، التجنيد الجهادي عبر الإنترنت وتمويل الإرهاب من خلال المنصات الرقمية.',
+      parrafo2: 'تحلل هذه الدليل أحدث القضاء من المحكمة العليا والمحكمة الوطنية، بما في ذلك القضايا البارزة التي حددت تطور القانون الجنائي الرقمي في إسبانيا.'
+    },
+    marcoLegal: {
+      titulo: 'الإطار القانوني للإرهاب الرقمي'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'El terrorismo en Internet representa una de las amenazas más complejas para la seguridad nacional. La <strong>Ley Orgánica 2/2015</strong> ha adaptado el Código Penal español a esta nueva realidad, tipificando conductas como el enaltecimiento del terrorismo, la captación yihadista online y la financiación terrorista a través de plataformas digitales.',
+      parrafo2: 'Esta guía analiza la jurisprudencia más reciente del <strong>Tribunal Supremo</strong> y <strong>Audiencia Nacional</strong>, incluyendo casos paradigmáticos que han marcado la evolución del derecho penal digital en España.'
+    },
+    marcoLegal: {
+      titulo: 'Marco Legal del Terrorismo Digital'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Terrorismo en Internet: Enaltecimiento y Captación' }
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'marco-legal-del-terrorismo-digital', title: 'Marco Legal del Terrorismo Digital', level: 2 },
-    { id: 'tipos-de-delitos-de-terrorismo-en-internet', title: 'Tipos de Delitos de Terrorismo en Internet', level: 2 },
-    { id: 'casos-reales-y-jurisprudencia', title: 'Casos Reales y Jurisprudencia', level: 2 },
-    { id: 'responsabilidad-de-plataformas-digitales', title: 'Responsabilidad de Plataformas Digitales', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-terrorismo-en-internet', title: 'Preguntas Frecuentes sobre Terrorismo en Internet', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'marco-legal-del-terrorismo-digital', title: blogTranslations.sections.marcoLegal, level: 2 },
+    { id: 'tipos-de-delitos-de-terrorismo-en-internet', title: blogTranslations.sections.tiposDelitos, level: 2 },
+    { id: 'casos-reales-y-jurisprudencia', title: blogTranslations.sections.casosJurisprudencia, level: 2 },
+    { id: 'responsabilidad-de-plataformas-digitales', title: blogTranslations.sections.responsabilidadPlataformas, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-terrorismo-en-internet', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -183,12 +237,12 @@ export default function TerrorismoInternetPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al blog
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Ciberseguridad Penal
+                  {language === 'ar' ? 'الأمن السيبراني الجنائي' : 'Ciberseguridad Penal'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -197,12 +251,15 @@ export default function TerrorismoInternetPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Terrorismo en Internet: Enaltecimiento y Captación Online
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Análisis exhaustivo de los delitos de terrorismo en el ámbito digital:
-                enaltecimiento, captación yihadista y responsabilidad penal en redes sociales.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -234,15 +291,10 @@ export default function TerrorismoInternetPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  El terrorismo en Internet representa una de las amenazas más complejas para la
-                  seguridad nacional. La <strong>Ley Orgánica 2/2015</strong> ha adaptado el Código Penal
-                  español a esta nueva realidad, tipificando conductas como el enaltecimiento del terrorismo,
-                  la captación yihadista online y la financiación terrorista a través de plataformas digitales.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía analiza la jurisprudencia más reciente del <strong>Tribunal Supremo</strong>
-                  y <strong>Audiencia Nacional</strong>, incluyendo casos paradigmáticos que han marcado
-                  la evolución del derecho penal digital en España.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -255,7 +307,7 @@ export default function TerrorismoInternetPage() {
                 className="mb-12"
               >
                 <h2 id="marco-legal-del-terrorismo-digital" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Marco Legal del Terrorismo Digital
+                  {contentTranslations.marcoLegal.titulo}
                 </h2>
 
                 <div className="bg-red-50 border border-red-200 rounded-lg p-8 mb-8">
