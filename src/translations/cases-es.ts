@@ -83,5 +83,89 @@ export const casesES = {
       resolucion: "El Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe dictó auto de sobreseimiento provisional en 2024. La resolución consideró que no existían indicios suficientes para continuar con el procedimiento penal contra nuestro cliente. El archivo de las actuaciones fue definitivo al no presentarse nuevas pruebas por la acusación.",
       marco_legal: "El delito de lesiones se encuentra tipificado en los artículos 147 y siguientes del Código Penal. El sobreseimiento provisional está regulado en el artículo 641 de la Ley de Enjuiciamiento Criminal, que permite el archivo cuando no resulte debidamente justificada la perpetración del delito o cuando no haya motivos suficientes para acusar a determinada persona."
     }
+  },
+  // Caso 7 - ESTAFA Y BLANQUEO DE CAPITALES JAEN
+  7: {
+    nombre: "CASO ESTAFA Y BLANQUEO DE CAPITALES JAEN",
+    delito_principal: "Estafa y blanqueo de capitales",
+    resultado: "Audiencia Provincial estima recurso y archiva la causa",
+    contenido: {
+      resumen: "Varios investigados eran acusados de estafa y de blanquear capitales supuestamente procedentes de operaciones de phishing. El Juzgado de Instrucción n.º 1 de Jaén dictó auto de continuación del procedimiento abreviado. Contra dicha resolución se interpuso recurso de apelación. La Audiencia Provincial de Jaén, mediante auto núm. 642/2024 de 29 de octubre de 2024, estimó el recurso y ordenó el sobreseimiento provisional y archivo de la causa, al no concurrir indicios suficientes de que los investigados conocieran el origen ilícito de los fondos.",
+      hechos: "Los investigados fueron acusados de formar parte de una red de blanqueo de capitales procedentes de estafas mediante phishing. Según la acusación, habrían recibido transferencias de víctimas de estafas informáticas y posteriormente habrían remitido estos fondos a terceros, actuando como 'muleros bancarios'. La investigación se inició tras denuncias de varias víctimas que habían sido engañadas mediante correos electrónicos fraudulentos para realizar transferencias a cuentas controladas por los investigados.",
+      estrategia: "La defensa alegó la inexistencia de dolo al tratarse de personas ajenas a la primera fase de la estafa que simplemente recepcionaron transferencias y las remitieron a terceros. Se argumentó que esta conducta puede constituir a lo sumo blanqueo por imprudencia, pero no estafa ni blanqueo doloso, de acuerdo con la doctrina que diferencia el conocimiento de la procedencia ilícita de la mera recepción negligente. Además, se aportaron pruebas documentales de que los acusados no tuvieron beneficio económico.",
+      pruebas: "Los autos contaron con informes de movimientos bancarios, declaraciones de los investigados y de los perjudicados, así como periciales informáticas. No se aportó evidencia de comunicaciones entre los acusados y los autores de las estafas. La jurisprudencia ha señalado que la simple recepción de dinero sin comprobar su origen puede constituir blanqueo por imprudencia grave, pero en este caso los magistrados concluyeron que tampoco concurría el elemento de imprudencia exigido.",
+      resolucion: "La Sección Segunda de la Audiencia Provincial de Jaén acordó estimar los recursos de apelación interpuestos contra el auto del Juzgado de Instrucción n.º 1 y revocar dicha resolución. En consecuencia, ordenó el sobreseimiento provisional y el archivo de las actuaciones para todos los investigados. La sala destacó la falta de indicios de conocimiento sobre el origen ilícito de los fondos y la ausencia de beneficio económico.",
+      marco_legal: "Se invocaron los artículos 248 (estafa) y 301 (blanqueo de capitales) del Código Penal, así como el artículo 641.1.º de la Ley de Enjuiciamiento Criminal, que permite el sobreseimiento cuando no existan indicios racionales de delito. La doctrina del Tribunal Supremo exige la prueba de la procedencia ilícita y del conocimiento por parte del receptor de los fondos."
+    }
+  },
+  // Caso 8 - RESISTENCIA A LA AUTORIDAD
+  8: {
+    nombre: "ABSOLUCIÓN EN CAUSA POR DELITO DE RESISTENCIA A LA AUTORIDAD",
+    delito_principal: "Resistencia a la autoridad (art. 556 CP)",
+    resultado: "Sentencia absolutoria",
+    contenido: {
+      resumen: "Nuestro cliente fue acusado de un delito de resistencia a agentes de la autoridad cuando intentó impedir la entrada de la policía en el domicilio donde se encontraba. El Juzgado de lo Penal n.º 25 de Madrid, mediante sentencia núm. 336/2024 de 11 de septiembre de 2024, le absolvió de todos los cargos al considerar que no se demostró conducta violenta ni desobediencia grave y que la actuación policial fue desproporcionada.",
+      hechos: "Los hechos ocurrieron cuando agentes de policía acudieron al domicilio del acusado sin orden judicial. Al intentar acceder a la vivienda, el acusado se opuso a la entrada argumentando que no existía autorización judicial ni situación de flagrancia. Los agentes manifestaron que el acusado les empujó y se resistió activamente, mientras que la defensa sostuvo que únicamente ejerció su derecho constitucional a la inviolabilidad del domicilio de forma pacífica.",
+      estrategia: "Se invocó el derecho a la inviolabilidad del domicilio (art. 18 CE) y el derecho a no declarar contra uno mismo. La defensa alegó que la entrada en el domicilio carecía de flagrancia y que el acusado ejerció su derecho a oponerse sin emplear violencia. Además, se solicitó la absolución por falta de prueba de cargo, apoyándose en precedentes en los que la Audiencia Provincial anuló condenas por resistencia cuando los agentes no recordaban los hechos. También se citó la jurisprudencia del Tribunal Supremo que anuló una condena similar al considerar que el ciudadano podía resistirse ante una entrada ilegal.",
+      pruebas: "En el juicio se practicaron las declaraciones de los agentes intervinientes y del acusado. No se aportó vídeo ni testigos independientes. La defensa puso de manifiesto las contradicciones entre los agentes y la ausencia de lesiones. La Audiencia Provincial ha reiterado que no basta la declaración policial si no está corroborada por otros elementos.",
+      resolucion: "La magistrada del Juzgado de lo Penal n.º 25 dictó sentencia absolutoria. Consideró que la prueba practicada no permitía superar la presunción de inocencia y que el derecho del acusado a impedir la entrada en su domicilio sin autorización estaba amparado por la Constitución. La sentencia ordenó el pago de costas de oficio y declaró firme la resolución.",
+      marco_legal: "Se aplican los artículos 556 y 16 del Código Penal y el artículo 18.2 CE sobre la inviolabilidad del domicilio. La jurisprudencia del Tribunal Supremo ha señalado que ante una entrada ilegal en domicilio el ciudadano puede oponerse sin incurrir en delito de resistencia."
+    }
+  },
+  // Caso 9 - ROBO CON VIOLENCIA
+  9: {
+    nombre: "CASO ROBO CON VIOLENCIA - ABSOLUCIÓN",
+    delito_principal: "Robo con violencia o intimidación y lesiones",
+    resultado: "Sentencia absolutoria",
+    contenido: {
+      resumen: "El Juzgado de lo Penal n.º 3 de Madrid juzgó a nuestro cliente por un robo con violencia o intimidación y un delito de lesiones con instrumento peligroso. Mediante sentencia núm. 50/2023 de 15 de febrero de 2023, la magistrada Concepción Ramiro Bargueño absolvió a los acusados al no quedar acreditado el uso de violencia ni su participación en los hechos.",
+      hechos: "Se acusó a nuestro cliente de participar junto con otros individuos en un robo con violencia en el que supuestamente se habría agredido a la víctima con un instrumento peligroso. La acusación sostenía que los imputados habían actuado en grupo para sustraer pertenencias de la víctima empleando violencia física. Sin embargo, las circunstancias del incidente presentaban importantes contradicciones y la identificación de los supuestos autores era cuestionable.",
+      estrategia: "La defensa planteó la inexistencia de prueba de cargo suficiente y la vulneración del derecho a la presunción de inocencia. Se subrayó que no se había acreditado el dominio del hecho ni la participación del acusado y que los reconocimientos fotográficos eran imprecisos. Además, se invocó la distinción entre robo con violencia y robo con fuerza en las cosas, señalando que la calificación de violencia exige un plus de agresión directa sobre las personas.",
+      pruebas: "Los principales medios de prueba fueron las declaraciones de la víctima y de los procesados, informes forenses y el atestado policial. La ausencia de testigos neutrales y de prueba pericial concluyente debilitó la acusación. La doctrina del Tribunal Supremo recuerda que la aplicación de la modalidad atenuada de robo con violencia sólo procede cuando la violencia es de escasa entidad; en este caso ni siquiera se pudo acreditar la violencia.",
+      resolucion: "La sentencia consideró que no existía prueba que desvirtuase la presunción de inocencia. Se absolvió a todos los acusados de los delitos de robo con violencia o intimidación y lesiones. Se declararon de oficio las costas procesales.",
+      marco_legal: "Resultan de aplicación los artículos 237 y 242 del Código Penal (robo con violencia) y el artículo 147 (lesiones). La jurisprudencia distingue entre robo con fuerza (art. 238) y robo con violencia, siendo este último de mayor gravedad."
+    }
+  },
+  // Caso 10 - BLANQUEO POR IMPRUDENCIA
+  10: {
+    nombre: "CASO BLANQUEO DE CAPITALES POR IMPRUDENCIA GRAVE",
+    delito_principal: "Blanqueo de capitales por imprudencia grave",
+    resultado: "Sentencia condenatoria con pena muy inferior a la solicitada",
+    contenido: {
+      resumen: "En el juicio celebrado en el Juzgado de lo Penal n.º 21 de Madrid, el Ministerio Fiscal solicitaba para nuestro cliente una pena de dos años de prisión por un delito de blanqueo de capitales en modalidad dolosa. Gracias a la estrategia de defensa, el órgano judicial consideró que no existía dolo y condenó únicamente por blanqueo imprudente con una multa de 3.600 euros (6 meses a 20 euros/día). Se evitó así la pena de prisión solicitada.",
+      hechos: "Nuestro cliente recibió en su cuenta bancaria varias transferencias de origen desconocido que posteriormente transfirió a terceros siguiendo instrucciones recibidas por internet. Desconocía que estos fondos procedían de estafas informáticas realizadas a través de phishing. La Fiscalía sostenía que el acusado debía conocer el origen ilícito por las características de las operaciones y los importes transferidos.",
+      estrategia: "La defensa se centró en demostrar la ausencia de conocimiento sobre el origen delictivo de los fondos. Se argumentó que el acusado actuó de buena fe creyendo que realizaba operaciones legítimas de intermediación financiera. Se invocó la jurisprudencia que establece que el blanqueo doloso requiere conocimiento cierto o al menos representación de la procedencia ilícita, mientras que la modalidad imprudente sanciona la falta de diligencia en la comprobación del origen de los fondos.",
+      pruebas: "Se analizaron los movimientos bancarios, las comunicaciones del acusado y las declaraciones de los perjudicados. No se encontraron pruebas de contacto directo entre el acusado y los autores de las estafas originarias. La defensa aportó pruebas del perfil personal y profesional del acusado incompatible con actividades delictivas organizadas.",
+      resolucion: "El Juzgado de lo Penal n.º 21 de Madrid dictó sentencia condenando por blanqueo de capitales por imprudencia grave con pena de multa de 6 meses a razón de 20 euros diarios (3.600 euros en total). Se descartó la modalidad dolosa y la pena de prisión solicitada por la Fiscalía, aplicando el artículo 301.3 del Código Penal.",
+      marco_legal: "El artículo 301 del Código Penal tipifica el blanqueo de capitales, incluyendo en su apartado 3 la modalidad imprudente. La jurisprudencia del Tribunal Supremo distingue entre el dolo eventual (conocimiento de la alta probabilidad del origen ilícito) y la imprudencia grave (omisión de las cautelas exigibles)."
+    }
+  },
+  // Caso 11 - ESTAFA EN GRADO DE TENTATIVA
+  11: {
+    nombre: "ESTAFA EN GRADO DE TENTATIVA",
+    delito_principal: "Estafa en grado de tentativa",
+    resultado: "Sentencia absolutoria",
+    contenido: {
+      resumen: "Nuestro representado fue juzgado por un delito de estafa en grado de tentativa. Se le acusaba de haber intentado cobrar un cheque presuntamente falsificado. Tras el juicio celebrado en el Juzgado de lo Penal n.º 21 de Madrid, fue absuelto mediante sentencia de 8 de mayo de 2024 al no quedar acreditado el elemento subjetivo del tipo penal.",
+      hechos: "El acusado intentó cobrar un cheque en una entidad bancaria que resultó tener irregularidades. El banco retuvo el cheque y dio aviso a las autoridades. La acusación sostenía que el acusado conocía la falsedad del documento y actuó con ánimo de defraudar. Sin embargo, el acusado mantenía que recibió el cheque como pago de una deuda legítima y desconocía cualquier irregularidad.",
+      estrategia: "La defensa se centró en la ausencia del elemento subjetivo del delito de estafa: el ánimo de defraudar y el conocimiento de la falsedad. Se argumentó que el acusado actuó de buena fe creyendo en la legitimidad del cheque recibido. Se invocó el principio de presunción de inocencia y la necesidad de probar más allá de toda duda razonable la intención delictiva.",
+      pruebas: "Se practicaron pruebas periciales sobre el cheque, declaraciones del acusado y del personal bancario. No se aportaron pruebas concluyentes sobre el conocimiento por parte del acusado de las irregularidades del documento. La defensa demostró la existencia de una relación comercial previa que justificaba la recepción del cheque.",
+      resolucion: "El Juzgado de lo Penal n.º 21 de Madrid dictó sentencia absolutoria el 8 de mayo de 2024. La magistrada consideró que no quedó acreditado el elemento subjetivo del delito de estafa, es decir, el conocimiento de la falsedad y el ánimo de defraudar. Se aplicó el principio in dubio pro reo ante la falta de pruebas concluyentes.",
+      marco_legal: "El delito de estafa está tipificado en el artículo 248 del Código Penal, que exige ánimo de lucro y engaño bastante para producir error en otro. La tentativa se regula en el artículo 16. La jurisprudencia exige la acreditación del elemento subjetivo específico del ánimo defraudatorio."
+    }
+  },
+  // Caso 12 - DELITO LEVE DE LESIONES
+  12: {
+    nombre: "ABSOLUCIÓN POR FALTA DE PRUEBAS EN DELITO LEVE DE LESIONES",
+    delito_principal: "Delito leve de lesiones (art. 147.2 CP)",
+    resultado: "Sentencia absolutoria",
+    contenido: {
+      resumen: "Nuestro cliente fue acusado de un delito leve de lesiones tras una discusión en la vía pública. La acusación particular solicitaba su condena basándose en el parte médico de lesiones. Sin embargo, el Juzgado de Instrucción n.º 7 de Madrid, mediante sentencia de 29 de mayo de 2023, le absolvió al considerar insuficiente la prueba de cargo presentada.",
+      hechos: "Se produjo un altercado verbal entre nuestro cliente y el denunciante en la vía pública. Según la denuncia, la discusión derivó en una agresión física que causó lesiones leves al denunciante. Nuestro cliente negó haber agredido al denunciante, sosteniendo que únicamente hubo un intercambio verbal y que en ningún momento se produjo contacto físico.",
+      estrategia: "La defensa cuestionó la credibilidad del testimonio del denunciante señalando contradicciones en su relato. Se destacó la ausencia de testigos imparciales y la falta de pruebas objetivas que corroboraran la versión acusatoria. Se argumentó que el parte médico únicamente acreditaba la existencia de lesiones pero no su origen ni autoría.",
+      pruebas: "Las pruebas consistieron en las declaraciones de las partes, el parte médico de lesiones y el atestado policial. No existían testigos presenciales ni grabaciones del incidente. La defensa puso de manifiesto que los agentes no presenciaron los hechos y que su intervención fue posterior.",
+      resolucion: "El Juzgado de Instrucción n.º 7 de Madrid dictó sentencia absolutoria el 29 de mayo de 2023. El magistrado consideró que existían dudas razonables sobre la participación del acusado en los hechos denunciados. Se aplicó el principio de presunción de inocencia al no existir prueba de cargo suficiente para desvirtuar dicha presunción.",
+      marco_legal: "El delito leve de lesiones está tipificado en el artículo 147.2 del Código Penal. La jurisprudencia establece que la mera existencia de lesiones no es prueba suficiente de autoría, siendo necesario acreditar de forma indubitada la relación causal entre la conducta del acusado y el resultado lesivo."
+    }
   }
 };
