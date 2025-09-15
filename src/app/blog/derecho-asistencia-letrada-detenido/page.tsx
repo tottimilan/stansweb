@@ -208,22 +208,78 @@ const relatedArticles = [
 export default function DerechoAsistenciaLetradaPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز حقوق المعتقلين',
+      title: 'الحق في المساعدة القانونية للمعتقل',
+      subtitle: 'المساعدة القانونية المجانية والإلزامية',
+      description: 'المساعدة القانونية المجانية والإلزامية. وظائف المحامي، أنواع المساعدة والمواعيد الدستورية أثناء الاعتقال.'
+    },
+    sections: {
+      funcionesAbogado: 'وظائف المحامي أثناء الاعتقال',
+      tiposAsistencia: 'أنواع المساعدة القانونية',
+      derechosAdicionales: 'الحقوق الإضافية مع المساعدة القانونية',
+      plazosConstitucionales: 'المواعيد الدستورية للمساعدة القانونية',
+      procesoDesignacion: 'عملية تعيين المحامي',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول المساعدة القانونية',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Derechos de Detenidos',
+      title: 'Derecho a la Asistencia Letrada del Detenido',
+      subtitle: 'Asistencia Jurídica Gratuita y Obligatoria',
+      description: 'Asistencia jurídica gratuita y obligatoria. Funciones del abogado, tipos de asistencia y plazos constitucionales durante la detención.'
+    },
+    sections: {
+      funcionesAbogado: 'Funciones del Abogado durante la Detención',
+      tiposAsistencia: 'Tipos de Asistencia Jurídica',
+      derechosAdicionales: 'Derechos Adicionales con Asistencia Letrada',
+      plazosConstitucionales: 'Plazos Constitucionales de Asistencia Letrada',
+      procesoDesignacion: 'Proceso de Designación de Abogado',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Asistencia Letrada',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'الحق في المساعدة القانونية هو أحد أهم الحقوق الدستورية أثناء الاعتقال. معترف به في المادة 24.2 من الدستور الإسباني ومطور بموجب القانون 1/1996 للمساعدة القانونية المجانية، يضمن أن يحصل كل شخص محروم من حريته على محامٍ منذ اللحظة الأولى.',
+      parrafo2: 'توضح هذه الدليل الكامل نطاق الحق في المساعدة القانونية، الطرق المختلفة للمساعدة القانونية، وظائف المحامي أثناء الاعتقال، وعواقب انتهاكه، بناءً على قضاء المحكمة الدستورية وتعليمات وزارة العدل.'
+    },
+    funcionesAbogado: {
+      titulo: 'وظائف المحامي أثناء الاعتقال'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'El <strong>derecho a la asistencia letrada</strong> es uno de los derechos constitucionales más importantes durante la detención. Reconocido en el <strong>artículo 24.2 de la Constitución Española</strong> y desarrollado por la <strong>Ley 1/1996 de Asistencia Jurídica Gratuita</strong>, garantiza que toda persona privada de libertad cuente con un abogado desde el primer momento.',
+      parrafo2: 'Esta guía completa explica el alcance del derecho a la asistencia letrada, las diferentes modalidades de asistencia jurídica, las funciones del abogado durante la detención, y las consecuencias de su vulneración, basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong> y las instrucciones del <strong>Ministerio de Justicia</strong>.'
+    },
+    funcionesAbogado: {
+      titulo: 'Funciones del Abogado durante la Detención'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
-    { label: 'Derecho a Asistencia Letrada del Detenido' }
+    { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'funciones-del-abogado-durante-la-detencion', title: 'Funciones del Abogado durante la Detención', level: 2 },
-    { id: 'tipos-de-asistencia-juridica', title: 'Tipos de Asistencia Jurídica', level: 2 },
-    { id: 'derechos-adicionales-con-asistencia-letrada', title: 'Derechos Adicionales con Asistencia Letrada', level: 2 },
-    { id: 'plazos-constitucionales-de-asistencia-letrada', title: 'Plazos Constitucionales de Asistencia Letrada', level: 2 },
-    { id: 'proceso-de-designacion-de-abogado', title: 'Proceso de Designación de Abogado', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-asistencia-letrada', title: 'Preguntas Frecuentes sobre Asistencia Letrada', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'funciones-del-abogado-durante-la-detencion', title: blogTranslations.sections.funcionesAbogado, level: 2 },
+    { id: 'tipos-de-asistencia-juridica', title: blogTranslations.sections.tiposAsistencia, level: 2 },
+    { id: 'derechos-adicionales-con-asistencia-letrada', title: blogTranslations.sections.derechosAdicionales, level: 2 },
+    { id: 'plazos-constitucionales-de-asistencia-letrada', title: blogTranslations.sections.plazosConstitucionales, level: 2 },
+    { id: 'proceso-de-designacion-de-abogado', title: blogTranslations.sections.procesoDesignacion, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-asistencia-letrada', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -249,12 +305,12 @@ export default function DerechoAsistenciaLetradaPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Derechos de Detenidos
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Derechos de Detenidos
+                  {language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -263,12 +319,15 @@ export default function DerechoAsistenciaLetradaPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derecho a la Asistencia Letrada del Detenido
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Asistencia jurídica gratuita y obligatoria. Funciones del abogado,
-                tipos de asistencia y plazos constitucionales durante la detención.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -300,16 +359,10 @@ export default function DerechoAsistenciaLetradaPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  El <strong>derecho a la asistencia letrada</strong> es uno de los derechos constitucionales
-                  más importantes durante la detención. Reconocido en el <strong>artículo 24.2 de la Constitución Española</strong>
-                  y desarrollado por la <strong>Ley 1/1996 de Asistencia Jurídica Gratuita</strong>, garantiza
-                  que toda persona privada de libertad cuente con un abogado desde el primer momento.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía completa explica el alcance del derecho a la asistencia letrada, las diferentes
-                  modalidades de asistencia jurídica, las funciones del abogado durante la detención, y las
-                  consecuencias de su vulneración, basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong>
-                  y las instrucciones del <strong>Ministerio de Justicia</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -322,7 +375,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 className="mb-12"
               >
                 <h2 id="funciones-del-abogado-durante-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Funciones del Abogado durante la Detención
+                  {contentTranslations.funcionesAbogado.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
