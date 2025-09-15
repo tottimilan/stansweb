@@ -38,19 +38,8 @@ const getIcon = (categoria: string) => {
 };
 
 const getCaseUrl = (caso: Case) => {
-  // Si ya tiene URL definida, usarla
-  if (caso.url) return caso.url;
-
-  // Generar URL basada en el nombre del caso (simplificada para SEO)
-  const slug = caso.nombre
-    .toLowerCase()
-    .replace(/caso\s*-?\s*/g, '')
-    .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-
-  return `/casos/${slug}`;
+  // Usar el ID del caso para la URL
+  return `/casos/${caso.id}`;
 };
 
 // Traducir categorías
@@ -61,9 +50,18 @@ const getTranslatedCategory = (categoria: string, language: string, t: any) => {
     'Robos con violencia y grupo criminal': t.casos.categorias.robosViolencia,
     'Delitos contra las personas': t.casos.categorias.delitosPersonas,
     'Delitos económicos y contra el patrimonio': t.casos.categorias.delitosEconomicos,
-    'Delitos contra el orden público, drogas y ejecución penal': t.casos.categorias.ordenPublico
+    'Delitos contra el orden público, drogas y ejecución penal': t.casos.categorias.ordenPublico,
+    'Delitos contra la salud pública': t.casos.categorias.delitosSaludPublica,
+    'Delitos contra la autoridad': t.casos.categorias.delitosAutoridad,
+    'Delitos patrimoniales': t.casos.categorias.delitosPatrimoniales,
+    'Delitos contra la libertad': t.casos.categorias.delitosLibertad,
+    'Delitos contra los derechos de los trabajadores': t.casos.categorias.delitosTrabajadores,
+    'Ejecución penal': t.casos.categorias.ejecucionPenal,
+    'Delitos contra la vida': t.casos.categorias.delitosVida,
+    'Pertenencia a organización criminal': t.casos.categorias.organizacionCriminal,
+    'Delitos contra la integridad física': t.casos.categorias.delitosIntegridad
   };
-  
+
   return categoryMap[categoria] || categoria;
 };
 
@@ -93,8 +91,71 @@ const getTranslatedResolutionType = (tipo: string, t: any) => {
     'Diligencias': t.casos.tiposResolucion.diligencias,
     'Archivo': t.casos.tiposResolucion.archivo
   };
-  
+
   return typeMap[tipo] || tipo;
+};
+
+// Traducir órganos judiciales
+const getTranslatedOrgano = (organo: string, language: string) => {
+  if (language === 'es') return organo;
+
+  const organoMap: { [key: string]: string } = {
+    'Juzgado de Instrucción nº 38 de Madrid': 'محكمة التحقيق رقم 38 في مدريد',
+    'Audiencia Provincial de Madrid': 'محكمة الاستئناف في مدريد',
+    'Juzgado de lo Penal nº 21 de Madrid': 'محكمة الجنايات رقم 21 في مدريد',
+    'Juzgado Central de Instrucción nº 2': 'محكمة التحقيق المركزية رقم 2',
+    'Juzgado de Instrucción nº 30 de Madrid': 'محكمة التحقيق رقم 30 في مدريد',
+    'Juzgado de lo Penal nº 25 de Madrid': 'محكمة الجنايات رقم 25 في مدريد',
+    'Juzgado de lo Penal nº 3 de Madrid': 'محكمة الجنايات رقم 3 في مدريد',
+    'Audiencia Provincial de Jaén': 'محكمة الاستئناف في خاين',
+    'Juzgado de Instrucción nº 1 de Jaén': 'محكمة التحقيق رقم 1 في خاين',
+    'Juzgado de Instrucción nº 12 de Madrid': 'محكمة التحقيق رقم 12 في مدريد',
+    'Juzgado de Instrucción nº 15 de Madrid': 'محكمة التحقيق رقم 15 في مدريد',
+    'Juzgado de lo Penal nº 4 de Madrid': 'محكمة الجنايات رقم 4 في مدريد',
+    'Juzgado de Instrucción nº 8 de Madrid': 'محكمة التحقيق رقم 8 في مدريد',
+    'Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe': 'محكمة الدرجة الأولى والتحقيق رقم 6 في خيتافي',
+    'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'محكمة التحقيق المركزية رقم 6 (المحكمة الوطنية)',
+    'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'محكمة التحقيق رقم 4 في بوزويلو دي ألاركون',
+    'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد',
+    'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)',
+    'Juzgado de lo Penal nº 21 de Madrid': 'محكمة الجنايات رقم 21 في مدريد',
+    'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد'
+  };
+
+  return organoMap[organo] || organo;
+};
+
+// Traducir localidades
+const getTranslatedLocalidad = (localidad: string, language: string) => {
+  if (language === 'es') return localidad;
+
+  const localidadMap: { [key: string]: string } = {
+    'Madrid': 'مدريد',
+    'Jaén': 'خاين',
+    'San Roque (Cádiz)': 'سان روكي (قادس)',
+    'Pozuelo de Alarcón (Madrid)': 'بوزويلو دي ألاركون (مدريد)',
+    'Getafe (Madrid)': 'خيتافي (مدريد)',
+    'Torrejón de Ardoz (Madrid)': 'توريخون دي أردوز (مدريد)',
+    'Alcorcón': 'ألكوركون',
+    'Por confirmar': 'قيد التأكيد'
+  };
+
+  return localidadMap[localidad] || localidad;
+};
+
+// Traducir etiquetas comunes
+const getTranslatedLabel = (label: string, language: string, t: any) => {
+  if (language === 'es') return label;
+
+  const labelMap: { [key: string]: string } = {
+    'Caso Popular': t.caso.casoPopular,
+    'Resultado:': t.casosDestacados.resultado,
+    'Órgano:': t.casosDestacados.organo,
+    'Tipo:': t.casosDestacados.tipo,
+    'Ver caso completo': t.casosDestacados.verCasoCompleto
+  };
+
+  return labelMap[label] || label;
 };
 
 export default function CaseCard({ caso }: Props) {
@@ -121,11 +182,11 @@ export default function CaseCard({ caso }: Props) {
           {getIcon(caso.categoria)}
         </div>
         <span className={`text-xs px-2 py-1 rounded-full font-medium ${
-          caso.id === 19
+          caso.favorabilidad === 'Neutro'
             ? 'bg-blue-600 text-blue-100'
             : 'bg-emerald-700 text-emerald-100'
         }`}>
-          {caso.id === 19 ? t.casosDestacados.enCurso : t.casosDestacados.favorable}
+          {caso.favorabilidad === 'Neutro' ? t.casosDestacados.enCurso : t.casosDestacados.favorable}
         </span>
       </div>
 
@@ -145,7 +206,7 @@ export default function CaseCard({ caso }: Props) {
           <span className="font-medium text-black">{t.casosDestacados.resultado}</span> {getTranslatedResult(caso.resultado, t)}
         </div>
         <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.organo}</span> {caso.organo}
+          <span className="font-medium text-black">{t.casosDestacados.organo}</span> {getTranslatedOrgano(caso.organo, language)}
         </div>
         <div className="text-sm text-black/70">
           <span className="font-medium text-black">{t.casosDestacados.tipo}</span> {getTranslatedResolutionType(caso.tipo_resolucion, t)}

@@ -22,7 +22,16 @@ const getCategorias = (t: any) => [
   t.casos.categorias.robosViolencia,
   t.casos.categorias.delitosPersonas,
   t.casos.categorias.delitosEconomicos,
-  t.casos.categorias.ordenPublico
+  t.casos.categorias.ordenPublico,
+  t.casos.categorias.delitosSaludPublica,
+  t.casos.categorias.delitosAutoridad,
+  t.casos.categorias.delitosPatrimoniales,
+  t.casos.categorias.delitosLibertad,
+  t.casos.categorias.delitosTrabajadores,
+  t.casos.categorias.ejecucionPenal,
+  t.casos.categorias.delitosVida,
+  t.casos.categorias.organizacionCriminal,
+  t.casos.categorias.delitosIntegridad
 ];
 
 export default function CasosPage() {
@@ -58,7 +67,16 @@ export default function CasosPage() {
     'robos-violencia': 'Robos con violencia y grupo criminal',
     'delitos-personas': 'Delitos contra las personas',
     'delitos-economicos': 'Delitos económicos y contra el patrimonio',
-    'orden-publico': 'Delitos contra el orden público, drogas y ejecución penal'
+    'orden-publico': 'Delitos contra el orden público, drogas y ejecución penal',
+    'delitos-salud-publica': 'Delitos contra la salud pública',
+    'delitos-autoridad': 'Delitos contra la autoridad',
+    'delitos-patrimoniales': 'Delitos patrimoniales',
+    'delitos-libertad': 'Delitos contra la libertad',
+    'delitos-trabajadores': 'Delitos contra los derechos de los trabajadores',
+    'ejecucion-penal': 'Ejecución penal',
+    'delitos-vida': 'Delitos contra la vida',
+    'organizacion-criminal': 'Pertenencia a organización criminal',
+    'delitos-integridad': 'Delitos contra la integridad física'
   };
 
   // Mapa inverso para obtener el ID desde el nombre traducido
@@ -70,6 +88,15 @@ export default function CasosPage() {
     if (categoriaTraducida === t.casos.categorias.delitosPersonas) return 'delitos-personas';
     if (categoriaTraducida === t.casos.categorias.delitosEconomicos) return 'delitos-economicos';
     if (categoriaTraducida === t.casos.categorias.ordenPublico) return 'orden-publico';
+    if (categoriaTraducida === t.casos.categorias.delitosSaludPublica) return 'delitos-salud-publica';
+    if (categoriaTraducida === t.casos.categorias.delitosAutoridad) return 'delitos-autoridad';
+    if (categoriaTraducida === t.casos.categorias.delitosPatrimoniales) return 'delitos-patrimoniales';
+    if (categoriaTraducida === t.casos.categorias.delitosLibertad) return 'delitos-libertad';
+    if (categoriaTraducida === t.casos.categorias.delitosTrabajadores) return 'delitos-trabajadores';
+    if (categoriaTraducida === t.casos.categorias.ejecucionPenal) return 'ejecucion-penal';
+    if (categoriaTraducida === t.casos.categorias.delitosVida) return 'delitos-vida';
+    if (categoriaTraducida === t.casos.categorias.organizacionCriminal) return 'organizacion-criminal';
+    if (categoriaTraducida === t.casos.categorias.delitosIntegridad) return 'delitos-integridad';
     return 'todos';
   };
 

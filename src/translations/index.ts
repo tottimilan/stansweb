@@ -228,11 +228,20 @@ export const translations = {
       },
       categorias: {
         delitosOdio: 'Delitos de odio y libertad de expresión',
-        terrorismo: 'Terrorismo y Audiencia Nacional', 
+        terrorismo: 'Terrorismo y Audiencia Nacional',
         robosViolencia: 'Robos con violencia y grupo criminal',
         delitosPersonas: 'Delitos contra las personas',
         delitosEconomicos: 'Delitos económicos y contra el patrimonio',
-        ordenPublico: 'Delitos contra el orden público, drogas y ejecución penal'
+        ordenPublico: 'Delitos contra el orden público, drogas y ejecución penal',
+        delitosSaludPublica: 'Delitos contra la salud pública',
+        delitosAutoridad: 'Delitos contra la autoridad',
+        delitosPatrimoniales: 'Delitos patrimoniales',
+        delitosLibertad: 'Delitos contra la libertad',
+        delitosTrabajadores: 'Delitos contra los derechos de los trabajadores',
+        ejecucionPenal: 'Ejecución penal',
+        delitosVida: 'Delitos contra la vida',
+        organizacionCriminal: 'Pertenencia a organización criminal',
+        delitosIntegridad: 'Delitos contra la integridad física'
       },
       casos: {
         verDetalles: 'Ver detalles',
@@ -957,7 +966,16 @@ export const translations = {
         robosViolencia: 'السرقة بالعنف والجماعة الإجرامية',
         delitosPersonas: 'الجرائم ضد الأشخاص',
         delitosEconomicos: 'الجرائم الاقتصادية وضد الممتلكات',
-        ordenPublico: 'الجرائم ضد النظام العام والمخدرات والتنفيذ الجنائي'
+        ordenPublico: 'الجرائم ضد النظام العام والمخدرات والتنفيذ الجنائي',
+        delitosSaludPublica: 'الجرائم ضد الصحة العامة',
+        delitosAutoridad: 'الجرائم ضد السلطة',
+        delitosPatrimoniales: 'الجرائم المالية',
+        delitosLibertad: 'الجرائم ضد الحرية',
+        delitosTrabajadores: 'الجرائم ضد حقوق العمال',
+        ejecucionPenal: 'التنفيذ الجنائي',
+        delitosVida: 'الجرائم ضد الحياة',
+        organizacionCriminal: 'الانتماء لمنظمة إجرامية',
+        delitosIntegridad: 'الجرائم ضد السلامة الجسدية'
       },
       casos: {
         verDetalles: 'عرض التفاصيل',
