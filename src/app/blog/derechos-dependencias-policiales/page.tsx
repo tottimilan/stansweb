@@ -320,6 +320,83 @@ export default function DerechosDependenciasPage() {
     }
   };
 
+  // Función para traducir arrays de datos
+  const getTranslatedDerechosBasicos = () => {
+    if (language === 'ar') {
+      return [
+        {
+          derecho: "معلومات الحقوق",
+          descripcion: "الحق في معرفة حقوقك كتابياً",
+          procedimiento: "قراءة شفهية + تسليم وثيقة مكتوبة",
+          momento: "فوراً بعد الاعتقال"
+        },
+        {
+          derecho: "المساعدة القانونية",
+          descripcion: "حضور محامٍ منذ اللحظة الأولى",
+          procedimiento: "تعيين تلقائي + حضور في الاستجوابات",
+          momento: "من بداية الإجراء"
+        },
+        {
+          derecho: "التواصل العائلي",
+          descripcion: "الحق في إبلاغ العائلة باعتقالك",
+          procedimiento: "مكالمة هاتفية خاصة + زيارة عائلية",
+          momento: "حد أقصى 24 ساعة"
+        },
+        {
+          derecho: "الرعاية الطبية",
+          descripcion: "المساعدة الصحية عند الحاجة",
+          procedimiento: "تقييم طبي + علاج إذا لزم الأمر",
+          momento: "عند طلب المعتقل"
+        },
+        {
+          derecho: "الشروط الكريمة",
+          descripcion: "المعاملة المحترمة والشروط المناسبة",
+          procedimiento: "زنزانة نظيفة + تغذية + نظافة",
+          momento: "طوال فترة الاعتقال"
+        },
+        {
+          derecho: "تسجيل الممتلكات",
+          descripcion: "قائمة مفصلة للأشياء الشخصية",
+          procedimiento: "قائمة موقعة + حفظ الأشياء",
+          momento: "عند الدخول إلى مركز الشرطة"
+        }
+      ];
+    }
+    return derechosBasicos;
+  };
+
+  const getTranslatedFasesDetencion = () => {
+    if (language === 'ar') {
+      return [
+        {
+          fase: "الدخول إلى مركز الشرطة",
+          tiempo: "0-2 ساعات",
+          derechos: ["معلومات الحقوق", "تسجيل الممتلكات", "أول اتصال بالمحامي", "تقييم طبي أولي"],
+          acciones: ["ابق هادئاً", "سهل التعريف", "اطلب محامياً", "أبلغ عن الأدوية"]
+        },
+        {
+          fase: "الاستجواب الشرطي",
+          tiempo: "2-24 ساعات",
+          derechos: ["حضور المحامي إلزامي", "الحق في الصمت", "عدم الإدلاء بأقوال", "راحة مناسبة"],
+          acciones: ["لا تعترف بدون محامٍ", "مارس الحقوق الدستورية", "اطلب فترات راحة", "سجل المخالفات"]
+        },
+        {
+          fase: "انتظار القضائي",
+          tiempo: "24-72 ساعات",
+          derechos: ["زيارات عائلية", "مراسلات", "قراءة", "رياضة محدودة"],
+          acciones: ["حافظ على التواصل العائلي", "جهز الدفاع", "اطلب معلومات", "مارس الحقوق اليومية"]
+        },
+        {
+          fase: "التسليم للقضاء",
+          tiempo: "حد أقصى 72 ساعات",
+          derechos: ["المثول أمام القاضي", "جلسة مع الضمانات", "حرية محتملة", "حقوق إجرائية"],
+          acciones: ["جهز الإفادة القضائية", "تنسيق مع المحامي", "مراجعة الاستراتيجية", "مارس آخر الحقوق"]
+        }
+      ];
+    }
+    return fasesDetencion;
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
     { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
@@ -434,7 +511,7 @@ export default function DerechosDependenciasPage() {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {derechosBasicos.map((derecho, index) => (
+                  {getTranslatedDerechosBasicos().map((derecho, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, y: 20 }}
@@ -471,11 +548,11 @@ export default function DerechosDependenciasPage() {
                 className="mb-12"
               >
                 <h2 id="fases-de-la-detencion-en-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Fases de la Detención en Comisaría
+                  {blogTranslations.sections.fasesDetencion}
                 </h2>
 
                 <div className="space-y-6">
-                  {fasesDetencion.map((fase, index) => (
+                  {getTranslatedFasesDetencion().map((fase, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, y: 20 }}
