@@ -365,7 +365,55 @@ export const translations = {
       leerMas: 'Leer más',
       minutosLectura: 'minutos de lectura',
       minLectura: 'min de lectura',
-      compartirArticulo: 'Compartir artículo'
+      compartirArticulo: 'Compartir artículo',
+      // Hubs de contenido
+      hubs: {
+        defensaPenalUrgente: {
+          title: 'Defensa Penal Urgente',
+          description: 'Guías completas para situaciones de urgencia penal: detenciones, registros, declaraciones y primeros pasos.'
+        },
+        procedimientosExtradicion: {
+          title: 'Procedimientos de Extradición',
+          description: 'Todo sobre extradiciones: procedimientos UE, derechos del extraditado, plazos y recursos disponibles.'
+        },
+        derechosDetenidos: {
+          title: 'Derechos de Detenidos',
+          description: 'Conoce tus derechos como detenido: asistencia letrada, comunicaciones, condiciones y habeas corpus.'
+        }
+      },
+      // Posts del blog
+      posts: {
+        defensaPenalUrgente: {
+          title: 'Defensa Penal Urgente: Guía Completa para Detenidos',
+          excerpt: 'Todo lo que necesitas saber cuando eres detenido: derechos, procedimiento y cómo actuar. Guía práctica para situaciones de urgencia penal.',
+          category: 'Defensa Penal Urgente'
+        },
+        procedimientosExtradicion: {
+          title: 'Procedimientos de Extradición en España: Todo lo que Debes Saber',
+          excerpt: 'Análisis completo del proceso de extradición: requisitos legales, plazos, derechos del extraditado y estrategias de defensa.',
+          category: 'Extradiciones'
+        },
+        derechosDetenidos: {
+          title: 'Derechos de los Detenidos: Conoce tus Garantías Procesales',
+          excerpt: 'Descubre todos los derechos que tienes como detenido: asistencia letrada, comunicación, condiciones de detención y habeas corpus.',
+          category: 'Derechos de Detenidos'
+        },
+        delitosSaludPublica: {
+          title: 'Delitos contra la Salud Pública: Drogas y Consecuencias Legales',
+          excerpt: 'Análisis detallado de los delitos relacionados con sustancias estupefacientes: tipos, penas, atenuantes y estrategias de defensa.',
+          category: 'Delitos contra la Salud Pública'
+        },
+        terrorismoInternet: {
+          title: 'Terrorismo en Internet: Enaltecimiento y Captación Online',
+          excerpt: 'Estudio de los delitos de terrorismo en el ámbito digital: enaltecimiento, captación yihadista y responsabilidad penal en redes sociales.',
+          category: 'Ciberseguridad Penal'
+        },
+        blanqueoCapitales: {
+          title: 'Blanqueo de Capitales: Cómo Detectarlo y Defenderse',
+          excerpt: 'Guía completa sobre el delito de blanqueo: origen de fondos, técnicas de lavado, responsabilidad penal y estrategias de defensa.',
+          category: 'Delitos Económicos'
+        }
+      }
     },
 
     // Breadcrumb Component
@@ -1042,7 +1090,55 @@ export const translations = {
       leerMas: 'اقرأ المزيد',
       minutosLectura: 'دقائق للقراءة',
       minLectura: 'دقيقة للقراءة',
-      compartirArticulo: 'مشاركة المقال'
+      compartirArticulo: 'مشاركة المقال',
+      // Hubs de contenido
+      hubs: {
+        defensaPenalUrgente: {
+          title: 'الدفاع الجنائي العاجل',
+          description: 'أدلة شاملة لحالات الطوارئ الجنائية: الاعتقالات، التفتيشات، التصريحات والخطوات الأولى.'
+        },
+        procedimientosExtradicion: {
+          title: 'إجراءات التسليم',
+          description: 'كل شيء عن التسليم: إجراءات الاتحاد الأوروبي، حقوق المُسلَّم، المواعيد والموارد المتاحة.'
+        },
+        derechosDetenidos: {
+          title: 'حقوق المعتقلين',
+          description: 'اعرف حقوقك كمعتقل: المساعدة القانونية، الاتصالات، الشروط وأمر الإحضار.'
+        }
+      },
+      // Posts del blog
+      posts: {
+        defensaPenalUrgente: {
+          title: 'الدفاع الجنائي العاجل: دليل شامل للمعتقلين',
+          excerpt: 'كل ما تحتاج معرفته عند اعتقالك: الحقوق، الإجراءات وكيفية التصرف. دليل عملي لحالات الطوارئ الجنائية.',
+          category: 'الدفاع الجنائي العاجل'
+        },
+        procedimientosExtradicion: {
+          title: 'إجراءات التسليم في إسبانيا: كل ما يجب معرفته',
+          excerpt: 'تحليل شامل لعملية التسليم: المتطلبات القانونية، المواعيد، حقوق المُسلَّم واستراتيجيات الدفاع.',
+          category: 'التسليم'
+        },
+        derechosDetenidos: {
+          title: 'حقوق المعتقلين: اعرف ضماناتك الإجرائية',
+          excerpt: 'اكتشف جميع الحقوق التي لديك كمعتقل: المساعدة القانونية، التواصل، ظروف الاعتقال وأمر الإحضار.',
+          category: 'حقوق المعتقلين'
+        },
+        delitosSaludPublica: {
+          title: 'الجرائم ضد الصحة العامة: المخدرات والعواقب القانونية',
+          excerpt: 'تحليل مفصل للجرائم المتعلقة بالمواد المخدرة: الأنواع، العقوبات، التخفيفات واستراتيجيات الدفاع.',
+          category: 'الجرائم ضد الصحة العامة'
+        },
+        terrorismoInternet: {
+          title: 'الإرهاب على الإنترنت: التمجيد والتجنيد عبر الإنترنت',
+          excerpt: 'دراسة جرائم الإرهاب في المجال الرقمي: التمجيد، التجنيد الجهادي والمسؤولية الجنائية في الشبكات الاجتماعية.',
+          category: 'الأمن السيبراني الجنائي'
+        },
+        blanqueoCapitales: {
+          title: 'غسل الأموال: كيفية اكتشافه والدفاع ضده',
+          excerpt: 'دليل شامل حول جريمة الغسل: أصل الأموال، تقنيات الغسل، المسؤولية الجنائية واستراتيجيات الدفاع.',
+          category: 'الجرائم الاقتصادية'
+        }
+      }
     },
 
     // Breadcrumb Component

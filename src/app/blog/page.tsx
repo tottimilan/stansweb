@@ -13,12 +13,12 @@ import Breadcrumb from '@/components/Breadcrumb';
 
 const WHATSAPP = '34611687226';
 
-const blogPosts = [
+const getBlogPosts = (t: any) => [
   {
     id: 1,
-    title: 'Defensa Penal Urgente: Guía Completa para Detenidos',
-    excerpt: 'Todo lo que necesitas saber cuando eres detenido: derechos, procedimiento y cómo actuar. Guía práctica para situaciones de urgencia penal.',
-    category: 'Defensa Penal Urgente',
+    title: t.blog.posts.defensaPenalUrgente.title,
+    excerpt: t.blog.posts.defensaPenalUrgente.excerpt,
+    category: t.blog.posts.defensaPenalUrgente.category,
     author: 'Equipo STANS Abogados',
     date: '2024-12-15',
     readTime: '8 min',
@@ -28,9 +28,9 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: 'Procedimientos de Extradición en España: Todo lo que Debes Saber',
-    excerpt: 'Análisis completo del proceso de extradición: requisitos legales, plazos, derechos del extraditado y estrategias de defensa.',
-    category: 'Extradiciones',
+    title: t.blog.posts.procedimientosExtradicion.title,
+    excerpt: t.blog.posts.procedimientosExtradicion.excerpt,
+    category: t.blog.posts.procedimientosExtradicion.category,
     author: 'Rubén Vaquero Arribas',
     date: '2024-12-10',
     readTime: '12 min',
@@ -40,9 +40,9 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: 'Derechos de los Detenidos: Conoce tus Garantías Procesales',
-    excerpt: 'Descubre todos los derechos que tienes como detenido: asistencia letrada, comunicación, condiciones de detención y habeas corpus.',
-    category: 'Derechos de Detenidos',
+    title: t.blog.posts.derechosDetenidos.title,
+    excerpt: t.blog.posts.derechosDetenidos.excerpt,
+    category: t.blog.posts.derechosDetenidos.category,
     author: 'Mounir Elyemlahy Chouati',
     date: '2024-12-08',
     readTime: '10 min',
@@ -52,9 +52,9 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: 'Delitos contra la Salud Pública: Drogas y Consecuencias Legales',
-    excerpt: 'Análisis detallado de los delitos relacionados con sustancias estupefacientes: tipos, penas, atenuantes y estrategias de defensa.',
-    category: 'Delitos contra la Salud Pública',
+    title: t.blog.posts.delitosSaludPublica.title,
+    excerpt: t.blog.posts.delitosSaludPublica.excerpt,
+    category: t.blog.posts.delitosSaludPublica.category,
     author: 'Diego Cardona Valero',
     date: '2024-12-05',
     readTime: '15 min',
@@ -64,9 +64,9 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: 'Terrorismo en Internet: Enaltecimiento y Captación Online',
-    excerpt: 'Estudio de los delitos de terrorismo en el ámbito digital: enaltecimiento, captación yihadista y responsabilidad penal en redes sociales.',
-    category: 'Ciberseguridad Penal',
+    title: t.blog.posts.terrorismoInternet.title,
+    excerpt: t.blog.posts.terrorismoInternet.excerpt,
+    category: t.blog.posts.terrorismoInternet.category,
     author: 'Equipo STANS Abogados',
     date: '2024-12-03',
     readTime: '14 min',
@@ -76,9 +76,9 @@ const blogPosts = [
   },
   {
     id: 6,
-    title: 'Blanqueo de Capitales: Cómo Detectarlo y Defenderse',
-    excerpt: 'Guía completa sobre el delito de blanqueo: origen de fondos, técnicas de lavado, responsabilidad penal y estrategias de defensa.',
-    category: 'Delitos Económicos',
+    title: t.blog.posts.blanqueoCapitales.title,
+    excerpt: t.blog.posts.blanqueoCapitales.excerpt,
+    category: t.blog.posts.blanqueoCapitales.category,
     author: 'Rubén Vaquero Arribas',
     date: '2024-12-01',
     readTime: '16 min',
@@ -88,26 +88,26 @@ const blogPosts = [
   }
 ];
 
-const pillarPages = [
+const getPillarPages = (t: any) => [
   {
-    title: 'Defensa Penal Urgente',
-    description: 'Guías completas para situaciones de urgencia penal: detenciones, registros, declaraciones y primeros pasos.',
+    title: t.blog.hubs.defensaPenalUrgente.title,
+    description: t.blog.hubs.defensaPenalUrgente.description,
     icon: Shield,
     articles: 8,
     slug: 'defensa-penal-urgente',
     color: 'from-blue-600 to-blue-800'
   },
   {
-    title: 'Procedimientos de Extradición',
-    description: 'Todo sobre extradiciones: procedimientos UE, derechos del extraditado, plazos y recursos disponibles.',
+    title: t.blog.hubs.procedimientosExtradicion.title,
+    description: t.blog.hubs.procedimientosExtradicion.description,
     icon: Scale,
     articles: 6,
     slug: 'procedimientos-extradicion',
     color: 'from-purple-600 to-purple-800'
   },
   {
-    title: 'Derechos de Detenidos',
-    description: 'Conoce tus derechos como detenido: asistencia letrada, comunicaciones, condiciones y habeas corpus.',
+    title: t.blog.hubs.derechosDetenidos.title,
+    description: t.blog.hubs.derechosDetenidos.description,
     icon: FileText,
     articles: 10,
     slug: 'derechos-detenidos',
@@ -118,6 +118,8 @@ const pillarPages = [
 export default function BlogPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  const blogPosts = getBlogPosts(t);
+  const pillarPages = getPillarPages(t);
 
   return (
     <>
@@ -297,7 +299,7 @@ export default function BlogPage() {
                         <div className="flex items-center gap-2">
                           <Calendar className="h-4 w-4 text-black/50" />
                           <span className="text-sm text-black/70">
-                            {new Date(post.date).toLocaleDateString('es-ES', {
+                            {new Date(post.date).toLocaleDateString(language === 'ar' ? 'ar-SA' : 'es-ES', {
                               day: '2-digit',
                               month: '2-digit',
                               year: 'numeric'
