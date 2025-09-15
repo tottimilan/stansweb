@@ -4,6 +4,7 @@ import { useParams, useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { translations } from '@/translations'
+import { getTranslatedCaseField } from '@/translations/cases'
 import { motion } from 'framer-motion'
 import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown } from 'lucide-react'
 import Navigation from '@/components/Navigation'
@@ -224,8 +225,8 @@ export default function CasoDetailPage() {
                 </motion.span>
               )}
                              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-gold to-apricot bg-clip-text text-transparent">
-                 {caso.nombre}
-               </h1>
+                {getTranslatedCaseField(caso.id, 'nombre', language, caso.nombre)}
+              </h1>
                              <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm">
                                  <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-gold/20 rounded-full px-3 sm:px-4 py-1.5 sm:py-2">
                    <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
@@ -328,7 +329,7 @@ export default function CasoDetailPage() {
                     </button>
                   </div>
                                      <div className={`prose prose-invert max-w-none overflow-hidden transition-all duration-300 ${expandedSections.resumen ? 'max-h-none' : 'max-h-0'}`}>
-                     {caso.contenido.resumen.split('\n').map((paragraph, index) => (
+                     {getTranslatedCaseField(caso.id, 'contenido.resumen', language, caso.contenido.resumen).split('\n').map((paragraph, index) => (
                        <p key={index} className="mb-4 text-offwhite/80 leading-relaxed">
                          {paragraph}
                        </p>
@@ -364,7 +365,7 @@ export default function CasoDetailPage() {
                     </button>
                   </div>
                                      <div className={`prose prose-invert max-w-none overflow-hidden transition-all duration-300 ${expandedSections.hechos ? 'max-h-none' : 'max-h-0'}`}>
-                     {caso.contenido.hechos.split('\n').map((paragraph, index) => (
+                     {getTranslatedCaseField(caso.id, 'contenido.hechos', language, caso.contenido.hechos).split('\n').map((paragraph, index) => (
                        <p key={index} className="mb-4 text-offwhite/80 leading-relaxed">
                          {paragraph}
                        </p>
@@ -400,7 +401,7 @@ export default function CasoDetailPage() {
                     </button>
                   </div>
                                      <div className={`prose prose-invert max-w-none overflow-hidden transition-all duration-300 ${expandedSections.estrategia ? 'max-h-none' : 'max-h-0'}`}>
-                     {caso.contenido.estrategia.split('\n').map((paragraph, index) => (
+                     {getTranslatedCaseField(caso.id, 'contenido.estrategia', language, caso.contenido.estrategia).split('\n').map((paragraph, index) => (
                        <p key={index} className="mb-4 text-offwhite/80 leading-relaxed">
                          {paragraph}
                        </p>
@@ -436,7 +437,7 @@ export default function CasoDetailPage() {
                     </button>
                   </div>
                                      <div className={`prose prose-invert max-w-none overflow-hidden transition-all duration-300 ${expandedSections.pruebas ? 'max-h-none' : 'max-h-0'}`}>
-                     {caso.contenido.pruebas.split('\n').map((paragraph, index) => (
+                     {getTranslatedCaseField(caso.id, 'contenido.pruebas', language, caso.contenido.pruebas).split('\n').map((paragraph, index) => (
                        <p key={index} className="mb-4 text-offwhite/80 leading-relaxed">
                          {paragraph}
                        </p>
@@ -464,7 +465,7 @@ export default function CasoDetailPage() {
                       </h2>
                    </div>
                                      <div className="prose prose-invert max-w-none">
-                     {caso.contenido.resolucion.split('\n').map((paragraph, index) => (
+                     {getTranslatedCaseField(caso.id, 'contenido.resolucion', language, caso.contenido.resolucion).split('\n').map((paragraph, index) => (
                        <p key={index} className="mb-4 text-offwhite/80 leading-relaxed">
                          {paragraph}
                        </p>
@@ -500,7 +501,7 @@ export default function CasoDetailPage() {
                     </button>
                   </div>
                                      <div className={`prose prose-invert max-w-none overflow-hidden transition-all duration-300 ${expandedSections.marco_legal ? 'max-h-none' : 'max-h-0'}`}>
-                     {caso.contenido.marco_legal.split('\n').map((paragraph, index) => (
+                     {getTranslatedCaseField(caso.id, 'contenido.marco_legal', language, caso.contenido.marco_legal).split('\n').map((paragraph, index) => (
                        <p key={index} className="mb-4 text-offwhite/80 leading-relaxed">
                          {paragraph}
                        </p>
@@ -667,7 +668,7 @@ export default function CasoDetailPage() {
                   </div>
                   <div>
                     <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.delitoPrincipal}</dt>
-                    <dd className="text-sm text-offwhite/80">{caso.delito_principal}</dd>
+                    <dd className="text-sm text-offwhite/80">{getTranslatedCaseField(caso.id, 'delito_principal', language, caso.delito_principal)}</dd>
                   </div>
                   <div>
                     <dt className="text-sm font-bold text-gold mb-1">{t.casos.camposCasos.resultado}</dt>
@@ -679,7 +680,7 @@ export default function CasoDetailPage() {
                            ? 'bg-red-500/20 text-red-400 border border-red-500/30'
                            : 'bg-gold/20 text-gold border border-gold/30'
                        }`}>
-                        {caso.resultado}
+                        {getTranslatedCaseField(caso.id, 'resultado', language, caso.resultado)}
                       </span>
                     </dd>
                   </div>
