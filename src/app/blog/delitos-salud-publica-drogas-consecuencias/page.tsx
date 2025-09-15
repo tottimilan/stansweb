@@ -138,20 +138,82 @@ const relatedArticles = [
 export default function DrogasDelitosPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى المدونة',
+      title: 'جرائم الصحة العامة: المخدرات والعواقب القانونية',
+      subtitle: 'تحليل شامل للجرائم المتعلقة بالمخدرات',
+      description: 'تحليل شامل للجرائم المتعلقة بالمواد المخدرة: الأنواع، العقوبات، الظروف المخففة واستراتيجيات الدفاع في إسبانيا.'
+    },
+    sections: {
+      marcoLegal: 'الإطار القانوني لجرائم المخدرات',
+      tiposDrogas: 'أنواع المخدرات والمقياس الجنائي',
+      atenuantes: 'الظروف المخففة واستراتيجيات الدفاع',
+      consecuencias: 'العواقب القانونية والإدارية',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول جرائم المخدرات',
+      legislacion: 'التشريع والقضاء',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al blog',
+      title: 'Delitos contra la Salud Pública: Drogas y Consecuencias Legales',
+      subtitle: 'Análisis Completo de los Delitos Relacionados con Sustancias Estupefacientes',
+      description: 'Análisis completo de los delitos relacionados con sustancias estupefacientes: tipos, penas, atenuantes y estrategias de defensa en España.'
+    },
+    sections: {
+      marcoLegal: 'Marco Legal de los Delitos de Drogas',
+      tiposDrogas: 'Tipos de Drogas y Escala Penal',
+      atenuantes: 'Atenuantes y Estrategias de Defensa',
+      consecuencias: 'Consecuencias Legales y Administrativas',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Delitos de Drogas',
+      legislacion: 'Legislación y Jurisprudencia',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'تشكل جرائم الصحة العامة المتعلقة بالمواد المخدرة واحدة من أكثر المخالفات الجنائية شيوعاً في إسبانيا. تنظم القانون العضوي 4/2015 لحماية الأمن المواطن هذه الجرائم بصرامة خاصة، محدداً عقوبات يمكن أن تصل إلى 9 سنوات من السجن.',
+      parrafo2: 'يحلل هذا الدليل بشكل شامل الإطار القانوني المطبق، بناءً على قضاء المحكمة العليا، إحصائيات وزارة الداخلية وتوجيهات النيابة العامة للدولة.'
+    },
+    marcoLegal: {
+      titulo: 'الإطار القانوني لجرائم المخدرات',
+      leyOrganica: {
+        titulo: 'القانون العضوي 4/2015',
+        descripcion: 'تنظيم شامل لجرائم الصحة العامة'
+      }
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Los delitos contra la salud pública relacionados con sustancias estupefacientes constituyen una de las infracciones penales más comunes en España. La <strong>Ley Orgánica 4/2015</strong> de Protección de la Seguridad Ciudadana regula estos delitos con especial rigor, estableciendo penas que pueden alcanzar hasta 9 años de prisión.',
+      parrafo2: 'Esta guía analiza exhaustivamente el marco legal aplicable, basándose en la jurisprudencia del <strong>Tribunal Supremo</strong>, las estadísticas del <strong>Ministerio del Interior</strong> y las directrices de la <strong>Fiscalía General del Estado</strong>.'
+    },
+    marcoLegal: {
+      titulo: 'Marco Legal de los Delitos de Drogas',
+      leyOrganica: {
+        titulo: 'Ley Orgánica 4/2015',
+        descripcion: 'Regulación integral de los delitos contra la salud pública'
+      }
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Delitos contra la Salud Pública: Drogas y Consecuencias' }
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'marco-legal-de-los-delitos-de-drogas', title: 'Marco Legal de los Delitos de Drogas', level: 2 },
-    { id: 'tipos-de-drogas-y-escala-penal', title: 'Tipos de Drogas y Escala Penal', level: 2 },
-    { id: 'atenuantes-y-estrategias-de-defensa', title: 'Atenuantes y Estrategias de Defensa', level: 2 },
-    { id: 'consecuencias-legales-y-administrativas', title: 'Consecuencias Legales y Administrativas', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-delitos-de-drogas', title: 'Preguntas Frecuentes sobre Delitos de Drogas', level: 2 },
-    { id: 'legislacion-y-jurisprudencia', title: 'Legislación y Jurisprudencia', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'marco-legal-de-los-delitos-de-drogas', title: blogTranslations.sections.marcoLegal, level: 2 },
+    { id: 'tipos-de-drogas-y-escala-penal', title: blogTranslations.sections.tiposDrogas, level: 2 },
+    { id: 'atenuantes-y-estrategias-de-defensa', title: blogTranslations.sections.atenuantes, level: 2 },
+    { id: 'consecuencias-legales-y-administrativas', title: blogTranslations.sections.consecuencias, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-delitos-de-drogas', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-jurisprudencia', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -176,12 +238,12 @@ export default function DrogasDelitosPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al blog
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Delitos contra la Salud Pública
+                  {language === 'ar' ? 'جرائم الصحة العامة' : 'Delitos contra la Salud Pública'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -190,12 +252,15 @@ export default function DrogasDelitosPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Delitos contra la Salud Pública: Drogas y Consecuencias Legales
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Análisis completo de los delitos relacionados con sustancias estupefacientes:
-                tipos, penas, atenuantes y estrategias de defensa en España.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -227,15 +292,10 @@ export default function DrogasDelitosPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los delitos contra la salud pública relacionados con sustancias estupefacientes
-                  constituyen una de las infracciones penales más comunes en España. La
-                  <strong>Ley Orgánica 4/2015</strong> de Protección de la Seguridad Ciudadana regula
-                  estos delitos con especial rigor, estableciendo penas que pueden alcanzar hasta 9 años de prisión.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía analiza exhaustivamente el marco legal aplicable, basándose en la
-                  jurisprudencia del <strong>Tribunal Supremo</strong>, las estadísticas del
-                  <strong>Ministerio del Interior</strong> y las directrices de la <strong>Fiscalía General del Estado</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -248,16 +308,16 @@ export default function DrogasDelitosPage() {
                 className="mb-12"
               >
                 <h2 id="marco-legal-de-los-delitos-de-drogas" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Marco Legal de los Delitos de Drogas
+                  {contentTranslations.marcoLegal.titulo}
                 </h2>
 
                 <div className="bg-red-50 border border-red-200 rounded-lg p-8 mb-8">
                   <div className="flex items-center gap-3 mb-6">
                     <Shield className="h-8 w-8 text-red-600" />
                     <div>
-                      <h3 className="text-xl font-semibold text-black">Ley Orgánica 4/2015</h3>
+                      <h3 className="text-xl font-semibold text-black">{contentTranslations.marcoLegal.leyOrganica.titulo}</h3>
                       <p className="text-black/80 mt-1">
-                        Regulación integral de los delitos contra la salud pública
+                        {contentTranslations.marcoLegal.leyOrganica.descripcion}
                       </p>
                     </div>
                   </div>
