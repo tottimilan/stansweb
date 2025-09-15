@@ -128,20 +128,80 @@ const relatedArticles = [
 export default function DerechosDetenidosPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى المدونة',
+      title: 'حقوق المعتقلين: تعرف على ضماناتك الإجرائية',
+      subtitle: 'الدليل الشامل لحقوقك الدستورية كمعتقل في إسبانيا',
+      description: 'الدليل الشامل لحقوقك الدستورية كمعتقل في إسبانيا: الضمانات الإجرائية، الإجراء القانوني والحماية القانونية.'
+    },
+    sections: {
+      derechosConstitucionales: 'الحقوق الدستورية للمعتقل',
+      fasesProcedimiento: 'مراحل الإجراء وحقوق المرتبطة بها',
+      derechosEspecificos: 'الحقوق المحددة أثناء الاعتقال',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول حقوق المعتقلين',
+      legislacionJurisprudencia: 'التشريع والقضاء',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al blog',
+      title: 'Derechos de los Detenidos: Conoce tus Garantías Procesales',
+      subtitle: 'Guía Completa de tus Derechos Constitucionales como Detenido en España',
+      description: 'Guía completa de tus derechos constitucionales como detenido en España: garantías procesales, procedimiento legal y protección jurídica.'
+    },
+    sections: {
+      derechosConstitucionales: 'Derechos Constitucionales del Detenido',
+      fasesProcedimiento: 'Fases del Procedimiento y Derechos Asociados',
+      derechosEspecificos: 'Derechos Específicos durante la Detención',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Derechos de Detenidos',
+      legislacionJurisprudencia: 'Legislación y Jurisprudencia',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'يُشكل الاعتقال حالة من الضعف الخاص التي تتطلب أقصى درجات احترام الحقوق الأساسية. تنص الدستور الإسباني والاتفاقية الأوروبية لحقوق الإنسان على مجموعة من الضمانات التي تحمي كل شخص محروم من حريته.',
+      parrafo2: 'يحلل هذا الدليل الشامل حقوقك الدستورية كمعتقل، بناءً على قضاء المحكمة الدستورية والمحكمة الأوروبية لحقوق الإنسان والتشريع الإسباني المطبق.'
+    },
+    derechosConstitucionales: {
+      titulo: 'الحقوق الدستورية للمعتقل',
+      garantiasFundamentales: {
+        titulo: 'الضمانات الأساسية',
+        descripcion: 'الحمايات الدستورية غير القابلة للتنازل عنها أثناء الاعتقال'
+      }
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Ser detenido supone una <strong>situación de especial vulnerabilidad</strong> que requiere el máximo respeto a los derechos fundamentales. La Constitución Española y el <strong>Convenio Europeo de Derechos Humanos</strong> establecen un conjunto de garantías que protegen a toda persona privada de libertad.',
+      parrafo2: 'Esta guía exhaustiva analiza tus derechos constitucionales como detenido, basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong>, <strong>Tribunal Europeo de Derechos Humanos</strong> y la legislación española aplicable.'
+    },
+    derechosConstitucionales: {
+      titulo: 'Derechos Constitucionales del Detenido',
+      garantiasFundamentales: {
+        titulo: 'Garantías Fundamentales',
+        descripcion: 'Protecciones constitucionales irrenunciables durante la detención'
+      }
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
-    { label: 'Garantías Procesales de los Detenidos' }
+    { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'derechos-constitucionales-del-detenido', title: 'Derechos Constitucionales del Detenido', level: 2 },
-    { id: 'fases-del-procedimiento-y-derechos-asociados', title: 'Fases del Procedimiento y Derechos Asociados', level: 2 },
-    { id: 'derechos-especificos-durante-la-detencion', title: 'Derechos Específicos durante la Detención', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-derechos-de-detenidos', title: 'Preguntas Frecuentes sobre Derechos de Detenidos', level: 2 },
-    { id: 'legislacion-y-jurisprudencia', title: 'Legislación y Jurisprudencia', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'derechos-constitucionales-del-detenido', title: blogTranslations.sections.derechosConstitucionales, level: 2 },
+    { id: 'fases-del-procedimiento-y-derechos-asociados', title: blogTranslations.sections.fasesProcedimiento, level: 2 },
+    { id: 'derechos-especificos-durante-la-detencion', title: blogTranslations.sections.derechosEspecificos, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-de-detenidos', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-jurisprudencia', title: blogTranslations.sections.legislacionJurisprudencia, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -166,12 +226,12 @@ export default function DerechosDetenidosPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al blog
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Derechos Fundamentales
+                  {language === 'ar' ? 'الحقوق الأساسية' : 'Derechos Fundamentales'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -180,12 +240,15 @@ export default function DerechosDetenidosPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derechos de los Detenidos: Conoce tus Garantías Procesales
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Guía completa de tus derechos constitucionales como detenido en España:
-                garantías procesales, procedimiento legal y protección jurídica.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -217,15 +280,10 @@ export default function DerechosDetenidosPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Ser detenido supone una <strong>situación de especial vulnerabilidad</strong> que requiere
-                  el máximo respeto a los derechos fundamentales. La Constitución Española y el
-                  <strong> Convenio Europeo de Derechos Humanos</strong> establecen un conjunto de garantías
-                  que protegen a toda persona privada de libertad.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía exhaustiva analiza tus derechos constitucionales como detenido,
-                  basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong>,
-                  <strong>Tribunal Europeo de Derechos Humanos</strong> y la legislación española aplicable.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -238,16 +296,16 @@ export default function DerechosDetenidosPage() {
                 className="mb-12"
               >
                 <h2 id="derechos-constitucionales-del-detenido" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Derechos Constitucionales del Detenido
+                  {contentTranslations.derechosConstitucionales.titulo}
                 </h2>
 
                 <div className="bg-green-50 border border-green-200 rounded-lg p-8 mb-8">
                   <div className="flex items-center gap-3 mb-6">
                     <Shield className="h-8 w-8 text-green-600" />
                     <div>
-                      <h3 className="text-xl font-semibold text-black">Garantías Fundamentales</h3>
+                      <h3 className="text-xl font-semibold text-black">{contentTranslations.derechosConstitucionales.garantiasFundamentales.titulo}</h3>
                       <p className="text-black/80 mt-1">
-                        Protecciones constitucionales irrenunciables durante la detención
+                        {contentTranslations.derechosConstitucionales.garantiasFundamentales.descripcion}
                       </p>
                     </div>
                   </div>
