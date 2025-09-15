@@ -78,7 +78,7 @@ export default function StatsSection() {
       <div 
         className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
         role="list"
-        aria-label="Estadísticas y logros de STANS ABOGADOS"
+        aria-label={language === 'ar' ? 'إحصائيات وإنجازات STANS ABOGADOS' : 'Estadísticas y logros de STANS ABOGADOS'}
       >
         {stats.map((stat, index) => (
           <motion.article

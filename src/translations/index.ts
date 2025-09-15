@@ -613,6 +613,35 @@ export const translations = {
           phoneInvalid: 'El número de teléfono no es válido'
         }
       }
+    },
+
+    // Metadatos del sitio web
+    metadata: {
+      title: 'STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España | Abogados Penalistas',
+      description: 'Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Servicios en español, inglés y árabe. Extradiciones, OEDE, casos complejos.',
+      keywords: 'abogado penal Madrid, defensa penal España, abogado penalista, derecho penal, extradición España Marruecos, OEDE, defensa 24/7, abogado árabe Madrid, penal económico, derechos fundamentales, criminalidad organizada, terrorismo, robos hurtos, tráfico drogas, violencia género, alcoholemia tráfico, falsedad documental, delitos informáticos',
+      openGraph: {
+        title: 'STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España',
+        description: 'Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Español, inglés y árabe.',
+        alt: 'STANS ABOGADOS - Defensa Penal 24/7'
+      },
+      twitter: {
+        title: 'STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España',
+        description: 'Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM.'
+      },
+      schema: {
+        name: 'STANS ABOGADOS',
+        description: 'Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 15 minutos.',
+        serviceType: 'Derecho Penal',
+        serviceCatalog: 'Servicios de Defensa Penal',
+        service24h: 'Asistencia legal penal inmediata las 24 horas del día',
+        extraditionService: 'Procedimientos de extradición entre España y Marruecos',
+        employees: {
+          ruben: 'Penal y penal económico, derechos fundamentales, OEDE y extradiciones',
+          mounir: 'Penal y administrativo. Especialista en derecho marroquí y extradiciones',
+          diego: 'Defensa en causas complejas: criminalidad organizada, terrorismo'
+        }
+      }
     }
   },
 
