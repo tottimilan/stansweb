@@ -243,23 +243,81 @@ const relatedArticles = [
 export default function DerechosProcesalesPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز حقوق المعتقلين',
+      title: 'الحقوق الإجرائية والموارد للمعتقل',
+      subtitle: 'الحقوق أثناء التحقيق والجلسة القضائية والتدابير الاحتياطية',
+      description: 'الحقوق أثناء التحقيق، الجلسة القضائية والتدابير الاحتياطية. الموارد ضد القرارات القضائية واستراتيجيات الدفاع.'
+    },
+    sections: {
+      derechosInvestigacion: 'الحقوق أثناء التحقيق',
+      sistemaRecursos: 'نظام الموارد ضد القرارات القضائية',
+      garantiasAudiencia: 'الضمانات في الجلسة القضائية',
+      medidasCautelares: 'التدابير الاحتياطية أثناء الإجراء',
+      estrategiasDefensa: 'استراتيجيات الدفاع حسب مراحل الإجراء',
+      proteccionDilaciones: 'الحماية ضد التأخيرات غير المبررة',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول الحقوق الإجرائية',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Derechos de Detenidos',
+      title: 'Derechos Procesales y Recursos del Detenido',
+      subtitle: 'Derechos durante la Investigación, Audiencia Judicial y Medidas Cautelares',
+      description: 'Derechos durante la investigación, audiencia judicial y medidas cautelares. Recursos contra decisiones judiciales y estrategias de defensa.'
+    },
+    sections: {
+      derechosInvestigacion: 'Derechos durante la Investigación',
+      sistemaRecursos: 'Sistema de Recursos contra Decisiones Judiciales',
+      garantiasAudiencia: 'Garantías en la Audiencia Judicial',
+      medidasCautelares: 'Medidas Cautelares durante el Proceso',
+      estrategiasDefensa: 'Estrategias de Defensa por Fases Procesales',
+      proteccionDilaciones: 'Protección contra Dilaciones Indebidas',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Derechos Procesales',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'الحقوق الإجرائية للمعتقل تشكل مجموعة الضمانات التي تحمي شرعية الإجراء الجنائي وضمان إجراء عادل. منصوص عليها في الدستور الإسباني (المادة 24) ومطورة في قانون الإجراءات الجنائية، تمتد هذه الحقوق من الحق في الإخطار بالاتهام إلى الحق في الطعن في القرارات القضائية.',
+      parrafo2: 'توضح هذه الدليل الشامل جميع الحقوق الإجرائية أثناء التحقيق، الضمانات في الجلسة القضائية، أنواع التدابير الاحتياطية، ونظام الموارد الكامل ضد القرارات القضائية، بناءً على قضاء المحكمة العليا والمحكمة الدستورية والمحكمة الأوروبية لحقوق الإنسان.'
+    },
+    derechosInvestigacion: {
+      titulo: 'الحقوق أثناء التحقيق'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Los <strong>derechos procesales del detenido</strong> constituyen el conjunto de garantías que protegen la legalidad del procedimiento penal y aseguran un proceso justo. Recogidos en la <strong>Constitución Española</strong> (artículo 24) y desarrollados en la <strong>Ley de Enjuiciamiento Criminal</strong>, estos derechos van desde el derecho a ser informado de la acusación hasta el derecho a impugnar las decisiones judiciales.',
+      parrafo2: 'Esta guía exhaustiva explica todos los derechos procesales durante la investigación, las garantías en la audiencia judicial, los tipos de medidas cautelares, y el sistema completo de recursos contra decisiones judiciales, basándose en la jurisprudencia del <strong>Tribunal Supremo</strong>, <strong>Tribunal Constitucional</strong> y <strong>Tribunal Europeo de Derechos Humanos</strong>.'
+    },
+    derechosInvestigacion: {
+      titulo: 'Derechos durante la Investigación'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
-    { label: 'Derechos Procesales y Recursos del Detenido' }
+    { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'derechos-durante-la-investigacion', title: 'Derechos durante la Investigación', level: 2 },
-    { id: 'sistema-de-recursos-contra-decisiones-judiciales', title: 'Sistema de Recursos contra Decisiones Judiciales', level: 2 },
-    { id: 'garantias-en-la-audiencia-judicial', title: 'Garantías en la Audiencia Judicial', level: 2 },
-    { id: 'medidas-cautelares-durante-el-proceso', title: 'Medidas Cautelares durante el Proceso', level: 2 },
-    { id: 'estrategias-de-defensa-por-fases-procesales', title: 'Estrategias de Defensa por Fases Procesales', level: 2 },
-    { id: 'proteccion-contra-dilaciones-indebidas', title: 'Protección contra Dilaciones Indebidas', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-derechos-procesales', title: 'Preguntas Frecuentes sobre Derechos Procesales', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'derechos-durante-la-investigacion', title: blogTranslations.sections.derechosInvestigacion, level: 2 },
+    { id: 'sistema-de-recursos-contra-decisiones-judiciales', title: blogTranslations.sections.sistemaRecursos, level: 2 },
+    { id: 'garantias-en-la-audiencia-judicial', title: blogTranslations.sections.garantiasAudiencia, level: 2 },
+    { id: 'medidas-cautelares-durante-el-proceso', title: blogTranslations.sections.medidasCautelares, level: 2 },
+    { id: 'estrategias-de-defensa-por-fases-procesales', title: blogTranslations.sections.estrategiasDefensa, level: 2 },
+    { id: 'proteccion-contra-dilaciones-indebidas', title: blogTranslations.sections.proteccionDilaciones, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-procesales', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -284,12 +342,12 @@ export default function DerechosProcesalesPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Derechos de Detenidos
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Derechos de Detenidos
+                  {language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -298,12 +356,15 @@ export default function DerechosProcesalesPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derechos Procesales y Recursos del Detenido
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Derechos durante la investigación, audiencia judicial y medidas cautelares.
-                Recursos contra decisiones judiciales y estrategias de defensa.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -335,18 +396,10 @@ export default function DerechosProcesalesPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los <strong>derechos procesales del detenido</strong> constituyen el conjunto de garantías
-                  que protegen la legalidad del procedimiento penal y aseguran un proceso justo. Recogidos
-                  en la <strong>Constitución Española</strong> (artículo 24) y desarrollados en la
-                  <strong>Ley de Enjuiciamiento Criminal</strong>, estos derechos van desde el derecho a ser
-                  informado de la acusación hasta el derecho a impugnar las decisiones judiciales.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía exhaustiva explica todos los derechos procesales durante la investigación,
-                  las garantías en la audiencia judicial, los tipos de medidas cautelares, y el sistema
-                  completo de recursos contra decisiones judiciales, basándose en la jurisprudencia
-                  del <strong>Tribunal Supremo</strong>, <strong>Tribunal Constitucional</strong> y
-                  <strong>Tribunal Europeo de Derechos Humanos</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -359,7 +412,7 @@ export default function DerechosProcesalesPage() {
                 className="mb-12"
               >
                 <h2 id="derechos-durante-la-investigacion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Derechos durante la Investigación
+                  {contentTranslations.derechosInvestigacion.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
