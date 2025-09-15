@@ -49,14 +49,14 @@ export const translations = {
       },
       mounir: {
         name: 'Mounir Elyemlahy Chouati',
-        role: 'Abogado Penalista',
+        role: 'Socio Director',
                  summary: 'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones.',
         tags: ['Penal', 'Derecho Marroquí', 'Administrativo', 'Extradiciones'],
         experience: '12+ años'
       },
       diego: {
         name: 'Diego Cardona Valero',
-        role: 'Abogado Penalista (ICAM 135715)',
+        role: 'Socio Director',
         summary: 'Defensa en causas complejas: personas, criminalidad organizada, terrorismo y garantías procesales. Especialista en casos de alta complejidad.',
         tags: ['Delitos contra las Personas', 'Criminalidad Organizada', 'Garantías Procesales', 'Terrorismo'],
         experience: '10+ años'
@@ -783,14 +783,14 @@ export const translations = {
       },
       mounir: {
         name: 'منير إليملاهي شواتي',
-        role: 'محامي جنائي',
+        role: 'شريك مدير',
                  summary: 'جنائي وإداري. استشارة في القانون المغربي للشركات والأفراد. متخصص في تسليم المجرمين.',
         tags: ['الجنائي', 'القانون المغربي', 'الإداري', 'تسليم المجرمين'],
         experience: '12+ عاماً'
       },
       diego: {
         name: 'دييغو كاردونا فالييرو',
-        role: 'محامي جنائي (ICAM 135715)',
+        role: 'شريك مدير',
         summary: 'دفاع في قضايا معقدة: الأشخاص، الجريمة المنظمة، الإرهاب وضمانات الإجراءات. متخصص في القضايا عالية التعقيد.',
         tags: ['الجرائم ضد الأشخاص', 'الجريمة المنظمة', 'ضمانات الإجراءات', 'الإرهاب'],
         experience: '10+ عاماً'

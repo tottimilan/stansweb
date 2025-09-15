@@ -206,18 +206,14 @@ export default function DefensaPenalUrgentePage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-8 sm:mb-12 text-sm sm:text-base lg:text-lg">
-                <p className="mb-6">
-                  {t.blogArticles.defensaPenalUrgenteGuia.introduccion.parrafo1}
-                </p>
+                <p className="mb-6" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.introduccion.parrafo1 }} />
 
                 <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 mb-8">
                   <div className="flex items-start gap-3">
                     <AlertTriangle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-blue-900 mb-2">{t.blogArticles.defensaPenalUrgenteGuia.introduccion.infoCritica.titulo}</h3>
-                      <p className="text-blue-800">
-                        {t.blogArticles.defensaPenalUrgenteGuia.introduccion.infoCritica.descripcion}
-                      </p>
+                      <p className="text-blue-800" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.introduccion.infoCritica.descripcion }} />
                     </div>
                   </div>
                 </div>
@@ -240,9 +236,7 @@ export default function DefensaPenalUrgentePage() {
                   </h2>
 
                   <div className="space-y-6">
-                    <p className="text-black/80 leading-relaxed">
-                      {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.descripcion}
-                    </p>
+                    <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.descripcion }} />
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       <div className="bg-green-50 p-6 rounded-xl">
@@ -250,9 +244,7 @@ export default function DefensaPenalUrgentePage() {
                           <CheckCircle className="h-5 w-5 text-green-600" />
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.informacion.titulo}
                         </h3>
-                        <p className="text-green-800 text-sm mb-3">
-                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.informacion.descripcion}
-                        </p>
+                        <p className="text-green-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.informacion.descripcion }} />
                         <ul className="text-green-700 text-xs space-y-1">
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.informacion.items.map((item, index) => (
                             <li key={index}>• {item}</li>
@@ -265,9 +257,7 @@ export default function DefensaPenalUrgentePage() {
                           <CheckCircle className="h-5 w-5 text-blue-600" />
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.asistenciaLetrada.titulo}
                         </h3>
-                        <p className="text-blue-800 text-sm mb-3">
-                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.asistenciaLetrada.descripcion}
-                        </p>
+                        <p className="text-blue-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.asistenciaLetrada.descripcion }} />
                         <ul className="text-blue-700 text-xs space-y-1">
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.asistenciaLetrada.items.map((item, index) => (
                             <li key={index}>• {item}</li>
@@ -280,9 +270,7 @@ export default function DefensaPenalUrgentePage() {
                           <CheckCircle className="h-5 w-5 text-purple-600" />
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.silencio.titulo}
                         </h3>
-                        <p className="text-purple-800 text-sm mb-3">
-                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.silencio.descripcion}
-                        </p>
+                        <p className="text-purple-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.silencio.descripcion }} />
                         <ul className="text-purple-700 text-xs space-y-1">
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.silencio.items.map((item, index) => (
                             <li key={index}>• {item}</li>
@@ -295,9 +283,7 @@ export default function DefensaPenalUrgentePage() {
                           <CheckCircle className="h-5 w-5 text-orange-600" />
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.comunicacion.titulo}
                         </h3>
-                        <p className="text-orange-800 text-sm mb-3">
-                          {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.comunicacion.descripcion}
-                        </p>
+                        <p className="text-orange-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.comunicacion.descripcion }} />
                         <ul className="text-orange-700 text-xs space-y-1">
                           {t.blogArticles.defensaPenalUrgenteGuia.derechosInmediatos.comunicacion.items.map((item, index) => (
                             <li key={index}>• {item}</li>
@@ -318,9 +304,7 @@ export default function DefensaPenalUrgentePage() {
                   </h2>
 
                   <div className="space-y-6">
-                    <p className="text-black/80 leading-relaxed">
-                      {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.descripcion}
-                    </p>
+                    <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.descripcion }} />
                     
                     <div className="bg-gray-50 p-6 rounded-xl">
                       <h3 className="font-semibold text-gray-900 mb-4">{t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.titulo}</h3>
@@ -346,9 +330,7 @@ export default function DefensaPenalUrgentePage() {
 
                     <div className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
                       <h4 className="font-semibold text-yellow-900 mb-2">⏰ {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.computo.titulo}</h4>
-                      <p className="text-yellow-800 text-sm">
-                        {t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.computo.descripcion}
-                      </p>
+                      <p className="text-yellow-800 text-sm" dangerouslySetInnerHTML={{ __html: t.blogArticles.defensaPenalUrgenteGuia.procesoDetencion.plazosMaximos.computo.descripcion }} />
                     </div>
                   </div>
                 </section>
@@ -377,7 +359,7 @@ export default function DefensaPenalUrgentePage() {
                             index === 1 ? 'text-green-800' :
                             index === 2 ? 'text-purple-800' :
                             'text-orange-800'
-                          }`}>{fase.descripcionCorta}</p>
+                          }`} dangerouslySetInnerHTML={{ __html: fase.descripcionCorta || '' }} />
                           {fase.items && (
                             <ul className={`text-sm space-y-1 ${
                               index === 0 ? 'text-blue-700' :
@@ -507,16 +489,12 @@ export default function DefensaPenalUrgentePage() {
                   <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 sm:mb-6">{blogTranslations.recursosLegales.titulo}</h2>
 
                   <div className="space-y-6">
-                    <p className="text-black/80 leading-relaxed">
-                      {blogTranslations.recursosLegales.descripcion}
-                    </p>
+                    <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: blogTranslations.recursosLegales.descripcion }} />
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       <div className="bg-blue-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-blue-900 mb-3">{blogTranslations.recursosLegales.habeasCorpus.titulo}</h3>
-                        <p className="text-blue-800 text-sm mb-3">
-                          {blogTranslations.recursosLegales.habeasCorpus.descripcion}
-                        </p>
+                        <p className="text-blue-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: blogTranslations.recursosLegales.habeasCorpus.descripcion }} />
                         <ul className="text-blue-700 text-xs space-y-1">
                           <li>• {blogTranslations.recursosLegales.habeasCorpus.caracteristicas[0]}</li>
                           <li>• {blogTranslations.recursosLegales.habeasCorpus.caracteristicas[1]}</li>
@@ -526,9 +504,7 @@ export default function DefensaPenalUrgentePage() {
 
                       <div className="bg-purple-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-purple-900 mb-3">{blogTranslations.recursosLegales.recursoAmparo.titulo}</h3>
-                        <p className="text-purple-800 text-sm mb-3">
-                          {blogTranslations.recursosLegales.recursoAmparo.descripcion}
-                        </p>
+                        <p className="text-purple-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: blogTranslations.recursosLegales.recursoAmparo.descripcion }} />
                         <ul className="text-purple-700 text-xs space-y-1">
                           <li>• {blogTranslations.recursosLegales.recursoAmparo.caracteristicas[0]}</li>
                           <li>• {blogTranslations.recursosLegales.recursoAmparo.caracteristicas[1]}</li>
@@ -538,9 +514,7 @@ export default function DefensaPenalUrgentePage() {
 
                       <div className="bg-green-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-green-900 mb-3">{blogTranslations.recursosLegales.recursoApelacion.titulo}</h3>
-                        <p className="text-green-800 text-sm mb-3">
-                          {blogTranslations.recursosLegales.recursoApelacion.descripcion}
-                        </p>
+                        <p className="text-green-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: blogTranslations.recursosLegales.recursoApelacion.descripcion }} />
                         <ul className="text-green-700 text-xs space-y-1">
                           <li>• {blogTranslations.recursosLegales.recursoApelacion.caracteristicas[0]}</li>
                           <li>• {blogTranslations.recursosLegales.recursoApelacion.caracteristicas[1]}</li>
@@ -550,9 +524,7 @@ export default function DefensaPenalUrgentePage() {
 
                       <div className="bg-orange-50 p-6 rounded-xl">
                         <h3 className="font-semibold text-orange-900 mb-3">{blogTranslations.recursosLegales.denunciaDisciplinaria.titulo}</h3>
-                        <p className="text-orange-800 text-sm mb-3">
-                          {blogTranslations.recursosLegales.denunciaDisciplinaria.descripcion}
-                        </p>
+                        <p className="text-orange-800 text-sm mb-3" dangerouslySetInnerHTML={{ __html: blogTranslations.recursosLegales.denunciaDisciplinaria.descripcion }} />
                         <ul className="text-orange-700 text-xs space-y-1">
                           <li>• {blogTranslations.recursosLegales.denunciaDisciplinaria.caracteristicas[0]}</li>
                           <li>• {blogTranslations.recursosLegales.denunciaDisciplinaria.caracteristicas[1]}</li>
@@ -569,9 +541,7 @@ export default function DefensaPenalUrgentePage() {
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gold mb-3 sm:mb-4">
                       {blogTranslations.ctaSection.titulo}
                     </h3>
-                    <p className="text-white/90 mb-4 sm:mb-6 max-w-2xl mx-auto text-sm sm:text-base">
-                      {blogTranslations.ctaSection.descripcion}
-                    </p>
+                    <p className="text-white/90 mb-4 sm:mb-6 max-w-2xl mx-auto text-sm sm:text-base" dangerouslySetInnerHTML={{ __html: blogTranslations.ctaSection.descripcion }} />
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                       <Link
                         href={`https://wa.me/${WHATSAPP}?text=${blogTranslations.ctaSection.whatsappText}`}

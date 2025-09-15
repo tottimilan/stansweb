@@ -344,9 +344,7 @@ export default function RequisitosExtradicionPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -376,12 +374,8 @@ export default function RequisitosExtradicionPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Requisitos Sustantivos */}
@@ -407,9 +401,7 @@ export default function RequisitosExtradicionPage() {
                       className="bg-green-50 border border-green-200 rounded-lg p-6"
                     >
                       <h4 className="font-semibold text-black mb-2">{requisito.requisito}</h4>
-                      <p className="text-black/80 text-sm mb-3">
-                        {requisito.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: requisito.descripcion }} />
                       <div className="flex items-center justify-between">
                         <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
                           {requisito.evidencia}
@@ -504,9 +496,7 @@ export default function RequisitosExtradicionPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {causa.causa}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {causa.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: causa.descripcion }} />
                         </div>
                         <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">
                           {causa.fundamento}
@@ -651,9 +641,7 @@ export default function RequisitosExtradicionPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

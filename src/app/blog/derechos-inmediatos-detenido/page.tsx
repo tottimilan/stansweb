@@ -337,21 +337,15 @@ export default function DerechosInmediatosPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {blogTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {blogTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: blogTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: blogTranslations.introduccion.parrafo2 }} />
 
                 <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 mt-8">
                   <div className="flex items-start gap-3">
                     <AlertTriangle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-blue-900 mb-2">{blogTranslations.introduccion.infoImportante.titulo}</h3>
-                      <p className="text-blue-800">
-                        {blogTranslations.introduccion.infoImportante.descripcion}
-                      </p>
+                      <p className="text-blue-800" dangerouslySetInnerHTML={{ __html: blogTranslations.introduccion.infoImportante.descripcion }} />
                     </div>
                   </div>
                 </div>
@@ -568,9 +562,7 @@ export default function DerechosInmediatosPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

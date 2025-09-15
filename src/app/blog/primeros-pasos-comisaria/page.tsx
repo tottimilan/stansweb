@@ -245,9 +245,7 @@ export default function ComisariaPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -277,12 +275,8 @@ export default function ComisariaPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Procedimiento Paso a Paso */}
@@ -319,15 +313,11 @@ export default function ComisariaPage() {
                         </span>
                       </div>
 
-                      <p className="text-white/80 mb-4">
-                        {paso.descripcion}
-                      </p>
+                      <p className="text-white/80 mb-4" dangerouslySetInnerHTML={{ __html: paso.descripcion }} />
 
                       <div className="bg-white/10 rounded-lg p-4">
                         <h4 className="font-semibold text-gold mb-2">Derechos en esta fase:</h4>
-                        <p className="text-white/90 text-sm">
-                          {paso.derechos}
-                        </p>
+                        <p className="text-white/90 text-sm" dangerouslySetInnerHTML={{ __html: paso.derechos }} />
                       </div>
                     </motion.div>
                   ))}
@@ -368,9 +358,7 @@ export default function ComisariaPage() {
                         className="bg-white border border-green-200 rounded-lg p-6"
                       >
                         <h4 className="font-semibold text-black mb-2">{condicion.aspecto}</h4>
-                        <p className="text-black/80 text-sm mb-3">
-                          {condicion.requisitos}
-                        </p>
+                        <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: condicion.requisitos }} />
                         <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
                           {condicion.referencia}
                         </span>
@@ -529,9 +517,7 @@ export default function ComisariaPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>
@@ -679,7 +665,7 @@ export default function ComisariaPage() {
         </section>
 
         <Footer />
-        <WhatsAppButton whatsapp={WHATSAPP} />
+        <WhatsAppButton />
       </main>
     </>
   );

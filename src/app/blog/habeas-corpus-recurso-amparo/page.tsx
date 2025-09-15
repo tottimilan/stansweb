@@ -269,9 +269,7 @@ export default function HabeasCorpusPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -301,12 +299,8 @@ export default function HabeasCorpusPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Motivos para Habeas Corpus */}
@@ -339,9 +333,7 @@ export default function HabeasCorpusPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {motivo.motivo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {motivo.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: motivo.descripcion }} />
                         </div>
                         <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                           motivo.urgencia === 'Muy Alta' ? 'bg-red-100 text-red-800' : 'bg-orange-100 text-orange-800'
@@ -390,9 +382,7 @@ export default function HabeasCorpusPage() {
                           <h3 className="text-lg font-semibold text-gold">
                             {paso.titulo}
                           </h3>
-                          <p className="text-white/80 text-sm">
-                            {paso.descripcion}
-                          </p>
+                          <p className="text-white/80 text-sm" dangerouslySetInnerHTML={{ __html: paso.descripcion }} />
                         </div>
                       </div>
 
@@ -447,9 +437,7 @@ export default function HabeasCorpusPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {caso.titulo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {caso.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: caso.descripcion }} />
                         </div>
                         <div className="text-right">
                           <div className="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-medium mb-1">
@@ -555,9 +543,7 @@ export default function HabeasCorpusPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

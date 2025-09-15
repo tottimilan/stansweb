@@ -314,9 +314,7 @@ export default function AudienciaExtradicionPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -346,12 +344,8 @@ export default function AudienciaExtradicionPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Fases de la Audiencia */}
@@ -384,9 +378,7 @@ export default function AudienciaExtradicionPage() {
                           <h3 className="text-lg font-semibold text-gold">
                             {fase.titulo}
                           </h3>
-                          <p className="text-white/80 text-sm">
-                            {fase.descripcion}
-                          </p>
+                          <p className="text-white/80 text-sm" dangerouslySetInnerHTML={{ __html: fase.descripcion }} />
                         </div>
                       </div>
 
@@ -428,9 +420,7 @@ export default function AudienciaExtradicionPage() {
                       className="bg-green-50 border border-green-200 rounded-lg p-6"
                     >
                       <h4 className="font-semibold text-black mb-2">{derecho.derecho}</h4>
-                      <p className="text-black/80 text-sm mb-3">
-                        {derecho.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                       <div className="space-y-2">
                         <div className="flex items-center gap-2">
                           <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
@@ -473,9 +463,7 @@ export default function AudienciaExtradicionPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {aspecto.aspecto}
                           </h3>
-                          <p className="text-black/80 text-sm italic">
-                            {aspecto.objetivo}
-                          </p>
+                          <p className="text-black/80 text-sm italic" dangerouslySetInnerHTML={{ __html: aspecto.objetivo }} />
                         </div>
                       </div>
 
@@ -526,24 +514,18 @@ export default function AudienciaExtradicionPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {tipo.tipo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {tipo.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: tipo.descripcion }} />
                         </div>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                           <h4 className="font-semibold text-black mb-2">Efectos:</h4>
-                          <p className="text-black/80 text-sm">
-                            {tipo.efectos}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: tipo.efectos }} />
                         </div>
                         <div>
                           <h4 className="font-semibold text-black mb-2">Recursos:</h4>
-                          <p className="text-black/80 text-sm">
-                            {tipo.recursos}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: tipo.recursos }} />
                         </div>
                       </div>
                     </motion.div>
@@ -632,9 +614,7 @@ export default function AudienciaExtradicionPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

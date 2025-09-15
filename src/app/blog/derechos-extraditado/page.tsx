@@ -311,9 +311,7 @@ export default function DerechosExtraditadoPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -343,12 +341,8 @@ export default function DerechosExtraditadoPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Derechos Constitucionales */}
@@ -374,9 +368,7 @@ export default function DerechosExtraditadoPage() {
                       className="bg-green-50 border border-green-200 rounded-lg p-6"
                     >
                       <h4 className="font-semibold text-black mb-2">{derecho.derecho}</h4>
-                      <p className="text-black/80 text-sm mb-3">
-                        {derecho.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                       <div className="space-y-2">
                         <div className="flex items-center gap-2">
                           <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
@@ -415,9 +407,7 @@ export default function DerechosExtraditadoPage() {
                       className="bg-blue-50 border border-blue-200 rounded-lg p-6"
                     >
                       <h4 className="font-semibold text-black mb-2">{derecho.derecho}</h4>
-                      <p className="text-black/80 text-sm mb-3">
-                        {derecho.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                       <div className="space-y-2">
                         <div className="flex items-center gap-2">
                           <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
@@ -460,9 +450,7 @@ export default function DerechosExtraditadoPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {grupo.grupo}
                           </h3>
-                          <p className="text-black/80 text-sm italic">
-                            {grupo.consideraciones}
-                          </p>
+                          <p className="text-black/80 text-sm italic" dangerouslySetInnerHTML={{ __html: grupo.consideraciones }} />
                         </div>
                       </div>
 
@@ -608,9 +596,7 @@ export default function DerechosExtraditadoPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

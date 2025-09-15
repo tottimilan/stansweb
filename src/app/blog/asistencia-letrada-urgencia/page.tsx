@@ -256,9 +256,7 @@ export default function AbogadoUrgenciaPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -288,12 +286,8 @@ export default function AbogadoUrgenciaPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Funciones del Abogado */}
@@ -325,9 +319,7 @@ export default function AbogadoUrgenciaPage() {
                         </h3>
                       </div>
 
-                      <p className="text-white/80 mb-4">
-                        {funcion.descripcion}
-                      </p>
+                      <p className="text-white/80 mb-4" dangerouslySetInnerHTML={{ __html: funcion.descripcion }} />
 
                       <ul className="space-y-1">
                         {funcion.detalles.map((detalle, idx) => (
@@ -369,9 +361,7 @@ export default function AbogadoUrgenciaPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {tipo.tipo}
                           </h3>
-                          <p className="text-black/60 text-sm italic">
-                            {tipo.recomendacion}
-                          </p>
+                          <p className="text-black/60 text-sm italic" dangerouslySetInnerHTML={{ __html: tipo.recomendacion }} />
                         </div>
                       </div>
 
@@ -432,9 +422,7 @@ export default function AbogadoUrgenciaPage() {
                         className="bg-white border border-green-200 rounded-lg p-6"
                       >
                         <h4 className="font-semibold text-black mb-2">{derecho.derecho}</h4>
-                        <p className="text-black/80 text-sm mb-3">
-                          {derecho.descripcion}
-                        </p>
+                        <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                         <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
                           {derecho.articulo}
                         </span>
@@ -528,9 +516,7 @@ export default function AbogadoUrgenciaPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

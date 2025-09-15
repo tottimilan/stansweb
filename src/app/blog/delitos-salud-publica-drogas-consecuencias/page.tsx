@@ -259,9 +259,7 @@ export default function DrogasDelitosPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -291,12 +289,8 @@ export default function DrogasDelitosPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Marco Legal */}
@@ -316,9 +310,7 @@ export default function DrogasDelitosPage() {
                     <Shield className="h-8 w-8 text-red-600" />
                     <div>
                       <h3 className="text-xl font-semibold text-black">{contentTranslations.marcoLegal.leyOrganica.titulo}</h3>
-                      <p className="text-black/80 mt-1">
-                        {contentTranslations.marcoLegal.leyOrganica.descripcion}
-                      </p>
+                      <p className="text-black/80 mt-1" dangerouslySetInnerHTML={{ __html: contentTranslations.marcoLegal.leyOrganica.descripcion }} />
                     </div>
                   </div>
 
@@ -464,9 +456,7 @@ export default function DrogasDelitosPage() {
                         <CheckCircle className="h-6 w-6 text-green-600" />
                         <h3 className="text-lg font-semibold text-black">{atenuante.titulo}</h3>
                       </div>
-                      <p className="text-black/80 mb-3">
-                        {atenuante.descripcion}
-                      </p>
+                      <p className="text-black/80 mb-3" dangerouslySetInnerHTML={{ __html: atenuante.descripcion }} />
                       <div className="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-medium w-fit">
                         Reducción: {atenuante.reduccion}
                       </div>
@@ -600,9 +590,7 @@ export default function DrogasDelitosPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

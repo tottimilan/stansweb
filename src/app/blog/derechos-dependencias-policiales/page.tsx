@@ -458,9 +458,7 @@ export default function DerechosDependenciasPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -490,12 +488,8 @@ export default function DerechosDependenciasPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Derechos Básicos */}
@@ -521,9 +515,7 @@ export default function DerechosDependenciasPage() {
                       className="bg-green-50 border border-green-200 rounded-lg p-6"
                     >
                       <h4 className="font-semibold text-black mb-2">{derecho.derecho}</h4>
-                      <p className="text-black/80 text-sm mb-3">
-                        {derecho.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                       <div className="space-y-2">
                         <div className="flex items-center gap-2">
                           <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
@@ -667,9 +659,7 @@ export default function DerechosDependenciasPage() {
                       <div className="flex items-start justify-between mb-3">
                         <div>
                           <h4 className="font-semibold text-black mb-1">{derecho.derecho}</h4>
-                          <p className="text-black/80 text-sm mb-2">
-                            {derecho.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm mb-2" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                         </div>
                         <span className="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
                           {derecho.frecuencia}
@@ -815,9 +805,7 @@ export default function DerechosDependenciasPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

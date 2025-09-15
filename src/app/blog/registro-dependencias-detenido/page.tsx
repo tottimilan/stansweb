@@ -299,9 +299,7 @@ export default function RegistroDependenciasPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -331,12 +329,8 @@ export default function RegistroDependenciasPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Tipos de Registro */}
@@ -368,9 +362,7 @@ export default function RegistroDependenciasPage() {
                         </h3>
                       </div>
 
-                      <p className="text-white/80 mb-4">
-                        {registro.descripcion}
-                      </p>
+                      <p className="text-white/80 mb-4" dangerouslySetInnerHTML={{ __html: registro.descripcion }} />
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
@@ -431,9 +423,7 @@ export default function RegistroDependenciasPage() {
                           <h3 className="text-lg font-semibold text-black">
                             {fase.titulo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {fase.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: fase.descripcion }} />
                         </div>
                       </div>
 
@@ -494,9 +484,7 @@ export default function RegistroDependenciasPage() {
                         className="bg-white border border-green-200 rounded-lg p-6"
                       >
                         <h4 className="font-semibold text-black mb-2">{garantia.garantia}</h4>
-                        <p className="text-black/80 text-sm mb-3">
-                          {garantia.descripcion}
-                        </p>
+                        <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: garantia.descripcion }} />
                         <div className="space-y-2">
                           <div className="flex items-center gap-2">
                             <span className="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">
@@ -546,9 +534,7 @@ export default function RegistroDependenciasPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {documento.documento}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {documento.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: documento.descripcion }} />
                         </div>
                         <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                           documento.importancia === 'Crucial' ? 'bg-red-100 text-red-800' :
@@ -664,9 +650,7 @@ export default function RegistroDependenciasPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

@@ -8,6 +8,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
+import { getTranslatedCaseField } from '@/translations/cases';
 import { ChevronDown, Filter, Award, Users, Clock, Shield, FileText, Scale, MapPin, Calendar, ArrowRight, ExternalLink } from 'lucide-react'
 
 // Importar casos reales
@@ -81,7 +82,8 @@ const resultMap: { [key: string]: string } = {
   'Auto de sobreseimiento y archivo': 'قرار إغلاق الدعوى وحفظها',
   'Revocación de orden de búsqueda y captura': 'إلغاء أمر البحث والقبض',
   'Investigación en curso': 'التحقيق جارٍ',
-  'Auto concediendo libertad provisional': 'قرار منح الحرية المؤقتة'
+  'Auto concediendo libertad provisional': 'قرار منح الحرية المؤقتة',
+  'Sentencia absolutoria': 'حكم بالبراءة'
 };
 
 const tipoMap: { [key: string]: string } = {
@@ -103,31 +105,7 @@ const tipoMap: { [key: string]: string } = {
 // Función para traducir títulos de casos
 const getTranslatedCaseName = (caseId: number, originalName: string, language: string) => {
   if (language === 'es') return originalName;
-
-  const casesTranslations = {
-    1: "قضية كيكي - محامون مسيحيون - إغلاق الدعوى",
-    2: "قضية نوردين وورك أوت",
-    3: "قضية ألفارو غارسيا",
-    4: "قضية لا مانتشا",
-    5: "قضية خورخي سانشيز",
-    6: "قضية ماريا خيسوس",
-    7: "قضية أنطونيو لوبيز",
-    8: "قضية كارلوس مارتينيز",
-    9: "قضية آنا غوميز",
-    10: "قضية بيدرو رودريغيز",
-    11: "قضية لويس فيرنانديز",
-    12: "قضية كارمن دياز",
-    13: "قضية ميغيل هيرنانديز",
-    14: "قضية إيزابيل راموس",
-    15: "قضية ديفيد مورينو",
-    16: "قضية صوفيا نافارو",
-    17: "قضية رافائيل خيل",
-    18: "قضية إيلينا كاسترو",
-    19: "قضية عبد الرحيم عكوش - شرطة توريخون المحلية",
-    20: "عملية بوب"
-  };
-
-  return casesTranslations[caseId as keyof typeof casesTranslations] || originalName;
+  return getTranslatedCaseField(caseId, 'nombre', language as 'es' | 'ar', originalName);
 };
 
 // Función para traducir categorías
@@ -153,6 +131,47 @@ const getTranslatedCategory = (categoria: string, language: string, t: any) => {
   };
 
   return categoryMap[categoria] || categoria;
+};
+
+// Función para traducir delito principal
+const delitoPrincipalMap: { [key: string]: string } = {
+  'Delito de odio y contra los sentimientos religiosos': 'جريمة الكراهية وضد المشاعر الدينية',
+  'Terrorismo de índole yihadista (autoadoctrinamiento)': 'الإرهاب ذو الطابع الجهادي (التطرف الذاتي)',
+  'Delito de depósito y tráfico de armas de guerra': 'جريمة التخزين وتهريب أسلحة الحرب',
+  'Pertenencia a organización criminal dedicada al tráfico de drogas': 'الانتماء لمنظمة إجرامية متخصصة في تهريب المخدرات',
+  'Tráfico de drogas y tenencia ilícita de armas': 'تهريب المخدرات وحيازة أسلحة غير قانونية',
+  'Tráfico de drogas': 'تهريب المخدرات',
+  'Robo con violencia e intimidación en establecimiento público': 'السرقة بالعنف والترهيب في مكان عام',
+  'Hurto en establecimiento comercial': 'السرقة في متجر تجاري',
+  'Falsedad documental y estafa': 'التزوير الوثائي والاحتيال',
+  'Delito contra la salud pública (tráfico de drogas)': 'جريمة ضد الصحة العامة (تهريب المخدرات)',
+  'Delito contra la libertad (secuestro)': 'جريمة ضد الحرية (الاختطاف)',
+  'Delito contra los derechos de los trabajadores': 'جريمة ضد حقوق العمال',
+  'Estafa': 'الاحتيال',
+  'Delito contra la integridad física': 'جريمة ضد السلامة الجسدية',
+  'Ejecución penal (evasión)': 'التنفيذ الجنائي (الهروب)',
+  'Delito contra la autoridad': 'جريمة ضد السلطة',
+  'Delito de lesiones': 'جريمة الإصابات',
+  'Delito de amenazas, coacciones y extorsión': 'جريمة التهديدات والإكراه والابتزاز',
+  'Delito contra la salud pública': 'جريمة ضد الصحة العامة',
+  'Robo con violencia': 'السرقة بالعنف',
+  'Falsificación de documento': 'تزوير وثيقة',
+  'Delito de desobediencia': 'جريمة عدم الطاعة',
+  'Delito de injurias': 'جريمة الإهانات',
+  'Delito de estafa': 'جريمة الاحتيال',
+  'Homicidio imprudente/doloso (investigación)': 'القتل غير العمد/المتعمد (تحقيق)',
+  'Pertenencia a grupo criminal y robos con violencia': 'الانتماء لمجموعة إجرامية والسرقة بالعنف',
+  'Resistencia a la autoridad': 'المقاومة للسلطة'
+};
+
+// Función para traducir observaciones
+const observacionesMap: { [key: string]: string } = {
+  'Se sobresee por libertad de expresión en programa satírico': 'يتم إغلاق الدعوى بحرية التعبير في برنامج ساخر',
+  'Investigación mediática de más de una docena de robos; nuestro cliente es el único en libertad': 'تحقيق إعلامي لأكثر من عشرة حوادث سرقة؛ عميلنا هو الوحيد في الحرية',
+  'Se ejerce acusación particular en nombre de la familia; investigación por muerte tras intervención policial': 'يتم ممارسة الاتهام الخاص باسم العائلة؛ تحقيق في الوفاة بعد التدخل الشرطي',
+  'Insuficiencia probatoria; contradicciones de agentes; se anula condena': 'عدم كفاية الأدلة؛ تناقضات الوكلاء؛ يتم إلغاء الحكم',
+  'Se archiva la causa por falta de pruebas': 'يتم حفظ القضية بسبب عدم وجود أدلة',
+  'Se absuelve por falta de pruebas suficientes': 'يتم البراءة بسبب عدم وجود أدلة كافية'
 };
 
 export default function CasosPage() {
@@ -388,7 +407,7 @@ export default function CasosPage() {
                                        {/* Badge FAVORABLE en la parte superior */}
                     {caso.favorabilidad === 'Favorable' && (
                       <div className="absolute -top-2 left-3 sm:left-4 bg-emerald-700 text-emerald-100 px-2 sm:px-3 py-1 rounded-lg text-xs font-bold shadow-lg border border-emerald-600/30">
-                        FAVORABLE
+                        {language === 'ar' ? 'مؤاتي' : 'FAVORABLE'}
                       </div>
                     )}
                    
@@ -408,7 +427,7 @@ export default function CasosPage() {
                   {/* Título y categoría */}
                   <div className="mb-4 sm:mb-6">
                     <span className="inline-block bg-gold/10 text-gold text-xs font-medium px-3 py-1 rounded-full mb-3 border border-gold/20">
-                      {caso.delito_principal}
+                      {language === 'es' ? caso.delito_principal : (delitoPrincipalMap[caso.delito_principal] || caso.delito_principal)}
                     </span>
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-offwhite group-hover:text-gold transition-colors mb-2 line-clamp-2">
                       {getTranslatedCaseName(caso.id, caso.nombre, language)}
@@ -421,7 +440,7 @@ export default function CasosPage() {
                   {/* Observaciones */}
                   {caso.observaciones && (
                     <p className="text-offwhite/80 text-sm leading-relaxed mb-6 line-clamp-3">
-                      {caso.observaciones}
+                      {language === 'es' ? caso.observaciones : (observacionesMap[caso.observaciones] || caso.observaciones)}
                     </p>
                   )}
 

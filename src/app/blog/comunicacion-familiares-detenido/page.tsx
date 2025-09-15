@@ -298,9 +298,7 @@ export default function ComunicacionFamiliarPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -330,12 +328,8 @@ export default function ComunicacionFamiliarPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Fases de Comunicación */}
@@ -432,9 +426,7 @@ export default function ComunicacionFamiliarPage() {
                         className="bg-white border border-green-200 rounded-lg p-6"
                       >
                         <h4 className="font-semibold text-black mb-2">{derecho.derecho}</h4>
-                        <p className="text-black/80 text-sm mb-3">
-                          {derecho.descripcion}
-                        </p>
+                        <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                         <div className="flex items-center justify-between">
                           <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
                             {derecho.articulo}
@@ -539,9 +531,7 @@ export default function ComunicacionFamiliarPage() {
                           <h3 className="text-lg font-semibold text-black">
                             {paso.titulo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {paso.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: paso.descripcion }} />
                         </div>
                       </div>
 
@@ -589,9 +579,7 @@ export default function ComunicacionFamiliarPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

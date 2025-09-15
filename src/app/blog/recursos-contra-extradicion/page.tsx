@@ -295,9 +295,7 @@ export default function RecursosExtradicionPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -327,12 +325,8 @@ export default function RecursosExtradicionPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Tipos de Recursos */}
@@ -378,9 +372,7 @@ export default function RecursosExtradicionPage() {
 
                       <div>
                         <h4 className="font-semibold text-gold mb-2">Fundamentos habituales:</h4>
-                        <p className="text-white/90 text-sm">
-                          {recurso.fundamentos}
-                        </p>
+                        <p className="text-white/90 text-sm" dangerouslySetInnerHTML={{ __html: recurso.fundamentos }} />
                       </div>
                     </motion.div>
                   ))}
@@ -414,9 +406,7 @@ export default function RecursosExtradicionPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {fase.fase}
                           </h3>
-                          <p className="text-black/80 text-sm italic">
-                            {fase.objetivo}
-                          </p>
+                          <p className="text-black/80 text-sm italic" dangerouslySetInnerHTML={{ __html: fase.objetivo }} />
                         </div>
                       </div>
 
@@ -459,9 +449,7 @@ export default function RecursosExtradicionPage() {
                       className="bg-green-50 border border-green-200 rounded-lg p-6"
                     >
                       <h4 className="font-semibold text-black mb-2">{medida.medida}</h4>
-                      <p className="text-black/80 text-sm mb-3">
-                        {medida.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: medida.descripcion }} />
                       <div className="space-y-2">
                         <div className="flex items-center gap-2">
                           <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
@@ -504,9 +492,7 @@ export default function RecursosExtradicionPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {caso.titulo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {caso.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: caso.descripcion }} />
                         </div>
                         <div className="text-right">
                           <div className="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-medium mb-1">
@@ -610,9 +596,7 @@ export default function RecursosExtradicionPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

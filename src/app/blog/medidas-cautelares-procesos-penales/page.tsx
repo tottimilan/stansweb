@@ -279,9 +279,7 @@ export default function MedidasCautelaresPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -311,12 +309,8 @@ export default function MedidasCautelaresPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Tipos de Medidas Cautelares */}
@@ -351,9 +345,7 @@ export default function MedidasCautelaresPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {medida.tipo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {medida.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: medida.descripcion }} />
                         </div>
                         <div className="text-right">
                           <span className={`px-3 py-1 rounded-full text-sm font-medium mb-2 block ${
@@ -460,9 +452,7 @@ export default function MedidasCautelaresPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {estrategia.estrategia}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {estrategia.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: estrategia.descripcion }} />
                         </div>
                         <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                           estrategia.efectividad === 'Alta' ? 'bg-green-100 text-green-800' :
@@ -576,9 +566,7 @@ export default function MedidasCautelaresPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

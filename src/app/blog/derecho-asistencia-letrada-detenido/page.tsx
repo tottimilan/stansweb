@@ -326,9 +326,7 @@ export default function DerechoAsistenciaLetradaPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -358,12 +356,8 @@ export default function DerechoAsistenciaLetradaPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Funciones del Abogado */}
@@ -389,9 +383,7 @@ export default function DerechoAsistenciaLetradaPage() {
                       className="bg-green-50 border border-green-200 rounded-lg p-6"
                     >
                       <h4 className="font-semibold text-black mb-2">{funcion.funcion}</h4>
-                      <p className="text-black/80 text-sm mb-3">
-                        {funcion.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: funcion.descripcion }} />
                       <div className="flex items-center justify-between">
                         <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
                           {funcion.momento}
@@ -436,9 +428,7 @@ export default function DerechoAsistenciaLetradaPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {tipo.tipo}
                           </h3>
-                          <p className="text-black/80 text-sm italic">
-                            {tipo.recomendacion}
-                          </p>
+                          <p className="text-black/80 text-sm italic" dangerouslySetInnerHTML={{ __html: tipo.recomendacion }} />
                         </div>
                       </div>
 
@@ -499,9 +489,7 @@ export default function DerechoAsistenciaLetradaPage() {
                         className="bg-white border border-purple-200 rounded-lg p-6"
                       >
                         <h4 className="font-semibold text-black mb-2">{derecho.derecho}</h4>
-                        <p className="text-black/80 text-sm mb-3">
-                          {derecho.descripcion}
-                        </p>
+                        <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
                         <div className="space-y-2">
                           <div className="flex items-center gap-2">
                             <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">
@@ -545,9 +533,7 @@ export default function DerechoAsistenciaLetradaPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {fase.fase}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {fase.derecho}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: fase.derecho }} />
                         </div>
                         <div className="text-right">
                           <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded mb-1 block">
@@ -658,9 +644,7 @@ export default function DerechoAsistenciaLetradaPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

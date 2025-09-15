@@ -288,9 +288,7 @@ export default function ExtradicionEspanaPage() {
                 {blogTranslations.introduccion.titulo}: {language === 'ar' ? 'دليل شامل' : 'Guía Completa'}
               </h1>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.introduccion.parrafo1}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.introduccion.parrafo1 }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -320,12 +318,8 @@ export default function ExtradicionEspanaPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {blogTranslations.introduccion.articulo.parrafo1}
-                </p>
-                <p>
-                  {blogTranslations.introduccion.articulo.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: blogTranslations.introduccion.articulo.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: blogTranslations.introduccion.articulo.parrafo2 }} />
               </div>
 
               {/* Tipos de Extradición */}
@@ -346,9 +340,7 @@ export default function ExtradicionEspanaPage() {
                       <Globe className="h-8 w-8 text-blue-600" />
                       <h3 className="text-lg font-semibold text-black">{blogTranslations.tiposExtradicion.ue.titulo}</h3>
                     </div>
-                    <p className="text-black/80 mb-4">
-                      {blogTranslations.tiposExtradicion.ue.descripcion}
-                    </p>
+                    <p className="text-black/80 mb-4" dangerouslySetInnerHTML={{ __html: blogTranslations.tiposExtradicion.ue.descripcion }} />
                     <ul className="space-y-2 text-sm text-black/70">
                       <li>• {blogTranslations.tiposExtradicion.ue.caracteristicas[0]}</li>
                       <li>• {blogTranslations.tiposExtradicion.ue.caracteristicas[1]}</li>
@@ -362,9 +354,7 @@ export default function ExtradicionEspanaPage() {
                       <Scale className="h-8 w-8 text-green-600" />
                       <h3 className="text-lg font-semibold text-black">{blogTranslations.tiposExtradicion.internacional.titulo}</h3>
                     </div>
-                    <p className="text-black/80 mb-4">
-                      {blogTranslations.tiposExtradicion.internacional.descripcion}
-                    </p>
+                    <p className="text-black/80 mb-4" dangerouslySetInnerHTML={{ __html: blogTranslations.tiposExtradicion.internacional.descripcion }} />
                     <ul className="space-y-2 text-sm text-black/70">
                       <li>• {blogTranslations.tiposExtradicion.internacional.caracteristicas[0]}</li>
                       <li>• {blogTranslations.tiposExtradicion.internacional.caracteristicas[1]}</li>
@@ -379,9 +369,7 @@ export default function ExtradicionEspanaPage() {
                     <AlertTriangle className="h-6 w-6 text-yellow-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="text-lg font-semibold text-black mb-2">{blogTranslations.tiposExtradicion.excepciones.titulo}</h3>
-                      <p className="text-black/80">
-                        {blogTranslations.tiposExtradicion.excepciones.descripcion}
-                      </p>
+                      <p className="text-black/80" dangerouslySetInnerHTML={{ __html: blogTranslations.tiposExtradicion.excepciones.descripcion }} />
                     </div>
                   </div>
                 </div>
@@ -418,9 +406,7 @@ export default function ExtradicionEspanaPage() {
                           <h3 className="text-lg font-semibold mb-2">
                             {step.title}
                           </h3>
-                          <p className="text-white/80 text-sm mb-3">
-                            {step.description}
-                          </p>
+                          <p className="text-white/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: step.description }} />
                           <div className="text-gold text-sm font-medium">
                             ⏱️ Duración aproximada: {step.duration}
                           </div>
@@ -549,9 +535,7 @@ export default function ExtradicionEspanaPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

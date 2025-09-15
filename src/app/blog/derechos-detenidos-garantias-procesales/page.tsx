@@ -247,9 +247,7 @@ export default function DerechosDetenidosPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -279,12 +277,8 @@ export default function DerechosDetenidosPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Derechos Constitucionales */}
@@ -304,9 +298,7 @@ export default function DerechosDetenidosPage() {
                     <Shield className="h-8 w-8 text-green-600" />
                     <div>
                       <h3 className="text-xl font-semibold text-black">{contentTranslations.derechosConstitucionales.garantiasFundamentales.titulo}</h3>
-                      <p className="text-black/80 mt-1">
-                        {contentTranslations.derechosConstitucionales.garantiasFundamentales.descripcion}
-                      </p>
+                      <p className="text-black/80 mt-1" dangerouslySetInnerHTML={{ __html: contentTranslations.derechosConstitucionales.garantiasFundamentales.descripcion }} />
                     </div>
                   </div>
 
@@ -327,12 +319,8 @@ export default function DerechosDetenidosPage() {
                         <h5 className="text-lg font-medium text-black mb-2">
                           {derecho.title}
                         </h5>
-                        <p className="text-black/80 text-sm mb-3">
-                          {derecho.description}
-                        </p>
-                        <p className="text-black/70 text-xs italic">
-                          {derecho.details}
-                        </p>
+                        <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.description }} />
+                        <p className="text-black/70 text-xs italic" dangerouslySetInnerHTML={{ __html: derecho.details }} />
                       </motion.div>
                     ))}
                   </div>
@@ -384,9 +372,7 @@ export default function DerechosDetenidosPage() {
                         </span>
                       </div>
 
-                      <p className="text-white/80 mb-4">
-                        {fase.descripcion}
-                      </p>
+                      <p className="text-white/80 mb-4" dangerouslySetInnerHTML={{ __html: fase.descripcion }} />
 
                       <div>
                         <h4 className="font-semibold text-gold mb-2">Derechos en esta fase:</h4>
@@ -503,9 +489,7 @@ export default function DerechosDetenidosPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

@@ -392,9 +392,7 @@ export default function DerechosConstitucionalesPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -421,12 +419,8 @@ export default function DerechosConstitucionalesPage() {
             >
               {/* Introduction */}
               <div id="introduccion" className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {blogTranslations.content.introduccion.parrafo1}
-                </p>
-                <p>
-                  {blogTranslations.content.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: blogTranslations.content.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: blogTranslations.content.introduccion.parrafo2 }} />
               </div>
 
               {/* Derechos Fundamentales */}
@@ -467,9 +461,7 @@ export default function DerechosConstitucionalesPage() {
                         </span>
                       </div>
 
-                      <p className="text-black/80 text-sm mb-3">
-                        {derecho.descripcion}
-                      </p>
+                      <p className="text-black/80 text-sm mb-3" dangerouslySetInnerHTML={{ __html: derecho.descripcion }} />
 
                       <div>
                         <h5 className="font-medium text-black mb-2 text-sm">Garantías:</h5>
@@ -512,9 +504,7 @@ export default function DerechosConstitucionalesPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {garantia.garantia}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {garantia.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: garantia.descripcion }} />
                         </div>
                         <span className="text-sm bg-blue-100 text-blue-800 px-3 py-1 rounded">
                           {language === 'ar' ? 'المهلة:' : 'Plazo:'} {garantia.plazo}
@@ -523,9 +513,7 @@ export default function DerechosConstitucionalesPage() {
 
                       <div>
                         <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الإجراء:' : 'Procedimiento:'}</h4>
-                        <p className="text-black/80 text-sm">
-                          {garantia.procedimiento}
-                        </p>
+                        <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: garantia.procedimiento }} />
                       </div>
                     </motion.div>
                   ))}
@@ -623,9 +611,7 @@ export default function DerechosConstitucionalesPage() {
                       <h3 className="text-xl font-semibold text-black">
                         {language === 'ar' ? 'الحقوق المعززة' : 'Derechos Reforzados'}
                       </h3>
-                      <p className="text-black/80 mt-1">
-                        {language === 'ar' ? 'الفئات الضعيفة لديها حمايات دستورية إضافية' : 'Grupos vulnerables tienen protecciones constitucionales adicionales'}
-                      </p>
+                      <p className="text-black/80 mt-1" dangerouslySetInnerHTML={{ __html: language === 'ar' ? 'الفئات الضعيفة لديها حمايات دستورية إضافية' : 'Grupos vulnerables tienen protecciones constitucionales adicionales' }} />
                     </div>
                   </div>
 
@@ -706,9 +692,7 @@ export default function DerechosConstitucionalesPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

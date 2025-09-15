@@ -320,9 +320,7 @@ export default function TerrorismoInternetPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -375,11 +373,9 @@ export default function TerrorismoInternetPage() {
                       <h3 className="text-xl font-semibold text-black">
                         {language === 'ar' ? 'القانون العضوي 2/2015' : 'Ley Orgánica 2/2015'}
                       </h3>
-                      <p className="text-black/80 mt-1">
-                        {language === 'ar' 
+                      <p className="text-black/80 mt-1" dangerouslySetInnerHTML={{ __html: language === 'ar' 
                           ? 'إصلاح شامل للقانون الجنائي لجرائم الإرهاب على الإنترنت'
-                          : 'Reforma integral del Código Penal para delitos de terrorismo en Internet'}
-                      </p>
+                          : 'Reforma integral del Código Penal para delitos de terrorismo en Internet' }} />
                     </div>
                   </div>
 
@@ -457,9 +453,7 @@ export default function TerrorismoInternetPage() {
                         </div>
                       </div>
 
-                      <p className="text-white/80 mb-4">
-                        {delito.descripcion}
-                      </p>
+                      <p className="text-white/80 mb-4" dangerouslySetInnerHTML={{ __html: delito.descripcion }} />
 
                       <div>
                         <h4 className="font-semibold text-gold mb-2">Ejemplos:</h4>
@@ -504,9 +498,7 @@ export default function TerrorismoInternetPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {caso.titulo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {caso.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: caso.descripcion }} />
                         </div>
                         <div className="text-right">
                           <div className="bg-red-100 text-red-800 px-3 py-1 rounded text-sm font-medium mb-1">
@@ -630,9 +622,7 @@ export default function TerrorismoInternetPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

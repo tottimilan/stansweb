@@ -338,9 +338,7 @@ export default function BlanqueoCapitalesPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -370,12 +368,8 @@ export default function BlanqueoCapitalesPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Marco Legal */}
@@ -395,9 +389,7 @@ export default function BlanqueoCapitalesPage() {
                     <Banknote className="h-8 w-8 text-emerald-600" />
                     <div>
                       <h3 className="text-xl font-semibold text-black">{contentTranslations.marcoLegal.reforma2023.titulo}</h3>
-                      <p className="text-black/80 mt-1">
-                        {contentTranslations.marcoLegal.reforma2023.descripcion}
-                      </p>
+                      <p className="text-black/80 mt-1" dangerouslySetInnerHTML={{ __html: contentTranslations.marcoLegal.reforma2023.descripcion }} />
                     </div>
                   </div>
 
@@ -475,9 +467,7 @@ export default function BlanqueoCapitalesPage() {
                         </h3>
                       </div>
 
-                      <p className="text-white/80 mb-4">
-                        {fase.descripcion}
-                      </p>
+                      <p className="text-white/80 mb-4" dangerouslySetInnerHTML={{ __html: fase.descripcion }} />
 
                       <div>
                         <h4 className="font-semibold text-gold mb-2">Métodos comunes:</h4>
@@ -522,9 +512,7 @@ export default function BlanqueoCapitalesPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {metodo.metodo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {metodo.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: metodo.descripcion }} />
                         </div>
                         <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                           metodo.riesgo === 'Alto' ? 'bg-red-100 text-red-800' :
@@ -579,9 +567,7 @@ export default function BlanqueoCapitalesPage() {
                           <h3 className="text-lg font-semibold text-black mb-1">
                             {caso.titulo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {caso.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: caso.descripcion }} />
                         </div>
                         <div className="text-right">
                           <div className="bg-red-100 text-red-800 px-3 py-1 rounded text-sm font-medium mb-1">
@@ -635,9 +621,7 @@ export default function BlanqueoCapitalesPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>

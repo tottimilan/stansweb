@@ -293,9 +293,7 @@ export default function TiposExtradicionPage() {
                 {blogTranslations.hero.subtitle}
               </h2>
 
-              <p className="text-lg text-white/80 mb-6">
-                {blogTranslations.hero.description}
-              </p>
+              <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.hero.description }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
                 <div className="flex items-center gap-2">
@@ -325,12 +323,8 @@ export default function TiposExtradicionPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Tipos de Extradición */}
@@ -362,9 +356,7 @@ export default function TiposExtradicionPage() {
                         </h3>
                       </div>
 
-                      <p className="text-white/80 mb-4">
-                        {tipo.aplicacion}
-                      </p>
+                      <p className="text-white/80 mb-4" dangerouslySetInnerHTML={{ __html: tipo.aplicacion }} />
 
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div>
@@ -484,9 +476,7 @@ export default function TiposExtradicionPage() {
                           <h3 className="text-lg font-semibold text-black">
                             {fase.titulo}
                           </h3>
-                          <p className="text-black/80 text-sm">
-                            {fase.descripcion}
-                          </p>
+                          <p className="text-black/80 text-sm" dangerouslySetInnerHTML={{ __html: fase.descripcion }} />
                         </div>
                       </div>
 
@@ -608,9 +598,7 @@ export default function TiposExtradicionPage() {
                         </span>
                         {faq.question}
                       </h3>
-                      <p className="text-black/80 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <p className="text-black/80 leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </motion.div>
                   ))}
                 </div>
