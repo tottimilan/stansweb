@@ -264,6 +264,24 @@ export const translations = {
         fichaRapida: 'Ficha Rápida',
         fichaCompleta: 'Ficha Completa',
         documentacion: 'Documentación'
+      },
+      // Traducciones de resultados comunes
+      resultadosCasos: {
+        sobreseimiento: 'Sobreseimiento',
+        absolucion: 'Absolución',
+        condena: 'Condena',
+        archivoDiligencias: 'Archivo de Diligencias',
+        autoSobreseimiento: 'Auto de Sobreseimiento',
+        sentenciaAbsolutoria: 'Sentencia Absolutoria',
+        sentenciaCondenatoria: 'Sentencia Condenatoria',
+        audienciaProvincialSobreseimiento: 'La Audiencia Provincial decreta el Sobreseimiento'
+      },
+      tiposResolucion: {
+        sobreseimiento: 'Sobreseimiento',
+        sentencia: 'Sentencia',
+        auto: 'Auto',
+        diligencias: 'Diligencias',
+        archivo: 'Archivo'
       }
     },
 
@@ -918,6 +936,24 @@ export const translations = {
         fichaRapida: 'البطاقة السريعة',
         fichaCompleta: 'البطاقة الكاملة',
         documentacion: 'الوثائق'
+      },
+      // Traducciones de resultados comunes
+      resultadosCasos: {
+        sobreseimiento: 'إغلاق الدعوى',
+        absolucion: 'البراءة',
+        condena: 'الإدانة',
+        archivoDiligencias: 'حفظ الإجراءات',
+        autoSobreseimiento: 'قرار إغلاق الدعوى',
+        sentenciaAbsolutoria: 'حكم بالبراءة',
+        sentenciaCondenatoria: 'حكم بالإدانة',
+        audienciaProvincialSobreseimiento: 'محكمة الاستئناف تقرر إغلاق الدعوى'
+      },
+      tiposResolucion: {
+        sobreseimiento: 'إغلاق الدعوى',
+        sentencia: 'حكم',
+        auto: 'قرار',
+        diligencias: 'إجراءات',
+        archivo: 'حفظ'
       },
       privacidad: {
         title: 'ملاحظة الخصوصية',

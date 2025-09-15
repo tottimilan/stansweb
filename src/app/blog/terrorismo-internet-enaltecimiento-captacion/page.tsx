@@ -48,20 +48,36 @@ const getTerrorismoFAQ = (language: string) => [
       : 'Es el delito tipificado en el artículo 579.2 del Código Penal, que consiste en captar, reclutar o adoctrinar a personas para que participen en organizaciones terroristas o cometan delitos de terrorismo, utilizando medios telemáticos.'
   },
   {
-    question: "¿Las plataformas como Facebook o Twitter son responsables de los contenidos terroristas?",
-    answer: "Las plataformas tienen obligación de retirar contenidos terroristas en un plazo de 24 horas según la Ley 4/2015. Si no lo hacen, pueden ser sancionadas administrativamente. Sin embargo, la responsabilidad penal principal recae en el autor del contenido."
+    question: language === 'ar'
+      ? 'هل منصات مثل فيسبوك أو تويتر مسؤولة عن المحتوى الإرهابي؟'
+      : '¿Las plataformas como Facebook o Twitter son responsables de los contenidos terroristas?',
+    answer: language === 'ar'
+      ? 'المنصات ملزمة بإزالة المحتوى الإرهابي في غضون 24 ساعة وفقاً للقانون 4/2015. إذا لم يفعلوا ذلك، يمكن معاقبتهم إدارياً. ومع ذلك، تقع المسؤولية الجنائية الرئيسية على مؤلف المحتوى.'
+      : 'Las plataformas tienen obligación de retirar contenidos terroristas en un plazo de 24 horas según la Ley 4/2015. Si no lo hacen, pueden ser sancionadas administrativamente. Sin embargo, la responsabilidad penal principal recae en el autor del contenido.'
   },
   {
-    question: "¿Puedo ser investigado por contenido publicado hace años?",
-    answer: "Sí, los delitos de terrorismo no prescriben mientras el autor forme parte de una organización terrorista. Para otros casos, el plazo de prescripción es de 5-10 años según la gravedad del delito."
+    question: language === 'ar'
+      ? 'هل يمكن التحقيق معي بسبب محتوى نُشر منذ سنوات؟'
+      : '¿Puedo ser investigado por contenido publicado hace años?',
+    answer: language === 'ar'
+      ? 'نعم، جرائم الإرهاب لا تسقط بالتقادم طالما كان المؤلف جزءاً من منظمة إرهابية. في الحالات الأخرى، فترة التقادم هي 5-10 سنوات حسب خطورة الجريمة.'
+      : 'Sí, los delitos de terrorismo no prescriben mientras el autor forme parte de una organización terrorista. Para otros casos, el plazo de prescripción es de 5-10 años según la gravedad del delito.'
   },
   {
-    question: "¿Qué defensas existen contra acusaciones de enaltecimiento?",
-    answer: "Posibles defensas incluyen: ejercicio de libertad de expresión, crítica política legítima, falta de intención de enaltecimiento, contexto satírico o humorístico, o error sobre el contenido difundido."
+    question: language === 'ar'
+      ? 'ما هي الدفاعات الموجودة ضد اتهامات التمجيد؟'
+      : '¿Qué defensas existen contra acusaciones de enaltecimiento?',
+    answer: language === 'ar'
+      ? 'الدفاعات المحتملة تشمل: ممارسة حرية التعبير، النقد السياسي المشروع، عدم وجود نية للتمجيد، السياق الساخر أو الفكاهي، أو الخطأ حول المحتوى المنشور.'
+      : 'Posibles defensas incluyen: ejercicio de libertad de expresión, crítica política legítima, falta de intención de enaltecimiento, contexto satírico o humorístico, o error sobre el contenido difundido.'
   },
   {
-    question: "¿Las VPN o el uso de seudónimos protegen contra investigaciones?",
-    answer: "No completamente. Las autoridades pueden rastrear IP reales, y el uso de VPN puede considerarse indicio de ocultación de actividades ilícitas, según la jurisprudencia del Tribunal Supremo."
+    question: language === 'ar'
+      ? 'هل تحمي الشبكات الافتراضية الخاصة (VPN) أو استخدام الأسماء المستعارة من التحقيقات؟'
+      : '¿Las VPN o el uso de seudónimos protegen contra investigaciones?',
+    answer: language === 'ar'
+      ? 'ليس تماماً. يمكن للسلطات تتبع عناوين IP الحقيقية، ويمكن اعتبار استخدام VPN مؤشراً على إخفاء أنشطة غير مشروعة، وفقاً لفقه المحكمة العليا.'
+      : 'No completamente. Las autoridades pueden rastrear IP reales, y el uso de VPN puede considerarse indicio de ocultación de actividades ilícitas, según la jurisprudencia del Tribunal Supremo.'
   }
 ];
 
