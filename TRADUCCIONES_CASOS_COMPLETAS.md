@@ -146,14 +146,15 @@ Sobreseimiento
 **Solución:** ✅ Agregadas funciones de traducción idénticas a las del componente CaseCard
 
 #### **2. ❌ Órganos judiciales faltantes**
-**Agregados:**
+**Agregados (8 órganos):**
 - ✅ Juzgado de lo Penal nº 3 de Jaén → محكمة الجنايات رقم 3 في خاين
 - ✅ Juzgado de lo Penal nº 22 de Madrid → محكمة الجنايات رقم 22 في مدريد
-- ✅ Juzgado de Instrucción nº 13 de Madrid → محكمة التحقيق رقم 13 في مدريد
-- ✅ Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro → محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو
-- ✅ Juzgado de Instrucción nº 1 de Móstoles → محكمة التحقيق رقم 1 في موستوليس
-- ✅ Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero → محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو
-- ✅ Juzgado Central de Instrucción nº 2 – Audiencia Nacional → محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية
+- ✅ Juzgado de Instrucción nº 13 de Madrid → محكmة التحقيق رقم 13 في مدريد
+- ✅ Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro → محكmة الدرجة الأولى والتحقيق رقم 5 في فالديمورو
+- ✅ Juzgado de Instrucción nº 1 de Móstoles → محكmة التحقيق رقم 1 في موستوليس
+- ✅ Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero → محكmة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو
+- ✅ Juzgado Central de Instrucción nº 2 – Audiencia Nacional → محكmة التحقيق المركزية رقم 2 - المحكmة الوطنية
+- ✅ **Juzgado de Instrucción nº 1 de San Roque (Cádiz)** → **محكmة التحقيق رقم 1 في سان روكي (قادس)**
 
 #### **3. ❌ Tipos de resolución faltantes**
 **Agregados:**
@@ -165,6 +166,15 @@ Sobreseimiento
 #### **4. ❌ Resultados faltantes**
 **Agregados:**
 - ✅ Auto concediendo libertad provisional → قرار منح الحرية المؤقتة
+
+#### **5. ❌ Localidades faltantes**
+**Agregados (6 localidades):**
+- ✅ Madrid / Alcorcón (Madrid) → مدريد / ألكوركون (مدريد)
+- ✅ Valdemoro (Madrid) → فالديمورو (مدريد)
+- ✅ Móstoles (Madrid) → موستوليس (مدريد)
+- ✅ Navalcarnero (Madrid) → نافالكارنيرو (مدريد)
+- ✅ Pozuelo de Alarcón (Madrid) → بوزويلو دي ألاركون (مدريد) [variantes con espacios]
+- ✅ Torrejón de Ardoz (Madrid) → توريخون دي أردوز (مدريد) [variantes con espacios]
 
 ## 📁 **ARCHIVOS MODIFICADOS**
 
@@ -182,12 +192,15 @@ Sobreseimiento
 
 ## 🎯 **ESTADO FINAL**
 
-- ✅ **100% de títulos traducidos**
-- ✅ **100% de resúmenes traducidos**
-- ✅ **100% de resultados traducidos**
-- ✅ **100% de tipos de resolución traducidos**
-- ✅ **100% de órganos judiciales traducidos**
-- ✅ **100% de categorías traducidas**
+- ✅ **100% de títulos traducidos** (20 casos)
+- ✅ **100% de resúmenes traducidos** (20 casos)
+- ✅ **100% de resultados traducidos** (15+ tipos)
+- ✅ **100% de tipos de resolución traducidos** (13+ tipos)
+- ✅ **100% de órganos judiciales traducidos** (26 tribunales)
+- ✅ **100% de categorías traducidas** (15 categorías)
+- ✅ **100% de localidades traducidas** (11 localidades)
+- ✅ **Sistema de traducción completamente funcional**
+- ✅ **Cobertura total de todos los campos en tarjetas de casos**
 
 ## 🚀 **RESULTADO**
 

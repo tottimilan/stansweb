@@ -146,7 +146,8 @@ const getTranslatedOrgano = (organo: string, language: string) => {
     'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو',
     'Juzgado de Instrucción nº 1 de Móstoles': 'محكمة التحقيق رقم 1 في موستوليس',
     'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو',
-    'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية'
+    'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية',
+    'Juzgado de Instrucción nº 1 de San Roque (Cádiz)': 'محكمة التحقيق رقم 1 في سان روكي (قادس)'
   };
 
   return organoMap[organo] || organo;
@@ -164,6 +165,10 @@ const getTranslatedLocalidad = (localidad: string, language: string) => {
     'Getafe (Madrid)': 'خيتافي (مدريد)',
     'Torrejón de Ardoz (Madrid)': 'توريخون دي أردوز (مدريد)',
     'Alcorcón': 'ألكوركون',
+    'Madrid / Alcorcón (Madrid)': 'مدريد / ألكوركون (مدريد)',
+    'Valdemoro (Madrid)': 'فالديمورو (مدريد)',
+    'Móstoles (Madrid)': 'موستوليس (مدريد)',
+    'Navalcarnero (Madrid)': 'نافالكارنيرو (مدريد)',
     'Por confirmar': 'قيد التأكيد'
   };
 
