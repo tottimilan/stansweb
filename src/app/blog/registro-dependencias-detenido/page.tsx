@@ -182,22 +182,78 @@ const relatedArticles = [
 export default function RegistroDependenciasPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز الدفاع الجنائي العاجل',
+      title: 'تفتيش التبعيات أثناء الاعتقال',
+      subtitle: 'الحقوق أثناء التفتيش السكني والشخصي',
+      description: 'الحقوق أثناء التفتيش السكني والشخصي، الضمانات الإجرائية، كيفية الطعن في المخالفات وحماية ممتلكاتك.'
+    },
+    sections: {
+      tiposRegistros: 'أنواع التفتيش أثناء الاعتقال',
+      fasesRegistro: 'مراحل التفتيش السكني',
+      garantiasProcesales: 'الضمانات الإجرائية في التفتيش',
+      documentacionObligatoria: 'الوثائق الإلزامية',
+      protocoloDefensa: 'بروتوكول الدفاع أمام التفتيش',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول التفتيش',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Defensa Penal Urgente',
+      title: 'Registro de Dependencias durante la Detención',
+      subtitle: 'Derechos durante Registros Domiciliarios y Personales',
+      description: 'Derechos durante registros domiciliarios y personales, garantías procesales, cómo impugnar irregularidades y proteger tus bienes.'
+    },
+    sections: {
+      tiposRegistros: 'Tipos de Registros durante la Detención',
+      fasesRegistro: 'Fases de un Registro Domiciliario',
+      garantiasProcesales: 'Garantías Procesales en los Registros',
+      documentacionObligatoria: 'Documentación Obligatoria',
+      protocoloDefensa: 'Protocolo de Defensa ante un Registro',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Registros',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'تفتيش التبعيات هو إجراءات شرطية غازية تتطلب أقصى الضمانات الإجرائية. منصوص عليها في المواد 545 وما يليها من قانون الإجراءات الجنائية ومحمية بموجب المادة 18 من الدستور الإسباني، تهدف هذه التفتيشات إلى الحصول على أدلة متعلقة بالجريمة المحقق فيها.',
+      parrafo2: 'توضح هذه الدليل أنواع التفتيش التي يمكن إجراؤها أثناء الاعتقال، الضمانات التي تساعدك، وكيفية الطعن في أي مخالفة تنتهك حقوقك الدستورية، بناءً على قضاء المحكمة الدستورية والمحكمة العليا.'
+    },
+    tiposRegistro: {
+      titulo: 'أنواع التفتيش أثناء الاعتقال'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Los <strong>registros de dependencias</strong> son actuaciones policiales invasivas que requieren las máximas garantías procesales. Regulados por los <strong>artículos 545 y siguientes de la Ley de Enjuiciamiento Criminal</strong> y protegidos por el <strong>artículo 18 de la Constitución Española</strong>, estos registros buscan obtener pruebas relacionadas con el delito investigado.',
+      parrafo2: 'Esta guía explica los tipos de registros que pueden realizarse durante una detención, las garantías que te asisten, y cómo impugnar cualquier irregularidad que vulnere tus derechos constitucionales, basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong> y <strong>Tribunal Supremo</strong>.'
+    },
+    tiposRegistro: {
+      titulo: 'Tipos de Registros durante la Detención'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Registro de Dependencias del Detenido' }
+    { label: language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'tipos-de-registros-durante-la-detencion', title: 'Tipos de Registros durante la Detención', level: 2 },
-    { id: 'fases-de-un-registro-domiciliario', title: 'Fases de un Registro Domiciliario', level: 2 },
-    { id: 'garantias-procesales-en-los-registros', title: 'Garantías Procesales en los Registros', level: 2 },
-    { id: 'documentacion-obligatoria', title: 'Documentación Obligatoria', level: 2 },
-    { id: 'protocolo-de-defensa-ante-un-registro', title: 'Protocolo de Defensa ante un Registro', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-registros', title: 'Preguntas Frecuentes sobre Registros', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'tipos-de-registros-durante-la-detencion', title: blogTranslations.sections.tiposRegistros, level: 2 },
+    { id: 'fases-de-un-registro-domiciliario', title: blogTranslations.sections.fasesRegistro, level: 2 },
+    { id: 'garantias-procesales-en-los-registros', title: blogTranslations.sections.garantiasProcesales, level: 2 },
+    { id: 'documentacion-obligatoria', title: blogTranslations.sections.documentacionObligatoria, level: 2 },
+    { id: 'protocolo-de-defensa-ante-un-registro', title: blogTranslations.sections.protocoloDefensa, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-registros', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -222,12 +278,12 @@ export default function RegistroDependenciasPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Defensa Penal Urgente
+                  {language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -236,12 +292,15 @@ export default function RegistroDependenciasPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Registro de Dependencias durante la Detención
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Derechos durante registros domiciliarios y personales, garantías procesales,
-                cómo impugnar irregularidades y proteger tus bienes.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -273,17 +332,10 @@ export default function RegistroDependenciasPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los <strong>registros de dependencias</strong> son actuaciones policiales invasivas
-                  que requieren las máximas garantías procesales. Regulados por los <strong>artículos 545
-                  y siguientes de la Ley de Enjuiciamiento Criminal</strong> y protegidos por el
-                  <strong>artículo 18 de la Constitución Española</strong>, estos registros buscan
-                  obtener pruebas relacionadas con el delito investigado.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía explica los tipos de registros que pueden realizarse durante una detención,
-                  las garantías que te asisten, y cómo impugnar cualquier irregularidad que vulnere
-                  tus derechos constitucionales, basándose en la jurisprudencia del <strong>Tribunal Constitucional</strong>
-                  y <strong>Tribunal Supremo</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -296,7 +348,7 @@ export default function RegistroDependenciasPage() {
                 className="mb-12"
               >
                 <h2 id="tipos-de-registros-durante-la-detencion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Tipos de Registros durante la Detención
+                  {contentTranslations.tiposRegistro.titulo}
                 </h2>
 
                 <div className="space-y-6">
