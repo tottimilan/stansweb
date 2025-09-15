@@ -50,24 +50,37 @@ export default function CasosPage() {
     };
   }, [isFilterOpen]);
 
-  // Mapa de categorías traducidas a las originales del JSON
-  const categoriaMap: Record<string, string> = {
-    [t.casos.filtros.todos]: 'Todos',
-    [t.casos.categorias.delitosOdio]: 'Delitos de odio y libertad de expresión',
-    [t.casos.categorias.terrorismo]: 'Terrorismo y Audiencia Nacional',
-    [t.casos.categorias.robosViolencia]: 'Robos con violencia y grupo criminal',
-    [t.casos.categorias.delitosPersonas]: 'Delitos contra las personas',
-    [t.casos.categorias.delitosEconomicos]: 'Delitos económicos y contra el patrimonio',
-    [t.casos.categorias.ordenPublico]: 'Delitos contra el orden público, drogas y ejecución penal'
+  // Mapa de categorías usando IDs constantes independientes del idioma
+  const categoriaIds: Record<string, string> = {
+    'todos': 'Todos',
+    'delitos-odio': 'Delitos de odio y libertad de expresión',
+    'terrorismo': 'Terrorismo y Audiencia Nacional',
+    'robos-violencia': 'Robos con violencia y grupo criminal',
+    'delitos-personas': 'Delitos contra las personas',
+    'delitos-economicos': 'Delitos económicos y contra el patrimonio',
+    'orden-publico': 'Delitos contra el orden público, drogas y ejecución penal'
+  };
+
+  // Mapa inverso para obtener el ID desde el nombre traducido
+  const getCategoriaId = (categoriaTraducida: string): string => {
+    if (categoriaTraducida === t.casos.filtros.todos) return 'todos';
+    if (categoriaTraducida === t.casos.categorias.delitosOdio) return 'delitos-odio';
+    if (categoriaTraducida === t.casos.categorias.terrorismo) return 'terrorismo';
+    if (categoriaTraducida === t.casos.categorias.robosViolencia) return 'robos-violencia';
+    if (categoriaTraducida === t.casos.categorias.delitosPersonas) return 'delitos-personas';
+    if (categoriaTraducida === t.casos.categorias.delitosEconomicos) return 'delitos-economicos';
+    if (categoriaTraducida === t.casos.categorias.ordenPublico) return 'orden-publico';
+    return 'todos';
   };
 
   const casosFiltrados = useMemo(() => {
-    const categoriaOriginal = categoriaMap[categoriaFiltro];
-    if (categoriaOriginal === 'Todos') {
+    const categoriaId = getCategoriaId(categoriaFiltro);
+    const categoriaOriginal = categoriaIds[categoriaId];
+    if (categoriaId === 'todos' || !categoriaOriginal) {
       return casosData;
     }
     return casosData.filter(caso => caso.categoria === categoriaOriginal);
-  }, [categoriaFiltro, categoriaMap]);
+  }, [categoriaFiltro]);
 
   const containerVariants = {
     hidden: { opacity: 0 },

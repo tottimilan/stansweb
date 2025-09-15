@@ -49,34 +49,50 @@ const terrorismoFAQ = [
   }
 ];
 
-const tiposTerrorismoInternet = [
+const getTiposTerrorismoInternet = (language: string) => [
   {
-    tipo: "Enaltecimiento",
-    articulo: "578 CP",
-    pena: "1-3 años",
-    descripcion: "Justificar o ensalzar delitos terroristas o sus autores",
-    ejemplos: ["Publicar mensajes de apoyo", "Difundir propaganda", "Ensalzar atentados"]
+    tipo: language === 'ar' ? 'التمجيد' : 'Enaltecimiento',
+    articulo: language === 'ar' ? 'المادة 578 ق.ج' : '578 CP',
+    pena: language === 'ar' ? '1-3 سنوات' : '1-3 años',
+    descripcion: language === 'ar' 
+      ? 'تبرير أو تمجيد الجرائم الإرهابية أو مرتكبيها'
+      : 'Justificar o ensalzar delitos terroristas o sus autores',
+    ejemplos: language === 'ar'
+      ? ['نشر رسائل الدعم', 'نشر الدعاية', 'تمجيد الهجمات']
+      : ['Publicar mensajes de apoyo', 'Difundir propaganda', 'Ensalzar atentados']
   },
   {
-    tipo: "Captación",
-    articulo: "579.2 CP",
-    pena: "5-8 años",
-    descripcion: "Reclutar o adoctrinar para organizaciones terroristas",
-    ejemplos: ["Mensajes de reclutamiento", "Adoctrinamiento online", "Contacto con radicales"]
+    tipo: language === 'ar' ? 'الاستقطاب' : 'Captación',
+    articulo: language === 'ar' ? 'المادة 579.2 ق.ج' : '579.2 CP',
+    pena: language === 'ar' ? '5-8 سنوات' : '5-8 años',
+    descripcion: language === 'ar'
+      ? 'تجنيد أو تلقين العقيدة للمنظمات الإرهابية'
+      : 'Reclutar o adoctrinar para organizaciones terroristas',
+    ejemplos: language === 'ar'
+      ? ['رسائل التجنيد', 'التلقين عبر الإنترنت', 'الاتصال بالمتطرفين']
+      : ['Mensajes de reclutamiento', 'Adoctrinamiento online', 'Contacto con radicales']
   },
   {
-    tipo: "Financiación",
-    articulo: "576 CP",
-    pena: "2-5 años",
-    descripcion: "Proporcionar fondos para actividades terroristas",
-    ejemplos: ["Crowdfunding terrorista", "Donaciones online", "Criptomonedas"]
+    tipo: language === 'ar' ? 'التمويل' : 'Financiación',
+    articulo: language === 'ar' ? 'المادة 576 ق.ج' : '576 CP',
+    pena: language === 'ar' ? '2-5 سنوات' : '2-5 años',
+    descripcion: language === 'ar'
+      ? 'توفير الأموال للأنشطة الإرهابية'
+      : 'Proporcionar fondos para actividades terroristas',
+    ejemplos: language === 'ar'
+      ? ['التمويل الجماعي الإرهابي', 'التبرعات عبر الإنترنت', 'العملات المشفرة']
+      : ['Crowdfunding terrorista', 'Donaciones online', 'Criptomonedas']
   },
   {
-    tipo: "Instrucciones",
-    articulo: "579.1 CP",
-    pena: "3-5 años",
-    descripcion: "Enseñar métodos para cometer delitos terroristas",
-    ejemplos: ["Tutoriales de fabricación", "Guías de ataque", "Instrucciones online"]
+    tipo: language === 'ar' ? 'التعليمات' : 'Instrucciones',
+    articulo: language === 'ar' ? 'المادة 579.1 ق.ج' : '579.1 CP',
+    pena: language === 'ar' ? '3-5 سنوات' : '3-5 años',
+    descripcion: language === 'ar'
+      ? 'تعليم طرق ارتكاب الجرائم الإرهابية'
+      : 'Enseñar métodos para cometer delitos terroristas',
+    ejemplos: language === 'ar'
+      ? ['دروس التصنيع', 'أدلة الهجوم', 'التعليمات عبر الإنترنت']
+      : ['Tutoriales de fabricación', 'Guías de ataque', 'Instrucciones online']
   }
 ];
 
@@ -290,12 +306,8 @@ export default function TerrorismoInternetPage() {
             >
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
-                <p>
-                  {contentTranslations.introduccion.parrafo1}
-                </p>
-                <p>
-                  {contentTranslations.introduccion.parrafo2}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo1 }} />
+                <p dangerouslySetInnerHTML={{ __html: contentTranslations.introduccion.parrafo2 }} />
               </div>
 
               {/* Marco Legal */}
@@ -314,31 +326,39 @@ export default function TerrorismoInternetPage() {
                   <div className="flex items-center gap-3 mb-6">
                     <Shield className="h-8 w-8 text-red-600" />
                     <div>
-                      <h3 className="text-xl font-semibold text-black">Ley Orgánica 2/2015</h3>
+                      <h3 className="text-xl font-semibold text-black">
+                        {language === 'ar' ? 'القانون العضوي 2/2015' : 'Ley Orgánica 2/2015'}
+                      </h3>
                       <p className="text-black/80 mt-1">
-                        Reforma integral del Código Penal para delitos de terrorismo en Internet
+                        {language === 'ar' 
+                          ? 'إصلاح شامل للقانون الجنائي لجرائم الإرهاب على الإنترنت'
+                          : 'Reforma integral del Código Penal para delitos de terrorismo en Internet'}
                       </p>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-black mb-3">Delitos Tipificados</h4>
+                      <h4 className="font-semibold text-black mb-3">
+                        {language === 'ar' ? 'الجرائم المُجرَّمة' : 'Delitos Tipificados'}
+                      </h4>
                       <ul className="space-y-2 text-black/80">
-                        <li>• Enaltecimiento del terrorismo (art. 578)</li>
-                        <li>• Captación y reclutamiento (art. 579.2)</li>
-                        <li>• Financiación terrorista (art. 576)</li>
-                        <li>• Instrucciones para cometer delitos (art. 579.1)</li>
+                        <li>• {language === 'ar' ? 'تمجيد الإرهاب (المادة 578)' : 'Enaltecimiento del terrorismo (art. 578)'}</li>
+                        <li>• {language === 'ar' ? 'الاستقطاب والتجنيد (المادة 579.2)' : 'Captación y reclutamiento (art. 579.2)'}</li>
+                        <li>• {language === 'ar' ? 'تمويل الإرهاب (المادة 576)' : 'Financiación terrorista (art. 576)'}</li>
+                        <li>• {language === 'ar' ? 'التعليمات لارتكاب الجرائم (المادة 579.1)' : 'Instrucciones para cometer delitos (art. 579.1)'}</li>
                       </ul>
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-black mb-3">Agravantes Digitales</h4>
+                      <h4 className="font-semibold text-black mb-3">
+                        {language === 'ar' ? 'الظروف المشددة الرقمية' : 'Agravantes Digitales'}
+                      </h4>
                       <ul className="space-y-2 text-black/80">
-                        <li>• Uso de Internet o redes sociales</li>
-                        <li>• Alcance masivo del contenido</li>
-                        <li>• Viralización del mensaje</li>
-                        <li>• Uso de plataformas extranjeras</li>
+                        <li>• {language === 'ar' ? 'استخدام الإنترنت أو الشبكات الاجتماعية' : 'Uso de Internet o redes sociales'}</li>
+                        <li>• {language === 'ar' ? 'الوصول الواسع للمحتوى' : 'Alcance masivo del contenido'}</li>
+                        <li>• {language === 'ar' ? 'انتشار الرسالة بشكل فيروسي' : 'Viralización del mensaje'}</li>
+                        <li>• {language === 'ar' ? 'استخدام منصات أجنبية' : 'Uso de plataformas extranjeras'}</li>
                       </ul>
                     </div>
                   </div>
@@ -368,11 +388,11 @@ export default function TerrorismoInternetPage() {
                 className="mb-12"
               >
                 <h2 id="tipos-de-delitos-de-terrorismo-en-internet" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Tipos de Delitos de Terrorismo en Internet
+                  {language === 'ar' ? 'أنواع جرائم الإرهاب على الإنترنت' : 'Tipos de Delitos de Terrorismo en Internet'}
                 </h2>
 
                 <div className="space-y-6">
-                  {tiposTerrorismoInternet.map((delito, index) => (
+                  {getTiposTerrorismoInternet(language).map((delito, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}

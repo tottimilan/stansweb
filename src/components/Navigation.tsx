@@ -24,7 +24,7 @@ export default function Navigation() {
     { name: t.nav.areas, href: '#areas' },
     { name: t.nav.casos, href: '/casos' },
     { name: t.nav.blog, href: '/blog' },
-    { name: 'Contacto', href: '#contacto' },
+    { name: t.nav.contacto, href: '#contacto' },
   ];
 
   const handleContactClick = () => {
