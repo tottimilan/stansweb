@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, Shield, Clock, Award, FileText, Scale } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
+import { casesTranslations } from '@/translations/cases-translations';
 
 type Case = {
   id: number;
@@ -66,30 +67,42 @@ const getTranslatedCategory = (categoria: string, language: string, t: any) => {
 };
 
 // Traducir resultados
-const getTranslatedResult = (resultado: string, t: any) => {
-  // Mapeo de resultados comunes
+const getTranslatedResult = (resultado: string, language: string, t: any) => {
+  if (language === 'es') return resultado;
+
+  // Mapeo de resultados comunes en árabe
   const resultMap: { [key: string]: string } = {
-    'Sobreseimiento': t.casos.resultadosCasos.sobreseimiento,
-    'Absolución': t.casos.resultadosCasos.absolucion,
-    'Condena': t.casos.resultadosCasos.condena,
-    'Archivo de Diligencias': t.casos.resultadosCasos.archivoDiligencias,
-    'Auto de Sobreseimiento': t.casos.resultadosCasos.autoSobreseimiento,
-    'Sentencia Absolutoria': t.casos.resultadosCasos.sentenciaAbsolutoria,
-    'Sentencia Condenatoria': t.casos.resultadosCasos.sentenciaCondenatoria,
-    'La Audiencia Provincial decreta el Sobreseimiento': t.casos.resultadosCasos.audienciaProvincialSobreseimiento
+    'Sobreseimiento': 'إغلاق الدعوى',
+    'Absolución': 'البراءة',
+    'Condena': 'الإدانة',
+    'Archivo de Diligencias': 'حفظ الإجراءات',
+    'Auto de Sobreseimiento': 'قرار إغلاق الدعوى',
+    'Sentencia Absolutoria': 'حكم بالبراءة',
+    'Sentencia Condenatoria': 'حكم بالإدانة',
+    'La Audiencia Provincial decreta el Sobreseimiento': 'تصدر محكمة الاستئناف قرار إغلاق الدعوى',
+    'Sobreseimiento sólo para nuestro cliente': 'إغلاق الدعوى لعميلنا فقط',
+    'Absolución con todos los pronunciamientos favorables': 'البراءة مع جميع الأحكام المواتية',
+    'Modificación de prisión provisional a libertad provisional sin fianza': 'تعديل السجن المؤقت إلى الحرية المؤقتة بدون كفالة',
+    'Auto de sobreseimiento provisional': 'قرار إغلاق الدعوى المؤقت',
+    'Audiencia Provincial estima recurso y archiva la causa': 'تقبل محكمة الاستئناف الاستئناف وتحفظ القضية',
+    'Auto de sobreseimiento y archivo': 'قرار إغلاق الدعوى وحفظها',
+    'Revocación de orden de búsqueda y captura': 'إلغاء أمر البحث والقبض',
+    'Investigación en curso': 'التحقيق جارٍ'
   };
-  
+
   return resultMap[resultado] || resultado;
 };
 
 // Traducir tipos de resolución
-const getTranslatedResolutionType = (tipo: string, t: any) => {
+const getTranslatedResolutionType = (tipo: string, language: string, t: any) => {
+  if (language === 'es') return tipo;
+
   const typeMap: { [key: string]: string } = {
-    'Sobreseimiento': t.casos.tiposResolucion.sobreseimiento,
-    'Sentencia': t.casos.tiposResolucion.sentencia,
-    'Auto': t.casos.tiposResolucion.auto,
-    'Diligencias': t.casos.tiposResolucion.diligencias,
-    'Archivo': t.casos.tiposResolucion.archivo
+    'Sobreseimiento': 'إغلاق الدعوى',
+    'Sentencia': 'حكم',
+    'Auto': 'قرار',
+    'Diligencias': 'إجراءات',
+    'Archivo': 'حفظ'
   };
 
   return typeMap[tipo] || tipo;
@@ -156,14 +169,31 @@ const getTranslatedLabel = (label: string, language: string, t: any) => {
   return labelMap[label] || label;
 };
 
+// Traducir título del caso
+const getTranslatedCaseName = (caseId: number, originalName: string, language: string) => {
+  if (language === 'es') return originalName;
+
+  const caseTranslation = casesTranslations.ar.cases[caseId as keyof typeof casesTranslations.ar.cases];
+  return caseTranslation?.nombre || originalName;
+};
+
+// Traducir resumen del caso
+const getTranslatedCaseSummary = (caseId: number, originalSummary: string, language: string) => {
+  if (language === 'es') return originalSummary;
+
+  const caseTranslation = casesTranslations.ar.cases[caseId as keyof typeof casesTranslations.ar.cases];
+  return caseTranslation?.resumen || originalSummary;
+};
+
 export default function CaseCard({ caso }: Props) {
   const { language } = useLanguage();
   const t = translations[language];
 
-  // Limitar el resumen a una longitud razonable
-  const summary = caso.contenido.resumen.length > 120
-    ? caso.contenido.resumen.substring(0, 120) + '...'
-    : caso.contenido.resumen;
+  // Traducir y limitar el resumen a una longitud razonable
+  const translatedSummary = getTranslatedCaseSummary(caso.id, caso.contenido.resumen, language);
+  const summary = translatedSummary.length > 120
+    ? translatedSummary.substring(0, 120) + '...'
+    : translatedSummary;
 
   return (
     <motion.div
@@ -195,19 +225,19 @@ export default function CaseCard({ caso }: Props) {
 
       {/* Título del caso */}
       <h3 className="text-lg font-semibold group-hover:text-gold transition-colors mb-3 leading-tight">
-        {caso.nombre.replace(/^CASO\s*-?\s*/, '')}
+        {getTranslatedCaseName(caso.id, caso.nombre.replace(/^CASO\s*-?\s*/, ''), language)}
       </h3>
 
       {/* Información del caso */}
       <div className="space-y-2 mb-4 flex-grow">
         <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.resultado}</span> {getTranslatedResult(caso.resultado, t)}
+          <span className="font-medium text-black">{t.casosDestacados.resultado}</span> {getTranslatedResult(caso.resultado, language, t)}
         </div>
         <div className="text-sm text-black/70">
           <span className="font-medium text-black">{t.casosDestacados.organo}</span> {getTranslatedOrgano(caso.organo, language)}
         </div>
         <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.tipo}</span> {getTranslatedResolutionType(caso.tipo_resolucion, t)}
+          <span className="font-medium text-black">{t.casosDestacados.tipo}</span> {getTranslatedResolutionType(caso.tipo_resolucion, language, t)}
         </div>
       </div>
 
