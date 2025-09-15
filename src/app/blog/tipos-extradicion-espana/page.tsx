@@ -178,21 +178,75 @@ const relatedArticles = [
 export default function TiposExtradicionPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز إجراءات التسليم',
+      title: 'أنواع التسليم في إسبانيا',
+      subtitle: 'التسليم الأوروبي مقابل الدولي، الإرهاب، الفساد',
+      description: 'المتطلبات، المواعيد والضمانات في كل نوع من الإجراءات.'
+    },
+    sections: {
+      tiposPrincipales: 'الأنواع الرئيسية للتسليم',
+      paisesPrincipales: 'الدول الرئيسية مع اتفاقيات التسليم',
+      fasesProceso: 'مراحل عملية التسليم',
+      requisitosGenerales: 'المتطلبات العامة للتسليم',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول أنواع التسليم',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Procedimientos de Extradición',
+      title: 'Tipos de Extradición en España',
+      subtitle: 'Extradición UE vs internacional, terrorismo, corrupción',
+      description: 'Requisitos, plazos y garantías en cada tipo de procedimiento.'
+    },
+    sections: {
+      tiposPrincipales: 'Principales Tipos de Extradición',
+      paisesPrincipales: 'Principales Países con Acuerdos de Extradición',
+      fasesProceso: 'Fases del Proceso de Extradición',
+      requisitosGenerales: 'Requisitos Generales para la Extradición',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Tipos de Extradición',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'التسليم الإسباني ينظم بموجب القانون العضوي 3/2003 والمعاهدات الدولية التي وقعتها إسبانيا. توجد أنواع مختلفة من التسليم حسب البلد الطالب، طبيعة الجريمة والمعاهدات الدولية المعمول بها، كل منها له خصائصه الإجرائية وضماناته المحددة.',
+      parrafo2: 'تحلل هذه الدليل الأنواع الرئيسية من التسليم التي تتعامل معها إسبانيا، من التسليم المبسط داخل الاتحاد الأوروبي إلى الإجراءات الأكثر تعقيداً مع الدول الثالثة، بما في ذلك الحالات الخاصة مثل التسليم بسبب الإرهاب أو الفساد.'
+    },
+    tiposExtradicion: {
+      titulo: 'الأنواع الرئيسية للتسليم'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'La extradición española se regula por la <strong>Ley Orgánica 3/2003</strong> y los tratados internacionales suscritos por España. Existen diferentes tipos de extradición según el país solicitante, la naturaleza del delito y los acuerdos internacionales aplicables, cada uno con sus particularidades procedimentales y garantías específicas.',
+      parrafo2: 'Esta guía analiza los principales tipos de extradición que maneja España, desde la extradición simplificada dentro de la Unión Europea hasta los procedimientos más complejos con países terceros, incluyendo situaciones especiales como extradiciones por terrorismo o corrupción.'
+    },
+    tiposExtradicion: {
+      titulo: 'Principales Tipos de Extradición'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
-    { label: 'Tipos de Extradición en España' }
+    { label: language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'principales-tipos-de-extradicion', title: 'Principales Tipos de Extradición', level: 2 },
-    { id: 'principales-paises-con-acuerdos-de-extradicion', title: 'Principales Países con Acuerdos de Extradición', level: 2 },
-    { id: 'fases-del-proceso-de-extradicion', title: 'Fases del Proceso de Extradición', level: 2 },
-    { id: 'requisitos-generales-para-la-extradicion', title: 'Requisitos Generales para la Extradición', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-tipos-de-extradicion', title: 'Preguntas Frecuentes sobre Tipos de Extradición', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'principales-tipos-de-extradicion', title: blogTranslations.sections.tiposPrincipales, level: 2 },
+    { id: 'principales-paises-con-acuerdos-de-extradicion', title: blogTranslations.sections.paisesPrincipales, level: 2 },
+    { id: 'fases-del-proceso-de-extradicion', title: blogTranslations.sections.fasesProceso, level: 2 },
+    { id: 'requisitos-generales-para-la-extradicion', title: blogTranslations.sections.requisitosGenerales, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-tipos-de-extradicion', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -218,12 +272,12 @@ export default function TiposExtradicionPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Procedimientos de Extradición
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Procedimientos de Extradición
+                  {language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -232,12 +286,15 @@ export default function TiposExtradicionPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Tipos de Extradición en España
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Extradición UE vs internacional, terrorismo, corrupción.
-                Requisitos, plazos y garantías en cada tipo de procedimiento.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -269,17 +326,10 @@ export default function TiposExtradicionPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La extradición española se regula por la <strong>Ley Orgánica 3/2003</strong> y
-                  los tratados internacionales suscritos por España. Existen diferentes tipos de
-                  extradición según el país solicitante, la naturaleza del delito y los acuerdos
-                  internacionales aplicables, cada uno con sus particularidades procedimentales
-                  y garantías específicas.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía analiza los principales tipos de extradición que maneja España,
-                  desde la extradición simplificada dentro de la Unión Europea hasta los
-                  procedimientos más complejos con países terceros, incluyendo situaciones
-                  especiales como extradiciones por terrorismo o corrupción.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -292,7 +342,7 @@ export default function TiposExtradicionPage() {
                 className="mb-12"
               >
                 <h2 id="principales-tipos-de-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Principales Tipos de Extradición
+                  {contentTranslations.tiposExtradicion.titulo}
                 </h2>
 
                 <div className="space-y-8">
