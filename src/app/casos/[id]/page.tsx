@@ -662,15 +662,15 @@ export default function CasoDetailPage() {
                  </div>
                                  <dl className="space-y-3 sm:space-y-4">
                   <div>
-                    <dt className="text-sm font-medium text-gold mb-1">Categoría</dt>
+                    <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.categoria}</dt>
                     <dd className="text-sm text-offwhite/80">{caso.categoria}</dd>
                   </div>
                   <div>
-                    <dt className="text-sm font-medium text-gold mb-1">Delito Principal</dt>
+                    <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.delitoPrincipal}</dt>
                     <dd className="text-sm text-offwhite/80">{caso.delito_principal}</dd>
                   </div>
                   <div>
-                    <dt className="text-sm font-bold text-gold mb-1">Resultado</dt>
+                    <dt className="text-sm font-bold text-gold mb-1">{t.casos.camposCasos.resultado}</dt>
                     <dd className="text-sm">
                                              <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-bold ${
                          caso.favorabilidad === 'Favorable' 
@@ -684,18 +684,18 @@ export default function CasoDetailPage() {
                     </dd>
                   </div>
                   <div>
-                    <dt className="text-sm font-medium text-gold mb-1">Tipo de Resolución</dt>
+                    <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.tipoResolucion}</dt>
                     <dd className="text-sm text-offwhite/80">{caso.tipo_resolucion}</dd>
                   </div>
                   {caso.medidas_cautelares && (
                     <div>
-                      <dt className="text-sm font-medium text-gold mb-1">Medidas Cautelares</dt>
+                      <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.medidasCautelares}</dt>
                       <dd className="text-sm text-offwhite/80">{caso.medidas_cautelares}</dd>
                     </div>
                   )}
                   {caso.observaciones && (
                     <div>
-                      <dt className="text-sm font-medium text-gold mb-1">Observaciones</dt>
+                      <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.observaciones}</dt>
                       <dd className="text-sm text-offwhite/80">{caso.observaciones}</dd>
                     </div>
                   )}

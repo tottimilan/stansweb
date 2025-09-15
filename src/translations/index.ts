@@ -251,6 +251,19 @@ export const translations = {
         title: 'Nota de Privacidad',
         description: 'Por motivos de confidencialidad y protección de datos, solo se muestran en esta web una selección representativa de nuestros casos. Si necesitas más ejemplos específicos o tienes un caso similar, no dudes en consultarlo directamente con nuestro equipo.',
         consultarEquipo: 'Consultar con nuestro equipo'
+      },
+      // Campos de casos
+      camposCasos: {
+        categoria: 'Categoría',
+        delitoPrincipal: 'Delito Principal',
+        resultado: 'Resultado',
+        tipoResolucion: 'Tipo de Resolución',
+        organo: 'Órgano',
+        medidasCautelares: 'Medidas Cautelares',
+        observaciones: 'Observaciones',
+        fichaRapida: 'Ficha Rápida',
+        fichaCompleta: 'Ficha Completa',
+        documentacion: 'Documentación'
       }
     },
 
@@ -892,6 +905,19 @@ export const translations = {
         description: 'فريقنا من المحاميين الجنائيين مستعد للدفاع عن حقوقك. استشارة مجانية متاحة 24/7.',
         consultarCaso: 'استشارة قضيتك',
         llamarAhora: 'اتصل الآن'
+      },
+      // Campos de casos
+      camposCasos: {
+        categoria: 'الفئة',
+        delitoPrincipal: 'الجريمة الرئيسية',
+        resultado: 'النتيجة',
+        tipoResolucion: 'نوع القرار',
+        organo: 'الجهة',
+        medidasCautelares: 'التدابير الاحترازية',
+        observaciones: 'ملاحظات',
+        fichaRapida: 'البطاقة السريعة',
+        fichaCompleta: 'البطاقة الكاملة',
+        documentacion: 'الوثائق'
       },
       privacidad: {
         title: 'ملاحظة الخصوصية',

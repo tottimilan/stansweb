@@ -14,22 +14,38 @@ import { translations } from '@/translations';
 
 const WHATSAPP = '34611687226';
 
-const terrorismoFAQ = [
+const getTerrorismoFAQ = (language: string) => [
   {
-    question: "¿Qué se considera enaltecimiento del terrorismo en Internet?",
-    answer: "Se considera enaltecimiento cualquier manifestación que justifique, exalte o incite a la comisión de delitos terroristas, o que ensalce a sus autores. Incluye publicaciones en redes sociales, comentarios en foros, o difusión de material propagandístico, según el artículo 578 del Código Penal."
+    question: language === 'ar' 
+      ? 'ما الذي يُعتبر تمجيداً للإرهاب على الإنترنت؟'
+      : '¿Qué se considera enaltecimiento del terrorismo en Internet?',
+    answer: language === 'ar'
+      ? 'يُعتبر تمجيداً أي تعبير يبرر أو يمجد أو يحرض على ارتكاب جرائم إرهابية، أو يمدح مرتكبيها. يشمل ذلك المنشورات على الشبكات الاجتماعية، التعليقات في المنتديات، أو نشر المواد الدعائية، وفقاً للمادة 578 من القانون الجنائي.'
+      : 'Se considera enaltecimiento cualquier manifestación que justifique, exalte o incite a la comisión de delitos terroristas, o que ensalce a sus autores. Incluye publicaciones en redes sociales, comentarios en foros, o difusión de material propagandístico, según el artículo 578 del Código Penal.'
   },
   {
-    question: "¿Puedo ser condenado por compartir un meme o publicación en redes sociales?",
-    answer: "Sí, si el contenido justifica o ensalza actos terroristas. La jurisprudencia del Tribunal Supremo ha condenado por compartir memes, publicaciones o incluso emojis relacionados con terrorismo. El contexto y alcance de la difusión son determinantes."
+    question: language === 'ar'
+      ? 'هل يمكن أن أُدان لمشاركة ميم أو منشور على الشبكات الاجتماعية؟'
+      : '¿Puedo ser condenado por compartir un meme o publicación en redes sociales?',
+    answer: language === 'ar'
+      ? 'نعم، إذا كان المحتوى يبرر أو يمجد الأعمال الإرهابية. أدانت المحكمة العليا بسبب مشاركة الميمات أو المنشورات أو حتى الرموز التعبيرية المتعلقة بالإرهاب. السياق ومدى الانتشار هما العاملان الحاسمان.'
+      : 'Sí, si el contenido justifica o ensalza actos terroristas. La jurisprudencia del Tribunal Supremo ha condenado por compartir memes, publicaciones o incluso emojis relacionados con terrorismo. El contexto y alcance de la difusión son determinantes.'
   },
   {
-    question: "¿Qué pena tiene el delito de enaltecimiento del terrorismo?",
-    answer: "La pena básica es de 1 a 3 años de prisión. Si se comete utilizando Internet, se incrementa en 1/3. Si el autor es periodista o profesional, puede reducirse a multa. En caso de reincidencia, se duplica la pena."
+    question: language === 'ar'
+      ? 'ما هي عقوبة جريمة تمجيد الإرهاب؟'
+      : '¿Qué pena tiene el delito de enaltecimiento del terrorismo?',
+    answer: language === 'ar'
+      ? 'العقوبة الأساسية هي من 1 إلى 3 سنوات سجن. إذا ارتكبت باستخدام الإنترنت، تزداد بمقدار الثلث. إذا كان المؤلف صحفياً أو محترفاً، يمكن تخفيضها إلى غرامة. في حالة العود، تتضاعف العقوبة.'
+      : 'La pena básica es de 1 a 3 años de prisión. Si se comete utilizando Internet, se incrementa en 1/3. Si el autor es periodista o profesional, puede reducirse a multa. En caso de reincidencia, se duplica la pena.'
   },
   {
-    question: "¿Qué es la captación yihadista online?",
-    answer: "Es el delito tipificado en el artículo 579.2 del Código Penal, que consiste en captar, reclutar o adoctrinar a personas para que participen en organizaciones terroristas o cometan delitos de terrorismo, utilizando medios telemáticos."
+    question: language === 'ar'
+      ? 'ما هو التجنيد الجهادي عبر الإنترنت؟'
+      : '¿Qué es la captación yihadista online?',
+    answer: language === 'ar'
+      ? 'هي الجريمة المنصوص عليها في المادة 579.2 من القانون الجنائي، والتي تتمثل في استقطاب أو تجنيد أو تلقين الأشخاص للمشاركة في منظمات إرهابية أو ارتكاب جرائم إرهابية، باستخدام الوسائل الإلكترونية.'
+      : 'Es el delito tipificado en el artículo 579.2 del Código Penal, que consiste en captar, reclutar o adoctrinar a personas para que participen en organizaciones terroristas o cometan delitos de terrorismo, utilizando medios telemáticos.'
   },
   {
     question: "¿Las plataformas como Facebook o Twitter son responsables de los contenidos terroristas?",
@@ -96,47 +112,61 @@ const getTiposTerrorismoInternet = (language: string) => [
   }
 ];
 
-const casosReales = [
+const getCasosReales = (language: string) => [
   {
-    titulo: "Caso de Diana Quer",
-    descripcion: "Condena por enaltecimiento tras publicar mensajes de apoyo al asesino",
-    condena: "2 años prisión",
-    tribunal: "Audiencia Nacional"
+    titulo: language === 'ar' ? 'قضية ديانا كير' : 'Caso de Diana Quer',
+    descripcion: language === 'ar' 
+      ? 'إدانة بتهمة التمجيد بعد نشر رسائل دعم للقاتل'
+      : 'Condena por enaltecimiento tras publicar mensajes de apoyo al asesino',
+    condena: language === 'ar' ? 'سنتان سجن' : '2 años prisión',
+    tribunal: language === 'ar' ? 'المحكمة الوطنية' : 'Audiencia Nacional'
   },
   {
-    titulo: "Operación Tándem",
-    descripcion: "Desarticulación de red yihadista que usaba Telegram para captación",
-    condena: "Hasta 8 años",
-    tribunal: "Audiencia Nacional"
+    titulo: language === 'ar' ? 'عملية تاندم' : 'Operación Tándem',
+    descripcion: language === 'ar'
+      ? 'تفكيك شبكة جهادية كانت تستخدم تيليجرام للتجنيد'
+      : 'Desarticulación de red yihadista que usaba Telegram para captación',
+    condena: language === 'ar' ? 'حتى 8 سنوات' : 'Hasta 8 años',
+    tribunal: language === 'ar' ? 'المحكمة الوطنية' : 'Audiencia Nacional'
   },
   {
-    titulo: "Caso de los CDR",
-    descripcion: "Condenas por enaltecimiento en redes sociales durante protestas",
-    condena: "Hasta 4 años",
-    tribunal: "Tribunal Supremo"
+    titulo: language === 'ar' ? 'قضية لجان الدفاع عن الجمهورية' : 'Caso de los CDR',
+    descripcion: language === 'ar'
+      ? 'إدانات بتهمة التمجيد في الشبكات الاجتماعية خلال الاحتجاجات'
+      : 'Condenas por enaltecimiento en redes sociales durante protestas',
+    condena: language === 'ar' ? 'حتى 4 سنوات' : 'Hasta 4 años',
+    tribunal: language === 'ar' ? 'المحكمة العليا' : 'Tribunal Supremo'
   }
 ];
 
-const plataformasSociales = [
+const getPlataformasSociales = (language: string) => [
   {
     nombre: "Facebook/Meta",
-    medidas: "IA para detectar contenido, colaboración con autoridades",
-    responsabilidad: "Alta - retiradas en 24h"
+    medidas: language === 'ar' 
+      ? 'الذكاء الاصطناعي لاكتشاف المحتوى، التعاون مع السلطات'
+      : 'IA para detectar contenido, colaboración con autoridades',
+    responsabilidad: language === 'ar' ? 'عالية - إزالة خلال 24 ساعة' : 'Alta - retiradas en 24h'
   },
   {
     nombre: "Twitter/X",
-    medidas: "Etiquetas de verificación, bloqueo de cuentas",
-    responsabilidad: "Media - depende del alcance"
+    medidas: language === 'ar'
+      ? 'علامات التحقق، حظر الحسابات'
+      : 'Etiquetas de verificación, bloqueo de cuentas',
+    responsabilidad: language === 'ar' ? 'متوسطة - تعتمد على الانتشار' : 'Media - depende del alcance'
   },
   {
     nombre: "Telegram",
-    medidas: "Canalización de reportes, encriptación end-to-end",
-    responsabilidad: "Baja - cifrado dificulta control"
+    medidas: language === 'ar'
+      ? 'توجيه البلاغات، التشفير من طرف إلى طرف'
+      : 'Canalización de reportes, encriptación end-to-end',
+    responsabilidad: language === 'ar' ? 'منخفضة - التشفير يصعب التحكم' : 'Baja - cifrado dificulta control'
   },
   {
     nombre: "TikTok",
-    medidas: "Moderación de contenido juvenil, IA predictiva",
-    responsabilidad: "Alta - contenido viral"
+    medidas: language === 'ar'
+      ? 'الإشراف على محتوى الشباب، الذكاء الاصطناعي التنبؤي'
+      : 'Moderación de contenido juvenil, IA predictiva',
+    responsabilidad: language === 'ar' ? 'عالية - محتوى فيروسي' : 'Alta - contenido viral'
   }
 ];
 
@@ -440,11 +470,11 @@ export default function TerrorismoInternetPage() {
                 className="mb-12"
               >
                 <h2 id="casos-reales-y-jurisprudencia" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Casos Reales y Jurisprudencia
+                  {language === 'ar' ? 'حالات حقيقية والفقه القضائي' : 'Casos Reales y Jurisprudencia'}
                 </h2>
 
                 <div className="space-y-6">
-                  {casosReales.map((caso, index) => (
+                  {getCasosReales(language).map((caso, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, y: 20 }}
@@ -508,7 +538,7 @@ export default function TerrorismoInternetPage() {
                       </tr>
                     </thead>
                     <tbody>
-                      {plataformasSociales.map((plataforma, index) => (
+                      {getPlataformasSociales(language).map((plataforma, index) => (
                         <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                           <td className="px-4 py-3 font-semibold text-black">
                             {plataforma.nombre}
@@ -565,11 +595,11 @@ export default function TerrorismoInternetPage() {
                 className="mb-12"
               >
                 <h2 id="preguntas-frecuentes-sobre-terrorismo-en-internet" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Preguntas Frecuentes sobre Terrorismo en Internet
+                  {language === 'ar' ? 'الأسئلة الشائعة حول الإرهاب على الإنترنت' : 'Preguntas Frecuentes sobre Terrorismo en Internet'}
                 </h2>
 
                 <div className="space-y-6">
-                  {terrorismoFAQ.map((faq, index) => (
+                  {getTerrorismoFAQ(language).map((faq, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, y: 20 }}
