@@ -261,23 +261,81 @@ const relatedArticles = [
 export default function DerechosDependenciasPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز حقوق المعتقلين',
+      title: 'حقوق المعتقل في التبعيات الشرطية',
+      subtitle: 'الشروط الدنيا والحقوق أثناء الاعتقال في مركز الشرطة',
+      description: 'الشروط الدنيا، الحقوق اليومية والضمانات أثناء الإقامة في مركز الشرطة. البروتوكولات والمواعيد الدستورية.'
+    },
+    sections: {
+      derechosBasicos: 'الحقوق الأساسية في مركز الشرطة',
+      fasesDetencion: 'مراحل الاعتقال في مركز الشرطة',
+      condicionesMinimas: 'الشروط الدنيا القانونية',
+      derechosDiarios: 'الحقوق اليومية أثناء الاعتقال',
+      derechosEspeciales: 'الحقوق الخاصة حسب الوضع',
+      controlLegalidad: 'مراقبة الشرعية والشكاوى',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول الحقوق في مركز الشرطة',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Derechos de Detenidos',
+      title: 'Derechos en Dependencias Policiales',
+      subtitle: 'Condiciones Mínimas y Derechos durante la Detención en Comisaría',
+      description: 'Condiciones mínimas, derechos diarios y garantías durante la estancia en comisaría. Protocolos y plazos constitucionales.'
+    },
+    sections: {
+      derechosBasicos: 'Derechos Básicos en Comisaría',
+      fasesDetencion: 'Fases de la Detención en Comisaría',
+      condicionesMinimas: 'Condiciones Mínimas Legales',
+      derechosDiarios: 'Derechos Diarios durante la Detención',
+      derechosEspeciales: 'Derechos Especiales por Situación',
+      controlLegalidad: 'Control de Legalidad y Quejas',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Derechos en Comisaría',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'الحقوق في التبعيات الشرطية منصوص عليها في القانون العضوي 1/1979 ونظام مراكز الشرطة، التي تحدد الشروط الدنيا التي يجب احترامها أثناء الاعتقال. تضمن هذه الحقوق أن يتم حرمان الحرية بطريقة كريمة واحترام لحقوق الإنسان الأساسية.',
+      parrafo2: 'توضح هذه الدليل جميع الحقوق أثناء الإقامة في مركز الشرطة، من الشروط الدنيا للسكن إلى الحقوق اليومية، مروراً بالمواعيد الدستورية والضمانات الإجرائية. يعتمد على قضاء المحكمة الدستورية وتعليمات وزارة الداخلية بشأن نظام الاعتقال.'
+    },
+    derechosBasicos: {
+      titulo: 'الحقوق الأساسية في مركز الشرطة'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'Los <strong>derechos en dependencias policiales</strong> están regulados por la <strong>Ley Orgánica 1/1979</strong> y el <strong>Reglamento de Comisarías</strong>, que establecen las condiciones mínimas que deben respetarse durante la detención. Estos derechos garantizan que la privación de libertad se realice de manera digna y respetuosa con los derechos fundamentales.',
+      parrafo2: 'Esta guía detalla todos los derechos durante la estancia en comisaría, desde las condiciones mínimas de habitabilidad hasta los derechos diarios, pasando por los plazos constitucionales y las garantías procesales. Se basa en la jurisprudencia del <strong>Tribunal Constitucional</strong> y las instrucciones del <strong>Ministerio del Interior</strong> sobre el régimen de detención.'
+    },
+    derechosBasicos: {
+      titulo: 'Derechos Básicos en Comisaría'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
-    { label: 'Derechos en Dependencias Policiales' }
+    { label: language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos', href: '/blog/derechos-detenidos' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'derechos-basicos-en-comisaria', title: 'Derechos Básicos en Comisaría', level: 2 },
-    { id: 'fases-de-la-detencion-en-comisaria', title: 'Fases de la Detención en Comisaría', level: 2 },
-    { id: 'condiciones-minimas-legales', title: 'Condiciones Mínimas Legales', level: 2 },
-    { id: 'derechos-diarios-durante-la-detencion', title: 'Derechos Diarios durante la Detención', level: 2 },
-    { id: 'derechos-especiales-por-situacion', title: 'Derechos Especiales por Situación', level: 2 },
-    { id: 'control-de-legalidad-y-quejas', title: 'Control de Legalidad y Quejas', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-derechos-en-comisaria', title: 'Preguntas Frecuentes sobre Derechos en Comisaría', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'derechos-basicos-en-comisaria', title: blogTranslations.sections.derechosBasicos, level: 2 },
+    { id: 'fases-de-la-detencion-en-comisaria', title: blogTranslations.sections.fasesDetencion, level: 2 },
+    { id: 'condiciones-minimas-legales', title: blogTranslations.sections.condicionesMinimas, level: 2 },
+    { id: 'derechos-diarios-durante-la-detencion', title: blogTranslations.sections.derechosDiarios, level: 2 },
+    { id: 'derechos-especiales-por-situacion', title: blogTranslations.sections.derechosEspeciales, level: 2 },
+    { id: 'control-de-legalidad-y-quejas', title: blogTranslations.sections.controlLegalidad, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-derechos-en-comisaria', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -302,12 +360,12 @@ export default function DerechosDependenciasPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Derechos de Detenidos
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Derechos de Detenidos
+                  {language === 'ar' ? 'حقوق المعتقلين' : 'Derechos de Detenidos'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -316,12 +374,15 @@ export default function DerechosDependenciasPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Derechos en Dependencias Policiales
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Condiciones mínimas, derechos diarios y garantías durante la estancia
-                en comisaría. Protocolos y plazos constitucionales.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -353,18 +414,10 @@ export default function DerechosDependenciasPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  Los <strong>derechos en dependencias policiales</strong> están regulados por la
-                  <strong>Ley Orgánica 1/1979</strong> y el <strong>Reglamento de Comisarías</strong>,
-                  que establecen las condiciones mínimas que deben respetarse durante la detención.
-                  Estos derechos garantizan que la privación de libertad se realice de manera
-                  digna y respetuosa con los derechos fundamentales.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía detalla todos los derechos durante la estancia en comisaría, desde
-                  las condiciones mínimas de habitabilidad hasta los derechos diarios, pasando
-                  por los plazos constitucionales y las garantías procesales. Se basa en la
-                  jurisprudencia del <strong>Tribunal Constitucional</strong> y las instrucciones
-                  del <strong>Ministerio del Interior</strong> sobre el régimen de detención.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -377,7 +430,7 @@ export default function DerechosDependenciasPage() {
                 className="mb-12"
               >
                 <h2 id="derechos-basicos-en-comisaria" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Derechos Básicos en Comisaría
+                  {contentTranslations.derechosBasicos.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
