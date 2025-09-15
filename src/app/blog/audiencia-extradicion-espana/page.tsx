@@ -197,22 +197,78 @@ const relatedArticles = [
 export default function AudienciaExtradicionPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز إجراءات التسليم',
+      title: 'جلسة التسليم في إسبانيا',
+      subtitle: 'تطور الجلسة القضائية وحقوق المسلم وحقوق المسلم',
+      description: 'تطور المقارنة القضائية، حقوق المسلم، استراتيجيات الدفاع وأنواع القرارات القضائية.'
+    },
+    sections: {
+      fasesAudiencia: 'مراحل جلسة التسليم',
+      derechosExtraditado: 'حقوق المسلم في الجلسة',
+      estrategiaDefensa: 'استراتيجية الدفاع في الجلسة',
+      tiposResolucion: 'أنواع القرارات القضائية',
+      preparacionPrevia: 'التحضير المسبق للجلسة',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول جلسة التسليم',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Procedimientos de Extradición',
+      title: 'Audiencia de Extradición en España',
+      subtitle: 'Desarrollo de la Comparecencia Judicial y Derechos del Extraditado',
+      description: 'Desarrollo de la comparecencia judicial, derechos del extraditado, estrategias de defensa y tipos de resolución.'
+    },
+    sections: {
+      fasesAudiencia: 'Fases de la Audiencia de Extradición',
+      derechosExtraditado: 'Derechos del Extraditado en la Audiencia',
+      estrategiaDefensa: 'Estrategia de Defensa en la Audiencia',
+      tiposResolucion: 'Tipos de Resolución Judicial',
+      preparacionPrevia: 'Preparación Previa a la Audiencia',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Audiencia de Extradición',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'جلسة التسليم هي اللحظة النهائية للإجراء، حيث يقارن المسلم شخصياً أمام القاضي لممارسة حقوق الدفاع. منصوص عليها في المواد 15 وما يليها من القانون العضوي 3/2003، يجب أن تعقد هذه المقارنة في غضون 15 يوماً كحد أقصى من استلام طلب التسليم.',
+      parrafo2: 'توضح هذه الدليل التطور الكامل للجلسة، الحقوق التي تساعد المسلم، أكثر استراتيجيات الدفاع فعالية، وأنواع القرارات المختلفة التي يمكن للقاضي أن يصدرها، بناءً على قضاء المحكمة العليا وتعليمات وزارة العدل.'
+    },
+    fasesAudiencia: {
+      titulo: 'مراحل جلسة التسليم'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'La audiencia de extradición es el momento culminante del procedimiento, donde el extraditado comparece personalmente ante el juez para ejercer sus derechos de defensa. Regulada por los <strong>artículos 15 y siguientes de la Ley Orgánica 3/2003</strong>, esta comparecencia debe celebrarse en un plazo máximo de 15 días desde la recepción de la solicitud de extradición.',
+      parrafo2: 'Esta guía explica el desarrollo completo de la audiencia, los derechos que asisten al extraditado, las estrategias de defensa más efectivas, y los diferentes tipos de resolución que puede dictar el juez, basándose en la jurisprudencia del <strong>Tribunal Supremo</strong> y las instrucciones del <strong>Ministerio de Justicia</strong>.'
+    },
+    fasesAudiencia: {
+      titulo: 'Fases de la Audiencia de Extradición'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
-    { label: 'Audiencia de Extradición en España' }
+    { label: language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'fases-de-la-audiencia-de-extradicion', title: 'Fases de la Audiencia de Extradición', level: 2 },
-    { id: 'derechos-del-extraditado-en-la-audiencia', title: 'Derechos del Extraditado en la Audiencia', level: 2 },
-    { id: 'estrategia-de-defensa-en-la-audiencia', title: 'Estrategia de Defensa en la Audiencia', level: 2 },
-    { id: 'tipos-de-resolucion-judicial', title: 'Tipos de Resolución Judicial', level: 2 },
-    { id: 'preparacion-previa-a-la-audiencia', title: 'Preparación Previa a la Audiencia', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-audiencia-de-extradicion', title: 'Preguntas Frecuentes sobre Audiencia de Extradición', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'fases-de-la-audiencia-de-extradicion', title: blogTranslations.sections.fasesAudiencia, level: 2 },
+    { id: 'derechos-del-extraditado-en-la-audiencia', title: blogTranslations.sections.derechosExtraditado, level: 2 },
+    { id: 'estrategia-de-defensa-en-la-audiencia', title: blogTranslations.sections.estrategiaDefensa, level: 2 },
+    { id: 'tipos-de-resolucion-judicial', title: blogTranslations.sections.tiposResolucion, level: 2 },
+    { id: 'preparacion-previa-a-la-audiencia', title: blogTranslations.sections.preparacionPrevia, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-audiencia-de-extradicion', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -237,12 +293,12 @@ export default function AudienciaExtradicionPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Procedimientos de Extradición
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Procedimientos de Extradición
+                  {language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -251,12 +307,15 @@ export default function AudienciaExtradicionPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Audiencia de Extradición en España
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Desarrollo de la comparecencia judicial, derechos del extraditado,
-                estrategias de defensa y tipos de resolución.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -288,17 +347,10 @@ export default function AudienciaExtradicionPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La audiencia de extradición es el momento culminante del procedimiento, donde el
-                  extraditado comparece personalmente ante el juez para ejercer sus derechos de defensa.
-                  Regulada por los <strong>artículos 15 y siguientes de la Ley Orgánica 3/2003</strong>,
-                  esta comparecencia debe celebrarse en un plazo máximo de 15 días desde la recepción
-                  de la solicitud de extradición.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía explica el desarrollo completo de la audiencia, los derechos que asisten
-                  al extraditado, las estrategias de defensa más efectivas, y los diferentes tipos
-                  de resolución que puede dictar el juez, basándose en la jurisprudencia del
-                  <strong>Tribunal Supremo</strong> y las instrucciones del <strong>Ministerio de Justicia</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -311,7 +363,7 @@ export default function AudienciaExtradicionPage() {
                 className="mb-12"
               >
                 <h2 id="fases-de-la-audiencia-de-extradicion" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Fases de la Audiencia de Extradición
+                  {contentTranslations.fasesAudiencia.titulo}
                 </h2>
 
                 <div className="space-y-8">
