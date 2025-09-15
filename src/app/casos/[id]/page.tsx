@@ -6,6 +6,105 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { translations } from '@/translations'
 import { getTranslatedCaseField } from '@/translations/cases'
 import { motion } from 'framer-motion'
+
+// Función para traducir categorías
+const categoriaMap: { [key: string]: string } = {
+  'Delitos de odio y libertad de expresión': 'جرائم الكراهية وحرية التعبير',
+  'Terrorismo y Audiencia Nacional': 'الإرهاب والمحكمة الوطنية',
+  'Robos con violencia y grupo criminal': 'السرقة بالعنف والجماعة الإجرامية',
+  'Delitos contra las personas': 'الجرائم ضد الأشخاص',
+  'Delitos económicos y contra el patrimonio': 'الجرائم الاقتصادية وضد الممتلكات',
+  'Delitos contra el orden público, drogas y ejecución penal': 'الجرائم ضد النظام العام والمخدرات والتنفيذ الجنائي',
+  'Delitos contra la salud pública': 'الجرائم ضد الصحة العامة',
+  'Delitos contra la autoridad': 'الجرائم ضد السلطة',
+  'Delitos patrimoniales': 'الجرائم المالية',
+  'Delitos contra la libertad': 'الجرائم ضد الحرية',
+  'Delitos contra los derechos de los trabajadores': 'الجرائم ضد حقوق العمال',
+  'Ejecución penal': 'التنفيذ الجنائي',
+  'Delitos contra la vida': 'الجرائم ضد الحياة',
+  'Pertenencia a organización criminal': 'الانتماء لمنظمة إجرامية',
+  'Delitos contra la integridad física': 'الجرائم ضد السلامة الجسدية'
+};
+
+// Función para traducir tipos de resolución
+const tipoMap: { [key: string]: string } = {
+  'Sobreseimiento': 'إغلاق الدعوى',
+  'Sentencia': 'حكم',
+  'Auto': 'قرار',
+  'Diligencias': 'إجراءات',
+  'Archivo': 'حفظ',
+  'Libertad provisional': 'الحرية المؤقتة',
+  'Investigación en curso': 'التحقيق جارٍ',
+  'Pendiente': 'معلق',
+  'Absolución': 'البراءة',
+  'Sustitución de prisión por libertad provisional': 'استبدال السجن بالحرية المؤقتة',
+  'Sobreseimiento provisional': 'إغلاق الدعوى المؤقت',
+  'Revocación / Archivo': 'إلغاء / حفظ',
+  'Revocación': 'إلغاء'
+};
+
+// Función para traducir medidas cautelares
+const medidasMap: { [key: string]: string } = {
+  'Ninguna': 'لا توجد',
+  'Libertad provisional con medidas cautelares': 'الحرية المؤقتة مع إجراءات احترازية',
+  'Prisión provisional para investigado': 'السجن الاحتياطي للمتهم',
+  'Libertad provisional, retirada de pasaporte, comparecencias semanales': 'الحرية المؤقتة، سحب جواز السفر، حضور أسبوعي',
+  'Libertad provisional con fianza': 'الحرية المؤقتة مع كفالة'
+};
+
+// Función para traducir observaciones
+const observacionesMap: { [key: string]: string } = {
+  'Se sobresee por libertad de expresión en programa satírico': 'يتم إغلاق الدعوى بحرية التعبير في برنامج ساخر',
+  'Investigación mediática de más de una docena de robos; nuestro cliente es el único en libertad': 'تحقيق إعلامي لأكثر من عشرة حوادث سرقة؛ عميلنا هو الوحيد في الحرية',
+  'Se ejerce acusación particular en nombre de la familia; investigación por muerte tras intervención policial': 'يتم ممارسة الاتهام الخاص باسم العائلة؛ تحقيق في الوفاة بعد التدخل الشرطي'
+};
+
+// Función para traducir localidades
+const localidadMap: { [key: string]: string } = {
+  'Madrid': 'مدريد',
+  'Jaén': 'خاين',
+  'San Roque (Cádiz)': 'سان روكي (قادس)',
+  'Pozuelo de Alarcón (Madrid)': 'بوزويلو دي ألاركون (مدريد)',
+  'Getafe (Madrid)': 'خيتافي (مدريد)',
+  'Torrejón de Ardoz (Madrid)': 'توريخون دي أردوز (مدريد)',
+  'Alcorcón': 'ألكوركون',
+  'Madrid / Alcorcón (Madrid)': 'مدريد / ألكوركون (مدريد)',
+  'Valdemoro (Madrid)': 'فالديمورو (مدريد)',
+  'Móstoles (Madrid)': 'موستوليس (مدريد)',
+  'Navalcarnero (Madrid)': 'نافالكارنيرو (مدريد)',
+  'Por confirmar': 'قيد التأكيد'
+};
+
+// Función para traducir órganos judiciales
+const organoMap: { [key: string]: string } = {
+  'Juzgado de Instrucción nº 38 de Madrid': 'محكمة التحقيق رقم 38 في مدريد',
+  'Audiencia Provincial de Madrid': 'محكمة الاستئناف في مدريد',
+  'Juzgado de lo Penal nº 21 de Madrid': 'محكمة الجنايات رقم 21 في مدريد',
+  'Juzgado Central de Instrucción nº 2': 'محكمة التحقيق المركزية رقم 2',
+  'Juzgado de Instrucción nº 30 de Madrid': 'محكمة التحقيق رقم 30 في مدريد',
+  'Juzgado de lo Penal nº 25 de Madrid': 'محكمة الجنايات رقم 25 في مدريد',
+  'Juzgado de lo Penal nº 3 de Madrid': 'محكمة الجنايات رقم 3 في مدريد',
+  'Audiencia Provincial de Jaén': 'محكمة الاستئناف في خاين',
+  'Juzgado de Instrucción nº 1 de Jaén': 'محكمة التحقيق رقم 1 في خاين',
+  'Juzgado de Instrucción nº 12 de Madrid': 'محكمة التحقيق رقم 12 في مدريد',
+  'Juzgado de Instrucción nº 15 de Madrid': 'محكمة التحقيق رقم 15 في مدريد',
+  'Juzgado de lo Penal nº 4 de Madrid': 'محكمة الجنايات رقم 4 في مدريد',
+  'Juzgado de Instrucción nº 8 de Madrid': 'محكمة التحقيق رقم 8 في مدريد',
+  'Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe': 'محكمة الدرجة الأولى والتحقيق رقم 6 في خيتافي',
+  'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'محكمة التحقيق المركزية رقم 6 (المحكمة الوطنية)',
+  'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'محكمة التحقيق رقم 4 في بوزويلو دي ألاركون',
+  'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد',
+  'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)',
+  'Juzgado de lo Penal nº 3 de Jaén': 'محكمة الجنايات رقم 3 في خاين',
+  'Juzgado de lo Penal nº 22 de Madrid': 'محكمة الجنايات رقم 22 في مدريد',
+  'Juzgado de Instrucción nº 13 de Madrid': 'محكمة التحقيق رقم 13 في مدريد',
+  'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو',
+  'Juzgado de Instrucción nº 1 de Móstoles': 'محكمة التحقيق رقم 1 في موستوليس',
+  'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو',
+  'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية',
+  'Juzgado de Instrucción nº 1 de San Roque (Cádiz)': 'محكمة التحقيق رقم 1 في سان روكي (قادس)'
+};
+
 import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import casosData from '../../../../public/casos/casos-procesados.json'
@@ -230,7 +329,7 @@ export default function CasoDetailPage() {
                              <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm">
                                  <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-gold/20 rounded-full px-3 sm:px-4 py-1.5 sm:py-2">
                    <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
-                   <span>{caso.localidad}</span>
+                   <span>{language === 'es' ? caso.localidad : (localidadMap[caso.localidad] || caso.localidad)}</span>
                  </div>
                  <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-gold/20 rounded-full px-3 sm:px-4 py-1.5 sm:py-2">
                    <Calendar className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
@@ -238,7 +337,7 @@ export default function CasoDetailPage() {
                  </div>
                  <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-gold/20 rounded-full px-3 sm:px-4 py-1.5 sm:py-2">
                    <Gavel className="w-3 h-3 sm:w-4 sm:h-4 text-gold" />
-                   <span>{caso.organo}</span>
+                   <span>{language === 'es' ? caso.organo : (organoMap[caso.organo] || caso.organo)}</span>
                  </div>
               </div>
             </motion.div>
@@ -658,13 +757,13 @@ export default function CasoDetailPage() {
                      <Shield className="w-5 h-5 sm:w-6 sm:h-6" />
                    </div>
                    <h3 className="text-lg sm:text-xl font-bold text-offwhite group-hover:text-gold transition-colors">
-                     Ficha Rápida
+                     {language === 'ar' ? 'البطاقة السريعة' : 'Ficha Rápida'}
                    </h3>
                  </div>
                                  <dl className="space-y-3 sm:space-y-4">
                   <div>
                     <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.categoria}</dt>
-                    <dd className="text-sm text-offwhite/80">{caso.categoria}</dd>
+                    <dd className="text-sm text-offwhite/80">{language === 'es' ? caso.categoria : (categoriaMap[caso.categoria] || caso.categoria)}</dd>
                   </div>
                   <div>
                     <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.delitoPrincipal}</dt>
@@ -686,18 +785,18 @@ export default function CasoDetailPage() {
                   </div>
                   <div>
                     <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.tipoResolucion}</dt>
-                    <dd className="text-sm text-offwhite/80">{caso.tipo_resolucion}</dd>
+                    <dd className="text-sm text-offwhite/80">{language === 'es' ? caso.tipo_resolucion : (tipoMap[caso.tipo_resolucion] || caso.tipo_resolucion)}</dd>
                   </div>
                   {caso.medidas_cautelares && (
                     <div>
                       <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.medidasCautelares}</dt>
-                      <dd className="text-sm text-offwhite/80">{caso.medidas_cautelares}</dd>
+                      <dd className="text-sm text-offwhite/80">{language === 'es' ? caso.medidas_cautelares : (medidasMap[caso.medidas_cautelares] || caso.medidas_cautelares)}</dd>
                     </div>
                   )}
                   {caso.observaciones && (
                     <div>
                       <dt className="text-sm font-medium text-gold mb-1">{t.casos.camposCasos.observaciones}</dt>
-                      <dd className="text-sm text-offwhite/80">{caso.observaciones}</dd>
+                      <dd className="text-sm text-offwhite/80">{language === 'es' ? caso.observaciones : (observacionesMap[caso.observaciones] || caso.observaciones)}</dd>
                     </div>
                   )}
                 </dl>
