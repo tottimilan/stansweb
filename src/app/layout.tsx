@@ -5,6 +5,7 @@ import { LanguageProvider } from "../contexts/LanguageContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import CookieBanner from "../components/CookieBanner";
+import WebsiteSchema from "../components/WebsiteSchema";
 import { translations } from "../translations";
 
 export const metadata: Metadata = {
@@ -242,6 +243,8 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased" suppressHydrationWarning={true}>
+        {/* Global Website Schema for better SEO */}
+        <WebsiteSchema />
         <LanguageProvider>
           <ContactProvider>
             {children}

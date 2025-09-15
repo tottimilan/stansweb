@@ -10,56 +10,65 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogContentDate = new Date('2024-12-15') // Fecha de actualización del blog
   const casesContentDate = new Date('2024-12-10') // Fecha de última actualización de casos
   
-  // Páginas principales
+  // Generar sitemap con estructura optimizada para Google Sitelinks
+  // Prioridades basadas en importancia de negocio y búsquedas de usuarios
+  
+  // Páginas principales - Optimizadas para Sitelinks
   const mainPages = [
     {
       url: baseUrl,
       lastModified: currentDate,
       changeFrequency: "weekly" as const,
-      priority: 1,
+      priority: 1.0, // Homepage - máxima prioridad
     },
     {
       url: `${baseUrl}/casos`,
-      lastModified: currentDate,
+      lastModified: casesContentDate,
       changeFrequency: "weekly" as const,
-      priority: 0.9,
+      priority: 0.95, // Casos de éxito - muy alta prioridad
     },
     {
       url: `${baseUrl}/blog`,
       lastModified: blogContentDate,
       changeFrequency: "daily" as const,
-      priority: 0.9,
+      priority: 0.9, // Blog - contenido frecuente
     },
     {
-      url: `${baseUrl}/equipo`,
+      url: `${baseUrl}/#servicios`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
-      priority: 0.8,
+      priority: 0.95, // Servicios - crucial para conversión
     },
     {
-      url: `${baseUrl}/contacto`,
+      url: `${baseUrl}/#equipo`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
-      priority: 0.8,
+      priority: 0.85, // Equipo - confianza y credibilidad
+    },
+    {
+      url: `${baseUrl}/#contacto`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.9, // Contacto - conversión directa
     },
   ]
 
-  // Áreas de práctica
+  // Áreas de práctica - Servicios especializados
   const areaPages = [
-    "/areas/libertad-expresion-delitos-odio",
-    "/areas/terrorismo-audiencia-nacional",
-    "/areas/delitos-contra-las-personas",
-    "/areas/robos-patrimonio-crimen-organizado",
-    "/areas/delitos-economicos-laborales",
-    "/areas/orden-publico-drogas-ejecucion-penal"
-  ].map(path => ({
+    { path: "/#servicios/libertad-expresion", priority: 0.85 },
+    { path: "/#servicios/terrorismo-audiencia-nacional", priority: 0.85 },
+    { path: "/#servicios/delitos-personas", priority: 0.85 },
+    { path: "/#servicios/patrimonio-crimen-organizado", priority: 0.85 },
+    { path: "/#servicios/delitos-economicos", priority: 0.85 },
+    { path: "/#servicios/orden-publico-drogas", priority: 0.85 }
+  ].map(({ path, priority }) => ({
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
     changeFrequency: "monthly" as const,
-    priority: 0.9,
+    priority,
   }))
 
-  // Páginas del blog (hubs/pillars)
+  // Páginas del blog (hubs/pillars) - Contenido cornerstone
   const blogHubPages = [
     "/blog/defensa-penal-urgente",
     "/blog/procedimientos-extradicion",
@@ -68,10 +77,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${path}`,
     lastModified: blogContentDate,
     changeFrequency: "weekly" as const,
-    priority: 0.8,
+    priority: 0.85, // Mayor prioridad para pillar pages
   }))
 
-  // Artículos del blog (spokes) - COMPLETO Y ACTUALIZADO
+  // Artículos del blog (spokes) - Contenido de apoyo
   const blogArticlePages = [
     // Hub: Defensa Penal Urgente (8 artículos)
     "/blog/defensa-penal-urgente-guia-completa",
@@ -109,19 +118,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${path}`,
     lastModified: blogContentDate,
     changeFrequency: "monthly" as const,
-    priority: 0.7,
+    priority: 0.75, // Prioridad mejorada para artículos de blog
   }))
 
-  // Páginas de casos individuales (CRÍTICO PARA SEO)
+  // Páginas de casos individuales - Prueba social y credibilidad
   const casePages = casosData.map((caso: any) => {
     const casoSeoInfo = (seoInfo as any)[caso.id]
     const url = casoSeoInfo?.url ? `${baseUrl}${casoSeoInfo.url}` : `${baseUrl}/casos/${caso.id}`
+    
+    // Casos favorables tienen mayor prioridad
+    const priority = caso.favorabilidad === "Favorable" ? 0.8 : 0.75
     
     return {
       url,
       lastModified: casesContentDate,
       changeFrequency: "monthly" as const,
-      priority: 0.7,
+      priority,
     }
   })
 
