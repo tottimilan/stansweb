@@ -137,13 +137,46 @@ Sobreseimiento
 - ✅ **Investigación en curso** → التحقيق جارٍ
 - ✅ **Pendiente** → معلق
 
+## 🆕 **CORRECCIONES ADICIONALES REALIZADAS**
+
+### **Problemas Encontrados y Solucionados:**
+
+#### **1. ❌ Página `/casos` no usaba traducciones**
+**Problema:** La página de casos renderizaba directamente los datos sin aplicar funciones de traducción
+**Solución:** ✅ Agregadas funciones de traducción idénticas a las del componente CaseCard
+
+#### **2. ❌ Órganos judiciales faltantes**
+**Agregados:**
+- ✅ Juzgado de lo Penal nº 3 de Jaén → محكمة الجنايات رقم 3 في خاين
+- ✅ Juzgado de lo Penal nº 22 de Madrid → محكمة الجنايات رقم 22 في مدريد
+- ✅ Juzgado de Instrucción nº 13 de Madrid → محكمة التحقيق رقم 13 في مدريد
+- ✅ Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro → محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو
+- ✅ Juzgado de Instrucción nº 1 de Móstoles → محكمة التحقيق رقم 1 في موستوليس
+- ✅ Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero → محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو
+- ✅ Juzgado Central de Instrucción nº 2 – Audiencia Nacional → محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية
+
+#### **3. ❌ Tipos de resolución faltantes**
+**Agregados:**
+- ✅ Sustitución de prisión por libertad provisional → استبدال السجن بالحرية المؤقتة
+- ✅ Sobreseimiento provisional → إغلاق الدعوى المؤقت
+- ✅ Revocación / Archivo → إلغاء / حفظ
+- ✅ Revocación → إلغاء
+
+#### **4. ❌ Resultados faltantes**
+**Agregados:**
+- ✅ Auto concediendo libertad provisional → قرار منح الحرية المؤقتة
+
 ## 📁 **ARCHIVOS MODIFICADOS**
 
 1. **`src/translations/cases-translations.ts`** (NUEVO)
    - Contiene todas las traducciones de títulos y resúmenes
 
 2. **`src/components/CaseCard.tsx`**
-   - Actualizado para usar traducciones dinámicas
+   - Funciones de traducción actualizadas con valores faltantes
+
+3. **`src/app/casos/page.tsx`** ⭐ **CORREGIDO**
+   - Agregadas funciones de traducción idénticas
+   - Ahora todos los campos se traducen correctamente
    - Funciones mejoradas para resultados y tipos de resolución
    - Integración completa con el sistema de traducción
 
