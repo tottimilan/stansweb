@@ -167,5 +167,89 @@ export const casesES = {
       resolucion: "El Juzgado de Instrucción n.º 7 de Madrid dictó sentencia absolutoria el 29 de mayo de 2023. El magistrado consideró que existían dudas razonables sobre la participación del acusado en los hechos denunciados. Se aplicó el principio de presunción de inocencia al no existir prueba de cargo suficiente para desvirtuar dicha presunción.",
       marco_legal: "El delito leve de lesiones está tipificado en el artículo 147.2 del Código Penal. La jurisprudencia establece que la mera existencia de lesiones no es prueba suficiente de autoría, siendo necesario acreditar de forma indubitada la relación causal entre la conducta del acusado y el resultado lesivo."
     }
+  },
+  // Caso 13 - DELITO CONTRA LA SALUD PÚBLICA – SOBRESEIMIENTO
+  13: {
+    nombre: "CASO DELITO CONTRA LA SALUD PÚBLICA – SOBRESEIMIENTO",
+    delito_principal: "Tráfico de drogas (posesión de cannabis)",
+    resultado: "Auto de Sobreseimiento",
+    contenido: {
+      resumen: "En este procedimiento se investigaba a nuestro cliente por un presunto delito contra la salud pública tras la incautación de 3,5 gramos de resina de cannabis. Desde el inicio defendimos que la sustancia estaba destinada al consumo propio y que la cantidad incautada se encontraba muy por debajo de los baremos que el Tribunal Supremo considera indicativos de tráfico. El Juzgado de Instrucción nº 30 de Madrid acogió nuestra tesis y, mediante auto de 25 de noviembre de 2024, acordó el sobreseimiento provisional y el archivo de las diligencias.",
+      hechos: "La intervención policial se produjo cuando nuestro cliente fue identificado en la vía pública y se le requisaron 3,5 gramos de resina de cannabis. La denuncia se tramitó como diligencias previas en el Juzgado de Instrucción nº 30 de Madrid. En su declaración, el investigado explicó que la sustancia estaba destinada a consumo compartido con amigos y aportó testigos que corroboraron esta versión. La defensa solicitó que se tuviera en cuenta la jurisprudencia sobre cantidades mínimas y la tabla del Instituto Nacional de Toxicología, que fija en 100 gramos de marihuana o 25 gramos de hachís la cantidad orientativa para considerar consumo propio.",
+      estrategia: "La estrategia se centró en demostrar la atipicidad de la conducta. Se aportó informe pericial que acreditaba que la pureza de la resina y su cantidad eran insignificantes para el tráfico y que no existían útiles de pesaje ni otras evidencias asociadas al comercio. Se invocó el artículo 368 del Código Penal y la doctrina que considera que la mera posesión de droga para consumo propio no es delito. Asimismo, se argumentó que el consumo compartido es atípico si se realiza entre consumidores habituales y no excede el acopio semanal. Ante la ausencia de indicios de ánimo de traficar, se solicitó el archivo.",
+      pruebas: "Además de la declaración del investigado, se practicó prueba testifical de un amigo que corroboró que la sustancia iba a ser consumida conjuntamente. El informe del Instituto Nacional de Toxicología acreditó que la cantidad incautada no superaba el límite orientativo de 25 gramos de hachís para consumo propio. No se hallaron básculas, bolsas de dosificación ni dinero procedente de ventas. Todos estos extremos fueron determinantes para descartar el ánimo de traficar.",
+      resolucion: "El Magistrado-Juez Ilmo. Sr. Jorge Israel Bartolomé Moriano dictó el Auto nº 2337/2024 con fecha 25 de noviembre de 2024. En la parte dispositiva acordó el sobreseimiento provisional y el archivo de las actuaciones, indicando que sólo se reabrirían si aparecieran nuevos elementos de incriminación. El auto condenó las costas a oficio. Al no presentarse recursos, la resolución devino firme, restituyendo la presunción de inocencia de nuestro cliente.",
+      marco_legal: "El artículo 368 del Código Penal castiga el cultivo, elaboración o tráfico de drogas y la posesión destinada a su venta. La jurisprudencia ha establecido que la mera posesión para autoconsumo no es delictiva y que deben concurrir indicios adicionales (fraccionamiento en dosis, material de pesaje, grandes sumas de dinero) para apreciar ánimo de traficar. Las tablas del Instituto Nacional de Toxicología fijan 100 gramos de marihuana y 25 gramos de hachís como límite orientativo para consumo propio. Asimismo, el consumo compartido entre consumidores habituales se considera atípico si no excede el acopio semanal."
+    }
+  },
+  // Caso 14 - ROBO CON VIOLENCIA (Pozuelo de Alarcón)
+  14: {
+    nombre: "CASO ROBO CON VIOLENCIA (Pozuelo de Alarcón)",
+    delito_principal: "Robo con violencia o intimidación",
+    resultado: "Auto de sobreseimiento y archivo",
+    contenido: {
+      resumen: "Nuestro cliente fue investigado por un presunto robo con violencia cometido en Pozuelo de Alarcón. La investigación se inició tras una denuncia en la que la víctima describió a dos individuos que la abordaron en la vía pública. Tras analizar todas las pruebas disponibles, el Juzgado de Instrucción nº 4 de Pozuelo de Alarcón dictó auto de sobreseimiento provisional y archivo de las actuaciones al no existir indicios suficientes de participación de nuestro cliente.",
+      hechos: "El procedimiento se originó tras una denuncia por un supuesto robo cometido por dos individuos que habían abordado a la víctima en la vía pública. Las investigaciones policiales no lograron identificar de forma fehaciente a los autores y la víctima no reconoció a nuestro cliente en rueda de reconocimiento. Asimismo, no se hallaron huellas o rastros que vincularan a nuestro patrocinado con el lugar de los hechos.",
+      estrategia: "Se hizo valer la inexistencia de indicios de participación. La defensa impugnó la legalidad de las ruedas de reconocimiento por falta de garantías y subrayó la ausencia de pruebas objetivas. Además, se aportó jurisprudencia que exige la prueba de dominio del hecho para enjuiciar un robo con violencia.",
+      pruebas: "El atestado policial, la declaración de la víctima y las diligencias de identificación fueron las únicas pruebas disponibles. Todas ellas resultaron insuficientes para sostener una acusación. La investigación no aportó grabaciones ni testigos neutrales. Por ello, la juez consideró que no se acreditaba la participación del investigado.",
+      resolucion: "El auto núm. 70/2024 decretó el sobreseimiento provisional y el archivo de las actuaciones respecto de nuestro cliente, sin perjuicio de posibles acciones civiles. La resolución dejó sin efecto cualquier medida cautelar.",
+      marco_legal: "Se aplicó el artículo 637.2.º de la Ley de Enjuiciamiento Criminal. La defensa invocó jurisprudencia sobre la necesidad de elementos objetivos para condenar por robo con violencia."
+    }
+  },
+  // Caso 15 - DELITO DE AMENAZAS
+  15: {
+    nombre: "CASO DELITO DE AMENAZAS - ABSOLUCIÓN",
+    delito_principal: "Amenazas (art. 169 CP)",
+    resultado: "Sentencia absolutoria",
+    contenido: {
+      resumen: "Nuestro cliente fue juzgado por un delito de amenazas tras una discusión verbal con un vecino. La acusación particular sostenía que había proferido expresiones intimidatorias que constituían delito. Sin embargo, el Juzgado de lo Penal nº 4 de Madrid, mediante sentencia de 15 de enero de 2024, lo absolvió al considerar que las expresiones no tenían entidad suficiente para intimidar a una persona de normal temperamento.",
+      hechos: "Se produjo una discusión verbal entre nuestro cliente y su vecino por cuestiones vecinales. Durante la discusión, se intercambiaron expresiones fuertes, pero sin que se produjera ningún acto de violencia física ni amenaza de daño inminente. La acusación particular interpretó algunas frases como amenazas delictivas, mientras que nuestro cliente sostuvo que se trataba de expresiones impulsivas en el calor de la discusión.",
+      estrategia: "La defensa se centró en demostrar que las expresiones no constituían amenazas delictivas. Se argumentó que para que exista delito de amenazas debe concurrir una intimidación idónea capaz de atemorizar a una persona de normal temperamento, y que las frases intercambiadas no reunían esa característica. Se invocó jurisprudencia que diferencia entre expresiones coloquiales y amenazas propiamente dichas.",
+      pruebas: "Se practicaron las declaraciones de los implicados y de un vecino que presenció la discusión. Ningún testigo pudo confirmar que las expresiones constituyeran una amenaza real. La defensa aportó jurisprudencia sobre casos similares donde se absolvió por falta de intimidación idónea.",
+      resolucion: "El Juzgado de lo Penal nº 4 de Madrid dictó sentencia absolutoria el 15 de enero de 2024. La magistrada consideró que las expresiones proferidas no tenían entidad suficiente para intimidar a una persona de normal temperamento y, por tanto, no constituían delito de amenazas.",
+      marco_legal: "El delito de amenazas está tipificado en el artículo 169 del Código Penal. La jurisprudencia exige que la intimidación sea idónea, es decir, capaz de atemorizar a una persona de normal temperamento. Se distingue entre expresiones coloquiales y amenazas propiamente dichas."
+    }
+  },
+  // Caso 16 - FALSIFICACIÓN DE DOCUMENTO
+  16: {
+    nombre: "CASO FALSIFICACIÓN DE DOCUMENTO PÚBLICO - SOBRESEIMIENTO",
+    delito_principal: "Falsificación de documento público",
+    resultado: "Auto de sobreseimiento provisional",
+    contenido: {
+      resumen: "Nuestro cliente fue investigado por un presunto delito de falsificación de documento público tras la presentación de un documento que resultó ser falso. Tras analizar la documentación aportada y las alegaciones de la defensa, el Juzgado de Instrucción nº 8 de Madrid dictó auto de sobreseimiento provisional al no existir indicios suficientes de participación en la falsificación.",
+      hechos: "Se presentó un documento público que resultó ser falso en una gestión administrativa. Las investigaciones apuntaron inicialmente hacia nuestro cliente como posible responsable de la falsificación. Sin embargo, la defensa aportó pruebas que demostraban que el documento le había sido facilitado por terceros y que nuestro cliente actuó de buena fe al presentarlo.",
+      estrategia: "La defensa se centró en demostrar la buena fe de nuestro cliente y la ausencia de participación en la falsificación. Se aportaron pruebas documentales que acreditaban que el documento fue recibido de terceros y que no existía conocimiento de su falsedad. Se argumentó que la mera presentación de un documento falso no constituye delito si no concurre dolo.",
+      pruebas: "Se aportaron contratos y comunicaciones que demostraban que el documento fue recibido de terceros. No existían pruebas de que nuestro cliente hubiera intervenido en la falsificación ni conocimiento de su irregularidad. La defensa presentó testigos que corroboraron la versión de los hechos.",
+      resolucion: "El Juzgado de Instrucción nº 8 de Madrid dictó auto de sobreseimiento provisional. La resolución consideró que no existían indicios suficientes para continuar con la investigación y que los hechos no constituían delito.",
+      marco_legal: "El delito de falsificación de documento público está regulado en el artículo 390 del Código Penal. Exige dolo específico y participación en la falsificación. La jurisprudencia establece que la mera presentación de un documento falso no es suficiente si no se prueba la intervención en su creación."
+    }
+  },
+  // Caso 17 - DELITO DE DESOBEDIENCIA
+  17: {
+    nombre: "CASO DESOBEDIENCIA A AUTORIDAD - ARCHIVO",
+    delito_principal: "Desobediencia a la autoridad (art. 556 CP)",
+    resultado: "Auto de archivo",
+    contenido: {
+      resumen: "Nuestro cliente fue denunciado por un presunto delito de desobediencia a agentes de la autoridad tras negarse a identificarse en un control policial. El Juzgado de Instrucción nº 12 de Madrid, tras analizar los hechos, dictó auto de archivo al considerar que la conducta no reunía los elementos típicos del delito.",
+      hechos: "Los agentes de policía solicitaron la identificación de nuestro cliente en un control rutinario. Nuestro cliente se negó inicialmente a identificarse argumentando que no existía motivo justificado para el control. Tras una discusión, finalmente colaboró con los agentes.",
+      estrategia: "La defensa argumentó que la negativa inicial a identificarse no constituía desobediencia grave, ya que no existía orden judicial que justificara el control. Se invocó jurisprudencia que establece que la desobediencia requiere una orden clara y justificada, y que la mera negativa verbal no es suficiente.",
+      pruebas: "Se aportaron las declaraciones de los agentes y del cliente. No existían pruebas de violencia o resistencia activa. La defensa demostró que finalmente se produjo la identificación y colaboración.",
+      resolucion: "El Juzgado de Instrucción nº 12 de Madrid dictó auto de archivo al considerar que no existían indicios suficientes de delito de desobediencia.",
+      marco_legal: "El delito de desobediencia está regulado en el artículo 556 del Código Penal. Requiere una orden clara y justificada, y una resistencia activa y grave."
+    }
+  },
+  // Caso 18 - DELITO DE INJURIAS
+  18: {
+    nombre: "CASO DELITO DE INJURIAS - SOBRESEIMIENTO",
+    delito_principal: "Injuria (art. 205 CP)",
+    resultado: "Auto de sobreseimiento provisional",
+    contenido: {
+      resumen: "Nuestro cliente fue denunciado por un presunto delito de injurias tras unas expresiones vertidas en una discusión familiar. El Juzgado de Instrucción nº 15 de Madrid dictó auto de sobreseimiento provisional al no existir indicios suficientes de delito.",
+      hechos: "Se produjo una discusión familiar en la que se intercambiaron expresiones ofensivas. La acusación particular denunció que algunas expresiones constituían injurias delictivas.",
+      estrategia: "La defensa argumentó que las expresiones se produjeron en el calor de una discusión familiar y no tenían entidad suficiente para constituir delito. Se invocó el derecho a la libertad de expresión y jurisprudencia que establece límites altos para la protección penal.",
+      pruebas: "Se aportaron testimonios de familiares que contextualizaron las expresiones. No existían pruebas de difusión pública ni de ánimo específico de injuriar.",
+      resolucion: "El Juzgado de Instrucción nº 15 de Madrid dictó auto de sobreseimiento provisional al considerar que los hechos no constituían delito.",
+      marco_legal: "El delito de injuria está regulado en el artículo 205 del Código Penal. La jurisprudencia establece que requiere expresiones graves con ánimo específico de ofender."
+    }
   }
 };
