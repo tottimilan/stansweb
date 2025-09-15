@@ -226,22 +226,78 @@ const relatedArticles = [
 export default function RequisitosExtradicionPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز إجراءات التسليم',
+      title: 'متطلبات التسليم في إسبانيا',
+      subtitle: 'المتطلبات الجوهرية والرسمية، أسباب الرفض',
+      description: 'المتطلبات الجوهرية والرسمية، أسباب رفض التسليم. الاختلافات بين التسليم الأوروبي والدولي.'
+    },
+    sections: {
+      requisitosSustantivos: 'المتطلبات الجوهرية الإلزامية',
+      requisitosFormales: 'المتطلبات الرسمية للطلب',
+      causasDenegacion: 'أسباب رفض التسليم',
+      diferenciasUE: 'الاختلافات بين الاتحاد الأوروبي والتسليم الدولي',
+      protocoloVerificacion: 'بروتوكول التحقق من المتطلبات',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول متطلبات التسليم',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Procedimientos de Extradición',
+      title: 'Requisitos para la Extradición en España',
+      subtitle: 'Requisitos Sustantivos y Formales, Causas de Denegación',
+      description: 'Requisitos sustantivos y formales, causas de denegación. Diferencias entre extradición UE e internacional.'
+    },
+    sections: {
+      requisitosSustantivos: 'Requisitos Sustantivos Obligatorios',
+      requisitosFormales: 'Requisitos Formales de la Solicitud',
+      causasDenegacion: 'Causas de Denegación de la Extradición',
+      diferenciasUE: 'Diferencias UE vs Extradición Internacional',
+      protocoloVerificacion: 'Protocolo de Verificación de Requisitos',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Requisitos de Extradición',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'التسليم الإسباني يخضع لمتطلبات صارمة تضمن احترام الحقوق الأساسية للمطلوب وشرعية الإجراء. القانون العضوي 3/2003 يحدد المتطلبات الجوهرية والرسمية التي يجب الوفاء بها لكي يتم قبول طلب التسليم ومنحه.',
+      parrafo2: 'توضح هذه الدليل جميع المتطلبات اللازمة، الاختلافات بين التسليم الأوروبي والدولي، و الأسباب التي يمكن أن تؤدي إلى رفض التسليم، بناءً على قضاء المحكمة العليا والمحكمة الدستورية.'
+    },
+    requisitosSustantivos: {
+      titulo: 'المتطلبات الجوهرية الإلزامية'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'La extradición española está sujeta a requisitos estrictos que garantizan el respeto a los derechos fundamentales del reclamado y la legalidad del procedimiento. La <strong>Ley Orgánica 3/2003</strong> establece los requisitos sustantivos y formales que deben cumplirse para que una solicitud de extradición sea admitida y concedida.',
+      parrafo2: 'Esta guía detalla todos los requisitos necesarios, las diferencias entre extradición UE e internacional, y las causas que pueden llevar a la denegación de la extradición, basándose en la jurisprudencia del <strong>Tribunal Supremo</strong> y <strong>Tribunal Constitucional</strong>.'
+    },
+    requisitosSustantivos: {
+      titulo: 'Requisitos Sustantivos Obligatorios'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
-    { label: 'Requisitos de Extradición en España' }
+    { label: language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición', href: '/blog/procedimientos-extradicion' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'requisitos-sustantivos-obligatorios', title: 'Requisitos Sustantivos Obligatorios', level: 2 },
-    { id: 'requisitos-formales-de-la-solicitud', title: 'Requisitos Formales de la Solicitud', level: 2 },
-    { id: 'causas-de-denegacion-de-la-extradicion', title: 'Causas de Denegación de la Extradición', level: 2 },
-    { id: 'diferencias-ue-vs-extradicion-internacional', title: 'Diferencias UE vs Extradición Internacional', level: 2 },
-    { id: 'protocolo-de-verificacion-de-requisitos', title: 'Protocolo de Verificación de Requisitos', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-requisitos-de-extradicion', title: 'Preguntas Frecuentes sobre Requisitos de Extradición', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'requisitos-sustantivos-obligatorios', title: blogTranslations.sections.requisitosSustantivos, level: 2 },
+    { id: 'requisitos-formales-de-la-solicitud', title: blogTranslations.sections.requisitosFormales, level: 2 },
+    { id: 'causas-de-denegacion-de-la-extradicion', title: blogTranslations.sections.causasDenegacion, level: 2 },
+    { id: 'diferencias-ue-vs-extradicion-internacional', title: blogTranslations.sections.diferenciasUE, level: 2 },
+    { id: 'protocolo-de-verificacion-de-requisitos', title: blogTranslations.sections.protocoloVerificacion, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-requisitos-de-extradicion', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -267,12 +323,12 @@ export default function RequisitosExtradicionPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Procedimientos de Extradición
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Procedimientos de Extradición
+                  {language === 'ar' ? 'إجراءات التسليم' : 'Procedimientos de Extradición'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -281,12 +337,15 @@ export default function RequisitosExtradicionPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Requisitos para la Extradición en España
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                Requisitos sustantivos y formales, causas de denegación.
-                Diferencias entre extradición UE e internacional.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -318,15 +377,10 @@ export default function RequisitosExtradicionPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La extradición española está sujeta a requisitos estrictos que garantizan el respeto
-                  a los derechos fundamentales del reclamado y la legalidad del procedimiento. La
-                  <strong>Ley Orgánica 3/2003</strong> establece los requisitos sustantivos y formales
-                  que deben cumplirse para que una solicitud de extradición sea admitida y concedida.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta guía detalla todos los requisitos necesarios, las diferencias entre extradición
-                  UE e internacional, y las causas que pueden llevar a la denegación de la extradición,
-                  basándose en la jurisprudencia del <strong>Tribunal Supremo</strong> y <strong>Tribunal Constitucional</strong>.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -339,7 +393,7 @@ export default function RequisitosExtradicionPage() {
                 className="mb-12"
               >
                 <h2 id="requisitos-sustantivos-obligatorios" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Requisitos Sustantivos Obligatorios
+                  {contentTranslations.requisitosSustantivos.titulo}
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
