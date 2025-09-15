@@ -5,6 +5,7 @@ import { LanguageProvider } from "../contexts/LanguageContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import CookieBanner from "../components/CookieBanner";
+import { translations } from "../translations";
 
 export const metadata: Metadata = {
   title: "STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España | Abogados Penalistas",

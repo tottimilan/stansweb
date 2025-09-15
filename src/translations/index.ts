@@ -587,6 +587,32 @@ export const translations = {
           descripcion: 'La defensa penal urgente es un proceso complejo que requiere un conocimiento preciso de la ley y los procedimientos. Es necesario actuar con rapidez y eficacia para garantizar la protección de tus derechos y el buen desarrollo de los trámites.'
         }
       }
+    },
+
+    // Página 404
+    notFound: {
+      title: 'Página no encontrada',
+      subtitle: 'No pudimos encontrar la página que buscas',
+      description: 'La página pudo haber sido movida, eliminada o el enlace es incorrecto.',
+      backHome: 'Volver al inicio',
+      backBlog: 'Volver al blog',
+      contactUs: 'Contáctanos',
+      helpText: 'Si necesitas ayuda urgente, contáctanos en:'
+    },
+
+    // Mensajes API
+    api: {
+      lead: {
+        success: 'Tu mensaje ha sido enviado exitosamente. Te contactaremos pronto.',
+        error: 'Ocurrió un error al enviar el mensaje. Por favor, intenta de nuevo.',
+        validation: {
+          nameRequired: 'El nombre es requerido',
+          emailRequired: 'El email es requerido',
+          emailInvalid: 'El email no es válido',
+          messageRequired: 'El mensaje es requerido',
+          phoneInvalid: 'El número de teléfono no es válido'
+        }
+      }
     }
   },
 
@@ -1899,6 +1925,61 @@ export const translations = {
       conclusion: {
         titulo: 'الخاتمة',
         descripcion: 'تتطلب إجراءات التسليم دفاعاً متخصصاً ومعرفة عميقة بالتشريعات الدولية. تصرف استراتيجي منذ اللحظة الأولى يمكن أن يحدث فرقاً بين التسليم أو الحرية.'
+      }
+    },
+
+    // Metadatos del sitio web
+    metadata: {
+      title: 'STANS ABOGADOS — دفاع جنائي 24/7 في مدريد وإسبانيا | محامون جنائيون',
+      description: 'متخصصون في القانون الجنائي في مدريد وإسبانيا. دفاع جنائي 24/7، استجابة في أقل من 15 دقيقة. محامون جنائيون مسجلون في ICAM. خدمات بالإسبانية والإنجليزية والعربية. تسليم المجرمين، OEDE، قضايا معقدة.',
+      keywords: 'محامي جنائي مدريد، دفاع جنائي إسبانيا، محامي جنائي، قانون جنائي، تسليم إسبانيا المغرب، OEDE، دفاع 24/7، محامي عربي مدريد، جنائي اقتصادي، حقوق أساسية، جريمة منظمة، إرهاب، سرقة اعتداء، تجارة مخدرات، عنف جنسي، كحول مرور، تزوير وثائق، جرائم معلوماتية',
+      openGraph: {
+        title: 'STANS ABOGADOS — دفاع جنائي 24/7 في مدريد وإسبانيا',
+        description: 'متخصصون في القانون الجنائي. دفاع جنائي 24/7، استجابة في أقل من 15 دقيقة. محامون جنائيون مسجلون في ICAM. إسبانية، إنجليزية وعربية.',
+        alt: 'STANS ABOGADOS - دفاع جنائي 24/7'
+      },
+      twitter: {
+        title: 'STANS ABOGADOS — دفاع جنائي 24/7 في مدريد وإسبانيا',
+        description: 'متخصصون في القانون الجنائي. دفاع جنائي 24/7، استجابة في أقل من 15 دقيقة. محامون جنائيون مسجلون في ICAM.'
+      },
+      schema: {
+        name: 'STANS ABOGADOS',
+        description: 'متخصصون في القانون الجنائي في مدريد وإسبانيا. دفاع جنائي 24/7، استجابة في أقل من 15 دقيقة.',
+        serviceType: 'القانون الجنائي',
+        serviceCatalog: 'خدمات الدفاع الجنائي',
+        service24h: 'المساعدة القانونية الجنائية الفورية على مدار 24 ساعة',
+        extraditionService: 'إجراءات التسليم بين إسبانيا والمغرب',
+        employees: {
+          ruben: 'جنائي واقتصادي جنائي، حقوق أساسية، OEDE وتسليم المجرمين',
+          mounir: 'جنائي وإداري. متخصص في القانون المغربي والتسليم',
+          diego: 'دفاع في القضايا المعقدة: الجريمة المنظمة، الإرهاب'
+        }
+      }
+    },
+
+    // Página 404
+    notFound: {
+      title: 'الصفحة غير موجودة',
+      subtitle: 'لم نتمكن من العثور على الصفحة التي تبحث عنها',
+      description: 'قد تكون الصفحة قد تم نقلها أو حذفها أو أن الرابط غير صحيح.',
+      backHome: 'العودة إلى الصفحة الرئيسية',
+      backBlog: 'العودة إلى المدونة',
+      contactUs: 'اتصل بنا',
+      helpText: 'إذا كنت تحتاج مساعدة عاجلة، اتصل بنا على:'
+    },
+
+    // Mensajes API
+    api: {
+      lead: {
+        success: 'تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.',
+        error: 'حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.',
+        validation: {
+          nameRequired: 'الاسم مطلوب',
+          emailRequired: 'البريد الإلكتروني مطلوب',
+          emailInvalid: 'البريد الإلكتروني غير صحيح',
+          messageRequired: 'الرسالة مطلوبة',
+          phoneInvalid: 'رقم الهاتف غير صحيح'
+        }
       }
     }
   }

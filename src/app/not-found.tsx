@@ -2,46 +2,93 @@
 
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Home } from 'lucide-react'
+import { ArrowLeft, Home, Phone } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { translations } from '../translations'
+import Navigation from '../components/Navigation'
+import Footer from '../components/Footer'
+import WhatsAppButton from '../components/WhatsAppButton'
+
+const WHATSAPP = '34611687226';
 
 export default function NotFound() {
   const router = useRouter()
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
-      <div className="text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-6xl font-bold text-gray-900 dark:text-white mb-4">
-            404
-          </h1>
-          <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            Página no encontrada
-          </h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto">
-            La página que buscas no existe o ha sido movida.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => router.back()}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              Volver atrás
-            </button>
-            <button
-              onClick={() => router.push('/')}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              <Home className="w-5 h-5" />
-              Ir al inicio
-            </button>
-          </div>
-        </motion.div>
+    <>
+      <Navigation />
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-center max-w-2xl mx-auto px-4 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-8xl font-bold text-gold mb-4">
+              404
+            </h1>
+            <h2 className="text-3xl font-semibold text-white mb-4">
+              {t.notFound.title}
+            </h2>
+            <p className="text-lg text-white/80 mb-8">
+              {t.notFound.subtitle}
+            </p>
+            <p className="text-white/60 mb-8">
+              {t.notFound.description}
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <button
+                onClick={() => router.back()}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-charleston text-white rounded-lg hover:bg-white hover:text-charleston transition-all"
+              >
+                <ArrowLeft className="w-5 h-5" />
+                {language === 'ar' ? 'العودة للخلف' : 'Volver atrás'}
+              </button>
+              <button
+                onClick={() => router.push('/')}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-black rounded-lg hover:bg-white transition-all"
+              >
+                <Home className="w-5 h-5" />
+                {t.notFound.backHome}
+              </button>
+              <button
+                onClick={() => router.push('/blog')}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all"
+              >
+                {t.notFound.backBlog}
+              </button>
+            </div>
+
+            <div className="bg-charleston/50 rounded-lg p-6 border border-gold/20">
+              <p className="text-white/80 mb-4">
+                {t.notFound.helpText}
+              </p>
+              <div className="flex items-center justify-center gap-4">
+                <a
+                  href={`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(t.hero.holaAyuda)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all"
+                >
+                  <Phone className="w-4 h-4" />
+                  WhatsApp
+                </a>
+                <button
+                  onClick={() => router.push('/#contacto')}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gold text-black rounded-lg hover:bg-white transition-all"
+                >
+                  {t.notFound.contactUs}
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
-    </div>
+      <Footer />
+      <WhatsAppButton />
+    </>
   )
 }
