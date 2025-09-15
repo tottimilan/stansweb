@@ -147,21 +147,75 @@ const relatedArticles = [
 export default function DisposicionJudicialPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
+  // Traducciones específicas del blog
+  const blogTranslations = language === 'ar' ? {
+    hero: {
+      backLink: 'العودة إلى مركز الدفاع الجنائي العاجل',
+      title: 'التسليم للقضاء',
+      subtitle: 'اللحظة الحاسمة للإجراء',
+      description: 'الجلسة القضائية والتدابير الاحترازية والقرارات التي تحدد وضعك الإجرائي الفوري.'
+    },
+    sections: {
+      fasesAudiencia: 'مراحل الجلسة القضائية',
+      medidasCautelares: 'التدابير الاحترازية الممكنة',
+      derechosAudiencia: 'الحقوق في الجلسة القضائية',
+      preparacionDefensa: 'تحضير الدفاع',
+      preguntasFrecuentes: 'الأسئلة الشائعة حول التسليم للقضاء',
+      legislacion: 'التشريع والمراجع',
+      conclusion: 'الخاتمة'
+    }
+  } : {
+    hero: {
+      backLink: 'Volver al hub de Defensa Penal Urgente',
+      title: 'Puesta a Disposición Judicial',
+      subtitle: 'El Momento Clave del Procedimiento',
+      description: 'La audiencia judicial, medidas cautelares y decisiones que determinan tu situación procesal inmediata.'
+    },
+    sections: {
+      fasesAudiencia: 'Fases de la Audiencia Judicial',
+      medidasCautelares: 'Medidas Cautelares Posibles',
+      derechosAudiencia: 'Derechos en la Audiencia Judicial',
+      preparacionDefensa: 'Preparación de la Defensa',
+      preguntasFrecuentes: 'Preguntas Frecuentes sobre Puesta a Disposición Judicial',
+      legislacion: 'Legislación y Referencias',
+      conclusion: 'Conclusión'
+    }
+  };
+
+  // Traducciones del contenido del artículo
+  const contentTranslations = language === 'ar' ? {
+    introduccion: {
+      parrafo1: 'التسليم للقضاء يمثل نهاية المرحلة الشرطية وبداية السيطرة القضائية على اعتقالك. في غضون 72 ساعة كحد أقصى من اعتقالك، يجب أن يتم عرضك أمام قاضي الحراسة، الذي سيقرر بشأن وضعك الإجرائي الفوري.',
+      parrafo2: 'هذه الجلسة حاسمة لأنها تحدد ما إذا كنت ستُفرج عنك، أو سيتم فرض تدابير احترازية عليك، أو سيتم فرض السجن المؤقت. يجب أن يبدأ تحضير هذه المرحلة منذ لحظة الاعتقال نفسها، وفقاً لما تنص عليه قانون الإجراءات الجنائية في مواده 496 وما يليها.'
+    },
+    fasesAudiencia: {
+      titulo: 'مراحل الجلسة القضائية'
+    }
+  } : {
+    introduccion: {
+      parrafo1: 'La puesta a disposición judicial marca el final de la fase policial y el inicio del control judicial sobre tu detención. En un plazo máximo de 72 horas desde tu detención, debes ser presentado ante el <strong>juez de guardia</strong>, quien decidirá sobre tu situación procesal inmediata.',
+      parrafo2: 'Esta audiencia es crucial porque determina si quedas en libertad, si se te imponen medidas cautelares, o si se decreta prisión provisional. La preparación de esta fase debe comenzar desde el momento mismo de la detención, según establece la <strong>Ley de Enjuiciamiento Criminal</strong> en sus artículos 496 y siguientes.'
+    },
+    fasesAudiencia: {
+      titulo: 'Fases de la Audiencia Judicial'
+    }
+  };
+
   const breadcrumbItems = [
     { label: t.breadcrumb.blog, href: '/blog' },
-    { label: 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
-    { label: 'Puesta a Disposición Judicial' }
+    { label: language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente', href: '/blog/defensa-penal-urgente' },
+    { label: blogTranslations.hero.title }
   ];
 
   const tocItems = [
-    { id: 'fases-de-la-audiencia-judicial', title: 'Fases de la Audiencia Judicial', level: 2 },
-    { id: 'medidas-cautelares-posibles', title: 'Medidas Cautelares Posibles', level: 2 },
-    { id: 'derechos-en-la-audiencia-judicial', title: 'Derechos en la Audiencia Judicial', level: 2 },
-    { id: 'preparacion-de-la-defensa', title: 'Preparación de la Defensa', level: 2 },
-    { id: 'preguntas-frecuentes-sobre-puesta-a-disposicion-judicial', title: 'Preguntas Frecuentes sobre Puesta a Disposición Judicial', level: 2 },
-    { id: 'legislacion-y-referencias', title: 'Legislación y Referencias', level: 2 },
-    { id: 'conclusion', title: 'Conclusión', level: 2 }
+    { id: 'fases-de-la-audiencia-judicial', title: blogTranslations.sections.fasesAudiencia, level: 2 },
+    { id: 'medidas-cautelares-posibles', title: blogTranslations.sections.medidasCautelares, level: 2 },
+    { id: 'derechos-en-la-audiencia-judicial', title: blogTranslations.sections.derechosAudiencia, level: 2 },
+    { id: 'preparacion-de-la-defensa', title: blogTranslations.sections.preparacionDefensa, level: 2 },
+    { id: 'preguntas-frecuentes-sobre-puesta-a-disposicion-judicial', title: blogTranslations.sections.preguntasFrecuentes, level: 2 },
+    { id: 'legislacion-y-referencias', title: blogTranslations.sections.legislacion, level: 2 },
+    { id: 'conclusion', title: blogTranslations.sections.conclusion, level: 2 }
   ];
 
   return (
@@ -186,12 +240,12 @@ export default function DisposicionJudicialPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al hub de Defensa Penal Urgente
+                {blogTranslations.hero.backLink}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-sm bg-gold/10 text-gold px-3 py-1 rounded-full">
-                  Defensa Penal Urgente
+                  {language === 'ar' ? 'الدفاع الجنائي العاجل' : 'Defensa Penal Urgente'}
                 </span>
                 <div className="flex items-center gap-1 text-sm text-white/70">
                   <Clock className="h-4 w-4" />
@@ -200,12 +254,15 @@ export default function DisposicionJudicialPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl font-bold text-gold mb-6 leading-tight">
-                Puesta a Disposición Judicial
+                {blogTranslations.hero.title}
               </h1>
 
+              <h2 className="text-xl sm:text-2xl font-semibold text-white/90 mb-4">
+                {blogTranslations.hero.subtitle}
+              </h2>
+
               <p className="text-lg text-white/80 mb-6">
-                El momento clave del procedimiento: audiencia judicial, medidas cautelares
-                y decisiones que determinan tu situación procesal inmediata.
+                {blogTranslations.hero.description}
               </p>
 
               <div className="flex items-center gap-6 text-sm text-white/70">
@@ -237,16 +294,10 @@ export default function DisposicionJudicialPage() {
               {/* Introduction */}
               <div className="text-black/80 leading-relaxed mb-12 text-lg">
                 <p>
-                  La puesta a disposición judicial marca el final de la fase policial y el inicio
-                  del control judicial sobre tu detención. En un plazo máximo de 72 horas desde
-                  tu detención, debes ser presentado ante el <strong>juez de guardia</strong>,
-                  quien decidirá sobre tu situación procesal inmediata.
+                  {contentTranslations.introduccion.parrafo1}
                 </p>
                 <p>
-                  Esta audiencia es crucial porque determina si quedas en libertad, si se te imponen
-                  medidas cautelares, o si se decreta prisión provisional. La preparación de esta
-                  fase debe comenzar desde el momento mismo de la detención, según establece
-                  la <strong>Ley de Enjuiciamiento Criminal</strong> en sus artículos 496 y siguientes.
+                  {contentTranslations.introduccion.parrafo2}
                 </p>
               </div>
 
@@ -259,7 +310,7 @@ export default function DisposicionJudicialPage() {
                 className="mb-12"
               >
                 <h2 id="fases-de-la-audiencia-judicial" className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
-                  Fases de la Audiencia Judicial
+                  {contentTranslations.fasesAudiencia.titulo}
                 </h2>
 
                 <div className="space-y-8">
