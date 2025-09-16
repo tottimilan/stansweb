@@ -34,39 +34,65 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9, // Blog - contenido frecuente
     },
     {
-      url: `${baseUrl}/#servicios`,
+      url: `${baseUrl}#areas`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
-      priority: 0.95, // Servicios - crucial para conversión
+      priority: 0.95, // Servicios/Áreas - crucial para conversión
     },
     {
-      url: `${baseUrl}/#equipo`,
+      url: `${baseUrl}#equipo`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.85, // Equipo - confianza y credibilidad
     },
     {
-      url: `${baseUrl}/#contacto`,
+      url: `${baseUrl}#contacto`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.9, // Contacto - conversión directa
     },
   ]
 
-  // Áreas de práctica - Servicios especializados
+  // Áreas de práctica - En lugar de páginas separadas, apuntamos a la sección de casos
+  // ya que todas las áreas están implementadas como secciones en la página principal
   const areaPages = [
-    { path: "/#servicios/libertad-expresion", priority: 0.85 },
-    { path: "/#servicios/terrorismo-audiencia-nacional", priority: 0.85 },
-    { path: "/#servicios/delitos-personas", priority: 0.85 },
-    { path: "/#servicios/patrimonio-crimen-organizado", priority: 0.85 },
-    { path: "/#servicios/delitos-economicos", priority: 0.85 },
-    { path: "/#servicios/orden-publico-drogas", priority: 0.85 }
-  ].map(({ path, priority }) => ({
-    url: `${baseUrl}${path}`,
-    lastModified: currentDate,
-    changeFrequency: "monthly" as const,
-    priority,
-  }))
+    {
+      url: `${baseUrl}/casos#libertad-expresion`,
+      lastModified: casesContentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8
+    },
+    {
+      url: `${baseUrl}/casos#terrorismo`,
+      lastModified: casesContentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8
+    },
+    {
+      url: `${baseUrl}/casos#delitos-personas`,
+      lastModified: casesContentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8
+    },
+    {
+      url: `${baseUrl}/casos#patrimonio-crimen-organizado`,
+      lastModified: casesContentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8
+    },
+    {
+      url: `${baseUrl}/casos#delitos-economicos`,
+      lastModified: casesContentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8
+    },
+    {
+      url: `${baseUrl}/casos#orden-publico`,
+      lastModified: casesContentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8
+    }
+  ]
 
   // Páginas del blog (hubs/pillars) - Contenido cornerstone
   const blogHubPages = [

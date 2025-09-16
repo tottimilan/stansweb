@@ -13,6 +13,8 @@ Disallow: /_next/
 Disallow: /admin/
 Disallow: /scripts/
 Disallow: /*.json$
+Disallow: /opengraph-image*
+Disallow: /twitter-image*
 
 # Allow important pages
 Allow: /legal
@@ -20,7 +22,8 @@ Allow: /privacidad
 Allow: /cookies
 Allow: /terminos
 Allow: /casos/
-Allow: /areas/
+Allow: /images/
+Allow: /favicon.ico
 
 # SEO optimizations
 # Allow CSS and JS for better rendering
