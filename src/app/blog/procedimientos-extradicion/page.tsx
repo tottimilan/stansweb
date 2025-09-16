@@ -114,7 +114,7 @@ export default function ProcedimientosExtradicionPage() {
       <Navigation />
       <Breadcrumb items={breadcrumbItems} />
 
-      <main className="bg-black">
+      <main className="bg-black pt-20">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-purple-900 to-charleston text-offwhite py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">

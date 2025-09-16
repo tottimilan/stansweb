@@ -125,7 +125,7 @@ export default function BlogPage() {
     <>
       <ScrollProgress />
       <Navigation />
-      <main className="bg-black">
+      <main className="bg-black pt-20">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-charleston to-black text-offwhite py-20 sm:py-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>

@@ -354,7 +354,7 @@ export default function DerechosConstitucionalesPage() {
       <Navigation />
       <Breadcrumb items={breadcrumbItems} />
 
-      <main className="bg-black">
+      <main className="bg-black pt-20">
         {/* Table of Contents */}
         <TableOfContents items={tableOfContents} />
 

@@ -325,7 +325,7 @@ export default function DerechosProcesalesPage() {
       <ScrollProgress />
       <Navigation />
       <Breadcrumb items={breadcrumbItems} />
-      <main className="bg-black">
+      <main className="bg-black pt-20">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-green-900 to-charleston text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
