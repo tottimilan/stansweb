@@ -2,8 +2,8 @@ export const casesTranslations = {
   es: {
     cases: {
       1: {
-        nombre: "CASO- QUEQUE ABOGADOS CRISTIANOS SOBRESEIMIENTO",
-        resumen: "La asociación ultracatólica Abogados Cristianos interpuso querella contra el humorista Héctor de Miguel (artísticamente \"Quequé\") por supuestas expresiones de odio vertidas en su programa Hora Veintipico. El Juzgado de Instrucción nº 38 de Madrid procesó al cómico por un presunto delito de odio y contra los sentimientos religiosos. Tanto la defensa como el Ministerio Fiscal recurrieron la decisión y, mediante Auto nº 379/2025 de 30 de abril de 2025, la Sección 30 de la Audiencia Provincial de Madrid estimó ambos recursos y ordenó el sobreseimiento libre de las actuaciones al considerar que las manifestaciones se encontraban amparadas por la libertad de expresión y de creación artística."
+        nombre: "CASO QUIQUE - LIBERTAD DE EXPRESION SOBRESEIMIENTO",
+        resumen: "Una asociación interpuso querella contra el humorista Héctor de Miguel (artísticamente \"Quequé\") por supuestas expresiones de odio vertidas en su programa Hora Veintipico. El Juzgado de Instrucción nº 38 de Madrid procesó al cómico por un presunto delito de odio y contra los sentimientos religiosos. Tanto la defensa como el Ministerio Fiscal recurrieron la decisión y, mediante Auto nº 379/2025 de 30 de abril de 2025, la Sección 30 de la Audiencia Provincial de Madrid estimó ambos recursos y ordenó el sobreseimiento libre de las actuaciones al considerar que las manifestaciones se encontraban amparadas por la libertad de expresión y de creación artística."
       },
       2: {
         nombre: "CASO NORDIN WORKOUT",
@@ -86,8 +86,8 @@ export const casesTranslations = {
   ar: {
     cases: {
       1: {
-        nombre: "قضية كيكي - محامون مسيحيون - إغلاق الدعوى",
-        resumen: "رفعت الجمعية الكاثوليكية المتطرفة 'المحامون المسيحيون' دعوى قضائية ضد الممثل الكوميدي هيكتور دي ميغيل (المعروف فنياً باسم 'كيكي') بسبب تعبيرات مزعومة تحض على الكراهية في برنامجه 'هورا فينتيبيكو'. قام قاضي التحقيق رقم 38 في مدريد بمحاكمة الكوميدي بتهمة جريمة كراهية وجريمة ضد المشاعر الدينية. استأنفت كل من الدفاع والنيابة العامة القرار، وبموجب القرار رقم 379/2025 بتاريخ 30 أبريل 2025، قبلت الدائرة 30 من محكمة الاستئناف في مدريد كلا الاستئنافين وأمرت بإغلاق الدعوى بحرية التعبير والإبداع الفني."
+        nombre: "قضية كيكي - حرية التعبير - إغلاق الدعوى",
+        resumen: "رفعت جمعية دعوى ضد الفكاهي هيكتور دي ميغيل (المعروف فنياً باسم \"كيكي\") بسبب تعبيرات كراهية مزعومة في برنامجه \"أورا فينتيبيكو\". أصدرت محكمة التحقيق رقم 38 في مدريد قراراً بمحاكمة الكوميدي بتهمة جريمة كراهية محتملة والإساءة للمشاعر الدينية. استأنف كل من الدفاع والنيابة العامة القرار، وبموجب القرار رقم 379/2025 الصادر في 30 أبريل 2025، قبلت الدائرة 30 من محكمة الاستئناف في مدريد كلا الاستئنافين وأمرت بإغلاق الدعوى نهائياً معتبرة أن التصريحات محمية بحرية التعبير والإبداع الفني."
       },
       2: {
         nombre: "قضية نوردين وورك أوت",

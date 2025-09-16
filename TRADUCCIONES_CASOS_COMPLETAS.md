@@ -66,7 +66,7 @@ const typeMap = {
 ## 📊 **TRADUCCIONES COMPLETADAS**
 
 ### **Casos Traducidos (20/20):**
-1. ✅ QUEQUE ABOGADOS CRISTIANOS SOBRESEIMIENTO
+1. ✅ QUIQUE LIBERTAD DE EXPRESION SOBRESEIMIENTO
 2. ✅ NORDIN WORKOUT
 3. ✅ ALVARO GARCIA
 4. ✅ LA MANCHA
@@ -101,7 +101,7 @@ const typeMap = {
 ```
 قضية شائعة
 Delito de odio y contra los sentimientos religiosos
-CASO- QUEQUE ABOGADOS CRISTIANOS SOBRESEIMIENTO
+CASO QUIQUE - LIBERTAD DE EXPRESION SOBRESEIMIENTO
 Delitos de odio y libertad de expresión
 La Audiencia Provincial decreta el Sobreseimiento
 Audiencia Provincial de Madrid
@@ -113,7 +113,7 @@ Sobreseimiento
 ```
 قضية شائعة
 جرائم الكراهية وحرية التعبير
-قضية كيكي - محامون مسيحيون - إغلاق الدعوى
+قضية كيكي - حرية التعبير - إغلاق الدعوى
 جرائم الكراهية وحرية التعبير
 تصدر محكمة الاستئناف قرار إغلاق الدعوى
 محكمة الاستئناف في مدريد

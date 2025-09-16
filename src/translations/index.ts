@@ -43,23 +43,20 @@ export const translations = {
       ruben: {
         name: 'Rubén Vaquero Arribas',
         role: 'Socio Director',
-        summary: 'Penal y penal económico, derechos fundamentales, OEDE y extradiciones. Actúa ante cualquier tribunal con más de 15 años de experiencia.',
-        tags: ['Penal Económico', 'OEDE/Extradiciones', 'Derechos Fundamentales', 'Tribunal Supremo'],
-        experience: '15+ años'
+        summary: 'Abogado del ICAM especializado en derecho penal económico y derechos fundamentales. Experiencia en querellas, recursos y casación. Casos: homicidio, crimen organizado, estafa, extradiciones y OEDE.',
+        tags: ['Derecho Penal Económico', 'Derechos Fundamentales', 'Extradiciones', 'OEDE', 'Cooperación Judicial']
       },
       mounir: {
         name: 'Mounir Elyemlahy Chouati',
         role: 'Socio Director',
-                 summary: 'Penal y administrativo. Asesoramiento en Derecho marroquí para empresas y particulares. Especialista en extradiciones.',
-        tags: ['Penal', 'Derecho Marroquí', 'Administrativo', 'Extradiciones'],
-        experience: '12+ años'
+                 summary: 'Abogado del ICAM con trayectoria en derecho penal y administrativo. Especializado en procedimientos de alta complejidad, terrorismo yihadista y defensa de derechos fundamentales.',
+        tags: ['Derecho Penal', 'Derecho Administrativo', 'Terrorismo Yihadista', 'Derechos Fundamentales', 'Causas Complejas']
       },
       diego: {
         name: 'Diego Cardona Valero',
         role: 'Socio Director',
-        summary: 'Defensa en causas complejas: personas, criminalidad organizada, terrorismo y garantías procesales. Especialista en casos de alta complejidad.',
-        tags: ['Delitos contra las Personas', 'Criminalidad Organizada', 'Garantías Procesales', 'Terrorismo'],
-        experience: '10+ años'
+        summary: 'Abogado del ICAM especializado en derecho procesal penal. Experiencia en delincuencia organizada y terrorismo. Capacidad estratégica en litigación y preparación de recursos en procedimientos de alta complejidad.',
+        tags: ['Derecho Procesal Penal', 'Delincuencia Organizada', 'Terrorismo', 'Litigación', 'Recursos']
       }
     },
     
@@ -777,23 +774,20 @@ export const translations = {
       ruben: {
         name: 'روبين فاكيرو أريباس',
         role: 'شريك مدير',
-        summary: 'جنائي واقتصادي جنائي، حقوق أساسية، OEDE وتسليم المجرمين. يتصرف أمام أي محكمة مع أكثر من 15 عاماً من الخبرة.',
-        tags: ['الجنائي الاقتصادي', 'OEDE/تسليم المجرمين', 'الحقوق الأساسية', 'المحكمة العليا'],
-        experience: '15+ عاماً'
+        summary: 'محامي في المجلس العلمي لمحامي مدريد متخصص في القانون الجنائي الاقتصادي وحقوق الإنسان الأساسية. خبرة في الدعاوى والموارد والنقض. قضايا: قتل، جريمة منظمة، احتيال وتسليم مجرمين.',
+        tags: ['القانون الجنائي الاقتصادي', 'حقوق الإنسان الأساسية', 'تسليم المجرمين', 'OEDE', 'التعاون القضائي']
       },
       mounir: {
         name: 'منير إليملاهي شواتي',
         role: 'شريك مدير',
-                 summary: 'جنائي وإداري. استشارة في القانون المغربي للشركات والأفراد. متخصص في تسليم المجرمين.',
-        tags: ['الجنائي', 'القانون المغربي', 'الإداري', 'تسليم المجرمين'],
-        experience: '12+ عاماً'
+                 summary: 'محامي في المجلس العلمي لمحامي مدريد ذو مسيرة مهنية واسعة في القانون الجنائي والإداري. متخصص في إجراءات عالية التعقيد، إرهاب جهادي ودفاع عن حقوق الإنسان الأساسية.',
+        tags: ['القانون الجنائي', 'القانون الإداري', 'الإرهاب الجهادي', 'حقوق الإنسان الأساسية', 'القضايا المعقدة']
       },
       diego: {
         name: 'دييغو كاردونا فالييرو',
         role: 'شريك مدير',
-        summary: 'دفاع في قضايا معقدة: الأشخاص، الجريمة المنظمة، الإرهاب وضمانات الإجراءات. متخصص في القضايا عالية التعقيد.',
-        tags: ['الجرائم ضد الأشخاص', 'الجريمة المنظمة', 'ضمانات الإجراءات', 'الإرهاب'],
-        experience: '10+ عاماً'
+        summary: 'محامي في المجلس العلمي لمحامي مدريد متخصص في القانون الجنائي الإجرائي. خبرة في الجريمة المنظمة والإرهاب. قدرة استراتيجية في التقاضي وإعداد الموارد في إجراءات عالية التعقيد.',
+        tags: ['القانون الجنائي الإجرائي', 'الجريمة المنظمة', 'الإرهاب', 'التقاضي', 'الموارد']
       }
     },
     

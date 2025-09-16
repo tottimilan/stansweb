@@ -288,6 +288,7 @@ export default function ExtradicionEspanaPage() {
                 {blogTranslations.introduccion.titulo}: {language === 'ar' ? 'دليل شامل' : 'Guía Completa'}
               </h1>
 
+
               <p className="text-lg text-white/80 mb-6" dangerouslySetInnerHTML={{ __html: blogTranslations.introduccion.parrafo1 }} />
 
               <div className="flex items-center gap-6 text-sm text-white/70">
