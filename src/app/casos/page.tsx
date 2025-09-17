@@ -398,12 +398,18 @@ export default function CasosPage() {
               className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"
             >
               {casosFiltrados.map((caso) => (
-                                 <motion.article
-                   key={caso.id}
-                   variants={itemVariants}
-                   className="group rounded-2xl border border-gold/30 bg-white/5 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/50 hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 cursor-pointer relative"
-                   onClick={() => window.location.href = (seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`}
-                 >
+                <motion.article
+                  key={caso.id}
+                  variants={itemVariants}
+                  className={`group rounded-2xl border border-gold/30 bg-white/5 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/50 hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 relative ${
+                    caso.caso_en_curso ? 'cursor-not-allowed' : 'cursor-pointer'
+                  }`}
+                  onClick={() => {
+                    if (!caso.caso_en_curso) {
+                      window.location.href = (seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`
+                    }
+                  }}
+                >
                                        {/* Badge FAVORABLE en la parte superior */}
                     {caso.favorabilidad === 'Favorable' && (
                       <div className="absolute -top-2 left-3 sm:left-4 bg-emerald-700 text-emerald-100 px-2 sm:px-3 py-1 rounded-lg text-xs font-bold shadow-lg border border-emerald-600/30">
@@ -437,38 +443,51 @@ export default function CasosPage() {
                     </p>
                   </div>
 
-                  {/* Observaciones */}
-                  {caso.observaciones && (
-                    <p className="text-offwhite/80 text-sm leading-relaxed mb-6 line-clamp-3">
-                      {language === 'es' ? caso.observaciones : (observacionesMap[caso.observaciones] || caso.observaciones)}
-                    </p>
+                  {/* Observaciones o mensaje de confidencialidad */}
+                  {caso.caso_en_curso ? (
+                    <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6 text-center">
+                      <div className="text-sm font-semibold text-orange-800 mb-2">
+                        🔒 {language === 'ar' ? 'قضية قيد التحقيق' : 'CASO EN INVESTIGACIÓN'}
+                      </div>
+                      <div className="text-xs text-orange-700">
+                        {language === 'ar' ? 'المعلومات محمية بسرية التحقيق' : 'Información protegida por secreto de sumario'}
+                      </div>
+                    </div>
+                  ) : (
+                    caso.observaciones && (
+                      <p className="text-offwhite/80 text-sm leading-relaxed mb-6 line-clamp-3">
+                        {language === 'es' ? caso.observaciones : (observacionesMap[caso.observaciones] || caso.observaciones)}
+                      </p>
+                    )
                   )}
 
                   {/* Información clave */}
-                  <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6">
-                                         <div className="flex items-center gap-3">
-                       <div className={`w-2 h-2 rounded-full ${
-                         caso.favorabilidad === 'Favorable' ? 'bg-emerald-600' : 
-                         caso.favorabilidad === 'Desfavorable' ? 'bg-red-500' : 
-                         'bg-gold'
-                       }`}></div>
-                                             <span className="text-sm text-offwhite/80">
-                         <strong className="text-gold">{t.casos.casos.resultado}</strong> {language === 'es' ? caso.resultado : (resultMap[caso.resultado] || caso.resultado)}
-                       </span>
-                    </div>
-                                         <div className="flex items-center gap-3">
-                       <div className="w-2 h-2 bg-gold rounded-full"></div>
-                       <span className="text-sm text-offwhite/80">
-                         <strong className="text-gold">{t.casos.casos.organo}</strong> {language === 'es' ? caso.organo : (organoMap[caso.organo] || caso.organo)}
-                       </span>
+                  {!caso.caso_en_curso && (
+                    <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6">
+                                          <div className="flex items-center gap-3">
+                        <div className={`w-2 h-2 rounded-full ${
+                          caso.favorabilidad === 'Favorable' ? 'bg-emerald-600' : 
+                          caso.favorabilidad === 'Desfavorable' ? 'bg-red-500' : 
+                          'bg-gold'
+                        }`}></div>
+                                              <span className="text-sm text-offwhite/80">
+                          <strong className="text-gold">{t.casos.casos.resultado}</strong> {language === 'es' ? caso.resultado : (resultMap[caso.resultado] || caso.resultado)}
+                        </span>
                      </div>
-                     <div className="flex items-center gap-3">
-                       <div className="w-2 h-2 bg-apricot rounded-full"></div>
-                       <span className="text-sm text-offwhite/80">
-                         <strong className="text-gold">{t.casos.casos.tipo}</strong> {language === 'es' ? caso.tipo_resolucion : (tipoMap[caso.tipo_resolucion] || caso.tipo_resolucion)}
-                       </span>
-                     </div>
-                  </div>
+                                          <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-gold rounded-full"></div>
+                        <span className="text-sm text-offwhite/80">
+                          <strong className="text-gold">{t.casos.casos.organo}</strong> {language === 'es' ? caso.organo : (organoMap[caso.organo] || caso.organo)}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-apricot rounded-full"></div>
+                        <span className="text-sm text-offwhite/80">
+                          <strong className="text-gold">{t.casos.casos.tipo}</strong> {language === 'es' ? caso.tipo_resolucion : (tipoMap[caso.tipo_resolucion] || caso.tipo_resolucion)}
+                        </span>
+                      </div>
+                   </div>
+                  )}
 
                   {/* Footer con fecha y botón */}
                   <div className="flex items-center justify-between pt-4 border-t border-gold/20">
@@ -476,11 +495,19 @@ export default function CasosPage() {
                       <Calendar className="w-4 h-4" />
                       <span>{caso.fecha || caso.año}</span>
                     </div>
-                                         <div className="flex items-center gap-2 text-gold group-hover:text-apricot transition-colors">
-                       <span className="text-sm font-medium">{t.casos.casos.verDetalles}</span>
-                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                     </div>
-                  </div>
+                    {caso.caso_en_curso ? (
+                      <div className="flex items-center gap-2 text-orange-600">
+                        <span className="text-sm font-medium">
+                          🔒 {language === 'ar' ? 'محمي بالسرية' : 'Acceso Restringido'}
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-2 text-gold group-hover:text-apricot transition-colors">
+                        <span className="text-sm font-medium">{t.casos.casos.verDetalles}</span>
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    )}
+                 </div>
                 </motion.article>
               ))}
             </motion.div>
