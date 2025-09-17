@@ -237,11 +237,17 @@ export default function CaseCard({ caso }: Props) {
           {getIcon(caso.categoria)}
         </div>
         <span className={`text-xs px-2 py-1 rounded-full font-medium ${
-          caso.favorabilidad === 'Neutro'
+          isOngoingCase
+            ? 'bg-yellow-600/80 text-yellow-100 border border-yellow-500/30'
+            : caso.favorabilidad === 'Neutro'
             ? 'bg-blue-600 text-blue-100'
             : 'bg-emerald-700 text-emerald-100'
         }`}>
-          {caso.favorabilidad === 'Neutro' ? t.casosDestacados.enCurso : t.casosDestacados.favorable}
+          {isOngoingCase 
+            ? t.casosDestacados.casoEnCurso 
+            : caso.favorabilidad === 'Neutro' 
+            ? t.casosDestacados.enCurso 
+            : t.casosDestacados.favorable}
         </span>
       </div>
 
@@ -291,10 +297,13 @@ export default function CaseCard({ caso }: Props) {
         href={getCaseUrl(caso)}
         className={`inline-flex items-center mt-auto text-sm px-4 py-2 rounded-lg hover:opacity-90 transition group ${
           isOngoingCase 
-            ? 'text-orange-800 bg-orange-100 border border-orange-300' 
+            ? 'text-black bg-yellow-600/80 border border-yellow-500/50 hover:bg-yellow-600' 
             : 'text-black bg-gold'
         }`}
       >
+        {isOngoingCase && (
+          <div className="w-2 h-2 bg-yellow-200 rounded-full animate-pulse mr-2"></div>
+        )}
         {isOngoingCase ? t.casosDestacados.verCasoEnCurso : t.casosDestacados.verCasoCompleto}
         <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
       </Link>

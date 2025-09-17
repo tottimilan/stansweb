@@ -291,13 +291,13 @@ export const translations = {
       title: 'Casos Destacados',
       subtitle: 'Descubre algunos de nuestros casos más relevantes y exitosos en diferentes áreas del derecho penal.',
       verCasoCompleto: 'Ver caso completo',
-      verCasoEnCurso: 'CASO EN CURSO',
+      verCasoEnCurso: 'Caso en curso',
       organo: 'Órgano:',
       resultado: 'Resultado:',
       tipo: 'Tipo:',
       verTodosCasos: 'Ver todos los casos',
       favorable: 'FAVORABLE',
-      enCurso: 'EN CURSO'
+      enCurso: 'En curso'
     },
 
     // Individual Case Page

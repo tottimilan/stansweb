@@ -390,8 +390,12 @@ export default function CasosPage() {
                   variants={itemVariants}
                   className="group rounded-2xl border border-gold/30 bg-white/5 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/50 hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 relative"
                 >
-                                       {/* Badge FAVORABLE en la parte superior */}
-                    {caso.favorabilidad === 'Favorable' && (
+                                       {/* Badge superior - FAVORABLE o CASO EN CURSO */}
+                    {caso.caso_en_curso ? (
+                      <div className="absolute -top-2 left-3 sm:left-4 bg-yellow-600/80 text-yellow-100 px-2 sm:px-3 py-1 rounded-lg text-xs font-bold shadow-lg border border-yellow-600/30">
+                        {t.casosDestacados.casoEnCurso}
+                      </div>
+                    ) : caso.favorabilidad === 'Favorable' && (
                       <div className="absolute -top-2 left-3 sm:left-4 bg-emerald-700 text-emerald-100 px-2 sm:px-3 py-1 rounded-lg text-xs font-bold shadow-lg border border-emerald-600/30">
                         {language === 'ar' ? 'مؤاتي' : 'FAVORABLE'}
                       </div>
@@ -479,10 +483,13 @@ export default function CasosPage() {
                         href={(seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`}
                         className={`inline-flex items-center gap-2 text-sm px-3 py-1 rounded-lg hover:opacity-90 transition group ${
                           caso.caso_en_curso 
-                            ? 'text-orange-800 bg-orange-100/20 border border-orange-300/50' 
+                            ? 'text-black bg-yellow-600/80 border border-yellow-500/50 hover:bg-yellow-600 hover:border-yellow-400' 
                             : 'text-gold hover:text-apricot'
                         }`}
                       >
+                        {caso.caso_en_curso && (
+                          <div className="w-2 h-2 bg-yellow-200 rounded-full animate-pulse"></div>
+                        )}
                         <span className="font-medium">
                           {caso.caso_en_curso ? t.casosDestacados.verCasoEnCurso : t.casos.casos.verDetalles}
                         </span>
