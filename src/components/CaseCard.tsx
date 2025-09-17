@@ -244,7 +244,7 @@ export default function CaseCard({ caso }: Props) {
             : 'bg-emerald-700 text-emerald-100'
         }`}>
           {isOngoingCase 
-            ? t.casosDestacados.casoEnCurso 
+            ? t.casosDestacados.verCasoEnCurso 
             : caso.favorabilidad === 'Neutro' 
             ? t.casosDestacados.enCurso 
             : t.casosDestacados.favorable}

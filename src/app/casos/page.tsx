@@ -393,7 +393,7 @@ export default function CasosPage() {
                                        {/* Badge superior - FAVORABLE o CASO EN CURSO */}
                     {caso.caso_en_curso ? (
                       <div className="absolute -top-2 left-3 sm:left-4 bg-yellow-600/80 text-yellow-100 px-2 sm:px-3 py-1 rounded-lg text-xs font-bold shadow-lg border border-yellow-600/30">
-                        {t.casosDestacados.casoEnCurso}
+                        {t.casosDestacados.verCasoEnCurso}
                       </div>
                     ) : caso.favorabilidad === 'Favorable' && (
                       <div className="absolute -top-2 left-3 sm:left-4 bg-emerald-700 text-emerald-100 px-2 sm:px-3 py-1 rounded-lg text-xs font-bold shadow-lg border border-emerald-600/30">
