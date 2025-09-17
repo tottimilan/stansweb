@@ -290,15 +290,13 @@ export default function CasoDetailPage() {
 
       <div className="min-h-screen bg-charleston">
         <Navigation />
-        <div className="pt-20">
-          {/* Si el caso está en curso, envolver todo el contenido */}
-          {caso.caso_en_curso ? (
-            <ProtectedCaseOverlay reason="en_curso">
-              <CaseDetailContent caso={caso} seoData={seoData} t={t} language={language} />
-            </ProtectedCaseOverlay>
-          ) : (
+        {/* Si el caso está en curso, envolver todo el contenido */}
+        {caso.caso_en_curso ? (
+          <ProtectedCaseOverlay reason="en_curso">
             <CaseDetailContent caso={caso} seoData={seoData} t={t} language={language} />
-          )}
+          </ProtectedCaseOverlay>
+        ) : (
+          <div className="pt-20">
                  {/* Header */}
          <div className="bg-white/5 backdrop-blur-sm border-b border-gold/20">
            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
@@ -900,7 +898,8 @@ export default function CasoDetailPage() {
             </div>
           </div>
         )}
-        </div>
+          </div>
+        )}
       </div>
       </>
     )
