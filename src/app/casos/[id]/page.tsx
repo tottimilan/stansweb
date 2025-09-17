@@ -222,12 +222,7 @@ export default function CasoDetailPage() {
     }
     
     if (foundCaso) {
-      // Verificar si es un caso en curso y bloquear acceso
-      if (foundCaso.caso_en_curso) {
-        // Redirigir a la página de casos en lugar de mostrar contenido
-        router.push('/casos')
-        return
-      }
+      // No redirigir casos en curso, permitir acceso limitado
       setCaso(foundCaso as Caso)
       
       // Obtener información SEO
@@ -403,6 +398,37 @@ export default function CasoDetailPage() {
               )}
             </div>
            
+          {/* Advertencia para casos en curso */}
+          {caso.caso_en_curso && (
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="bg-orange-100/10 border border-orange-400/30 rounded-2xl p-6 text-center text-offwhite"
+              >
+                <div className="flex items-center justify-center mb-4">
+                  <Shield className="w-8 h-8 text-orange-400 mr-3" />
+                  <h2 className="text-xl font-bold text-orange-400">
+                    {language === 'ar' ? 'قضية قيد التحقيق' : 'CASO EN INVESTIGACIÓN'}
+                  </h2>
+                </div>
+                <p className="text-offwhite/80 mb-4 max-w-2xl mx-auto">
+                  {language === 'ar' 
+                    ? 'بسبب طبيعة التحقيق الجاري، يمكن فقط عرض الملخص والأخبار ذات الصلة. تفاصيل أخرى محمية بسرية التحقيق.'
+                    : 'Debido a la naturaleza del proceso en curso, solo se pueden mostrar el resumen y las noticias relacionadas. Los demás detalles están protegidos por el secreto de sumario.'
+                  }
+                </p>
+                <div className="text-sm text-orange-400/80">
+                  {language === 'ar' 
+                    ? 'الأقسام المتاحة: الملخص • الأخبار ذات الصلة'
+                    : 'Secciones disponibles: Resumen • Noticias relacionadas'
+                  }
+                </div>
+              </motion.div>
+            </div>
+          )}
+
                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
                                                    {/* Main Content */}
                             <div className="lg:col-span-2 space-y-6 sm:space-y-8">
@@ -443,8 +469,8 @@ export default function CasoDetailPage() {
                 </motion.div>
               )}
 
-              {/* Hechos */}
-              {caso.contenido?.hechos && (
+              {/* Hechos - Solo mostrar si NO es caso en curso */}
+              {caso.contenido?.hechos && !caso.caso_en_curso && (
                                  <motion.div
                    variants={sectionVariants}
                    initial="hidden"
@@ -479,8 +505,8 @@ export default function CasoDetailPage() {
                 </motion.div>
               )}
 
-              {/* Estrategia de Defensa */}
-              {caso.contenido?.estrategia && (
+              {/* Estrategia de Defensa - Solo mostrar si NO es caso en curso */}
+              {caso.contenido?.estrategia && !caso.caso_en_curso && (
                 <motion.div
                   variants={sectionVariants}
                   initial="hidden"
@@ -515,8 +541,8 @@ export default function CasoDetailPage() {
                 </motion.div>
               )}
 
-              {/* Pruebas Clave */}
-              {caso.contenido?.pruebas && (
+              {/* Pruebas Clave - Solo mostrar si NO es caso en curso */}
+              {caso.contenido?.pruebas && !caso.caso_en_curso && (
                 <motion.div
                   variants={sectionVariants}
                   initial="hidden"
@@ -551,8 +577,8 @@ export default function CasoDetailPage() {
                 </motion.div>
               )}
 
-              {/* Resolución */}
-              {caso.contenido?.resolucion && (
+              {/* Resolución - Solo mostrar si NO es caso en curso */}
+              {caso.contenido?.resolucion && !caso.caso_en_curso && (
                                  <motion.div
                    variants={sectionVariants}
                    initial="hidden"
@@ -579,8 +605,8 @@ export default function CasoDetailPage() {
                 </motion.div>
               )}
 
-              {/* Marco Legal */}
-              {caso.contenido?.marco_legal && (
+              {/* Marco Legal - Solo mostrar si NO es caso en curso */}
+              {caso.contenido?.marco_legal && !caso.caso_en_curso && (
                                  <motion.div
                    variants={sectionVariants}
                    initial="hidden"

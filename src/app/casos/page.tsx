@@ -387,13 +387,9 @@ export default function CasosPage() {
                 <motion.article
                   key={caso.id}
                   variants={itemVariants}
-                  className={`group rounded-2xl border border-gold/30 bg-white/5 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/50 hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 relative ${
-                    caso.caso_en_curso ? 'cursor-not-allowed' : 'cursor-pointer'
-                  }`}
+                  className="group rounded-2xl border border-gold/30 bg-white/5 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/50 hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 relative cursor-pointer"
                   onClick={() => {
-                    if (!caso.caso_en_curso) {
-                      window.location.href = (seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`
-                    }
+                    window.location.href = (seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`
                   }}
                 >
                                        {/* Badge FAVORABLE en la parte superior */}
@@ -481,18 +477,16 @@ export default function CasosPage() {
                       <Calendar className="w-4 h-4" />
                       <span>{caso.fecha || caso.año}</span>
                     </div>
-                    {caso.caso_en_curso ? (
-                      <div className="flex items-center gap-2 text-orange-600">
-                        <span className="text-sm font-medium">
-                          🔒 {language === 'ar' ? 'محمي بالسرية' : 'Acceso Restringido'}
-                        </span>
-                      </div>
-                    ) : (
-                      <div className="flex items-center gap-2 text-gold group-hover:text-apricot transition-colors">
-                        <span className="text-sm font-medium">{t.casos.casos.verDetalles}</span>
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    )}
+                    <div className={`flex items-center gap-2 transition-colors ${
+                      caso.caso_en_curso 
+                        ? 'text-orange-600' 
+                        : 'text-gold group-hover:text-apricot'
+                    }`}>
+                      <span className="text-sm font-medium">
+                        {caso.caso_en_curso ? t.casosDestacados.verCasoEnCurso : t.casos.casos.verDetalles}
+                      </span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
                  </div>
                 </motion.article>
               ))}

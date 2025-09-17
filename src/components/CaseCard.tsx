@@ -287,19 +287,17 @@ export default function CaseCard({ caso }: Props) {
       </p>
 
       {/* Botón de acción */}
-      {isOngoingCase ? (
-        <div className="inline-flex items-center justify-center mt-auto text-sm text-orange-700 bg-orange-100 px-4 py-2 rounded-lg border border-orange-200 cursor-not-allowed">
-          🔒 {language === 'ar' ? 'محمي بالسرية' : 'Acceso Restringido'}
-        </div>
-      ) : (
-        <Link
-          href={getCaseUrl(caso)}
-          className="inline-flex items-center mt-auto text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
-        >
-          {t.casosDestacados.verCasoCompleto}
-          <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-        </Link>
-      )}
+      <Link
+        href={getCaseUrl(caso)}
+        className={`inline-flex items-center mt-auto text-sm px-4 py-2 rounded-lg hover:opacity-90 transition group ${
+          isOngoingCase 
+            ? 'text-orange-800 bg-orange-100 border border-orange-300' 
+            : 'text-black bg-gold'
+        }`}
+      >
+        {isOngoingCase ? t.casosDestacados.verCasoEnCurso : t.casosDestacados.verCasoCompleto}
+        <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
+      </Link>
     </motion.div>
   );
 }
