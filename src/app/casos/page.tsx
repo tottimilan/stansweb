@@ -292,20 +292,6 @@ export default function CasosPage() {
              <p className="text-xl lg:text-2xl text-offwhite/80 max-w-3xl mx-auto mb-8">
                {t.casos.subtitle}
              </p>
-                         <div className="flex flex-wrap justify-center gap-6 text-sm lg:text-base">
-               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-gold/20 rounded-full px-4 py-2">
-                 <Award className="w-5 h-5 text-gold" />
-                 <span className="text-gold">{t.casos.stats.casosExitosos}</span>
-               </div>
-               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-gold/20 rounded-full px-4 py-2">
-                 <Users className="w-5 h-5 text-gold" />
-                 <span className="text-gold">{t.casos.stats.anosExperiencia}</span>
-               </div>
-               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-gold/20 rounded-full px-4 py-2">
-                 <Shield className="w-5 h-5 text-gold" />
-                 <span className="text-gold">{t.casos.stats.defensaEspecializada}</span>
-               </div>
-             </div>
           </motion.div>
         </div>
       </section>

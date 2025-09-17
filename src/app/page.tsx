@@ -8,7 +8,6 @@ import AreaCard from '@/components/AreaCard';
 import LeadForm from '@/components/LeadForm';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import Footer from '@/components/Footer';
-import StatsSection from '@/components/StatsSection';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useScrollHighlight } from '@/hooks/useScrollHighlight';
 import ContactSection from '@/components/ContactSection';
@@ -268,18 +267,6 @@ export default function Page() {
         </motion.section>
 
         {/* Separador visual */}
-        <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
-
-        {/* Statistics Section */}
-        <section 
-          className="bg-black stats-section"
-          aria-labelledby="stats-title"
-          role="region"
-        >
-          <StatsSection />
-        </section>
-
-                {/* Separador visual */}
         <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
 
         {/* Contact Section */}

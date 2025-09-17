@@ -212,11 +212,6 @@ export const translations = {
     casos: {
       title: 'Casos y Resultados',
       subtitle: 'Descubre algunos de nuestros casos más destacados y los resultados obtenidos para nuestros clientes.',
-      stats: {
-        casosExitosos: '200+ Casos Exitosos',
-        anosExperiencia: '15+ Años Experiencia',
-        defensaEspecializada: 'Defensa Especializada'
-      },
       filtros: {
         title: 'Filtrar por categoría:',
         todasCategorias: 'Todas las categorías',
@@ -943,11 +938,6 @@ export const translations = {
     casos: {
       title: 'القضايا والنتائج',
       subtitle: 'اكتشف بعض من أبرز قضايانا والنتائج التي حصلنا عليها لعملائنا.',
-      stats: {
-        casosExitosos: '200+ قضية ناجحة',
-        anosExperiencia: '15+ سنوات خبرة',
-        defensaEspecializada: 'دفاع متخصص'
-      },
       filtros: {
         title: 'تصفية حسب الفئة:',
         todasCategorias: 'جميع الفئات',
