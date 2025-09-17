@@ -107,6 +107,7 @@ const organoMap: { [key: string]: string } = {
 
 import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown } from 'lucide-react'
 import Navigation from '@/components/Navigation'
+import ProtectedCaseOverlay from '@/components/ProtectedCaseOverlay'
 import casosData from '../../../../public/casos/casos-procesados.json'
 import seoInfo from '../../../../public/casos/seo-info.json'
 import Head from 'next/head'
@@ -162,6 +163,7 @@ interface Caso {
   imagen?: string
   contenido?: CasoContent
   ficha_detalle?: CasoDetails
+  caso_en_curso?: boolean
 }
 
 interface SEOInfo {
@@ -286,9 +288,17 @@ export default function CasoDetailPage() {
          {pageTags && <meta name="tags" content={pageTags} />}
        </Head>
 
-       <div className="min-h-screen bg-charleston">
-         <Navigation />
-         <div className="pt-20">
+      <div className="min-h-screen bg-charleston">
+        <Navigation />
+        <div className="pt-20">
+          {/* Si el caso está en curso, envolver todo el contenido */}
+          {caso.caso_en_curso ? (
+            <ProtectedCaseOverlay reason="en_curso">
+              <CaseDetailContent caso={caso} seoData={seoData} t={t} language={language} />
+            </ProtectedCaseOverlay>
+          ) : (
+            <CaseDetailContent caso={caso} seoData={seoData} t={t} language={language} />
+          )}
                  {/* Header */}
          <div className="bg-white/5 backdrop-blur-sm border-b border-gold/20">
            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
@@ -890,6 +900,32 @@ export default function CasoDetailPage() {
             </div>
           </div>
         )}
+        </div>
+      </div>
       </>
     )
   }
+
+// Componente auxiliar simplificado para casos protegidos
+function CaseDetailContent({ caso, seoData, t, language }: {
+  caso: Caso;
+  seoData: any;
+  t: any;
+  language: string;
+}) {
+  return (
+    <div className="min-h-screen">
+      {/* Contenido básico del caso */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center text-offwhite">
+          <h1 className="text-3xl font-bold mb-4">
+            {caso.nombre}
+          </h1>
+          <p className="text-offwhite/80">
+            {caso.contenido?.resumen || 'Información del caso no disponible'}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

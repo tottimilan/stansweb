@@ -301,7 +301,9 @@ export const translations = {
       tipo: 'Tipo:',
       verTodosCasos: 'Ver todos los casos',
       favorable: 'FAVORABLE',
-      enCurso: 'EN CURSO'
+      enCurso: 'EN CURSO',
+      casoProtegido: 'CASO PROTEGIDO',
+      informacionRestringida: 'Información no disponible por confidencialidad'
     },
 
     // Individual Case Page
@@ -1032,7 +1034,9 @@ export const translations = {
       tipo: 'النوع:',
       verTodosCasos: 'عرض جميع القضايا',
       favorable: 'مؤاتي',
-      enCurso: 'قيد التنفيذ'
+      enCurso: 'قيد التنفيذ',
+      casoProtegido: 'قضية محمية',
+      informacionRestringida: 'المعلومات غير متاحة لأسباب السرية'
     },
 
     // Individual Case Page

@@ -828,6 +828,7 @@
     "resultado": "Investigación en curso",
     "tipo_resolucion": "Pendiente",
     "favorabilidad": "Neutro",
+    "caso_en_curso": true,
     "fase_procesal": "",
     "organo": "Juzgado de Instrucción (por determinar)",
     "organo_nivel": "Juzgado de Instrucción",
