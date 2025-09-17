@@ -42,19 +42,19 @@ export const translations = {
       // Datos de los abogados
       ruben: {
         name: 'Rubén Vaquero Arribas',
-        role: 'Socio Director',
+        role: 'Socio Abogado',
         summary: 'Abogado del ICAM especializado en derecho penal económico y derechos fundamentales. Experiencia en querellas, recursos y casación. Casos: homicidio, crimen organizado, estafa, extradiciones y OEDE.',
         tags: ['Derecho Penal Económico', 'Derechos Fundamentales', 'Extradiciones', 'OEDE', 'Cooperación Judicial']
       },
       mounir: {
         name: 'Mounir Elyemlahy Chouati',
-        role: 'Socio Director',
+        role: 'Socio Abogado',
                  summary: 'Abogado del ICAM con trayectoria en derecho penal y administrativo. Especializado en procedimientos de alta complejidad, terrorismo yihadista y defensa de derechos fundamentales.',
         tags: ['Derecho Penal', 'Derecho Administrativo', 'Terrorismo Yihadista', 'Derechos Fundamentales', 'Causas Complejas']
       },
       diego: {
         name: 'Diego Cardona Valero',
-        role: 'Socio Director',
+        role: 'Socio Abogado',
         summary: 'Abogado del ICAM especializado en derecho procesal penal. Experiencia en delincuencia organizada y terrorismo. Capacidad estratégica en litigación y preparación de recursos en procedimientos de alta complejidad.',
         tags: ['Derecho Procesal Penal', 'Delincuencia Organizada', 'Terrorismo', 'Litigación', 'Recursos']
       }
@@ -297,7 +297,8 @@ export const translations = {
       tipo: 'Tipo:',
       verTodosCasos: 'Ver todos los casos',
       favorable: 'FAVORABLE',
-      enCurso: 'En curso'
+      enCurso: 'En curso',
+      informacionProtegida: 'Información protegida'
     },
 
     // Individual Case Page
@@ -769,19 +770,19 @@ export const translations = {
       // Datos de los abogados
       ruben: {
         name: 'روبين فاكيرو أريباس',
-        role: 'شريك مدير',
+        role: 'شريك محامي',
         summary: 'محامي في المجلس العلمي لمحامي مدريد متخصص في القانون الجنائي الاقتصادي وحقوق الإنسان الأساسية. خبرة في الدعاوى والموارد والنقض. قضايا: قتل، جريمة منظمة، احتيال وتسليم مجرمين.',
         tags: ['القانون الجنائي الاقتصادي', 'حقوق الإنسان الأساسية', 'تسليم المجرمين', 'OEDE', 'التعاون القضائي']
       },
       mounir: {
         name: 'منير إليملاهي شواتي',
-        role: 'شريك مدير',
+        role: 'شريك محامي',
                  summary: 'محامي في المجلس العلمي لمحامي مدريد ذو مسيرة مهنية واسعة في القانون الجنائي والإداري. متخصص في إجراءات عالية التعقيد، إرهاب جهادي ودفاع عن حقوق الإنسان الأساسية.',
         tags: ['القانون الجنائي', 'القانون الإداري', 'الإرهاب الجهادي', 'حقوق الإنسان الأساسية', 'القضايا المعقدة']
       },
       diego: {
         name: 'دييغو كاردونا فالييرو',
-        role: 'شريك مدير',
+        role: 'شريك محامي',
         summary: 'محامي في المجلس العلمي لمحامي مدريد متخصص في القانون الجنائي الإجرائي. خبرة في الجريمة المنظمة والإرهاب. قدرة استراتيجية في التقاضي وإعداد الموارد في إجراءات عالية التعقيد.',
         tags: ['القانون الجنائي الإجرائي', 'الجريمة المنظمة', 'الإرهاب', 'التقاضي', 'الموارد']
       }
@@ -1024,7 +1025,8 @@ export const translations = {
       tipo: 'النوع:',
       verTodosCasos: 'عرض جميع القضايا',
       favorable: 'مؤاتي',
-      enCurso: 'قيد التنفيذ'
+      enCurso: 'قيد التنفيذ',
+      informacionProtegida: 'المعلومات محمية'
     },
 
     // Individual Case Page

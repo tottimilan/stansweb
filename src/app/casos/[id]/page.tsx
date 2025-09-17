@@ -417,7 +417,7 @@ export default function CasoDetailPage() {
                 <p className="text-offwhite/80 mb-4 max-w-2xl mx-auto">
                   {language === 'ar' 
                     ? 'بسبب طبيعة التحقيق الجاري، يمكن فقط عرض الملخص والأخبار ذات الصلة. تفاصيل أخرى محمية بسرية التحقيق.'
-                    : 'Debido a la naturaleza del proceso en curso, solo se pueden mostrar el resumen y las noticias relacionadas. Los demás detalles están protegidos por el secreto de sumario.'
+                    : 'Debido a la naturaleza del proceso en curso, solo se pueden mostrar el resumen y las noticias relacionadas. Los demás detalles están protegidos.'
                   }
                 </p>
                 <div className="text-sm text-orange-400/80">

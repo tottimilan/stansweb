@@ -434,7 +434,7 @@ export default function CasosPage() {
                         🔒 {language === 'ar' ? 'قضية قيد التحقيق' : 'CASO EN INVESTIGACIÓN'}
                       </div>
                       <div className="text-xs text-orange-700">
-                        {language === 'ar' ? 'المعلومات محمية بسرية التحقيق' : 'Información protegida por secreto de sumario'}
+                        {language === 'ar' ? 'المعلومات محمية بسرية التحقيق' : 'Información protegida'}
                       </div>
                     </div>
                   ) : (

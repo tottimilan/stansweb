@@ -216,7 +216,7 @@ export default function CaseCard({ caso }: Props) {
   
   // Traducir y limitar el resumen a una longitud razonable
   const translatedSummary = isOngoingCase 
-    ? (language === 'ar' ? 'معلومات سرية - قيد التحقيق' : 'Información confidencial por secreto de sumario')
+    ? t.casosDestacados.informacionProtegida
     : getTranslatedCaseSummary(caso.id, caso.contenido.resumen, language);
   const summary = !isOngoingCase && translatedSummary.length > 120
     ? translatedSummary.substring(0, 120) + '...'
@@ -269,7 +269,7 @@ export default function CaseCard({ caso }: Props) {
               🔒 {language === 'ar' ? 'قضية قيد التحقيق' : 'CASO EN INVESTIGACIÓN'}
             </div>
             <div className="text-xs text-orange-700">
-              {language === 'ar' ? 'المعلومات محمية بسرية التحقيق' : 'Información protegida por secreto de sumario'}
+              {t.casosDestacados.informacionProtegida}
             </div>
           </div>
         ) : (
