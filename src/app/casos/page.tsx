@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -387,10 +388,7 @@ export default function CasosPage() {
                 <motion.article
                   key={caso.id}
                   variants={itemVariants}
-                  className="group rounded-2xl border border-gold/30 bg-white/5 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/50 hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 relative cursor-pointer"
-                  onClick={() => {
-                    window.location.href = (seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`
-                  }}
+                  className="group rounded-2xl border border-gold/30 bg-white/5 backdrop-blur-sm p-6 sm:p-8 hover:border-gold/50 hover:shadow-xl hover:shadow-gold/20 transition-all duration-300 relative"
                 >
                                        {/* Badge FAVORABLE en la parte superior */}
                     {caso.favorabilidad === 'Favorable' && (
@@ -471,23 +469,26 @@ export default function CasosPage() {
                    </div>
                   )}
 
-                  {/* Footer con fecha y botón */}
-                  <div className="flex items-center justify-between pt-4 border-t border-gold/20">
-                    <div className="flex items-center gap-2 text-xs text-offwhite/60">
-                      <Calendar className="w-4 h-4" />
-                      <span>{caso.fecha || caso.año}</span>
-                    </div>
-                    <div className={`flex items-center gap-2 transition-colors ${
-                      caso.caso_en_curso 
-                        ? 'text-orange-600' 
-                        : 'text-gold group-hover:text-apricot'
-                    }`}>
-                      <span className="text-sm font-medium">
-                        {caso.caso_en_curso ? t.casosDestacados.verCasoEnCurso : t.casos.casos.verDetalles}
-                      </span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                 </div>
+                    {/* Footer con fecha y botón */}
+                    <div className="flex items-center justify-between pt-4 border-t border-gold/20">
+                      <div className="flex items-center gap-2 text-xs text-offwhite/60">
+                        <Calendar className="w-4 h-4" />
+                        <span>{caso.fecha || caso.año}</span>
+                      </div>
+                      <Link
+                        href={(seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`}
+                        className={`inline-flex items-center gap-2 text-sm px-3 py-1 rounded-lg hover:opacity-90 transition group ${
+                          caso.caso_en_curso 
+                            ? 'text-orange-800 bg-orange-100/20 border border-orange-300/50' 
+                            : 'text-gold hover:text-apricot'
+                        }`}
+                      >
+                        <span className="font-medium">
+                          {caso.caso_en_curso ? t.casosDestacados.verCasoEnCurso : t.casos.casos.verDetalles}
+                        </span>
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                   </div>
                 </motion.article>
               ))}
             </motion.div>

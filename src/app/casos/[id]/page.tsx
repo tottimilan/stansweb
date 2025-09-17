@@ -159,6 +159,7 @@ interface Caso {
   noticias: string
   links: string
   caso_popular: string
+  caso_en_curso?: boolean
   imagen?: string
   contenido?: CasoContent
   ficha_detalle?: CasoDetails
