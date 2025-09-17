@@ -6,7 +6,6 @@ import { ArrowRight, Shield, Clock, Award, FileText, Scale } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 import { casesTranslations } from '@/translations/cases-translations';
-import ProtectedCaseOverlay from '@/components/ProtectedCaseOverlay';
 
 type Case = {
   id: number;
@@ -212,28 +211,16 @@ export default function CaseCard({ caso }: Props) {
   const { language } = useLanguage();
   const t = translations[language];
 
+  // Verificar si es un caso en curso
+  const isOngoingCase = caso.caso_en_curso;
+  
   // Traducir y limitar el resumen a una longitud razonable
-  const translatedSummary = getTranslatedCaseSummary(caso.id, caso.contenido.resumen, language);
-  const summary = translatedSummary.length > 120
+  const translatedSummary = isOngoingCase 
+    ? (language === 'ar' ? 'معلومات سرية - قيد التحقيق' : 'Información confidencial por secreto de sumario')
+    : getTranslatedCaseSummary(caso.id, caso.contenido.resumen, language);
+  const summary = !isOngoingCase && translatedSummary.length > 120
     ? translatedSummary.substring(0, 120) + '...'
     : translatedSummary;
-
-  // Si el caso está en curso, envolver con el overlay de protección
-  if (caso.caso_en_curso) {
-    return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="h-full"
-      >
-        <ProtectedCaseOverlay reason="en_curso">
-          <CaseCardContent caso={caso} language={language} t={t} summary={summary} />
-        </ProtectedCaseOverlay>
-      </motion.div>
-    );
-  }
 
   return (
     <motion.div
@@ -270,15 +257,28 @@ export default function CaseCard({ caso }: Props) {
 
       {/* Información del caso */}
       <div className="space-y-2 mb-4 flex-grow">
-        <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.resultado}</span> {getTranslatedResult(caso.resultado, language, t)}
-        </div>
-        <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.organo}</span> {getTranslatedOrgano(caso.organo, language)}
-        </div>
-        <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.tipo}</span> {getTranslatedResolutionType(caso.tipo_resolucion, language, t)}
-        </div>
+        {isOngoingCase ? (
+          <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 text-center">
+            <div className="text-sm font-semibold text-orange-800 mb-1">
+              🔒 {language === 'ar' ? 'قضية قيد التحقيق' : 'CASO EN INVESTIGACIÓN'}
+            </div>
+            <div className="text-xs text-orange-700">
+              {language === 'ar' ? 'المعلومات محمية بسرية التحقيق' : 'Información protegida por secreto de sumario'}
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="text-sm text-black/70">
+              <span className="font-medium text-black">{t.casosDestacados.resultado}</span> {getTranslatedResult(caso.resultado, language, t)}
+            </div>
+            <div className="text-sm text-black/70">
+              <span className="font-medium text-black">{t.casosDestacados.organo}</span> {getTranslatedOrgano(caso.organo, language)}
+            </div>
+            <div className="text-sm text-black/70">
+              <span className="font-medium text-black">{t.casosDestacados.tipo}</span> {getTranslatedResolutionType(caso.tipo_resolucion, language, t)}
+            </div>
+          </>
+        )}
       </div>
 
       {/* Resumen */}
@@ -287,76 +287,19 @@ export default function CaseCard({ caso }: Props) {
       </p>
 
       {/* Botón de acción */}
-      <Link
-        href={getCaseUrl(caso)}
-        className="inline-flex items-center mt-auto text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
-      >
-        {t.casosDestacados.verCasoCompleto}
-        <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-      </Link>
+      {isOngoingCase ? (
+        <div className="inline-flex items-center justify-center mt-auto text-sm text-orange-700 bg-orange-100 px-4 py-2 rounded-lg border border-orange-200 cursor-not-allowed">
+          🔒 {language === 'ar' ? 'محمي بالسرية' : 'Acceso Restringido'}
+        </div>
+      ) : (
+        <Link
+          href={getCaseUrl(caso)}
+          className="inline-flex items-center mt-auto text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
+        >
+          {t.casosDestacados.verCasoCompleto}
+          <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
+        </Link>
+      )}
     </motion.div>
-  );
-}
-
-// Componente auxiliar para el contenido de la tarjeta
-function CaseCardContent({ caso, language, t, summary }: {
-  caso: Case;
-  language: string;
-  t: any;
-  summary: string;
-}) {
-  return (
-    <div className="group rounded-2xl border border-gold/30 bg-white p-6 text-black shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-gold/20 hover:border-gold/50 h-full flex flex-col">
-      {/* Header con icono y badge de favorable */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="text-gold group-hover:text-apricot transition-colors">
-          {getIcon(caso.categoria)}
-        </div>
-        <span className={`text-xs px-2 py-1 rounded-full font-medium ${
-          caso.favorabilidad === 'Neutro'
-            ? 'bg-blue-600 text-blue-100'
-            : 'bg-emerald-700 text-emerald-100'
-        }`}>
-          {caso.favorabilidad === 'Neutro' ? t.casosDestacados.enCurso : t.casosDestacados.favorable}
-        </span>
-      </div>
-
-      {/* Categoría */}
-      <div className="text-xs text-gold/70 uppercase tracking-wide mb-2">
-        {getTranslatedCategory(caso.categoria, language, t)}
-      </div>
-
-      {/* Título del caso */}
-      <h3 className="text-lg font-semibold group-hover:text-gold transition-colors mb-3 leading-tight">
-        {getTranslatedCaseName(caso.id, caso.nombre.replace(/^CASO\s*-?\s*/, ''), language)}
-      </h3>
-
-      {/* Información del caso */}
-      <div className="space-y-2 mb-4 flex-grow">
-        <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.resultado}</span> {getTranslatedResult(caso.resultado, language, t)}
-        </div>
-        <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.organo}</span> {getTranslatedOrgano(caso.organo, language)}
-        </div>
-        <div className="text-sm text-black/70">
-          <span className="font-medium text-black">{t.casosDestacados.tipo}</span> {getTranslatedResolutionType(caso.tipo_resolucion, language, t)}
-        </div>
-      </div>
-
-      {/* Resumen */}
-      <p className="text-black/70 text-sm leading-relaxed mb-4 flex-grow">
-        {summary}
-      </p>
-
-      {/* Botón de acción */}
-      <Link
-        href={getCaseUrl(caso)}
-        className="inline-flex items-center mt-auto text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
-      >
-        {t.casosDestacados.verCasoCompleto}
-        <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
-      </Link>
-    </div>
   );
 }

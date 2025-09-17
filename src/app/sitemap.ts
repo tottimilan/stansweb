@@ -148,20 +148,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Páginas de casos individuales - Prueba social y credibilidad
-  const casePages = casosData.map((caso: any) => {
-    const casoSeoInfo = (seoInfo as any)[caso.id]
-    const url = casoSeoInfo?.url ? `${baseUrl}${casoSeoInfo.url}` : `${baseUrl}/casos/${caso.id}`
-    
-    // Casos favorables tienen mayor prioridad
-    const priority = caso.favorabilidad === "Favorable" ? 0.8 : 0.75
-    
-    return {
-      url,
-      lastModified: casesContentDate,
-      changeFrequency: "monthly" as const,
-      priority,
-    }
-  })
+  // Excluir casos en curso para proteger información confidencial
+  const casePages = casosData
+    .filter((caso: any) => !caso.caso_en_curso) // Excluir casos en investigación
+    .map((caso: any) => {
+      const casoSeoInfo = (seoInfo as any)[caso.id]
+      const url = casoSeoInfo?.url ? `${baseUrl}${casoSeoInfo.url}` : `${baseUrl}/casos/${caso.id}`
+      
+      // Casos favorables tienen mayor prioridad
+      const priority = caso.favorabilidad === "Favorable" ? 0.8 : 0.75
+      
+      return {
+        url,
+        lastModified: casesContentDate,
+        changeFrequency: "monthly" as const,
+        priority,
+      }
+    })
 
   // Páginas legales
   const legalPages = [
