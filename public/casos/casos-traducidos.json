@@ -237,7 +237,7 @@
   {
     "id": 4,
     "categoria": "Pertenencia a organización criminal",
-    "nombre": "CASO DOMINICANT DONT PLAY (DDP)",
+    "nombre": "DELITO DE PERTENENCIA A ORGANIZACIÓN CRIMINAL – BANDAS LATINAS",
     "delito_principal": "Pertenencia a organización criminal (Dominican Don’t Play)",
     "resultado": "Absolución con todos los pronunciamientos favorables",
     "tipo_resolucion": "Absolución",
@@ -389,7 +389,7 @@
   {
     "id": 6,
     "categoria": "Delitos contra la integridad física",
-    "nombre": "CASO LESIONES",
+    "nombre": "CASO LESIONES (DOLOSAS)",
     "delito_principal": "Lesiones",
     "resultado": "Auto de sobreseimiento provisional",
     "tipo_resolucion": "Sobreseimiento provisional",
@@ -434,7 +434,7 @@
       "medidas_cautelares": "Ninguna (revocadas)",
       "popularidad": "No"
     },
-    "nombre_ar": "CASO LESIONES",
+    "nombre_ar": "CASO LESIONES (DOLOSAS)",
     "delito_principal_ar": "Lesiones",
     "resultado_ar": "القرار de sobreseimiento provisional",
     "tipo_resolucion_ar": "الإيقاف provisional",
@@ -471,7 +471,7 @@
   {
     "id": 7,
     "categoria": "Delitos económicos",
-    "nombre": "CASO ESTAFA Y BLANQUEO DE CAPITALES JAEN",
+    "nombre": "CASO ESTAFA Y BLANQUEO DE CAPITALES",
     "delito_principal": "Estafa y blanqueo de capitales",
     "resultado": "Audiencia Provincial estima recurso y archiva la causa",
     "tipo_resolucion": "Revocación / Archivo",
@@ -516,7 +516,7 @@
       "medidas_cautelares": "Revocadas",
       "popularidad": "No"
     },
-    "nombre_ar": "CASO ESTAFA Y BLANQUEO DE CAPITALES JAEN",
+    "nombre_ar": "CASO ESTAFA Y BLANQUEO DE CAPITALES",
     "delito_principal_ar": "الاحتيال y blanqueo de capitales",
     "resultado_ar": "Audiencia Provincial estima recurso y archiva la causa",
     "tipo_resolucion_ar": "Revocación / الأرشيف",
@@ -553,7 +553,7 @@
   {
     "id": 8,
     "categoria": "Delitos contra la autoridad",
-    "nombre": "ABSOLUCIÓN EN CAUSA POR DELITO DE RESISTENCIA A LA AUTORIDAD",
+    "nombre": "ABSOLUCIÓN POR DELITO DE RESISTENCIA GRAVE A LA AUTORIDAD",
     "delito_principal": "Resistencia a la autoridad (art. 556 CP)",
     "resultado": "Sentencia absolutoria",
     "tipo_resolucion": "Absolución",
@@ -598,7 +598,7 @@
       "medidas_cautelares": "Ninguna",
       "popularidad": "No"
     },
-    "nombre_ar": "ABSOLUCIÓN EN CAUSA POR DELITO DE RESISTENCIA A LA AUTORIDAD",
+    "nombre_ar": "ABSOLUCIÓN POR DELITO DE RESISTENCIA GRAVE A LA AUTORIDAD",
     "delito_principal_ar": "مقاومة السلطة (art. 556 CP)",
     "resultado_ar": "الحكم absolutoria",
     "tipo_resolucion_ar": "البراءة",
@@ -1051,7 +1051,7 @@
   {
     "id": 14,
     "categoria": "Delitos patrimoniales",
-    "nombre": "CASO ROBO CON VIOLENCIA (Pozuelo de Alarcón)",
+    "nombre": "CASO ROBO CON VIOLENCIA",
     "delito_principal": "Robo con violencia o intimidación",
     "resultado": "Auto de sobreseimiento y archivo",
     "tipo_resolucion": "Sobreseimiento provisional",
@@ -1096,7 +1096,7 @@
       "medidas_cautelares": "Revocadas",
       "popularidad": "No"
     },
-    "nombre_ar": "CASO ROBO CON VIOLENCIA (بوزويلو de Alarcón)",
+    "nombre_ar": "CASO ROBO CON VIOLENCIA",
     "delito_principal_ar": "السرقة con violencia o intimidación",
     "resultado_ar": "القرار de sobreseimiento y archivo",
     "tipo_resolucion_ar": "الإيقاف provisional",
@@ -1119,13 +1119,13 @@
     },
     "seo_translations": {
       "es": {
-        "title": "CASO ROBO CON VIOLENCIA (Pozuelo de Alarcón) - STANS ABOGADOS",
-        "description": "Caso CASO ROBO CON VIOLENCIA (Pozuelo de Alarcón) resuelto por STANS ABOGADOS. Auto de sobreseimiento y archivo",
+        "title": "CASO ROBO CON VIOLENCIA - STANS ABOGADOS",
+        "description": "Caso CASO ROBO CON VIOLENCIA resuelto por STANS ABOGADOS. Auto de sobreseimiento y archivo",
         "keywords": "Robo con violencia o intimidación, Delitos patrimoniales, abogados penalistas, STANS ABOGADOS"
       },
       "ar": {
-        "title": "CASO ROBO CON VIOLENCIA (بوزويلو de Alarcón) - ستانس أبودادوس",
-        "description": "قضية CASO ROBO CON VIOLENCIA (بوزويلو de Alarcón) تم حلها بواسطة ستانس أبودادوس. القرار de sobreseimiento y archivo",
+        "title": "CASO ROBO CON VIOLENCIA - ستانس أبودادوس",
+        "description": "قضية CASO ROBO CON VIOLENCIA تم حلها بواسطة ستانس أبودادوس. القرار de sobreseimiento y archivo",
         "keywords": "السرقة con violencia o intimidación, Delitos patrimoniales, محامون جنائيون, ستانس أبودادوس"
       }
     }
