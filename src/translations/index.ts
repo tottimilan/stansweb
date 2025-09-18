@@ -23,7 +23,7 @@ export const translations = {
              respuesta15min: 'Respuesta < 1 hr urgencias',
       espanolArabeIngles: 'Español-Inglés-Árabe',
                   extradicion: 'Extradiciones',
-      penalPuro: 'Penal Puro',
+      penalPuro: 'Enfoque único en la defensa penal',
       abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Inglés/Árabe | Colegiados ICAM',
       holaAyuda: 'Hola, necesito ayuda penal urgente.'
     },
@@ -751,7 +751,7 @@ export const translations = {
              respuesta15min: 'الرد < 1 ساعة طوارئ',
       espanolArabeIngles: 'الإسبانية–الإنجليزية–العربية',
                   extradicion: 'تسليم المجرمين',
-      penalPuro: 'جنائي خالص',
+      penalPuro: 'نهج فريد في الدفاع الجنائي',
       abogadosPenalistas: 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM',
       holaAyuda: 'مرحباً، أحتاج مساعدة جنائية عاجلة.'
     },
