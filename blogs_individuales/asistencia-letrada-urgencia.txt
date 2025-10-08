@@ -148,3 +148,8 @@ P: ¿Qué pasa si el abogado no llega a tiempo?
 
 R: Si el abogado no llega en el plazo establecido, puedes solicitar la suspensión temporal del procedimiento. También puedes impugnar cualquier actuación realizada sin asistencia letrada.
 
+Fundamentación Normativa
+=======================
+
+En el marco de la asistencia letrada de urgencia, el Código Penal (CP) en su artículo 174 tipifica como delito la denegación de asistencia letrada, con penas de prisión de 2 a 6 años si se causa perjuicio grave, analizando esto como una vulneración que protege la integridad del proceso penal. La Ley de Enjuiciamiento Criminal (LECrim), en artículos 118 y 520, establece el procedimiento para la asistencia inmediata, analizando su obligatoriedad para garantizar la presunción de inocencia. La Constitución Española (CE), en artículo 24.2, consagra el derecho a la defensa y asistencia letrada como principio de tutela judicial efectiva y proporcionalidad. En el ámbito UE, la Directiva 2013/48/UE refuerza estos derechos, analizando la necesidad de acceso inmediato a un abogado en detenciones transfronterizas para evitar discriminaciones.
+

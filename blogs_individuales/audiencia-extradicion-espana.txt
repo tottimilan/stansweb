@@ -156,3 +156,8 @@ P: ¿Puedo impugnar la decisión inmediatamente?
 
 R: Sí, contra la resolución judicial cabe recurso de reforma (5 días) ante el mismo juez, y recurso de apelación (5-10 días) ante la Audiencia Provincial.
 
+Fundamentación Normativa
+=======================
+
+El Código Penal (CP) en artículos 607-609 tipifica delitos relacionados con extradición, analizando su conexión con crímenes internacionales como genocidio. La LECrim, en artículos 831-841, regula el procedimiento de audiencia, analizando garantías como la doble instancia. La CE, en artículo 24, asegura tutela judicial efectiva y presunción de inocencia. En UE, la Decisión Marco 2002/584/JAI y Directiva 2012/13/UE analizan el mandato de detención europeo, promoviendo confianza mutua y proporcionalidad en extradiciones.
+

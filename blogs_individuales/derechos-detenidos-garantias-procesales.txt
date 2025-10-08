@@ -162,3 +162,8 @@ P: ¿Puedo comunicar con mi familia desde comisaría?
 
 R: Sí, tienes derecho a comunicar con un familiar o persona de confianza en un plazo razonable, según el artículo 520 de la LECrim. Esta comunicación debe realizarse en presencia de la policía.
 
+Fundamentación Normativa
+=======================
+
+CP: Arts. 174-177 tipifican vulneraciones. LECrim (arts. 118-520) analiza garantías. CE (art. 24) protege tutela efectiva. UE: Directiva 2013/48/UE analiza derechos procesales.
+

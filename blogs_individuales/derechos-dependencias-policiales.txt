@@ -157,3 +157,8 @@ P: ¿Puedo dormir en comisaría?
 
 R: Sí, tienes derecho a descanso nocturno adecuado. Las celdas deben tener litera, colchón, sábanas limpias y mantas. El descanso no puede ser inferior a 8 horas diarias.
 
+Fundamentación Normativa
+=======================
+
+CP: Art. 174 sanciona tratos inhumanos. LECrim (art. 520) regula condiciones. CE (art. 15) prohíbe torturas. CC (art. 1902) analiza responsabilidad civil por daños. UE: Directiva 2012/29/UE protege víctimas en dependencias.
+

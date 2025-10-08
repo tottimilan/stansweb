@@ -150,3 +150,8 @@ P: ¿Dónde están garantizados mis derechos constitucionales?
 
 R: Están garantizados por la Constitución Española (Capítulo II, arts. 14-29), las leyes procesales (LECrim, LOPJ), y tratados internacionales ratificados por España (CEDH, PIDCP). El Tribunal Constitucional es el máximo garante.
 
+Fundamentación Normativa
+=======================
+
+CP: Arts. 163-167 tipifican detención ilegal, analizando penas. LECrim (art. 520) regula derechos. CE (art. 17,24) enfatiza libertad y presunción de inocencia. UE: Directiva 2012/13/UE analiza información en detenciones.
+

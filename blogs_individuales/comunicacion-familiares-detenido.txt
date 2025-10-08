@@ -112,3 +112,8 @@ P: ¿Pueden mis familiares contratar un abogado para mí?
 
 R: Sí, tus familiares pueden designar un abogado de confianza. Si no pueden costearlo, tienes derecho a abogado de oficio gratuito. La designación debe comunicarse a la policía.
 
+Fundamentación Normativa
+=======================
+
+El CP en artículo 174 sanciona la incomunicación ilegal como delito contra la libertad, analizando penas de inhabilitación. La LECrim (art. 520) regula el derecho a comunicación, analizando su rol en la presunción de inocencia. La CE (art. 17) protege la libertad y dignidad, con principios de proporcionalidad. En UE, Directiva 2012/13/UE analiza el derecho a información y comunicación familiar en detenciones.
+

@@ -180,3 +180,8 @@ P: ¿Qué ocurre si el abogado no llega a tiempo?
 
 R: Si el abogado no llega en el plazo establecido, puedes solicitar la suspensión temporal del procedimiento. Cualquier actuación realizada sin asistencia letrada puede ser declarada nula.
 
+Fundamentación Normativa
+=======================
+
+CP: Art. 174 tipifica denegación de asistencia como delito. LECrim (arts. 118,520) analiza procedimiento. CE (art. 24) consagra defensa. UE: Directiva 2013/48/UE analiza acceso inmediato a letrado.
+
