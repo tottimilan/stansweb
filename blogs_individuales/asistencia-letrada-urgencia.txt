@@ -130,7 +130,7 @@ R: No puede parar la detención policial, pero sí puede impugnar su legalidad, 
 
 P: ¿Qué información puede dar mi abogado a la policía?
 
-R: Tu abogado no puede revelar información confidencial sin tu consentimiento expreso. Todo lo que comuniques a tu abogado está protegido por el secreto profesional (artículo 542 LECrim).
+R: Tu abogado no puede revelar información confidencial sin tu consentimiento expreso. Todo lo que comuniques a tu abogado está protegido por el secreto profesional (artículo 542 LOPJ).
 
 P: ¿Puedo cambiar de abogado durante la urgencia?
 

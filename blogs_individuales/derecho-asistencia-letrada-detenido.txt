@@ -170,7 +170,7 @@ R: Sí, especialmente en registros invasivos o cacheos más allá de la superfic
 
 P: ¿Qué información puedo darle a mi abogado?
 
-R: Toda la información que compartas con tu abogado está protegida por el secreto profesional absoluto (artículo 542 LECrim). Nadie puede obligarle a revelar lo que le comuniques.
+R: Toda la información que compartas con tu abogado está protegida por el secreto profesional absoluto (artículo 542 LOPJ). Nadie puede obligarle a revelar lo que le comuniques.
 
 P: ¿Puedo cambiar de abogado durante la detención?
 

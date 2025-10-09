@@ -32,13 +32,13 @@ juez de guardia
 Esta audiencia es crucial porque determina si quedas en libertad, si se te imponen
                   medidas cautelares, o si se decreta prisión provisional. La preparación de esta
                   fase debe comenzar desde el momento mismo de la detención, según establece
-                  la
+ la
 
 
 Ley de Enjuiciamiento Criminal
 ------------------------------
 
-en sus artículos 496 y siguientes.
+en relación con el art. 17.2 de la Constitución (límite máximo de detención) y el art. 520 LECrim (derechos del detenido).
 
 
 Garantías Constitucionales
@@ -133,7 +133,7 @@ R: Es el momento en que la policía presenta al detenido ante el juez de guardia
 
 P: ¿Cuánto tiempo pueden retenerme sin ver al juez?
 
-R: Máximo 72 horas en casos graves, o 24 horas en casos menos graves. Pasado ese tiempo, si no hay resolución judicial, debes ser puesto en libertad. Este plazo está regulado por el artículo 496 de la LECrim.
+R: Máximo 72 horas (art. 17.2 CE), debiendo ser puesto a disposición judicial o en libertad. Los derechos durante la detención se regulan en el art. 520 LECrim.
 
 P: ¿Puedo declarar ante el juez sin abogado?
 

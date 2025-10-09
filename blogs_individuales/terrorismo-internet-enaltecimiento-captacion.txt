@@ -68,11 +68,11 @@ La reforma de 2015 respondió a la proliferación de contenidos terroristas en I
                         Posteriormente, la
 
 
-Ley 4/2015
-----------
+Reglamento (UE) 2021/784
+------------------------
 
-estableció obligaciones para plataformas
-                        digitales de retirar contenidos en 24 horas.
+establece obligaciones para retirar o bloquear contenidos terroristas en línea mediante órdenes de retirada
+                        emitidas por autoridades competentes en un plazo de 1 hora.
 
 Tipos de Delitos de Terrorismo en Internet
 
@@ -89,14 +89,14 @@ Lecciones de la Jurisprudencia
 • La captación online se considera tan grave como la presencial
 
 
-Según Ley 4/2015
-----------------
+Según Reglamento (UE) 2021/784
+-----------------------------
 
-• Retirar contenido en 24 horas
+• Retirar o bloquear contenido en 1 hora tras orden válida
 
 
-• Pérdida de inmunidad
-----------------------
+• Coordinación con el DSA (Reglamento (UE) 2022/2065)
+-----------------------------------------------------
 
 Preguntas Frecuentes sobre Terrorismo en Internet
 

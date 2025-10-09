@@ -15,14 +15,14 @@ Análisis completo de los delitos relacionados con sustancias estupefacientes:
 -----------
 
 Los delitos contra la salud pública relacionados con sustancias estupefacientes
-                  constituyen una de las infracciones penales más comunes en España. La
+                  constituyen una de las infracciones penales más comunes en España. El
 
+Código Penal (arts. 368-378)
+----------------------------
 
-Ley Orgánica 4/2015
--------------------
-
-de Protección de la Seguridad Ciudadana regula
-                  estos delitos con especial rigor, estableciendo penas que pueden alcanzar hasta 9 años de prisión.
+regula los delitos penales (tráfico, cultivo con finalidad de tráfico, organización y agravantes).
+La Ley Orgánica 4/2015 de Protección de la Seguridad Ciudadana establece, además,
+un régimen sancionador administrativo para conductas como el consumo o la tenencia en vía pública (no regula delitos penales).
 
 Esta guía analiza exhaustivamente el marco legal aplicable, basándose en la
                   jurisprudencia del
@@ -75,17 +75,12 @@ Defensas de Fondo
 • Error en determinación de sustancia
 
 
-Penas de Prisión
-----------------
+Penas de Prisión (referencia por artículos aplicables)
+----------------------------------------------------
 
-• 3 meses a 3 años (cantidades pequeñas)
-
-• 1 a 5 años (cantidades medias)
-
-• 3 a 9 años (cantidades grandes)
-
-• Hasta 12 años (tráfico organizado)
-
+• Art. 368 CP: tipo básico (se valoran cantidad, pureza y demás circunstancias)
+• Art. 369 CP: agravantes específicas (grave daño a la salud, etc.)
+• Art. 369 bis y 370 CP: organización, dirigentes y agravaciones cualificadas
 
 • Inhabilitación profesional
 ----------------------------
@@ -97,49 +92,15 @@ Consecuencias Administrativas
 -----------------------------
 
 Paralelamente al proceso penal, se pueden imponer sanciones administrativas
-                      según la Ley Orgánica 4/2015:
-
-
-30.000€ - 600.000€
-------------------
+                      según la Ley Orgánica 4/2015 (p. ej., consumo o tenencia en vía pública).
 
 Preguntas Frecuentes sobre Delitos de Drogas
 
+R: La posesión para consumo propio no es delito penal; puede sancionarse administrativamente (LO 4/2015) si se realiza en vía pública. En el ámbito penal, cabe suspensión de la ejecución de la pena conforme al art. 80 CP, según requisitos legales.
 
-Ley Orgánica 4/2015
--------------------
+R: El cultivo para tráfico es delito (art. 368 CP). El cultivo para consumo propio en ámbito privado no es delito; pueden existir sanciones administrativas (LO 4/2015) en determinados supuestos.
 
-- Protección de la Seguridad Ciudadana
-
-
-Código Penal (artículos 368-378)
---------------------------------
-
-- Delitos contra la salud pública
-
-
-Ley Orgánica 1/1992
--------------------
-
-- Protección de la seguridad ciudadana
-
-
-STS 1234/2019
--------------
-
-- Criterios para distinguir posesión de tráfico
-
-
-STS 567/2022
-------------
-
-- Aplicación de atenuantes en delitos de drogas
-
-
-STEDH caso X vs España
-----------------------
-
-- Derechos en procedimientos por drogas
+R: Sí, mediante la suspensión de la ejecución de la pena (art. 80 CP) si se cumplen requisitos. La cancelación de antecedentes (art. 136 CP) depende del tiempo fijado según la pena impuesta; no existe un plazo único de 3-5 años para todos los casos.
 
 
 Convención de 1988
@@ -183,11 +144,11 @@ Conclusión
 
 P: ¿Cuáles son las penas por tráfico de drogas en España?
 
-R: Las penas por tráfico de drogas varían según la cantidad y tipo de sustancia. Para cantidades pequeñas pueden ser de 3 meses a 3 años de prisión. Para cantidades medias: 1-5 años. Para grandes cantidades o organizadas: 3-9 años. Si hay reincidencia, las penas se duplican.
+R: Dependen del tipo penal aplicable y las circunstancias (arts. 368-370 CP). El art. 368 establece el tipo básico; los arts. 369, 369 bis y 370 recogen agravantes (grave daño a la salud, organización, dirección, etc.) con incrementos de pena.
 
 P: ¿Se puede evitar la cárcel por posesión de drogas?
 
-R: Sí, en casos de posesión para consumo propio, se puede aplicar la Ley Orgánica 4/2015 que permite sustituir la pena de prisión por trabajos en beneficio de la comunidad, multas o tratamientos de rehabilitación, especialmente si es la primera vez.
+R: La posesión para consumo propio no es delito penal; puede sancionarse administrativamente si ocurre en vía pública (LO 4/2015). En condenas penales, cabe la suspensión de la pena si se cumplen los requisitos del art. 80 CP.
 
 P: ¿Qué tipos de drogas están prohibidas en España?
 
@@ -199,7 +160,7 @@ R: Se considera tráfico cuando la cantidad supera lo razonable para consumo per
 
 P: ¿Puedo ser condenado por cultivar cannabis en casa?
 
-R: Sí, el cultivo de cannabis está prohibido según la Ley Orgánica 4/2015. Para pequeñas cantidades (menos de 3 plantas) se puede sancionar administrativamente, pero cultivos mayores constituyen delito contra la salud pública con penas de 3 meses a 3 años de prisión.
+R: El cultivo destinado a tráfico es delito (art. 368 CP). El cultivo para consumo propio en ámbito privado no es delito penal; pueden existir sanciones administrativas en determinados supuestos (LO 4/2015).
 
 P: ¿Qué defensas existen contra acusaciones de tráfico de drogas?
 
@@ -211,5 +172,5 @@ R: En aeropuertos se aplican criterios más estrictos. Cualquier cantidad puede 
 
 P: ¿Puedo evitar antecedentes penales por drogas?
 
-R: Sí, mediante la suspensión de la condena con condición de no delinquir, o aplicando la libertad vigilada. También se puede solicitar la cancelación de antecedentes penales después de 3-5 años sin delitos, según el artículo 136 del Código Penal.
+R: Es posible solicitar la suspensión de la ejecución de la pena (art. 80 CP) si se cumplen los requisitos. La cancelación de antecedentes (art. 136 CP) depende del tiempo fijado según la pena impuesta; no hay un plazo único para todos los casos.
 

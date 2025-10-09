@@ -1,44 +1,21 @@
-Habeas Corpus Recurso Amparo
-============================
+Habeas Corpus y Recurso de Amparo
+---------------------------------
 
-
-Introducción
-------------
-
-Volver al hub de Defensa Penal Urgente
-
-
-Habeas Corpus: Recurso de Amparo
---------------------------------
-
-Protección constitucional contra detenciones ilegales.
-                Cómo interponer habeas corpus y cuándo es efectivo.
+Protección constitucional contra detenciones ilegales y vías de tutela.
+                Diferencias entre el procedimiento de habeas corpus y el recurso de amparo.
 
 
 habeas corpus
 -------------
 
-es uno de los recursos constitucionales más poderosos
-                  para proteger la libertad personal. Regulado por el
+es un procedimiento preferente y sumario para proteger la libertad personal frente a detenciones ilegales. Reconocido en el
 
 artículo 17.4 de la Constitución Española
 
 
-Ley Orgánica 2/1979
--------------------
+y regulado por la Ley Orgánica 6/1984, se sustancia ante el Juzgado de Instrucción competente (no ante el Tribunal Constitucional).
 
-, permite impugnar cualquier
-                  privación de libertad que vulnere derechos fundamentales.
-
-A diferencia de los recursos ordinarios, el habeas corpus se dirige directamente al
-
-
-Tribunal Constitucional
------------------------
-
-, saltándose la vía judicial ordinaria cuando
-                  se han agotado los recursos o cuando existe urgencia manifiesta. Esta guía explica
-                  cuándo y cómo interponer este recurso extraordinario de protección.
+Por su parte, el recurso de amparo constitucional se interpone ante el Tribunal Constitucional conforme a la Ley Orgánica 2/1979, una vez agotadas las vías judiciales ordinarias, cuando se alega vulneración de derechos fundamentales.
 
 
 Lecciones de estos Casos
@@ -48,7 +25,7 @@ Lecciones de estos Casos
 
 • La documentación detallada es crucial para la admisión del recurso
 
-• El Tribunal Constitucional actúa con rapidez en casos de urgencia
+• El Juzgado de Instrucción resuelve con carácter urgente; el Tribunal Constitucional solo interviene en el recurso de amparo
 
 • Las resoluciones pueden incluir indemnizaciones por daños morales
 
@@ -70,14 +47,14 @@ STC 114/2017
 - Efectividad del habeas corpus
 -------------------------------
 
-El habeas corpus es un instrumento excepcional pero poderosísimo para proteger la libertad personal
-                  contra vulneraciones constitucionales. Aunque su interposición requiere fundamentos sólidos y
-                  documentación detallada, puede lograr la libertad inmediata en casos de detenciones claramente ilegales.
+El habeas corpus es un instrumento urgente para proteger la libertad personal
+                  contra detenciones ilegales. Aunque requiere fundamentos suficientes y
+                  una mínima documentación, puede lograr la inmediata puesta a disposición judicial o la libertad si procede.
 
 La clave está en actuar con rapidez y contar con la asesoría de abogados especializados que conozcan
-                  los requisitos formales y sustantivos del Tribunal Constitucional. En STANS Abogados tenemos amplia
-                  experiencia en la interposición de habeas corpus y podemos valorar si tu caso reúne los requisitos
-                  para este recurso extraordinario de protección.
+                  los requisitos formales y sustantivos ante el Juzgado de Instrucción (LO 6/1984),
+                  reservando el recurso de amparo (LO 2/1979) para supuestos de vulneración de derechos
+                  fundamentales tras agotar la vía judicial ordinaria.
 
 
 Consulta Habeas Corpus
@@ -91,33 +68,29 @@ Conclusión
 
 P: ¿Qué es el habeas corpus?
 
-R: El habeas corpus es un recurso de amparo constitucional que protege contra detenciones ilegales o irregulares. Permite impugnar la privación de libertad ante el Tribunal Constitucional cuando se han agotado las vías judiciales ordinarias.
+R: Es un procedimiento urgente (LO 6/1984) para llevar de inmediato a la persona detenida ante el Juzgado de Instrucción y comprobar la legalidad de su detención. No se tramita ante el Tribunal Constitucional.
 
 P: ¿Cuándo se puede interponer habeas corpus?
 
-R: Se puede interponer cuando hay vulneración de derechos fundamentales relacionados con la libertad personal: detenciones ilegales, incomunicación prolongada, torturas, tratos inhumanos, o cuando se han agotado los recursos ordinarios sin respuesta efectiva.
+R: Cuando existan indicios de detención ilegal (falta de motivos, plazos excedidos, incomunicación indebida, tratos inhumanos) o irregularidades graves en la privación de libertad. No exige agotar recursos ordinarios.
 
 P: ¿Quién puede interponer habeas corpus?
 
-R: Lo puede interponer la persona detenida, sus familiares directos, o cualquier persona en su nombre. También puede ser interpuesto de oficio por el Tribunal Constitucional si detecta vulneraciones evidentes de derechos fundamentales.
+R: La persona detenida, su cónyuge o persona análoga, familiares, el Ministerio Fiscal, el Defensor del Pueblo, o de oficio el juez (art. 3 LO 6/1984).
 
 P: ¿Cuál es el plazo para interponer habeas corpus?
 
-R: No hay plazo específico para interponer habeas corpus, pero se recomienda hacerlo lo antes posible. Es especialmente urgente en casos de torturas, tratos inhumanos o detenciones que superen los límites legales.
+R: No hay plazo cerrado; debe solicitarse de inmediato ante cualquier detención presuntamente ilegal. El juzgado debe resolver con urgencia.
 
 P: ¿Qué ocurre después de interponer habeas corpus?
 
-R: El Tribunal Constitucional examina la petición en 24-48 horas. Puede requerir información a las autoridades, suspender la detención preventiva, o ordenar la inmediata puesta en libertad si detecta vulneraciones manifiestas.
+R: El Juzgado de Instrucción convoca comparecencia urgente, oye a las partes y resuelve si mantiene o cesa la privación de libertad, o dicta medidas correctoras.
 
 P: ¿Es gratuito el habeas corpus?
 
-R: Sí, el habeas corpus es gratuito. No requiere tasas judiciales ni gastos de abogado, ya que es un mecanismo de protección de derechos fundamentales establecido por la Constitución Española.
+R: Sí. No requiere tasas judiciales y puede promoverse sin necesidad de abogado, sin perjuicio de la asistencia letrada si se solicita.
 
 P: ¿Puede suspender una condena firme?
 
-R: No, el habeas corpus no suspende condenas firmes. Solo protege contra privaciones de libertad ilegales o irregulares. Para impugnar condenas, deben usarse los recursos ordinarios (apelación, casación).
-
-P: ¿Qué diferencia hay con el habeas corpus americano?
-
-R: El habeas corpus español es más limitado que el americano. Solo protege contra vulneraciones constitucionales graves relacionadas con la libertad, mientras que el americano puede revisar aspectos procesales más amplios.
+R: No. Controla la legalidad de la privación de libertad en ese momento; las condenas firmes se impugnan por las vías ordinarias y, en su caso, amparo constitucional.
 

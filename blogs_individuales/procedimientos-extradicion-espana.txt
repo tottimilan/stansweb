@@ -19,7 +19,9 @@ que involucra la cooperación internacional
                   de numerosos tratados internacionales, tiene un marco legal sofisticado para gestionar estos procedimientos.
 
 Esta guía completa analiza el proceso de extradición desde la perspectiva española,
-                  basándose en la
+                  basándose en la Ley Orgánica 3/2003 (cooperación jurídica internacional en materia penal),
+                  en la Ley 23/2014 (reconocimiento mutuo en la UE, incluyendo la Decisión Marco 2002/584/JAI sobre OEDE)
+                  y en la competencia de la Audiencia Nacional (LOPJ).
 
 
 Extradición UE
@@ -66,10 +68,10 @@ Derechos Europeos
 • No doble enjuiciamiento (ne bis in idem)
 
 
-Ley 4/2019, de 18 diciembre
----------------------------
+Ley 23/2014
+-----------
 
-- Reforma del procedimiento de extradición
+- Reconocimiento mutuo en la UE (incluye OEDE)
 
 
 Ley Orgánica 3/2003
@@ -81,13 +83,19 @@ Ley Orgánica 3/2003
 Constitución Española (1978)
 ----------------------------
 
-- Artículos 13 y 25 sobre extradición
+- Art. 13.3 (delitos políticos) y art. 24 (tutela judicial efectiva)
 
 
 Decisión Marco 2002/584/JAI
 ---------------------------
 
 - Extradición simplificada en la UE
+
+Jurisprudencia relevante
+------------------------
+
+- STC 91/2000 (límites constitucionales a la extradición)
+- STJUE Melloni (C-399/11) sobre confianza mutua y OEDE
 
 
 Ver decisión marco

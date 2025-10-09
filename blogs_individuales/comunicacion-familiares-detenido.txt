@@ -115,5 +115,5 @@ R: Sí, tus familiares pueden designar un abogado de confianza. Si no pueden cos
 Fundamentación Normativa
 =======================
 
-El CP en artículo 174 sanciona la incomunicación ilegal como delito contra la libertad, analizando penas de inhabilitación. La LECrim (art. 520) regula el derecho a comunicación, analizando su rol en la presunción de inocencia. La CE (art. 17) protege la libertad y dignidad, con principios de proporcionalidad. En UE, Directiva 2012/13/UE analiza el derecho a información y comunicación familiar en detenciones.
+La LECrim (art. 520) regula el derecho a la comunicación, incluidos los avisos a familiares y abogado, con garantías reforzadas. La CE (art. 17) protege la libertad y dignidad, y el CEDH (art. 8) garantiza la vida privada y familiar. En UE, la Directiva 2012/13/UE refuerza el derecho a la información del detenido. La incomunicación solo puede acordarse judicialmente, con motivación y por tiempo limitado, bajo control judicial y fiscal.
 

@@ -28,121 +28,108 @@ es una de las conquistas
 
 artículo 15 de la Constitución Española
 
-y en tratados internacionales
-                  como la
 
+y por instrumentos internacionales como la
+-----------------------------------------
 
-Convención contra la Tortura
+Convención contra la Tortura (1984)
+
+, esta prohibición es absoluta y aplicable en cualquier
+                  circunstancia y contra cualquier autoridad.
+
+Esta guía explica cómo detectar maltratos, qué hacer si sufres torturas o tratos inhumanos o degradantes,
+                  los protocolos de protección existentes, y cómo obtener reparación integral por los
+                  daños sufridos, basándose en el
+
+Código Penal (arts. 173-177)
 ----------------------------
 
-, esta prohibición es absoluta e
-                  imprescriptible, aplicable en cualquier circunstancia y contra cualquier autoridad.
+, el
 
-Esta guía exhaustiva explica cómo detectar maltratos, qué hacer si sufres torturas,
-                  los protocolos de protección existentes, y cómo obtener reparación integral por los
-                  daños sufridos, basándose en la
+Convenio Europeo de Derechos Humanos (art. 3)
+---------------------------------------------
 
-
-Ley Orgánica 1/2014
--------------------
-
-contra la tortura
-                  y la jurisprudencia del
+y la jurisprudencia del Tribunal Constitucional y Tribunal Supremo.
 
 
 Reparación por Torturas
 -----------------------
 
-Las víctimas de torturas tienen derecho a una reparación integral que incluye
-                        aspectos médicos, psicológicos, económicos y sociales, según establece la
-                        Ley 1/2014 y los estándares internacionales.
+Las víctimas tienen derecho a una reparación integral que puede incluir
+                        asistencia médica y psicológica, indemnización por daños morales y materiales,
+                        medidas de rehabilitación y garantías de no repetición, conforme a estándares internacionales
+                        y a la responsabilidad patrimonial del Estado cuando proceda.
 
 
 • Reconocimiento público del daño
 ---------------------------------
 
-Preguntas Frecuentes sobre Torturas y Maltratos
+Fundamentación Normativa
+=======================
+
+- CE art. 15: prohibición de torturas y tratos inhumanos o degradantes.
+- CP art. 174: tortura cometida por autoridad o funcionario público; arts. 175-177 conductas conexas; art. 173.1: tratos degradantes.
+- CEDH art. 3: prohibición absoluta de tratos inhumanos o degradantes.
+- CAT 1984: obligaciones de prevención, investigación y sanción.
+- LOPJ art. 11.1: nulidad de la prueba obtenida con vulneración de derechos fundamentales.
 
 
-Ley Orgánica 1/2014
--------------------
+Jurisprudencia orientativa
+--------------------------
 
-Prevención y prohibición de la tortura
+- STEDH Selmouni c. Francia: umbral de gravedad.
+- STC y STS: control de legalidad, motivación reforzada y nulidad de pruebas obtenidas con maltrato.
 
-
-STS 47/2018
------------
-
-- Delitos de torturas en comisaría
-
-
-STEDH Caso Selmouni vs Francia
-------------------------------
-
-- Umbral de gravedad en tratos inhumanos
-
-La protección contra torturas y tratos inhumanos es uno de los pilares fundamentales
-                  del Estado de Derecho y la democracia española. La prohibición absoluta de cualquier
-                  forma de maltrato, ya sea físico o psicológico, constituye una conquista irreversible
-                  de los derechos humanos que debe ser defendida activamente por todos los ciudadanos.
-
-La detección precoz, la documentación exhaustiva y la denuncia inmediata son las
-                  mejores armas contra los maltratos. Cualquier vulneración debe ser combatida con
-                  todos los recursos legales disponibles, incluyendo la cooperación internacional
-                  cuando sea necesaria. En STANS Abogados defendemos activamente los derechos
-                  humanos y contamos con experiencia especializada en casos de torturas y maltratos.
-
-
-Ayuda contra Torturas
----------------------
-
-Más información sobre derechos de detenidos
-
-
-Derechos Constitucionales del Detenido
---------------------------------------
-
-Derecho a la Asistencia Letrada del Detenido
-
-
-Derechos a la Reparación Integral
----------------------------------
 
 Preguntas Frecuentes sobre Torturas y Maltratos
+-----------------------------------------------
+
+P: ¿Qué se considera tortura según la legislación española?
+
+R: El CP (art. 174) tipifica como tortura los actos cometidos por autoridad o funcionario público
+   con fines como obtener confesiones o castigar, causando sufrimientos graves físicos o mentales.
+   Los tratos inhumanos o degradantes se sancionan conforme al art. 173.1 CP.
+
+P: ¿Cuál es la pena por cometer torturas?
+
+R: Las penas varían según el resultado y circunstancias (art. 174 CP y concordantes). La tortura no es
+   imprescriptible por sí misma; la prescripción se rige por el art. 131 CP en función de la pena, sin perjuicio
+   de que ciertos crímenes internacionales tengan régimen específico.
+
+P: ¿Qué hacer si sufro tratos degradantes durante la detención?
+
+R: Denuncia inmediatamente, solicita asistencia médica forense independiente, informa a tu abogado,
+   documenta todo (fotos, testigos) y pide la preservación de videos/actas. Puedes solicitar medidas cautelares
+   de protección y el cambio de centro si procede.
+
+P: ¿Puede un médico policial examinarme si sospecho torturas?
+
+R: Tienes derecho a reconocimiento por un médico forense independiente y a segunda opinión. Puedes recusar
+   por falta de imparcialidad cuando existan motivos razonables.
+
+P: ¿Qué ocurre si confieso bajo torturas o tratos inhumanos?
+
+R: Cualquier prueba obtenida con vulneración de derechos fundamentales (incluidas confesiones) es nula de
+   pleno derecho conforme al art. 11.1 LOPJ y la doctrina constitucional y del Tribunal Supremo.
+
+P: ¿Puedo demandar al Estado si sufro torturas?
+
+R: Sí, puedes exigir responsabilidad patrimonial del Estado por funcionamiento anormal del servicio público
+   y reclamar daños y perjuicios, además de la responsabilidad penal y disciplinaria de los responsables.
+
+P: ¿Qué es la incomunicación y cuándo está permitida?
+
+R: La incomunicación solo puede acordarse por resolución judicial motivada y por tiempo estrictamente necesario,
+   con garantías reforzadas. Su uso está excepcionalmente tasado y sometido a control judicial y fiscal permanente.
+
+P: ¿Protege la Constitución contra todo tipo de maltrato?
+
+R: Sí, el art. 15 CE prohíbe absolutamente las torturas y tratos inhumanos o degradantes.
 
 
 Conclusión
 ----------
 
-P: ¿Qué se considera tortura según la legislación española?
-
-R: La tortura se define como cualquier acto por el cual se inflige intencionalmente a una persona dolores o sufrimientos graves, ya sean físicos o mentales, con el fin de obtener información, confesión, castigo, intimidación o discriminación (Ley Orgánica 1/2014).
-
-P: ¿Cuál es la pena por cometer torturas?
-
-R: Las torturas están castigadas con penas de 2 a 8 años de prisión (artículo 174 CP). Si resultan lesiones graves, la pena aumenta a 4-10 años, y si causan la muerte, a 8-12 años. Nunca prescriben y son imprescriptibles.
-
-P: ¿Qué hacer si sufro tratos degradantes durante la detención?
-
-R: Denuncia inmediatamente, solicita asistencia médica forense, informa a tu abogado, documenta todo (fotos, testigos), y solicita cambio de centro de detención. Cualquier maltrato debe ser denunciado ante la Fiscalía de Derechos Humanos.
-
-P: ¿Puede un médico policial examinarme si sospecho torturas?
-
-R: No, debes solicitar un médico forense independiente. El médico policial puede ser recusado por falta de imparcialidad. Tienes derecho a que un forense independiente examine cualquier lesión o sospecha de maltrato.
-
-P: ¿Qué ocurre si confieso bajo torturas?
-
-R: Cualquier confesión obtenida bajo torturas o tratos inhumanos es nula de pleno derecho (artículo 293 LECrim). No puede utilizarse como prueba y anula todo el procedimiento penal.
-
-P: ¿Puedo demandar al Estado si sufro torturas?
-
-R: Sí, puedes exigir responsabilidad patrimonial del Estado por vulneración de derechos fundamentales. La indemnización incluye daños morales, físicos y psicológicos, además de intereses y costas procesales.
-
-P: ¿Qué es la incomunicación y cuándo está permitida?
-
-R: La incomunicación es el aislamiento total, permitida solo por orden judicial motivada y por tiempo limitado (máximo 5 días). Cualquier incomunicación sin orden judicial o excesivamente prolongada constituye trato inhumano.
-
-P: ¿Protege la Constitución contra todo tipo de maltrato?
-
-R: Sí, el artículo 15 de la Constitución prohíbe expresamente las penas o tratos inhumanos o degradantes. Esta prohibición es absoluta e irrenunciable, aplicable a todas las autoridades públicas en cualquier circunstancia.
+La protección contra la tortura y los tratos inhumanos es un pilar del Estado de Derecho. Documentar, denunciar
+y activar rápidamente las garantías procesales es esencial para la defensa de los derechos fundamentales.
 

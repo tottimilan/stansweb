@@ -80,6 +80,11 @@ STJUE Caso C-396/11
 
 - Mando de detención europeo y derechos
 
+STJUE Melloni (C-399/11)
+------------------------
+
+- Confianza mutua y límites al control en OEDE
+
 La audiencia de extradición es un momento crucial donde se definen los derechos
                   del extraditado y se determina el futuro del procedimiento. Una preparación adecuada,
                   el ejercicio efectivo de los derechos constitucionales, y una estrategia de defensa
@@ -159,5 +164,5 @@ R: Sí, contra la resolución judicial cabe recurso de reforma (5 días) ante el
 Fundamentación Normativa
 =======================
 
-El Código Penal (CP) en artículos 607-609 tipifica delitos relacionados con extradición, analizando su conexión con crímenes internacionales como genocidio. La LECrim, en artículos 831-841, regula el procedimiento de audiencia, analizando garantías como la doble instancia. La CE, en artículo 24, asegura tutela judicial efectiva y presunción de inocencia. En UE, la Decisión Marco 2002/584/JAI y Directiva 2012/13/UE analizan el mandato de detención europeo, promoviendo confianza mutua y proporcionalidad en extradiciones.
+Marco principal: Ley Orgánica 3/2003, de cooperación jurídica internacional en materia penal, y Ley 23/2014, de reconocimiento mutuo de resoluciones penales en la UE (que incorpora la Decisión Marco 2002/584/JAI sobre la Orden de Detención Europea). Competencia y tramitación ante la Audiencia Nacional (LOPJ). Constitución Española: arts. 13.3 (delitos políticos) y 24 (tutela judicial efectiva). Estándares CEDH: arts. 3 (prohibición de tratos inhumanos) y 6 (proceso equitativo). La LECrim no regula el procedimiento de extradición; se aplica normativa especial.
 
