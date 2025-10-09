@@ -51,6 +51,17 @@ const getLawyers = (t: any) => [
     hoverImage: '/images/Equipo-optimized/Diego4.webp?v=3',
     backgroundImage: '/images/Equipo-optimized/Diego3.webp?v=3',
   },
+  {
+    name: t.team.ada.name,
+    role: t.team.ada.role,
+    summary: t.team.ada.summary,
+    tags: t.team.ada.tags,
+    languages: ['ES', 'EN', 'FR', 'IT'],
+    experience: t.team.ada.experience,
+    image: '/images/Equipo-optimized/Ada1.webp?v=1',
+    hoverImage: '/images/Equipo-optimized/Ada4.webp?v=1',
+    backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=1',
+  },
 ];
 
 const getAreas = (t: any) => [
@@ -146,7 +157,7 @@ export default function Page() {
           }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mx-auto max-w-7xl px-3 sm:px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -166,7 +177,7 @@ export default function Page() {
           </motion.div>
           
           <div 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lawyer-cards-container"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lawyer-cards-container"
             role="list"
             aria-label={t.common.listaAbogados}
           >

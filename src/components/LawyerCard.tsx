@@ -247,27 +247,27 @@ export default function LawyerCard({
             </motion.button>
           </div>
 
-          <h3 className="text-xl font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
-          <p className="text-white/70 text-sm mt-1 mb-2 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
+          <h3 className="text-lg font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
+          <p className="text-white/70 text-xs mt-1 mb-2 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
           
           {experience && (
-            <div className="flex items-center gap-2 mb-3 transition-all duration-1000 group-hover:translate-x-2">
-              <Clock className="h-4 w-4 text-gold transition-all duration-1000 group-hover:scale-110" />
-              <span className="text-xs text-gold font-medium transition-all duration-1000 group-hover:text-gold/90">{experience} de experiencia</span>
+            <div className="flex items-center gap-2 mb-2 transition-all duration-1000 group-hover:translate-x-2">
+              <Clock className="h-3 w-3 text-gold transition-all duration-1000 group-hover:scale-110" />
+              <span className="text-[10px] text-gold font-medium transition-all duration-1000 group-hover:text-gold/90">{experience} de experiencia</span>
             </div>
           )}
           
-          <p className="mt-3 text-white/80 text-sm leading-relaxed flex-grow transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-1">{summary}</p>
+          <p className="mt-2 text-white/80 text-xs leading-snug flex-grow transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-1">{summary}</p>
 
           {!!tags.length && (
-            <div className="mt-4 transition-all duration-1000 group-hover:translate-x-2">
-              <div className="flex items-center mb-2">
-                <Award className="h-4 w-4 mr-2 text-gold transition-all duration-1000 group-hover:scale-110" />
-                <span className="text-xs text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">Especializaciones</span>
+            <div className="mt-3 transition-all duration-1000 group-hover:translate-x-2">
+              <div className="flex items-center mb-1.5">
+                <Award className="h-3 w-3 mr-1.5 text-gold transition-all duration-1000 group-hover:scale-110" />
+                <span className="text-[10px] text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">Especializaciones</span>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5">
                 {tags.map(t => (
-                  <span key={t} className="text-xs bg-gold/10 text-gold border border-gold/20 rounded-full px-3 py-1 transition-all duration-1000 group-hover:bg-gold/20 group-hover:border-gold/40 group-hover:scale-105">
+                  <span key={t} className="text-[10px] bg-gold/10 text-gold border border-gold/20 rounded-full px-2 py-0.5 transition-all duration-1000 group-hover:bg-gold/20 group-hover:border-gold/40 group-hover:scale-105">
                     {t}
                   </span>
                 ))}
@@ -275,16 +275,16 @@ export default function LawyerCard({
             </div>
           )}
 
-          <div className="mt-4 transition-all duration-1000 group-hover:translate-x-2">
-            <div className="flex items-center mb-2">
-              <Languages className="h-4 w-4 mr-2 text-gold transition-all duration-1000 group-hover:scale-110" />
-                              <span className="text-xs text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">
+          <div className="mt-3 transition-all duration-1000 group-hover:translate-x-2">
+            <div className="flex items-center mb-1.5">
+              <Languages className="h-3 w-3 mr-1.5 text-gold transition-all duration-1000 group-hover:scale-110" />
+                              <span className="text-[10px] text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">
                   {language === 'ar' ? 'اللغات' : 'Idiomas'}
                 </span>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-1.5">
               {languages.map(lang => (
-                <span key={lang} className="text-xs bg-apricot/10 text-apricot border border-apricot/20 rounded-full px-3 py-1 transition-all duration-1000 group-hover:bg-apricot/20 group-hover:border-apricot/40 group-hover:scale-105">
+                <span key={lang} className="text-[10px] bg-apricot/10 text-apricot border border-apricot/20 rounded-full px-2 py-0.5 transition-all duration-1000 group-hover:bg-apricot/20 group-hover:border-apricot/40 group-hover:scale-105">
                   {lang}
                 </span>
               ))}
