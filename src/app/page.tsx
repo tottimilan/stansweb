@@ -58,9 +58,9 @@ const getLawyers = (t: any) => [
     tags: t.team.ada.tags,
     languages: ['ES', 'EN', 'FR', 'IT'],
     experience: t.team.ada.experience,
-    image: '/images/Equipo-optimized/Ada1.webp?v=1',
-    hoverImage: '/images/Equipo-optimized/Ada4.webp?v=1',
-    backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=1',
+    image: '/images/Equipo-optimized/Ada1.webp?v=2',
+    hoverImage: '/images/Equipo-optimized/Ada4.webp?v=2',
+    backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=2',
   },
 ];
 
