@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Search, X, ChevronDown, ChevronUp, HelpCircle, ArrowRight, Phone, Mail, BookOpen, User } from 'lucide-react';
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import Footer from '@/components/FooterOptimized';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';

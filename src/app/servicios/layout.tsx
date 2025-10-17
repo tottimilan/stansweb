@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Servicios de Defensa Penal | STANS ABOGADOS - Especialistas en Derecho Penal',
+  title: 'Servicios Derecho Penal | STANS ABOGADOS',
   description: 'Servicios especializados en defensa penal: libertad de expresión, terrorismo, delitos económicos, robos, orden público y más. Abogados penalistas en Madrid con experiencia en Audiencia Nacional.',
   keywords: 'servicios derecho penal, abogados penalistas Madrid, defensa penal España, terrorismo Audiencia Nacional, delitos económicos, extradiciones, OEDE, asistencia letrada 24/7',
   openGraph: {

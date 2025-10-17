@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import Footer from '@/components/FooterOptimized';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -568,6 +568,52 @@ export default function CasosPage() {
       </section>
 
              </div>
+
+       {/* SEO Content Section - Expandir contenido textual */}
+       <section className="bg-white py-16">
+         <div className="mx-auto max-w-4xl px-4 sm:px-6">
+           <article className="prose prose-lg max-w-none">
+             <h2 className="text-2xl font-bold text-gold mb-6">
+               {language === 'ar' ? 'قضايا نجاح حقيقية ونتائج قابلة للتحقق' : 'Casos de Éxito Reales y Resultados Verificables'}
+             </h2>
+             
+             <p className="text-black/80 leading-relaxed mb-6">
+               {language === 'ar'
+                 ? 'في ستانس للمحاماة، نحن فخورون بنتائجنا ونشاركها بشفافية. كل حالة معروضة هنا حقيقية وتمثل دفاعاً قدمناه في المحاكم الإسبانية. نعرض فقط القضايا المسموح بنشرها علناً، مع احترام كامل للخصوصية والسرية المهنية.'
+                 : 'En STANS ABOGADOS nos enorgullecemos de nuestros resultados y los compartimos con transparencia. Cada caso mostrado aquí es real y representa una defensa que hemos realizado en tribunales españoles. Solo mostramos casos que pueden ser publicados públicamente, respetando completamente la privacidad y el secreto profesional.'}
+             </p>
+
+             <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
+               {language === 'ar' ? 'أنواع القضايا التي ندافع عنها' : 'Tipos de Casos que Defendemos'}
+             </h3>
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+               <div className="bg-gold/5 p-4 rounded-lg">
+                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الإرهاب' : 'Terrorismo'}</h4>
+                 <p className="text-black/70 text-sm">{language === 'ar' ? 'أمام المحكمة الوطنية' : 'Ante la Audiencia Nacional'}</p>
+               </div>
+               <div className="bg-gold/5 p-4 rounded-lg">
+                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الجريمة المنظمة' : 'Crimen Organizado'}</h4>
+                 <p className="text-black/70 text-sm">{language === 'ar' ? 'عمليات واسعة النطاق' : 'Operaciones de gran envergadura'}</p>
+               </div>
+               <div className="bg-gold/5 p-4 rounded-lg">
+                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الجرائم الاقتصادية' : 'Delitos Económicos'}</h4>
+                 <p className="text-black/70 text-sm">{language === 'ar' ? 'غسيل الأموال والاحتيال' : 'Blanqueo de capitales y estafa'}</p>
+               </div>
+               <div className="bg-gold/5 p-4 rounded-lg">
+                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'حرية التعبير' : 'Libertad de Expresión'}</h4>
+                 <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع عن الحقوق الأساسية' : 'Defensa de derechos fundamentales'}</p>
+               </div>
+             </div>
+
+             <p className="text-black/80 leading-relaxed mb-4">
+               {language === 'ar'
+                 ? 'إذا كنت تواجه موقفاً قانونياً مشابهاً لأي من القضايا المعروضة، لا تتردد في الاتصال بنا. كل قضية فريدة وتتطلب استراتيجية دفاع مخصصة.'
+                 : 'Si enfrentas una situación legal similar a cualquiera de los casos mostrados, no dudes en contactarnos. Cada caso es único y requiere una estrategia de defensa personalizada basada en sus circunstancias específicas.'}
+             </p>
+           </article>
+         </div>
+       </section>
+
        <Footer />
        <WhatsAppButton />
      </div>

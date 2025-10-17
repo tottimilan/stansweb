@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import Footer from '@/components/FooterOptimized';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
-import { Scale, Shield, Users, FileText, Building, Gavel, AlertTriangle, Briefcase, Home, ArrowRight } from 'lucide-react';
+import { Scale, Shield, Users, FileText, Building, Gavel, AlertTriangle, Briefcase, Home, ArrowRight, Globe, Heart } from 'lucide-react';
 
 const WHATSAPP = '34611687226';
 
@@ -33,7 +33,8 @@ export default function ServiciosPage() {
       features: t.areas.libertadExpresion.features,
       longDescription: 'Defendemos el derecho fundamental a la libertad de expresión en casos complejos que involucran delitos de odio, ofensas a sentimientos religiosos, injurias y calumnias. Nuestro equipo cuenta con amplia experiencia en casos mediáticos y ante la Audiencia Nacional.',
       casosRelacionados: [1, 2, 3],
-      href: '/casos#libertad-expresion'
+      href: '/servicios/libertad-expresion',
+      casosHref: '/casos#libertad-expresion'
     },
     {
       icon: AlertTriangle,
@@ -42,7 +43,8 @@ export default function ServiciosPage() {
       features: t.areas.terrorismo.features,
       longDescription: 'Especialistas en defensa ante la Audiencia Nacional en casos de terrorismo. Experiencia en enaltecimiento del terrorismo, captación, adoctrinamiento, financiación y actividades relacionadas con organizaciones terroristas. Conocimiento profundo de la normativa nacional e internacional.',
       casosRelacionados: [4, 5, 19],
-      href: '/casos#terrorismo'
+      href: '/servicios/terrorismo-audiencia-nacional',
+      casosHref: '/casos#terrorismo'
     },
     {
       icon: Users,
@@ -51,7 +53,8 @@ export default function ServiciosPage() {
       features: t.areas.delitosPersonas.features,
       longDescription: 'Defensa integral en casos de delitos contra la vida, integridad física y moral. Incluye homicidio, lesiones, amenazas, coacciones, detención ilegal y violencia de género. Protección de derechos fundamentales en todas las fases del proceso penal.',
       casosRelacionados: [6, 19, 12],
-      href: '/casos#delitos-personas'
+      href: '/servicios/delitos-personas',
+      casosHref: '/casos#delitos-personas'
     },
     {
       icon: Home,
@@ -60,7 +63,8 @@ export default function ServiciosPage() {
       features: t.areas.robosPatrimonio.features,
       longDescription: 'Defensa especializada en delitos contra el patrimonio y pertenencia a organización criminal. Experiencia en casos complejos de robos con violencia, robos con fuerza, hurtos, receptación y desmantelamiento de grupos criminales organizados.',
       casosRelacionados: [2, 3, 9, 11, 14, 16, 17, 20],
-      href: '/casos#patrimonio-crimen-organizado'
+      href: '/servicios/robos-patrimonio',
+      casosHref: '/casos#patrimonio-crimen-organizado'
     },
     {
       icon: Building,
@@ -69,7 +73,8 @@ export default function ServiciosPage() {
       features: t.areas.delitosEconomicos.features,
       longDescription: 'Asesoría penal especializada en delitos económicos, empresariales y laborales. Defensa técnica en estafa, fraudes, blanqueo de capitales, delitos societarios, falsedad documental, insolvencias punibles y delitos contra los derechos de los trabajadores.',
       casosRelacionados: [7, 10, 15],
-      href: '/casos#delitos-economicos'
+      href: '/servicios/delitos-economicos',
+      casosHref: '/casos#delitos-economicos'
     },
     {
       icon: Gavel,
@@ -78,7 +83,51 @@ export default function ServiciosPage() {
       features: t.areas.ordenPublico.features,
       longDescription: 'Defensa en casos de orden público, delitos contra la salud pública (tráfico de drogas) y ejecución penal. Asesoramiento en resistencia a la autoridad, atentado, desobediencia, tenencia de armas, medidas cautelares, libertad provisional y recursos en fase de ejecución.',
       casosRelacionados: [8, 13, 18],
-      href: '/casos#orden-publico'
+      href: '/servicios/orden-publico-drogas',
+      casosHref: '/casos#orden-publico'
+    },
+    // Servicios adicionales
+    {
+      icon: Globe,
+      title: language === 'ar' ? 'التسليم والأوامر الأوروبية' : 'Extradiciones y OEDE',
+      description: language === 'ar' ? 'دفاع متخصص في عمليات التسليم الدولية وأوامر الاعتقال والتسليم الأوروبية' : 'Defensa especializada en extradiciones internacionales y Órdenes Europeas de Detención y Entrega',
+      features: language === 'ar' ? 
+        ['الدفاع ضد التسليم', 'أوامر الاعتقال الأوروبية', 'التعاون القضائي الدولي', 'حماية الحقوق الأساسية'] :
+        ['Defensa contra extradiciones', 'OEDE y euroórdenes', 'Cooperación judicial internacional', 'Protección de derechos fundamentales'],
+      longDescription: language === 'ar' ? 
+        'متخصصون في إجراءات التسليم الدولية والأوامر الأوروبية. خبرة في الدفاع ضد التسليم وحماية الحقوق الأساسية في الإجراءات العابرة للحدود.' :
+        'Especialistas en procedimientos de extradición internacional y OEDE. Experiencia en defensa contra extradiciones y protección de derechos fundamentales en procedimientos transfronterizos.',
+      casosRelacionados: [],
+      href: '/servicios/extradiciones',
+      casosHref: '/casos'
+    },
+    {
+      icon: Heart,
+      title: language === 'ar' ? 'العنف ضد المرأة' : 'Violencia de Género',
+      description: language === 'ar' ? 'دفاع متخصص في قضايا العنف الأسري والعنف ضد المرأة بحساسية ومهنية' : 'Defensa especializada en casos de violencia doméstica y de género con sensibilidad y profesionalidad',
+      features: language === 'ar' ? 
+        ['الدفاع في اتهامات العنف', 'تمثيل الضحايا', 'أوامر الحماية', 'الدفاع ضد الاتهامات الكاذبة'] :
+        ['Defensa en acusaciones', 'Representación de víctimas', 'Órdenes de protección', 'Defensa contra denuncias falsas'],
+      longDescription: language === 'ar' ? 
+        'نقدم المساعدة القانونية لكل من الضحايا والمتهمين، مع ضمان حماية الحقوق الأساسية والإجراءات القانونية الواجبة في جميع الحالات.' :
+        'Ofrecemos asistencia legal tanto a víctimas como a investigados, garantizando la protección de derechos fundamentales y el debido proceso en todos los casos.',
+      casosRelacionados: [],
+      href: '/servicios/violencia-genero',
+      casosHref: '/casos'
+    },
+    {
+      icon: Scale,
+      title: language === 'ar' ? 'الإجراءات الجنائية والطعون' : 'Procedimiento Penal y Recursos',
+      description: language === 'ar' ? 'دفاع متخصص في جميع مراحل الإجراءات الجنائية من الاعتقال إلى الطعون' : 'Defensa especializada en todas las fases del procedimiento penal desde la detención hasta los recursos',
+      features: language === 'ar' ? 
+        ['الدفاع العاجل 24/7', 'الإحضار القضائي', 'التدابير الاحترازية', 'الطعون والموارد الاستثنائية'] :
+        ['Defensa urgente 24/7', 'Habeas corpus', 'Medidas cautelares', 'Recursos y apelaciones'],
+      longDescription: language === 'ar' ? 
+        'متخصصون في جميع مراحل الإجراءات الجنائية. من الدفاع في الاعتقال الأولي إلى الطعون في المحكمة العليا.' :
+        'Especialistas en todas las fases del procedimiento penal. Desde la defensa en la detención inicial hasta los recursos ante el Tribunal Supremo.',
+      casosRelacionados: [],
+      href: '/servicios/procedimiento-penal',
+      casosHref: '/casos'
     },
   ];
 
@@ -197,12 +246,17 @@ export default function ServiciosPage() {
                       href={service.href}
                       className={`inline-flex items-center gap-2 text-gold hover:text-gold/80 font-medium transition-colors group-hover:gap-3 ${language === 'ar' ? 'flex-row-reverse' : ''}`}
                     >
-                      {t.areas.verCasosExito}
+                      {language === 'ar' ? 'مزيد من المعلومات' : 'Más información'}
                       <ArrowRight className={`h-4 w-4 transition-all ${language === 'ar' ? 'rotate-180' : ''}`} />
                     </Link>
-                    <span className="text-sm text-black/50">
-                      {service.casosRelacionados.length} {t.areas.casosRelacionados}
-                    </span>
+                    {service.casosRelacionados.length > 0 && (
+                      <Link
+                        href={service.casosHref}
+                        className="text-sm text-black/50 hover:text-gold transition-colors"
+                      >
+                        {service.casosRelacionados.length} {t.areas.casosRelacionados}
+                      </Link>
+                    )}
                   </div>
                 </motion.article>
               ))}
@@ -302,6 +356,65 @@ export default function ServiciosPage() {
                 </a>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* SEO Content Section - Expandir servicios */}
+        <section className="bg-white py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <article className="prose prose-lg max-w-none">
+              <h2 className="text-2xl font-bold text-gold mb-6">
+                {language === 'ar' ? 'خدمات دفاع جنائي شاملة في مدريد' : 'Servicios de Defensa Penal Integral en Madrid'}
+              </h2>
+              
+              <p className="text-black/80 leading-relaxed mb-6">
+                {language === 'ar'
+                  ? 'في ستانس للمحاماة، نقدم دفاعاً جنائياً متخصصاً في جميع مجالات القانون الجنائي. فريقنا من المحامين ذوي الخبرة في المحكمة الوطنية والمحكمة العليا والمحكمة الدستورية يضمن دفاعاً عالي الجودة في أي نوع من القضايا الجنائية.'
+                  : 'En STANS ABOGADOS ofrecemos defensa penal especializada en todas las ramas del derecho penal. Nuestro equipo de abogados con experiencia en la Audiencia Nacional, Tribunal Supremo y Tribunal Constitucional garantiza una defensa de calidad en cualquier tipo de procedimiento penal.'}
+              </p>
+
+              <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
+                {language === 'ar' ? 'نهجنا في الدفاع' : 'Nuestro Enfoque de Defensa'}
+              </h3>
+              <p className="text-black/80 leading-relaxed mb-4">
+                {language === 'ar'
+                  ? 'كل قضية فريدة وتتطلب استراتيجية مخصصة. نحن نبدأ بتحليل شامل للوقائع والأدلة، ثم نطور استراتيجية دفاع مصممة خصيصاً لظروف قضيتك المحددة.'
+                  : 'Cada caso es único y requiere una estrategia personalizada. Comenzamos con un análisis exhaustivo de los hechos y las pruebas, luego desarrollamos una estrategia de defensa diseñada específicamente para las circunstancias de tu caso. Nuestro enfoque incluye:'}
+              </p>
+
+              <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
+                <li><strong>{language === 'ar' ? 'التحليل الأولي:' : 'Análisis inicial:'}</strong> {language === 'ar' ? 'مراجعة شاملة لجميع الوثائق والأدلة' : 'Revisión completa de toda la documentación y evidencias disponibles'}</li>
+                <li><strong>{language === 'ar' ? 'الاستراتيجية:' : 'Estrategia:'}</strong> {language === 'ar' ? 'تطوير خطة دفاع مخصصة' : 'Desarrollo de plan de defensa personalizado según objetivos del cliente'}</li>
+                <li><strong>{language === 'ar' ? 'التنفيذ:' : 'Ejecución:'}</strong> {language === 'ar' ? 'تمثيل قوي في جميع مراحل الإجراءات' : 'Representación activa en todas las fases del procedimiento'}</li>
+                <li><strong>{language === 'ar' ? 'المتابعة:' : 'Seguimiento:'}</strong> {language === 'ar' ? 'تحديثات منتظمة وتواصل مستمر' : 'Actualizaciones regulares y comunicación constante con el cliente'}</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
+                {language === 'ar' ? 'لماذا التخصص مهم؟' : '¿Por Qué es Importante la Especialización?'}
+              </h3>
+              <p className="text-black/80 leading-relaxed mb-6">
+                {language === 'ar'
+                  ? 'القانون الجنائي مجال معقد ومتطور باستمرار. التخصص الحصري في هذا المجال يسمح لنا بالبقاء محدثين مع أحدث الاجتهادات القضائية، ومعرفة استراتيجيات الدفاع الأكثر فعالية، وتقديم خدمة عالية الجودة.'
+                  : 'El derecho penal es un área compleja y en constante evolución. La especialización exclusiva en esta materia nos permite mantenernos actualizados con la última jurisprudencia, conocer las estrategias de defensa más efectivas y ofrecer un servicio de máxima calidad. A diferencia de despachos generalistas, en STANS ABOGADOS solo hacemos derecho penal, lo que se traduce en mayor experiencia y mejores resultados para nuestros clientes.'}
+              </p>
+
+              <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
+                <h4 className="text-lg font-semibold text-gold mb-3">
+                  {language === 'ar' ? 'هل تحتاج إلى مساعدة في إحدى هذه المجالات؟' : '¿Necesitas Ayuda en Alguna de estas Áreas?'}
+                </h4>
+                <p className="text-black/80 mb-4">
+                  {language === 'ar'
+                    ? 'اتصل بنا الآن. نحن متاحون 24 ساعة في اليوم، 7 أيام في الأسبوع للرد على استفساراتك وتقييم قضيتك.'
+                    : 'Contacta con nosotros ahora. Estamos disponibles 24 horas al día, 7 días a la semana para responder tus consultas y valorar tu caso.'}
+                </p>
+                <a 
+                  href="tel:+34611687226"
+                  className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                >
+                  {language === 'ar' ? 'اتصل: 34 611 68 72 26+' : 'Llamar: +34 611 68 72 26'}
+                </a>
+              </div>
+            </article>
           </div>
         </section>
 

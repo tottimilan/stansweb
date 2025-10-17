@@ -59,7 +59,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 2,
-    title: 'Procedimientos de Extradición en España: Todo lo que Debes Saber',
+    title: 'Procedimientos de Extradición en España | STANS',
     excerpt: 'Análisis completo del proceso de extradición: requisitos legales, plazos, derechos del extraditado y estrategias de defensa.',
     category: 'Extradiciones',
     author: 'Rubén Vaquero Arribas',
@@ -94,7 +94,7 @@ export const blogPosts: BlogPost[] = [
   // ===== NUEVOS BLOGS SOBRE TERRORISMO =====
   {
     id: 3,
-    title: 'Defensa Penal en Casos de Terrorismo ante la Audiencia Nacional',
+    title: 'Defensa Terrorismo Audiencia Nacional | STANS',
     excerpt: 'Guía completa sobre la defensa legal en delitos de terrorismo. Derechos del acusado, procedimiento ante la Audiencia Nacional y estrategias de defensa por abogados especializados.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',
@@ -136,7 +136,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 4,
-    title: 'Enaltecimiento del Terrorismo en Redes Sociales: Límites Legales y Defensa',
+    title: 'Enaltecimiento Terrorismo Redes Sociales | STANS',
     excerpt: 'Análisis del delito de enaltecimiento del terrorismo en redes sociales. Límites de la libertad de expresión, jurisprudencia del TEDH y estrategias de defensa legal.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',
@@ -178,7 +178,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 5,
-    title: 'Captación y Adoctrinamiento Yihadista por Internet: Defensa Legal',
+    title: 'Captación Yihadista Internet | STANS',
     excerpt: 'Todo sobre el delito de captación yihadista online. Elementos del tipo penal, actuación policial, diferencias con autoadoctrinamiento y estrategias de defensa especializada.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',
@@ -216,7 +216,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 6,
-    title: 'Terrorismo en Internet y Redes Sociales: Límites Legales y Defensa',
+    title: 'Terrorismo Internet y Redes Sociales | STANS',
     excerpt: 'Guía sobre delitos de terrorismo en internet. Enaltecimiento, captación, difusión de propaganda y límites de la libertad de expresión online. Defensa legal especializada.',
     category: 'Terrorismo',
     author: 'Diego Cardona Valero',
@@ -254,7 +254,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 7,
-    title: 'Autoadoctrinamiento Terrorista: Defensa Legal y Garantías Procesales',
+    title: 'Autoadoctrinamiento Terrorista | STANS',
     excerpt: 'Análisis del delito de autoadoctrinamiento terrorista. Diferencias con organización, elementos del tipo penal, el concepto del "lobo solitario" y estrategias de defensa legal.',
     category: 'Terrorismo',
     author: 'Diego Cardona Valero',
@@ -491,7 +491,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 13,
-    title: 'Derechos de los Detenidos: Garantías Procesales Fundamentales',
+    title: 'Derechos de los Detenidos | STANS ABOGADOS',
     excerpt: 'Guía completa de tus derechos constitucionales como detenido en España: garantías procesales, procedimiento legal y protección jurídica según la Constitución y el CEDH.',
     category: 'Derechos Fundamentales',
     author: 'Mounir Elyemlahy Chouati',
@@ -529,7 +529,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 14,
-    title: 'Asistencia Letrada de Urgencia: Tu Derecho a un Abogado Inmediato',
+    title: 'Asistencia Letrada de Urgencia | STANS',
     excerpt: 'Guía sobre el derecho a asistencia letrada de urgencia. Tipos de abogados, funciones, plazos de llegada y cómo ejercer este derecho fundamental.',
     category: 'Defensa Penal Urgente',
     author: 'Equipo STANS Abogados',
@@ -567,7 +567,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 15,
-    title: 'Puesta a Disposición Judicial: Qué Esperar y Cómo Prepararse',
+    title: 'Puesta a Disposición Judicial | STANS',
     excerpt: 'Guía completa sobre la puesta a disposición judicial tras la detención. Plazos, procedimiento, medidas cautelares y estrategias de defensa.',
     category: 'Procedimiento Penal',
     author: 'Rubén Vaquero Arribas',
@@ -609,7 +609,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 16,
-    title: 'Habeas Corpus y Recurso de Amparo: Protección contra Detenciones Ilegales',
+    title: 'Habeas Corpus y Recurso de Amparo | STANS',
     excerpt: 'Guía sobre el procedimiento de habeas corpus y recurso de amparo. Cuándo y cómo utilizarlos para protegerte contra detenciones arbitrarias o ilegales.',
     category: 'Derechos Fundamentales',
     author: 'Rubén Vaquero Arribas',
@@ -693,7 +693,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 18,
-    title: 'Derechos Inmediatos al Ser Detenido: Lo Primero que Debes Saber',
+    title: 'Derechos Inmediatos al Ser Detenido | STANS',
     excerpt: 'Guía práctica sobre tus derechos inmediatos desde el momento de la detención. Qué hacer, qué no hacer y cómo ejercer tus derechos fundamentales correctamente.',
     category: 'Derechos Fundamentales',
     author: 'Equipo STANS Abogados',
@@ -735,7 +735,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 19,
-    title: 'Derechos Constitucionales del Detenido: Artículos 15, 17, 18 y 24 CE',
+    title: 'Derechos Constitucionales Detenido | STANS',
     excerpt: 'Análisis detallado de los derechos constitucionales que te protegen durante la detención: integridad, libertad, intimidad y defensa según la Constitución Española.',
     category: 'Derechos Fundamentales',
     author: 'Mounir Elyemlahy Chouati',
@@ -1096,7 +1096,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 28,
-    title: 'Recursos contra la Extradición: Guía Completa de Impugnación',
+    title: 'Recursos contra Extradición | STANS',
     excerpt: 'Cómo recurrir una orden de extradición. Recursos disponibles, plazos, estrategias y jurisprudencia del TEDH para paralizar entregas.',
     category: 'Extradiciones',
     author: 'Diego Cardona Valero',
@@ -1169,7 +1169,7 @@ export const blogPosts: BlogPost[] = [
   // ===== BLOGS ADICIONALES DERECHOS Y PROTECCIÓN =====
   {
     id: 30,
-    title: 'Derecho a Asistencia Letrada del Detenido: Garantía Fundamental',
+    title: 'Asistencia Letrada del Detenido | STANS',
     excerpt: 'Análisis del derecho constitucional a asistencia letrada. Desde cuándo lo tienes, cómo ejercerlo y consecuencias de su vulneración.',
     category: 'Derechos Fundamentales',
     author: 'Rubén Vaquero Arribas',
@@ -1211,7 +1211,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 31,
-    title: 'Protección contra Torturas y Tratos Inhumanos durante la Detención',
+    title: 'Protección contra Torturas | STANS',
     excerpt: 'Prohibición absoluta de torturas según la Constitución y CEDH. Qué hacer si sufres malos tratos, cómo denunciar y garantías de protección.',
     category: 'Derechos Fundamentales',
     author: 'Mounir Elyemlahy Chouati',
@@ -1253,7 +1253,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 32,
-    title: 'Derechos de Grupos Vulnerables Detenidos: Protección Especial',
+    title: 'Grupos Vulnerables Detenidos | STANS',
     excerpt: 'Derechos reforzados de menores, extranjeros, personas con discapacidad y otros grupos vulnerables durante la detención. Garantías y protecciones específicas.',
     category: 'Derechos Fundamentales',
     author: 'Equipo STANS Abogados',
@@ -1291,7 +1291,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 33,
-    title: 'Derechos en Dependencias Policiales: Condiciones Dignas de Detención',
+    title: 'Derechos en Dependencias Policiales | STANS',
     excerpt: 'Condiciones mínimas que deben cumplir las dependencias policiales. Alimentación, higiene, espacio y garantías durante tu permanencia.',
     category: 'Derechos Fundamentales',
     author: 'Diego Cardona Valero',
@@ -1487,7 +1487,7 @@ export const blogPosts: BlogPost[] = [
   // ===== HUB PAGE TERRORISMO =====
   {
     id: 38,
-    title: 'Hub: Terrorismo y Audiencia Nacional - Centro de Recursos Especializado',
+    title: 'Terrorismo y Audiencia Nacional | STANS',
     excerpt: 'Centro completo de recursos sobre defensa en casos de terrorismo ante la Audiencia Nacional. Enaltecimiento, captación, organización terrorista y derechos fundamentales.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',

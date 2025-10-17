@@ -21,7 +21,7 @@ export default function Navigation() {
   const menuItems = [
     { name: t.nav.inicio, href: '#inicio' },
     { name: t.nav.equipo, href: '#equipo' },
-    { name: t.nav.areas, href: '#areas' },
+    { name: t.nav.areas, href: '/servicios' },
     { name: t.nav.casos, href: '/casos' },
     { name: t.nav.blog, href: '/blog' },
     { name: t.nav.contacto, href: '#contacto' },

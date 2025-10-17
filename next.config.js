@@ -4,6 +4,7 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   generateEtags: true,
+  trailingSlash: false, // URLs sin trailing slash para consistencia SEO
   
   // Configuración de imágenes optimizada para performance
   images: {

@@ -49,9 +49,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Áreas de práctica eliminadas del sitemap - Google no indexa URLs con #
-  // Las secciones están en la homepage y página de casos, ya indexadas arriba
-  const areaPages: MetadataRoute.Sitemap = []
+  // Páginas de servicios individuales - Alta prioridad para SEO de servicios
+  const servicePages = [
+    "/servicios/libertad-expresion",
+    "/servicios/terrorismo-audiencia-nacional",
+    "/servicios/delitos-personas",
+    "/servicios/robos-patrimonio",
+    "/servicios/delitos-economicos",
+    "/servicios/orden-publico-drogas",
+    "/servicios/extradiciones",
+    "/servicios/violencia-genero",
+    "/servicios/procedimiento-penal"
+  ].map(path => ({
+    url: `${baseUrl}${path}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly" as const,
+    priority: 0.9, // Alta prioridad para páginas de servicios
+  }))
 
   // Páginas de miembros del equipo - Alta prioridad para SEO local
   const teamPages = allLawyerSlugs.map(slug => ({
@@ -134,9 +148,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Páginas de casos individuales - Prueba social y credibilidad
-  // Excluir casos en curso para proteger información confidencial
+  // Incluir TODOS los casos (incluidos los en curso) para posicionamiento SEO
   const casePages = casosData
-    .filter((caso: any) => !caso.caso_en_curso) // Excluir casos en investigación
     .map((caso: any) => {
       const casoSeoInfo = (seoInfo as any)[caso.id]
       const url = casoSeoInfo?.url ? `${baseUrl}${casoSeoInfo.url}` : `${baseUrl}/casos/${caso.id}`
@@ -165,5 +178,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.1, // Prioridad reducida de 0.3 a 0.1
   }))
 
-  return [...mainPages, ...teamPages, ...areaPages, ...blogHubPages, ...terrorismBlogPages, ...blogArticlePages, ...casePages, ...legalPages]
+  return [...mainPages, ...servicePages, ...teamPages, ...blogHubPages, ...terrorismBlogPages, ...blogArticlePages, ...casePages, ...legalPages]
 }

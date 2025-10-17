@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Mail, Award, GraduationCap, Languages, Shield, FileText, CheckCircle, ArrowRight, Phone } from 'lucide-react';
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import Footer from '@/components/FooterOptimized';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -118,11 +118,6 @@ export default function LawyerPage() {
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gold mb-4 leading-tight">
                   {lawyer.name}
                 </h1>
-                
-                <p className="text-xl sm:text-2xl text-white/90 mb-6">
-                  {lawyer.role}
-                </p>
-
                 <p className="text-lg text-white/80 leading-relaxed mb-8">
                   {lawyerData.summary}
                 </p>
@@ -436,8 +431,85 @@ export default function LawyerPage() {
           </div>
         </section>
 
-        {/* Otros Miembros del Equipo */}
+        {/* SEO Expertise Section - Expandir contenido para mejor ratio texto/HTML */}
         <section className="bg-white py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <article className="prose prose-lg max-w-none">
+              <h2 className="text-2xl font-bold text-gold mb-6">
+                {language === 'ar' ? `خبرة ${lawyer.name} في الدفاع الجنائي` : `Experiencia y Enfoque de ${lawyer.name}`}
+              </h2>
+              
+              <div className="bg-gold/5 border-l-4 border-gold p-6 mb-8">
+                <h3 className="text-xl font-semibold text-black/90 mb-3">
+                  {language === 'ar' ? 'الفلسفة المهنية' : 'Filosofía Profesional'}
+                </h3>
+                <p className="text-black/80 leading-relaxed mb-4">
+                  {lawyer.slug === 'ruben-vaquero-arribas' && (language === 'ar' 
+                    ? 'يؤمن روبين بأن الدفاع الجنائي الفعال يتطلب معرفة عميقة بالقانون الجنائي الاقتصادي والإجراءات المعقدة. نهجه يجمع بين التحليل التقني الدقيق والاستراتيجية الإجرائية المخصصة لكل حالة.'
+                    : 'Rubén cree firmemente que la defensa penal efectiva requiere un conocimiento profundo del derecho penal económico y de los procedimientos complejos. Su enfoque combina el análisis técnico riguroso con una estrategia procesal personalizada para cada caso. Especialmente en casos de extradiciones y OEDE, donde la coordinación internacional es clave, su experiencia marca la diferencia.')}
+                  {lawyer.slug === 'mounir-elyemlahy-chouati' && (language === 'ar'
+                    ? 'يجمع منير بين المعرفة العميقة بالقانون الإسباني والمغربي، مما يجعله فريداً في مدريد. قدرته على فهم الفروق الثقافية والقانونية بين النظامين القضائيين تمنحه ميزة استراتيجية في قضايا تسليم المطلوبين والإرهاب.'
+                    : 'Mounir combina el conocimiento profundo del derecho español y marroquí, lo que le hace único en Madrid. Su capacidad para entender los matices culturales y legales entre ambos sistemas jurídicos le proporciona una ventaja estratégica en casos de extradiciones y terrorismo. Su dominio del árabe permite una comunicación directa y precisa con clientes árabe-parlantes, eliminando barreras lingüísticas en momentos críticos.')}
+                  {lawyer.slug === 'diego-cardona-valero' && (language === 'ar'
+                    ? 'يتميز دييغو بقدرته الاستراتيجية في التقاضي المعقد وإعداد الطعون أمام المحاكم العليا. تخصصه في القانون الإجرائي الجنائي يسمح له بتحديد الثغرات الإجرائية وتصميم استراتيجيات دفاع قوية.'
+                    : 'Diego se caracteriza por su capacidad estratégica en litigación compleja y preparación de recursos ante tribunales superiores. Su especialización en derecho procesal penal le permite identificar vulneraciones procesales y diseñar estrategias de defensa técnicamente sólidas. Ha participado en operaciones policiales de gran envergadura, logrando resultados favorables en casos de criminalidad organizada.')}
+                  {lawyer.slug === 'ada-de-blas-pascual' && (language === 'ar'
+                    ? 'تجمع آدا بين التكوين الدولي في كامبريدج والمعرفة العملية بالنظام القضائي الإسباني. تخصصها في القانون الجنائي الدولي والاقتصادي يجعلها مثالية للقضايا ذات البعد الدولي أو المكون المالي المعقد.'
+                    : 'Ada combina la formación internacional en Cambridge con el conocimiento práctico del sistema judicial español. Su especialización en derecho penal internacional y económico la hace ideal para casos con dimensión internacional o componente financiero complejo. Su dominio de cuatro idiomas facilita la coordinación en procedimientos transfronterizos.')}
+                </p>
+              </div>
+
+              <h3 className="text-xl font-semibold text-black/90 mb-4">
+                {language === 'ar' ? 'المجالات الرئيسية للممارسة' : 'Áreas Principales de Práctica'}
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                {lawyerData.practiceAreas.slice(0, 8).map((area: string, index: number) => (
+                  <div key={index} className="flex items-start gap-3 bg-charleston/5 p-4 rounded-lg">
+                    <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
+                    <span className="text-black/80">{area}</span>
+                  </div>
+                ))}
+              </div>
+
+              <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
+                {language === 'ar' ? 'لماذا تختار هذا المحامي؟' : '¿Por Qué Elegir a este Abogado?'}
+              </h3>
+              <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
+                {lawyer.achievements.map((achievement, index) => (
+                  <li key={index}>{achievement}</li>
+                ))}
+              </ul>
+
+              <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
+                <h4 className="text-lg font-semibold text-gold mb-3">
+                  {language === 'ar' ? 'استشارة مباشرة' : 'Consulta Directa'}
+                </h4>
+                <p className="text-black/80 mb-4">
+                  {language === 'ar'
+                    ? `إذا كنت تحتاج إلى مساعدة قانونية في ${lawyerData.specializations[0]}، يمكنك التواصل مباشرة مع ${lawyer.name} عبر نموذج الاتصال أو الهاتف 24/7.`
+                    : `Si necesitas asistencia legal en ${lawyerData.specializations[0].toLowerCase()}, puedes contactar directamente con ${lawyer.name} a través del formulario de contacto o por teléfono 24/7.`}
+                </p>
+                <div className="flex gap-4 flex-wrap">
+                  <a 
+                    href="/#contacto"
+                    className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                  >
+                    {language === 'ar' ? 'نموذج الاتصال' : 'Formulario de Contacto'}
+                  </a>
+                  <a 
+                    href="tel:+34611687226"
+                    className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                  >
+                    {language === 'ar' ? 'اتصل الآن' : 'Llamar Ahora'}
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        {/* Otros Miembros del Equipo */}
+        <section className="bg-charleston/5 py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

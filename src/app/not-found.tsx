@@ -6,7 +6,7 @@ import { ArrowLeft, Home, Phone } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 import { translations } from '../translations'
 import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
+import Footer from '../components/FooterOptimized'
 import WhatsAppButton from '../components/WhatsAppButton'
 
 const WHATSAPP = '34611687226';

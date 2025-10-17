@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, User, Share2, ArrowRight, HelpCircle, CheckCircle } from 'lucide-react';
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import Footer from '@/components/FooterOptimized';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import TableOfContents from '@/components/TableOfContents';
@@ -14,6 +14,7 @@ import { translations } from '@/translations';
 import { notFound, useParams } from 'next/navigation';
 import { blogPosts, getBlogPostBySlug, isValidBlogSlug } from '@/data/blogPosts';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import RelatedArticles from '@/components/RelatedArticles';
 
 const WHATSAPP = '34611687226';
 
@@ -313,49 +314,69 @@ export default function BlogPostPage() {
           </div>
         </article>
 
-        {/* Related Articles */}
-        <section className="bg-charleston py-16">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl font-bold text-gold mb-4">
-                {t.blog.articulosRelacionados}
-              </h2>
-              <p className="text-white/80">
-                {language === 'ar' ? 'استكشف المزيد من المحتوى حول هذا الموضوع' : 'Explora más contenido sobre este tema'}
-              </p>
-            </motion.div>
+        {/* Related Articles - Sistema automático de enlaces internos */}
+        <RelatedArticles currentSlug={slug} category={post.category} maxArticles={6} />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {relatedArticles.map((article, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <Link href={`/blog/${article.slug}`}>
-                    <div className="bg-white rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-gold/20 hover:border-gold/50 h-full">
-                      <div className="text-xs bg-gold/10 text-gold px-2 py-1 rounded-full w-fit mb-3">
-                        {article.category}
-                      </div>
-                      <h3 className="text-lg font-semibold text-black mb-3 hover:text-gold transition-colors">
-                        {article.title}
-                      </h3>
-                      <div className="flex items-center text-gold">
-                        <span className="text-sm font-medium">{language === 'ar' ? 'اقرأ المقال' : 'Leer artículo'}</span>
-                        <ArrowRight className="h-3 w-3 ml-1" />
-                      </div>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
+        {/* SEO Conclusion Section - Expandir contenido textual */}
+        <section className="bg-white py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <div className="prose prose-lg max-w-none">
+              <h2 className="text-2xl font-bold text-gold mb-6">
+                {language === 'ar' ? 'الخلاصة والتوصيات' : 'Conclusiones y Recomendaciones'}
+              </h2>
+              <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
+                <p className="text-black/80 leading-relaxed mb-4">
+                  {language === 'ar' 
+                    ? 'إذا كنت تواجه موقفاً قانونياً مشابهاً لما ورد في هذا المقال، فمن الضروري أن تحصل على مشورة قانونية متخصصة في أقرب وقت ممكن. كل حالة لها خصائصها الفريدة، وما ينطبق على قضية قد لا ينطبق على أخرى.'
+                    : 'Si enfrentas una situación legal similar a la descrita en este artículo, es fundamental que obtengas asesoramiento legal especializado lo antes posible. Cada caso tiene sus particularidades únicas, y lo que aplica a un procedimiento puede no aplicar a otro.'}
+                </p>
+                <p className="text-black/80 leading-relaxed">
+                  {language === 'ar'
+                    ? 'في ستانس للمحاماة، لدينا خبرة واسعة في هذا النوع من القضايا ونحن متاحون 24/7 لمساعدتك. لا تتردد في الاتصال بنا.'
+                    : 'En STANS ABOGADOS contamos con amplia experiencia en este tipo de casos y estamos disponibles 24/7 para ayudarte. No dudes en contactarnos para una valoración de tu situación.'}
+                </p>
+              </div>
+
+              <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
+                {language === 'ar' ? 'خطوات التالية الموصى بها' : 'Siguientes Pasos Recomendados'}
+              </h3>
+              <ol className="list-decimal list-inside space-y-3 mb-6 ml-4 text-black/80">
+                <li>
+                  <strong>{language === 'ar' ? 'لا تتصرف بمفردك:' : 'No actúes solo:'}</strong>{' '}
+                  {language === 'ar'
+                    ? 'اتصل بمحامٍ متخصص قبل اتخاذ أي قرار أو الإدلاء بأي تصريح.'
+                    : 'Contacta con un abogado especializado antes de tomar cualquier decisión o hacer declaraciones.'}
+                </li>
+                <li>
+                  <strong>{language === 'ar' ? 'جمع الوثائق:' : 'Recopila documentación:'}</strong>{' '}
+                  {language === 'ar'
+                    ? 'اجمع كل الوثائق المتعلقة بقضيتك (إشعارات، استدعاءات، إلخ).'
+                    : 'Reúne toda la documentación relacionada con tu caso (notificaciones, citaciones, etc.).'}
+                </li>
+                <li>
+                  <strong>{language === 'ar' ? 'استشارة فورية:' : 'Consulta inmediata:'}</strong>{' '}
+                  {language === 'ar'
+                    ? 'اتصل بـ +34 611 68 72 26 أو واتساب 24/7.'
+                    : 'Llama al +34 611 68 72 26 o WhatsApp 24/7.'}
+                </li>
+              </ol>
+
+              <div className="bg-charleston/5 rounded-xl p-6 mt-8">
+                <h4 className="text-lg font-semibold text-gold mb-3">
+                  {language === 'ar' ? 'خبرة ستانس للمحاماة في هذا المجال' : 'Experiencia de STANS ABOGADOS en esta Materia'}
+                </h4>
+                <p className="text-black/70 text-sm leading-relaxed">
+                  {language === 'ar'
+                    ? 'فريقنا من المحامين الجنائيين لديه خبرة مباشرة في قضايا مماثلة أمام المحاكم الإسبانية. نحن نجمع بين المعرفة التقنية العميقة والقدرة على التفاوض والتقاضي الفعال. خدماتنا متاحة بالإسبانية والإنجليزية والعربية.'
+                    : 'Nuestro equipo de abogados penalistas cuenta con experiencia directa en casos similares ante tribunales españoles. Combinamos conocimiento técnico profundo con capacidad de negociación y litigación efectiva. Nuestros servicios están disponibles en español, inglés y árabe.'}
+                </p>
+              </div>
+
+              <p className="text-black/60 text-sm mt-8 italic">
+                {language === 'ar'
+                  ? 'تنويه: هذه المقالة ذات طابع إعلامي ولا تشكل استشارة قانونية. للحصول على مشورة محددة لحالتك، يرجى الاتصال بمحامٍ متخصص.'
+                  : 'Aviso: Este artículo es de carácter informativo y no constituye asesoramiento legal. Para consejo específico sobre tu caso, contacta con un abogado especializado.'}
+              </p>
             </div>
           </div>
         </section>

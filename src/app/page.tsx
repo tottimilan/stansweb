@@ -7,11 +7,12 @@ import LawyerCard from '@/components/LawyerCard';
 import AreaCard from '@/components/AreaCard';
 import LeadForm from '@/components/LeadForm';
 import WhatsAppButton from '@/components/WhatsAppButton';
-import Footer from '@/components/Footer';
+import Footer from '@/components/FooterOptimized';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useScrollHighlight } from '@/hooks/useScrollHighlight';
 import ContactSection from '@/components/ContactSection';
 import CasesSection from '@/components/CasesSection';
+import SEOContentSection from '@/components/SEOContentSection';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 
@@ -286,6 +287,12 @@ export default function Page() {
 
         {/* Contact Section */}
         <ContactSection />
+
+        {/* Separador visual */}
+        <div className="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
+
+        {/* SEO Content Section - Texto rico para mejorar ratio texto/HTML */}
+        <SEOContentSection />
 
         {/* Footer */}
         <Footer />

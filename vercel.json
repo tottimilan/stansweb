@@ -44,6 +44,17 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "stansabogados.com"
+        }
+      ],
+      "destination": "https://www.stansabogados.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/home",
       "destination": "/",
       "permanent": true
@@ -51,6 +62,16 @@
     {
       "source": "/inicio",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/casos/absolucion-blanqueo-capitales",
+      "destination": "/casos/absolucion-blanqueo-imprudencia",
+      "permanent": true
+    },
+    {
+      "source": "/casos/academia-yihad-libertad-provisional",
+      "destination": "/casos/caso-academia-yihad",
       "permanent": true
     }
   ]

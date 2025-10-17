@@ -1,8 +1,9 @@
 # Robots.txt optimizado para STANS ABOGADOS
-# Última actualización: Enero 2025
+# Última actualización: Octubre 2025
+# Siguiendo mejores prácticas de Google 2025
 
 # ============================================
-# REGLAS GENERALES PARA TODOS LOS BOTS
+# REGLAS GENERALES - Permitir TODO por defecto
 # ============================================
 
 User-agent: *
@@ -11,194 +12,82 @@ Allow: /
 # Sitemap principal
 Sitemap: https://www.stansabogados.com/sitemap.xml
 
-# Crawl-delay para proteger servidor
-Crawl-delay: 1
-
 # ============================================
-# BLOQUEAR ÁREAS ADMINISTRATIVAS Y TÉCNICAS
+# BLOQUEAR SOLO LO NECESARIO
 # ============================================
 
-# APIs y backend
+# APIs y rutas dinámicas internas de Next.js
 Disallow: /api/
 Disallow: /_next/data/
-Disallow: /admin/
-Disallow: /scripts/
 
-# Archivos técnicos
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: /opengraph-image*
-Disallow: /twitter-image*
-Disallow: /icon*
-Disallow: /apple-icon*
+# Archivos JSON internos (NO bloquear sitemap.xml)
+Disallow: /*casos-procesados.json
+Disallow: /*seo-info.json
+Disallow: /*translation*.json
+
+# Imágenes de metadata (Open Graph, Twitter, Icons)
+Disallow: /opengraph-image
+Disallow: /twitter-image
+Disallow: /icon-16x16
+Disallow: /icon-32x32
+Disallow: /icon-48x48
+Disallow: /icon-96x96
+Disallow: /icon-128x128
+Disallow: /icon-192x192
+Disallow: /icon-256x256
+Disallow: /icon-384x384
+Disallow: /icon-512x512
+Disallow: /apple-icon
+
+# Source maps (desarrollo)
 Disallow: /*.map$
 
-# Archivos de sistema
-Disallow: /.git/
-Disallow: /.vercel/
-Disallow: /node_modules/
-
 # ============================================
-# PERMITIR RECURSOS IMPORTANTES (ANTES DE BLOQUEAR)
-# ============================================
-
-# Páginas principales (máxima prioridad)
-Allow: /$
-Allow: /servicios$
-Allow: /servicios/
-Allow: /faq$
-Allow: /faq/
-Allow: /blog$
-Allow: /blog/
-Allow: /casos$
-Allow: /casos/
-
-# Equipo (páginas de abogados)
-Allow: /equipo/
-Allow: /equipo/*
-
-# Artículos de blog - Hub Terrorismo (MÁXIMA PRIORIDAD)
-Allow: /blog/defensa-penal-terrorismo-audiencia-nacional
-Allow: /blog/enaltecimiento-terrorismo-redes-sociales-defensa
-Allow: /blog/captacion-adoctrinamiento-yihadista-internet
-Allow: /blog/terrorismo-internet-redes-sociales-limites
-Allow: /blog/autoadoctrinamiento-terrorista-defensa-legal
-Allow: /blog/financiacion-terrorismo-tipos-penas-defensa
-Allow: /blog/pertenencia-organizacion-terrorista-defensa
-Allow: /blog/derechos-fundamentales-procedimientos-terrorismo
-Allow: /blog/terrorismo-libertad-expresion-limite-legal
-
-# Hub pages (pillar content)
-Allow: /blog/terrorismo-audiencia-nacional
-Allow: /blog/defensa-penal-urgente
-Allow: /blog/procedimientos-extradicion
-Allow: /blog/derechos-detenidos
-
-# Artículos importantes - Defensa Penal Urgente
-Allow: /blog/defensa-penal-urgente-guia-completa
-Allow: /blog/derechos-inmediatos-detenido
-Allow: /blog/primeros-pasos-comisaria
-Allow: /blog/asistencia-letrada-urgencia
-Allow: /blog/puesta-disposicion-judicial
-Allow: /blog/habeas-corpus-recurso-amparo
-Allow: /blog/medidas-cautelares-procesos-penales
-Allow: /blog/comunicacion-familiares-detenido
-Allow: /blog/registro-dependencias-detenido
-
-# Artículos importantes - Extradiciones
-Allow: /blog/procedimientos-extradicion-espana
-Allow: /blog/tipos-extradicion-espana
-Allow: /blog/requisitos-extradicion-espana
-Allow: /blog/audiencia-extradicion-espana
-Allow: /blog/recursos-contra-extradicion
-Allow: /blog/derechos-extraditado
-
-# Artículos importantes - Derechos de Detenidos
-Allow: /blog/derechos-detenidos-garantias-procesales
-Allow: /blog/derechos-constitucionales-detenido
-Allow: /blog/derecho-asistencia-letrada-detenido
-Allow: /blog/proteccion-torturas-tratos-inhumanos
-Allow: /blog/derechos-grupos-vulnerables-detenidos
-Allow: /blog/derechos-dependencias-policiales
-Allow: /blog/derechos-procesales-recursos-detenido
-
-# Artículos especializados (3 artículos)
-Allow: /blog/delitos-salud-publica-drogas-consecuencias
-Allow: /blog/terrorismo-internet-enaltecimiento-captacion
-Allow: /blog/blanqueo-capitales-detectar-defenderse
-
-# NOTA: La regla general "Allow: /blog/" en línea 52 cubre cualquier 
-# artículo adicional que no esté listado explícitamente arriba.
-# Los listados arriba tienen PRIORIDAD de crawl.
-
-# Recursos estáticos necesarios para rendering
-Allow: /_next/static/
-Allow: /_next/image
-Allow: /images/
-Allow: /favicon.ico
-Allow: /manifest.json
-Allow: /browserconfig.xml
-
-# Páginas legales (baja prioridad pero indexables)
-Allow: /legal$
-Allow: /privacidad$
-Allow: /cookies$
-Allow: /terminos$
-
-# ============================================
-# BLOQUEAR URLs CON PARÁMETROS
-# ============================================
-
-# Bloquear URLs con parámetros EXCEPTO tracking
-Disallow: /*?*
-Disallow: /*&*
-
-# Permitir parámetros de tracking (marketing)
-Allow: /*?fbclid=*
-Allow: /*?utm_source=*
-Allow: /*?utm_medium=*
-Allow: /*?utm_campaign=*
-Allow: /*?utm_term=*
-Allow: /*?utm_content=*
-Allow: /*?ref=*
-Allow: /*?source=*
-
-# ============================================
-# GOOGLEBOT - CONFIGURACIÓN ESPECÍFICA
+# GOOGLEBOT - Sin restricciones adicionales
 # ============================================
 
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
-# Priorizar contenido importante
-Allow: /faq
-Allow: /servicios
-Allow: /blog/
-Allow: /casos/
-Allow: /equipo/
+# ============================================
+# GOOGLEBOT-IMAGE - Imágenes
+# ============================================
 
-# Permitir crawling de imágenes
 User-agent: Googlebot-Image
-Allow: /images/
-Allow: /_next/image
-Allow: /_next/static/media/
+Allow: /
 
 # ============================================
-# BINGBOT - CONFIGURACIÓN ESPECÍFICA
+# BINGBOT - Sin restricciones adicionales
 # ============================================
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 2
-
-# Priorizar contenido
-Allow: /faq
-Allow: /servicios
-Allow: /blog/
-Allow: /casos/
+Crawl-delay: 1
 
 # ============================================
-# BOTS BUENOS (SEO/ANALYTICS)
+# OTROS BOTS BUENOS
 # ============================================
 
-# Google Analytics
+User-agent: Googlebot-Mobile
+Allow: /
+
 User-agent: Google-InspectionTool
 Allow: /
 
-# Google Ads
 User-agent: AdsBot-Google
 Allow: /
 
-# Bing Ads
 User-agent: adidxbot
 Allow: /
 
 # ============================================
-# BLOQUEAR BOTS MALOS (Scrapers, SEO tools)
+# BLOQUEAR BOTS AGRESIVOS (Opcional)
 # ============================================
 
-# SEO Tools que drenan crawl budget
+# NOTA: SEMrushBot bloqueado para ahorrar crawl budget
+# Si necesitas que SEMrush audite tu sitio, comenta estas líneas temporalmente
+
 User-agent: SemrushBot
 Disallow: /
 
@@ -217,20 +106,8 @@ Disallow: /
 User-agent: SEOkicks
 Disallow: /
 
-User-agent: SeznamBot
-Disallow: /
-
-User-agent: MegaIndex
-Disallow: /
-
-User-agent: SearchmetricsBot
-Disallow: /
-
-# Scrapers agresivos
+# Scrapers maliciosos
 User-agent: SurveyBot
-Disallow: /
-
-User-agent: Curious George
 Disallow: /
 
 User-agent: ia_archiver
@@ -239,20 +116,27 @@ Disallow: /
 User-agent: Baiduspider
 Disallow: /
 
-User-agent: YandexBot
-Disallow: /
-
 # ============================================
-# NOTAS Y REFERENCIAS
+# NOTAS IMPORTANTES
 # ============================================
 
-# Crawl budget optimizado para:
-# - 99 FAQs en /faq
-# - 38 artículos de blog
-# - 9 blogs de terrorismo (prioridad)
-# - 4 páginas de abogados
-# - ~21 casos
-# - Total: ~86 páginas importantes
+# CAMBIOS vs versión anterior:
+# - ELIMINADO: Disallow: /*?*$ (bloqueaba recursos de Vercel con ?dpl=)
+# - ELIMINADO: Bloqueos genéricos de parámetros
+# - SIMPLIFICADO: Solo bloqueamos lo estrictamente necesario
+# - FILOSOFÍA: "Allow por defecto, Disallow solo excepciones"
 
-# Última optimización: Enero 2025
-# Mantenido por: STANS ABOGADOS - Equipo Técnico
+# Esta configuración sigue las recomendaciones de:
+# - Google Search Central 2025
+# - Next.js documentation
+# - Vercel best practices
+
+# Recursos permitidos automáticamente:
+# ✅ /_next/static/* (CSS, JS, chunks)
+# ✅ /_next/image?* (imágenes optimizadas)
+# ✅ /images/* (todas las imágenes)
+# ✅ Todos los parámetros de URL (UTM, dpl, etc.)
+# ✅ Todas las páginas de contenido
+
+# Última optimización: Octubre 2025
+# Mantenido por: STANS ABOGADOS

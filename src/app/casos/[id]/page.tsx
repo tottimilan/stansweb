@@ -107,6 +107,9 @@ const organoMap: { [key: string]: string } = {
 
 import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown } from 'lucide-react'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/FooterOptimized'
+import CasoSEOContent from '@/components/CasoSEOContent'
+import RelatedCases from '@/components/RelatedCases'
 import casosData from '../../../../public/casos/casos-procesados.json'
 import seoInfo from '../../../../public/casos/seo-info.json'
 import Head from 'next/head'
@@ -890,6 +893,23 @@ export default function CasoDetailPage() {
         </section>
                    </div>
         </div>
+
+        {/* Related Cases - Enlaces internos a casos similares */}
+        <RelatedCases 
+          currentCaseId={caso.id}
+          categoria={caso.categoria}
+          maxCases={4}
+        />
+
+        {/* SEO Content Section - Contenido educativo para mejorar ratio texto/HTML */}
+        <CasoSEOContent 
+          categoria={caso.categoria}
+          delito_principal={caso.delito_principal}
+          isOngoingCase={caso.caso_en_curso}
+        />
+
+        {/* Footer */}
+        <Footer />
 
         {/* Modal para mostrar imagen */}
         {selectedImage && (

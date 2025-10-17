@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Calendar, Clock, User, ArrowRight, BookOpen, Shield, Scale, FileText, AlertTriangle, Search, X } from 'lucide-react';
 import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import Footer from '@/components/FooterOptimized';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -535,6 +535,39 @@ export default function BlogPage() {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* SEO Content Section - Texto rico sobre el blog */}
+        <section className="bg-white py-16">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <article className="prose prose-lg max-w-none">
+              <h2 className="text-2xl font-bold text-gold mb-6">
+                {language === 'ar' ? 'مدونة قانونية متخصصة في القانون الجنائي' : 'Blog Jurídico Especializado en Derecho Penal'}
+              </h2>
+              
+              <p className="text-black/80 leading-relaxed mb-6">
+                {language === 'ar'
+                  ? 'مدونة ستانس للمحاماة هي مصدر شامل للمعلومات القانونية المتخصصة في القانون الجنائي الإسباني. نكتب مقالات مفصلة حول الإرهاب، تسليم المطلوبين، حقوق المحتجزين، والإجراءات القضائية المعقدة.'
+                  : 'El blog de STANS ABOGADOS es una fuente completa de información legal especializada en derecho penal español. Publicamos artículos detallados sobre terrorismo, extradiciones, derechos de detenidos, procedimientos judiciales y estrategias de defensa. Todos nuestros artículos están escritos por abogados penalistas en ejercicio con experiencia directa en los tribunales.'}
+              </p>
+
+              <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
+                {language === 'ar' ? 'الموضوعات الرئيسية' : 'Temáticas Principales'}
+              </h3>
+              <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
+                <li><strong>{language === 'ar' ? 'الإرهاب والمحكمة الوطنية:' : 'Terrorismo y Audiencia Nacional:'}</strong> {language === 'ar' ? 'دليل شامل لقضايا الإرهاب في إسبانيا' : 'Guías completas sobre delitos de terrorismo en España'}</li>
+                <li><strong>{language === 'ar' ? 'تسليم المطلوبين الدولي:' : 'Extradiciones Internacionales:'}</strong> {language === 'ar' ? 'خاصة إسبانيا-المغرب' : 'Especialmente España-Marruecos y OEDE'}</li>
+                <li><strong>{language === 'ar' ? 'حقوق المحتجزين:' : 'Derechos de Detenidos:'}</strong> {language === 'ar' ? 'ما يجب أن تعرفه إذا تم احتجازك' : 'Qué debes saber si te detienen'}</li>
+                <li><strong>{language === 'ar' ? 'الدفاع الجنائي العاجل:' : 'Defensa Penal Urgente:'}</strong> {language === 'ar' ? 'خطوات فورية عند الاحتجاز' : 'Pasos inmediatos en caso de detención'}</li>
+              </ul>
+
+              <p className="text-black/60 text-sm italic mt-8">
+                {language === 'ar'
+                  ? 'جميع مقالاتنا ذات طابع إعلامي ومبنية على خبرتنا الواقعية في المحاكم الإسبانية.'
+                  : 'Todos nuestros artículos son de carácter informativo y están basados en nuestra experiencia real en tribunales españoles.'}
+              </p>
+            </article>
           </div>
         </section>
 

@@ -83,10 +83,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     robots: {
-      index: !caso.caso_en_curso, // No indexar casos en curso
+      index: true, // Indexar todos los casos (incluidos los en curso) para SEO
       follow: true,
       googleBot: {
-        index: !caso.caso_en_curso,
+        index: true,
         follow: true,
         'max-video-preview': -1,
         'max-image-preview': 'large',
