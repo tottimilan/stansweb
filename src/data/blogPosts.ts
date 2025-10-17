@@ -774,6 +774,758 @@ export const blogPosts: BlogPost[] = [
       ],
       conclusion: 'Los derechos constitucionales son tu escudo frente al poder del Estado. No son meras declaraciones formales: son garantías reales exigibles ante los tribunales. Conocerlos, ejercerlos y defenderlos es fundamental para asegurar un proceso justo. En STANS Abogados somos especialistas en la protección de derechos fundamentales, con experiencia en recursos de amparo ante el Tribunal Constitucional y demandas ante el TEDH. Si consideras que tus derechos constitucionales han sido vulnerados, contacta inmediatamente con nuestro equipo.'
     }
+  },
+  // ===== BLOGS ADICIONALES DE DEFENSA PENAL URGENTE =====
+  {
+    id: 20,
+    title: 'Comunicación con Familiares durante la Detención: Derechos y Procedimiento',
+    excerpt: 'Guía sobre tu derecho a comunicar la detención a familiares. Procedimiento, limitaciones legales y qué hacer si se deniega este derecho fundamental.',
+    category: 'Derechos Fundamentales',
+    author: 'Equipo STANS Abogados',
+    date: '2024-12-11',
+    readTime: '8 min',
+    image: '/images/blog/comunicacion-familiar.jpg',
+    slug: 'comunicacion-familiares-detenido',
+    tags: ['comunicación familiar', 'derecho detención', 'notificación', 'incomunicación'],
+    content: {
+      introduction: 'El derecho a comunicar tu detención a un familiar o persona de confianza es un derecho fundamental reconocido en el artículo 520.2 de la Ley de Enjuiciamiento Criminal. Esta comunicación no solo te proporciona apoyo emocional, sino que permite que tus allegados localicen un abogado especializado y aporten documentación que acredite tu arraigo. Conocer cómo ejercer este derecho y sus limitaciones es esencial.',
+      sections: [
+        {
+          title: 'Derecho a la Comunicación Familiar',
+          content: 'El artículo 520.2 LECrim establece que toda persona detenida tiene derecho a que se ponga en conocimiento del familiar o persona que desee, sin demora injustificada, el hecho de la detención y el lugar de custodia. Características: es un derecho inmediato desde el momento de la detención, puedes elegir a quién comunicar (familiar, pareja, amigo, empleador), la comunicación la realiza la autoridad policial (no puedes llamar tú mismo), es telefónica y supervisada por la policía, debe realizarse en un plazo razonable (normalmente primeras horas), y es gratuita. Este derecho busca evitar detenciones secretas y garantizar que tu entorno sepa dónde estás.'
+        },
+        {
+          title: 'Procedimiento de Comunicación',
+          content: 'Cómo ejercer tu derecho: 1) Comunica a la policía el nombre completo y teléfono de la persona a contactar, 2) La policía realiza la llamada en tu presencia, 3) Se informa brevemente del hecho de la detención y lugar de custodia, 4) NO se dan detalles sobre los hechos investigados, 5) La conversación es supervisada y puede ser interrumpida, 6) Se hace constar en diligencias que se realizó la comunicación. Contenido de la comunicación: "Sr./Sra., le informamos que [nombre] ha sido detenido y se encuentra en [comisaría]. Puede contactar con su abogado". La familia NO puede visitarte en comisaría durante la detención policial, pero pueden esperar fuera, localizar abogado particular, y aportar documentación al juzgado.'
+        },
+        {
+          title: 'Limitaciones: Incomunicación Judicial',
+          content: 'En casos excepcionales de terrorismo o delincuencia organizada, el juez puede acordar la incomunicación del detenido (art. 509 LECrim). Efectos: no puedes comunicar tu detención a familiares, no puedes elegir abogado (solo de oficio designado), no puedes ser reconocido por médico de tu elección, y la incomunicación puede durar máximo 5 días prorrogables otros 5. Requisitos: debe ser decretada por juez (no por policía), solo en casos de terrorismo, banda armada o crimen organizado, debe estar motivada (riesgo de destrucción de pruebas o fuga de cómplices), y está sujeta a control judicial. Límites: el Tribunal Constitucional ha establecido que debe ser excepcional, proporcional y revisable. Si la incomunicación es ilegal, puedes interponer habeas corpus.'
+        },
+        {
+          title: 'Qué Puede Hacer tu Familia',
+          content: 'Una vez comunicada la detención, tus familiares pueden: Localizar abogado particular especializado (si no confías en el de oficio), Aportar documentación de arraigo (contratos de trabajo, escrituras de propiedad, certificados de empadronamiento), Contactar con tu empresa o estudios para justificar ausencia, Recopilar testigos o pruebas de descargo si las hay, Acudir al juzgado de guardia cuando seas puesto a disposición judicial, Solicitar información al abogado sobre el estado del procedimiento, y Preparar fianza económica si el abogado la considera viable. Lo que NO pueden hacer: visitarte en comisaría durante detención policial, hablar contigo por teléfono sin supervisión, interferir en la investigación policial, o exigir información detallada sobre los hechos a la policía.'
+        },
+        {
+          title: 'Qué Hacer si se Deniega la Comunicación',
+          content: 'Si la policía se niega a comunicar tu detención sin orden judicial de incomunicación: 1) Solicita expresamente el motivo de la denegación, 2) Exige que conste en acta tu petición y la denegación, 3) Comunícalo a tu abogado inmediatamente cuando llegue, 4) Tu abogado debe impugnar la denegación ante el juez, 5) Solicita habeas corpus si persiste la situación irregular, 6) Denuncia la vulneración de derechos posteriormente. La denegación injustificada de comunicación familiar puede constituir: detención ilegal, vulneración del derecho de defensa, y motivo de nulidad de actuaciones. Si hay incomunicación judicial: verifica que te muestren el auto judicial que la acuerda, solicita copia del auto, y tu abogado de oficio debe recurrir si la considera desproporcionada.'
+        }
+      ],
+      conclusion: 'El derecho a comunicar tu detención a familiares no es un privilegio, es un derecho fundamental que impide detenciones secretas y arbitrarias. Ejercerlo correctamente permite que tu entorno te apoye y colabore en tu defensa. En STANS Abogados asesoramos a familiares de detenidos sobre cómo actuar eficazmente, qué documentación aportar y cómo colaborar con la defensa. Si tu familiar ha sido detenido y no puedes contactar con él, llámanos inmediatamente.'
+    }
+  },
+  {
+    id: 21,
+    title: 'Registro de Dependencias Policiales: Límites y Garantías',
+    excerpt: 'Qué pueden y qué no pueden registrarte en dependencias policiales. Cacheos, registros personales, móviles y garantías constitucionales durante la detención.',
+    category: 'Procedimiento Penal',
+    author: 'Diego Cardona Valero',
+    date: '2024-12-10',
+    readTime: '10 min',
+    image: '/images/blog/registro-policial.jpg',
+    slug: 'registro-dependencias-detenido',
+    tags: ['registro policial', 'cacheo', 'registro móvil', 'garantías'],
+    content: {
+      introduction: 'El registro en dependencias policiales es una actuación habitual tras la detención, pero tiene límites constitucionales claros. El artículo 18.2 CE protege tu intimidad personal, y cualquier registro debe respetar tu dignidad. Existen diferentes tipos de registros (superficial, personal, de efectos) cada uno con requisitos distintos. Conocer tus derechos evita abusos y protege pruebas obtenidas ilegalmente.',
+      sections: [
+        {
+          title: 'Tipos de Registros en Comisaría',
+          content: 'Cacheo de seguridad: registro superficial externo de ropa para localizar armas u objetos peligrosos. No requiere autorización judicial, se realiza por razones de seguridad, debe ser del mismo sexo del detenido, y no incluye zonas íntimas. Registro personal: más profundo, incluye bolsillos, calzado y objetos personales. Requiere causa legal justificada, debe constar en diligencias, y puede ser presenciado por abogado. Registro de efectos: revisión de bolsos, carteras, mochilas y objetos que portes. Se inventarían y depositan, puedes solicitar presencia de abogado, y se devuelven al finalizar detención (salvo que sean prueba). Registro corporal invasivo: cavidades corporales, requiere SIEMPRE autorización judicial específica, debe realizarlo personal sanitario, y con respeto absoluto a la dignidad. Si te niegan este derecho, puedes impugnarlo.'
+        },
+        {
+          title: 'Límites Constitucionales del Registro',
+          content: 'El registro debe respetar: Dignidad de la persona (art. 10 CE): no puede ser vejatorio, humillante o innecesario. Intimidad personal (art. 18.1 CE): mínima intrusión necesaria. Proporcionalidad: adecuado a la finalidad de seguridad o investigación. Presencia de testigos: puede solicitarse. Prohibiciones absolutas: registros sin causa legal, desnudos completos sin autorización judicial, registros por personal del sexo contrario en zonas íntimas, grabaciones sin consentimiento salvo causa legal, y registros con fines vejatorios o discriminatorios. El Tribunal Europeo de Derechos Humanos considera que registros invasivos sin justificación constituyen trato degradante (art. 3 CEDH).'
+        },
+        {
+          title: 'Registro de Teléfono Móvil',
+          content: 'Para acceder al contenido de tu móvil (mensajes, fotos, apps) se requiere SIEMPRE autorización judicial específica. La policía puede: requisar el móvil (custodiarlo sin revisarlo), evitar que lo uses o borres datos, y apagarlo para preservar pruebas. NO pueden sin orden judicial: leer mensajes de WhatsApp, Telegram, SMS, ver fotos o vídeos, acceder a redes sociales o email, ni revisar llamadas o contactos. Jurisprudencia: el Tribunal Supremo (STS 115/2013) establece que el móvil contiene intimidad protegida por art. 18 CE. Si acceden sin orden: las pruebas son NULAS y no pueden usarse en juicio (art. 11.1 LOPJ). Puedes negarte a dar PIN o huella dactilar (aunque controvertido). Tu abogado debe impugnar inmediatamente cualquier acceso ilegal.'
+        },
+        {
+          title: 'Depósito de Objetos Personales',
+          content: 'Al ingresar en celda policial se te requiere depositar: objetos peligrosos (navajas, mecheros, cinturones), objetos de valor (dinero, joyas, reloj), y el teléfono móvil. Procedimiento: se realiza inventario detallado, firmas el recibo (comprueba que sea correcto), y se custodia en lugar seguro. Derechos: a recibir copia del inventario, a que los objetos no sean manipulados sin autorización judicial, y a recuperarlos intactos al finalizar detención. Si pierden o dañan tus objetos: tienen responsabilidad patrimonial, puedes reclamar indemnización, y debe constar en acta. Objetos que pueden retenerse: si son cuerpo del delito o prueba, con acta de intervención y custodia regulada.'
+        },
+        {
+          title: 'Qué Hacer ante Registros Abusivos',
+          content: 'Si consideras que el registro vulnera tu dignidad o intimidad: 1) Manifiesta expresamente tu oposición: "No consiento este registro sin orden judicial", 2) Solicita presencia de tu abogado, 3) Pide que conste en acta tu oposición, 4) Si hay lesiones o humillación: solicita médico forense inmediato, 5) Identifica a los agentes que realizan el registro, 6) Comunica a tu abogado en cuanto llegue. Consecuencias: las pruebas obtenidas ilegalmente son NULAS (doctrina del fruto del árbol envenenado), puedes denunciar a los agentes por trato degradante, y solicitar indemnización por daños. Tu abogado debe: impugnar la legalidad del registro, solicitar exclusión de pruebas obtenidas, y recurrir en amparo si vulnera derechos fundamentales.'
+        }
+      ],
+      conclusion: 'El registro en comisaría debe equilibrar las necesidades de investigación con el respeto a tu dignidad e intimidad. No todo vale: existen límites constitucionales claros que la policía debe respetar. Si consideras que tu registro fue abusivo o ilegal, no dudes en denunciarlo. En STANS Abogados hemos logrado la exclusión de pruebas obtenidas mediante registros ilegales, anulando acusaciones completas. Tu dignidad es inviolable incluso durante la detención.'
+    }
+  },
+  // ===== HUB PAGES Y BLOGS RESTANTES =====
+  {
+    id: 22,
+    title: 'Hub: Procedimientos de Extradición - Guía Completa',
+    excerpt: 'Centro de recursos sobre procedimientos de extradición en España. Tipos, fases, derechos y recursos legales contra la extradición.',
+    category: 'Extradiciones',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-05',
+    readTime: '15 min',
+    image: '/images/blog/hub-extradicion.jpg',
+    slug: 'procedimientos-extradicion',
+    tags: ['extradición', 'hub', 'guía completa', 'recursos'],
+    content: {
+      introduction: 'Los procedimientos de extradición son procesos complejos de cooperación judicial internacional mediante los cuales una persona acusada o condenada en un país es entregada a las autoridades de ese país. En España, la extradición está regulada por la Ley 4/1985, tratados internacionales y la jurisprudencia del Tribunal Supremo. Este hub centraliza toda la información esencial sobre extradición.',
+      sections: [
+        {
+          title: 'Tipos de Procedimientos de Extradición',
+          content: 'Extradición dentro de la UE (Orden de Detención Europea): procedimiento simplificado entre países miembros, plazo máximo 60-90 días, sin control de doble incriminación en delitos graves, y ejecutiva salvo excepciones. Extradición Internacional (países no UE): requiere tratado bilateral o multilateral, procedimiento más largo (6-12 meses), control de doble incriminación obligatorio, y decisión política del Gobierno tras resolución judicial. Extradición Activa (España solicita): cuando España pide entregar a persona que está en otro país. Extradición Pasiva (España recibe solicitud): cuando otro país pide que España entregue a persona en territorio español.'
+        },
+        {
+          title: 'Fases del Procedimiento de Extradición',
+          content: 'Fase 1 - Solicitud Inicial: el país requirente presenta solicitud formal con documentación (orden de detención, hechos, legislación aplicable). Fase 2 - Admisión a Trámite: juez Central de Instrucción Audiencia Nacional examina cumplimiento de requisitos formales. Fase 3 - Detención Provisional: si hay riesgo de fuga, se puede decretar detención cautelar del extraditado. Fase 4 - Audiencia del Extraditado: comparecencia ante juez donde puede oponerse y aportar defensas. Fase 5 - Resolución Judicial: auto de Audiencia Nacional concediendo o denegando extradición. Fase 6 - Decisión Gubernamental (extradición internacional): Consejo de Ministros decide finalmente. Fase 7 - Entrega: traslado efectivo al país requirente con garantías.'
+        },
+        {
+          title: 'Derechos del Extraditado',
+          content: 'Derechos procesales: asistencia letrada desde el primer momento, ser informado en idioma comprensible, acceso al expediente completo, plazo razonable del procedimiento, y recurrir todas las resoluciones. Garantías materiales: no ser extraditado por delitos políticos, no ser extraditado si hay riesgo de tortura o pena de muerte, no ser juzgado por delitos distintos (principio de especialidad), y no ser re-extraditado a tercer país sin consentimiento. Derechos humanos: respeto a vida familiar (art. 8 CEDH), proceso justo (art. 6 CEDH), y prohibición de tratos inhumanos (art. 3 CEDH). El TEDH puede paralizar extradiciones si hay riesgo de vulneración.'
+        },
+        {
+          title: 'Motivos para Oponerse a la Extradición',
+          content: 'Causas de denegación obligatoria: delito político o conexo, riesgo de tortura o tratos inhumanos en país requirente, delito ya juzgado en España (ne bis in idem), prescripción del delito según legislación española, o persona con nacionalidad española (España no extradita nacionales salvo UE). Causas facultativas: delito cometido en territorio español, persona residente habitual en España, delito puramente militar, o falta de garantías procesales en país requirente. Causas humanitarias: edad avanzada o estado de salud grave, vínculos familiares intensos en España, o riesgo de vulneración derechos fundamentales. Tu abogado debe analizar cada caso individualmente para determinar defensas viables.'
+        },
+        {
+          title: 'Recursos contra la Extradición',
+          content: 'Recursos disponibles: Reforma ante mismo juez (3 días), Apelación ante Sala de lo Penal Audiencia Nacional (10 días), Casación ante Tribunal Supremo (si procede), Recurso contencioso-administrativo contra decisión gubernamental, Amparo ante Tribunal Constitucional (vulneración derechos fundamentales), y Demanda ante TEDH (tras agotar vía interna). Medidas cautelares: suspensión de la entrega mientras se resuelven recursos, libertad provisional con medidas durante el procedimiento. Plazos urgentes: en extradiciones UE los plazos son muy breves, por lo que la reacción debe ser inmediata. Un abogado especializado debe actuar desde el primer momento.'
+        },
+        {
+          title: 'Artículos Relacionados sobre Extradición',
+          content: 'En este hub encontrarás información detallada sobre: Tipos de extradición en España (UE vs internacional), Requisitos legales para conceder extradición, Audiencia de extradición: qué esperar, Recursos y defensas contra extradición, Derechos específicos del extraditado, Extradición por terrorismo (consideraciones especiales), y Extradición por delitos económicos. Cada artículo profundiza en aspectos específicos del procedimiento. Si te enfrentas a un proceso de extradición, la especialización del abogado es fundamental: no es comparable a otros procedimientos penales.'
+        }
+      ],
+      conclusion: 'La extradición es uno de los procedimientos más complejos del derecho penal internacional. Las consecuencias de error son graves: entrega a otro país con sistema legal diferente, alejamiento de familia y entorno, y proceso en idioma extranjero. En STANS Abogados somos especialistas en extradiciones activas y pasivas, con experiencia ante la Audiencia Nacional y tribunales internacionales. Hemos logrado paralizar extradiciones mediante recursos al TEDH y argumentación sólida sobre riesgo de vulneración de derechos. Si te enfrentas a extradición, contacta inmediatamente: el tiempo es crítico.'
+    }
+  },
+  {
+    id: 23,
+    title: 'Hub: Derechos de Detenidos - Centro de Recursos Completo',
+    excerpt: 'Centro completo de recursos sobre derechos de detenidos. Garantías constitucionales, procedimientos y cómo defender tus derechos fundamentales.',
+    category: 'Derechos Fundamentales',
+    author: 'Equipo STANS Abogados',
+    date: '2024-12-07',
+    readTime: '12 min',
+    image: '/images/blog/hub-derechos.jpg',
+    slug: 'derechos-detenidos',
+    tags: ['derechos detenidos', 'hub', 'garantías', 'constitución'],
+    content: {
+      introduction: 'Los derechos de los detenidos son garantías fundamentales reconocidas por la Constitución Española, la Ley de Enjuiciamiento Criminal y tratados internacionales. Este hub centraliza toda la información esencial sobre tus derechos desde el momento de la detención hasta el juicio, incluyendo garantías procesales, recursos y protección contra abusos.',
+      sections: [
+        {
+          title: 'Derechos Constitucionales Básicos',
+          content: 'Derecho a la libertad personal (art. 17 CE): nadie puede ser privado de libertad arbitrariamente, detención máxima 72 horas sin puesta judicial. Derecho a la integridad física (art. 15 CE): prohibición absoluta de torturas y tratos degradantes. Derecho a la intimidad (art. 18 CE): protección domicilio, comunicaciones y datos personales. Derecho a la defensa (art. 24 CE): asistencia letrada, presunción de inocencia, no autoinculparse. Estos derechos son inviolables y su vulneración puede anular todo el procedimiento.'
+        },
+        {
+          title: 'Derechos Inmediatos al Ser Detenido',
+          content: 'Desde el momento exacto de la detención: conocer motivos de tu detención, guardar silencio y no declarar, designar abogado o solicitar uno de oficio, comunicar detención a familiar, ser reconocido por médico si lo necesitas, e intérprete gratuito si no hablas español. Estos derechos deben comunicarse por escrito en idioma comprensible (art. 520 LECrim). Si no te informan correctamente, la detención puede ser ilegal.'
+        },
+        {
+          title: 'Derechos durante la Permanencia en Comisaría',
+          content: 'Condiciones dignas de detención: espacio mínimo, ventilación, temperatura adecuada. Alimentación: 3 comidas diarias adecuadas. Asistencia médica: acceso a médico 24h si lo necesitas. Comunicación: con abogado (privada) y con familiar (supervisada). Higiene: acceso a aseos y ducha si detención es prolongada. No declarar sin abogado presente: nunca pueden interrogarte sobre hechos sin tu abogado. Respeto a dignidad: prohibición de tratos vejatorios o humillantes.'
+        },
+        {
+          title: 'Derechos en la Puesta a Disposición Judicial',
+          content: 'Ante el juez de guardia: ser informado de los hechos imputados, declarar o no declarar (decisión estratégica con tu abogado), solicitar diligencias de investigación, proponer medidas alternativas a prisión, y recurrir la resolución judicial. Si el juez decreta prisión preventiva: debe motivarla (riesgo de fuga, destrucción pruebas, reiteración), puedes recurrir en reforma (3 días) y apelación (10 días), y solicitar revisión periódica de la medida.'
+        },
+        {
+          title: 'Derechos de Grupos Vulnerables',
+          content: 'Menores de edad: presencia de representante legal, procedimiento especializado de menores, medidas educativas preferentes sobre penas. Extranjeros: traducción e interpretación gratuitas, información consular (embajada de su país), consideración de arraigo en país de origen. Personas con discapacidad: adaptaciones procesales necesarias, asistencia especializada, evaluación capacidad para declarar. Embarazadas: consideraciones especiales en medidas cautelares, atención médica especializada. Cada grupo tiene protección reforzada según tratados internacionales.'
+        },
+        {
+          title: 'Artículos Relacionados sobre Derechos de Detenidos',
+          content: 'En este hub encuentras información sobre: Derechos constitucionales del detenido (arts. 15, 17, 18, 24 CE), Derechos inmediatos al ser detenido, Garantías procesales y recursos, Derecho a asistencia letrada especializada, Protección contra torturas y tratos inhumanos, Derechos de grupos vulnerables (menores, extranjeros, discapacitados), Derechos en dependencias policiales, Derechos procesales y recursos del detenido, Habeas corpus y recurso de amparo. Cada artículo profundiza en aspectos específicos con jurisprudencia y casos prácticos.'
+        }
+      ],
+      conclusion: 'Los derechos de los detenidos no son concesiones graciosas del Estado: son garantías fundamentales reconocidas constitucionalmente y protegidas por tribunales nacionales e internacionales. Conocerlos, ejercerlos y defenderlos es esencial para un proceso justo. En STANS Abogados somos especialistas en protección de derechos fundamentales, con experiencia en recursos de amparo ante el Tribunal Constitucional y demandas ante el TEDH. Si consideras que tus derechos han sido vulnerados, contacta inmediatamente: las pruebas obtenidas ilegalmente pueden ser excluidas, anulando la acusación.'
+    }
+  },
+  {
+    id: 24,
+    title: 'Hub: Defensa Penal Urgente - Asistencia 24/7',
+    excerpt: 'Centro de recursos sobre defensa penal urgente. Qué hacer al ser detenido, derechos inmediatos y asistencia letrada 24/7 en situaciones críticas.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2024-12-15',
+    readTime: '10 min',
+    image: '/images/blog/hub-urgente.jpg',
+    slug: 'defensa-penal-urgente',
+    tags: ['defensa urgente', 'urgencias penales', '24/7', 'asistencia inmediata'],
+    content: {
+      introduction: 'Las situaciones de urgencia penal requieren reacción inmediata y conocimiento preciso de tus derechos. Ser detenido, recibir citación policial o enfrentarte a registro domiciliario son momentos críticos donde cada decisión cuenta. Este hub centraliza recursos esenciales para actuar correctamente en emergencias penales, disponible 24/7.',
+      sections: [
+        {
+          title: 'Situaciones de Urgencia Penal',
+          content: 'Detención en la calle: no resistas, identifícate, pide ver orden si no es flagrante, solicita abogado inmediatamente, no declares sin abogado, comunica a familiar. Citación policial: nunca acudas sin abogado, aunque sea "solo para declarar", lleva abogado de confianza o solicita de oficio, prepara estrategia defensiva previa. Registro domiciliario: exige ver orden judicial (salvo flagrante delito), solicita presencia de abogado, no firmes actas sin leer, graba con móvil si es posible. Llamada desde comisaría: localiza abogado especializado urgente, no permitas que declare sin ti, aporta documentación de arraigo. Orden de alejamiento urgente: solicita abogado inmediato, impugna si es desproporcionada, propón medidas alternativas.'
+        },
+        {
+          title: 'Protocolo de Actuación Urgente',
+          content: 'Primeros 10 minutos: mantén la calma (nerviosismo se interpreta negativamente), identifícate correctamente (no mentir sobre identidad), escucha atentamente los motivos, NO declares NADA sin abogado, solicita comunicar detención a familiar, y pide abogado INMEDIATO. Primeras 2 horas: espera a que llegue abogado (máximo 2 horas por ley), entrevista privada con abogado antes de declarar, decide estrategia (declarar o no declarar), NO firmes nada sin revisar con abogado, solicita médico si tienes lesiones o te sientes mal. Primeras 24-72 horas: preparación para puesta a disposición judicial, recopilación de pruebas de arraigo, análisis de defensas posibles, preparación de alegaciones, y propuesta de medidas alternativas a prisión.'
+        },
+        {
+          title: 'Errores Críticos que Debes Evitar',
+          content: 'NUNCA declares sin abogado (aunque prometan beneficios), NUNCA resistas físicamente la detención (delito de atentado), NUNCA confíes en "si colaboras te dejamos ir" (falso), NUNCA mientas sobre tu identidad (delito independiente), NUNCA intentes huir (agrava enormemente situación), NUNCA insultes o amenaces a agentes (delito atentado/desacato), NUNCA renuncies a derechos por "acelerar proceso", NUNCA hables con otros detenidos (pueden estar colaborando), NUNCA uses móvil sin permiso (pueden requisarlo), NUNCA firmes sin leer completamente. Estos errores han arruinado defensas viables. La prisa es mala consejera.'
+        },
+        {
+          title: 'Asistencia Letrada de Urgencia 24/7',
+          content: 'En STANS Abogados ofrecemos: Disponibilidad 24 horas todos los días del año, Desplazamiento inmediato a comisarías de Madrid y alrededores, Abogados especializados en derecho penal (no generalistas), Estrategia defensiva desde el primer momento, Preparación de puesta a disposición judicial, Solicitud de libertad provisional y medidas alternativas, Seguimiento completo del caso, y Honorarios transparentes y ajustados. No todos los abogados de urgencia son iguales: la especialización marca la diferencia entre libertad y prisión. Un abogado generalista puede no conocer estrategias específicas de derecho penal urgente.'
+        },
+        {
+          title: 'Artículos Relacionados sobre Defensa Urgente',
+          content: 'Recursos disponibles en este hub: Derechos inmediatos al ser detenido, Primeros pasos en comisaría (guía práctica), Asistencia letrada de urgencia (tipos y funciones), Puesta a disposición judicial (qué esperar), Medidas cautelares en procesos penales, Comunicación con familiares durante detención, Registro de dependencias policiales (límites), Habeas corpus y recurso de amparo. Cada artículo incluye protocolos de actuación, jurisprudencia relevante, casos prácticos y contacto directo con abogados especializados. La información puede salvar tu libertad.'
+        }
+      ],
+      conclusion: 'En situaciones de urgencia penal, el tiempo es tu peor enemigo. Cada minuto cuenta, cada palabra puede usarse en tu contra, cada decisión tiene consecuencias. No improvises: los errores en las primeras horas son a menudo irreversibles. En STANS Abogados estamos disponibles 24/7 para asistirte desde el primer momento. Llama inmediatamente si te detienen o si un familiar ha sido detenido. La primera consulta es gratuita y puede marcar la diferencia entre una condena y la absolución. No estás solo.'
+    }
+  },
+  // ===== BLOGS DE EXTRADICIÓN =====
+  {
+    id: 25,
+    title: 'Tipos de Extradición en España: UE vs Internacional',
+    excerpt: 'Diferencias entre extradición europea (orden de detención) y extradición internacional. Procedimientos, plazos y particularidades de cada tipo.',
+    category: 'Extradiciones',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-04',
+    readTime: '13 min',
+    image: '/images/blog/tipos-extradicion.jpg',
+    slug: 'tipos-extradicion-espana',
+    tags: ['tipos extradición', 'orden detención europea', 'extradición internacional'],
+    content: {
+      introduction: 'No todas las extradiciones son iguales. Existen diferencias sustanciales entre la extradición dentro de la Unión Europea (mediante Orden de Detención Europea) y la extradición internacional con países terceros. Los plazos, requisitos y garantías varían considerablemente. Conocer el tipo de extradición al que te enfrentas es el primer paso para una defensa efectiva.',
+      sections: [
+        {
+          title: 'Orden de Detención Europea (ODE)',
+          content: 'La ODE es un sistema simplificado de entrega entre países UE basado en confianza mutua. Características: procedimiento judicial puro (sin intervención gobierno), plazos breves (60-90 días máximo), sin control doble incriminación en delitos graves (32 categorías), reconocimiento mutuo de resoluciones judiciales, y motivos de denegación tasados (no discrecionales). Delitos que la permiten: pena máxima mínimo 12 meses o condena pendiente mínimo 4 meses. Países aplicables: 27 países UE (no Reino Unido post-Brexit, no Noruega/Suiza). Ventaja: rapidez. Desventaja para el extraditado: difícil oponerse.'
+        },
+        {
+          title: 'Extradición Internacional (Tratados Bilaterales)',
+          content: 'Con países no UE se aplica: Ley 4/1985 de Extradición Pasiva, Tratados bilaterales específicos (EEUU, Colombia, Marruecos, etc.), o Convenios multilaterales (Convención de Montevideo, Tratados del Consejo de Europa). Procedimiento: más largo (6-18 meses), intervención del Gobierno español (decisión final política), control estricto doble incriminación (delito debe existir en ambos países), y motivos de denegación más amplios. Fase judicial (Audiencia Nacional) + Fase gubernamental (Consejo de Ministros). El Gobierno puede denegar incluso si juez concede. Mayor margen de defensa política y diplomática.'
+        },
+        {
+          title: 'Diferencias Clave entre Ambos Sistemas',
+          content: 'Plazo: ODE 60-90 días vs Extradición Internacional 6-18 meses. Autoridad decisoria: ODE solo judicial vs Internacional judicial + gubernamental. Doble incriminación: ODE no necesaria en 32 delitos vs Internacional siempre necesaria. Motivos denegación: ODE tasados y restrictivos vs Internacional más amplios. Recursos: ODE ante Audiencia Nacional y posible TJUE vs Internacional ante AN, Contencioso-Administrativo y TEDH. Nacionalidad: ODE permite extraditar españoles vs Extradición Internacional generalmente no permite. Especialidad: ambos sistemas la respetan (solo juzgar por delitos extraditables). Tu abogado debe conocer perfectamente qué sistema aplica para diseñar la defensa óptima.'
+        },
+        {
+          title: 'Extradición a Países con Riesgo de Vulneración DDHH',
+          content: 'Si el país requirente tiene riesgo de tortura, pena de muerte o tratos inhumanos: España puede y debe denegar la extradición (art. 3 CEDH). Países con riesgo especial: China, Rusia, Irán, Arabia Saudí, EEUU (pena de muerte en algunos estados), Marruecos, Argelia, Turquía. Garantías exigibles: compromiso escrito de no aplicar pena de muerte, garantía de proceso justo con asistencia letrada, compromiso de no torturar, acceso consular español, y respeto a derechos humanos. Jurisprudencia TEDH: casos Soering vs UK (1989), Al-Saadoon vs UK (2010), Trabelsi vs Bélgica (2014). El TEDH puede paralizar extradiciones mediante medidas cautelares (art. 39 Reglamento TEDH). Tu abogado debe demostrar riesgo real y documentado.'
+        },
+        {
+          title: 'Casos Especiales de Extradición',
+          content: 'Extradición por terrorismo: procedimientos muy rápidos, difícil obtener libertad provisional, alta colaboración internacional. Extradición por delitos económicos: análisis complejo de doble incriminación, períodos largos de instrucción, posible libertad provisional con fianza alta. Extradición por delitos sexuales: garantías reforzadas, análisis de legislación comparada. Extradición de menores: procedimiento especializado, interés superior del menor prevalece. Extradición por delitos políticos: causa de denegación absoluta según Constitución y tratados. Cada tipo tiene particularidades procedimentales que requieren abogado especializado en derecho penal internacional.'
+        }
+      ],
+      conclusion: 'Entender el tipo de extradición al que te enfrentas es crucial para diseñar la estrategia de defensa. Las diferencias entre sistemas son sustanciales y condicionan plazos, recursos y probabilidades de éxito. En STANS Abogados tenemos experiencia en ambos tipos de extradición, ante la Audiencia Nacional y tribunales europeos. Contacta inmediatamente si recibes notificación de extradición: los plazos son muy breves.'
+    }
+  },
+  {
+    id: 26,
+    title: 'Requisitos para Conceder Extradición en España',
+    excerpt: 'Requisitos legales que deben cumplirse para que España conceda una extradición. Doble incriminación, principio de especialidad y garantías procesales.',
+    category: 'Extradiciones',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-03',
+    readTime: '12 min',
+    image: '/images/blog/requisitos-extradicion.jpg',
+    slug: 'requisitos-extradicion-espana',
+    tags: ['requisitos extradición', 'doble incriminación', 'especialidad', 'garantías'],
+    content: {
+      introduction: 'Para que España conceda una extradición deben cumplirse requisitos formales y materiales estrictos establecidos en la Ley 4/1985 y tratados internacionales. El incumplimiento de cualquiera de estos requisitos es motivo de denegación. Conocer estos requisitos permite identificar defensas técnicas viables contra la solicitud de extradición.',
+      sections: [
+        {
+          title: 'Requisitos Formales de la Solicitud',
+          content: 'Documentación completa: orden de detención o sentencia condenatoria del país requirente, exposición detallada de los hechos delictivos, texto de disposiciones legales aplicables, datos de identificación del reclamado, y garantías sobre derechos fundamentales. Traducción oficial: todos los documentos deben estar traducidos al español por traductor jurado. Vía diplomática: transmisión a través de Ministerio de Justicia (salvo urgencia). Plazo: debe presentarse en plazo razonable desde comisión del delito. Si falta documentación o traducción, el juez puede inadmitir la solicitud. Tu abogado debe revisar escrupulosamente que todo esté en orden: un defecto formal puede paralizar la extradición.'
+        },
+        {
+          title: 'Doble Incriminación: Requisito Material Clave',
+          content: 'El principio de doble incriminación exige que: la conducta sea delito en AMBOS países (España y país requirente), con pena mínima (generalmente 1 año de prisión), y descripción de hechos coincidente con tipo penal español. Excepciones en ODE: 32 categorías de delitos graves no requieren verificar doble incriminación (terrorismo, trata personas, tráfico drogas, corrupción, etc.). Análisis comparativo: tu abogado debe comparar Código Penal español con legislación extranjera. Ejemplos donde puede fallar: conductas legales en España pero delito en país requirente (ej. apostasía en países islámicos), delitos políticos (no extraditables), o diferencias en elementos del tipo. Si no hay doble incriminación, extradición debe denegarse.'
+        },
+        {
+          title: 'Principio de Especialidad',
+          content: 'El principio de especialidad garantiza que solo puedes ser juzgado por los delitos incluidos en la solicitud de extradición, no por otros. Contenido: el país requirente no puede juzgarte por delitos cometidos antes de la extradición que no estén en la solicitud, no puede extraditarte a un tercer país sin consentimiento de España, y debe solicitar ampliación si aparecen nuevos delitos. Protección: evita extradiciones encubiertas por delitos menores para juzgar por delitos graves. Violación del principio: si el país requirente te juzga por delitos no incluidos, España puede reclamar tu devolución y el otro país incumple tratados internacionales. Tu abogado debe exigir garantía expresa de especialidad en la resolución de extradición.'
+        },
+        {
+          title: 'Prohibición de Extradición por Delitos Políticos',
+          content: 'España no extradita por delitos políticos (art. 13.3 CE y Ley 4/1985). Delito político puro: sedición, rebelión, delitos electorales, delitos contra forma de gobierno. Delito político conexo: delito común cometido por móvil político. Delito común con persecución política: aunque el delito no sea político, si la persecución tiene motivación política. Ejemplos: disidentes políticos, activistas, periodistas críticos, opositores al régimen. Carga de la prueba: el extraditado debe demostrar naturaleza política. Evidencias: informes de ONGs (Amnistía Internacional, Human Rights Watch), informes de ACNUR o Comisión Europea, documentación de persecución por ideas políticas. Si se prueba, extradición debe denegarse. Posible solicitud de asilo en España.'
+        },
+        {
+          title: 'Garantías Procesales Exigibles',
+          content: 'España puede condicionar la extradición a garantías: Proceso justo: derecho a defensa efectiva, juez imparcial, proceso público. Asistencia consular: España debe poder asistir a su nacional. Visitas: familiares deben poder visitarte. Traducción: derecho a intérprete durante todo el proceso. Plazo razonable: juicio en tiempo razonable sin dilaciones. Abono prisión preventiva: tiempo en España debe descontarse. No pena de muerte: garantía absoluta de no aplicación. No cadena perpetua real: o revisión mínimo 25 años. Estas garantías deben constar por escrito en resolución judicial. Si el país incumple, España puede reclamar o solicitar devolución.'
+        },
+        {
+          title: 'Prescripción y Ne Bis in Idem',
+          content: 'Prescripción: si el delito está prescrito según legislación española, no procede extradición (aunque no lo esté en país requirente). Plazos de prescripción en España: delitos menos graves 5 años, delitos graves 10 años, delitos muy graves 15-20 años. Ne bis in idem: si ya fuiste juzgado por los mismos hechos en España u otro país UE, no puedes ser juzgado de nuevo (art. 50 Carta Derechos Fundamentales UE). Requisitos: identidad de sujeto (misma persona), hechos (misma conducta aunque diferente calificación), y fundamento (mismo bien jurídico protegido). Si hay sentencia firme anterior, la extradición debe denegarse. Tu abogado debe aportar certificado de antecedentes penales y sentencias previas.'
+        }
+      ],
+      conclusion: 'Los requisitos de extradición son garantías que protegen contra entregas arbitrarias. El incumplimiento de cualquiera es motivo de denegación. En STANS Abogados analizamos meticulosamente cada solicitud de extradición para identificar requisitos incumplidos, defectos formales o materiales y causas de denegación. Nuestra experiencia en derecho penal internacional y conocimiento de jurisprudencia del TEDH nos permite diseñar defensas sólidas. Si te enfrentas a extradición, cada detalle cuenta: contacta con abogados especializados.'
+    }
+  },
+  {
+    id: 27,
+    title: 'Audiencia de Extradición: Qué Esperar y Cómo Prepararse',
+    excerpt: 'Guía sobre la audiencia de extradición ante la Audiencia Nacional. Procedimiento, derechos durante la comparecencia y estrategias de defensa.',
+    category: 'Extradiciones',
+    author: 'Diego Cardona Valero',
+    date: '2024-12-02',
+    readTime: '11 min',
+    image: '/images/blog/audiencia-extradicion.jpg',
+    slug: 'audiencia-extradicion-espana',
+    tags: ['audiencia extradición', 'audiencia nacional', 'comparecencia', 'defensa'],
+    content: {
+      introduction: 'La audiencia de extradición es el momento procesal clave donde compareces ante el Juzgado Central de Instrucción de la Audiencia Nacional para oponerte a la solicitud de entrega. Es tu oportunidad de alegar defensas, aportar pruebas y convencer al juez de que la extradición no debe concederse. Preparar adecuadamente esta comparecencia con abogado especializado es fundamental.',
+      sections: [
+        {
+          title: 'Procedimiento de la Audiencia',
+          content: 'Convocatoria: recibes citación del Juzgado Central con 5-10 días de antelación. Preparación previa: entrevista con abogado, análisis del expediente, recopilación de pruebas de arraigo, preparación de alegaciones escritas. Desarrollo: compareces ante juez con abogado y fiscal, lectura de la solicitud de extradición, declaración del reclamado (puedes oponerte o consentir), alegaciones de la defensa (motivos de oposición), petición del fiscal (suele ser favorable a extradición), réplica de la defensa. Resolución: el juez dicta auto en 5-15 días concediendo o denegando. Si concede: puedes recurrir. Si deniega: generalmente quedas en libertad salvo que España te investigue.'
+        },
+        {
+          title: 'Derechos durante la Comparecencia',
+          content: 'Asistencia letrada obligatoria: no puede celebrarse sin abogado. Intérprete: si no hablas español, derecho a traducción simultánea gratuita. Acceso al expediente: tu abogado debe haber examinado toda la documentación previamente. Declarar o no declarar: puedes negarte a declarar (aunque suele ser contraproducente en extradición). Aportar pruebas: documentos, testigos, informes periciales. Solicitar diligencias: el juez puede acordar pruebas complementarias. Impugnar documentación: cuestionar validez de documentos del país requirente. Derecho a última palabra: puedes hacer alegaciones finales. Grabar: generalmente se graba o levanta acta literal.'
+        },
+        {
+          title: 'Estrategias de Defensa en la Audiencia',
+          content: 'Defensas formales: documentación incompleta o mal traducida, falta de competencia del país requirente, defectos en la orden de detención. Defensas materiales: ausencia de doble incriminación, prescripción del delito, ne bis in idem (ya juzgado), delito político, riesgo de vulneración DDHH en país requirente. Defensas humanitarias: arraigo intenso en España (familia, trabajo, años de residencia), estado de salud grave que impide traslado, edad avanzada, vínculos familiares (hijos menores en España). Oposición parcial: consentir extradición pero con garantías específicas (ej. no pena de muerte, abono prisión preventiva). Estrategia óptima depende de cada caso: tu abogado debe analizar todas las opciones.'
+        },
+        {
+          title: 'Medidas Cautelares durante el Proceso',
+          content: 'Detención provisional: si hay riesgo de fuga, el juez puede decretar prisión cautelar durante tramitación de extradición (máximo 60 días ODE, 90 días internacional). Libertad provisional: es posible obtenerla con medidas: fianza económica (suele ser alta por riesgo de fuga internacional), retirada de pasaporte, prohibición salir de España, comparecencias semanales en juzgado, entrega de documentos de viaje. Demostrar arraigo: trabajo estable en España, vivienda en propiedad, familia directa (cónyuge, hijos), años de residencia legal, voluntad de no fugarse. En extradiciones UE es muy difícil obtener libertad (alta ejecución). En extradiciones internacionales, si hay garantías sólidas, es más factible.'
+        },
+        {
+          title: 'Qué Hacer Después de la Audiencia',
+          content: 'Si el juez concede extradición: recurso de reforma (3 días), recurso de apelación ante Sala Penal Audiencia Nacional (10 días), solicitud de suspensión de entrega mientras se resuelve recurso, preparación de amparo ante TC si vulnera derechos fundamentales, y contactar con abogado en país requirente para coordinar defensa. Si el juez deniega: generalmente quedas libre (salvo que España te investigue por los mismos hechos), posible recurso del fiscal (poco frecuente), cierre del expediente. En extradiciones internacionales: aunque juez conceda, aún falta decisión del Gobierno (Consejo de Ministros), se puede presentar alegaciones políticas y diplomáticas, y recurso contencioso-administrativo si Gobierno concede.'
+        }
+      ],
+      conclusion: 'La audiencia de extradición es el momento decisivo del procedimiento. Una preparación meticulosa y argumentación jurídica sólida pueden convencer al juez de denegar la entrega. En STANS Abogados hemos logrado denegar extradiciones ante la Audiencia Nacional mediante análisis exhaustivo de requisitos, aportación de garantías de arraigo y demostración de riesgos en país requirente. Si vas a comparecer en audiencia de extradición, no improvises: contacta con abogados especializados inmediatamente.'
+    }
+  },
+  {
+    id: 28,
+    title: 'Recursos contra la Extradición: Guía Completa de Impugnación',
+    excerpt: 'Cómo recurrir una orden de extradición. Recursos disponibles, plazos, estrategias y jurisprudencia del TEDH para paralizar entregas.',
+    category: 'Extradiciones',
+    author: 'Diego Cardona Valero',
+    date: '2024-12-01',
+    readTime: '14 min',
+    image: '/images/blog/recursos-extradicion.jpg',
+    slug: 'recursos-contra-extradicion',
+    tags: ['recursos extradición', 'impugnación', 'TEDH', 'defensa'],
+    content: {
+      introduction: 'Si la Audiencia Nacional concede tu extradición, no todo está perdido. Existen múltiples recursos y vías de impugnación que pueden paralizar o anular la entrega. Desde recursos internos ante tribunales españoles hasta demandas ante el Tribunal Europeo de Derechos Humanos, las posibilidades de defensa son amplias si se actúa con rapidez y estrategia adecuada.',
+      sections: [
+        {
+          title: 'Recursos Ordinarios ante Tribunales Españoles',
+          content: 'Recurso de reforma: ante el mismo Juzgado Central que concedió extradición. Plazo: 3 días desde notificación. Motivos: error en valoración de prueba, aplicación incorrecta de normas. Recurso de apelación: ante Sala de lo Penal de la Audiencia Nacional. Plazo: 10 días hábiles. Procede: contra auto que concede o deniega extradición. Motivos: infracción de normas procesales, vulneración de derechos fundamentales, error en interpretación de tratados. Recurso de casación: ante Tribunal Supremo (solo si procede por cuantía o infracción constitucional). Plazo: 20 días. Excepcional en extradiciones. Cada recurso debe estar fundado jurídicamente y presentarse en plazo: la extemporaneidad es causa de inadmisión.'
+        },
+        {
+          title: 'Recurso de Amparo ante Tribunal Constitucional',
+          content: 'Procede cuando se vulneran derechos fundamentales: derecho a la tutela judicial efectiva (art. 24 CE), derecho a la libertad (art. 17 CE), derecho a proceso sin dilaciones, presunción de inocencia, o prohibición de indefensión. Requisitos: haber agotado vía judicial ordinaria (subsidiariedad), invocar vulneración constitucional específica, presentarlo en 30 días desde notificación última resolución judicial, y especial relevancia constitucional. Procedimiento: demanda de amparo con hechos y fundamentos, admisión a trámite (muy restrictiva), alegaciones, sentencia (puede tardar años). Medidas cautelares: puedes solicitar suspensión de entrega mientras se resuelve amparo (art. 56 LOTC). Si TC estima amparo: anula extradición y reconoce vulneración. Es recurso complejo que requiere abogado especializado en constitucional.'
+        },
+        {
+          title: 'Demanda ante Tribunal Europeo de Derechos Humanos',
+          content: 'El TEDH en Estrasburgo puede paralizar extradiciones que vulneren Convenio Europeo. Derechos protegidos: prohibición tortura/tratos inhumanos (art. 3 CEDH - caso clave), derecho a vida (art. 2 CEDH), derecho a proceso justo (art. 6 CEDH), respeto vida familiar (art. 8 CEDH), prohibición discriminación (art. 14 CEDH). Requisitos: haber agotado recursos internos en España, presentar en 6 meses desde resolución final española, fundamentar violación específica del Convenio, y acreditar condición de víctima. Procedimiento: demanda ante TEDH, solicitud de medida cautelar (art. 39 Reglamento: paralización inmediata de entrega), análisis de admisibilidad, sentencia (años después). Casos exitosos: Soering vs UK (riesgo pena de muerte), Trabelsi vs Bélgica (cadena perpetua real), Al-Saadoon vs UK (tortura). El TEDH puede ordenar a España NO extraditar.'
+        },
+        {
+          title: 'Recurso Contencioso-Administrativo contra Decisión Gobierno',
+          content: 'En extradiciones internacionales (no UE), tras resolución judicial favorable a extradición, decide el Gobierno (Consejo de Ministros). Si el Gobierno concede: puedes recurrir ante Sala Contencioso-Administrativo Audiencia Nacional. Plazo: 2 meses desde notificación. Motivos: decisión arbitraria, falta de motivación, desviación de poder, vulneración tratados internacionales, incumplimiento garantías prometidas. Medidas cautelares: suspensión de entrega mientras se resuelve recurso. Este recurso tiene componente político: se pueden aportar consideraciones diplomáticas, informes de situación en país requirente, presión mediática y social. Si la decisión es puramente política (persecución), el recurso puede prosperar.'
+        },
+        {
+          title: 'Estrategia de Recursos Combinados',
+          content: 'La defensa óptima combina recursos en paralelo: Vía interna española: reforma + apelación + (casación si procede) + amparo. Vía europea: demanda TEDH con solicitud medida cautelar art. 39. Vía gubernamental: alegaciones ante Ministerio Justicia en extradiciones internacionales. Vía mediática: presión pública y visibilidad del caso (si es adecuado). Vía diplomática: intervención de embajada del país de origen si eres extranjero. Timing: los recursos deben coordinarse, presentar TEDH antes que se ejecute entrega, solicitar medidas cautelares en cada instancia, y mantener presión constante en todas las vías. Un error común es recurrir solo una vía: la combinación maximiza probabilidades de éxito. Requiere equipo especializado en internacional.'
+        }
+      ],
+      conclusion: 'Los recursos contra extradición requieren conocimiento profundo de derecho penal internacional, jurisprudencia del TEDH y estrategia procesal. No basta con interponer recursos formalmente: deben estar fundados sólidamente. En STANS Abogados hemos paralizado extradiciones mediante recursos al TEDH, amparos ante el TC y apelaciones bien argumentadas. Si la Audiencia Nacional ha concedido tu extradición, actúa YA: los plazos son perentorios. Contacta inmediatamente con nuestro equipo especializado en extradiciones internacionales.'
+    }
+  },
+  {
+    id: 29,
+    title: 'Derechos del Extraditado: Garantías y Protección Legal',
+    excerpt: 'Derechos específicos de personas reclamadas en extradición. Garantías procesales, principio de especialidad y protección contra vulneraciones.',
+    category: 'Extradiciones',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-11-30',
+    readTime: '10 min',
+    image: '/images/blog/derechos-extraditado.jpg',
+    slug: 'derechos-extraditado',
+    tags: ['derechos extraditado', 'garantías extradición', 'especialidad', 'protección'],
+    content: {
+      introduction: 'Ser reclamado en extradición no implica perder tus derechos fundamentales. Por el contrario, gozas de garantías procesales reforzadas tanto por la legislación española como por tratados internacionales y jurisprudencia del TEDH. Conocer estos derechos específicos es esencial para defender tu libertad y evitar entregas que vulneren garantías básicas.',
+      sections: [
+        {
+          title: 'Derecho a Asistencia Letrada Especializada',
+          content: 'Tienes derecho a abogado especializado en extradiciones desde el primer momento: cuando te notifican que hay solicitud de extradición, durante detención provisional, en la audiencia ante Audiencia Nacional, y durante todo el procedimiento de recursos. Particularidades: el abogado debe conocer derecho penal internacional, tratados de extradición, jurisprudencia del TEDH, y legislación del país requirente. Un abogado generalista no es suficiente. Derecho a abogado en ambos países: en España para oponerte, y en país requirente para preparar defensa allí (si finalmente te extraditan). Asistencia jurídica gratuita: si no tienes recursos, derecho a abogado de oficio especializado en internacional.'
+        },
+        {
+          title: 'Principio de Especialidad: Tu Protección Clave',
+          content: 'El principio de especialidad te garantiza que: solo puedes ser juzgado por delitos incluidos en solicitud de extradición (no por otros anteriores no mencionados), no puedes ser re-extraditado a tercer país sin consentimiento español, si aparecen nuevos delitos, requieren nueva solicitud de extradición ampliada, y si te condenan solo por delitos extraditables (no por otros). Excepciones: delitos cometidos tras la extradición sí pueden juzgarse, o si consientes expresamente ser juzgado por otros delitos. Violación del principio: si el país requirente incumple, España puede: exigir tu devolución inmediata, denunciar incumplimiento de tratados, e iniciar procedimiento internacional. Tu abogado debe exigir que la resolución de extradición mencione expresamente el principio de especialidad y delitos concretos por los que puedes ser juzgado.'
+        },
+        {
+          title: 'Derecho a Garantías Procesales en País Requirente',
+          content: 'España debe exigir garantías al país requirente: Proceso justo: derecho a defensa efectiva, juez imparcial, juicio público. No pena de muerte: compromiso vinculante de no aplicarla o conmutar. No cadena perpetua real: o revisión mínimo 25 años. No torturas: garantía de trato digno durante prisión. Asistencia consular: consulado español debe poder visitarte. Traducción: derecho a intérprete en tu idioma. Abono prisión preventiva: tiempo en España cuenta para condena. Visitas familiares: derecho a que familia te visite. Estas garantías deben constar por escrito en auto de extradición. Si el país incumple posteriormente: España puede reclamar diplomáticamente e incluso solicitar tu devolución.'
+        },
+        {
+          title: 'Derecho a Impugnar en Cada Fase',
+          content: 'Puedes recurrir: Auto de detención provisional (reforma y apelación), Auto de extradición (reforma, apelación, casación si procede), Decisión del Gobierno en internacionales (contencioso-administrativo), Vulneración derechos fundamentales (amparo ante TC), y Riesgo de tortura o vulneración CEDH (TEDH). No conformarse con primera resolución: muchas extradiciones se deniegan en segunda instancia. Aportar pruebas nuevas: si aparecen elementos posteriores que refuerzan defensa. Cambio de circunstancias: si mejora situación en país requirente o empeora tu salud. Jurisprudencia favorable nueva: citar sentencias TEDH recientes. La perseverancia en recursos, bien fundados, puede paralizar extradiciones que parecían inevitables.'
+        }
+      ],
+      conclusion: 'Los derechos del extraditado son garantías sólidas reconocidas en tratados internacionales y protegidas por el TEDH. No estás indefenso: puedes y debes oponerte si consideras que la extradición vulnera tus derechos o que en el país requirente no recibirás proceso justo. En STANS Abogados defendemos extraditados ante la Audiencia Nacional y tribunales internacionales, con experiencia en recursos al TEDH que han paralizado entregas. Si te reclaman en extradición, contacta inmediatamente: tus derechos pueden salvarte de una entrega injusta.'
+    }
+  },
+  // ===== BLOGS ADICIONALES DERECHOS Y PROTECCIÓN =====
+  {
+    id: 30,
+    title: 'Derecho a Asistencia Letrada del Detenido: Garantía Fundamental',
+    excerpt: 'Análisis del derecho constitucional a asistencia letrada. Desde cuándo lo tienes, cómo ejercerlo y consecuencias de su vulneración.',
+    category: 'Derechos Fundamentales',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-06',
+    readTime: '11 min',
+    image: '/images/blog/asistencia-letrada-derecho.jpg',
+    slug: 'derecho-asistencia-letrada-detenido',
+    tags: ['asistencia letrada', 'derecho fundamental', 'artículo 24 CE', 'abogado'],
+    content: {
+      introduction: 'El derecho a la asistencia letrada es uno de los pilares fundamentales del sistema penal español. Reconocido en el artículo 24.2 de la Constitución y desarrollado en el artículo 520 LECrim, garantiza que ninguna persona pueda ser interrogada sin presencia de abogado. Este derecho es inmediato, irrenunciable y gratuito si no dispones de medios. La jurisprudencia del Tribunal Constitucional ha reforzado su protección, estableciendo que su vulneración anula todo el procedimiento.',
+      sections: [
+        {
+          title: 'Desde Cuándo Tienes Derecho a Abogado',
+          content: 'El derecho nace en el preciso instante de la privación de libertad, incluso antes de ser conducido a comisaría. Momentos clave: detención en la calle (inmediatamente), llegada a comisaría (antes de cualquier actuación), interrogatorios policiales (presencia obligatoria), registros invasivos (puede estar presente), declaración ante juez (obligatorio), y durante todo el proceso penal. No es necesario solicitarlo expresamente: la policía debe informarte automáticamente. Sin embargo, es recomendable manifestar: "Quiero ejercer mi derecho a abogado antes de declarar". La STC 155/2002 establece que el derecho es desde el primer momento de la privación de libertad.'
+        },
+        {
+          title: 'Funciones del Abogado durante la Detención',
+          content: 'Asistencia en declaraciones: presencia obligatoria en interrogatorios, puede asesorarte sobre qué responder o recomendar no declarar, interrumpe preguntas capciosas o irregulares. Información de derechos: explicación clara de derechos constitucionales, consecuencias legales de tus decisiones, opciones procesales disponibles. Control de legalidad: supervisa actuaciones policiales, detecta vulneraciones de derechos, formula objeciones inmediatas, solicita nulidad de actuaciones ilegales. Impugnación: recursos contra decisiones judiciales, solicitud de medidas cautelares alternativas, preparación de defensa para juicio. Coordinación con familiares: comunicación con entorno (respetando secreto profesional), organización de documentación de arraigo. El abogado es tu escudo: sin él estás indefenso.'
+        },
+        {
+          title: 'Abogado de Oficio vs Particular',
+          content: 'Abogado de oficio: gratuito si acreditas insuficiencia de recursos, designado por turno de oficio del Colegio de Abogados, experiencia en asistencia a detenidos, llega rápido (máximo 2 horas). Inconvenientes: rotación (puede cambiar en cada fase), menos especialización en casos muy técnicos. Abogado particular: elección libre del profesional, especialización en el tipo de delito, seguimiento continuado del caso, disponibilidad 24/7 si lo ofrece. Inconvenientes: coste económico, puede tardar más si no está de guardia. Combinación: puedes empezar con oficio y luego designar particular. El de oficio continúa hasta que llegue el particular. Derecho a cambiar: puedes cambiar en cualquier momento sin justificar.'
+        },
+        {
+          title: 'Secreto Profesional: Tu Protección Absoluta',
+          content: 'Artículo 542 LECrim: todo lo que comuniques a tu abogado está protegido por secreto profesional absoluto. Alcance: conversaciones orales, documentos que le entregues, información sobre el caso, estrategia de defensa, y cualquier comunicación. El abogado NO puede: revelar información sin tu consentimiento, declarar como testigo sobre lo que le contaste, aportar documentos que le diste como prueba contra ti. Excepciones: NO hay excepciones, ni siquiera por orden judicial. Consecuencias de violación: nulidad de pruebas obtenidas, responsabilidad disciplinaria del abogado, delito de revelación de secretos (art. 199 CP). Puedes hablar con total confianza: tu abogado está legalmente obligado a guardar silencio absoluto.'
+        },
+        {
+          title: 'Qué Hacer si se Vulnera tu Derecho a Abogado',
+          content: 'Si te interrogan sin abogado presente: manifiesta expresamente tu oposición, di "no declaro sin mi abogado", pide que conste en acta tu negativa, no respondas ninguna pregunta sobre hechos, solicita suspensión hasta que llegue abogado. Consecuencias de vulneración: nulidad de la declaración obtenida (art. 11.1 LOPJ), exclusión de pruebas derivadas (fruto del árbol envenenado), posible nulidad de todo el procedimiento, recurso de amparo ante TC. Recursos: habeas corpus inmediato si impiden acceso a abogado, nulidad de actuaciones en fase de instrucción, exclusión probatoria en juicio oral, amparo ante TC por vulneración art. 24 CE. Jurisprudencia: STC 196/1987 establece que sin abogado no hay declaración válida.'
+        },
+        {
+          title: 'Importancia de Abogado Especializado',
+          content: 'No todos los abogados son iguales. Casos complejos requieren especialización: Terrorismo: abogado con experiencia en Audiencia Nacional, conocimiento de legislación antiterrorista, contactos en la AN. Extradiciones: especialista en derecho internacional, conocimiento de tratados, experiencia en TEDH. Delitos económicos: conocimientos financieros y mercantiles, análisis de operaciones complejas. Violencia de género: sensibilidad y formación específica, conocimiento de órdenes de protección. Tráfico de drogas: experiencia en delitos contra salud pública, estrategias específicas. La especialización marca la diferencia entre libertad y condena. Un error en defensa penal es irreversible. En STANS Abogados todos nuestros abogados están especializados en áreas penales específicas.'
+        }
+      ],
+      conclusion: 'El derecho a asistencia letrada no es un trámite burocrático: es tu principal garantía de defensa efectiva. Ejercerlo desde el primer momento, con abogado especializado y de confianza, puede marcar la diferencia entre un resultado favorable y una condena grave. En STANS Abogados ofrecemos asistencia letrada inmediata 24/7 con abogados penalistas especializados. No renuncies nunca a este derecho, ni siquiera si te prometen beneficios: tu libertad depende de él.'
+    }
+  },
+  {
+    id: 31,
+    title: 'Protección contra Torturas y Tratos Inhumanos durante la Detención',
+    excerpt: 'Prohibición absoluta de torturas según la Constitución y CEDH. Qué hacer si sufres malos tratos, cómo denunciar y garantías de protección.',
+    category: 'Derechos Fundamentales',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2024-11-29',
+    readTime: '13 min',
+    image: '/images/blog/torturas-proteccion.jpg',
+    slug: 'proteccion-torturas-tratos-inhumanos',
+    tags: ['torturas', 'tratos inhumanos', 'artículo 15 CE', 'protección'],
+    content: {
+      introduction: 'La prohibición de torturas y tratos inhumanos o degradantes es un derecho fundamental absoluto reconocido en el artículo 15 de la Constitución Española y el artículo 3 del Convenio Europeo de Derechos Humanos. No admite excepciones ni siquiera en casos de terrorismo o delincuencia grave. Si sufres cualquier maltrato durante la detención, tienes derechos y mecanismos de protección inmediatos.',
+      sections: [
+        {
+          title: 'Qué se Considera Tortura o Trato Inhumano',
+          content: 'Tortura física: golpes, descargas eléctricas, posturas forzadas, quemaduras, asfixia, privación de sueño prolongada. Pena: 2-8 años de prisión (art. 174 CP). Tortura psicológica: amenazas a familiares, aislamiento prolongado, manipulación mental, coacciones graves, simulacros de ejecución. Pena: 2-8 años. Tratos inhumanos: hacinamiento extremo, falta de higiene, temperaturas extremas, privación de alimentación o agua, negación de atención médica. Responsabilidad administrativa y penal. Tratos degradantes: insultos racistas, registros vejatorios, exposición pública humillante, desprecio sistemático. Responsabilidad disciplinaria. Incomunicación ilegal: aislamiento sin autorización judicial, sin contacto familiar ni abogado propio, más de 5 días. Detención ilegal.'
+        },
+        {
+          title: 'Qué Hacer Inmediatamente si Sufres Maltrato',
+          content: '1) Solicita médico forense INMEDIATAMENTE (no médico policial): di "he sufrido maltrato, exijo reconocimiento por forense independiente". 2) Documenta lesiones: fotos si es posible, descripción detallada. 3) Informa a tu abogado en cuanto llegue: debe constar en todas las diligencias. 4) Solicita que conste en acta: "hago constar que he sido golpeado/maltratado por agente X". 5) Identifica a los agentes: nombres, números de placa, descripción física. 6) Testigos: otros detenidos, personal que presenció. 7) NO te laves ni cambies ropa: preserva evidencias. 8) Parte médico detallado: exige que el forense documente TODAS las lesiones, incluso mínimas.'
+        },
+        {
+          title: 'Denuncia por Torturas o Malos Tratos',
+          content: 'Ante quién denunciar: Fiscalía Especial de Derechos Humanos (preferente), Juzgado de Instrucción (querella criminal), Comisaría diferente a la del maltrato, Defensor del Pueblo, y Organizaciones de derechos humanos (Amnistía Internacional). Plazo: inmediatamente o en cuanto sea posible. No prescribe durante años. Contenido denuncia: hechos detallados (fecha, hora, lugar, agentes), lesiones sufridas (con parte médico forense), testigos si los hay, petición de investigación penal. Consecuencias: apertura diligencias penales contra agentes, posible suspensión cautelar de los policías, investigación interna de Asuntos Internos, y eventual juicio penal. Indemnización: puedes solicitar responsabilidad patrimonial del Estado por daños físicos, psicológicos y morales.'
+        },
+        {
+          title: 'Nulidad de Pruebas Obtenidas bajo Tortura',
+          content: 'Artículo 11.1 LOPJ: no surtirán efecto las pruebas obtenidas violentando derechos fundamentales. Doctrina del fruto del árbol envenenado: si obtienes confesión bajo tortura, esa confesión es NULA. Además, todas las pruebas derivadas de esa confesión también son nulas (testigos localizados, objetos encontrados, etc.). Carga de la prueba: si alegas torturas, acusación debe demostrar que confesión fue voluntaria. Indicio de tortura: parte médico con lesiones, denuncia inmediata, declaración contradictoria con la policial. Consecuencias: exclusión de confesión, posible absolución si era prueba principal, anulación del procedimiento completo. STC 127/2000: el uso de pruebas obtenidas mediante tortura vulnera derecho a proceso justo y anula condena.'
+        },
+        {
+          title: 'Protección Internacional contra Torturas',
+          content: 'Convenio Europeo Derechos Humanos (art. 3): prohíbe torturas y tratos inhumanos de forma absoluta, sin excepciones ni siquiera en guerra o emergencia. Tribunal Europeo: España ha sido condenada por el TEDH en casos de malos tratos policiales. Convención ONU contra Tortura: ratificada por España, obliga a investigar toda denuncia de tortura, establece jurisdicción universal (torturas se persiguen en cualquier país), y prevé Comité contra la Tortura que supervisa cumplimiento. Mecanismo Nacional Prevención Torturas: Defensor del Pueblo inspecciona centros de detención, recibe denuncias de malos tratos, y elabora informes públicos. Puedes acudir al TEDH: si España no investiga adecuadamente tu denuncia de torturas.'
+        },
+        {
+          title: 'Grupos Especialmente Vulnerables',
+          content: 'Protección reforzada para: Menores: prohibición absoluta de cualquier maltrato, presencia obligatoria de psicólogo. Mujeres: prohibición de registros vejatorios, consideración de violencia de género previa. Extranjeros: derecho a información consular, protección contra discriminación racial. Personas con discapacidad: adaptaciones razonables, protección contra abusos. LGTBI: protección contra discriminación y violencia homófoba/transfóbica. Personas con enfermedad mental: atención psiquiátrica, protección contra trato discriminatorio. Embarazadas: prohibición de medidas que afecten gestación. Cada grupo tiene protección específica en tratados internacionales (Convención Derechos del Niño, CEDAW, Convención Discapacidad).'
+        }
+      ],
+      conclusion: 'Las torturas y tratos inhumanos están absolutamente prohibidos en España y en el derecho internacional. No son tolerables bajo ninguna circunstancia. Si los sufres, tienes derecho a protección inmediata, investigación efectiva de los responsables y reparación integral del daño. En STANS Abogados defendemos víctimas de torturas y malos tratos policiales, presentando querellas criminales, recursos de amparo y demandas ante el TEDH. No permitas que quede impune: denuncia inmediatamente.'
+    }
+  },
+  {
+    id: 32,
+    title: 'Derechos de Grupos Vulnerables Detenidos: Protección Especial',
+    excerpt: 'Derechos reforzados de menores, extranjeros, personas con discapacidad y otros grupos vulnerables durante la detención. Garantías y protecciones específicas.',
+    category: 'Derechos Fundamentales',
+    author: 'Equipo STANS Abogados',
+    date: '2024-11-28',
+    readTime: '14 min',
+    image: '/images/blog/grupos-vulnerables.jpg',
+    slug: 'derechos-grupos-vulnerables-detenidos',
+    tags: ['grupos vulnerables', 'menores', 'extranjeros', 'discapacidad', 'protección especial'],
+    content: {
+      introduction: 'Los grupos vulnerables (menores, extranjeros, personas con discapacidad, víctimas de violencia de género, personas mayores, etc.) gozan de protección reforzada durante la detención. La legislación española y los tratados internacionales establecen garantías adicionales que reconocen su situación de especial vulnerabilidad y aseguran el respeto de sus derechos en igualdad de condiciones.',
+      sections: [
+        {
+          title: 'Derechos Especiales de Menores Detenidos',
+          content: 'Los menores de 18 años tienen protección reforzada: presencia obligatoria de representante legal (padre, madre, tutor) en todas las actuaciones, abogado especializado en derecho de menores (no generalista), audiencia adaptada a su edad y madurez (lenguaje comprensible), prohibición de incomunicación (nunca pueden ser incomunicados), consideración del interés superior del menor en todas las decisiones, acceso a educación durante detención, protección contra estigmatización social y mediática, y medidas educativas preferentes sobre penas. Competencia: Fiscalía de Menores tiene control exclusivo. Ley Orgánica 5/2000: procedimiento específico para menores. Separación de adultos: nunca pueden estar con detenidos mayores. Centro de menores: no comisarías ordinarias.'
+        },
+        {
+          title: 'Garantías de Extranjeros Detenidos',
+          content: 'Traducción e interpretación gratuita e inmediata: en tu idioma durante TODO el procedimiento (Directiva 2010/64/UE). Comunicación consular en 24 horas: tu embajada debe ser informada y puede visitarte, asesorarte y buscar abogado. Información en idioma nativo: todos los documentos traducidos (derechos, cargos, resoluciones). Abogado con conocimientos de extranjería: para defender tanto el caso penal como evitar deportación. Protección contra deportación durante proceso: no pueden expulsarte hasta resolución del caso penal. Acceso a servicios de embajada: pueden aportar documentación, contactar familia en tu país. Derecho a intérprete en juicio: traducción simultánea de todo el proceso. Consideración de arraigo en tu país: para medidas cautelares.'
+        },
+        {
+          title: 'Protección de Personas con Discapacidad',
+          content: 'Convención ONU Derechos Personas con Discapacidad (ratificada por España): Adaptaciones razonables: en instalaciones, comunicación, procedimientos. Apoyo especializado durante interrogatorios: personas de confianza, asistentes especializados. Abogado con conocimientos específicos: sobre discapacidad y adaptaciones. Evaluaciones médicas especializadas: por profesionales con formación en discapacidad. Comunicación accesible: lengua de signos, lectura fácil, pictogramas si procede. Medidas alternativas a detención: siempre que sea posible, prisión domiciliaria o centro especializado. Evaluación capacidad para declarar: si tiene discapacidad intelectual, evaluar comprensión. Prohibición discriminación: por motivo de discapacidad. Centros adaptados: accesibilidad física, atención médica especializada.'
+        },
+        {
+          title: 'Derechos de Víctimas de Violencia de Género',
+          content: 'Si eres víctima de violencia de género y te detienen: protección especial contra agresor, medidas de alejamiento inmediatas, apoyo psicológico especializado, coordinación con servicios sociales, consideración de situación de vulnerabilidad en decisiones judiciales, prohibición de careos con agresor, y testigo protegido si procede. Si te detienen por defenderte de agresor: posible legítima defensa, atenuante de arrebato u obcecación, considera violencia previa sufrida, y posible eximente. Recursos específicos: Puntos de Encuentro Familiar, Casas de Acogida, 016 Atención víctimas. Legislación: Ley Orgánica 1/2004. El sistema debe protegerte, no re-victimizarte.'
+        },
+        {
+          title: 'Otros Grupos con Protección Específica',
+          content: 'Personas mayores: evaluación médica inmediata de salud, consideración edad en medidas cautelares, facilidades para comunicación familiar, medidas alternativas a prisión. Personas con enfermedad mental: evaluación psiquiátrica inmediata, tratamiento médico continuado, protección contra estigmatización, medidas terapéuticas alternativas, coordinación con salud mental. Personas sin hogar: información especial sobre derechos, acceso a servicios sociales, consideración de su situación, protección contra discriminación, apoyo para recursos básicos. Personas LGTBI: protección contra discriminación y violencia LGTBIfóbica, respeto a identidad de género, consideración de vulnerabilidad específica. Cada grupo tiene normativa de protección específica.'
+        }
+      ],
+      conclusion: 'Los grupos vulnerables no son ciudadanos de segunda: tienen los mismos derechos que cualquier persona detenida, más garantías adicionales que reconocen su situación específica. El sistema penal debe adaptarse a ellos, no al revés. En STANS Abogados tenemos experiencia defendiendo menores, extranjeros, personas con discapacidad y otros colectivos vulnerables, garantizando que sus derechos específicos sean respetados. Si perteneces a grupo vulnerable y has sido detenido, contacta con abogados con sensibilidad y formación específica.'
+    }
+  },
+  {
+    id: 33,
+    title: 'Derechos en Dependencias Policiales: Condiciones Dignas de Detención',
+    excerpt: 'Condiciones mínimas que deben cumplir las dependencias policiales. Alimentación, higiene, espacio y garantías durante tu permanencia.',
+    category: 'Derechos Fundamentales',
+    author: 'Diego Cardona Valero',
+    date: '2024-11-27',
+    readTime: '9 min',
+    image: '/images/blog/dependencias-policiales.jpg',
+    slug: 'derechos-dependencias-policiales',
+    tags: ['dependencias policiales', 'condiciones detención', 'dignidad', 'derechos básicos'],
+    content: {
+      introduction: 'Las dependencias policiales donde permaneces durante la detención deben cumplir estándares mínimos de dignidad establecidos por el Reglamento de Detención y la jurisprudencia del TEDH. No es legalmente aceptable permanecer en condiciones inhumanas o degradantes, incluso si la detención es breve. Conocer estos estándares te permite exigir su cumplimiento y denunciar si se vulneran.',
+      sections: [
+        {
+          title: 'Condiciones Físicas de las Celdas',
+          content: 'Espacio mínimo: 4 metros cuadrados por persona, no hacinamiento (máximo 2 personas por celda salvo excepcional). Ventilación: adecuada y natural si es posible. Iluminación: luz natural durante el día, luz artificial suficiente. Temperatura: entre 18-21 grados, calefacción en invierno, ventilación en verano. Mobiliario: litera o cama, sanitario funcional, punto de agua potable. Higiene: limpieza diaria de celdas, desinfección regular. Acceso a aseos: inmediato cuando lo solicites, con privacidad (sin cámaras). Si las condiciones son inhumanas: puedes denunciar trato degradante, solicitar traslado a otro centro, que conste en acta, y recurrir medida de detención. Jurisprudencia TEDH: condiciones indignas pueden constituir violación art. 3 CEDH.'
+        },
+        {
+          title: 'Derechos de Alimentación e Higiene',
+          content: 'Alimentación: 3 comidas diarias (desayuno, comida, cena), dieta equilibrada y suficiente, consideración de necesidades religiosas (halal, kosher), dieta especial por salud si procede (diabetes, alergias, celiaquía). Agua potable: acceso ilimitado y gratuito. Higiene personal: acceso a aseos cuando lo necesites, papel higiénico y productos básicos, ducha si detención supera 24 horas, productos menstruales para mujeres, jabón y toalla. Ropa: si detención es prolongada, derecho a ropa limpia. Si te niegan alimentación o higiene: solicita que conste en acta, informa a abogado inmediatamente, denuncia trato inhumano, solicita médico forense. La privación de necesidades básicas constituye trato degradante.'
+        },
+        {
+          title: 'Derecho a Asistencia Médica en Comisaría',
+          content: 'Acceso a médico: si te sientes mal, tienes lesiones, necesitas medicación habitual, o sufres enfermedad crónica. Debe ser médico forense independiente (no médico policial si sospechas maltrato). Medicación: derecho a continuar tratamientos que tomes habitualmente, acceso a medicamentos necesarios, conservación en frío si procede (insulina). Atención de urgencia: si sufres crisis, dolor intenso o emergencia médica. Atención psicológica: si sufres ansiedad, pánico o crisis psicológica. Embarazadas: atención obstétrica especializada. Personas con VIH: tratamiento antirretroviral continuado. Diabéticos: control de glucemia y dieta adecuada. Si te niegan atención médica: solicita expresamente, que conste en acta, informa a abogado, denuncia posteriormente.'
+        },
+        {
+          title: 'Inspección y Control de Dependencias',
+          content: 'Mecanismo Nacional de Prevención de Tortura: Defensor del Pueblo puede inspeccionar comisarías sin previo aviso, entrevistar detenidos confidencialmente, examinar registros y documentación, elaborar informes públicos con recomendaciones. Si detecta irregularidades: requiere medidas correctoras inmediatas, informa a Fiscalía si hay indicios de delito, y publica informes anuales. Jueces de Vigilancia: pueden inspeccionar condiciones de celdas. Colegios de Abogados: servicios de guardia controlan cumplimiento de derechos. Organismos internacionales: Comité Europeo Prevención Tortura visita España periódicamente. Transparencia: informes son públicos. Si sufres condiciones indignas: contacta con Defensor del Pueblo, ONGs derechos humanos, tu abogado puede solicitar inspección judicial.'
+        }
+      ],
+      conclusion: 'Las condiciones de detención deben respetar tu dignidad humana en todo momento. No es aceptable permanecer en condiciones inhumanas ni siquiera brevemente. Si las condiciones en comisaría vulneran estándares mínimos, tienes derecho a denunciarlo y exigir cumplimiento. En STANS Abogados supervisamos que las condiciones de detención de nuestros clientes sean dignas, denunciando cualquier irregularidad ante fiscalía y juzgados. Tu dignidad es irrenunciable.'
+    }
+  },
+  {
+    id: 34,
+    title: 'Derechos Procesales y Recursos del Detenido: Garantías en Cada Fase',
+    excerpt: 'Derechos procesales durante la detención y procedimiento penal. Recursos disponibles en cada fase y cómo ejercer tus garantías efectivamente.',
+    category: 'Procedimiento Penal',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2024-11-26',
+    readTime: '12 min',
+    image: '/images/blog/derechos-procesales.jpg',
+    slug: 'derechos-procesales-recursos-detenido',
+    tags: ['derechos procesales', 'recursos', 'garantías', 'procedimiento penal'],
+    content: {
+      introduction: 'Los derechos procesales son las garantías que aseguran un proceso justo desde la detención hasta la sentencia final. El artículo 24 CE establece el derecho a la tutela judicial efectiva, que incluye: defensa, asistencia letrada, información de acusación, proceso público sin dilaciones, prueba, no autoinculparse y presunción de inocencia. Conocer estos derechos y los recursos para defenderlos es esencial en cada fase del procedimiento.',
+      sections: [
+        {
+          title: 'Derechos en Fase de Detención Policial',
+          content: 'Presunción de inocencia: eres inocente hasta sentencia firme, la carga de la prueba corresponde a la acusación, no debes probar tu inocencia. Derecho a no autoinculparse: no estás obligado a colaborar con la investigación, puedes negarte a declarar, no declarar contra familiares. Derecho a ser informado de la acusación: conocer exactamente qué delito te imputan, ver las pruebas en tu contra (salvo secreto justificado), acceder al expediente completo. Derecho a defensa efectiva: abogado presente en todas las actuaciones, tiempo para preparar defensa, proponer diligencias de investigación. Derecho a proceso sin dilaciones: máximo 72 horas en comisaría, puesta judicial en plazo razonable.'
+        },
+        {
+          title: 'Recursos durante la Instrucción',
+          content: 'Contra prisión preventiva: reforma (3 días) y apelación (10 días) del auto de prisión. Solicitud de libertad provisional: cada 3-6 meses si cambian circunstancias. Contra secreto de sumario: si es desproporcionado o prolongado. Nulidad de diligencias: si vulneran derechos fundamentales. Práctica de pruebas: solicitud de testigos, periciales, documentales. Sobreseimiento: si no hay indicios suficientes. Archivo: si el hecho no es delito. Cada decisión judicial es recurrible: no conformarse con primera resolución. El silencio judicial (no resolver en plazo) también es recurrible. La instrucción no puede ser indefinida: máximo 6 meses prorrogables (18 meses en casos complejos). Si se excede: derecho a archivo por dilaciones.'
+        },
+        {
+          title: 'Derechos en Fase de Juicio Oral',
+          content: 'Derecho a juicio público: salvo casos excepcionales de orden público o protección menores. Derecho a estar presente: en todas las sesiones, salvo alteración grave del orden. Última palabra: antes de que se retiren a deliberar. Presunción de inocencia: hasta sentencia condenatoria firme. Derecho a la prueba: proponer testigos, periciales, documentos, careos. In dubio pro reo: si hay duda, debe absolverse. Motivación de sentencia: debe estar razonada jurídicamente. Derecho a recurrir: apelación contra sentencia de primera instancia, casación ante Tribunal Supremo si procede. Publicidad: sentencias son públicas (salvo datos protegidos). Lectura de sentencia: debe leerse en audiencia pública o notificarse por escrito.'
+        },
+        {
+          title: 'Recurso de Apelación y Casación',
+          content: 'Apelación: contra sentencias de Juzgado Penal ante Audiencia Provincial. Plazo: 10 días desde notificación. Motivos: error en valoración de prueba, aplicación incorrecta de norma, vulneración derechos procesales. Efecto: suspende ejecución de sentencia (salvo casos excepcionales). Casación: contra sentencias de Audiencia Provincial ante Tribunal Supremo. Plazo: 5 días para anunciar, 20 días para formalizar. Motivos: infracción de ley, quebrantamiento de forma, vulneración derechos fundamentales. Requisitos: pena superior a 5 años, o delito de especial gravedad. Muy técnico: requiere abogado especializado en casación. Revisión: recurso extraordinario contra sentencias firmes si aparecen hechos o pruebas nuevas que demuestran inocencia.'
+        },
+        {
+          title: 'Recurso de Amparo y TEDH',
+          content: 'Recurso de amparo ante TC: protege derechos fundamentales vulnerados (arts. 14-30 CE). Plazo: 30 días desde notificación última resolución judicial. Requisitos: subsidiariedad (agotar vía ordinaria), invocación específica de derecho vulnerado, relevancia constitucional. Procedimiento: demanda, admisión (muy restrictiva: menos 5% admitidos), alegaciones, sentencia. Si estima: anula resolución y reconoce vulneración. Demanda ante TEDH: protege derechos del Convenio Europeo (arts. 2-14 CEDH). Plazo: 6 meses desde resolución final interna. Requisitos: agotar recursos en España, fundamentar violación específica del Convenio. Procedimiento: años de tramitación, pero puede dictar medidas cautelares inmediatas. Casos exitosos: España condenada por vulnerar presunción inocencia, proceso sin dilaciones, torturas.'
+        }
+      ],
+      conclusion: 'Los derechos procesales y recursos son tu escudo contra la arbitrariedad y los errores judiciales. No son formalismos: son garantías reales que pueden cambiar el resultado de tu caso. Ejercerlos adecuadamente, en cada fase y con abogado especializado, maximiza probabilidades de éxito. En STANS Abogados conocemos profundamente los recursos disponibles en cada momento procesal, desde habeas corpus urgente hasta recursos de casación y amparo ante TC. Si consideras que tus derechos procesales han sido vulnerados, contacta inmediatamente: los plazos para recurrir son breves y perentorios.'
+    }
+  },
+  // ===== BLOGS ESPECIALIZADOS ADICIONALES =====
+  {
+    id: 35,
+    title: 'Delitos contra la Salud Pública (Drogas): Consecuencias y Defensa',
+    excerpt: 'Guía completa sobre delitos de tráfico de drogas. Tipos, penas, diferencia entre tráfico y consumo, y estrategias de defensa legal efectivas.',
+    category: 'Delitos Especializados',
+    author: 'Diego Cardona Valero',
+    date: '2024-11-25',
+    readTime: '16 min',
+    image: '/images/blog/drogas-trafico.jpg',
+    slug: 'delitos-salud-publica-drogas-consecuencias',
+    tags: ['tráfico drogas', 'salud pública', 'cannabis', 'defensa drogas'],
+    content: {
+      introduction: 'Los delitos contra la salud pública, principalmente el tráfico de drogas, están regulados en los artículos 368-378 del Código Penal. Las penas van desde 3 meses hasta 21 años de prisión según tipo de droga, cantidad y circunstancias. Distinguir entre tráfico y consumo personal, conocer atenuantes aplicables y defensas técnicas puede reducir sustancialmente las penas o incluso conseguir absolución.',
+      sections: [
+        {
+          title: 'Tipos de Drogas y Penas Asociadas',
+          content: 'Drogas que causan grave daño a la salud (Grupo I): cocaína, heroína, MDMA, anfetaminas, LSD. Pena básica: 3-9 años de prisión y multa. Drogas que no causan grave daño (Grupo II): cannabis, derivados cannabinoides. Pena básica: 1-3 años de prisión y multa. Factores agravantes: cantidad notoria (x2 pena), organización criminal (x3), uso de menores, tráfico internacional, uso de armas. Factores atenuantes: drogadicción del autor, escasa entidad del hecho, colaboración con justicia. Penas máximas: hasta 21 años si concurren varias agravantes. Multas: proporcionales al valor de la droga (puede superar millones de euros).'
+        },
+        {
+          title: 'Diferencia entre Tráfico y Consumo Personal',
+          content: 'Consumo personal (no es delito, solo falta administrativa): cantidad para uso propio, ausencia de ánimo de lucro, no distribución a terceros. Tráfico (delito grave): cantidad superior a consumo razonable, instrumentos de pesaje o distribución, dinero fraccionado, presencia en lugares de venta, contactos con múltiples personas, envoltorios individualizados. Jurisprudencia TS: cannabis hasta 100 gramos puede considerarse consumo; cocaína hasta 7.5 gramos puede ser consumo. Pero depende del caso concreto. Defensa: acreditar condición de consumidor habitual, peritaje toxicológico, ausencia de ánimo de lucro, testimonios. Si pruebas que era consumo: absolución por atipicidad. Si hay duda: in dubio pro reo, debe absolverse.'
+        },
+        {
+          title: 'Cultivo de Cannabis: ¿Cuándo es Delito?',
+          content: 'Cultivo para consumo propio: Hasta 2-3 plantas en domicilio privado, sin distribución, para uso personal exclusivo. Posible falta administrativa o atipicidad si se prueba. Cultivo como tráfico: Más de 3 plantas (según jurisprudencia), cantidad superior a consumo anual, instrumentos de cultivo profesional (focos, sistemas riego), ventas a terceros documentadas. Pena: 1-3 años (cannabis) o 3-9 años si es industrial. Cultivo en exterior vs interior: el exterior puede verse como tráfico por accesibilidad a terceros. Asociaciones cannábicas: jurisprudencia contradictoria, algunas absueltas, otras condenadas. Defensa: acreditar consumo personal habitual, ausencia de ventas, cantidad razonable para autoconsumo anual. Peritaje sobre rendimiento de plantas.'
+        },
+        {
+          title: 'Defensas Técnicas contra Acusación de Tráfico',
+          content: 'Atipicidad: la conducta no es delito (ej. cantidad para consumo). Cadena de custodia defectuosa: si la droga no se preservó adecuadamente, prueba es nula. Error en análisis: cuestionar informe del laboratorio, solicitar contraanálisis. Ausencia de dolo: desconocimiento del contenido (ej. te dieron paquete sin saber qué era). Atenuantes: drogadicción del acusado (art. 21.2 CP, reduce pena), colaboración con justicia (delación de proveedores, reduce hasta 2 grados), dilaciones indebidas (si proceso dura años), confesión (art. 21.4 CP). Prueba ilícita: si registro fue sin orden judicial, droga encontrada es nula. Agente provocador: si policía indujo a cometer delito. Conformidad: reconocer hechos puede reducir pena 1/3.'
+        },
+        {
+          title: 'Situaciones Especiales en Drogas',
+          content: 'Tráfico en aeropuertos: considerado tráfico internacional (agravante), penas más altas, difícil libertad provisional. Correos de droga (mulas): menores penas si se prueba que actuaste coaccionado, colaborar identificando organizadores reduce pena. Venta a menores: agravante específico muy grave, penas de hasta 21 años. Tráfico en centros educativos: zona especialmente protegida, incremento de pena. Precursores químicos: venta de sustancias para fabricar drogas (efedrina, acetona), pena de 3-9 años. Nuevas sustancias psicoactivas: drogas sintéticas no catalogadas aún, posible atipicidad temporal. Cada situación requiere defensa especializada.'
+        },
+        {
+          title: 'Medidas Alternativas y Suspensión de Condena',
+          content: 'Suspensión de ejecución: si pena es inferior a 2 años, no antecedentes, compromiso de no delinquir. Requisito especial en drogas: seguir tratamiento de deshabituación. Libertad vigilada: sustitución de prisión por libertad con control. Trabajos en beneficio comunidad: sustitución de prisión por trabajos. Multa: sustitución de prisión por sanción económica. Estos beneficios permiten evitar ingreso en prisión cumpliendo condiciones. En STANS Abogados hemos logrado suspensiones de condena en casos de drogas mediante acreditación de tratamiento de deshabituación y compromiso de no reincidencia. Importante: no vale para reincidentes o cantidades muy grandes.'
+        }
+      ],
+      conclusion: 'Los delitos contra la salud pública tienen penas graves, pero existen defensas técnicas y atenuantes que pueden reducir sustancialmente las condenas o incluso conseguir absolución. La diferencia entre tráfico y consumo, la correcta aplicación de atenuantes y la impugnación de pruebas ilegales son claves. En STANS Abogados somos especialistas en defensa de casos de drogas, con experiencia en conseguir absoluciones, suspensiones de condena y penas mínimas. Si te acusan de tráfico de drogas, contacta inmediatamente: la estrategia defensiva debe prepararse desde el primer momento.'
+    }
+  },
+  {
+    id: 36,
+    title: 'Blanqueo de Capitales: Cómo Detectarlo y Defenderse',
+    excerpt: 'Delito de blanqueo de capitales: qué es, fases, métodos, penas y defensas. Guía para entender acusaciones y proteger tus derechos.',
+    category: 'Delitos Económicos',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-11-24',
+    readTime: '15 min',
+    image: '/images/blog/blanqueo-capitales.jpg',
+    slug: 'blanqueo-capitales-detectar-defenderse',
+    tags: ['blanqueo capitales', 'delitos económicos', 'lavado dinero', 'defensa'],
+    content: {
+      introduction: 'El blanqueo de capitales (artículo 301 CP) consiste en convertir, transferir u ocultar bienes procedentes de actividades delictivas para integrarlos en el circuito económico legal. Las penas van de 6 meses a 12 años según gravedad del delito previo. Es un delito complejo que requiere conocimientos financieros, y las defensas técnicas son múltiples si se actúa con abogado especializado en delitos económicos.',
+      sections: [
+        {
+          title: 'Qué es el Blanqueo de Capitales',
+          content: 'Artículo 301 CP castiga: adquirir, poseer, utilizar, convertir o transmitir bienes sabiendo que proceden de delito, u ocultar o encubrir el origen ilícito, o ayudar a quien participó en la infracción a eludir consecuencias. Elementos del delito: 1) Existencia de delito previo (origen ilícito del dinero), 2) Conocimiento del origen delictivo (dolo), 3) Actos de blanqueo (conversión, ocultación, transferencia), 4) Finalidad de ocultar el origen. No es necesario condena previa por delito origen. Basta con probar procedencia ilícita. Penas: 6 meses a 6 años si delito previo es leve, 2 a 12 años si es grave. Multa hasta triple del valor blanqueado. Decomiso de bienes blanqueados.'
+        },
+        {
+          title: 'Fases del Blanqueo de Capitales',
+          content: 'Fase 1 - Colocación: introducir dinero ilícito en sistema financiero mediante depósitos bancarios, transferencias, compra de activos, negocios de efectivo (bares, restaurantes). Fase 2 - Estratificación/Encubrimiento: ocultar origen mediante operaciones complejas, sociedades pantalla en paraísos fiscales, inversiones en criptomonedas, préstamos simulados, operaciones inmobiliarias sucesivas. Fase 3 - Integración: reintegrar dinero al circuito como aparentemente legal mediante inversiones inmobiliarias, negocios legales aparentes, consumo ostentoso, inversiones en arte o joyas. La policía y unidades especializadas (SEPBLAC) detectan patrones sospechosos en cada fase. Conocer cómo funciona permite identificar dónde está la prueba y cómo rebatirla.'
+        },
+        {
+          title: 'Métodos Comunes de Blanqueo y Detección',
+          content: 'Método inmobiliario: compra propiedades con dinero negro. Indicadores: precio superior a mercado, pago en efectivo, intermediarios opacos. Riesgo: alto, fácil rastreo catastral. Sociedades pantalla: empresas sin actividad real que facturan servicios ficticios. Indicadores: sin empleados, sin sede física, operaciones con otras pantallas. Riesgo: medio, requiere auditoría compleja. Casinos y juego: introducir dinero ilícito jugando y cobrando ganancias. Indicadores: grandes apuestas, pérdidas inusuales. Riesgo: alto, casinos reportan operaciones sospechosas. Criptomonedas: Bitcoin y similares para ocultar origen. Indicadores: grandes volúmenes, wallets en paraísos fiscales. Riesgo: medio-alto, blockchain es rastreable. Empresas de fachada: negocios reales pero inflados artificialmente. Indicadores: facturación incompatible con actividad. Riesgo: medio.'
+        },
+        {
+          title: 'Defensas contra Acusación de Blanqueo',
+          content: 'Desconocimiento del origen ilícito: principal defensa, si no sabías que el dinero era de delito, no hay dolo. Carga de la prueba: acusación debe demostrar que SÍ sabías. Origen lícito del dinero: demostrar que procede de actividad legal (herencia, venta legítima, ahorros). Documentación: contratos, facturas, declaraciones de renta. Ausencia de delito previo: si no se prueba que hubo delito original, no hay blanqueo. Error de prohibición: creías que la conducta era legal. Atenuantes: confesión y colaboración (reduce pena hasta 2 grados), dilaciones indebidas, reparación del daño. Nulidad de pruebas: si se obtuvieron sin orden judicial (intervenciones telefónicas, registros). Prescripción: 5-10 años según gravedad. Cada caso requiere análisis financiero forense complejo.'
+        },
+        {
+          title: 'Obligaciones de Prevención y Sanciones',
+          content: 'Sujetos obligados a prevenir blanqueo (Ley 10/2010): entidades financieras, notarios, abogados, auditores, casinos, inmobiliarias, joyerías. Obligaciones: identificar clientes, conservar documentación 10 años, reportar operaciones sospechosas a SEPBLAC, formación empleados, políticas internas de prevención. Operaciones sospechosas: superiores a 10.000€ en efectivo, operaciones inusuales sin justificación económica, estructuración (fragmentar operaciones), uso de testaferros. Sanciones administrativas: multas hasta 150.000€ para profesionales, inhabilitación, publicación sanción. Sanciones penales: si hay complicidad con blanqueo, hasta 5 años de prisión. Muchos profesionales son investigados por no reportar operaciones sospechosas de clientes.'
+        },
+        {
+          title: 'Casos Famosos y Lecciones Aprendidas',
+          content: 'Caso Gürtel: red de corrupción que blanqueó 250M€ a través de empresas constructoras. Condenas: hasta 60 años acumulados. Lección: el blanqueo aumenta penas del delito base. Caso Malaya: blanqueo de comisiones ilegales Ayuntamiento Marbella, 30M€. Condenas: hasta 19 años. Lección: participación de funcionarios agrava. Caso Lezo: blanqueo de fondos públicos mediante sociedades offshore, 120M€. Lección: uso de paraísos fiscales no garantiza impunidad. Caso Nóos: blanqueo de subvenciones públicas. Lección: la documentación contable es prueba fundamental. En todos los casos, la colaboración con justicia y devolución de lo blanqueado reduce penas significativamente. El blanqueo casi siempre se descubre: trazabilidad financiera es muy difícil de ocultar completamente.'
+        }
+      ],
+      conclusion: 'El blanqueo de capitales es un delito complejo que requiere defensa especializada en derecho penal económico. Las investigaciones son técnicas, duran años y requieren conocimientos financieros. En STANS Abogados contamos con abogados especializados en delitos económicos que colaboran con peritos financieros para analizar operaciones, cuestionar informes de la acusación y demostrar origen lícito o desconocimiento. Si te investigan por blanqueo, la complejidad técnica del caso exige abogado especializado: no confíes en generalistas.'
+    }
+  },
+  {
+    id: 37,
+    title: 'Terrorismo en Internet: Enaltecimiento y Captación Online',
+    excerpt: 'Delitos de terrorismo en internet y redes sociales. Enaltecimiento, captación, propaganda y límites de la libertad de expresión. Defensa especializada.',
+    category: 'Terrorismo',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2024-11-23',
+    readTime: '13 min',
+    image: '/images/blog/terrorismo-internet-completo.jpg',
+    slug: 'terrorismo-internet-enaltecimiento-captacion',
+    tags: ['terrorismo internet', 'enaltecimiento', 'captación', 'redes sociales', 'propaganda'],
+    content: {
+      introduction: 'Los delitos de terrorismo cometidos por internet se han multiplicado exponencialmente con el auge de las redes sociales. Enaltecimiento en Twitter, captación yihadista por Telegram, difusión de propaganda en YouTube: cada publicación puede derivar en investigación de la Audiencia Nacional. Las penas van de 1 a 8 años de prisión. Conocer los límites legales de lo que puedes publicar y cómo defenderte es fundamental en la era digital.',
+      sections: [
+        {
+          title: 'Delitos de Terrorismo en Internet',
+          content: 'Enaltecimiento del terrorismo (art. 578 CP): justificar o ensalzar actos terroristas o terroristas en redes sociales, foros, blogs. Pena: 1-3 años (incrementada 1/3 si es por internet). Captación y adoctrinamiento (art. 575 CP): reclutar personas para terrorismo mediante internet, adoctrinar en ideología yihadista, formar en técnicas terroristas. Pena: 2-5 años (5-8 si víctimas son menores). Difusión de propaganda terrorista: compartir vídeos, revistas o material de ISIS/Al-Qaeda. Pena: según contexto, puede ser enaltecimiento o colaboración. Incitación a cometer actos terroristas: llamar a cometer atentados. Pena: 4-8 años. Autoadoctrinamiento: tener material terrorista (manuales, vídeos). Pena: 2-5 años si hay intención de uso. La Policía Nacional monitoriza internet 24/7 buscando estos contenidos.'
+        },
+        {
+          title: 'Límites de la Libertad de Expresión Online',
+          content: 'Jurisprudencia TEDH (casos Stern Taulats, Strawberry): la libertad de expresión está protegida constitucionalmente (art. 20 CE) y por CEDH (art. 10). PUEDES: criticar políticas antiterroristas, expresar opiniones religiosas sin llamar a violencia, compartir noticias sobre terrorismo con finalidad informativa, hacer humor o sátira (con límites). NO PUEDES: glorificar atentados terroristas concretos, humillar a víctimas identificables del terrorismo, llamar directamente a cometer violencia, difundir propaganda oficial de ISIS/Al-Qaeda con finalidad de captación, enseñar fabricación de explosivos con finalidad terrorista. La frontera es difusa: un mensaje irónico puede ser interpretado como enaltecimiento. Contexto es clave: artístico, político, privado. Si recibes citación por mensajes en redes, abogado debe conocer jurisprudencia TEDH.'
+        },
+        {
+          title: 'Actuación Policial en Casos de Terrorismo Online',
+          content: 'Unidades especializadas monitorizan: hashtags relacionados con terrorismo, cuentas que siguen o son seguidas por terroristas conocidos, grupos privados de Telegram (con orden judicial), búsquedas en Google de términos sospechosos (bombas, yihad), metadatos de publicaciones. Procedimiento: detección de contenido sospechoso, solicitud de orden judicial para investigar, intervención de comunicaciones, análisis de dispositivos electrónicos, detención. Si te investigan: NO borres nada (obstrucción justicia), NO publiques más sobre el tema, contacta abogado especializado INMEDIATO, NO declares sin abogado, recopila contexto completo de mensajes. Cada mensaje, búsqueda y contacto puede ser usado como prueba. La fase inicial es crítica.'
+        },
+        {
+          title: 'Defensas Específicas en Terrorismo Online',
+          content: 'Libertad de expresión (art. 20 CE y art. 10 CEDH): demostrar que es crítica política, expresión artística (rap, humor), o información académica. Ausencia de incitación real: el mensaje no es idóneo para causar nuevos actos terroristas. Contexto privado: no hubo difusión pública efectiva (mensaje en grupo privado pequeño). Descontextualización: la acusación presenta fragmentos, pero contexto completo demuestra que no hay enaltecimiento. Sátira o ironía: el mensaje no es literal sino paródico. Hackeo o suplantación: no fuiste tú quien publicó. Pruebas ilegales: si interceptaron comunicaciones sin orden judicial. Atenuantes: confesión, colaboración, arrepentimiento. Jurisprudencia favorable: citar casos Stern Taulats (TEDH 2020) y Strawberry (TEDH 2022) que limitan enaltecimiento.'
+        },
+        {
+          title: 'Qué Hacer si te Citan por Mensajes en Redes',
+          content: 'Protocolo urgente: 1) NO borres NADA (ni mensajes ni cuentas), es obstrucción y agrava. 2) Captura pantallas del contexto completo (conversaciones enteras, no fragmentos). 3) Contacta abogado especializado en terrorismo INMEDIATO (24/7 STANS ABOGADOS). 4) NO hagas más publicaciones sobre el tema. 5) NO declares sin abogado presente (aunque te citen "solo para aclarar"). 6) Recopila pruebas de contexto: si era humor, aportarlo; si era información, aportarlo. 7) Analiza con abogado si declarar o acogerte a no declarar. 8) Prepara defensa basada en libertad de expresión y jurisprudencia TEDH. Errores comunes: borrar todo (se interpreta como conciencia de culpa), declarar sin abogado (te incriminas), confiar en "si explicas te entenderán" (falso). Cada palabra en redes puede usarse contra ti.'
+        }
+      ],
+      conclusion: 'El terrorismo en internet es uno de los delitos más perseguidos actualmente, pero también uno donde más se vulnera libertad de expresión. No todo mensaje polémico es delito: la jurisprudencia del TEDH ha establecido límites claros al poder punitivo. En STANS Abogados somos especialistas en defensa de casos de enaltecimiento y captación online ante la Audiencia Nacional, con conocimiento profundo de la jurisprudencia europea. Si te investigan por mensajes en redes, contacta INMEDIATAMENTE: la defensa temprana puede evitar imputación formal.'
+    }
+  },
+  // ===== HUB PAGE TERRORISMO =====
+  {
+    id: 38,
+    title: 'Hub: Terrorismo y Audiencia Nacional - Centro de Recursos Especializado',
+    excerpt: 'Centro completo de recursos sobre defensa en casos de terrorismo ante la Audiencia Nacional. Enaltecimiento, captación, organización terrorista y derechos fundamentales.',
+    category: 'Terrorismo',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2025-01-15',
+    readTime: '12 min',
+    image: '/images/blog/hub-terrorismo.jpg',
+    slug: 'terrorismo-audiencia-nacional',
+    tags: ['terrorismo', 'audiencia nacional', 'hub', 'defensa especializada'],
+    content: {
+      introduction: 'Los delitos de terrorismo son los más graves del ordenamiento jurídico español, con competencia exclusiva de la Audiencia Nacional. Las penas van desde 1 año (enaltecimiento simple) hasta 30 años (actos terroristas consumados). Este hub centraliza recursos especializados sobre defensa en casos de terrorismo: enaltecimiento, captación, pertenencia a organización, financiación y derechos fundamentales en estos procedimientos.',
+      sections: [
+        {
+          title: 'Competencia Exclusiva de la Audiencia Nacional',
+          content: 'La Audiencia Nacional tiene competencia exclusiva sobre todos los delitos de terrorismo en España (art. 65 LOPJ). Sede en Madrid, jueces especializados, procedimientos con particularidades: plazos pueden ser más largos, secreto de sumario habitual, prisión preventiva frecuente, incomunicación posible (máximo 5+5 días). Fiscalía Especial contra Terrorismo: acusación especializada. Abogados: deben estar habituados a procedimientos de la AN. Secciones: Juzgados Centrales de Instrucción (investigación), Sala de lo Penal (juicios), Sala de Apelación. Recursos: contra sentencias de la AN se recurre ante Tribunal Supremo (casación). La especialización del tribunal exige abogados con experiencia específica en la AN.'
+        },
+        {
+          title: 'Tipos de Delitos de Terrorismo Más Frecuentes',
+          content: 'Enaltecimiento del terrorismo (art. 578 CP): justificar o ensalzar terrorismo en redes sociales, humillar víctimas. Pena: 1-3 años. Casos: raperos, tuits, memes. Captación y adoctrinamiento (art. 575 CP): reclutar para yihadismo por internet. Pena: 2-5 años (5-8 si menores). Autoadoctrinamiento (art. 575.2 CP): tener material terrorista con intención de uso. Pena: 2-5 años. Concepto "lobo solitario". Pertenencia a organización terrorista (art. 572 CP): formar parte de ISIS, Al-Qaeda, células. Pena: 6-15 años. Financiación del terrorismo (art. 576 CP): enviar dinero, criptomonedas a terroristas. Pena: 5-15 años. Colaboración con terrorismo (art. 577 CP): ayuda puntual sin integrarse. Pena: 5-10 años. Cada delito tiene elementos específicos y defensas diferenciadas.'
+        },
+        {
+          title: 'Derechos Fundamentales en Casos de Terrorismo',
+          content: 'A pesar de la gravedad, mantienes derechos fundamentales: Asistencia letrada desde primer momento (incluso durante incomunicación, aunque solo de oficio), Información de la acusación en idioma comprensible, No declarar contra ti mismo, Acceso al expediente (salvo secreto de sumario temporal), Impugnar prisión preventiva, Solicitar libertad provisional (muy difícil pero posible), Recurrir todas las resoluciones. Limitaciones posibles: Incomunicación (máximo 5+5 días, solo con orden judicial), Secreto de sumario (hasta 1 mes prorrogable), Prisión preventiva de larga duración (puede durar años). Límites a las limitaciones: el TC y TEDH controlan que sean proporcionales. Si son excesivas, vulneran derechos y son recurribles.'
+        },
+        {
+          title: 'Estrategias de Defensa en Terrorismo',
+          content: 'En enaltecimiento: libertad de expresión (art. 20 CE y 10 CEDH), jurisprudencia TEDH favorable (Stern Taulats, Strawberry), contexto artístico o político, ausencia de incitación real. En captación: conversación ideológica vs captación activa, ausencia de dolo específico, libertad religiosa. En autoadoctrinamiento: finalidad informativa/académica, curiosidad sin intención terrorista, libertad de pensamiento. En pertenencia a organización: contactos periféricos vs integración efectiva, simpatía ideológica no es delito. En todos: cuestionar solidez de pruebas, impugnar interceptaciones ilegales, alegar atenuantes (confesión, colaboración, dilaciones). Cada caso requiere análisis individual y abogado que conozca jurisprudencia específica de la AN.'
+        },
+        {
+          title: 'Prisión Preventiva en Casos de Terrorismo',
+          content: 'En terrorismo, la prisión preventiva es casi automática. Motivos: alarma social, gravedad del delito, riesgo de fuga o destrucción de pruebas. Obtener libertad provisional es extremadamente difícil pero NO imposible. Requisitos: demostrar arraigo sólido en España, proponer fianza alta, ausencia absoluta de peligrosidad, compromiso de comparecencias. Argumentos: pena previsible baja (ej. enaltecimiento simple), atenuantes aplicables (reduce pena prevista), tiempo en preventiva ya cumplido significativo, dilaciones indebidas en instrucción. En STANS Abogados hemos logrado libertades provisionales en casos de terrorismo mediante argumentación jurídica sólida ante la AN. Requiere abogado con experiencia específica en AN y conocimiento profundo de jurisprudencia del TC sobre prisión preventiva.'
+        },
+        {
+          title: 'Artículos Especializados sobre Terrorismo',
+          content: 'Recursos disponibles en este hub: Defensa penal en casos de terrorismo ante Audiencia Nacional, Enaltecimiento del terrorismo en redes sociales (límites legales), Captación y adoctrinamiento yihadista por internet, Terrorismo en internet: límites de expresión online, Autoadoctrinamiento terrorista (lobo solitario), Financiación del terrorismo (tipos, penas, criptomonedas), Pertenencia a organización terrorista (ISIS, Al-Qaeda), Derechos fundamentales en procedimientos de terrorismo, Terrorismo y libertad de expresión (jurisprudencia TEDH). Cada artículo profundiza en aspectos técnicos con casos reales, jurisprudencia actualizada y estrategias de defensa probadas.'
+        }
+      ],
+      conclusion: 'Los casos de terrorismo ante la Audiencia Nacional son los más complejos y graves del derecho penal español. La presión mediática, la duración de los procedimientos y las graves consecuencias hacen imprescindible contar con abogado penalista especializado en terrorismo. En STANS Abogados nuestros abogados Mounir Elyemlahy y Diego Cardona tienen experiencia directa en casos ante la Audiencia Nacional, conocimiento profundo de legislación antiterrorista y jurisprudencia del TEDH. Si tú o un familiar habéis sido acusados de terrorismo, contactad INMEDIATAMENTE. Atención 24/7. Primera consulta para valorar el caso.'
+    }
   }
 ];
 
