@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "falsedad documental",
     "delitos informáticos"
   ].join(", "),
-  authors: [{ name: "STANS ABOGADOS", url: "https://stansabogados.com" }],
+  authors: [{ name: "STANS ABOGADOS", url: "https://www.stansabogados.com" }],
   creator: "STANS ABOGADOS",
   publisher: "STANS ABOGADOS",
   formatDetection: {
@@ -40,12 +40,13 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://stansabogados.com'),
+  metadataBase: new URL('https://www.stansabogados.com'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.stansabogados.com/',
     languages: {
-      'es-ES': '/',
-      'ar': '/',
+      'es': 'https://www.stansabogados.com/',
+      'ar': 'https://www.stansabogados.com/',
+      'x-default': 'https://www.stansabogados.com/'
     },
   },
   icons: {
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España",
     description: "Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Español, inglés y árabe.",
-    url: 'https://stansabogados.com',
+    url: 'https://www.stansabogados.com',
     siteName: 'STANS ABOGADOS',
     images: [
       {
@@ -116,7 +117,7 @@ export const metadata: Metadata = {
     'DC.date': '2024',
     'DC.type': 'Text',
     'DC.format': 'text/html',
-    'DC.identifier': 'https://stansabogados.com',
+            'DC.identifier': 'https://www.stansabogados.com',
     'DC.language': 'es',
     'DC.coverage': 'Madrid, España',
     'DC.rights': '© 2024 STANS ABOGADOS. Todos los derechos reservados.',
@@ -153,99 +154,6 @@ export default function RootLayout({
         {/* Preconnect para mejorar performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
-        {/* Schema.org Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              "name": "STANS ABOGADOS",
-              "description": "Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 15 minutos.",
-              "url": "https://stansabogados.com",
-              "logo": "https://stansabogados.com/images/logos/logo-horizontal.png",
-              "image": "https://stansabogados.com/images/logos/logo-horizontal.png",
-              "telephone": "+34611687226",
-              "email": "info@stansabogados.com",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Madrid",
-                "addressRegion": "Madrid",
-                "addressCountry": "ES"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 40.4168,
-                "longitude": -3.7038
-              },
-              "openingHours": "Mo-Su 00:00-23:59",
-              "priceRange": "€€",
-              "serviceType": "Derecho Penal",
-              "areaServed": [
-                {
-                  "@type": "City",
-                  "name": "Madrid"
-                },
-                {
-                  "@type": "Country",
-                  "name": "España"
-                }
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Servicios de Defensa Penal",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Defensa Penal 24/7",
-                      "description": "Asistencia legal penal inmediata las 24 horas del día"
-                    }
-                  },
-                  {
-                    "@type": "Offer", 
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Extradiciones España-Marruecos",
-                      "description": "Procedimientos de extradición entre España y Marruecos"
-                    }
-                  }
-                ]
-              },
-              "employee": [
-                {
-                  "@type": "Person",
-                  "name": "Rubén Vaquero Arribas",
-                  "jobTitle": "Socio Director",
-                  "description": "Penal y penal económico, derechos fundamentales, OEDE y extradiciones"
-                },
-                {
-                  "@type": "Person", 
-                  "name": "Mounir Elyemlahy Chouati",
-                  "jobTitle": "Abogado Penalista",
-                  "description": "Penal y administrativo. Especialista en derecho marroquí y extradiciones"
-                },
-                {
-                  "@type": "Person",
-                  "name": "Diego Cardona Valero", 
-                  "jobTitle": "Abogado Penalista",
-                  "description": "Defensa en causas complejas: criminalidad organizada, terrorismo"
-                }
-              ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "reviewCount": "150"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/stans-abogados",
-                "https://twitter.com/stansabogados"
-              ]
-            })
-          }}
-        />
       </head>
       <body className="font-sans antialiased" suppressHydrationWarning={true}>
         {/* Global Website Schema for better SEO */}

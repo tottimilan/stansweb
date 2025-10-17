@@ -4,7 +4,7 @@ export const legalConfig = {
     address: 'C. de Abtao, 44, Oficina 7, Retiro, 28007 Madrid, España',
     phone: '+34 611 68 72 26',
     email: 'info@stansabogados.com',
-    website: 'https://stansabogados.com',
+    website: 'https://www.stansabogados.com',
     jurisdiction: 'España',
     court: 'Madrid'
   },

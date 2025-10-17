@@ -28,7 +28,7 @@ export default function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
       "position": index + 1,
       "name": item.label,
       ...(item.href && {
-        "item": `https://stansabogados.com${item.href}`
+        "item": `https://www.stansabogados.com${item.href}`
       })
     }))
   };

@@ -20,7 +20,7 @@ export function generateCaseSEO(
   translation: CaseTranslation | null,
   language: 'es' | 'ar'
 ): SEOMetadata {
-  const baseUrl = 'https://stansabogados.com';
+  const baseUrl = 'https://www.stansabogados.com';
   
   // Usar traducción si está disponible, sino usar datos originales
   const nombre = translation?.nombre || caseData.nombre;
@@ -60,7 +60,7 @@ export function generateCaseSEO(
 }
 
 export function generateCasesListSEO(language: 'es' | 'ar'): SEOMetadata {
-  const baseUrl = 'https://stansabogados.com';
+  const baseUrl = 'https://www.stansabogados.com';
   
   const title = language === 'es'
     ? 'Casos y Resultados - STANS ABOGADOS'

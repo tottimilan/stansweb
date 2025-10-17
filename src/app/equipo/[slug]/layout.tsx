@@ -93,16 +93,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     keywords,
-    authors: [{ name: lawyer.name, url: `https://stansabogados.com/equipo/${slug}` }],
+    authors: [{ name: lawyer.name, url: `https://www.stansabogados.com/equipo/${slug}` }],
     openGraph: {
       title,
       description,
       type: 'profile',
-      url: `https://stansabogados.com/equipo/${slug}`,
+      url: `https://www.stansabogados.com/equipo/${slug}`,
       siteName: 'STANS ABOGADOS',
       images: [
         {
-          url: `https://stansabogados.com${lawyer.image}`,
+          url: `https://www.stansabogados.com${lawyer.image}`,
           width: 800,
           height: 1067,
           alt: lawyer.name
@@ -115,14 +115,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title,
       description,
-      images: [`https://stansabogados.com${lawyer.image}`],
+      images: [`https://www.stansabogados.com${lawyer.image}`],
       creator: '@stansabogados',
     },
     alternates: {
-      canonical: `/equipo/${slug}`,
+      canonical: `https://www.stansabogados.com/equipo/${slug}`,
       languages: {
-        'es-ES': `/equipo/${slug}`,
-        'ar': `/equipo/${slug}`,
+        'es': `https://www.stansabogados.com/equipo/${slug}`,
+        'ar': `https://www.stansabogados.com/equipo/${slug}`,
+        'x-default': `https://www.stansabogados.com/equipo/${slug}`
       },
     },
     robots: {

@@ -2,20 +2,20 @@ export default function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "@id": "https://stansabogados.com/#legal-service",
+    "@id": "https://www.stansabogados.com/#legal-service",
     "name": "STANS ABOGADOS",
     "alternateName": "STANS Abogados Penalistas Madrid",
     "description": "Despacho de abogados penalistas especializado en defensa penal, terrorismo, extradiciones y derechos fundamentales. Atención 24/7 en español, inglés y árabe.",
-    "url": "https://stansabogados.com",
+    "url": "https://www.stansabogados.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://stansabogados.com/images/logos/logo-horizontal.png",
+      "url": "https://www.stansabogados.com/images/logos/logo-horizontal.png",
       "width": 1200,
       "height": 630
     },
     "image": [
-      "https://stansabogados.com/images/logos/logo-horizontal.png",
-      "https://stansabogados.com/images/logos/logo-vertical.png"
+      "https://www.stansabogados.com/images/logos/logo-horizontal.png",
+      "https://www.stansabogados.com/images/logos/logo-vertical.png"
     ],
     
     // Contacto
@@ -77,37 +77,8 @@ export default function LocalBusinessSchema() {
       }
     ],
     
-    // Idiomas disponibles
-    "availableLanguage": [
-      {
-        "@type": "Language",
-        "name": "Español",
-        "alternateName": "es"
-      },
-      {
-        "@type": "Language",
-        "name": "Inglés",
-        "alternateName": "en"
-      },
-      {
-        "@type": "Language",
-        "name": "Árabe",
-        "alternateName": "ar"
-      },
-      {
-        "@type": "Language",
-        "name": "Francés",
-        "alternateName": "fr"
-      },
-      {
-        "@type": "Language",
-        "name": "Italiano",
-        "alternateName": "it"
-      }
-    ],
-    
-    // Rango de precios
-    "priceRange": "€€",
+    // Idiomas que habla el equipo (formato correcto Schema.org)
+    "knowsLanguage": ["es", "en", "ar", "fr", "it"],
     
     // Año de fundación
     "foundingDate": "2024",
@@ -170,39 +141,39 @@ export default function LocalBusinessSchema() {
     "employee": [
       {
         "@type": "Person",
-        "@id": "https://stansabogados.com/equipo/ruben-vaquero-arribas",
+        "@id": "https://www.stansabogados.com/equipo/ruben-vaquero-arribas",
         "name": "Rubén Vaquero Arribas",
         "jobTitle": "Socio Director",
         "description": "Especialista en Derecho Penal Económico y Derechos Fundamentales",
         "knowsLanguage": ["es", "en"],
-        "url": "https://stansabogados.com/equipo/ruben-vaquero-arribas"
+        "url": "https://www.stansabogados.com/equipo/ruben-vaquero-arribas"
       },
       {
         "@type": "Person",
-        "@id": "https://stansabogados.com/equipo/mounir-elyemlahy-chouati",
+        "@id": "https://www.stansabogados.com/equipo/mounir-elyemlahy-chouati",
         "name": "Mounir Elyemlahy Chouati",
         "jobTitle": "Socio Abogado",
         "description": "Especialista en Terrorismo, Derecho Marroquí y Extradiciones",
         "knowsLanguage": ["es", "en", "ar"],
-        "url": "https://stansabogados.com/equipo/mounir-elyemlahy-chouati"
+        "url": "https://www.stansabogados.com/equipo/mounir-elyemlahy-chouati"
       },
       {
         "@type": "Person",
-        "@id": "https://stansabogados.com/equipo/diego-cardona-valero",
+        "@id": "https://www.stansabogados.com/equipo/diego-cardona-valero",
         "name": "Diego Cardona Valero",
         "jobTitle": "Socio Abogado",
         "description": "Especialista en Derecho Procesal Penal y Criminalidad Organizada",
         "knowsLanguage": ["es"],
-        "url": "https://stansabogados.com/equipo/diego-cardona-valero"
+        "url": "https://www.stansabogados.com/equipo/diego-cardona-valero"
       },
       {
         "@type": "Person",
-        "@id": "https://stansabogados.com/equipo/ada-de-blas-pascual",
+        "@id": "https://www.stansabogados.com/equipo/ada-de-blas-pascual",
         "name": "Ada de Blas Pascual",
         "jobTitle": "Abogada",
         "description": "Especialista en Derecho Penal Internacional y Económico",
         "knowsLanguage": ["es", "en", "fr", "it"],
-        "url": "https://stansabogados.com/equipo/ada-de-blas-pascual"
+        "url": "https://www.stansabogados.com/equipo/ada-de-blas-pascual"
       }
     ],
     

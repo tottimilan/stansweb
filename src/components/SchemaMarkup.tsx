@@ -16,22 +16,22 @@ const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ type = "LegalService", data
         return {
           "@context": "https://schema.org",
           "@type": "LegalService",
-          "@id": "https://stansabogados.com/#organization",
+          "@id": "https://www.stansabogados.com/#organization",
           name: t.metadata?.schema?.name || "STANS ABOGADOS",
           alternateName: "STANS Abogados Penalistas",
           description: t.metadata?.schema?.description || "Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7.",
-          url: "https://stansabogados.com",
+          url: "https://www.stansabogados.com",
           logo: {
             "@type": "ImageObject",
-            url: "https://stansabogados.com/images/logos/logo-horizontal.png",
+            url: "https://www.stansabogados.com/images/logos/logo-horizontal.png",
             width: 1200,
             height: 630
           },
           image: [
-            "https://stansabogados.com/images/logos/logo-horizontal.png",
-            "https://stansabogados.com/images/Equipo-optimized/Ruben1.webp",
-            "https://stansabogados.com/images/Equipo-optimized/Mounir1.webp",
-            "https://stansabogados.com/images/Equipo-optimized/Diego1.webp"
+            "https://www.stansabogados.com/images/logos/logo-horizontal.png",
+            "https://www.stansabogados.com/images/Equipo-optimized/Ruben1.webp",
+            "https://www.stansabogados.com/images/Equipo-optimized/Mounir1.webp",
+            "https://www.stansabogados.com/images/Equipo-optimized/Diego1.webp"
           ],
           telephone: "+34611687226",
           email: "info@stansabogados.com",
@@ -57,31 +57,7 @@ const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ type = "LegalService", data
               name: "España"
             }
           ],
-          serviceType: [
-            "Derecho Penal",
-            "Defensa Penal 24/7",
-            "Extradiciones",
-            "Orden Europea de Detención y Entrega",
-            "Delitos Económicos",
-            "Terrorismo y Audiencia Nacional"
-          ],
-          availableLanguage: [
-            {
-              "@type": "Language",
-              name: "Español",
-              alternateName: "es"
-            },
-            {
-              "@type": "Language",
-              name: "English",
-              alternateName: "en"
-            },
-            {
-              "@type": "Language",
-              name: "العربية",
-              alternateName: "ar"
-            }
-          ],
+          knowsLanguage: ["es", "en", "ar"],
           openingHours: "Mo-Su 00:00-23:59",
           priceRange: "€€€",
           paymentAccepted: ["Cash", "Credit Card", "Bank Transfer"],
@@ -126,36 +102,36 @@ const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ type = "LegalService", data
         return {
           "@context": "https://schema.org",
           "@type": type === "BlogPosting" ? "BlogPosting" : "Article",
-          "@id": data?.url ? `https://stansabogados.com${data.url}#article` : undefined,
+          "@id": data?.url ? `https://www.stansabogados.com${data.url}#article` : undefined,
           headline: data?.title || "Artículo Legal",
           alternativeHeadline: data?.subtitle,
           description: data?.description || "",
-          image: data?.image || "https://stansabogados.com/images/logos/logo-horizontal.png",
+          image: data?.image || "https://www.stansabogados.com/images/logos/logo-horizontal.png",
           author: {
             "@type": "Organization",
             name: "STANS ABOGADOS",
-            url: "https://stansabogados.com"
+            url: "https://www.stansabogados.com"
           },
           publisher: {
             "@type": "Organization", 
             name: "STANS ABOGADOS",
             logo: {
               "@type": "ImageObject",
-              url: "https://stansabogados.com/images/logos/logo-horizontal.png"
+              url: "https://www.stansabogados.com/images/logos/logo-horizontal.png"
             }
           },
           datePublished: data?.datePublished || new Date().toISOString(),
           dateModified: data?.dateModified || data?.datePublished || new Date().toISOString(),
           mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": data?.url ? `https://stansabogados.com${data.url}` : "https://stansabogados.com"
+            "@id": data?.url ? `https://www.stansabogados.com${data.url}` : "https://www.stansabogados.com"
           },
           keywords: data?.keywords || "derecho penal, abogado penalista, Madrid, defensa penal",
           articleSection: data?.section || "Blog Jurídico",
           inLanguage: language === "ar" ? "ar" : "es",
           potentialAction: {
             "@type": "ReadAction",
-            target: data?.url ? `https://stansabogados.com${data.url}` : "https://stansabogados.com"
+            target: data?.url ? `https://www.stansabogados.com${data.url}` : "https://www.stansabogados.com"
           }
         }
       
@@ -163,19 +139,19 @@ const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ type = "LegalService", data
         return {
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "@id": data?.url ? `https://stansabogados.com${data.url}` : "https://stansabogados.com",
+          "@id": data?.url ? `https://www.stansabogados.com${data.url}` : "https://www.stansabogados.com",
           name: data?.title || "STANS ABOGADOS",
           description: data?.description || "Página de STANS ABOGADOS",
-          url: data?.url ? `https://stansabogados.com${data.url}` : "https://stansabogados.com",
+          url: data?.url ? `https://www.stansabogados.com${data.url}` : "https://www.stansabogados.com",
           isPartOf: {
             "@type": "WebSite",
-            "@id": "https://stansabogados.com/#website",
+            "@id": "https://www.stansabogados.com/#website",
             name: "STANS ABOGADOS",
-            url: "https://stansabogados.com"
+            url: "https://www.stansabogados.com"
           },
           primaryImageOfPage: {
             "@type": "ImageObject",
-            url: data?.image || "https://stansabogados.com/images/logos/logo-horizontal.png"
+            url: data?.image || "https://www.stansabogados.com/images/logos/logo-horizontal.png"
           },
           breadcrumb: data?.breadcrumb,
           inLanguage: language === "ar" ? "ar" : "es"

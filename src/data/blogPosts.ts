@@ -445,6 +445,335 @@ export const blogPosts: BlogPost[] = [
       ],
       conclusion: 'Te han condenado por enaltecimiento pero crees que se trata de libertad de expresión? Podemos recurrirlo. En STANS ABOGADOS somos especialistas en derechos fundamentales y tenemos experiencia llevando casos al TEDH. Nuestro abogado Rubén Vaquero es experto en libertad de expresión y terrorismo. Contacta ahora: hay plazos para recurrir. Atención 24/7. Defendemos tu derecho a expresarte libremente.'
     }
+  },
+  // ===== BLOGS DE DEFENSA PENAL URGENTE =====
+  {
+    id: 12,
+    title: 'Primeros Pasos en Comisaría: Guía Completa',
+    excerpt: 'Guía detallada sobre qué ocurre en comisaría. Tus derechos, el procedimiento paso a paso y cómo manejar la situación inicial correctamente.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2024-12-18',
+    readTime: '12 min',
+    image: '/images/blog/comisaria.jpg',
+    slug: 'primeros-pasos-comisaria',
+    tags: ['comisaría', 'detención', 'procedimiento policial', 'derechos'],
+    content: {
+      introduction: 'La llegada a comisaría marca el inicio de la fase administrativa del procedimiento penal. Durante tu permanencia en dependencias policiales, que puede durar desde unas horas hasta 72 horas máximo, es crucial conocer el procedimiento y ejercer tus derechos de manera efectiva. Esta guía detalla paso a paso qué ocurre en comisaría, basándose en la Ley de Enjuiciamiento Criminal, la Ley Orgánica 4/2015 y las instrucciones del Ministerio del Interior para el tratamiento de detenidos.',
+      sections: [
+        {
+          title: 'Procedimiento en Comisaría: Paso a Paso',
+          content: 'Al llegar a comisaría se sigue un procedimiento estandarizado: 1) Recepción e Identificación (15-30 min): registro de datos personales y verificación de identidad, con derecho a ser tratado con dignidad. 2) Información de Derechos (10-15 min): lectura y entrega por escrito de tus derechos constitucionales. 3) Registro Personal (20-30 min): cacheo superficial y depósito de objetos personales. 4) Huellas y Fotografía (15-20 min): toma de huellas dactilares y fotografía policial. 5) Declaración Preliminar (30-60 min): posible toma de declaración si llega tu abogado, con derecho a no declarar.'
+        },
+        {
+          title: 'Condiciones Mínimas de Detención',
+          content: 'Las condiciones de detención deben respetar tu dignidad humana: Condiciones Físicas (espacio mínimo de 4m², ventilación adecuada, temperatura confortable según Reglamento Penitenciario art. 35), Alimentación (3 comidas diarias, dieta equilibrada, consideración especial por religión/medicación según Ley Orgánica 1/1979 art. 25), Asistencia Médica (acceso a médico 24h, medicamentos necesarios, atención psicológica si procede según Ley 41/2002), y Comunicación (derecho a informar familiar, acceso a abogado, comunicación privada con abogado según LECrim art. 520).'
+        },
+        {
+          title: 'Derechos durante la Permanencia en Comisaría',
+          content: 'Durante tu permanencia en comisaría mantienes derechos procesales (no declarar sin abogado, información detallada de cargos, asistencia letrada gratuita si procede), derechos personales (comunicación familiar, asistencia médica, alimentación adecuada, higiene personal), y derechos especiales según tu situación: menores de edad (derechos adicionales), extranjeros (traducción e información consular), personas con discapacidad (adaptaciones especiales), y embarazadas (consideraciones especiales). Toda actuación debe documentarse en diligencias policiales, acta de derechos, registro de comunicaciones e informe médico si procede.'
+        },
+        {
+          title: 'Protocolo de Actuación Recomendado',
+          content: 'Mantén la calma y la dignidad: tu comportamiento puede influir en el desarrollo del procedimiento. Recomendaciones: coopera en identificación básica, anota datos de los agentes, lee todos los documentos detenidamente, informa inmediatamente de necesidades médicas, y no declares nada sin tu abogado. Evita: discusiones agresivas con el personal, conversaciones con otros detenidos, firmar documentos sin entenderlos, proporcionar información voluntaria, y realizar llamadas sin autorización. El tiempo máximo en comisaría es 72 horas en casos graves o 24 horas en casos menos graves, tras lo cual debes ser puesto en libertad o ante el juez.'
+        },
+        {
+          title: 'Preguntas Frecuentes sobre Comisaría',
+          content: '¿Qué ocurre durante las primeras horas? Se realiza identificación formal, información de derechos por escrito, toma de huellas y fotografía. ¿Pueden interrogarme sin abogado? No sobre los hechos, solo preguntas básicas de identificación. ¿Puedo comer y beber? Sí, tienes derecho a alimentos y bebidas adecuadas. ¿Pueden registrarme más a fondo? Para registros invasivos se requiere consentimiento expreso u orden judicial. ¿Pueden revisar mi móvil? Se requiere orden judicial específica. ¿Puedo ducharme? Sí, tienes derecho a condiciones mínimas de higiene personal.'
+        },
+        {
+          title: 'Legislación Aplicada',
+          content: 'Normativa principal: Ley de Enjuiciamiento Criminal (artículos 496-520 sobre detención y derechos), Ley Orgánica 4/2015 de Protección de Seguridad Ciudadana (régimen de detención), Reglamento Penitenciario (condiciones de detención). Circulares del Ministerio del Interior: Circular 1/2006 (instrucciones para tratamiento de detenidos) y Circular 2/2007 (derechos de los detenidos y procedimiento). Jurisprudencia relevante: STS 114/2017 sobre condiciones de detención en comisaría y STC 47/2018 sobre derechos durante permanencia policial.'
+        }
+      ],
+      conclusion: 'La permanencia en comisaría es una fase crítica del procedimiento penal donde se sientan las bases para tu defensa. Conocer el procedimiento paso a paso y ejercer tus derechos de manera efectiva puede marcar la diferencia entre una resolución favorable y complicaciones innecesarias. Recuerda que tienes derecho a asistencia letrada especializada desde el primer momento. En STANS Abogados contamos con abogados disponibles 24/7 para acompañarte durante toda tu permanencia en comisaría y garantizar que tus derechos sean respetados.'
+    }
+  },
+  {
+    id: 13,
+    title: 'Derechos de los Detenidos: Garantías Procesales Fundamentales',
+    excerpt: 'Guía completa de tus derechos constitucionales como detenido en España: garantías procesales, procedimiento legal y protección jurídica según la Constitución y el CEDH.',
+    category: 'Derechos Fundamentales',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2024-12-08',
+    readTime: '12 min',
+    image: '/images/blog/derechos-detenidos.jpg',
+    slug: 'derechos-detenidos-garantias-procesales',
+    tags: ['derechos fundamentales', 'garantías procesales', 'constitución', 'CEDH'],
+    content: {
+      introduction: 'Ser detenido supone una situación de especial vulnerabilidad que requiere el máximo respeto a los derechos fundamentales. La Constitución Española y el Convenio Europeo de Derechos Humanos establecen un conjunto de garantías que protegen a toda persona privada de libertad. Esta guía exhaustiva analiza tus derechos constitucionales como detenido, basándose en la jurisprudencia del Tribunal Constitucional, Tribunal Europeo de Derechos Humanos y la legislación española aplicable.',
+      sections: [
+        {
+          title: 'Derechos Constitucionales del Detenido',
+          content: 'La Constitución Española reconoce derechos fundamentales irrenunciables: Artículo 17 CE (Derecho a la Libertad Personal) prohíbe detenciones arbitrarias y establece garantías procesales mínimas. Artículo 18 CE (Derecho a la Tutela Judicial) garantiza ser oído por un juez en plazo razonable y control judicial de cualquier privación de libertad. Artículo 24 CE (Derecho a la Defensa) incluye asistencia letrada, derecho a no autoinculparse y a recurrir. Artículo 15 CE (Derecho a la Integridad Física) prohíbe torturas y tratos inhumanos, garantizando atención médica. Además, el Convenio Europeo de Derechos Humanos (artículos 3, 5, 6 y 8) establece protecciones adicionales contra tratos inhumanos.'
+        },
+        {
+          title: 'Fases del Procedimiento y Derechos Asociados',
+          content: 'Detención (momento inicial): derecho a asistencia letrada inmediata, información de derechos y comunicación familiar. La detención debe ser proporcional y necesaria. Comisaría (hasta 72 horas): derecho a traducción gratuita, asistencia médica y condiciones dignas durante la investigación policial preliminar. Puesta a disposición judicial (24-72 horas): derecho a audiencia judicial, a declarar y solicitud de medidas cautelares ante el juez de guardia. Prisión preventiva (hasta juicio): recursos contra medidas, visitas familiares y derecho al trabajo si se dicta prisión provisional.'
+        },
+        {
+          title: 'Derechos Específicos durante la Detención',
+          content: 'Derechos Procesales: no autoinculparse, recurrir decisiones judiciales, presunción de inocencia y proceso público. Derechos Humanos: dignidad personal, protección contra torturas, atención médica adecuada y condiciones dignas de detención. Derechos Personales: intimidad, protección de imagen, protección de datos personales y correspondencia. Derechos Jurídicos: asistencia letrada especializada, acceso a expediente completo, derecho a la prueba y representación procesal. Toda actuación debe documentarse en diligencias policiales, acta de derechos, registro de comunicaciones e informe médico.'
+        },
+        {
+          title: 'Legislación y Jurisprudencia Aplicable',
+          content: 'Normativa constitucional: Constitución Española 1978 (artículos 15, 17, 18 y 24), Ley Orgánica 6/1985 del Poder Judicial (regulación de detención), Ley 1/1996 de Asistencia Jurídica Gratuita (derecho a abogado de oficio). Derecho Internacional: Convenio Europeo de Derechos Humanos (artículos 3, 5, 6 y 8) y Pacto Internacional de Derechos Civiles y Políticos ratificado por España. Jurisprudencia relevante: STC 114/2017 sobre comunicaciones en detención, STC 47/2018 sobre derechos durante detención policial, y Sentencia TEDH 17 enero 2017 caso Mammadov vs. Azerbaiyán.'
+        },
+        {
+          title: 'Preguntas Frecuentes sobre Derechos de Detenidos',
+          content: '¿Cuáles son mis derechos constitucionales al ser detenido? Según art. 17 CE: libertad personal, asistencia letrada inmediata, información de derechos, no declarar sin abogado, y tutela judicial efectiva (art. 24 CE). ¿Cuánto tiempo pueden retenerme? Hasta 72 horas en casos graves o 24 horas en casos menos graves antes de puesta judicial. ¿Tengo derecho a abogado gratuito? Sí, según Ley 1/1996, derecho inmediato a abogado de oficio gratuito si no puedes pagar. ¿Pueden registrarme sin orden? En flagrante delito sí registro preventivo, pero registros domiciliarios siempre requieren orden judicial (art. 18.2 CE). ¿Y si no entiendo el idioma? Derecho a traducción e interpretación gratuitas según Directiva 2010/64/UE y LO 4/2015.'
+        }
+      ],
+      conclusion: 'Conocer tus derechos como detenido es el primer paso para una defensa efectiva. La Constitución Española y el derecho internacional establecen garantías robustas que protegen a toda persona privada de libertad, desde el momento exacto de la detención. En STANS Abogados defendemos estos derechos diariamente, asegurando que sean respetados en todo momento del procedimiento. Tu dignidad y tus garantías constitucionales son nuestra prioridad absoluta.'
+    }
+  },
+  {
+    id: 14,
+    title: 'Asistencia Letrada de Urgencia: Tu Derecho a un Abogado Inmediato',
+    excerpt: 'Guía sobre el derecho a asistencia letrada de urgencia. Tipos de abogados, funciones, plazos de llegada y cómo ejercer este derecho fundamental.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2024-12-16',
+    readTime: '10 min',
+    image: '/images/blog/asistencia-letrada.jpg',
+    slug: 'asistencia-letrada-urgencia',
+    tags: ['abogado urgencia', 'asistencia letrada', 'derecho defensa', 'abogado oficio'],
+    content: {
+      introduction: 'El derecho a la asistencia letrada de urgencia es uno de los derechos fundamentales más importantes cuando eres detenido. La Constitución Española (artículo 17.3) y la Ley de Enjuiciamiento Criminal (artículo 520) garantizan que nadie puede ser interrogado sin la presencia de un abogado. Este derecho es inmediato, irrenunciable y gratuito si no dispones de medios económicos. Conocer cómo funciona la asistencia letrada de urgencia puede marcar la diferencia en el resultado de tu caso.',
+      sections: [
+        {
+          title: 'Tipos de Abogados de Urgencia',
+          content: 'Abogado Particular: Ventajas incluyen especialización, disponibilidad 24/7 y estrategia personalizada. Desventajas: coste económico y puede tardar más en llegar. Recomendado si dispones de medios. Abogado de Urgencia/Oficio: Ventajas son gratuito, llegada inmediata y experiencia en urgencias. Desventajas: rotación de profesionales y menos especialización. Recomendado si no puedes pagar. Abogado del Seguro: Ventajas incluyen estar cubierto por póliza, especialización y conocimiento previo del cliente. Desventajas: limitaciones contractuales y puede no cubrir todo. Recomendado si tienes seguro de defensa jurídica.'
+        },
+        {
+          title: 'Funciones del Abogado de Urgencia',
+          content: 'Asistencia Inmediata: presencia durante interrogatorios y actuaciones policiales, asistencia en comisaría, presencia en declaraciones y control de legalidad de las actuaciones. Información de Derechos: explicación detallada de derechos constitucionales, opciones procesales disponibles y consecuencias legales de cada decisión. Preparación de Defensa: análisis inicial del caso, preparación de recursos y alegaciones, y definición de estrategia procesal. Control de Pruebas: supervisión de cadena de custodia, impugnación de pruebas ilegales y solicitud de diligencias necesarias.'
+        },
+        {
+          title: 'Derechos con tu Abogado',
+          content: 'Secreto Profesional (art. 542 LECrim): todo lo que comuniques está protegido, incluso tras finalizar la relación profesional. Acceso al Expediente (art. 118 LECrim): derecho a examinar todas las actuaciones y solicitar copias de diligencias. Presencia Obligatoria (art. 520 LECrim): debe estar presente en todos los interrogatorios sobre hechos. Impugnación de Actos (Ley 29/1998): puede recurrir decisiones policiales y judiciales que vulneren tus derechos. El abogado no puede revelar información confidencial sin tu consentimiento expreso.'
+        },
+        {
+          title: 'Plazos y Obligaciones Legales',
+          content: 'Según Ley 1/1996, el abogado de urgencia debe llegar en plazo máximo de 2 horas desde que se solicita su presencia. En casos de especial urgencia, este plazo se reduce considerablemente. Si el abogado no llega a tiempo, puedes solicitar suspensión temporal del procedimiento y también impugnar cualquier actuación realizada sin asistencia letrada. El abogado debe proporcionarte copia de todas las diligencias policiales, acta de derechos, cualquier declaración realizada y justificante de su intervención.'
+        },
+        {
+          title: 'Preguntas Frecuentes sobre Asistencia Letrada',
+          content: '¿Quién paga al abogado de urgencia? Si no puedes pagar, tienes derecho a asistencia gratuita pagada por el Estado, previa acreditación de insuficiencia de recursos. ¿Puede mi abogado parar la detención? No puede pararla, pero sí impugnar su legalidad, exigir médico forense y solicitar medidas cautelares alternativas. ¿Qué información puede dar mi abogado a la policía? Ninguna sin tu consentimiento expreso, todo está protegido por secreto profesional. ¿Puedo cambiar de abogado? Sí, puedes designar abogado de confianza en cualquier momento. ¿Puede estar presente en interrogatorio? Sí, obligatoriamente, sin presencia de abogado no puede haber interrogatorio sobre hechos delictivos.'
+        }
+      ],
+      conclusion: 'La asistencia letrada de urgencia es tu primer escudo de protección frente al poder del Estado. Ejercer este derecho desde el primer momento puede evitar errores irreparables y garantiza que todas las actuaciones respeten tus derechos fundamentales. En STANS Abogados ofrecemos asistencia letrada de urgencia 24/7 con abogados especializados en derecho penal. No renuncies nunca a tu derecho a un abogado, incluso si te ofrecen beneficios por declarar sin él.'
+    }
+  },
+  {
+    id: 15,
+    title: 'Puesta a Disposición Judicial: Qué Esperar y Cómo Prepararse',
+    excerpt: 'Guía completa sobre la puesta a disposición judicial tras la detención. Plazos, procedimiento, medidas cautelares y estrategias de defensa.',
+    category: 'Procedimiento Penal',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-14',
+    readTime: '11 min',
+    image: '/images/blog/disposicion-judicial.jpg',
+    slug: 'puesta-disposicion-judicial',
+    tags: ['puesta disposición', 'juzgado guardia', 'medidas cautelares', 'libertad provisional'],
+    content: {
+      introduction: 'La puesta a disposición judicial es el momento clave del procedimiento penal donde el detenido comparece ante el juez de guardia. Este momento, que debe producirse en un plazo máximo de 72 horas desde la detención, es decisivo: el juez decidirá si quedas en libertad, se impone libertad provisional con medidas, o se decreta prisión preventiva. Conocer qué esperar y cómo prepararte puede marcar la diferencia en el resultado.',
+      sections: [
+        {
+          title: 'Plazos Legales y Procedimiento',
+          content: 'Según el artículo 496 LECrim, la puesta a disposición judicial debe producirse en un plazo máximo de 72 horas en casos de terrorismo o delincuencia organizada, o 24 horas en el resto de casos. El procedimiento incluye: traslado desde comisaría al juzgado de guardia, entrevista previa con tu abogado, comparecencia ante el juez con lectura de derechos, declaración del detenido (puedes acogerte a tu derecho a no declarar), petición del Ministerio Fiscal sobre medidas cautelares, alegaciones de la defensa, y resolución judicial motivada. La comparecencia debe ser pública salvo casos excepcionales, y tienes derecho a intérprete si no hablas español.'
+        },
+        {
+          title: 'Posibles Medidas Cautelares',
+          content: 'El juez puede adoptar diferentes resoluciones: Libertad sin medidas (archivo o continuación en libertad), Libertad provisional con medidas (fianza económica, retirada de pasaporte, presentaciones periódicas en juzgado, prohibición de salir del territorio nacional, alejamiento de víctimas o testigos, prohibición de comunicación), o Prisión preventiva (cuando existe riesgo de fuga, destrucción de pruebas o reiteración delictiva). La decisión debe estar motivada y ser proporcional a la gravedad de los hechos y pena previsible. Las medidas cautelares son recurribles ante la Audiencia Provincial.'
+        },
+        {
+          title: 'Estrategia de Defensa ante el Juez',
+          content: 'Tu abogado debe preparar una estrategia defensiva sólida: análisis previo de las diligencias policiales, identificación de vulneraciones de derechos, preparación de tu declaración (o decisión de no declarar), propuesta de medidas alternativas a prisión, aportación de arraigo (domicilio, trabajo, familia), demostración de ausencia de riesgo de fuga, y solicitud de libertad provisional con o sin fianza. Es fundamental que tu abogado conozca la jurisprudencia del Tribunal Constitucional sobre prisión preventiva (debe ser excepcional y proporcional). La actitud durante la comparecencia es importante: respeto al juez y sinceridad si decides declarar.'
+        },
+        {
+          title: 'Derechos durante la Comparecencia',
+          content: 'Durante la puesta a disposición judicial mantienes todos tus derechos: derecho a ser informado de los hechos que se te imputan, derecho a declarar o a no hacerlo, derecho a asistencia letrada obligatoria, derecho a intérprete si no hablas español, derecho a que se te informe en idioma comprensible, derecho a solicitar diligencias de investigación, y derecho a recurrir la resolución judicial. El juez debe motivar su decisión por escrito. Si decreta prisión preventiva, debe explicar los motivos concretos (riesgo de fuga, destrucción de pruebas o reiteración). La resolución es recurrible en reforma y apelación.'
+        },
+        {
+          title: 'Qué Hacer si se Decreta Prisión Preventiva',
+          content: 'Si el juez decreta prisión preventiva, debes: mantener la calma y acatar la resolución, escuchar atentamente los motivos del juez, preguntar a tu abogado sobre posibilidad de recurso, solicitar copia de la resolución judicial, preparar recurso de reforma ante el mismo juez (plazo: 3 días), y recurso de apelación ante Audiencia Provincial si reforma es desestimada. La prisión preventiva tiene límites temporales: máximo 2 años en instrucción, prorrogables otros 2 años. Si la pena previsible es inferior a 2 años, no procede prisión preventiva. Tu abogado debe solicitar revisión periódica de la medida.'
+        },
+        {
+          title: 'Preguntas Frecuentes sobre Disposición Judicial',
+          content: '¿Cuánto dura la comparecencia? Entre 15-30 minutos normalmente. ¿Debo declarar? Es decisión estratégica que debes tomar con tu abogado. ¿Qué pasa si no tengo abogado? Se te designa uno de oficio obligatoriamente. ¿Puedo solicitar libertad con fianza? Sí, tu abogado puede proponerlo. ¿Cuánto es la fianza? Depende de gravedad del delito y situación económica. ¿Puedo recurrir la prisión preventiva? Sí, en reforma (3 días) y apelación. ¿Cuánto tardan en resolver el recurso? Apelación: 7-10 días hábiles. ¿Puedo salir en libertad ese mismo día? Sí, si el juez no decreta medidas cautelares.'
+        }
+      ],
+      conclusion: 'La puesta a disposición judicial es uno de los momentos más críticos del procedimiento penal. Una preparación adecuada, con abogado especializado que conozca la estrategia defensiva óptima, puede conseguir tu libertad o evitar la prisión preventiva. En STANS Abogados tenemos amplia experiencia en comparecencias ante juzgados de guardia, logrando libertades provisionales en casos complejos. Contacta inmediatamente si vas a ser puesto a disposición judicial.'
+    }
+  },
+  {
+    id: 16,
+    title: 'Habeas Corpus y Recurso de Amparo: Protección contra Detenciones Ilegales',
+    excerpt: 'Guía sobre el procedimiento de habeas corpus y recurso de amparo. Cuándo y cómo utilizarlos para protegerte contra detenciones arbitrarias o ilegales.',
+    category: 'Derechos Fundamentales',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-12',
+    readTime: '13 min',
+    image: '/images/blog/habeas-corpus.jpg',
+    slug: 'habeas-corpus-recurso-amparo',
+    tags: ['habeas corpus', 'recurso amparo', 'detención ilegal', 'tribunal constitucional'],
+    content: {
+      introduction: 'El habeas corpus y el recurso de amparo son mecanismos jurídicos fundamentales para proteger tu libertad personal frente a detenciones ilegales o arbitrarias. El habeas corpus (artículo 17.4 CE) permite que un juez examine inmediatamente la legalidad de tu detención, mientras que el recurso de amparo ante el Tribunal Constitucional protege cualquier vulneración de derechos fundamentales. Conocer estos recursos puede ser decisivo para recuperar tu libertad.',
+      sections: [
+        {
+          title: 'Qué es el Habeas Corpus y Cuándo Procede',
+          content: 'El procedimiento de habeas corpus (Ley Orgánica 6/1984) permite solicitar la puesta inmediata a disposición judicial de cualquier persona detenida ilegalmente. Procede cuando: la detención se produce sin causa legal, se superan los plazos legales (24-72 horas), existen malos tratos o torturas, se vulnera el derecho a asistencia letrada, no se informa de los motivos de detención, o se incomunica sin autorización judicial. Pueden solicitar habeas corpus: el detenido, su cónyuge o pareja, ascendientes, descendientes, hermanos, representante legal, o el Ministerio Fiscal de oficio. El procedimiento es urgente y preferente sobre cualquier otro.'
+        },
+        {
+          title: 'Procedimiento de Habeas Corpus',
+          content: 'El procedimiento es sumamente rápido: 1) Solicitud ante juzgado de guardia (puede ser oral o escrita, incluso por terceros), 2) El juez debe resolver en 24 horas máximo, 3) Se ordena la puesta inmediata a disposición judicial del detenido, 4) Comparecencia urgente con presencia del detenido, abogado, fiscal y autoridad que ordenó detención, 5) Declaración del detenido sobre las circunstancias, 6) Informe de la autoridad que detuvo, 7) Resolución judicial inmediata: si detención es legal, continúa el procedimiento normal; si es ilegal, libertad inmediata del detenido. La resolución es recurrible ante Audiencia Provincial. El habeas corpus no examina el fondo del asunto penal, solo la legalidad de la privación de libertad.'
+        },
+        {
+          title: 'Recurso de Amparo ante el Tribunal Constitucional',
+          content: 'El recurso de amparo (artículos 41-58 LOTC) es un recurso excepcional ante el Tribunal Constitucional para proteger derechos fundamentales vulnerados. Procede cuando se vulneran: derecho a la libertad personal (art. 17 CE), derecho a la integridad física (art. 15 CE - torturas), derecho a la defensa y asistencia letrada (art. 24 CE), tutela judicial efectiva, presunción de inocencia, o derecho a proceso sin dilaciones indebidas. Requisitos: haber agotado la vía judicial ordinaria (subsidiariedad), invocar vulneración de derecho fundamental específico, y presentarlo en plazo de 30 días desde notificación de la resolución judicial. Es un recurso complejo que requiere abogado especializado.'
+        },
+        {
+          title: 'Procedimiento del Recurso de Amparo',
+          content: 'El procedimiento ante el TC consta de fases: 1) Demanda de amparo (debe incluir hechos, derecho fundamental vulnerado, y relevancia constitucional), 2) Admisión a trámite (el TC examina si cumple requisitos), 3) Alegaciones del Ministerio Fiscal y partes, 4) Vista o deliberación (puede ser pública o reservada), 5) Sentencia del TC (puede tardar 1-3 años). Si el TC estima el amparo: anula la resolución judicial vulneradora, reconoce el derecho fundamental vulnerado, y puede ordenar retroacción de actuaciones. La sentencia del TC es vinculante y final, no cabe recurso. El amparo puede solicitarse con medidas cautelarísimas (suspensión inmediata del acto lesivo) en casos urgentes.'
+        },
+        {
+          title: 'Diferencias entre Habeas Corpus y Amparo',
+          content: 'Habeas Corpus: exclusivo para detenciones ilegales, procedimiento urgente (24h), ante juzgado ordinario, cualquier momento de la detención, y resultado inmediato (libertad o continuación). Recurso de Amparo: cualquier vulneración de derechos fundamentales, procedimiento largo (años), ante Tribunal Constitucional, tras agotar vía judicial ordinaria, y resultado diferido (anulación de resoluciones). Son complementarios: si durante detención se vulneran derechos, puedes usar habeas corpus (inmediato) y posteriormente amparo si persiste vulneración. Ambos son gratuitos si acreditas insuficiencia de recursos.'
+        },
+        {
+          title: 'Casos en que Proceden estos Recursos',
+          content: 'Habeas Corpus procede: detención sin informar de motivos, superación de 72 horas sin puesta judicial, torturas o malos tratos en comisaría, denegación de asistencia letrada, incomunicación sin autorización judicial, o detención por motivos políticos o discriminatorios. Amparo procede: prisión preventiva desproporcionada, proceso sin dilaciones indebidas (más de 4 años), vulneración derecho a defensa efectiva, pruebas obtenidas ilegalmente usadas en condena, o condena sin presunción de inocencia. En ambos casos, la rapidez en la presentación es clave.'
+        }
+      ],
+      conclusion: 'El habeas corpus y el recurso de amparo son armas jurídicas poderosas contra la arbitrariedad del poder público. No dudes en utilizarlos si consideras que tu detención es ilegal o que se han vulnerado tus derechos fundamentales. En STANS Abogados tenemos experiencia en tramitación de habeas corpus urgentes y recursos de amparo ante el Tribunal Constitucional. Estos procedimientos requieren conocimiento técnico especializado y rapidez. Contacta inmediatamente si crees que tus derechos están siendo vulnerados.'
+    }
+  },
+  {
+    id: 17,
+    title: 'Medidas Cautelares en Procesos Penales: Tipos y Recursos',
+    excerpt: 'Análisis completo de las medidas cautelares en procesos penales: prisión preventiva, libertad provisional, fianza y otras alternativas. Cómo recurrirlas.',
+    category: 'Procedimiento Penal',
+    author: 'Diego Cardona Valero',
+    date: '2024-12-13',
+    readTime: '14 min',
+    image: '/images/blog/medidas-cautelares.jpg',
+    slug: 'medidas-cautelares-procesos-penales',
+    tags: ['medidas cautelares', 'prisión preventiva', 'libertad provisional', 'fianza'],
+    content: {
+      introduction: 'Las medidas cautelares son decisiones judiciales que limitan derechos del investigado durante el proceso penal para asegurar su presencia en el juicio y evitar riesgos procesales. La más grave es la prisión preventiva, pero existen múltiples alternativas menos restrictivas. Comprender las medidas cautelares, sus requisitos legales y cómo recurrirlas es fundamental para defender tu libertad durante la instrucción del caso.',
+      sections: [
+        {
+          title: 'Tipos de Medidas Cautelares Personales',
+          content: 'La ley establece diferentes medidas según gravedad: 1) Prisión Preventiva (art. 503 LECrim): la más grave, solo cuando existen indicios racionales de criminalidad, pena superior a 2 años, y riesgo de fuga, destrucción de pruebas o reiteración delictiva. 2) Libertad Provisional con Fianza: depósito de cantidad económica como garantía de comparecencia. 3) Libertad con Comparecencias: obligación de presentarse periódicamente en juzgado. 4) Retirada de Pasaporte: para evitar fuga al extranjero. 5) Prohibición de Salida del Territorio: del país o de la localidad. 6) Alejamiento: de víctimas, testigos o coimputados. 7) Prohibición de Comunicación: con determinadas personas. 8) Medidas telemáticas: pulsera electrónica de control. Las medidas deben ser proporcionales y pueden combinarse.'
+        },
+        {
+          title: 'Requisitos para Decretar Prisión Preventiva',
+          content: 'La prisión preventiva es excepcional y debe cumplir requisitos estrictos del artículo 503 LECrim: 1) Indicios racionales de criminalidad (apariencia de buen derecho), 2) Pena privativa de libertad superior a 2 años, 3) Alguno de estos fines: riesgo de fuga (ausencia de arraigo, gravedad del delito, ocultación), destrucción de pruebas o elementos del delito, o riesgo de reiteración delictiva o comisión de nuevos delitos. 4) Proporcionalidad: la medida debe ser adecuada, necesaria y proporcionada. 5) Motivación judicial: el auto debe razonar por qué no proceden medidas menos gravosas. El Tribunal Constitucional ha establecido que la prisión preventiva es medida excepcionalísima que debe justificarse caso a caso.'
+        },
+        {
+          title: 'Medidas Alternativas a la Prisión',
+          content: 'Antes de decretar prisión, el juez debe valorar alternativas menos gravosas: Libertad con fianza económica (proporcional a recursos del investigado y gravedad), Comparecencias periódicas (semanales, quincenales o mensuales), Retirada de pasaporte y prohibición de salir de España, Prohibición de aproximación a víctimas (mínimo 500 metros), Alejamiento del domicilio familiar, Prohibición de comunicación directa o indirecta, Pulsera electrónica GPS (permite monitorizar ubicación), Entrega de armas o licencias, Privación del permiso de conducir, e Inhabilitación profesional temporal. Tu abogado debe proponer alternativas viables que garanticen los fines del proceso sin privar totalmente de libertad.'
+        },
+        {
+          title: 'Duración de las Medidas Cautelares',
+          content: 'Las medidas cautelares tienen límites temporales estrictos: Prisión preventiva en instrucción: máximo 2 años (4 años en casos excepcionales con prórrogas). Si se supera, debe decretarse libertad. Prisión preventiva total (incluyendo juicio): no puede superar la mitad de pena máxima prevista para el delito. Otras medidas cautelares: pueden mantenerse durante toda la instrucción y juicio, pero deben revisarse periódicamente. Derecho a solicitar alzamiento: cada 3-6 meses puedes pedir revisión si cambian circunstancias. Abono a la condena: el tiempo en prisión preventiva se descuenta íntegramente de la condena final. Si eres absuelto, tienes derecho a indemnización por prisión provisional indebida.'
+        },
+        {
+          title: 'Cómo Recurrir las Medidas Cautelares',
+          content: 'Si se decreta prisión preventiva o medidas gravosas, puedes recurrir: 1) Recurso de reforma ante el mismo juez (plazo: 3 días desde notificación), 2) Recurso de apelación ante Audiencia Provincial (plazo: 10 días), 3) Solicitud de libertad provisional posterior (cuando cambien circunstancias), 4) Recurso de queja si se deniega apelación, y 5) Recurso de amparo ante TC si vulnera derechos fundamentales. Motivos de recurso: falta de motivación suficiente, ausencia de riesgo de fuga (arraigo acreditado), desproporcionalidad de la medida, existencia de alternativas viables, cambio de circunstancias posteriores, o dilaciones indebidas. La presentación de recurso no suspende la medida, salvo que se solicite y acuerde expresamente.'
+        },
+        {
+          title: 'Estrategias para Evitar Prisión Preventiva',
+          content: 'Tu abogado debe presentar estrategia defensiva sólida: Demostrar arraigo sólido (domicilio estable, trabajo, familia en España, propiedades), Proponer alternativas viables (fianza que puedas pagar, comparecencias, alejamiento), Acreditar ausencia de antecedentes penales, Aportar informes favorables (laborales, vecinales, médicos), Demostrar voluntad de colaboración con justicia, Argumentar desproporcionalidad (pena previsible baja, atenuantes aplicables), Cuestionar solidez de la acusación, y Invocar jurisprudencia del TC favorable. En casos límite, la preparación previa y profesionalidad del abogado marca la diferencia entre libertad y prisión. No escatimes en elegir abogado especializado.'
+        }
+      ],
+      conclusion: 'Las medidas cautelares, especialmente la prisión preventiva, tienen un impacto devastador en tu vida personal, familiar y laboral. Conocer tus derechos y las vías de recurso es fundamental para defender tu libertad durante el proceso. En STANS Abogados hemos logrado libertades provisionales en casos complejos de terrorismo, crimen organizado y delitos graves, mediante argumentación jurídica sólida y aportación de garantías efectivas. Si te enfrentas a una medida cautelar, contacta inmediatamente con nuestro equipo especializado.'
+    }
+  },
+  {
+    id: 18,
+    title: 'Derechos Inmediatos al Ser Detenido: Lo Primero que Debes Saber',
+    excerpt: 'Guía práctica sobre tus derechos inmediatos desde el momento de la detención. Qué hacer, qué no hacer y cómo ejercer tus derechos fundamentales correctamente.',
+    category: 'Derechos Fundamentales',
+    author: 'Equipo STANS Abogados',
+    date: '2024-12-17',
+    readTime: '9 min',
+    image: '/images/blog/derechos-inmediatos.jpg',
+    slug: 'derechos-inmediatos-detenido',
+    tags: ['derechos inmediatos', 'detención', 'primeros momentos', 'derechos constitucionales'],
+    content: {
+      introduction: 'Los primeros momentos tras la detención son cruciales. Desde el instante en que un agente te informa de que estás detenido, entran en vigor una serie de derechos constitucionales que debes conocer y ejercer inmediatamente. El artículo 520 de la Ley de Enjuiciamiento Criminal establece que estos derechos deben comunicarse por escrito en idioma comprensible. Saber qué hacer y qué no hacer en los primeros momentos puede marcar la diferencia en el resultado de tu caso.',
+      sections: [
+        {
+          title: 'Derechos que Tienes Desde el Primer Momento',
+          content: 'En el momento exacto de la detención tienes estos derechos irrenunciables: 1) Derecho a conocer los motivos de tu detención: el agente debe informarte por qué estás siendo detenido. 2) Derecho a guardar silencio: no estás obligado a declarar. Puedes responder, no contestar, o declarar solo en presencia de abogado. 3) Derecho a no declarar contra ti mismo: no puedes ser obligado a autoinculparte. 4) Derecho a designar abogado: puedes elegir abogado de confianza o solicitar uno de oficio gratuito. 5) Derecho a que se comunique tu detención: a un familiar o persona de tu elección. 6) Derecho a ser reconocido por médico forense: si lo solicitas o si hay indicios de lesiones. 7) Derecho a intérprete gratuito: si no hablas español.'
+        },
+        {
+          title: 'Qué Hacer en los Primeros Momentos',
+          content: 'Protocolo de actuación recomendado: 1) Mantén la calma: nerviosismo puede interpretarse negativamente. 2) Identifícate correctamente: da tu nombre, apellidos y DNI sin resistencia. 3) Escucha atentamente: presta atención a los motivos de detención que te comuniquen. 4) Pide hablar con un abogado INMEDIATAMENTE: di expresamente "quiero hablar con mi abogado antes de declarar". 5) Solicita comunicar tu detención: da nombre y teléfono de familiar de confianza. 6) NO declares nada sin abogado presente: es tu derecho, ejércelo sin excepción. 7) No firmes nada sin leer: y sin que tu abogado lo revise. 8) Solicita atención médica: si te han golpeado o te sientes mal. 9) Anota mentalmente: nombres de agentes, hora, lugar y circunstancias.'
+        },
+        {
+          title: 'Qué NO Hacer al Ser Detenido',
+          content: 'Errores comunes que debes evitar: 1) NO resistas la detención físicamente: puede agravar los cargos (atentado a la autoridad). 2) NO declares sin abogado: aunque te prometan beneficios o trato favorable. 3) NO confíes en promesas verbales: "si confiesas te dejamos ir" - es falso. 4) NO des explicaciones voluntarias: todo puede usarse en tu contra. 5) NO mientas sobre tu identidad: es delito independiente. 6) NO intentes huir: agrava enormemente la situación. 7) NO insultes ni amenaces a agentes: delito de atentado/desacato. 8) NO uses el móvil sin permiso: pueden requisártelo. 9) NO hables con otros detenidos: pueden estar grabando o ser colaboradores. 10) NO renuncies a tus derechos: aunque digan que "acelera el proceso".'
+        },
+        {
+          title: 'Cómo Ejercer tu Derecho a Abogado',
+          content: 'Pasos para ejercer este derecho fundamental: 1) Declara expresamente: "Quiero ejercer mi derecho a abogado antes de declarar nada". 2) Abogado de confianza: si tienes uno, comunica nombre y teléfono al agente. 3) Abogado de oficio: si no tienes, solicita "abogado de oficio gratuito". Es un derecho, no un favor. 4) Tiempo de espera: el abogado debe llegar en máximo 2 horas. Si no llega, recuérdalo. 5) Entrevista privada: antes de declarar, debes hablar a solas con tu abogado. Es reservado. 6) Sigue sus instrucciones: tu abogado conoce la estrategia óptima. 7) No declares sin él presente: incluso si ya hablaste, puede no estar en interrogatorio. Recuerda: el abogado te protege, la policía investiga. Sus intereses son opuestos.'
+        },
+        {
+          title: 'Comunicación de tu Detención a Familiares',
+          content: 'Derecho a comunicar la detención: Puedes solicitar que se comunique tu detención a una persona (familiar, pareja, amigo). Procedimiento: indica nombre y teléfono de la persona a la policía. La comunicación la realiza la autoridad policial. Es telefónica y breve. Limitaciones: en casos de terrorismo o crimen organizado puede retrasarse con autorización judicial (incomunicación). La persona contactada puede localizar abogado por ti. Puede acudir a comisaría, pero generalmente no permiten visitas durante detención policial. Importancia: tu familia puede buscar abogado especializado mientras estás en comisaría. Pueden aportar documentación que acredite arraigo (contrato trabajo, vivienda). Evita que te busquen como desaparecido.'
+        },
+        {
+          title: 'Preguntas Urgentes sobre Derechos Inmediatos',
+          content: '¿Puedo negarme a ir a comisaría? No, si estás detenido legalmente debes obedecer. ¿Pueden detenerme sin decirme por qué? No, deben informarte de inmediato. ¿Puedo llamar yo mismo a mi abogado? En comisaría, no directamente, debes solicitarlo a la policía. ¿Pueden interrogarme en el coche patrulla? Solo preguntas de identificación, no sobre hechos. ¿Puedo exigir médico? Sí, es tu derecho si te sientes mal o hay lesiones. ¿Me pueden obligar a desbloquear mi móvil? No sin autorización judicial. ¿Puedo pedir agua o comida? Sí, son derechos básicos durante detención. ¿Pueden esposarme? Sí, por seguridad, salvo que sea vejatorio o innecesario.'
+        }
+      ],
+      conclusion: 'Los primeros momentos tras la detención son críticos. Ejercer correctamente tus derechos inmediatos, especialmente el derecho a abogado y a no declarar, puede evitar errores que comprometan tu defensa. No te dejes presionar: tienes derecho a asistencia letrada y a guardar silencio. En STANS Abogados ofrecemos asistencia inmediata 24/7 desde el momento de la detención. Llámanos o pide que te localicen en cuanto seas detenido. No estás solo.'
+    }
+  },
+  {
+    id: 19,
+    title: 'Derechos Constitucionales del Detenido: Artículos 15, 17, 18 y 24 CE',
+    excerpt: 'Análisis detallado de los derechos constitucionales que te protegen durante la detención: integridad, libertad, intimidad y defensa según la Constitución Española.',
+    category: 'Derechos Fundamentales',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2024-12-09',
+    readTime: '15 min',
+    image: '/images/blog/derechos-constitucionales.jpg',
+    slug: 'derechos-constitucionales-detenido',
+    tags: ['constitución española', 'derechos fundamentales', 'artículo 17 CE', 'tribunal constitucional'],
+    content: {
+      introduction: 'La Constitución Española de 1978 establece un conjunto de derechos fundamentales que protegen a toda persona detenida. Los artículos 15, 17, 18 y 24 CE son la piedra angular de las garantías procesales en el sistema penal español. Estos derechos son inviolables, vinculan a todos los poderes públicos y pueden ser protegidos mediante recurso de amparo ante el Tribunal Constitucional. Conocerlos en profundidad es esencial para entender los límites del poder del Estado y las garantías de tu defensa.',
+      sections: [
+        {
+          title: 'Artículo 15 CE: Derecho a la Integridad Física y Moral',
+          content: 'El artículo 15 CE establece: "Todos tienen derecho a la vida y a la integridad física y moral, sin que, en ningún caso, puedan ser sometidos a tortura ni a penas o tratos inhumanos o degradantes". Contenido del derecho: Prohibición absoluta de torturas (física o psicológica), tratos inhumanos (sufrimiento físico o mental intenso), o tratos degradantes (humillación o envilecimiento). Jurisprudencia del TC: la detención debe realizarse con respeto absoluto a la dignidad. Aplicación práctica: si sufres violencia policial, tienes derecho a médico forense inmediato, a denunciar los hechos, y esas pruebas obtenidas son nulas (doctrina de fruto del árbol envenenado). El Convenio Europeo de Derechos Humanos (art. 3) refuerza esta protección y el TEDH ha condenado a España por incumplimientos.'
+        },
+        {
+          title: 'Artículo 17 CE: Derecho a la Libertad Personal y Seguridad',
+          content: 'El artículo 17 CE regula el derecho a la libertad: "1. Toda persona tiene derecho a la libertad y a la seguridad. Nadie puede ser privado de su libertad, sino con la observancia de lo establecido en este artículo y en los casos y en la forma previstos en la ley. 2. La detención preventiva no podrá durar más del tiempo estrictamente necesario para la realización de las averiguaciones tendentes al esclarecimiento de los hechos, y, en todo caso, en el plazo máximo de setenta y dos horas, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial. 3. Toda persona detenida debe ser informada de forma inmediata, y de modo que le sea comprensible, de sus derechos y de las razones de su detención, no pudiendo ser obligada a declarar. Se garantiza la asistencia de abogado al detenido en las diligencias policiales y judiciales, en los términos que la ley establezca. 4. La ley regulará un procedimiento de habeas corpus para producir la inmediata puesta a disposición judicial de toda persona detenida ilegalmente". Contenido: límites temporales (72h), información de derechos, asistencia letrada obligatoria, y procedimiento de habeas corpus. Este artículo es la base de toda detención legal en España.'
+        },
+        {
+          title: 'Artículo 18 CE: Derecho a la Intimidad y Protección de Datos',
+          content: 'El artículo 18 CE protege: "1. Se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen. 2. El domicilio es inviolable. Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito. 3. Se garantiza el secreto de las comunicaciones y, en especial, de las postales, telegráficas y telefónicas, salvo resolución judicial. 4. La ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos". Aplicación en detención: tu domicilio no puede registrarse sin orden judicial (salvo flagrante delito), tus comunicaciones no pueden interceptarse sin autorización judicial, no pueden acceder a tu móvil sin orden judicial, tienes derecho a intimidad en celda policial (sin cámaras en aseos), y protección de tus datos personales. Violaciones comunes: registro domiciliario sin orden, acceso a móvil sin autorización, o grabaciones secretas sin causa legal.'
+        },
+        {
+          title: 'Artículo 24 CE: Derecho a la Tutela Judicial Efectiva',
+          content: 'El artículo 24 CE es fundamental para la defensa: "1. Todas las personas tienen derecho a obtener la tutela efectiva de los jueces y tribunales en el ejercicio de sus derechos e intereses legítimos, sin que, en ningún caso, pueda producirse indefensión. 2. Asimismo, todos tienen derecho al Juez ordinario predeterminado por la ley, a la defensa y a la asistencia de letrado, a ser informados de la acusación formulada contra ellos, a un proceso público sin dilaciones indebidas y con todas las garantías, a utilizar los medios de prueba pertinentes para su defensa, a no declarar contra sí mismos, a no confesarse culpables y a la presunción de inocencia". Derechos derivados: tutela judicial (acceso a tribunales), defensa y asistencia letrada (desde detención), información de acusación, proceso público sin dilaciones, prueba de descargo, no autoinculparse, presunción de inocencia hasta condena firme. Este artículo es la base de todo proceso justo.'
+        },
+        {
+          title: 'Cómo Proteger tus Derechos Constitucionales',
+          content: 'Si consideras que se vulneran tus derechos constitucionales: 1) Documenta la vulneración: testigos, partes médicos si hay lesiones, grabaciones si existen. 2) Comunícalo a tu abogado inmediatamente: debe constar en diligencias. 3) Solicita que conste en acta: "hago constar que considero vulnerado mi derecho a...". 4) Presenta denuncia contra los responsables: en comisaría diferente o ante fiscal. 5) Recursos procesales: nulidad de pruebas obtenidas ilegalmente, exclusión de declaraciones bajo coacción, impugnación de resoluciones. 6) Recurso de amparo ante TC: si vulneración persiste tras recursos ordinarios. 7) Acude al TEDH: en Estrasburgo, si agotaste vías internas españolas. 8) Solicita indemnización: por privación ilegal de libertad o daños. La vulneración de derechos fundamentales puede anular el proceso completo.'
+        },
+        {
+          title: 'Jurisprudencia Relevante del Tribunal Constitucional',
+          content: 'Sentencias clave que protegen al detenido: STC 127/2000: toda detención debe respetar dignidad humana. STC 155/2002: el derecho a asistencia letrada es inmediato e irrenunciable. STC 196/1987: las pruebas obtenidas vulnerando derechos fundamentales son nulas. STC 174/1985: la presunción de inocencia exige prueba de cargo suficiente. STC 64/1986: el derecho a no autoinculparse incluye no colaborar activamente. STC 91/2000: la prisión preventiva debe ser excepcional y proporcional. STC 26/1981: el habeas corpus debe resolverse en 24 horas máximo. Estas sentencias son vinculantes para todos los tribunales. Tu abogado debe conocerlas y citarlas en tu defensa.'
+        }
+      ],
+      conclusion: 'Los derechos constitucionales son tu escudo frente al poder del Estado. No son meras declaraciones formales: son garantías reales exigibles ante los tribunales. Conocerlos, ejercerlos y defenderlos es fundamental para asegurar un proceso justo. En STANS Abogados somos especialistas en la protección de derechos fundamentales, con experiencia en recursos de amparo ante el Tribunal Constitucional y demandas ante el TEDH. Si consideras que tus derechos constitucionales han sido vulnerados, contacta inmediatamente con nuestro equipo.'
+    }
   }
 ];
 

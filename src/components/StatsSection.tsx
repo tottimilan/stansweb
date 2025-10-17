@@ -210,7 +210,7 @@ export default function StatsSection() {
             "@type": "Organization",
             "name": "STANS ABOGADOS",
             "description": "Despacho de abogados penalistas en Madrid",
-            "url": "https://stansabogados.com",
+            "url": "https://www.stansabogados.com",
             "foundingDate": "2009",
             "numberOfEmployees": "3",
             "aggregateRating": {

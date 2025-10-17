@@ -281,7 +281,7 @@ export default function CasoDetailPage() {
          <meta property="og:title" content={pageTitle} />
          <meta property="og:description" content={pageDescription} />
          <meta property="og:type" content="article" />
-         <meta property="og:url" content={`https://stansabogados.com${seoData?.url || `/casos/${caso.id}`}`} />
+         <meta property="og:url" content={`https://www.stansabogados.com${seoData?.url || `/casos/${caso.id}`}`} />
          <meta name="twitter:card" content="summary_large_image" />
          <meta name="twitter:title" content={pageTitle} />
          <meta name="twitter:description" content={pageDescription} />

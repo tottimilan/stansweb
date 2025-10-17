@@ -38,11 +38,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
-      url: `https://stansabogados.com/blog/${slug}`,
+      url: `https://www.stansabogados.com/blog/${slug}`,
       siteName: 'STANS ABOGADOS',
       images: post.image ? [
         {
-          url: `https://stansabogados.com${post.image}`,
+          url: `https://www.stansabogados.com${post.image}`,
           width: 1200,
           height: 630,
           alt: post.title
@@ -53,14 +53,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
-      images: post.image ? [`https://stansabogados.com${post.image}`] : [],
+      images: post.image ? [`https://www.stansabogados.com${post.image}`] : [],
       creator: '@stansabogados',
     },
     alternates: {
-      canonical: `/blog/${slug}`,
+      canonical: `https://www.stansabogados.com/blog/${slug}`,
       languages: {
-        'es-ES': `/blog/${slug}`,
-        'ar': `/blog/${slug}`,
+        'es': `https://www.stansabogados.com/blog/${slug}`,
+        'ar': `https://www.stansabogados.com/blog/${slug}`,
+        'x-default': `https://www.stansabogados.com/blog/${slug}`
       },
     },
     robots: {

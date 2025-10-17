@@ -4,7 +4,7 @@ import seoInfo from "../../public/casos/seo-info.json"
 import { allLawyerSlugs } from "@/data/lawyers"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://stansabogados.com"
+  const baseUrl = "https://www.stansabogados.com"
   const currentDate = new Date()
   
   // Fechas específicas para diferentes tipos de contenido

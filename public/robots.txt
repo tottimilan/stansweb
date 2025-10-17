@@ -9,7 +9,7 @@ User-agent: *
 Allow: /
 
 # Sitemap principal
-Sitemap: https://stansabogados.com/sitemap.xml
+Sitemap: https://www.stansabogados.com/sitemap.xml
 
 # Crawl-delay para proteger servidor
 Crawl-delay: 1

@@ -13,7 +13,7 @@ export default function LawyerSchema({ lawyer }: LawyerSchemaProps) {
     "worksFor": {
       "@type": "LegalService",
       "name": "STANS ABOGADOS",
-      "url": "https://stansabogados.com",
+      "url": "https://www.stansabogados.com",
       "telephone": "+34611687226",
       "address": {
         "@type": "PostalAddress",
@@ -38,8 +38,8 @@ export default function LawyerSchema({ lawyer }: LawyerSchemaProps) {
       "@type": "EducationalOrganization",
       "name": edu
     })),
-    "image": `https://stansabogados.com${lawyer.image}`,
-    "url": `https://stansabogados.com/equipo/${lawyer.slug}`,
+    "image": `https://www.stansabogados.com${lawyer.image}`,
+    "url": `https://www.stansabogados.com/equipo/${lawyer.slug}`,
     "sameAs": lawyer.linkedin ? [lawyer.linkedin] : [],
     ...(lawyer.email && { "email": lawyer.email }),
     ...(lawyer.phone && { "telephone": lawyer.phone }),

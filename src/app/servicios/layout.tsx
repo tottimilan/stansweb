@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Servicios de Defensa Penal | STANS ABOGADOS',
     description: 'Especialistas en todas las ramas del derecho penal. Defensa integral desde el primer momento. Disponibilidad 24/7.',
-    url: 'https://stansabogados.com/servicios',
+    url: 'https://www.stansabogados.com/servicios',
     siteName: 'STANS ABOGADOS',
     type: 'website',
     images: [
@@ -27,10 +27,11 @@ export const metadata: Metadata = {
     creator: '@stansabogados',
   },
   alternates: {
-    canonical: '/servicios',
+    canonical: 'https://www.stansabogados.com/servicios',
     languages: {
-      'es-ES': '/servicios',
-      'ar': '/servicios',
+      'es': 'https://www.stansabogados.com/servicios',
+      'ar': 'https://www.stansabogados.com/servicios',
+      'x-default': 'https://www.stansabogados.com/servicios'
     },
   },
   robots: {

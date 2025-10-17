@@ -9,19 +9,19 @@ export default function WebsiteSchema() {
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://stansabogados.com/#website",
-        "url": "https://stansabogados.com",
+        "@id": "https://www.stansabogados.com/#website",
+        "url": "https://www.stansabogados.com",
         "name": "STANS ABOGADOS",
         "description": "Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7",
         "publisher": {
-          "@id": "https://stansabogados.com/#organization"
+          "@id": "https://www.stansabogados.com/#organization"
         },
         "potentialAction": [
           {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://stansabogados.com/buscar?q={search_term_string}"
+              "urlTemplate": "https://www.stansabogados.com/buscar?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -30,21 +30,21 @@ export default function WebsiteSchema() {
       },
       {
         "@type": "Organization",
-        "@id": "https://stansabogados.com/#organization",
+        "@id": "https://www.stansabogados.com/#organization",
         "name": "STANS ABOGADOS",
         "alternateName": "STANS Abogados Penalistas",
-        "url": "https://stansabogados.com",
+        "url": "https://www.stansabogados.com",
         "logo": {
           "@type": "ImageObject",
-          "@id": "https://stansabogados.com/#logo",
-          "url": "https://stansabogados.com/images/logos/logo-horizontal.png",
-          "contentUrl": "https://stansabogados.com/images/logos/logo-horizontal.png",
+          "@id": "https://www.stansabogados.com/#logo",
+          "url": "https://www.stansabogados.com/images/logos/logo-horizontal.png",
+          "contentUrl": "https://www.stansabogados.com/images/logos/logo-horizontal.png",
           "width": 1200,
           "height": 630,
           "caption": "STANS ABOGADOS Logo"
         },
         "image": {
-          "@id": "https://stansabogados.com/#logo"
+          "@id": "https://www.stansabogados.com/#logo"
         },
         "sameAs": [
           "https://www.linkedin.com/company/stans-abogados",

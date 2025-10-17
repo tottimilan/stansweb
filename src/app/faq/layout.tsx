@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Preguntas Frecuentes | STANS ABOGADOS',
     description: 'Más de 25 preguntas frecuentes sobre defensa penal, terrorismo, extradiciones y derechos. Respuestas de abogados especializados.',
-    url: 'https://stansabogados.com/faq',
+    url: 'https://www.stansabogados.com/faq',
     siteName: 'STANS ABOGADOS',
     type: 'website',
     images: [
@@ -27,10 +27,11 @@ export const metadata: Metadata = {
     creator: '@stansabogados',
   },
   alternates: {
-    canonical: '/faq',
+    canonical: 'https://www.stansabogados.com/faq',
     languages: {
-      'es-ES': '/faq',
-      'ar': '/faq',
+      'es': 'https://www.stansabogados.com/faq',
+      'ar': 'https://www.stansabogados.com/faq',
+      'x-default': 'https://www.stansabogados.com/faq'
     },
   },
   robots: {
