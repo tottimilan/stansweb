@@ -68,14 +68,32 @@ export const translations = {
     
     // Practice Areas
     areas: {
-      title: 'ÁREAS DE DEFENSA PENAL',
+      title: 'Nuestros Servicios',
       subtitle: 'Especialistas en todas las ramas del derecho penal',
       description: 'Ofrecemos defensa especializada en todos los tipos de delitos penales',
       areasDefensa: 'Áreas de Defensa Penal',
       descripcionCompleta: 'Especialistas en todas las ramas del derecho penal. Defensa integral desde el primer momento hasta el final del proceso.',
+      descripcionHero: 'Especialistas en todas las ramas del derecho penal. Defensa integral desde el primer momento hasta el final del proceso. Disponibilidad 24/7 para urgencias.',
       noEncuentras: '¿No encuentras tu caso?',
       consultanos: 'Consúltanos',
       casoDiferente: 'Hola, tengo un caso penal diferente. ¿Pueden ayudarme?',
+      experienciaAudienciaNacional: 'Experiencia en Audiencia Nacional',
+      abogadosColegiadosICAM: 'Abogados Colegiados ICAM',
+      asistenciaMultiidioma: 'Asistencia Multiidioma',
+      verCasosExito: 'Ver casos de éxito',
+      casosRelacionados: 'casos relacionados',
+      porQueElegir: '¿Por qué elegir STANS ABOGADOS?',
+      experienciaSubtitle: 'Experiencia, dedicación y resultados comprobados en casos complejos',
+      experienciaComprobada: 'Experiencia Comprobada',
+      experienciaDescripcion: 'Más de 100 casos favorables en todas las ramas del derecho penal, incluyendo Audiencia Nacional.',
+      equipoEspecializado: 'Equipo Especializado',
+      equipoDescripcion: 'Abogados colegiados con formación específica en derecho penal económico, extradiciones y derechos fundamentales.',
+      disponibilidad247: 'Disponibilidad 24/7',
+      disponibilidadDescripcion: 'Atención inmediata en urgencias penales. Respuesta en menos de 1 hora para situaciones críticas.',
+      necesitasAsesoramiento: '¿Necesitas asesoramiento legal urgente?',
+      contactaEquipo: 'Contacta con nuestro equipo de abogados penalistas. Primera consulta gratuita.',
+      consultarCaso: 'Consultar mi caso',
+      whatsapp247: 'WhatsApp 24/7',
       // Datos de las áreas penales
       libertadExpresion: {
         title: 'Libertad de expresión y delitos de odio',
@@ -182,15 +200,30 @@ export const translations = {
       servicios: 'Servicios',
       atencion: 'Atención',
       defensaPenal: 'Defensa Penal',
-             extradicion: 'Extradiciones',
+      extradicion: 'Extradiciones',
       asesoriaLegal: 'Asesoría Legal',
-             respuesta: 'Respuesta < 1 hr',
+      respuesta: 'Respuesta < 1 hr',
       disponible24h: '24/7 Disponible',
       emergencias: 'Emergencias penales',
       idiomas: 'Idiomas',
       espanolArabeIngles: 'Español • Inglés • Árabe',
-             respuestaTiempo: 'Menos de 1 hora',
-      atencion24h: 'Atención 24/7'
+      respuestaTiempo: 'Menos de 1 hora',
+      atencion24h: 'Atención 24/7',
+      blog: 'Blog',
+      casosExito: 'Casos de Éxito',
+      nuestroEquipo: 'Nuestro Equipo',
+      defensaPenalUrgente: 'Defensa Penal Urgente',
+      extradicionesEspana: 'Extradiciones en España',
+      derechosDetenidos: 'Derechos de Detenidos',
+      primerosPasosComisaria: 'Primeros Pasos en Comisaría',
+      preguntasFrecuentes: 'Preguntas Frecuentes',
+      verTodosArticulos: 'Ver todos los artículos →',
+      libertadExpresion: 'Libertad de Expresión',
+      operacionLuco: 'Operación Luco',
+      academiaYihad: 'Academia Yihad',
+      blanqueoCapitales: 'Blanqueo de Capitales',
+      verTodosCasos: 'Ver todos los casos →',
+      verTodosServicios: 'Ver todos los servicios →'
     },
     
     // Language Selector
@@ -212,6 +245,32 @@ export const translations = {
       contactarWhatsapp: 'Contacta ahora por WhatsApp',
       consultarCaso: 'Consultar caso penal específico por WhatsApp',
       idiomas: 'Idiomas'
+    },
+    
+    // FAQ Page
+    faq: {
+      title: 'Preguntas Frecuentes',
+      subtitle: 'Encuentra respuestas a tus dudas legales',
+      description: 'Más de 90 preguntas frecuentes sobre defensa penal, terrorismo y derechos.',
+      searchPlaceholder: 'Buscar en preguntas frecuentes...',
+      noResults: 'No se encontraron resultados',
+      noResultsDescription: 'Intenta una búsqueda diferente o contacta directamente con nuestro equipo',
+      questionsAvailable: 'preguntas disponibles',
+      resultsFor: 'resultados para',
+      allCategories: 'Todas',
+      readFullArticle: 'Leer artículo completo',
+      consultSpecialist: 'Consultar especialista',
+      notFound: '¿No encuentras tu respuesta?',
+      notFoundDescription: 'Contacta con nuestro equipo de abogados especializados. Primera consulta para valorar tu caso. Disponible 24/7.',
+      sendConsultation: 'Enviar consulta',
+      urgentResponse: 'Respuesta en menos de 1 hora para casos urgentes',
+      categories: {
+        todas: 'Todas',
+        terrorismo: 'Terrorismo',
+        extradicion: 'Extradición',
+        defensaUrgente: 'Defensa Urgente',
+        derechosFundamentales: 'Derechos Fundamentales'
+      }
     },
 
     // Cases Page
@@ -377,6 +436,10 @@ export const translations = {
       compartirArticulo: 'Compartir artículo',
       // Hubs de contenido
       hubs: {
+        terrorismoAudienciaNacional: {
+          title: 'Terrorismo y Audiencia Nacional',
+          description: 'Defensa penal especializada en delitos de terrorismo. Enaltecimiento, captación yihadista, financiación y organización terrorista.'
+        },
         defensaPenalUrgente: {
           title: 'Defensa Penal Urgente',
           description: 'Guías completas para situaciones de urgencia penal: detenciones, registros, declaraciones y primeros pasos.'
@@ -802,14 +865,32 @@ export const translations = {
     
     // Practice Areas
     areas: {
-      title: 'مجالات الدفاع الجنائي',
+      title: 'خدماتنا',
       subtitle: 'متخصصون في جميع فروع القانون الجنائي',
       description: 'نقدم دفاعاً متخصصاً في جميع أنواع الجرائم الجنائية',
       areasDefensa: 'مجالات الدفاع الجنائي',
       descripcionCompleta: 'متخصصون في جميع فروع القانون الجنائي. دفاع شامل من اللحظة الأولى حتى نهاية الإجراءات.',
+      descripcionHero: 'متخصصون في جميع فروع القانون الجنائي. دفاع شامل من اللحظة الأولى حتى نهاية الإجراءات. متاح 24/7 للحالات العاجلة.',
       noEncuentras: 'هل لا تجد قضيتك؟',
       consultanos: 'استشرنا',
       casoDiferente: 'مرحباً، لدي قضية جنائية مختلفة. هل يمكنكم مساعدتي؟',
+      experienciaAudienciaNacional: 'خبرة في المحكمة الوطنية',
+      abogadosColegiadosICAM: 'محامون مسجلون في ICAM',
+      asistenciaMultiidioma: 'مساعدة متعددة اللغات',
+      verCasosExito: 'عرض قضايا النجاح',
+      casosRelacionados: 'قضايا مرتبطة',
+      porQueElegir: 'لماذا تختار ستانس أبودادوس؟',
+      experienciaSubtitle: 'الخبرة والتفاني والنتائج المثبتة في القضايا المعقدة',
+      experienciaComprobada: 'خبرة مثبتة',
+      experienciaDescripcion: 'أكثر من 100 قضية ناجحة في جميع فروع القانون الجنائي، بما في ذلك المحكمة الوطنية.',
+      equipoEspecializado: 'فريق متخصص',
+      equipoDescripcion: 'محامون مسجلون مع تدريب متخصص في القانون الجنائي الاقتصادي وتسليم المجرمين والحقوق الأساسية.',
+      disponibilidad247: 'متاح 24/7',
+      disponibilidadDescripcion: 'اهتمام فوري بالطوارئ الجنائية. الرد في أقل من ساعة للحالات الحرجة.',
+      necesitasAsesoramiento: 'هل تحتاج استشارة قانونية عاجلة؟',
+      contactaEquipo: 'اتصل بفريقنا من المحامين الجنائيين. استشارة أولى مجانية.',
+      consultarCaso: 'استشارة قضيتي',
+      whatsapp247: 'واتساب 24/7',
       // Datos de las áreas penales
       libertadExpresion: {
         title: 'حرية التعبير وجرائم الكراهية',
@@ -916,15 +997,30 @@ export const translations = {
       servicios: 'الخدمات',
       atencion: 'الاهتمام',
       defensaPenal: 'الدفاع الجنائي',
-             extradicion: 'تسليم المجرمين',
+      extradicion: 'تسليم المجرمين',
       asesoriaLegal: 'الاستشارة القانونية',
-             respuesta: 'الرد < 1 ساعة',
+      respuesta: 'الرد < 1 ساعة',
       disponible24h: 'متاح 24/7',
       emergencias: 'الطوارئ الجنائية',
       idiomas: 'اللغات',
       espanolArabeIngles: 'الإسبانية • الإنجليزية • العربية',
-             respuestaTiempo: 'أقل من ساعة واحدة',
-      atencion24h: 'الاهتمام 24/7'
+      respuestaTiempo: 'أقل من ساعة واحدة',
+      atencion24h: 'الاهتمام 24/7',
+      blog: 'المدونة',
+      casosExito: 'قضايا النجاح',
+      nuestroEquipo: 'فريقنا',
+      defensaPenalUrgente: 'الدفاع الجنائي العاجل',
+      extradicionesEspana: 'تسليم المجرمين في إسبانيا',
+      derechosDetenidos: 'حقوق المحتجزين',
+      primerosPasosComisaria: 'الخطوات الأولى في مركز الشرطة',
+      preguntasFrecuentes: 'الأسئلة الشائعة',
+      verTodosArticulos: 'عرض جميع المقالات ←',
+      libertadExpresion: 'حرية التعبير',
+      operacionLuco: 'عملية لوكو',
+      academiaYihad: 'أكاديمية الجهاد',
+      blanqueoCapitales: 'غسيل الأموال',
+      verTodosCasos: 'عرض جميع القضايا ←',
+      verTodosServicios: 'عرض جميع الخدمات ←'
     },
     
     // Language Selector
@@ -946,6 +1042,32 @@ export const translations = {
       contactarWhatsapp: 'تواصل عبر واتساب للحصول على استشارة مجانية',
       consultarCaso: 'استشر قضية جنائية محددة عبر واتساب',
       idiomas: 'اللغات'
+    },
+    
+    // FAQ Page
+    faq: {
+      title: 'الأسئلة الشائعة',
+      subtitle: 'ابحث عن إجابات لأسئلتك القانونية',
+      description: 'أكثر من 40 سؤالاً متكرراً حول الدفاع الجنائي والإرهاب والحقوق.',
+      searchPlaceholder: 'ابحث في الأسئلة الشائعة...',
+      noResults: 'لم يتم العثور على نتائج',
+      noResultsDescription: 'جرب بحثاً مختلفاً أو اتصل بفريقنا مباشرة',
+      questionsAvailable: 'سؤالاً متاحاً',
+      resultsFor: 'نتيجة للبحث عن',
+      allCategories: 'الكل',
+      readFullArticle: 'اقرأ المقال الكامل',
+      consultSpecialist: 'استشر متخصصاً',
+      notFound: 'لم تجد إجابتك؟',
+      notFoundDescription: 'اتصل بفريقنا من المحامين المتخصصين. استشارة أولى لتقييم قضيتك. متاح 24/7.',
+      sendConsultation: 'إرسال استشارة',
+      urgentResponse: 'الرد في أقل من ساعة للحالات العاجلة',
+      categories: {
+        todas: 'الكل',
+        terrorismo: 'الإرهاب',
+        extradicion: 'تسليم المجرمين',
+        defensaUrgente: 'الدفاع العاجل',
+        derechosFundamentales: 'الحقوق الأساسية'
+      }
     },
 
     // Cases Page
@@ -1111,6 +1233,10 @@ export const translations = {
       compartirArticulo: 'مشاركة المقال',
       // Hubs de contenido
       hubs: {
+        terrorismoAudienciaNacional: {
+          title: 'الإرهاب والمحكمة الوطنية',
+          description: 'دفاع جنائي متخصص في جرائم الإرهاب. التمجيد، التجنيد الجهادي، التمويل والمنظمات الإرهابية.'
+        },
         defensaPenalUrgente: {
           title: 'الدفاع الجنائي العاجل',
           description: 'أدلة شاملة لحالات الطوارئ الجنائية: الاعتقالات، التفتيشات، التصريحات والخطوات الأولى.'

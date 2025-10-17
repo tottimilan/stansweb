@@ -28,6 +28,7 @@ const getLawyers = (t: any) => [
     image: '/images/Equipo-optimized/Ruben1.webp?v=4',
     hoverImage: '/images/Equipo-optimized/Ruben4.webp?v=4',
     backgroundImage: '/images/Equipo-optimized/Ruben3.webp?v=4',
+    slug: 'ruben-vaquero-arribas',
   },
   {
     name: t.team.mounir.name,
@@ -39,6 +40,7 @@ const getLawyers = (t: any) => [
     image: '/images/Equipo-optimized/Mounir1.webp?v=4',
     hoverImage: '/images/Equipo-optimized/Mounir4.webp?v=4',
     backgroundImage: '/images/Equipo-optimized/Mounir3.webp?v=4',
+    slug: 'mounir-elyemlahy-chouati',
   },
   {
     name: t.team.diego.name,
@@ -50,6 +52,7 @@ const getLawyers = (t: any) => [
     image: '/images/Equipo-optimized/Diego1.webp?v=3',
     hoverImage: '/images/Equipo-optimized/Diego4.webp?v=3',
     backgroundImage: '/images/Equipo-optimized/Diego3.webp?v=3',
+    slug: 'diego-cardona-valero',
   },
   {
     name: t.team.ada.name,
@@ -61,6 +64,7 @@ const getLawyers = (t: any) => [
     image: '/images/Equipo-optimized/Ada1.webp?v=2',
     hoverImage: '/images/Equipo-optimized/Ada4.webp?v=2',
     backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=2',
+    slug: 'ada-de-blas-pascual',
   },
 ];
 

@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import CookieBanner from "../components/CookieBanner";
 import WebsiteSchema from "../components/WebsiteSchema";
+import LocalBusinessSchema from "../components/LocalBusinessSchema";
 import { translations } from "../translations";
 
 export const metadata: Metadata = {
@@ -42,6 +43,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://stansabogados.com'),
   alternates: {
     canonical: '/',
+    languages: {
+      'es-ES': '/',
+      'ar': '/',
+    },
   },
   icons: {
     icon: [
@@ -245,6 +250,7 @@ export default function RootLayout({
       <body className="font-sans antialiased" suppressHydrationWarning={true}>
         {/* Global Website Schema for better SEO */}
         <WebsiteSchema />
+        <LocalBusinessSchema />
         <LanguageProvider>
           <ContactProvider>
             {children}

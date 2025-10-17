@@ -2,97 +2,30 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Calendar, Clock, User, Share2, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, User, Share2, ArrowRight, HelpCircle, CheckCircle } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
+import TableOfContents from '@/components/TableOfContents';
+import Breadcrumb from '@/components/Breadcrumb';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 import { notFound, useParams } from 'next/navigation';
+import { blogPosts, getBlogPostBySlug, isValidBlogSlug } from '@/data/blogPosts';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 const WHATSAPP = '34611687226';
-
-const blogPosts = [
-  {
-    id: 1,
-    title: 'Defensa Penal Urgente: Guía Completa para Detenidos',
-    excerpt: 'Todo lo que necesitas saber cuando eres detenido: derechos, procedimiento y cómo actuar. Guía práctica para situaciones de urgencia penal.',
-    category: 'Defensa Penal Urgente',
-    author: 'Equipo STANS Abogados',
-    date: '2024-12-15',
-    readTime: '8 min',
-    image: '/images/blog/defensa-urgente.jpg',
-    slug: 'defensa-penal-urgente-guia-completa',
-    tags: ['detención', 'derechos', 'urgencias', 'procedimiento'],
-    content: {
-      introduction: 'Cuando una persona es detenida, los primeros momentos son cruciales. Conocer tus derechos y saber cómo actuar puede marcar la diferencia entre una defensa efectiva y complicaciones innecesarias.',
-      sections: [
-        {
-          title: 'Derechos Inmediatos al Ser Detenido',
-          content: 'Desde el momento de la detención tienes derecho a: asistencia letrada inmediata, informar a un familiar, no declarar sin abogado presente, y conocer los motivos de tu detención.'
-        },
-        {
-          title: 'Primeros Pasos en Comisaría',
-          content: 'Una vez en comisaría, se te tomarán huellas y foto, se te cacheará y se te informará de tus derechos. Es fundamental no declarar nada sin la presencia de tu abogado.'
-        },
-        {
-          title: 'La Asistencia Letrada de Urgencia',
-          content: 'El abogado de urgencia tiene acceso inmediato a tu expediente y puede asesorarte antes de cualquier declaración. Es un derecho fundamental que no debes renunciar.'
-        },
-        {
-          title: 'Puesta a Disposición Judicial',
-          content: 'En 24-72 horas serás puesto a disposición judicial. Es el momento clave donde se decide si quedas en libertad o se dicta alguna medida cautelar.'
-        }
-      ],
-      conclusion: 'La defensa penal urgente requiere experiencia y rapidez. En STANS Abogados contamos con un equipo disponible 24/7 para asistirte en situaciones críticas.'
-    }
-  },
-  {
-    id: 2,
-    title: 'Procedimientos de Extradición en España: Todo lo que Debes Saber',
-    excerpt: 'Análisis completo del proceso de extradición: requisitos legales, plazos, derechos del extraditado y estrategias de defensa.',
-    category: 'Extradiciones',
-    author: 'Rubén Vaquero Arribas',
-    date: '2024-12-10',
-    readTime: '12 min',
-    image: '/images/blog/extradicion.jpg',
-    slug: 'procedimientos-extradicion-espana',
-    tags: ['extradición', 'UE', 'derechos', 'internacional'],
-    content: {
-      introduction: 'La extradición es un procedimiento complejo que implica la entrega de una persona acusada o condenada a otro país. España tiene acuerdos específicos con diferentes países y organismos internacionales.',
-      sections: [
-        {
-          title: 'Tipos de Extradición',
-          content: 'Existen diferentes tipos: extradición UE (más ágil), extradición internacional (más compleja), y extradición por tratado bilateral. Cada una tiene sus particularidades procedimentales.'
-        },
-        {
-          title: 'Fases del Procedimiento',
-          content: 'El proceso consta de: solicitud inicial, admisión a trámite, audiencia del extraditado, resolución judicial y eventual entrega. Cada fase tiene plazos estrictos.'
-        },
-        {
-          title: 'Derechos del Extraditado',
-          content: 'Tienes derecho a asistencia letrada, traducción, impugnación de la solicitud, y en casos UE, a no ser juzgado dos veces por el mismo hecho.'
-        },
-        {
-          title: 'Defensas Posibles',
-          content: 'Se puede impugnar por defectos formales, prescripción, riesgo de trato degradante, o por ser perseguido por motivos políticos o discriminatorios.'
-        }
-      ],
-      conclusion: 'La extradición requiere una defensa especializada en derecho internacional. Nuestros abogados tienen amplia experiencia en procedimientos de extradición.'
-    }
-  }
-];
 
 const relatedArticles = [
   {
     title: 'Derechos Constitucionales en Procedimientos Penales',
-    slug: 'derechos-constitucionales-procedimientos-penales',
+    slug: 'derechos-constitucionales-detenido',
     category: 'Derechos Fundamentales'
   },
   {
     title: 'Asistencia Jurídica de Urgencia',
-    slug: 'asistencia-juridica-urgencia',
+    slug: 'asistencia-letrada-urgencia',
     category: 'Asistencia Legal'
   },
   {
@@ -108,18 +41,93 @@ export default function BlogPostPage() {
   const { language } = useLanguage();
   const t = translations[language];
   
-  const post = blogPosts.find(p => p.slug === slug);
+  // Verificar si el slug es válido antes de buscar el post
+  if (!isValidBlogSlug(slug)) {
+    notFound();
+  }
+  
+  const post = getBlogPostBySlug(slug);
 
   if (!post) {
     notFound();
   }
 
+  // Generar Table of Contents desde las secciones
+  const tocItems = post.content.sections.map((section, index) => ({
+    id: `section-${index}`,
+    title: section.title,
+    level: 1
+  }));
+
+  // FAQ específicas por categoría de blog
+  const getFAQs = () => {
+    if (post.category === 'Terrorismo') {
+      return [
+        {
+          question: language === 'ar' ? 'ما هي العقوبة لجرائم الإرهاب في إسبانيا؟' : '¿Cuál es la pena por delitos de terrorismo en España?',
+          answer: language === 'ar' ? 'تتراوح العقوبات من 6 سنوات إلى 30 عاماً من السجن حسب خطورة الجريمة ونوعها. التمجيد: 1-3 سنوات، التجنيد: 2-5 سنوات، الانتماء لمنظمة: 6-15 سنوات، والأعمال الإرهابية: 15-30 سنوات.' : 'Las penas van desde 6 años hasta 30 años de prisión, dependiendo de la gravedad y tipo de delito. Enaltecimiento: 1-3 años, captación: 2-5 años, pertenencia a organización: 6-15 años, actos terroristas: 15-30 años.'
+        },
+        {
+          question: language === 'ar' ? 'هل يمكنني الحصول على إفراج مؤقت في قضية إرهاب؟' : '¿Puedo obtener libertad provisional en un caso de terrorismo?',
+          answer: language === 'ar' ? 'نعم، من الممكن لكنه صعب. يتطلب إثبات: جذور في إسبانيا، عدم وجود خطر هروب، غياب الخطورة، وتقديم ضمانات. في ستانس للمحاماة حققنا إفراجات مؤقتة في قضايا إرهاب من خلال حجج قوية.' : 'Sí, es posible aunque difícil. Requiere demostrar: arraigo en España, ausencia de riesgo de fuga, falta de peligrosidad, y ofrecer garantías. En STANS ABOGADOS hemos logrado libertades provisionales en casos de terrorismo mediante argumentación sólida.'
+        },
+        {
+          question: language === 'ar' ? 'ماذا أفعل إذا اتُهمت بالتمجيد في وسائل التواصل الاجتماعي؟' : '¿Qué hago si me acusan de enaltecimiento en redes sociales?',
+          answer: language === 'ar' ? 'لا تحذف أي شيء، لا تنشر أكثر، اتصل فوراً بمحامٍ متخصص (24/7 في ستانس)، لا تدلِ بأقوال دون محامٍ، اجمع سياق الرسائل الكامل. الدفاع المبكر حاسم.' : 'No borres nada, no publiques más, contacta inmediatamente con abogado especializado (24/7 en STANS), no declares sin abogado, recopila contexto completo de mensajes. La defensa temprana es crucial.'
+        },
+        {
+          question: language === 'ar' ? 'من يحكم في قضايا الإرهاب في إسبانيا؟' : '¿Quién juzga los casos de terrorismo en España?',
+          answer: language === 'ar' ? 'للمحكمة الوطنية (Audiencia Nacional) في مدريد الاختصاص الحصري في جميع جرائم الإرهاب في إسبانيا. تتكون من قضاة متخصصين وللإجراءات خصوصيات محددة.' : 'La Audiencia Nacional en Madrid tiene competencia exclusiva sobre todos los delitos de terrorismo en España. Está compuesta por jueces especializados y los procedimientos tienen particularidades específicas.'
+        },
+        {
+          question: language === 'ar' ? 'هل يمكن اعتبار الفكاهة أو الراب تمجيداً؟' : '¿Puede considerarse el humor o el rap como enaltecimiento?',
+          answer: language === 'ar' ? 'لا، حددت المحكمة الأوروبية لحقوق الإنسان (قضية ستروبيري) أن التعبيرات الفنية محمية بحرية التعبير. مجرد محتوى مثير للجدل أو مسيء لا يكفي: يجب إثبات تحريض حقيقي على العنف.' : 'No, el TEDH (caso Strawberry) estableció que las expresiones artísticas están protegidas por la libertad de expresión. Un contenido polémico u ofensivo no es suficiente: debe probarse incitación real a la violencia.'
+        }
+      ];
+    }
+    
+    // FAQs genéricas para otros blogs
+    return [
+      {
+        question: language === 'ar' ? 'هل أحتاج محامياً متخصصاً؟' : '¿Necesito un abogado especializado?',
+        answer: language === 'ar' ? 'نعم. القضايا الجنائية المعقدة تتطلب محامين متخصصين يعرفون الاجتهادات القضائية المحددة واستراتيجيات الدفاع الأكثر فعالية.' : 'Sí. Los casos penales complejos requieren abogados especializados que conozcan la jurisprudencia específica y las estrategias de defensa más efectivas.'
+      },
+      {
+        question: language === 'ar' ? 'كم تكلفة الاستشارة الأولى؟' : '¿Cuánto cuesta la primera consulta?',
+        answer: language === 'ar' ? 'نقدم استشارة أولى لتقييم قضيتك. اتصل بـ +34 611 68 72 26 أو واتساب 24/7 لمناقشة حالتك والرسوم.' : 'Ofrecemos primera consulta para valorar tu caso. Contacta al +34 611 68 72 26 o WhatsApp 24/7 para discutir tu situación y honorarios.'
+      },
+      {
+        question: language === 'ar' ? 'كم من الوقت يستغرق إجراء جنائي؟' : '¿Cuánto dura un procedimiento penal?',
+        answer: language === 'ar' ? 'يعتمد على تعقيد القضية: إجراءات بسيطة (6-12 شهراً)، قضايا معقدة (1-3 سنوات)، قضايا أمام المحكمة الوطنية (2-5 سنوات). محاميك سيبقيك مطلعاً.' : 'Depende de la complejidad: procedimientos simples (6-12 meses), casos complejos (1-3 años), casos Audiencia Nacional (2-5 años). Tu abogado te mantendrá informado.'
+      }
+    ];
+  };
+
+  const faqs = getFAQs();
+  
+  // Breadcrumbs
+  const breadcrumbItems = [
+    { label: language === 'ar' ? 'الرئيسية' : 'Inicio', href: '/' },
+    { label: language === 'ar' ? 'المدونة' : 'Blog', href: '/blog' },
+    { label: post.category },
+    { label: post.title }
+  ];
+
   return (
     <>
+      <BlogPostSchema post={post} language={language} faqs={faqs} />
       <ScrollProgress />
       <Navigation />
+      <TableOfContents items={tocItems} />
 
       <main className="bg-black pt-20">
+        {/* Breadcrumb */}
+        <section className="bg-charleston py-4 border-b border-gold/10">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <Breadcrumb items={breadcrumbItems} />
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-charleston to-black text-offwhite py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -133,7 +141,7 @@ export default function BlogPostPage() {
                 className="inline-flex items-center gap-2 text-gold hover:text-white transition mb-6"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Volver al blog
+                {language === 'ar' ? 'العودة إلى المدونة' : 'Volver al blog'}
               </Link>
 
               <div className="flex items-center gap-2 mb-4">
@@ -161,7 +169,7 @@ export default function BlogPostPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
-                  {new Date(post.date).toLocaleDateString('es-ES', {
+                  {new Date(post.date).toLocaleDateString(language === 'ar' ? 'ar-SA' : 'es-ES', {
                     day: '2-digit',
                     month: 'short',
                     year: 'numeric'
@@ -182,24 +190,25 @@ export default function BlogPostPage() {
               className="prose prose-lg max-w-none"
             >
               {/* Introduction */}
-              <div className="text-black/80 leading-relaxed mb-12 text-lg">
+              <div className={`text-black/80 leading-relaxed mb-12 text-lg ${language === 'ar' ? 'text-right' : ''}`}>
                 {post.content.introduction}
               </div>
 
-              {/* Article Sections */}
+              {/* Article Sections with IDs for TOC */}
               {post.content.sections.map((section, index) => (
                 <motion.div
                   key={index}
+                  id={`section-${index}`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="mb-12"
+                  className="mb-12 scroll-mt-32"
                 >
-                  <h2 className="text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2">
+                  <h2 className={`text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2 ${language === 'ar' ? 'text-right' : ''}`}>
                     {section.title}
                   </h2>
-                  <p className="text-black/70 leading-relaxed text-base">
+                  <p className={`text-black/70 leading-relaxed text-base ${language === 'ar' ? 'text-right' : ''}`}>
                     {section.content}
                   </p>
                 </motion.div>
@@ -217,10 +226,48 @@ export default function BlogPostPage() {
                 ))}
               </div>
 
+              {/* FAQ Section */}
+              {faqs.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                  className="mb-12 bg-gold/5 border border-gold/20 rounded-2xl p-8"
+                >
+                  <h2 className={`text-2xl font-bold text-black mb-6 flex items-center gap-3 ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+                    <HelpCircle className="h-6 w-6 text-gold" />
+                    {language === 'ar' ? 'الأسئلة الشائعة' : 'Preguntas Frecuentes'}
+                  </h2>
+                  <div className="space-y-6">
+                    {faqs.map((faq, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        className="border-l-4 border-gold pl-6"
+                      >
+                        <h3 className={`text-lg font-semibold text-black mb-3 flex items-start gap-2 ${language === 'ar' ? 'text-right flex-row-reverse' : ''}`}>
+                          <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
+                          {faq.question}
+                        </h3>
+                        <p className={`text-black/70 leading-relaxed ${language === 'ar' ? 'text-right' : ''}`}>
+                          {faq.answer}
+                        </p>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+
               {/* Conclusion */}
               <div className="bg-charleston text-white p-8 rounded-2xl">
-                <h3 className="text-xl font-semibold text-gold mb-4">Conclusión</h3>
-                <p className="text-white/90 leading-relaxed">
+                <h3 className={`text-xl font-semibold text-gold mb-4 ${language === 'ar' ? 'text-right' : ''}`}>
+                  {language === 'ar' ? 'الخاتمة' : 'Conclusión'}
+                </h3>
+                <p className={`text-white/90 leading-relaxed ${language === 'ar' ? 'text-right' : ''}`}>
                   {post.content.conclusion}
                 </p>
               </div>
@@ -236,18 +283,16 @@ export default function BlogPostPage() {
                         url: window.location.href,
                       }).catch((err) => console.error('Error sharing:', err));
                     } else {
-                      // Fallback: copiar URL al portapapeles
                       navigator.clipboard.writeText(window.location.href).then(() => {
-                        alert('URL copiada al portapapeles');
+                        alert(language === 'ar' ? 'تم نسخ الرابط' : 'URL copiada al portapapeles');
                       }).catch(() => {
-                        // Fallback para navegadores sin clipboard API
                         const textArea = document.createElement('textarea');
                         textArea.value = window.location.href;
                         document.body.appendChild(textArea);
                         textArea.select();
                         document.execCommand('copy');
                         document.body.removeChild(textArea);
-                        alert('URL copiada al portapapeles');
+                        alert(language === 'ar' ? 'تم نسخ الرابط' : 'URL copiada al portapapeles');
                       });
                     }
                   }}
@@ -260,7 +305,7 @@ export default function BlogPostPage() {
                   href="/#contacto"
                   className="inline-flex items-center gap-2 bg-gold text-black px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium hover:opacity-90 transition text-sm sm:text-base"
                 >
-                  Consultar caso similar
+                  {language === 'ar' ? 'استشر قضية مماثلة' : 'Consultar caso similar'}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
@@ -282,7 +327,7 @@ export default function BlogPostPage() {
                 {t.blog.articulosRelacionados}
               </h2>
               <p className="text-white/80">
-                Explora más contenido sobre este tema
+                {language === 'ar' ? 'استكشف المزيد من المحتوى حول هذا الموضوع' : 'Explora más contenido sobre este tema'}
               </p>
             </motion.div>
 
@@ -304,7 +349,7 @@ export default function BlogPostPage() {
                         {article.title}
                       </h3>
                       <div className="flex items-center text-gold">
-                        <span className="text-sm font-medium">Leer artículo</span>
+                        <span className="text-sm font-medium">{language === 'ar' ? 'اقرأ المقال' : 'Leer artículo'}</span>
                         <ArrowRight className="h-3 w-3 ml-1" />
                       </div>
                     </div>

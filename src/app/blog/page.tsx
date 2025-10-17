@@ -1,19 +1,141 @@
 'use client';
 
+import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Calendar, Clock, User, ArrowRight, BookOpen, Shield, Scale, FileText } from 'lucide-react';
+import { Calendar, Clock, User, ArrowRight, BookOpen, Shield, Scale, FileText, AlertTriangle, Search, X } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
+import { terrorismBlogCardsAr } from '@/data/blogPostsTranslations';
+import { allBlogSlugs } from '@/data/blogPosts';
 import Breadcrumb from '@/components/Breadcrumb';
 
 const WHATSAPP = '34611687226';
 
-const getBlogPosts = (t: any) => [
+const getBlogPosts = (t: any, language = 'es') => {
+  // Helper para obtener traducción de blog de terrorismo
+  const getTerrorismTranslation = (id: number, field: 'title' | 'excerpt' | 'category') => {
+    if (language === 'ar' && terrorismBlogCardsAr[id as keyof typeof terrorismBlogCardsAr]) {
+      return (terrorismBlogCardsAr[id as keyof typeof terrorismBlogCardsAr] as any)[field];
+    }
+    return null;
+  };
+
+  return [
+  // NUEVOS BLOGS DE TERRORISMO (MÁS RECIENTES)
+  {
+    id: 11,
+    title: getTerrorismTranslation(11, 'title') || 'Terrorismo y Libertad de Expresión: Dónde Está el Límite Legal',
+    excerpt: getTerrorismTranslation(11, 'excerpt') || 'Análisis del conflicto entre libertad de expresión y delitos de terrorismo. Jurisprudencia del TC y TEDH, casos de raperos y límites constitucionales.',
+    category: getTerrorismTranslation(11, 'category') || 'Terrorismo',
+    author: 'Rubén Vaquero Arribas',
+    date: '2025-02-12',
+    readTime: '14 min',
+    image: '/images/blog/libertad-expresion-terrorismo.jpg',
+    slug: 'terrorismo-libertad-expresion-limite-legal',
+    tags: ['libertad expresión', 'terrorismo', 'TEDH', 'enaltecimiento']
+  },
+  {
+    id: 10,
+    title: getTerrorismTranslation(10, 'title') || 'Derechos Fundamentales en Procedimientos de Terrorismo',
+    excerpt: getTerrorismTranslation(10, 'excerpt') || 'Garantías procesales en casos de terrorismo. Incomunicación, prisión preventiva, secreto de sumario y cómo reclamar vulneraciones.',
+    category: getTerrorismTranslation(10, 'category') || 'Terrorismo',
+    author: 'Rubén Vaquero Arribas',
+    date: '2025-02-08',
+    readTime: '13 min',
+    image: '/images/blog/derechos-terrorismo.jpg',
+    slug: 'derechos-fundamentales-procedimientos-terrorismo',
+    tags: ['derechos fundamentales', 'garantías procesales', 'terrorismo']
+  },
+  {
+    id: 9,
+    title: getTerrorismTranslation(9, 'title') || 'Pertenencia a Organización Terrorista: Defensa Legal',
+    excerpt: getTerrorismTranslation(9, 'excerpt') || 'Análisis legal del delito de pertenencia a organización terrorista. Elementos del tipo penal y estrategias de defensa.',
+    category: getTerrorismTranslation(9, 'category') || 'Terrorismo',
+    author: 'Diego Cardona Valero',
+    date: '2025-02-05',
+    readTime: '14 min',
+    image: '/images/blog/organizacion-terrorista.jpg',
+    slug: 'pertenencia-organizacion-terrorista-defensa',
+    tags: ['organización terrorista', 'ISIS', 'Al-Qaeda', 'audiencia nacional']
+  },
+  {
+    id: 8,
+    title: getTerrorismTranslation(8, 'title') || 'Financiación del Terrorismo: Tipos, Penas y Defensa',
+    excerpt: getTerrorismTranslation(8, 'excerpt') || 'Todo sobre el delito de financiación del terrorismo. Blanqueo de capitales, criptomonedas y estrategias de defensa.',
+    category: getTerrorismTranslation(8, 'category') || 'Terrorismo',
+    author: 'Rubén Vaquero Arribas',
+    date: '2025-02-01',
+    readTime: '14 min',
+    image: '/images/blog/financiacion-terrorismo.jpg',
+    slug: 'financiacion-terrorismo-tipos-penas-defensa',
+    tags: ['financiación', 'terrorismo', 'blanqueo', 'criptomonedas']
+  },
+  {
+    id: 7,
+    title: getTerrorismTranslation(7, 'title') || 'Autoadoctrinamiento Terrorista: Defensa Legal',
+    excerpt: getTerrorismTranslation(7, 'excerpt') || 'Análisis del delito de autoadoctrinamiento terrorista y el concepto del "lobo solitario". Estrategias de defensa legal.',
+    category: getTerrorismTranslation(7, 'category') || 'Terrorismo',
+    author: 'Diego Cardona Valero',
+    date: '2025-01-29',
+    readTime: '13 min',
+    image: '/images/blog/autoadoctrinamiento-terrorista.jpg',
+    slug: 'autoadoctrinamiento-terrorista-defensa-legal',
+    tags: ['autoadoctrinamiento', 'lobo solitario', 'terrorismo individual']
+  },
+  {
+    id: 6,
+    title: getTerrorismTranslation(6, 'title') || 'Terrorismo en Internet y Redes Sociales: Límites Legales',
+    excerpt: getTerrorismTranslation(6, 'excerpt') || 'Guía sobre delitos de terrorismo en internet. Enaltecimiento, captación y límites de la libertad de expresión online.',
+    category: getTerrorismTranslation(6, 'category') || 'Terrorismo',
+    author: 'Diego Cardona Valero',
+    date: '2025-01-25',
+    readTime: '13 min',
+    image: '/images/blog/terrorismo-internet.jpg',
+    slug: 'terrorismo-internet-redes-sociales-limites',
+    tags: ['terrorismo internet', 'redes sociales', 'propaganda']
+  },
+  {
+    id: 5,
+    title: getTerrorismTranslation(5, 'title') || 'Captación y Adoctrinamiento Yihadista por Internet',
+    excerpt: getTerrorismTranslation(5, 'excerpt') || 'Todo sobre el delito de captación yihadista online. Elementos del tipo penal y estrategias de defensa especializada.',
+    category: getTerrorismTranslation(5, 'category') || 'Terrorismo',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2025-01-22',
+    readTime: '14 min',
+    image: '/images/blog/captacion-yihadista.jpg',
+    slug: 'captacion-adoctrinamiento-yihadista-internet',
+    tags: ['captación yihadista', 'adoctrinamiento', 'terrorismo internet']
+  },
+  {
+    id: 4,
+    title: getTerrorismTranslation(4, 'title') || 'Enaltecimiento del Terrorismo en Redes Sociales',
+    excerpt: getTerrorismTranslation(4, 'excerpt') || 'Análisis del delito de enaltecimiento del terrorismo en redes sociales. Límites de la libertad de expresión y jurisprudencia del TEDH.',
+    category: getTerrorismTranslation(4, 'category') || 'Terrorismo',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2025-01-18',
+    readTime: '14 min',
+    image: '/images/blog/enaltecimiento-terrorismo.jpg',
+    slug: 'enaltecimiento-terrorismo-redes-sociales-defensa',
+    tags: ['enaltecimiento', 'terrorismo', 'redes sociales', 'libertad expresión']
+  },
+  {
+    id: 3,
+    title: getTerrorismTranslation(3, 'title') || 'Defensa Penal en Casos de Terrorismo ante la Audiencia Nacional',
+    excerpt: getTerrorismTranslation(3, 'excerpt') || 'Guía completa sobre la defensa legal en delitos de terrorismo. Derechos del acusado y procedimiento ante la Audiencia Nacional.',
+    category: getTerrorismTranslation(3, 'category') || 'Terrorismo',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2025-01-15',
+    readTime: '15 min',
+    image: '/images/blog/terrorismo-audiencia-nacional.jpg',
+    slug: 'defensa-penal-terrorismo-audiencia-nacional',
+    tags: ['terrorismo', 'audiencia nacional', 'defensa penal']
+  },
+  // BLOGS ANTERIORES
   {
     id: 1,
     title: t.blog.posts.defensaPenalUrgente.title,
@@ -37,58 +159,19 @@ const getBlogPosts = (t: any) => [
     image: '/images/blog/extradicion.jpg',
     slug: 'procedimientos-extradicion-espana',
     tags: ['extradición', 'UE', 'derechos', 'internacional']
-  },
-  {
-    id: 3,
-    title: t.blog.posts.derechosDetenidos.title,
-    excerpt: t.blog.posts.derechosDetenidos.excerpt,
-    category: t.blog.posts.derechosDetenidos.category,
-    author: 'Mounir Elyemlahy Chouati',
-    date: '2024-12-08',
-    readTime: '10 min',
-    image: '/images/blog/derechos-detenidos.jpg',
-    slug: 'derechos-detenidos-garantias-procesales',
-    tags: ['derechos', 'garantías', 'detención', 'asistencia']
-  },
-  {
-    id: 4,
-    title: t.blog.posts.delitosSaludPublica.title,
-    excerpt: t.blog.posts.delitosSaludPublica.excerpt,
-    category: t.blog.posts.delitosSaludPublica.category,
-    author: 'Diego Cardona Valero',
-    date: '2024-12-05',
-    readTime: '15 min',
-    image: '/images/blog/delitos-drogas.jpg',
-    slug: 'delitos-salud-publica-drogas-consecuencias',
-    tags: ['drogas', 'estupefacientes', 'penas', 'defensa']
-  },
-  {
-    id: 5,
-    title: t.blog.posts.terrorismoInternet.title,
-    excerpt: t.blog.posts.terrorismoInternet.excerpt,
-    category: t.blog.posts.terrorismoInternet.category,
-    author: 'Equipo STANS Abogados',
-    date: '2024-12-03',
-    readTime: '14 min',
-    image: '/images/blog/terrorismo-internet.jpg',
-    slug: 'terrorismo-internet-enaltecimiento-captacion',
-    tags: ['terrorismo', 'internet', 'redes sociales', 'enaltecimiento']
-  },
-  {
-    id: 6,
-    title: t.blog.posts.blanqueoCapitales.title,
-    excerpt: t.blog.posts.blanqueoCapitales.excerpt,
-    category: t.blog.posts.blanqueoCapitales.category,
-    author: 'Rubén Vaquero Arribas',
-    date: '2024-12-01',
-    readTime: '16 min',
-    image: '/images/blog/blanqueo-capitales.jpg',
-    slug: 'blanqueo-capitales-detectar-defenderse',
-    tags: ['blanqueo', 'capitales', 'económicos', 'lavado']
   }
 ];
+};
 
 const getPillarPages = (t: any) => [
+  {
+    title: t.blog.hubs.terrorismoAudienciaNacional.title,
+    description: t.blog.hubs.terrorismoAudienciaNacional.description,
+    icon: AlertTriangle,
+    articles: 9,
+    slug: 'terrorismo-audiencia-nacional',
+    color: 'from-red-600 to-red-800'
+  },
   {
     title: t.blog.hubs.defensaPenalUrgente.title,
     description: t.blog.hubs.defensaPenalUrgente.description,
@@ -118,8 +201,59 @@ const getPillarPages = (t: any) => [
 export default function BlogPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  const blogPosts = getBlogPosts(t);
+  const featuredPosts = getBlogPosts(t, language);
   const pillarPages = getPillarPages(t);
+  
+  // Generar TODOS los artículos desde allBlogSlugs
+  const allBlogPosts = useMemo(() => {
+    return allBlogSlugs.map(slug => {
+      // Buscar en posts destacados primero
+      const featured = featuredPosts.find(p => p.slug === slug);
+      if (featured) return featured;
+      
+      // Si no está, crear entrada genérica
+      return {
+        id: slug,
+        title: slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+        excerpt: `Artículo sobre ${slug.replace(/-/g, ' ')}. Información legal especializada.`,
+        category: 'Derecho Penal',
+        author: 'Equipo STANS Abogados',
+        date: '2024-12-01',
+        readTime: '10 min',
+        image: '/images/blog/default.jpg',
+        slug: slug,
+        tags: []
+      };
+    });
+  }, [featuredPosts]);
+  
+  // Estado para controlar cuántos artículos mostrar
+  const [visiblePosts, setVisiblePosts] = useState(9);
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  // Filtrar artículos por búsqueda
+  const filteredPosts = useMemo(() => {
+    if (!searchTerm.trim()) return allBlogPosts;
+    
+    const term = searchTerm.toLowerCase();
+    return allBlogPosts.filter(post => 
+      post.title.toLowerCase().includes(term) ||
+      post.excerpt.toLowerCase().includes(term) ||
+      post.category.toLowerCase().includes(term) ||
+      post.tags.some(tag => tag.toLowerCase().includes(term))
+    );
+  }, [allBlogPosts, searchTerm]);
+  
+  const hasMorePosts = visiblePosts < filteredPosts.length;
+  
+  const loadMorePosts = () => {
+    setVisiblePosts(prev => Math.min(prev + 9, filteredPosts.length));
+  };
+  
+  const clearSearch = () => {
+    setSearchTerm('');
+    setVisiblePosts(9);
+  };
 
   return (
     <>
@@ -247,18 +381,50 @@ export default function BlogPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-8"
             >
               <h2 className="text-3xl font-bold text-black mb-4">
-                {t.blog.articulosRecientes}
+                {language === 'ar' ? 'جميع المقالات' : 'Todos los Artículos'}
               </h2>
-              <p className="text-black/70 text-lg">
-                {t.blog.articulosSubtitle}
+              <p className="text-black/70 text-lg mb-6">
+                {language === 'ar' ? `${filteredPosts.length} مقالاً متاحاً` : `${filteredPosts.length} artículos disponibles`}
               </p>
+              
+              {/* Search Bar */}
+              <div className="max-w-2xl mx-auto">
+                <div className="relative">
+                  <Search className={`absolute ${language === 'ar' ? 'right-4' : 'left-4'} top-1/2 transform -translate-y-1/2 h-5 w-5 text-black/40`} />
+                  <input
+                    type="text"
+                    value={searchTerm}
+                    onChange={(e) => {
+                      setSearchTerm(e.target.value);
+                      setVisiblePosts(9); // Reset al buscar
+                    }}
+                    placeholder={language === 'ar' ? 'ابحث في المقالات...' : 'Buscar artículos...'}
+                    className={`w-full ${language === 'ar' ? 'pr-12 pl-12' : 'pl-12 pr-12'} py-4 rounded-xl border-2 border-gold/20 focus:border-gold/50 focus:outline-none text-black placeholder-black/40 ${language === 'ar' ? 'text-right' : ''}`}
+                  />
+                  {searchTerm && (
+                    <button
+                      onClick={clearSearch}
+                      className={`absolute ${language === 'ar' ? 'left-4' : 'right-4'} top-1/2 transform -translate-y-1/2 text-black/40 hover:text-gold transition-colors`}
+                    >
+                      <X className="h-5 w-5" />
+                    </button>
+                  )}
+                </div>
+                {searchTerm && (
+                  <p className="text-sm text-black/60 mt-2">
+                    {language === 'ar' 
+                      ? `${filteredPosts.length} نتيجة للبحث عن "${searchTerm}"`
+                      : `${filteredPosts.length} resultados para "${searchTerm}"`}
+                  </p>
+                )}
+              </div>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogPosts.map((post, index) => (
+              {filteredPosts.slice(0, visiblePosts).map((post, index) => (
                 <motion.article
                   key={post.id}
                   initial={{ opacity: 0, y: 20 }}
@@ -314,18 +480,28 @@ export default function BlogPage() {
             </div>
 
             {/* Load More Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-center mt-12"
-            >
-              <button className="inline-flex items-center gap-2 bg-gold text-black px-8 py-3 rounded-lg font-medium hover:opacity-90 transition">
-                {t.blog.cargarMas}
-                <ArrowRight className="h-4 w-4" />
-              </button>
-            </motion.div>
+            {hasMorePosts && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center mt-12"
+              >
+                <button 
+                  onClick={loadMorePosts}
+                  className="inline-flex items-center gap-2 bg-gold text-black px-8 py-3 rounded-lg font-medium hover:opacity-90 transition"
+                >
+                  {t.blog.cargarMas}
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+                <p className="text-black/50 text-sm mt-3">
+                  {language === 'ar' 
+                    ? `عرض ${visiblePosts} من ${filteredPosts.length} مقالاً` 
+                    : `Mostrando ${visiblePosts} de ${filteredPosts.length} artículos`}
+                </p>
+              </motion.div>
+            )}
           </div>
         </section>
 

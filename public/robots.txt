@@ -1,45 +1,204 @@
+# Robots.txt optimizado para STANS ABOGADOS
+# Última actualización: Enero 2025
+
+# ============================================
+# REGLAS GENERALES PARA TODOS LOS BOTS
+# ============================================
+
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemap principal
 Sitemap: https://stansabogados.com/sitemap.xml
 
-# Crawl-delay
+# Crawl-delay para proteger servidor
 Crawl-delay: 1
 
-# Disallow admin areas
+# ============================================
+# BLOQUEAR ÁREAS ADMINISTRATIVAS Y TÉCNICAS
+# ============================================
+
+# APIs y backend
 Disallow: /api/
-Disallow: /_next/
+Disallow: /_next/data/
 Disallow: /admin/
 Disallow: /scripts/
+
+# Archivos técnicos
 Disallow: /*.json$
+Disallow: /*.xml$
 Disallow: /opengraph-image*
 Disallow: /twitter-image*
+Disallow: /icon*
+Disallow: /apple-icon*
+Disallow: /*.map$
 
-# Allow important pages
-Allow: /legal
-Allow: /privacidad
-Allow: /cookies
-Allow: /terminos
+# Archivos de sistema
+Disallow: /.git/
+Disallow: /.vercel/
+Disallow: /node_modules/
+
+# ============================================
+# PERMITIR RECURSOS IMPORTANTES (ANTES DE BLOQUEAR)
+# ============================================
+
+# Páginas principales (máxima prioridad)
+Allow: /$
+Allow: /servicios$
+Allow: /servicios/
+Allow: /faq$
+Allow: /faq/
+Allow: /blog$
+Allow: /blog/
+Allow: /casos$
 Allow: /casos/
+
+# Equipo (páginas de abogados)
+Allow: /equipo/
+Allow: /equipo/*
+
+# Artículos de blog - Hub Terrorismo (MÁXIMA PRIORIDAD)
+Allow: /blog/defensa-penal-terrorismo-audiencia-nacional
+Allow: /blog/enaltecimiento-terrorismo-redes-sociales-defensa
+Allow: /blog/captacion-adoctrinamiento-yihadista-internet
+Allow: /blog/terrorismo-internet-redes-sociales-limites
+Allow: /blog/autoadoctrinamiento-terrorista-defensa-legal
+Allow: /blog/financiacion-terrorismo-tipos-penas-defensa
+Allow: /blog/pertenencia-organizacion-terrorista-defensa
+Allow: /blog/derechos-fundamentales-procedimientos-terrorismo
+Allow: /blog/terrorismo-libertad-expresion-limite-legal
+
+# Hub pages (pillar content)
+Allow: /blog/terrorismo-audiencia-nacional
+Allow: /blog/defensa-penal-urgente
+Allow: /blog/procedimientos-extradicion
+Allow: /blog/derechos-detenidos
+
+# Artículos importantes - Defensa Penal Urgente
+Allow: /blog/defensa-penal-urgente-guia-completa
+Allow: /blog/derechos-inmediatos-detenido
+Allow: /blog/primeros-pasos-comisaria
+Allow: /blog/asistencia-letrada-urgencia
+Allow: /blog/puesta-disposicion-judicial
+Allow: /blog/habeas-corpus-recurso-amparo
+Allow: /blog/medidas-cautelares-procesos-penales
+Allow: /blog/comunicacion-familiares-detenido
+Allow: /blog/registro-dependencias-detenido
+
+# Artículos importantes - Extradiciones
+Allow: /blog/procedimientos-extradicion-espana
+Allow: /blog/tipos-extradicion-espana
+Allow: /blog/requisitos-extradicion-espana
+Allow: /blog/audiencia-extradicion-espana
+Allow: /blog/recursos-contra-extradicion
+Allow: /blog/derechos-extraditado
+
+# Artículos importantes - Derechos de Detenidos
+Allow: /blog/derechos-detenidos-garantias-procesales
+Allow: /blog/derechos-constitucionales-detenido
+Allow: /blog/derecho-asistencia-letrada-detenido
+Allow: /blog/proteccion-torturas-tratos-inhumanos
+Allow: /blog/derechos-grupos-vulnerables-detenidos
+Allow: /blog/derechos-dependencias-policiales
+Allow: /blog/derechos-procesales-recursos-detenido
+
+# Artículos especializados (3 artículos)
+Allow: /blog/delitos-salud-publica-drogas-consecuencias
+Allow: /blog/terrorismo-internet-enaltecimiento-captacion
+Allow: /blog/blanqueo-capitales-detectar-defenderse
+
+# NOTA: La regla general "Allow: /blog/" en línea 52 cubre cualquier 
+# artículo adicional que no esté listado explícitamente arriba.
+# Los listados arriba tienen PRIORIDAD de crawl.
+
+# Recursos estáticos necesarios para rendering
+Allow: /_next/static/
+Allow: /_next/image
 Allow: /images/
 Allow: /favicon.ico
+Allow: /manifest.json
+Allow: /browserconfig.xml
 
-# SEO optimizations
-# Allow CSS and JS for better rendering
-Allow: /_next/static/
+# Páginas legales (baja prioridad pero indexables)
+Allow: /legal$
+Allow: /privacidad$
+Allow: /cookies$
+Allow: /terminos$
 
-# Google specific
+# ============================================
+# BLOQUEAR URLs CON PARÁMETROS
+# ============================================
+
+# Bloquear URLs con parámetros EXCEPTO tracking
+Disallow: /*?*
+Disallow: /*&*
+
+# Permitir parámetros de tracking (marketing)
+Allow: /*?fbclid=*
+Allow: /*?utm_source=*
+Allow: /*?utm_medium=*
+Allow: /*?utm_campaign=*
+Allow: /*?utm_term=*
+Allow: /*?utm_content=*
+Allow: /*?ref=*
+Allow: /*?source=*
+
+# ============================================
+# GOOGLEBOT - CONFIGURACIÓN ESPECÍFICA
+# ============================================
+
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0
 
-# Bing specific  
+# Priorizar contenido importante
+Allow: /faq
+Allow: /servicios
+Allow: /blog/
+Allow: /casos/
+Allow: /equipo/
+
+# Permitir crawling de imágenes
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /_next/image
+Allow: /_next/static/media/
+
+# ============================================
+# BINGBOT - CONFIGURACIÓN ESPECÍFICA
+# ============================================
+
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
 
-# Block known bad bots
+# Priorizar contenido
+Allow: /faq
+Allow: /servicios
+Allow: /blog/
+Allow: /casos/
+
+# ============================================
+# BOTS BUENOS (SEO/ANALYTICS)
+# ============================================
+
+# Google Analytics
+User-agent: Google-InspectionTool
+Allow: /
+
+# Google Ads
+User-agent: AdsBot-Google
+Allow: /
+
+# Bing Ads
+User-agent: adidxbot
+Allow: /
+
+# ============================================
+# BLOQUEAR BOTS MALOS (Scrapers, SEO tools)
+# ============================================
+
+# SEO Tools que drenan crawl budget
 User-agent: SemrushBot
 Disallow: /
 
@@ -48,3 +207,52 @@ Disallow: /
 
 User-agent: MJ12bot
 Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: SearchmetricsBot
+Disallow: /
+
+# Scrapers agresivos
+User-agent: SurveyBot
+Disallow: /
+
+User-agent: Curious George
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# ============================================
+# NOTAS Y REFERENCIAS
+# ============================================
+
+# Crawl budget optimizado para:
+# - 99 FAQs en /faq
+# - 38 artículos de blog
+# - 9 blogs de terrorismo (prioridad)
+# - 4 páginas de abogados
+# - ~21 casos
+# - Total: ~86 páginas importantes
+
+# Última optimización: Enero 2025
+# Mantenido por: STANS ABOGADOS - Equipo Técnico

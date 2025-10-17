@@ -1,19 +1,21 @@
 import { MetadataRoute } from "next"
 import casosData from "../../public/casos/casos-procesados.json"
 import seoInfo from "../../public/casos/seo-info.json"
+import { allLawyerSlugs } from "@/data/lawyers"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://stansabogados.com"
   const currentDate = new Date()
   
   // Fechas específicas para diferentes tipos de contenido
-  const blogContentDate = new Date('2024-12-15') // Fecha de actualización del blog
-  const casesContentDate = new Date('2024-12-10') // Fecha de última actualización de casos
+  const blogContentDate = new Date('2025-01-17') // Última actualización de blogs (hoy)
+  const casesContentDate = new Date('2025-01-15') // Fecha de última actualización de casos
   
   // Generar sitemap con estructura optimizada para Google Sitelinks
   // Prioridades basadas en importancia de negocio y búsquedas de usuarios
   
   // Páginas principales - Optimizadas para Sitelinks
+  // NOTA: URLs con fragmentos (#) eliminadas - Google no las indexa
   const mainPages = [
     {
       url: baseUrl,
@@ -22,10 +24,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0, // Homepage - máxima prioridad
     },
     {
+      url: `${baseUrl}/servicios`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.95, // Servicios - muy alta prioridad para sitelinks
+    },
+    {
       url: `${baseUrl}/casos`,
       lastModified: casesContentDate,
       changeFrequency: "weekly" as const,
       priority: 0.95, // Casos de éxito - muy alta prioridad
+    },
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: currentDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.90, // FAQ - alta prioridad para featured snippets
     },
     {
       url: `${baseUrl}/blog`,
@@ -33,69 +47,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily" as const,
       priority: 0.9, // Blog - contenido frecuente
     },
-    {
-      url: `${baseUrl}#areas`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.95, // Servicios/Áreas - crucial para conversión
-    },
-    {
-      url: `${baseUrl}#equipo`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.85, // Equipo - confianza y credibilidad
-    },
-    {
-      url: `${baseUrl}#contacto`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9, // Contacto - conversión directa
-    },
   ]
 
-  // Áreas de práctica - En lugar de páginas separadas, apuntamos a la sección de casos
-  // ya que todas las áreas están implementadas como secciones en la página principal
-  const areaPages = [
-    {
-      url: `${baseUrl}/casos#libertad-expresion`,
-      lastModified: casesContentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8
-    },
-    {
-      url: `${baseUrl}/casos#terrorismo`,
-      lastModified: casesContentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8
-    },
-    {
-      url: `${baseUrl}/casos#delitos-personas`,
-      lastModified: casesContentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8
-    },
-    {
-      url: `${baseUrl}/casos#patrimonio-crimen-organizado`,
-      lastModified: casesContentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8
-    },
-    {
-      url: `${baseUrl}/casos#delitos-economicos`,
-      lastModified: casesContentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8
-    },
-    {
-      url: `${baseUrl}/casos#orden-publico`,
-      lastModified: casesContentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8
-    }
-  ]
+  // Áreas de práctica eliminadas del sitemap - Google no indexa URLs con #
+  // Las secciones están en la homepage y página de casos, ya indexadas arriba
+  const areaPages: MetadataRoute.Sitemap = []
+
+  // Páginas de miembros del equipo - Alta prioridad para SEO local
+  const teamPages = allLawyerSlugs.map(slug => ({
+    url: `${baseUrl}/equipo/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly" as const,
+    priority: 0.85, // Alta prioridad - búsquedas por nombre de abogado
+  }))
 
   // Páginas del blog (hubs/pillars) - Contenido cornerstone
   const blogHubPages = [
+    "/blog/terrorismo-audiencia-nacional", // Hub de Terrorismo - NUEVO
     "/blog/defensa-penal-urgente",
     "/blog/procedimientos-extradicion",
     "/blog/derechos-detenidos"
@@ -103,7 +71,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${path}`,
     lastModified: blogContentDate,
     changeFrequency: "weekly" as const,
-    priority: 0.85, // Mayor prioridad para pillar pages
+    priority: 0.88, // Mayor prioridad para pillar pages (subida de 0.85 a 0.88)
+  }))
+
+  // Artículos del blog sobre Terrorismo - ALTA PRIORIDAD
+  const terrorismBlogPages = [
+    "/blog/defensa-penal-terrorismo-audiencia-nacional",
+    "/blog/enaltecimiento-terrorismo-redes-sociales-defensa",
+    "/blog/captacion-adoctrinamiento-yihadista-internet",
+    "/blog/terrorismo-internet-redes-sociales-limites",
+    "/blog/autoadoctrinamiento-terrorista-defensa-legal",
+    "/blog/financiacion-terrorismo-tipos-penas-defensa",
+    "/blog/pertenencia-organizacion-terrorista-defensa",
+    "/blog/derechos-fundamentales-procedimientos-terrorismo",
+    "/blog/terrorismo-libertad-expresion-limite-legal"
+  ].map(path => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date('2025-01-15'),
+    changeFrequency: "monthly" as const,
+    priority: 0.82, // Alta prioridad - nicho especializado con alta conversión
   }))
 
   // Artículos del blog (spokes) - Contenido de apoyo
@@ -166,7 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     })
 
-  // Páginas legales
+  // Páginas legales - Prioridad baja para evitar que aparezcan en sitelinks
   const legalPages = [
     "/legal",
     "/privacidad", 
@@ -176,8 +162,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${path}`,
     lastModified: currentDate,
     changeFrequency: "yearly" as const,
-    priority: 0.3,
+    priority: 0.1, // Prioridad reducida de 0.3 a 0.1
   }))
 
-  return [...mainPages, ...areaPages, ...blogHubPages, ...blogArticlePages, ...casePages, ...legalPages]
+  return [...mainPages, ...teamPages, ...areaPages, ...blogHubPages, ...terrorismBlogPages, ...blogArticlePages, ...casePages, ...legalPages]
 }

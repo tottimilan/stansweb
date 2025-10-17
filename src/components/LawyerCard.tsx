@@ -1,10 +1,11 @@
 'use client';
 
 import { motion, useMotionValue, useTransform, PanInfo } from 'framer-motion';
-import { Award, Languages, Shield, ArrowRight, Clock } from 'lucide-react';
+import { Award, Languages, Shield, ArrowRight, Clock, ExternalLink } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {
   name: string;
@@ -16,10 +17,11 @@ type Props = {
   image?: string;
   hoverImage?: string;
   backgroundImage?: string;
+  slug?: string; // Añadido para link a página individual
 };
 
 export default function LawyerCard({
-  name, role = 'Abogado Penalista', summary, tags = [], languages = [], experience, image, hoverImage, backgroundImage
+  name, role = 'Abogado Penalista', summary, tags = [], languages = [], experience, image, hoverImage, backgroundImage, slug
 }: Props) {
   const { language } = useLanguage();
   const [isFlipped, setIsFlipped] = useState(false);
@@ -180,7 +182,13 @@ export default function LawyerCard({
                   </motion.button>
                 </div>
                 <div className="text-white">
-                  <h3 className="text-xl font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
+                  {slug ? (
+                    <Link href={`/equipo/${slug}`}>
+                      <h3 className="text-xl font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left hover:underline cursor-pointer">{name}</h3>
+                    </Link>
+                  ) : (
+                    <h3 className="text-xl font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
+                  )}
                   <p className="text-white/80 text-sm mt-1 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
                   <div className="mt-2 text-xs text-white/60 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
                     <span className="bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full px-3 py-1 text-gold/80 group-hover:text-gold group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300">
@@ -247,7 +255,13 @@ export default function LawyerCard({
             </motion.button>
           </div>
 
-          <h3 className="text-lg font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
+          {slug ? (
+            <Link href={`/equipo/${slug}`}>
+              <h3 className="text-lg font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left hover:underline cursor-pointer">{name}</h3>
+            </Link>
+          ) : (
+            <h3 className="text-lg font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
+          )}
           <p className="text-white/70 text-xs mt-1 mb-2 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
           
           {experience && (
@@ -258,6 +272,18 @@ export default function LawyerCard({
           )}
           
           <p className="mt-2 text-white/80 text-xs leading-snug flex-grow transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-1">{summary}</p>
+          
+          {slug && (
+            <div className="mt-3 pt-3 border-t border-gold/20">
+              <Link 
+                href={`/equipo/${slug}`}
+                className="inline-flex items-center gap-2 text-gold hover:text-gold/80 text-xs font-semibold transition-all duration-300 group/link"
+              >
+                <ExternalLink className="h-3 w-3 transition-transform group-hover/link:translate-x-1" />
+                Ver perfil completo
+              </Link>
+            </div>
+          )}
 
           {!!tags.length && (
             <div className="mt-3 transition-all duration-1000 group-hover:translate-x-2">
