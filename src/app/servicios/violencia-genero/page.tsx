@@ -299,7 +299,9 @@ export default function ViolenciaGeneroPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Link href="/casos/caso-lesiones-getafe" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Lesiones</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    CASO LESIONES (DOLOSAS)
+                  </h3>
                   <p className="text-black/70 text-sm">Absolución en delito de lesiones</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -310,7 +312,9 @@ export default function ViolenciaGeneroPage() {
                 </Link>
                 <Link href="/casos/sobreseimiento-amenazas-coacciones-extorsion" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Amenazas</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    CASO AMENAZAS, COACCIONES Y EXTORSIÓN – SOBRESEIMIENTO
+                  </h3>
                   <p className="text-black/70 text-sm">Archivo por falta de indicios</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -321,7 +325,9 @@ export default function ViolenciaGeneroPage() {
                 </Link>
                 <Link href="/casos/abderrahim-akkouh-homicidio-torrejon" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Homicidio</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    CASO ABDERRAHIM AKKOUH – HOMICIDIO TORREJÓN
+                  </h3>
                   <p className="text-black/70 text-sm">Acusación particular por muerte tras intervención</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -446,27 +452,27 @@ export default function ViolenciaGeneroPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'للضحايا' : 'Para Víctimas'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'للضحايا' : 'Para Víctimas'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'تمثيل قانوني وطلبات أوامر الحماية' : 'Representación legal y solicitudes de órdenes de protección'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'للمتهمين' : 'Para Investigados'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'للمتهمين' : 'Para Investigados'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع قانوني صارم وحماية الحقوق' : 'Defensa legal rigurosa y protección de derechos'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'إجراءات عاجلة' : 'Procedimientos Urgentes'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'إجراءات عاجلة' : 'Procedimientos Urgentes'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'أوامر الحماية والتدابير الاحترازية' : 'Órdenes de alejamiento y medidas cautelares'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الأمور المدنية' : 'Asuntos Civiles'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الأمور المدنية' : 'Asuntos Civiles'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'الطلاق والحضانة والأمور المرتبطة' : 'Divorcio, custodia y asuntos conexos'}</p>
                 </div>
               </div>
 
               <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
+                <p className="text-lg font-semibold text-gold mb-3">
                   {language === 'ar' ? 'هل تحتاج إلى مساعدة قانونية في قضية عنف أسري؟' : '¿Necesitas Asistencia Legal en un Caso de Violencia Doméstica?'}
-                </h4>
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'نحن هنا للمساعدة. اتصل بنا للحصول على استشارة سرية. فريقنا لديه الخبرة والحساسية اللازمة للتعامل مع هذه القضايا الحساسة وحماية حقوقك.'

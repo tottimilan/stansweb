@@ -253,7 +253,7 @@ export default function ExtradicionesPage() {
                 <Link href="/blog/procedimientos-extradicion" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Guía de Extradiciones
+                    CASO NORDIN WORKOUT
                   </h3>
                   <p className="text-black/70 text-sm">
                     Todo sobre procedimientos de extradición en España
@@ -263,7 +263,7 @@ export default function ExtradicionesPage() {
                 <Link href="/blog/tipos-extradicion-espana" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Tipos de Extradición
+                    CASO ACADEMIA YIHAD
                   </h3>
                   <p className="text-black/70 text-sm">
                     OEDE vs extradición convencional: diferencias clave
@@ -273,7 +273,7 @@ export default function ExtradicionesPage() {
                 <Link href="/blog/derechos-extraditado" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Derechos del Extraditado
+                    CASO QUEQUÉ- VALLE DE LOS CAÍDOS. LIBERTAD DE EXPRESIÓN
                   </h3>
                   <p className="text-black/70 text-sm">
                     Protección de derechos fundamentales en extradiciones
@@ -437,19 +437,19 @@ export default function ExtradicionesPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'OEDE - الاتحاد الأوروبي' : 'OEDE - Unión Europea'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'OEDE - الاتحاد الأوروبي' : 'OEDE - Unión Europea'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'أوامر الاعتقال والتسليم الأوروبية السريعة' : 'Órdenes Europeas de Detención y Entrega rápidas'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'التسليم التقليدي' : 'Extradición Convencional'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التسليم التقليدي' : 'Extradición Convencional'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'التسليم مع دول خارج الاتحاد الأوروبي' : 'Extradiciones con países fuera de la UE'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'التعاون القضائي' : 'Cooperación Judicial'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التعاون القضائي' : 'Cooperación Judicial'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'المساعدة القانونية المتبادلة الدولية' : 'Asistencia judicial mutua internacional'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'حماية الحقوق' : 'Protección de Derechos'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'حماية الحقوق' : 'Protección de Derechos'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'ضمان الحقوق الأساسية في التسليم' : 'Garantía de derechos fundamentales en extradiciones'}</p>
                 </div>
               </div>
@@ -465,10 +465,10 @@ export default function ExtradicionesPage() {
                 <li><strong>{language === 'ar' ? 'حماية الحقوق:' : 'Protección de derechos:'}</strong> {language === 'ar' ? 'ضمانات ضد التعذيب وسوء المعاملة' : 'Garantías contra tortura y malos tratos'}</li>
               </ul>
 
-              <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
-                  {language === 'ar' ? 'هل تم اعتقالك بأمر تسليم دولي؟' : '¿Has Sido Detenido por una Orden de Extradición?'}
-                </h4>
+                  <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
+                    <p className="text-lg font-semibold text-gold mb-3">
+                      {language === 'ar' ? 'هل تم اعتقالك بأمر تسليم دولي؟' : '¿Has Sido Detenido por una Orden de Extradición?'}
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت حاسم في إجراءات التسليم. اتصل بنا فورًا للحصول على دفاع متخصص. فريقنا لديه الخبرة والموارد اللازمة لحماية حقوقك ومنع التسليم غير العادل.'

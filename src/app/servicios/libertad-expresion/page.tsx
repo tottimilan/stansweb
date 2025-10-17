@@ -374,9 +374,9 @@ export default function LibertadExpresionPage() {
               </ul>
 
               <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
+                <p className="text-lg font-semibold text-gold mb-3">
                   {language === 'ar' ? 'هل تواجه اتهامات تتعلق بحرية التعبير؟' : '¿Enfrentas Acusaciones Relacionadas con la Libertad de Expresión?'}
-                </h4>
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'لا تنتظر. اتصل بنا الآن للحصول على دفاع متخصص. نحن نفهم تعقيدات هذه القضايا ونعرف كيفية الدفاع عن حقوقك الأساسية.'
@@ -430,7 +430,9 @@ export default function LibertadExpresionPage() {
                 </Link>
                 <Link href="/casos/sobreseimiento-nordin-workout" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Terrorismo — archivo</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    CASO NORDIN WORKOUT
+                  </h3>
                   <p className="text-black/70 text-sm">Sobreseimiento provisional Audiencia Nacional</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -442,7 +444,9 @@ export default function LibertadExpresionPage() {
                 </Link>
                 <Link href="/casos/operacion-luco-banda-rolex" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Redes sociales</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    OPERACIÓN LUCO – BANDA DEL ROLEX
+                  </h3>
                   <p className="text-black/70 text-sm">Absolución en injurias en redes sociales</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">

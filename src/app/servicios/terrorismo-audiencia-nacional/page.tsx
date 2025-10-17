@@ -254,7 +254,7 @@ export default function TerrorismoAudienciaNacionalPage() {
                 <Link href="/casos/caso-dominican-dont-play-ddp" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Nordin Workout
+                    CASO NORDIN WORKOUT
                   </h3>
                   <p className="text-black/70 text-sm">Sobreseimiento en caso de terrorismo yihadista</p>
                   {language !== 'ar' && (
@@ -268,7 +268,7 @@ export default function TerrorismoAudienciaNacionalPage() {
                 <Link href="/casos/caso-academia-yihad" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Academia Yihad
+                    CASO ACADEMIA YIHAD
                   </h3>
                   <p className="text-black/70 text-sm">Libertad provisional en caso de captación terrorista</p>
                   {language !== 'ar' && (
@@ -282,7 +282,7 @@ export default function TerrorismoAudienciaNacionalPage() {
                 <Link href="/casos/abderrahim-akkouh-homicidio-torrejon" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Enaltecimiento Online
+                    CASO ABDERRAHIM AKKOUH – HOMICIDIO TORREJÓN
                   </h3>
                   <p className="text-black/70 text-sm">Defensa exitosa en enaltecimiento del terrorismo en redes</p>
                   {language !== 'ar' && (
@@ -405,27 +405,27 @@ export default function TerrorismoAudienciaNacionalPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'تمجيد الإرهاب' : 'Enaltecimiento del Terrorismo'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'تمجيد الإرهاب' : 'Enaltecimiento del Terrorismo'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'الدفاع في قضايا التمجيد عبر الإنترنت ووسائل التواصل' : 'Defensa en casos de enaltecimiento en internet y redes sociales'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'التطرف والتجنيد' : 'Radicalización y Captación'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التطرف والتجنيد' : 'Radicalización y Captación'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'قضايا التطرف الذاتي والتجنيد الجهادي' : 'Casos de autoadoctrinamiento y captación yihadista'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'تمويل الإرهاب' : 'Financiación del Terrorismo'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'تمويل الإرهاب' : 'Financiación del Terrorismo'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'الدفاع في قضايا التمويل والدعم المالي' : 'Defensa en casos de financiación y apoyo económico'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الانتماء لمنظمة' : 'Pertenencia a Organización'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الانتماء لمنظمة' : 'Pertenencia a Organización'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'الانتماء أو التعاون مع منظمات إرهابية' : 'Pertenencia o colaboración con organizaciones terroristas'}</p>
                 </div>
               </div>
 
               <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
+                <p className="text-lg font-semibold text-gold mb-3">
                   {language === 'ar' ? 'هل تحتاج إلى دفاع فوري في قضية إرهاب؟' : '¿Necesitas Defensa Inmediata en un Caso de Terrorismo?'}
-                </h4>
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت حاسم في قضايا الإرهاب. اتصل بنا الآن للحصول على دفاع متخصص أمام المحكمة الوطنية. فريقنا لديه الخبرة والمعرفة اللازمة لحماية حقوقك.'

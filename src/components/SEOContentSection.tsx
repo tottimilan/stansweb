@@ -132,28 +132,28 @@ export default function SEOContentSection() {
           </p>
 
           <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
-            <h5 className="font-semibold text-black mb-2">Rubén Vaquero Arribas - Socio Director</h5>
+            <p className="font-semibold text-black mb-2 text-base">Rubén Vaquero Arribas - Socio Director</p>
             <p className="text-black/70 text-sm">
               Especialista en derecho penal económico, extradiciones, OEDE y derechos fundamentales. Formación en la Universidad Complutense de Madrid y Máster en Derecho Penal Económico por la UNED. Ha litigado ante el Tribunal Constitucional y el TEDH.
             </p>
           </div>
 
           <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
-            <h5 className="font-semibold text-black mb-2">Mounir Elyemlahy Chouati - Socio Abogado</h5>
+            <p className="font-semibold text-black mb-2 text-base">Mounir Elyemlahy Chouati - Socio Abogado</p>
             <p className="text-black/70 text-sm">
               Abogado árabe nativo especializado en terrorismo, derecho marroquí y extradiciones España-Marruecos. Única ventaja competitiva en Madrid: combina conocimiento del derecho marroquí con experiencia ante la Audiencia Nacional. Trilingüe (español, árabe, inglés).
             </p>
           </div>
 
           <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
-            <h5 className="font-semibold text-black mb-2">Diego Cardona Valero - Socio Abogado</h5>
+            <p className="font-semibold text-black mb-2 text-base">Diego Cardona Valero - Socio Abogado</p>
             <p className="text-black/70 text-sm">
               Especialista en derecho procesal penal, criminalidad organizada y terrorismo. Alta capacidad estratégica en litigación y preparación de recursos ante instancias superiores. Formación especializada en el Centro de Estudios de Investigación Jurídica (CEIJ).
             </p>
           </div>
 
           <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
-            <h5 className="font-semibold text-black mb-2">Ada de Blas Pascual - Abogada</h5>
+            <p className="font-semibold text-black mb-2 text-base">Ada de Blas Pascual - Abogada</p>
             <p className="text-black/70 text-sm">
               Formación internacional con LL.M. por la University of Cambridge (Reino Unido). Especialista en derecho penal internacional y derecho penal económico. Cuatrilingüe (español, inglés, francés, italiano) con experiencia en causas complejas de dimensión internacional.
             </p>
@@ -223,21 +223,21 @@ export default function SEOContentSection() {
 
           <div className="space-y-6 mb-8">
             <div className="bg-charleston/5 p-6 rounded-lg">
-              <h5 className="font-semibold text-black mb-2">¿Cuánto tiempo tarda un procedimiento penal en España?</h5>
+              <p className="font-semibold text-black mb-2 text-base">¿Cuánto tiempo tarda un procedimiento penal en España?</p>
               <p className="text-black/70 text-sm leading-relaxed">
                 La duración depende del tipo de delito y la complejidad del caso. Un procedimiento abreviado puede durar entre 12-18 meses, mientras que causas complejas ante la Audiencia Nacional pueden extenderse 2-4 años. Trabajamos para acelerar los tiempos mediante recursos y estrategias procesales.
               </p>
             </div>
 
             <div className="bg-charleston/5 p-6 rounded-lg">
-              <h5 className="font-semibold text-black mb-2">¿Puedo obtener libertad provisional si me acusan de un delito grave?</h5>
+              <p className="font-semibold text-black mb-2 text-base">¿Puedo obtener libertad provisional si me acusan de un delito grave?</p>
               <p className="text-black/70 text-sm leading-relaxed">
                 Sí, la libertad provisional es posible incluso en delitos graves. Requiere demostrar arraigo en España, ausencia de riesgo de fuga, falta de peligrosidad y ofrecer garantías procesales. Hemos conseguido libertades provisionales en casos de terrorismo, criminalidad organizada y delitos económicos graves.
               </p>
             </div>
 
             <div className="bg-charleston/5 p-6 rounded-lg">
-              <h5 className="font-semibold text-black mb-2">¿Qué diferencia hay entre un abogado de oficio y un abogado particular?</h5>
+              <p className="font-semibold text-black mb-2 text-base">¿Qué diferencia hay entre un abogado de oficio y un abogado particular?</p>
               <p className="text-black/70 text-sm leading-relaxed">
                 El abogado de oficio es asignado por el turno de oficio y es gratuito si no tienes recursos. Un abogado particular te permite elegir un especialista en tu tipo de delito, garantiza dedicación exclusiva a tu caso y mayor disponibilidad. En casos complejos, la especialización marca la diferencia en el resultado.
               </p>
@@ -255,7 +255,7 @@ export default function SEOContentSection() {
           </p>
 
             <div className="bg-gold/10 border border-gold/30 rounded-xl p-8 mt-10">
-              <h4 className="text-xl font-semibold text-gold mb-4">¿Necesitas un Abogado Penalista Ahora?</h4>
+              <p className="text-xl font-semibold text-gold mb-4">¿Necesitas un Abogado Penalista Ahora?</p>
               <p className="text-black/80 mb-6">
                 No esperes. En casos penales, <strong>el tiempo es crucial</strong>. Contacta con nosotros ahora mismo para una valoración de tu caso. Estamos disponibles 24 horas al día, 7 días a la semana.
               </p>

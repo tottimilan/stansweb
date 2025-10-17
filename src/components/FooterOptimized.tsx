@@ -73,10 +73,10 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h3 className={`text-gold font-semibold text-lg mb-4 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+              <p className={`text-gold font-semibold text-lg mb-4 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <Users className={`h-5 w-5 ${language === 'ar' ? 'ml-2' : 'mr-2'}`} aria-hidden="true" />
                 {t.footer.nuestroEquipo}
-              </h3>
+              </p>
               <nav aria-label="Enlaces a páginas del equipo">
                 <ul className={`space-y-2.5 ${language === 'ar' ? '' : ''}`}>
                   <li>
@@ -130,10 +130,10 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className={`text-gold font-semibold text-lg mb-4 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+              <p className={`text-gold font-semibold text-lg mb-4 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <Shield className={`h-5 w-5 ${language === 'ar' ? 'ml-2' : 'mr-2'}`} aria-hidden="true" />
                 {t.footer.servicios || (language === 'ar' ? 'الخدمات' : 'Servicios')}
-              </h3>
+              </p>
               <nav aria-label="Enlaces a servicios">
                 <ul className={`space-y-2.5 ${language === 'ar' ? '' : ''}`}>
                   <li>
@@ -227,10 +227,10 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <h3 className={`text-gold font-semibold text-lg mb-4 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+              <p className={`text-gold font-semibold text-lg mb-4 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <Scale className={`h-5 w-5 ${language === 'ar' ? 'ml-2' : 'mr-2'}`} aria-hidden="true" />
                 {language === 'ar' ? 'روابط سريعة' : 'Enlaces Rápidos'}
-              </h3>
+              </p>
               <nav aria-label="Enlaces rápidos">
                 <ul className={`space-y-2.5 ${language === 'ar' ? '' : ''}`}>
                   <li>
@@ -289,10 +289,10 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h4 className={`text-offwhite font-medium text-sm mb-3 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+              <p className={`text-offwhite font-medium text-sm mb-3 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <BookOpen className={`h-4 w-4 ${language === 'ar' ? 'ml-2' : 'mr-2'} text-gold`} aria-hidden="true" />
                 {language === 'ar' ? 'مقالات مميزة' : 'Artículos Destacados'}
-              </h4>
+              </p>
               <nav aria-label="Artículos del blog destacados">
                 <ul className={`space-y-2 ${language === 'ar' ? '' : ''}`}>
                   <li>
@@ -382,10 +382,10 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="md:col-span-2 lg:col-span-1"
             >
-              <h4 className={`text-offwhite font-medium text-sm mb-3 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+              <p className={`text-offwhite font-medium text-sm mb-3 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <Briefcase className={`h-4 w-4 ${language === 'ar' ? 'ml-2' : 'mr-2'} text-gold`} aria-hidden="true" />
                 {language === 'ar' ? 'معلومات قانونية' : 'Información Legal'}
-              </h4>
+              </p>
               <nav aria-label="Enlaces legales">
                 <ul className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   <li>

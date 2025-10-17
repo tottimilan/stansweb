@@ -253,21 +253,7 @@ export default function DelitosPersonasPage() {
                 <Link href="/casos/caso-lesiones-getafe" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Homicidio
-                  </h3>
-                  <p className="text-black/70 text-sm">Investigación por muerte tras intervención policial</p>
-                  {language !== 'ar' && (
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      <span className="inline-block text-xs bg-gold/10 text-black/70 border border-gold/20 rounded-full px-2 py-0.5">Homicidio</span>
-                      <span className="inline-block text-xs bg-gold/10 text-black/70 border border-gold/20 rounded-full px-2 py-0.5">Acusación particular</span>
-                    </div>
-                  )}
-                </Link>
-                
-                <Link href="/casos/sobreseimiento-amenazas-coacciones-extorsion" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
-                  <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Lesiones
+                    CASO LESIONES (DOLOSAS)
                   </h3>
                   <p className="text-black/70 text-sm">Absolución en delito de lesiones</p>
                   {language !== 'ar' && (
@@ -278,16 +264,30 @@ export default function DelitosPersonasPage() {
                   )}
                 </Link>
                 
-                <Link href="/casos/abderrahim-akkouh-homicidio-torrejon" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
+                <Link href="/casos/sobreseimiento-amenazas-coacciones-extorsion" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Amenazas
+                    CASO AMENAZAS, COACCIONES Y EXTORSIÓN – SOBRESEIMIENTO
                   </h3>
                   <p className="text-black/70 text-sm">Archivo por falta de indicios</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
                       <span className="inline-block text-xs bg-gold/10 text-black/70 border border-gold/20 rounded-full px-2 py-0.5">Amenazas</span>
                       <span className="inline-block text-xs bg-gold/10 text-black/70 border border-gold/20 rounded-full px-2 py-0.5">Coacciones</span>
+                    </div>
+                  )}
+                </Link>
+                
+                <Link href="/casos/abderrahim-akkouh-homicidio-torrejon" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
+                  <FileText className="h-8 w-8 text-gold mb-4" />
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    CASO ABDERRAHIM AKKOUH – HOMICIDIO TORREJÓN
+                  </h3>
+                  <p className="text-black/70 text-sm">Investigación por muerte tras intervención policial</p>
+                  {language !== 'ar' && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <span className="inline-block text-xs bg-gold/10 text-black/70 border border-gold/20 rounded-full px-2 py-0.5">Homicidio</span>
+                      <span className="inline-block text-xs bg-gold/10 text-black/70 border border-gold/20 rounded-full px-2 py-0.5">Acusación particular</span>
                     </div>
                   )}
                 </Link>
@@ -403,9 +403,9 @@ export default function DelitosPersonasPage() {
               </ul>
 
               <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
+                <p className="text-lg font-semibold text-gold mb-3">
                   {language === 'ar' ? 'هل تواجه اتهامات في جريمة ضد الأشخاص؟' : '¿Enfrentas Acusaciones por Delitos contra las Personas?'}
-                </h4>
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'لا تواجه هذه الاتهامات بمفردك. اتصل بنا الآن للحصول على دفاع متخصص. فريقنا لديه الخبرة اللازمة للتعامل مع أخطر القضايا وحماية حقوقك وحريتك.'

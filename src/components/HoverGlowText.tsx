@@ -13,7 +13,6 @@ export default function HoverGlowText({ text, className = '', delay = 0 }: Hover
   const [spans, setSpans] = useState<React.ReactElement[]>([]);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   // Efecto de aparición completa
   useEffect(() => {
@@ -95,8 +94,8 @@ export default function HoverGlowText({ text, className = '', delay = 0 }: Hover
   }, [text, delay, hoveredIndex, isVisible]);
 
   return (
-    <div ref={containerRef} className={className}>
+    <>
       {spans}
-    </div>
+    </>
   );
 }

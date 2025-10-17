@@ -399,9 +399,9 @@ export default function ServiciosPage() {
               </p>
 
               <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
+                <p className="text-lg font-semibold text-gold mb-3">
                   {language === 'ar' ? 'هل تحتاج إلى مساعدة في إحدى هذه المجالات؟' : '¿Necesitas Ayuda en Alguna de estas Áreas?'}
-                </h4>
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'اتصل بنا الآن. نحن متاحون 24 ساعة في اليوم، 7 أيام في الأسبوع للرد على استفساراتك وتقييم قضيتك.'

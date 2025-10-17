@@ -252,7 +252,9 @@ export default function OrdenPublicoDrogasPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Link href="/casos/absolucion-resistencia-autoridad" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Tráfico de drogas</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    OPERACIÓN BOP – ATRACOS A VIVIENDAS DE LUJO
+                  </h3>
                   <p className="text-black/70 text-sm">Libertad provisional en tráfico internacional</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -263,7 +265,9 @@ export default function OrdenPublicoDrogasPage() {
                 </Link>
                 <Link href="/casos/sobreseimiento-delito-salud-publica" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Resistencia/Atentado</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    ABSOLUCIÓN POR DELITO DE RESISTENCIA GRAVE A LA AUTORIDAD
+                  </h3>
                   <p className="text-black/70 text-sm">Absolución por atentado a agentes</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -274,7 +278,9 @@ export default function OrdenPublicoDrogasPage() {
                 </Link>
                 <Link href="/casos/ejecuciones-penales-revocacion-requisitorias" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
-                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Ejecución penal</h3>
+                  <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
+                    CASO EJECUTORIAS PENALES
+                  </h3>
                   <p className="text-black/70 text-sm">Permisos y tercer grado concedidos</p>
                   {language !== 'ar' && (
                     <div className="mt-3 flex flex-wrap gap-2">
@@ -388,19 +394,19 @@ export default function OrdenPublicoDrogasPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'جرائم المخدرات' : 'Delitos de Drogas'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'جرائم المخدرات' : 'Delitos de Drogas'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'الدفاع في جميع أنواع جرائم المخدرات والصحة العامة' : 'Defensa en todo tipo de delitos contra la salud pública'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'جرائم السلطة' : 'Delitos contra la Autoridad'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'جرائم السلطة' : 'Delitos contra la Autoridad'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'المقاومة والاعتداء والعصيان' : 'Resistencia, atentado y desobediencia'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'التنفيذ الجنائي' : 'Ejecución Penal'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التنفيذ الجنائي' : 'Ejecución Penal'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'التصاريح والدرجة الثالثة والحرية المشروطة' : 'Permisos, tercer grado y libertad condicional'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الأسلحة' : 'Armas'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الأسلحة' : 'Armas'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'حيازة غير قانونية وتهريب الأسلحة' : 'Tenencia ilícita y tráfico de armas'}</p>
                 </div>
               </div>
@@ -416,10 +422,10 @@ export default function OrdenPublicoDrogasPage() {
                 <li><strong>{language === 'ar' ? 'التنفيذ:' : 'Ejecución:'}</strong> {language === 'ar' ? 'استشارة في مرحلة التنفيذ الجنائي' : 'Asesoramiento en fase de ejecución penal'}</li>
               </ul>
 
-              <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
-                  {language === 'ar' ? 'هل تواجه اتهامات بجرائم المخدرات أو النظام العام؟' : '¿Enfrentas Acusaciones por Drogas o Delitos de Orden Público?'}
-                </h4>
+                  <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
+                    <p className="text-lg font-semibold text-gold mb-3">
+                      {language === 'ar' ? 'هل تواجه اتهامات بجرائم المخدرات أو النظام العام؟' : '¿Enfrentas Acusaciones por Drogas o Delitos de Orden Público?'}
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت حاسم في هذه القضايا. اتصل بنا الآن للحصول على دفاع متخصص. فريقنا لديه الخبرة اللازمة للتعامل مع جميع أنواع جرائم النظام العام والمخدرات.'

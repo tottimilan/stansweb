@@ -417,19 +417,19 @@ export default function ProcedimientoPenalPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الاعتقال والتحقيق' : 'Detención e Instrucción'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الاعتقال والتحقيق' : 'Detención e Instrucción'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع فوري من اللحظة الأولى' : 'Defensa inmediata desde el primer momento'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'التدابير الاحترازية' : 'Medidas Cautelares'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التدابير الاحترازية' : 'Medidas Cautelares'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'تفاوض وطعن في السجن المؤقت' : 'Negociación y recursos contra prisión provisional'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'المحاكمة الشفوية' : 'Juicio Oral'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'المحاكمة الشفوية' : 'Juicio Oral'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع تقني في جلسات المحاكمة' : 'Defensa técnica en vista oral'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الطعون' : 'Recursos'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الطعون' : 'Recursos'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'الاستئناف والنقض والطعن بالدستورية' : 'Apelación, casación y amparo constitucional'}</p>
                 </div>
               </div>
@@ -445,10 +445,10 @@ export default function ProcedimientoPenalPage() {
                 <li><strong>{language === 'ar' ? 'دفاع شامل:' : 'Defensa integral:'}</strong> {language === 'ar' ? 'من الاعتقال إلى الحكم النهائي' : 'Desde la detención hasta la sentencia firme'}</li>
               </ul>
 
-              <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
-                  {language === 'ar' ? 'هل تحتاج إلى دفاع عاجل أو تريد الطعن في حكم؟' : '¿Necesitas Defensa Urgente o Quieres Recurrir una Sentencia?'}
-                </h4>
+                  <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
+                    <p className="text-lg font-semibold text-gold mb-3">
+                      {language === 'ar' ? 'هل تحتاج إلى دفاع عاجل أو تريد الطعن في حكم؟' : '¿Necesitas Defensa Urgente o Quieres Recurrir una Sentencia?'}
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت حاسم في الإجراءات الجنائية. اتصل بنا فورًا للحصول على دفاع متخصص. فريقنا جاهز للتدخل في أي مرحلة من مراحل الإجراءات لحماية حقوقك.'

@@ -253,7 +253,7 @@ export default function DelitosEconomicosPage() {
                 <Link href="/casos/caso-estafa-blanqueo-jaen" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Blanqueo de Capitales
+                    CASO ESTAFA Y BLANQUEO DE CAPITALES
                   </h3>
                   <p className="text-black/70 text-sm">Sobreseimiento en caso de blanqueo de capitales</p>
                   {language !== 'ar' && (
@@ -267,7 +267,7 @@ export default function DelitosEconomicosPage() {
                 <Link href="/casos/absolucion-blanqueo-imprudencia" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Estafa Empresarial
+                    CASO BLANQUEO DE CAPITALES POR IMPRUDENCIA GRAVE
                   </h3>
                   <p className="text-black/70 text-sm">Absolución en caso de estafa y falsedad documental</p>
                   {language !== 'ar' && (
@@ -281,7 +281,7 @@ export default function DelitosEconomicosPage() {
                 <Link href="/casos/sobreseimiento-derechos-trabajadores" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Delito Fiscal
+                    SOBRESEIMIENTO DERECHOS TRABAJADORES
                   </h3>
                   <p className="text-black/70 text-sm">Archivo por regularización en delito fiscal</p>
                   {language !== 'ar' && (
@@ -393,19 +393,19 @@ export default function DelitosEconomicosPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الاحتيال والاحتيال المالي' : 'Estafa y Fraude'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الاحتيال والاحتيال المالي' : 'Estafa y Fraude'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع في جميع أنواع الاحتيال التجاري والمالي' : 'Defensa en todo tipo de estafas empresariales y financieras'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'غسيل الأموال' : 'Blanqueo de Capitales'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'غسيل الأموال' : 'Blanqueo de Capitales'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع تقني في قضايا غسيل الأموال المعقدة' : 'Defensa técnica en casos complejos de blanqueo'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الجرائم الضريبية' : 'Delitos Fiscales'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الجرائم الضريبية' : 'Delitos Fiscales'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع والتسوية في الجرائم ضد الخزانة العامة' : 'Defensa y regularización en delitos contra Hacienda'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الجرائم الشركاتية' : 'Delitos Societarios'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الجرائم الشركاتية' : 'Delitos Societarios'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'خيانة الأمانة والإدارة غير الأمينة' : 'Apropiación indebida y administración desleal'}</p>
                 </div>
               </div>
@@ -421,10 +421,10 @@ export default function DelitosEconomicosPage() {
                 <li><strong>{language === 'ar' ? 'التفاوض:' : 'Negociación:'}</strong> {language === 'ar' ? 'خبرة في الاتفاقات والتسويات مع المدعي العام' : 'Experiencia en conformidades y acuerdos con Fiscalía'}</li>
               </ul>
 
-              <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
-                  {language === 'ar' ? 'هل تواجه تحقيقًا في جريمة اقتصادية؟' : '¿Enfrentas una Investigación por Delito Económico?'}
-                </h4>
+                  <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
+                    <p className="text-lg font-semibold text-gold mb-3">
+                      {language === 'ar' ? 'هل تواجه تحقيقًا في جريمة اقتصادية؟' : '¿Enfrentas una Investigación por Delito Económico?'}
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت والاستراتيجية حاسمان في الجرائم الاقتصادية. اتصل بنا للحصول على دفاع تقني متخصص. فريقنا لديه الخبرة اللازمة لحماية مصالحك وسمعتك المهنية.'

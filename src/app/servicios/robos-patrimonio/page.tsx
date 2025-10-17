@@ -253,7 +253,7 @@ export default function RobosPatrimonioPage() {
                 <Link href="/casos/operacion-luco-banda-rolex" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Organización Criminal
+                    OPERACIÓN LUCO – BANDA DEL ROLEX
                   </h3>
                   <p className="text-black/70 text-sm">Única libertad en operación contra grupo criminal</p>
                   {language !== 'ar' && (
@@ -267,7 +267,7 @@ export default function RobosPatrimonioPage() {
                 <Link href="/casos/caso-robo-violencia-absolucion" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Robo con Violencia
+                    CASO ROBO CON VIOLENCIA - ABSOLUCIÓN
                   </h3>
                   <p className="text-black/70 text-sm">Sobreseimiento en robo con violencia</p>
                   {language !== 'ar' && (
@@ -281,7 +281,7 @@ export default function RobosPatrimonioPage() {
                 <Link href="/casos/operacion-bop-trafico-drogas" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">
-                    Caso Hurtos Múltiples
+                    OPERACIÓN BOP – ATRACOS A VIVIENDAS DE LUJO
                   </h3>
                   <p className="text-black/70 text-sm">Archivo de diligencias por hurtos multirreincidentes</p>
                   {language !== 'ar' && (
@@ -393,19 +393,19 @@ export default function RobosPatrimonioPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'السرقات بالعنف' : 'Robos con Violencia'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'السرقات بالعنف' : 'Robos con Violencia'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع في السرقات المسلحة والسرقات في الأماكن العامة' : 'Defensa en robos armados y atracos en establecimientos'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'المنظمات الإجرامية' : 'Organizaciones Criminales'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'المنظمات الإجرامية' : 'Organizaciones Criminales'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع في عمليات ضد المجموعات المنظمة' : 'Defensa en operaciones contra grupos organizados'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'السرقات البسيطة' : 'Hurtos'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'السرقات البسيطة' : 'Hurtos'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع في السرقات البسيطة والسرقات المتكررة' : 'Defensa en hurtos simples y multirreincidencia'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الإخفاء' : 'Receptación'}</h4>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الإخفاء' : 'Receptación'}</p>
                   <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع في قضايا الإخفاء والبضائع المسروقة' : 'Defensa en casos de receptación y mercancía robada'}</p>
                 </div>
               </div>
@@ -421,10 +421,10 @@ export default function RobosPatrimonioPage() {
                 <li><strong>{language === 'ar' ? 'حماية الحقوق:' : 'Protección de derechos:'}</strong> {language === 'ar' ? 'ضمان الإجراءات القانونية الواجبة في جميع المراحل' : 'Garantía del debido proceso en todas las fases'}</li>
               </ul>
 
-              <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
-                <h4 className="text-lg font-semibold text-gold mb-3">
-                  {language === 'ar' ? 'هل تواجه اتهامات بالسرقة أو جرائم ضد الممتلكات؟' : '¿Enfrentas Acusaciones por Robo o Delitos Patrimoniales?'}
-                </h4>
+                  <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
+                    <p className="text-lg font-semibold text-gold mb-3">
+                      {language === 'ar' ? 'هل تواجه اتهامات بالسرقة أو جرائم ضد الممتلكات؟' : '¿Enfrentas Acusaciones por Robo o Delitos Patrimoniales?'}
+                </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت حاسم في هذه القضايا. اتصل بنا الآن للحصول على دفاع متخصص. فريقنا لديه الخبرة اللازمة للتعامل مع القضايا الأكثر تعقيدًا وحماية حقوقك.'
