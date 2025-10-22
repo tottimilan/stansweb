@@ -22,6 +22,9 @@ export const translations = {
       descripcionCompleta: 'Especialistas en Derecho Penal. Español-Inglés-Árabe. Respondemos en menos de 15 minutos.',
              respuesta15min: 'Respuesta < 1 hr urgencias',
       espanolArabeIngles: 'Español-Inglés-Árabe',
+      especialidad: 'Especialistas en Derecho Penal',
+      idiomas: 'Español-Inglés-Árabe',
+      respuestaRapida: 'Respondemos urgencias en menos de 1 hora',
                   extradicion: 'Extradiciones',
       penalPuro: 'Enfoque único en la defensa penal',
       abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Inglés/Árabe | Colegiados ICAM',
@@ -819,6 +822,9 @@ export const translations = {
       descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–الإنجليزية–العربية. نرد في أقل من 15 دقيقة.',
              respuesta15min: 'الرد < 1 ساعة طوارئ',
       espanolArabeIngles: 'الإسبانية–الإنجليزية–العربية',
+      especialidad: 'متخصصون في القانون الجنائي',
+      idiomas: 'الإسبانية–الإنجليزية–العربية',
+      respuestaRapida: 'نرد على الطوارئ في أقل من ساعة واحدة',
                   extradicion: 'تسليم المجرمين',
       penalPuro: 'نهج فريد في الدفاع الجنائي',
       abogadosPenalistas: 'محامون جنائيون | اللغات: الإسبانية/العربية | أعضاء ICAM',
@@ -2313,5 +2319,1249 @@ export const translations = {
         }
       }
     }
-  }
+  },
+
+  en: {
+    // Navigation
+    nav: {
+      inicio: 'Home',
+      areas: 'Areas',
+      equipo: 'Team',
+      casos: 'Cases',
+      blog: 'Blog',
+      contacto: 'Contact'
+    },
+
+    // Common Elements
+    common: {
+      llamar: 'Call',
+      enviarEmail: 'Send email to',
+      verUbicacion: 'View location on Google Maps',
+      especializacion: 'Specialization in criminal defense',
+      serviciosDestacados: 'Featured services of STANS ABOGADOS',
+      informacionContacto: 'Contact information',
+      listaAbogados: 'List of team lawyers',
+      listaAreas: 'List of criminal practice areas',
+      contactarWhatsapp: 'Contact now via WhatsApp',
+      consultarCaso: 'Consult specific criminal case via WhatsApp',
+      idiomas: 'Languages'
+    },
+
+    // Hero Section
+    hero: {
+      title: 'STANS ABOGADOS',
+      subtitle: 'CRIMINAL LAWYERS',
+      description: 'Specialized criminal defense in Madrid and throughout Spain',
+      location: 'Madrid, Spain',
+      cta: 'Free Consultation',
+      especialistas: 'Criminal Defense Specialists',
+      defensa24h: 'Criminal Defense 24/7\nMadrid and Spain',
+      descripcionCompleta: 'Specialists in Criminal Law. Spanish-English-Arabic. We respond within 15 minutes.',
+             respuesta15min: 'Response < 1 hour emergencies',
+      espanolArabeIngles: 'Spanish-English-Arabic',
+      especialidad: 'Specialists in Criminal Law',
+      idiomas: 'Spanish-English-Arabic',
+      respuestaRapida: 'We respond to emergencies in less than 1 hour',
+                  extradicion: 'Extraditions',
+      penalPuro: 'Unique focus on criminal defense',
+      abogadosPenalistas: 'Criminal Lawyers | Languages: Spanish/English/Arabic | ICAM Members',
+      holaAyuda: 'Hello, I need urgent criminal help.'
+    },
+
+    // Team Section
+    team: {
+      title: 'OUR TEAM',
+      subtitle: 'Specialized criminal law lawyers',
+      description: 'We have a team of criminal lawyers with extensive experience in defending complex cases.',
+      nuestroEquipo: 'Our Team of Criminal Lawyers',
+      descripcionCompleta: 'Specialized criminal lawyers with extensive experience in complex cases. Comprehensive defense in Spanish, English and Arabic.',
+      consultaEspecifica: 'Do you need to consult with a specific lawyer?',
+      consultaDescripcion: 'Each member of our team has unique specializations. We connect you with the lawyer most suitable for your case.',
+                  consultaGratuita: 'Send Consultation',
+      consultaWhatsapp: 'Hello, I need to consult with a specialized lawyer. Can you help me?',
+      // Team member data
+      ruben: {
+        name: 'Rubén Vaquero Arribas',
+        role: 'Partner Lawyer',
+        summary: 'ICAM lawyer specialized in economic criminal law and fundamental rights. Experience in complaints, appeals and cassation. Cases: homicide, organized crime, fraud, extraditions and OEDE.',
+        tags: ['Economic Criminal Law', 'Fundamental Rights', 'Extraditions', 'OEDE', 'Judicial Cooperation']
+      },
+      mounir: {
+        name: 'Mounir Elyemlahy Chouati',
+        role: 'Partner Lawyer',
+        summary: 'ICAM lawyer with experience in criminal and administrative law. Specialized in high-complexity procedures, jihadi terrorism and fundamental rights defense.',
+        tags: ['Criminal Law', 'Administrative Law', 'Jihadi Terrorism', 'Fundamental Rights', 'Complex Cases']
+      },
+      diego: {
+        name: 'Diego Cardona Valero',
+        role: 'Partner Lawyer',
+        summary: 'ICAM lawyer specialized in criminal procedural law. Experience in organized crime and terrorism. Strategic capacity in litigation and preparation of resources in high-complexity procedures.',
+        tags: ['Criminal Procedural Law', 'Organized Crime', 'Terrorism', 'Litigation', 'Appeals']
+      },
+      ada: {
+        name: 'Ada de Blas Pascual',
+        role: 'Lawyer',
+        summary: 'ICAM lawyer specialized in Economic Criminal Law and International Criminal Law. International training (Cambridge LL.M.). Experience in extraditions, OEDE and defense of legal persons. Multilingual assistance.',
+        tags: ['Economic Criminal Law', 'International Criminal Law', 'Extraditions and OEDE', 'Legal Persons', 'Physical and Moral Integrity']
+      }
+    },
+
+    // Practice Areas
+    areas: {
+      title: 'Our Services',
+      subtitle: 'Specialists in all branches of criminal law',
+      description: 'We offer specialized defense in all types of criminal offenses',
+      areasDefensa: 'Criminal Defense Areas',
+      descripcionCompleta: 'Specialists in all branches of criminal law. Comprehensive defense from the first moment until the end of the process.',
+      descripcionHero: 'Specialists in all branches of criminal law. Comprehensive defense from the first moment until the end of the process. 24/7 availability for emergencies.',
+      noEncuentras: 'Don\'t you find your case?',
+      consultanos: 'Consult us',
+      casoDiferente: 'Hello, I have a different criminal case. Can you help me?',
+      experienciaAudienciaNacional: 'Experience in National High Court',
+      abogadosColegiadosICAM: 'ICAM Member Lawyers',
+      asistenciaMultiidioma: 'Multilingual Assistance',
+      verCasosExito: 'View success cases',
+      casosRelacionados: 'related cases',
+      porQueElegir: 'Why choose STANS ABOGADOS?',
+      experienciaSubtitle: 'Experience, dedication and proven results in complex cases',
+      experienciaComprobada: 'Proven Experience',
+      experienciaDescripcion: 'More than 100 favorable cases in all branches of criminal law, including National High Court.',
+      equipoEspecializado: 'Specialized Team',
+      equipoDescripcion: 'ICAM member lawyers with specific training in economic criminal law, extraditions and fundamental rights.',
+      disponibilidad247: '24/7 Availability',
+      disponibilidadDescripcion: 'Immediate attention in criminal emergencies. Response within 1 hour for critical situations.',
+      necesitasAsesoramiento: 'Do you need urgent legal advice?',
+      contactaEquipo: 'Contact our team of criminal lawyers. First consultation free.',
+      consultarCaso: 'Consult my case',
+      whatsapp247: 'WhatsApp 24/7',
+      // Service area data
+      libertadExpresion: {
+        title: 'Freedom of expression and hate crimes',
+        excerpt: 'Specialized defense in freedom of expression cases, hate crimes and discrimination. Protection of fundamental rights.',
+        features: ['Hate crimes and discrimination', 'Religious feelings offenses', 'Insults and slander', 'Online hate speech']
+      },
+      delitosEconomicos: {
+        title: 'Economic crimes',
+        excerpt: 'Comprehensive defense in economic and financial crimes. Fraud, embezzlement, money laundering and corporate crimes.',
+        features: ['Corporate fraud', 'Money laundering', 'Tax fraud', 'Bankruptcy crimes', 'Market abuse']
+      },
+      terrorismo: {
+        title: 'Terrorism and organized crime',
+        excerpt: 'Specialized defense in terrorism cases and organized crime. Protection of fundamental rights in complex procedures.',
+        features: ['Terrorism glorification', 'Recruitment and indoctrination', 'Terrorism financing', 'Internet terrorism']
+      },
+      extradiciones: {
+        title: 'Extraditions and international cooperation',
+        excerpt: 'Specialized defense in extradition procedures and international judicial cooperation. European arrest warrant.',
+        features: ['European arrest warrant', 'Extradition procedures', 'International judicial cooperation', 'European Court of Human Rights', 'Human rights protection']
+      },
+      delitosSexuales: {
+        title: 'Sexual crimes',
+        excerpt: 'Specialized defense in sexual crimes and gender violence. Protection of rights and presumption of innocence.',
+        features: ['Sexual assault and abuse', 'Gender violence', 'Sexual harassment', 'Exhibitionism and voyeurism', 'Child sexual abuse']
+      },
+      delitosPersonas: {
+        title: 'Crimes against persons',
+        excerpt: 'Comprehensive defense in cases of violence against persons. Protection of rights and procedural guarantees.',
+        features: ['Homicide and injuries', 'Threats and coercion', 'Illegal detention', 'Violence and intimidation']
+      },
+      robosPatrimonio: {
+        title: 'Robberies, property and organized crime',
+        excerpt: 'Specialized defense in property crimes and organized crime. Comprehensive strategy from detention.',
+        features: ['Robbery with violence', 'Burglary', 'Organized crime', 'Theft and receiving']
+      },
+      delitosViolentos: {
+        title: 'Violent crimes',
+        excerpt: 'Defense in homicides, injuries and violent crimes. Experience in all degrees and circumstances.',
+        features: ['Homicide and murder', 'Injuries of all degrees', 'Threats and coercion', 'Illegal detention', 'Domestic violence']
+      },
+      drogas: {
+        title: 'Drug trafficking',
+        excerpt: 'Specialized defense in drug trafficking and related crimes. Dismantling of operations and alternative measures.',
+        features: ['Drug trafficking', 'International operations', 'Cultivation and processing', 'Drug dealing', 'Public health crimes']
+      },
+      cibercrimen: {
+        title: 'Cybercrime',
+        excerpt: 'Defense in computer crimes, fraud and cyber attacks. Digital evidence and new technologies.',
+        features: ['Computer fraud', 'Data theft', 'Hacking and intrusions', 'Cyber attacks', 'Digital evidence']
+      },
+      ordenPublico: {
+        title: 'Public order, drugs and criminal execution',
+        excerpt: 'Defense in public order cases, drugs and criminal execution. Comprehensive advice in all phases.',
+        features: ['Resistance to authority', 'Crimes against public health', 'Precautionary measures', 'Criminal execution']
+      }
+    },
+
+    // Footer
+    footer: {
+      descripcion: 'Criminal lawyers specialized in Madrid and Spain. We offer comprehensive defense in all branches of criminal law with 24/7 availability.',
+      servicios: 'Services',
+      enlaces: 'Links',
+      contacto: 'Contact',
+      derechos: '© 2024 STANS ABOGADOS. All rights reserved.',
+      privacidad: 'Privacy Policy',
+      cookies: 'Cookies Policy',
+      aviso: 'Legal Notice',
+      avisoLegal: 'Legal Notice',
+      terminos: 'Terms of Use',
+      // Contact information
+      telefono: 'Phone',
+      email: 'Email',
+      direccion: 'Address',
+      horario: 'Schedule',
+      horarioDetalle: '24/7 emergencies',
+      // Social media
+      redes: 'Follow us',
+      // Newsletter
+      newsletter: 'Newsletter',
+      newsletterDesc: 'Subscribe to receive updates on criminal law and our latest cases.',
+      newsletterPlaceholder: 'Enter your email',
+      newsletterBoton: 'Subscribe',
+      // WhatsApp
+      whatsapp: 'WhatsApp',
+      whatsappDesc: 'Contact us urgently through WhatsApp',
+      whatsappBoton: 'Send message',
+      atencion24h: '24/7 Attention',
+      nuestroEquipo: 'Our Team',
+      atencion: 'Attention',
+      defensaPenal: 'Criminal Defense',
+      idiomas: 'Languages',
+      verTodosServicios: 'View all services',
+      preguntasFrecuentes: 'Frequently Asked Questions',
+      defensaPenalUrgente: 'Urgent Criminal Defense',
+      derechosDetenidos: 'Rights of Detainees',
+      extradicionesEspana: 'Extraditions in Spain',
+      primerosPasosComisaria: 'First Steps in Police Station',
+      casosExito: 'Success Cases',
+      libertadExpresion: 'Freedom of Expression',
+      operacionLuco: 'Operation Luco',
+      academiaYihad: 'Jihad Academy'
+    },
+
+    // Contact Section
+    contacto: {
+      title: 'Contact Us',
+      subtitle: 'We are available 24/7 for your criminal defense',
+      description: 'Our team of criminal lawyers is ready to assist you in any criminal matter. Contact us and we will respond immediately.',
+      // Contact form
+      formulario: {
+        titulo: 'Send us your consultation',
+        nombre: 'Full name',
+        email: 'Email address',
+        telefono: 'Phone number',
+        asunto: 'Subject',
+        mensaje: 'Message',
+        enviar: 'SEND MESSAGE'
+      },
+      // Contact information
+      info: {
+        titulo: 'Contact Information',
+        telefono: 'Phone: +34 611 687 226',
+        email: 'Email: info@stansabogados.com',
+        direccion: 'Address: Calle de la Princesa 25, Madrid',
+        horario: 'Schedule: 24/7 for emergencies'
+      },
+      // Map
+      mapa: 'Our location',
+      // Call to action
+      cta: {
+        titulo: 'Need urgent defense?',
+        descripcion: 'Our criminal lawyers are available 24 hours a day, 7 days a week.',
+        boton: 'Call now',
+        whatsapp: 'WhatsApp 24/7'
+      }
+    },
+
+    // FAQ Section
+    faq: {
+      title: 'Frequently Asked Questions',
+      subtitle: 'Find answers to your legal questions',
+      description: 'More than 90 frequently asked questions about criminal defense, terrorism and rights.',
+      searchPlaceholder: 'Search in frequently asked questions...',
+      noResults: 'No results found',
+      noResultsDescription: 'Try a different search or contact our team directly',
+      questionsAvailable: 'questions available',
+      resultsFor: 'results for',
+      allCategories: 'All',
+      readFullArticle: 'Read full article',
+      consultSpecialist: 'Consult specialist',
+      notFound: 'Don\'t find your answer?',
+      notFoundDescription: 'Contact our team of specialized lawyers. First consultation to assess your case. Available 24/7.',
+      sendConsultation: 'Send consultation',
+      urgentResponse: 'Response in less than 1 hour for urgent cases',
+      categories: {
+        todas: 'All',
+        terrorismo: 'Terrorism',
+        extradicion: 'Extradition',
+        defensaUrgente: 'Urgent Defense',
+        derechosFundamentales: 'Fundamental Rights'
+      }
+    },
+
+    // Cases Section
+    casos: {
+      filtros: {
+        title: 'Filter by category:',
+        todasCategorias: 'All categories',
+        noEncontrados: 'No cases found for this category.',
+        todos: 'All'
+      },
+      categorias: {
+        delitosOdio: 'Hate crimes and freedom of expression',
+        terrorismo: 'Terrorism and National High Court',
+        robosViolencia: 'Robberies with violence and criminal group',
+        delitosPersonas: 'Crimes against persons',
+        delitosEconomicos: 'Economic crimes and against property',
+        ordenPublico: 'Crimes against public order, drugs and criminal execution',
+        delitosSaludPublica: 'Crimes against public health',
+        delitosAutoridad: 'Crimes against authority',
+        delitosPatrimoniales: 'Property crimes',
+        delitosLibertad: 'Crimes against freedom',
+        delitosTrabajadores: 'Crimes against workers\' rights',
+        ejecucionPenal: 'Criminal execution',
+        delitosVida: 'Crimes against life',
+        organizacionCriminal: 'Membership in criminal organization',
+        cibercrimen: 'Cybercrime and new technologies',
+        delitosIntegridad: 'Crimes against integrity and moral freedom'
+      },
+      camposCasos: {
+        categoria: 'Category',
+        delitoPrincipal: 'Main Crime',
+        resultado: 'Result',
+        tipoResolucion: 'Resolution Type',
+        organo: 'Body',
+        medidasCautelares: 'Precautionary Measures',
+        observaciones: 'Observations',
+        fichaRapida: 'Quick Facts',
+        fichaCompleta: 'Complete Facts',
+        documentacion: 'Documentation'
+      },
+      // Common case result translations
+      resultadosCasos: {
+        sobreseimiento: 'Dismissal',
+        absolucion: 'Acquittal',
+        condena: 'Conviction',
+        archivoDiligencias: 'Filing of Proceedings',
+        autoSobreseimiento: 'Dismissal Order',
+        sentenciaAbsolutoria: 'Acquittal Judgment'
+      },
+      title: 'Criminal Cases',
+      subtitle: 'Success stories in criminal defense. Real cases resolved by our team of lawyers.',
+      casos: {
+        verDetalles: 'View details',
+        casoPopular: 'Popular Case',
+        resultado: 'Result:',
+        organo: 'Body:',
+        tipo: 'Type:'
+      },
+      cta: {
+        title: 'Do you have a similar case?',
+        description: 'Our team of criminal lawyers is ready to defend your rights. Contact us now 24/7.',
+        consultarCaso: 'Consult your case',
+        llamarAhora: 'Call Now'
+      },
+      privacidad: {
+        title: 'Privacy Note',
+        description: 'For confidentiality and data protection reasons, only a representative selection of our cases is shown on this website. If you need more specific examples or have a similar case, do not hesitate to consult it directly with our team.',
+        consultarEquipo: 'Consult with our team'
+      },
+      tiposResolucion: {
+        sobreseimiento: 'Dismissal',
+        sentencia: 'Sentence',
+        auto: 'Order',
+        diligencias: 'Proceedings',
+        archivo: 'Filing'
+      }
+    },
+
+    // Cases Highlight Section (Home Page)
+    casosDestacados: {
+      title: 'Featured Cases',
+      subtitle: 'Discover some of our most relevant and successful cases in different areas of criminal law.',
+      verCasoCompleto: 'View full case',
+      verCasoEnCurso: 'Case in progress',
+      organo: 'Body:',
+      resultado: 'Result:',
+      tipo: 'Type:',
+      verTodosCasos: 'View all cases',
+      favorable: 'FAVORABLE',
+      enCurso: 'IN PROGRESS',
+      informacionProtegida: 'Protected information for confidentiality reasons'
+    },
+
+    // Case Section
+    caso: {
+      volverCasos: 'Back to cases',
+      casoNoEncontrado: 'Case not found',
+      casoPopular: 'Popular Case',
+      botones: {
+        fichaRapida: 'Quick Facts',
+        expandirTodas: 'Expand all sections',
+        comprimirTodas: 'Collapse all sections'
+      },
+      secciones: {
+        resumen: 'Summary',
+        hechos: 'Facts',
+        estrategia: 'Defense Strategy',
+        pruebas: 'Key Evidence',
+        resolucion: 'Resolution',
+        marcoLegal: 'Legal Framework',
+        imagenes: 'Case Images',
+        enlaces: 'Links and Notes'
+      },
+      fichaRapida: {
+        title: 'Quick Facts',
+        categoria: 'Category',
+        delitoPrincipal: 'Main Crime',
+        resultado: 'Result',
+        tipoResolucion: 'Resolution Type',
+        faseProcesal: 'Procedural Phase',
+        medidasCautelares: 'Precautionary Measures',
+        observaciones: 'Observations',
+        etiquetas: 'Tags'
+      },
+      enlaces: {
+        noticiasRelacionadas: 'Related news:',
+        enlacesOficiales: 'Official links:',
+        verNoticia: 'View news'
+      },
+      privacidad: {
+        title: 'Privacy Note',
+        description: 'For confidentiality and data protection reasons, only a representative selection of our cases is shown on this website. If you need more specific examples or have a similar case, do not hesitate to consult it directly with our team.',
+        consultarEquipo: 'Consult with our team'
+      }
+    },
+
+    // Blog Section
+    blog: {
+      title: 'STANS Criminal Law Blog',
+      subtitle: 'Specialized knowledge in criminal law. Articles, guides and analysis on legal issues affecting our society.',
+      hubsTitle: 'Content Hubs',
+      hubsSubtitle: 'Complete guides on specific criminal law topics',
+      articulosRecientes: 'Recent Articles',
+      articulosSubtitle: 'Stay informed with our latest analysis and legal guides',
+      mantenerseInformado: 'Stay Informed',
+      newsletterDescription: 'Receive our latest articles and legal updates in your email.',
+      placeholder: 'Your email address',
+      suscribirse: 'Subscribe',
+      cargarMas: 'Load more articles',
+      legalExpert: 'Expert Legal Analysis',
+      actualizacionSemanal: 'Weekly Update',
+      casosReales: 'Real Cases',
+      min: 'min',
+      articles: 'articles',
+      contactaAhora: 'Contact Now',
+      articulosRelacionados: 'Related Articles',
+      verMas: 'See more',
+      leerMas: 'Read more',
+      minutosLectura: 'minutes of reading',
+      minLectura: 'min read',
+      compartirArticulo: 'Share article',
+      // Hubs de contenido
+      hubs: {
+        terrorismoAudienciaNacional: {
+          title: 'Terrorism and National High Court',
+          description: 'Specialized criminal defense in terrorism crimes. Glorification, jihadi recruitment, financing and terrorist organization.'
+        },
+        defensaPenalUrgente: {
+          title: 'Urgent Criminal Defense',
+          description: 'Complete guides for criminal emergency situations: arrests, searches, statements and first steps.'
+        },
+        procedimientosExtradicion: {
+          title: 'Extradition Procedures',
+          description: 'Everything about extraditions: EU procedures, extradited person rights, deadlines and available resources.'
+        },
+        derechosDetenidos: {
+          title: 'Rights of Detainees',
+          description: 'Know your rights as a detainee: legal assistance, communications, conditions and habeas corpus.'
+        }
+      },
+      // Posts del blog
+      posts: {
+        defensaPenalUrgente: {
+          title: 'Urgent Criminal Defense: Complete Guide for Detainees',
+          excerpt: 'Everything you need to know when you are arrested: rights, procedure and how to act. Practical guide for criminal emergency situations.',
+          category: 'Urgent Criminal Defense'
+        },
+        procedimientosExtradicion: {
+          title: 'Extradition Procedures in Spain: Everything You Need to Know',
+          excerpt: 'Complete analysis of the extradition process: legal requirements, deadlines, extradited person rights and defense strategies.',
+          category: 'Extraditions'
+        },
+        derechosDetenidos: {
+          title: 'Rights of Detainees: Know Your Procedural Guarantees',
+          excerpt: 'Discover all the rights you have as a detainee: legal assistance, communication, detention conditions and habeas corpus.',
+          category: 'Rights of Detainees'
+        },
+        delitosSaludPublica: {
+          title: 'Crimes Against Public Health: Drugs and Legal Consequences',
+          excerpt: 'Detailed analysis of crimes related to narcotic substances: types, penalties, mitigating factors and defense strategies.',
+          category: 'Crimes Against Public Health'
+        },
+        terrorismoInternet: {
+          title: 'Terrorism on the Internet: Online Glorification and Recruitment',
+          excerpt: 'Study of terrorism crimes in the digital sphere: glorification, jihadi recruitment and criminal liability on social networks.',
+          category: 'Digital Criminal Security'
+        },
+        blanqueoCapitales: {
+          title: 'Money Laundering: How to Detect It and Defend Yourself',
+          excerpt: 'Complete guide on money laundering crime: source of funds, laundering techniques, criminal liability and defense strategies.',
+          category: 'Economic Crimes'
+        }
+      }
+    },
+
+    // API Messages
+    api: {
+      lead: {
+        success: 'Your message has been sent successfully. We will contact you soon.',
+        error: 'An error occurred while sending the message. Please try again.',
+        validation: {
+          nameRequired: 'Name is required',
+          emailRequired: 'Email is required',
+          emailInvalid: 'Email is invalid',
+          messageRequired: 'Message is required',
+          phoneInvalid: 'Phone number is invalid'
+        }
+      }
+    },
+
+    // 404 Page
+    notFound: {
+      title: 'Page not found',
+      subtitle: 'We couldn\'t find the page you\'re looking for',
+      description: 'The page may have been moved, deleted, or the link is incorrect.',
+      backHome: 'Back to home',
+      backBlog: 'Back to blog',
+      contactUs: 'Contact us',
+      helpText: 'If you need urgent help, contact us at:'
+    },
+
+    // Breadcrumb Navigation
+    breadcrumb: {
+      inicio: 'Home',
+      volver: 'Back',
+      navegacion: 'Breadcrumb navigation',
+      blog: 'Blog'
+    },
+
+    // Table of Contents Component
+    tableOfContents: {
+      title: 'Article Index',
+      expandir: 'Expand index',
+      comprimir: 'Compress index'
+    },
+
+    // Contact Section
+    contact: {
+      title: 'CONTACT',
+      subtitle: 'WE CAN SOLVE YOUR LEGAL PROBLEM WITH THE BEST POSSIBLE RESULT',
+      description: 'Tell us about your case and we will call you to give you more information.',
+      form: {
+        nombre: 'Name *',
+        email: 'Email *',
+        telefono: 'Phone *',
+        mensaje: 'How can we help you? *',
+        placeholder: 'Explain your case in detail...',
+        privacidad: 'I have read and accept the data protection policy. *',
+        enviar: 'SEND MESSAGE'
+      },
+      leadForm: {
+        email: 'Your email',
+        mensaje: 'Tell us briefly (optional)',
+        privacidad: 'I accept the Privacy Policy',
+        enviando: 'Sending…',
+        enviar: 'Resolve my doubt',
+        gracias: 'Thank you. We will contact you as soon as possible. If urgent, use WhatsApp 24/7.',
+        error: 'An error has occurred. Try again.'
+      },
+      phrases: [
+        'My case is gender violence and I need urgent defense.',
+        'I have had a DUI problem and want to protect my license.',
+        'I have been arrested for a possible robbery and need immediate assistance.',
+        'I am accused of drug trafficking and need legal help.',
+        'I am being investigated for document forgery and want to prepare my defense.',
+        'I am a victim of cybercrime and need advice.',
+        'I want to appeal an unfair conviction.',
+        'I was called to testify at the police station and need a lawyer NOW.'
+      ]
+    },
+
+    // Statistics section
+    stats: {
+      title: 'Our Numbers and Results',
+      subtitle: 'More than a decade of experience defending our clients\' rights. Results that speak for themselves.',
+      casos: {
+        number: '200+',
+        label: 'Successful Cases',
+        description: 'Defenses won in courts'
+      },
+      experiencia: {
+        number: '15+',
+        label: 'Years of Experience',
+        description: 'Specialization in criminal law'
+      },
+      respuesta: {
+        number: '<1',
+        label: 'Hour Response',
+        description: '24/7 immediate assistance'
+      },
+      idiomas: {
+        number: '3',
+        label: 'Languages',
+        description: 'Spanish, English and Arabic'
+      }
+    },
+
+    // Website metadata
+    metadata: {
+      title: 'STANS ABOGADOS — Criminal Defense 24/7 in Madrid and Spain | Criminal Lawyers',
+      description: 'Criminal Law specialists in Madrid and Spain. Criminal defense 24/7, response in less than 15 minutes. ICAM registered criminal lawyers. Services in Spanish, English and Arabic. Extraditions, EAW, complex cases.',
+      keywords: 'criminal lawyer Madrid, criminal defense Spain, criminal lawyer, criminal law, extradition Spain Morocco, EAW, 24/7 defense, Arabic lawyer Madrid, economic crime, fundamental rights, organized crime, terrorism, robbery theft, drug trafficking, gender violence, drunk driving, document forgery, computer crimes',
+      openGraph: {
+        title: 'STANS ABOGADOS — Criminal Defense 24/7 in Madrid and Spain',
+        description: 'Criminal Law specialists. Criminal defense 24/7, response in less than 15 minutes. ICAM registered criminal lawyers. Spanish, English and Arabic.',
+        alt: 'STANS ABOGADOS - Criminal Defense 24/7'
+      },
+      twitter: {
+        title: 'STANS ABOGADOS — Criminal Defense 24/7 in Madrid and Spain',
+        description: 'Criminal Law specialists. Criminal defense 24/7, response in less than 15 minutes. ICAM registered criminal lawyers.'
+      },
+      schema: {
+        name: 'STANS ABOGADOS',
+        description: 'Criminal Law specialists in Madrid and Spain. Criminal defense 24/7, response in less than 15 minutes.',
+        serviceType: 'Criminal Law',
+        serviceCatalog: 'Criminal Defense Services',
+        service24h: 'Immediate criminal legal assistance 24 hours a day',
+        extraditionService: 'Extradition procedures between Spain and Morocco',
+        employees: {
+          ruben: 'Criminal and economic crime, fundamental rights, EAW and extraditions',
+          mounir: 'Criminal and administrative. Specialist in Moroccan law and extraditions',
+          diego: 'Defense in complex cases: organized crime, terrorism'
+        }
+      }
+    }
+  },
+
+  fr: {
+    // Navigation
+    nav: {
+      inicio: 'Accueil',
+      areas: 'Domaines',
+      equipo: 'Équipe',
+      casos: 'Cas',
+      blog: 'Blog',
+      contacto: 'Contact'
+    },
+
+    // Common Elements
+    common: {
+      llamar: 'Appeler',
+      enviarEmail: 'Envoyer un email à',
+      verUbicacion: 'Voir l\'emplacement sur Google Maps',
+      especializacion: 'Spécialisation en défense pénale',
+      serviciosDestacados: 'Services phares de STANS ABOGADOS',
+      informacionContacto: 'Informations de contact',
+      listaAbogados: 'Liste des avocats de l\'équipe',
+      listaAreas: 'Liste des domaines de pratique pénale',
+      contactarWhatsapp: 'Contacter maintenant via WhatsApp',
+      consultarCaso: 'Consulter un cas pénal spécifique via WhatsApp',
+      idiomas: 'Langues'
+    },
+
+    // Hero Section
+    hero: {
+      title: 'STANS ABOGADOS',
+      subtitle: 'AVOCATS PÉNALISTES',
+      description: 'Défense pénale spécialisée à Madrid et dans toute l\'Espagne',
+      location: 'Madrid, Espagne',
+      cta: 'Consultation Gratuite',
+      especialistas: 'Spécialistes en Défense Pénale',
+      defensa24h: 'Défense Pénale 24/7\nMadrid et Espagne',
+      descripcionCompleta: 'Spécialistes en Droit Pénal. Espagnol-Anglais-Arabe. Nous répondons en moins de 15 minutes.',
+             respuesta15min: 'Réponse < 1 heure urgences',
+      espanolArabeIngles: 'Espagnol-Anglais-Arabe',
+      especialidad: 'Spécialistes en Droit Pénal',
+      idiomas: 'Espagnol-Anglais-Arabe',
+      respuestaRapida: 'Nous répondons aux urgences en moins de 1 heure',
+                  extradicion: 'Extraditions',
+      penalPuro: 'Approche unique de la défense pénale',
+      abogadosPenalistas: 'Avocats pénalistes | Langues: Espagnol/Anglais/Arabe | Membres ICAM',
+      holaAyuda: 'Bonjour, j\'ai besoin d\'aide pénale urgente.'
+    },
+
+    // Team Section
+    team: {
+      title: 'NOTRE ÉQUIPE',
+      subtitle: 'Avocats spécialisés en droit pénal',
+      description: 'Nous disposons d\'une équipe d\'avocats pénalistes avec une vaste expérience dans la défense de cas complexes.',
+      nuestroEquipo: 'Notre Équipe d\'Avocats Pénalistes',
+      descripcionCompleta: 'Avocats pénalistes spécialisés avec une vaste expérience dans les cas complexes. Défense intégrale en espagnol, anglais et arabe.',
+      consultaEspecifica: 'Avez-vous besoin de consulter un avocat spécifique?',
+      consultaDescripcion: 'Chaque membre de notre équipe a des spécialisations uniques. Nous vous connectons avec l\'avocat le plus adapté à votre cas.',
+                  consultaGratuita: 'Envoyer Consultation',
+      consultaWhatsapp: 'Bonjour, j\'ai besoin de consulter un avocat spécialisé. Pouvez-vous m\'aider?',
+      // Team member data
+      ruben: {
+        name: 'Rubén Vaquero Arribas',
+        role: 'Avocat Associé',
+        summary: 'Avocat du Barreau de Madrid spécialisé en droit pénal économique et droits fondamentaux. Expérience en plaintes, recours et cassation. Affaires: homicide, crime organisé, fraude, extraditions et OEDE.',
+        tags: ['Droit Pénal Économique', 'Droits Fondamentaux', 'Extraditions', 'OEDE', 'Coopération Judiciaire']
+      },
+      mounir: {
+        name: 'Mounir Elyemlahy Chouati',
+        role: 'Avocat Associé',
+        summary: 'Avocat du Barreau de Madrid avec expérience en droit pénal et administratif. Spécialisé dans les procédures de haute complexité, terrorisme djihadiste et défense des droits fondamentaux.',
+        tags: ['Droit Pénal', 'Droit Administratif', 'Terrorisme Djihadiste', 'Droits Fondamentaux', 'Affaires Complexes']
+      },
+      diego: {
+        name: 'Diego Cardona Valero',
+        role: 'Avocat Associé',
+        summary: 'Avocat du Barreau de Madrid spécialisé en droit procédural pénal. Expérience en criminalité organisée et terrorisme. Capacité stratégique en contentieux et préparation de recours dans les procédures de haute complexité.',
+        tags: ['Droit Procédural Pénal', 'Criminalité Organisée', 'Terrorisme', 'Contentieux', 'Recours']
+      },
+      ada: {
+        name: 'Ada de Blas Pascual',
+        role: 'Avocate',
+        summary: 'Avocate du Barreau de Madrid spécialisée en Droit Pénal Économique et International. Formation internationale (Cambridge LL.M.). Expérience en extraditions, OEDE et défense des personnes morales. Assistance multilingue.',
+        tags: ['Droit Pénal Économique', 'Droit Pénal International', 'Extraditions et OEDE', 'Personnes Morales', 'Intégrité Physique et Morale']
+      }
+    },
+
+    // Practice Areas
+    areas: {
+      title: 'Nos Services',
+      subtitle: 'Spécialistes dans toutes les branches du droit pénal',
+      description: 'Nous offrons une défense spécialisée dans tous les types d\'infractions pénales',
+      areasDefensa: 'Domaines de Défense Pénale',
+      descripcionCompleta: 'Spécialistes dans toutes les branches du droit pénal. Défense intégrale dès le premier moment jusqu\'à la fin du processus.',
+      descripcionHero: 'Spécialistes dans toutes les branches du droit pénal. Défense intégrale dès le premier moment jusqu\'à la fin du processus. Disponibilité 24/7 pour les urgences.',
+      noEncuentras: 'Vous ne trouvez pas votre cas?',
+      consultanos: 'Consultez-nous',
+      casoDiferente: 'Bonjour, j\'ai un cas pénal différent. Pouvez-vous m\'aider?',
+      experienciaAudienciaNacional: 'Expérience en Audience Nationale',
+      abogadosColegiadosICAM: 'Avocats Membres ICAM',
+      asistenciaMultiidioma: 'Assistance Multilingue',
+      verCasosExito: 'Voir les cas de succès',
+      casosRelacionados: 'cas liés',
+      porQueElegir: 'Pourquoi choisir STANS ABOGADOS?',
+      experienciaSubtitle: 'Expérience, dévouement et résultats éprouvés dans les cas complexes',
+      experienciaComprobada: 'Expérience Éprouvée',
+      experienciaDescripcion: 'Plus de 100 affaires favorables dans toutes les branches du droit pénal, incluant l\'Audience Nationale.',
+      equipoEspecializado: 'Équipe Spécialisée',
+      equipoDescripcion: 'Avocats membres ICAM avec formation spécifique en droit pénal économique, extraditions et droits fondamentaux.',
+      disponibilidad247: 'Disponibilité 24/7',
+      disponibilidadDescripcion: 'Attention immédiate dans les urgences pénales. Réponse en moins de 1 heure pour les situations critiques.',
+      necesitasAsesoramiento: 'Avez-vous besoin de conseils juridiques urgents?',
+      contactaEquipo: 'Contactez notre équipe d\'avocats pénalistes. Première consultation gratuite.',
+      consultarCaso: 'Consulter mon cas',
+      whatsapp247: 'WhatsApp 24/7',
+      // Service area data
+      libertadExpresion: {
+        title: 'Liberté d\'expression et crimes de haine',
+        excerpt: 'Défense spécialisée dans les affaires de liberté d\'expression, crimes de haine et discrimination. Protection des droits fondamentaux.',
+        features: ['Crimes de haine et discrimination', 'Offense aux sentiments religieux', 'Injures et calomnies', 'Discours haineux en ligne']
+      },
+      delitosEconomicos: {
+        title: 'Crimes économiques',
+        excerpt: 'Défense intégrale dans les crimes économiques et financiers. Fraude, détournement, blanchiment et crimes d\'entreprise.',
+        features: ['Fraude d\'entreprise', 'Blanchiment d\'argent', 'Fraude fiscale', 'Crimes de faillite', 'Abus de marché']
+      },
+      terrorismo: {
+        title: 'Terrorisme et criminalité organisée',
+        excerpt: 'Défense spécialisée dans les affaires de terrorisme et criminalité organisée. Protection des droits fondamentaux dans les procédures complexes.',
+        features: ['Enaltissement du terrorisme', 'Recrutement et endoctrinement', 'Financement du terrorisme', 'Terrorisme sur Internet']
+      },
+      extradiciones: {
+        title: 'Extraditions et coopération internationale',
+        excerpt: 'Défense spécialisée dans les procédures d\'extradition et coopération judiciaire internationale. Mandat d\'arrêt européen.',
+        features: ['Mandat d\'arrêt européen', 'Procédures d\'extradition', 'Coopération judiciaire internationale', 'Cour Européenne des Droits de l\'Homme', 'Protection des droits de l\'homme']
+      },
+      delitosSexuales: {
+        title: 'Crimes sexuels',
+        excerpt: 'Défense spécialisée dans les crimes sexuels et violence de genre. Protection des droits et présomption d\'innocence.',
+        features: ['Agression et abus sexuel', 'Violence de genre', 'Harcèlement sexuel', 'Exhibitionnisme et voyeurisme', 'Abus sexuel sur mineurs']
+      },
+      delitosPersonas: {
+        title: 'Crimes contre les personnes',
+        excerpt: 'Défense intégrale dans les affaires de violence contre les personnes. Protection des droits et garanties procédurales.',
+        features: ['Homicide et blessures', 'Menaces et coercition', 'Détention illégale', 'Violence et intimidation']
+      },
+      robosPatrimonio: {
+        title: 'Vols, patrimoine et crime organisé',
+        excerpt: 'Défense spécialisée dans les crimes contre le patrimoine et crime organisé. Stratégie intégrale dès la détention.',
+        features: ['Vol avec violence', 'Cambriolage', 'Crime organisé', 'Vols et recel']
+      },
+      delitosViolentos: {
+        title: 'Crimes violents',
+        excerpt: 'Défense dans les homicides, blessures et crimes violents. Expérience dans tous les degrés et circonstances.',
+        features: ['Homicide et assassinat', 'Blessures de tous degrés', 'Menaces et coercition', 'Détention illégale', 'Violence domestique']
+      },
+      drogas: {
+        title: 'Trafic de drogue',
+        excerpt: 'Défense spécialisée dans le trafic de drogue et crimes connexes. Démantèlement d\'opérations et mesures alternatives.',
+        features: ['Trafic de drogue', 'Opérations internationales', 'Culture et traitement', 'Détail de drogue', 'Crimes contre la santé publique']
+      },
+      cibercrimen: {
+        title: 'Cybercriminalité',
+        excerpt: 'Défense dans les crimes informatiques, fraude et cyberattaques. Preuves numériques et nouvelles technologies.',
+        features: ['Fraude informatique', 'Vol de données', 'Piratage et intrusions', 'Cyberattaques', 'Preuves numériques']
+      },
+      ordenPublico: {
+        title: 'Ordre public, drogues et exécution pénale',
+        excerpt: 'Défense dans les affaires d\'ordre public, drogues et exécution pénale. Conseil intégral dans toutes les phases.',
+        features: ['Résistance à l\'autorité', 'Crimes contre la santé publique', 'Mesures préventives', 'Exécution pénale']
+      }
+    },
+
+    // Footer
+    footer: {
+      descripcion: 'Avocats pénalistes spécialisés à Madrid et en Espagne. Nous offrons une défense intégrale dans toutes les branches du droit pénal avec disponibilité 24/7.',
+      servicios: 'Services',
+      enlaces: 'Liens',
+      contacto: 'Contact',
+      derechos: '© 2024 STANS ABOGADOS. Tous droits réservés.',
+      privacidad: 'Politique de Confidentialité',
+      cookies: 'Politique de Cookies',
+      aviso: 'Avis Légal',
+      avisoLegal: 'Avis Légal',
+      terminos: 'Conditions d\'Utilisation',
+      // Contact information
+      telefono: 'Téléphone',
+      email: 'Email',
+      direccion: 'Adresse',
+      horario: 'Horaires',
+      horarioDetalle: '24/7 urgences',
+      // Social media
+      redes: 'Suivez-nous',
+      // Newsletter
+      newsletter: 'Newsletter',
+      newsletterDesc: 'Abonnez-vous pour recevoir des mises à jour sur le droit pénal et nos derniers cas.',
+      newsletterPlaceholder: 'Entrez votre email',
+      newsletterBoton: 'S\'abonner',
+      // WhatsApp
+      whatsapp: 'WhatsApp',
+      whatsappDesc: 'Contactez-nous de toute urgence via WhatsApp',
+      whatsappBoton: 'Envoyer message',
+      atencion24h: 'Attention 24/7',
+      nuestroEquipo: 'Notre Équipe',
+      atencion: 'Attention',
+      defensaPenal: 'Défense Pénale',
+      idiomas: 'Langues',
+      verTodosServicios: 'Voir tous les services',
+      preguntasFrecuentes: 'Questions Fréquemment Posées',
+      defensaPenalUrgente: 'Défense Pénale Urgente',
+      derechosDetenidos: 'Droits des Détenus',
+      extradicionesEspana: 'Extraditions en Espagne',
+      primerosPasosComisaria: 'Premiers Pas au Commissariat',
+      casosExito: 'Cas de Succès',
+      libertadExpresion: 'Liberté d\'Expression',
+      operacionLuco: 'Opération Luco',
+      academiaYihad: 'Académie Jihad'
+    },
+
+    // Contact Section
+    contacto: {
+      title: 'Contactez-nous',
+      subtitle: 'Nous sommes disponibles 24/7 pour votre défense pénale',
+      description: 'Notre équipe d\'avocats pénalistes est prête à vous assister dans toute affaire pénale. Contactez-nous et nous répondrons immédiatement.',
+      // Contact form
+      formulario: {
+        titulo: 'Envoyez-nous votre consultation',
+        nombre: 'Nom complet',
+        email: 'Adresse email',
+        telefono: 'Numéro de téléphone',
+        asunto: 'Sujet',
+        mensaje: 'Message',
+        enviar: 'ENVOYER MESSAGE'
+      },
+      // Contact information
+      info: {
+        titulo: 'Informations de Contact',
+        telefono: 'Téléphone: +34 611 687 226',
+        email: 'Email: info@stansabogados.com',
+        direccion: 'Adresse: Calle de la Princesa 25, Madrid',
+        horario: 'Horaires: 24/7 pour urgences'
+      },
+      // Map
+      mapa: 'Notre emplacement',
+      // Call to action
+      cta: {
+        titulo: 'Besoin de défense urgente?',
+        descripcion: 'Nos avocats pénalistes sont disponibles 24 heures sur 24, 7 jours sur 7.',
+        boton: 'Appeler maintenant',
+        whatsapp: 'WhatsApp 24/7'
+      }
+    },
+
+    // FAQ Section
+    faq: {
+      title: 'Questions Fréquemment Posées',
+      subtitle: 'Trouvez des réponses à vos questions juridiques',
+      description: 'Plus de 90 questions fréquemment posées sur la défense pénale, le terrorisme et les droits.',
+      searchPlaceholder: 'Rechercher dans les questions fréquemment posées...',
+      noResults: 'Aucun résultat trouvé',
+      noResultsDescription: 'Essayez une recherche différente ou contactez directement notre équipe',
+      questionsAvailable: 'questions disponibles',
+      resultsFor: 'résultats pour',
+      allCategories: 'Toutes',
+      readFullArticle: 'Lire l\'article complet',
+      consultSpecialist: 'Consulter un spécialiste',
+      notFound: 'Vous ne trouvez pas votre réponse?',
+      notFoundDescription: 'Contactez notre équipe d\'avocats spécialisés. Première consultation pour évaluer votre cas. Disponible 24/7.',
+      sendConsultation: 'Envoyer une consultation',
+      urgentResponse: 'Réponse en moins de 1 heure pour les cas urgents',
+      categories: {
+        todas: 'Toutes',
+        terrorismo: 'Terrorisme',
+        extradicion: 'Extradition',
+        defensaUrgente: 'Défense Urgente',
+        derechosFundamentales: 'Droits Fondamentaux'
+      }
+    },
+
+    // Cases Section
+    casos: {
+      filtros: {
+        title: 'Filtrer par catégorie:',
+        todasCategorias: 'Toutes les catégories',
+        noEncontrados: 'Aucun cas trouvé pour cette catégorie.',
+        todos: 'Tous'
+      },
+      categorias: {
+        delitosOdio: 'Crimes de haine et liberté d\'expression',
+        terrorismo: 'Terrorisme et Audience Nationale',
+        robosViolencia: 'Vols avec violence et groupe criminel',
+        delitosPersonas: 'Crimes contre les personnes',
+        delitosEconomicos: 'Crimes économiques et contre le patrimoine',
+        ordenPublico: 'Crimes contre l\'ordre public, drogues et exécution pénale',
+        delitosSaludPublica: 'Crimes contre la santé publique',
+        delitosAutoridad: 'Crimes contre l\'autorité',
+        delitosPatrimoniales: 'Crimes patrimoniaux',
+        delitosLibertad: 'Crimes contre la liberté',
+        delitosTrabajadores: 'Crimes contre les droits des travailleurs',
+        ejecucionPenal: 'Exécution pénale',
+        delitosVida: 'Crimes contre la vie',
+        organizacionCriminal: 'Appartenance à organisation criminelle',
+        cibercrimen: 'Cybercriminalité et nouvelles technologies',
+        delitosIntegridad: 'Crimes contre l\'intégrité et liberté morale'
+      },
+      camposCasos: {
+        categoria: 'Catégorie',
+        delitoPrincipal: 'Crime Principal',
+        resultado: 'Résultat',
+        tipoResolucion: 'Type de Résolution',
+        organo: 'Organe',
+        medidasCautelares: 'Mesures Préventives',
+        observaciones: 'Observations',
+        fichaRapida: 'Fiche Rapide',
+        fichaCompleta: 'Fiche Complète',
+        documentacion: 'Documentation'
+      },
+      // Common case result translations
+      resultadosCasos: {
+        sobreseimiento: 'Non-lieu',
+        absolucion: 'Acquittement',
+        condena: 'Condamnation',
+        archivoDiligencias: 'Classement des Diligences',
+        autoSobreseimiento: 'Ordonnance de Non-lieu',
+        sentenciaAbsolutoria: 'Jugement d\'Acquittement'
+      },
+      title: 'Affaires Pénales',
+      subtitle: 'Histoires de succès en défense pénale. Affaires réelles résolues par notre équipe d\'avocats.',
+      casos: {
+        verDetalles: 'Voir les détails',
+        casoPopular: 'Affaire Populaire',
+        resultado: 'Résultat:',
+        organo: 'Organe:',
+        tipo: 'Type:'
+      },
+      cta: {
+        title: 'Avez-vous une affaire similaire?',
+        description: 'Notre équipe d\'avocats pénalistes est prête à défendre vos droits. Contactez-nous maintenant 24/7.',
+        consultarCaso: 'Consulter votre affaire',
+        llamarAhora: 'Appeler Maintenant'
+      },
+      privacidad: {
+        title: 'Note de Confidentialité',
+        description: 'Pour des raisons de confidentialité et de protection des données, seule une sélection représentative de nos affaires est affichée sur ce site web. Si vous avez besoin de plus d\'exemples spécifiques ou avez une affaire similaire, n\'hésitez pas à la consulter directement avec notre équipe.',
+        consultarEquipo: 'Consulter notre équipe'
+      },
+      tiposResolucion: {
+        sobreseimiento: 'Non-lieu',
+        sentencia: 'Jugement',
+        auto: 'Ordonnance',
+        diligencias: 'Diligences',
+        archivo: 'Classement'
+      }
+    },
+
+    // Cases Highlight Section (Home Page)
+    casosDestacados: {
+      title: 'Affaires en Vedette',
+      subtitle: 'Découvrez quelques-unes de nos affaires les plus pertinentes et réussies dans différents domaines du droit pénal.',
+      verCasoCompleto: 'Voir l\'affaire complète',
+      verCasoEnCurso: 'Affaire en cours',
+      organo: 'Organe:',
+      resultado: 'Résultat:',
+      tipo: 'Type:',
+      verTodosCasos: 'Voir toutes les affaires',
+      favorable: 'FAVORABLE',
+      enCurso: 'EN COURS',
+      informacionProtegida: 'Informations protégées pour des raisons de confidentialité'
+    },
+
+    // Case Section
+    caso: {
+      volverCasos: 'Retour aux cas',
+      casoNoEncontrado: 'Cas non trouvé',
+      casoPopular: 'Cas Populaire',
+      botones: {
+        fichaRapida: 'Fiche Rapide',
+        expandirTodas: 'Développer toutes les sections',
+        comprimirTodas: 'Réduire toutes les sections'
+      },
+      secciones: {
+        resumen: 'Résumé',
+        hechos: 'Faits',
+        estrategia: 'Stratégie de Défense',
+        pruebas: 'Preuves Clés',
+        resolucion: 'Résolution',
+        marcoLegal: 'Cadre Juridique',
+        imagenes: 'Images du Dossier',
+        enlaces: 'Liens et Notes'
+      },
+      fichaRapida: {
+        title: 'Fiche Rapide',
+        categoria: 'Catégorie',
+        delitoPrincipal: 'Crime Principal',
+        resultado: 'Résultat',
+        tipoResolucion: 'Type de Résolution',
+        faseProcesal: 'Phase Procédurale',
+        medidasCautelares: 'Mesures Préventives',
+        observaciones: 'Observations',
+        etiquetas: 'Étiquettes'
+      },
+      enlaces: {
+        noticiasRelacionadas: 'Actualités liées:',
+        enlacesOficiales: 'Liens officiels:',
+        verNoticia: 'Voir l\'actualité'
+      },
+      privacidad: {
+        title: 'Note de Confidentialité',
+        description: 'Pour des raisons de confidentialité et de protection des données, seule une sélection représentative de nos cas est affichée sur ce site web. Si vous avez besoin de plus d\'exemples spécifiques ou avez un cas similaire, n\'hésitez pas à le consulter directement avec notre équipe.',
+        consultarEquipo: 'Consulter notre équipe'
+      }
+    },
+
+    // Blog Section
+    blog: {
+      title: 'Blog Juridique STANS',
+      subtitle: 'Connaissance spécialisée en droit pénal. Articles, guides et analyses sur les questions juridiques affectant notre société.',
+      hubsTitle: 'Hubs de Contenu',
+      hubsSubtitle: 'Guides complets sur des thèmes spécifiques du droit pénal',
+      articulosRecientes: 'Articles Récents',
+      articulosSubtitle: 'Restez informé avec nos dernières analyses et guides juridiques',
+      mantenerseInformado: 'Restez Informé',
+      newsletterDescription: 'Recevez nos derniers articles et mises à jour juridiques dans votre courrier électronique.',
+      placeholder: 'Votre adresse email',
+      suscribirse: 'S\'abonner',
+      cargarMas: 'Charger plus d\'articles',
+      legalExpert: 'Analyse Juridique Experte',
+      actualizacionSemanal: 'Mise à Jour Hebdomadaire',
+      casosReales: 'Cas Réels',
+      min: 'min',
+      articles: 'articles',
+      contactaAhora: 'Contactez Maintenant',
+      articulosRelacionados: 'Articles Connexes',
+      verMas: 'Voir plus',
+      leerMas: 'Lire plus',
+      minutosLectura: 'minutes de lecture',
+      minLectura: 'min de lecture',
+      compartirArticulo: 'Partager l\'article',
+      // Hubs de contenu
+      hubs: {
+        terrorismoAudienciaNacional: {
+          title: 'Terrorisme et Audience Nationale',
+          description: 'Défense pénale spécialisée dans les crimes de terrorisme. Enaltecimiento, recrutement djihadiste, financement et organisation terroriste.'
+        },
+        defensaPenalUrgente: {
+          title: 'Défense Pénale Urgente',
+          description: 'Guides complets pour les situations d\'urgence pénale : arrestations, perquisitions, déclarations et premières étapes.'
+        },
+        procedimientosExtradicion: {
+          title: 'Procédures d\'Extradition',
+          description: 'Tout sur les extraditions : procédures UE, droits de l\'extradé, délais et ressources disponibles.'
+        },
+        derechosDetenidos: {
+          title: 'Droits des Détenus',
+          description: 'Connaissez vos droits en tant que détenu : assistance juridique, communications, conditions et habeas corpus.'
+        }
+      },
+      // Posts du blog
+      posts: {
+        defensaPenalUrgente: {
+          title: 'Défense Pénale Urgente : Guide Complet pour les Détenus',
+          excerpt: 'Tout ce que vous devez savoir lorsque vous êtes arrêté : droits, procédure et comment agir. Guide pratique pour les situations d\'urgence pénale.',
+          category: 'Défense Pénale Urgente'
+        },
+        procedimientosExtradicion: {
+          title: 'Procédures d\'Extradition en Espagne : Tout ce que Vous Devez Savoir',
+          excerpt: 'Analyse complète du processus d\'extradition : exigences légales, délais, droits de l\'extradé et stratégies de défense.',
+          category: 'Extraditions'
+        },
+        derechosDetenidos: {
+          title: 'Droits des Détenus : Connaissez vos Garanties Procédurales',
+          excerpt: 'Découvrez tous les droits que vous avez en tant que détenu : assistance juridique, communication, conditions de détention et habeas corpus.',
+          category: 'Droits des Détenus'
+        },
+        delitosSaludPublica: {
+          title: 'Crimes contre la Santé Publique : Drogues et Conséquences Légales',
+          excerpt: 'Analyse détaillée des crimes liés aux substances stupéfiantes : types, peines, facteurs atténuants et stratégies de défense.',
+          category: 'Crimes contre la Santé Publique'
+        },
+        terrorismoInternet: {
+          title: 'Terrorisme sur Internet : Enaltecimiento et Recrutement en Ligne',
+          excerpt: 'Étude des crimes de terrorisme dans la sphère numérique : enaltecimiento, recrutement djihadiste et responsabilité pénale sur les réseaux sociaux.',
+          category: 'Cybersécurité Pénale'
+        },
+        blanqueoCapitales: {
+          title: 'Blanchiment d\'Argent : Comment le Détecter et se Défendre',
+          excerpt: 'Guide complet sur le crime de blanchiment : origine des fonds, techniques de blanchiment, responsabilité pénale et stratégies de défense.',
+          category: 'Crimes Économiques'
+        }
+      }
+    },
+
+    // API Messages
+    api: {
+      lead: {
+        success: 'Votre message a été envoyé avec succès. Nous vous contacterons bientôt.',
+        error: 'Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer.',
+        validation: {
+          nameRequired: 'Le nom est requis',
+          emailRequired: 'L\'email est requis',
+          emailInvalid: 'L\'email est invalide',
+          messageRequired: 'Le message est requis',
+          phoneInvalid: 'Le numéro de téléphone est invalide'
+        }
+      }
+    },
+
+    // 404 Page
+    notFound: {
+      title: 'Page non trouvée',
+      subtitle: 'Nous n\'avons pas pu trouver la page que vous cherchez',
+      description: 'La page a peut-être été déplacée, supprimée ou le lien est incorrect.',
+      backHome: 'Retour à l\'accueil',
+      backBlog: 'Retour au blog',
+      contactUs: 'Contactez-nous',
+      helpText: 'Si vous avez besoin d\'aide urgente, contactez-nous au :'
+    },
+
+    // Breadcrumb Navigation
+    breadcrumb: {
+      inicio: 'Accueil',
+      volver: 'Retour',
+      navegacion: 'Navigation fil d\'Ariane',
+      blog: 'Blog'
+    },
+
+    // Table of Contents Component
+    tableOfContents: {
+      title: 'Index de l\'Article',
+      expandir: 'Développer l\'index',
+      comprimir: 'Compresser l\'index'
+    },
+
+    // Contact Section
+    contact: {
+      title: 'CONTACT',
+      subtitle: 'NOUS POUVONS RÉSOUDRE VOTRE PROBLÈME JURIDIQUE AVEC LE MEILLEUR RÉSULTAT POSSIBLE',
+      description: 'Exposez-nous votre cas et nous vous appellerons pour vous donner plus d\'informations.',
+      form: {
+        nombre: 'Nom *',
+        email: 'Email *',
+        telefono: 'Téléphone *',
+        mensaje: 'Comment pouvons-nous vous aider ? *',
+        placeholder: 'Expliquez votre cas en détail...',
+        privacidad: 'J\'ai lu et j\'accepte la politique de protection des données. *',
+        enviar: 'ENVOYER MESSAGE'
+      },
+      leadForm: {
+        email: 'Votre email',
+        mensaje: 'Dites-nous brièvement (optionnel)',
+        privacidad: 'J\'accepte la Politique de Confidentialité',
+        enviando: 'Envoi en cours…',
+        enviar: 'Résoudre mon doute',
+        gracias: 'Merci. Nous vous contacterons dans les plus brefs délais. En cas d\'urgence, utilisez WhatsApp 24/7.',
+        error: 'Une erreur s\'est produite. Réessayez.'
+      },
+      phrases: [
+        'Mon cas concerne de la violence de genre et j\'ai besoin d\'une défense urgente.',
+        'J\'ai eu un problème d\'alcoolémie et je veux protéger mon permis.',
+        'J\'ai été arrêté pour un vol possible et j\'ai besoin d\'assistance immédiate.',
+        'Je suis accusé de trafic de drogue et j\'ai besoin d\'aide juridique.',
+        'Je suis sous enquête pour falsification de documents et je veux préparer ma défense.',
+        'Je suis victime d\'un crime informatique et j\'ai besoin de conseils.',
+        'Je veux faire appel d\'une condamnation injuste.',
+        'J\'ai été convoqué pour témoigner au commissariat et j\'ai besoin d\'un avocat TOUT DE SUITE.'
+      ]
+    },
+
+    // Statistics section
+    stats: {
+      title: 'Nos Chiffres et Résultats',
+      subtitle: 'Plus d\'une décennie d\'expérience dans la défense des droits de nos clients. Des résultats qui parlent d\'eux-mêmes.',
+      casos: {
+        number: '200+',
+        label: 'Affaires Réussies',
+        description: 'Défenses gagnées devant les tribunaux'
+      },
+      experiencia: {
+        number: '15+',
+        label: 'Années d\'Expérience',
+        description: 'Spécialisation en droit pénal'
+      },
+      respuesta: {
+        number: '<1',
+        label: 'Heure de Réponse',
+        description: 'Assistance immédiate 24/7'
+      },
+      idiomas: {
+        number: '3',
+        label: 'Langues',
+        description: 'Espagnol, Anglais et Arabe'
+      }
+    },
+
+    // Website metadata
+    metadata: {
+      title: 'STANS ABOGADOS — Défense Pénale 24/7 à Madrid et en Espagne | Avocats Pénaux',
+      description: 'Spécialistes en Droit Pénal à Madrid et en Espagne. Défense pénale 24/7, réponse en moins de 15 minutes. Avocats pénaux inscrits à l\'ICAM. Services en espagnol, anglais et arabe. Extraditions, MAE, affaires complexes.',
+      keywords: 'avocat pénal Madrid, défense pénale Espagne, avocat pénal, droit pénal, extradition Espagne Maroc, MAE, défense 24/7, avocat arabe Madrid, pénal économique, droits fondamentaux, criminalité organisée, terrorisme, vol cambriolage, trafic drogue, violence genre, alcoolemie trafic, falsification document, crimes informatiques',
+      openGraph: {
+        title: 'STANS ABOGADOS — Défense Pénale 24/7 à Madrid et en Espagne',
+        description: 'Spécialistes en Droit Pénal. Défense pénale 24/7, réponse en moins de 15 minutes. Avocats pénaux inscrits à l\'ICAM. Espagnol, anglais et arabe.',
+        alt: 'STANS ABOGADOS - Défense Pénale 24/7'
+      },
+      twitter: {
+        title: 'STANS ABOGADOS — Défense Pénale 24/7 à Madrid et en Espagne',
+        description: 'Spécialistes en Droit Pénal. Défense pénale 24/7, réponse en moins de 15 minutes. Avocats pénaux inscrits à l\'ICAM.'
+      },
+      schema: {
+        name: 'STANS ABOGADOS',
+        description: 'Spécialistes en Droit Pénal à Madrid et en Espagne. Défense pénale 24/7, réponse en moins de 15 minutes.',
+        serviceType: 'Droit Pénal',
+        serviceCatalog: 'Services de Défense Pénale',
+        service24h: 'Assistance juridique pénale immédiate 24 heures sur 24',
+        extraditionService: 'Procédures d\'extradition entre l\'Espagne et le Maroc',
+        employees: {
+          ruben: 'Pénal et pénal économique, droits fondamentaux, MAE et extraditions',
+          mounir: 'Pénal et administratif. Spécialiste en droit marocain et extraditions',
+          diego: 'Défense dans les affaires complexes : crime organisé, terrorisme'
+        }
+      }
+    }
+  },
 };
