@@ -301,10 +301,12 @@ export default function CaseCard({ caso }: Props) {
         {getTranslatedCategory(caso.categoria, language, t)}
       </div>
 
-      {/* Título del caso */}
-      <h3 className="text-lg font-semibold group-hover:text-gold transition-colors mb-3 leading-tight">
-        {getTranslatedCaseName(caso.id, caso.nombre.replace(/^CASO\s*-?\s*/, ''), language)}
-      </h3>
+      {/* Título del caso - Clickeable */}
+      <Link href={getCaseUrl(caso)}>
+        <h3 className="text-lg font-semibold group-hover:text-gold transition-colors mb-3 leading-tight cursor-pointer">
+          {getTranslatedCaseName(caso.id, caso.nombre.replace(/^CASO\s*-?\s*/, ''), language)}
+        </h3>
+      </Link>
 
       {/* Información del caso */}
       <div className="space-y-2 mb-4 flex-grow">

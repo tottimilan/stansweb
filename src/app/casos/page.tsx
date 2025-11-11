@@ -439,9 +439,11 @@ export default function CasosPage() {
                     <span className="inline-block bg-gold/10 text-gold text-xs font-medium px-3 py-1 rounded-full mb-3 border border-gold/20">
                       {language === 'es' ? caso.delito_principal : (delitoPrincipalMap[caso.delito_principal] || caso.delito_principal)}
                     </span>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-offwhite group-hover:text-gold transition-colors mb-2 line-clamp-2">
-                      {getTranslatedCaseName(caso.id, caso.nombre, language)}
-                    </h3>
+                    <Link href={(seoInfo as any)[caso.id]?.url || `/casos/${caso.id}`}>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-offwhite group-hover:text-gold transition-colors mb-2 line-clamp-2 cursor-pointer">
+                        {getTranslatedCaseName(caso.id, caso.nombre, language)}
+                      </h3>
+                    </Link>
                     <p className="text-offwhite/60 text-sm">
                       {getTranslatedCategory(caso.categoria, language, t)}
                     </p>
