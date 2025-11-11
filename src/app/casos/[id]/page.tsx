@@ -1,10 +1,11 @@
 'use client'
 
 import { useParams, useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { translations } from '@/translations'
-import { getTranslatedCaseField } from '@/translations/cases'
+import { getTranslatedCaseField, getCaseTranslation } from '@/translations/cases'
 import { motion } from 'framer-motion'
 
 // Función para traducir categorías
@@ -105,7 +106,7 @@ const organoMap: { [key: string]: string } = {
   'Juzgado de Instrucción nº 1 de San Roque (Cádiz)': 'محكمة التحقيق رقم 1 في سان روكي (قادس)'
 };
 
-import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown } from 'lucide-react'
+import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown, Tv, Play, Newspaper } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/FooterOptimized'
 import CasoSEOContent from '@/components/CasoSEOContent'
@@ -191,6 +192,7 @@ export default function CasoDetailPage() {
     pruebas: true,
     resolucion: true,
     marco_legal: true,
+    cobertura_mediatica: true,
     imagenes: true,
     enlaces: true
   })
@@ -381,6 +383,7 @@ export default function CasoDetailPage() {
                        pruebas: newState,
                        resolucion: newState,
                        marco_legal: newState,
+                       cobertura_mediatica: newState,
                        imagenes: newState,
                        enlaces: newState
                      })
@@ -401,6 +404,168 @@ export default function CasoDetailPage() {
                 </div>
               )}
             </div>
+
+          {/* Cobertura Mediática DESTACADA - Al inicio del caso */}
+          {(() => {
+            const translation = getCaseTranslation(caso.id, language);
+            return translation?.contenido?.cobertura_mediatica;
+          })() && !caso.caso_en_curso && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="group rounded-2xl border border-purple-500/30 bg-gradient-to-br from-purple-900/10 to-blue-900/10 backdrop-blur-sm p-6 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 mb-8"
+              id="cobertura-mediatica-top"
+            >
+              {(() => {
+                const translation = getCaseTranslation(caso.id, language);
+                const cobertura = translation?.contenido?.cobertura_mediatica;
+                
+                if (!cobertura) return null;
+                
+                return (
+                  <>
+                    <div className="flex items-center justify-between mb-6">
+                      <div className="flex items-center gap-3">
+                        <div className="text-purple-400 group-hover:text-purple-300 transition-colors">
+                          <Tv className="w-8 h-8" />
+                        </div>
+                        <h2 className="text-lg font-bold text-purple-400 group-hover:text-purple-300 transition-colors">
+                          {cobertura.titulo}
+                        </h2>
+                      </div>
+                      <button
+                        onClick={() => setExpandedSections(prev => ({ ...prev, cobertura_mediatica: !prev.cobertura_mediatica }))}
+                        className="text-purple-400 hover:text-purple-300 transition-colors"
+                      >
+                        <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${expandedSections.cobertura_mediatica ? 'rotate-180' : ''}`} />
+                      </button>
+                    </div>
+
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedSections.cobertura_mediatica ? 'max-h-none' : 'max-h-0'}`}>
+                      <p className="text-offwhite/90 mb-6 text-base leading-relaxed">
+                        {cobertura.descripcion.split(/(Rubén Vaquero|Stans Abogados)/g).map((part, index) => {
+                          if (part === 'Rubén Vaquero') {
+                            return (
+                              <Link 
+                                key={index} 
+                                href="/equipo/ruben-vaquero-arribas"
+                                className="text-gold hover:text-apricot transition-colors font-medium underline decoration-gold/30 hover:decoration-apricot/50"
+                              >
+                                {part}
+                              </Link>
+                            );
+                          }
+                          if (part === 'Stans Abogados') {
+                            return (
+                              <Link 
+                                key={index} 
+                                href="/"
+                                className="font-bold text-gold hover:text-apricot transition-colors"
+                              >
+                                Stans Abogados
+                              </Link>
+                            );
+                          }
+                          return part;
+                        })}
+                      </p>
+
+                    {/* Noticia Destacada */}
+                    <div className="bg-black/30 rounded-xl p-5 mb-6 border border-gold/20 hover:border-gold/40 transition-colors">
+                      <div className="flex items-start gap-3 mb-4">
+                        <Newspaper className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                        <div className="flex-1">
+                          <h3 className="text-gold font-bold text-base mb-2">
+                            {cobertura.noticia.titulo}
+                          </h3>
+                          <div className="flex flex-wrap gap-3 text-sm text-offwhite/60 mb-3">
+                            <span className="flex items-center gap-1">
+                              <Newspaper className="w-4 h-4" />
+                              {cobertura.noticia.medio}
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <Calendar className="w-4 h-4" />
+                              {cobertura.noticia.fecha}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Citas Destacadas */}
+                      {cobertura.noticia.destacados && cobertura.noticia.destacados.length > 0 && (
+                        <div className="space-y-3 mb-4">
+                          {cobertura.noticia.destacados.map((destacado, index) => (
+                            <div key={index} className="border-l-3 border-gold/50 pl-4 py-2">
+                              <p className="text-offwhite/90 italic text-sm leading-relaxed">
+                                {destacado}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      <a
+                        href={cobertura.noticia.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-gold hover:text-apricot transition-colors text-sm font-medium"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Leer noticia completa
+                      </a>
+                    </div>
+
+                    {/* Video de YouTube */}
+                    {cobertura.video && (
+                      <div className="bg-black/30 rounded-xl p-5 mb-6 border border-red-500/20 hover:border-red-500/40 transition-colors">
+                        <div className="flex items-center gap-3 mb-3">
+                          <Play className="w-6 h-6 text-red-500" />
+                          <h3 className="text-red-400 font-bold text-base">
+                            {cobertura.video.titulo}
+                          </h3>
+                        </div>
+                        
+                        <p className="text-offwhite/70 text-sm mb-4">
+                          {cobertura.video.descripcion}
+                        </p>
+
+                        {/* Iframe de YouTube con aspecto ratio 16:9 */}
+                        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                          <iframe
+                            className="absolute top-0 left-0 w-full h-full rounded-lg"
+                            src={`https://www.youtube.com/embed/${cobertura.video.url.split('v=')[1]?.split('&')[0] || cobertura.video.url.split('/').pop()}`}
+                            title={cobertura.video.titulo}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Impacto Social */}
+                    {cobertura.impacto_social && (
+                      <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-xl p-5">
+                        <div className="flex items-start gap-3">
+                          <Users className="w-6 h-6 text-emerald-400 flex-shrink-0 mt-1" />
+                          <div>
+                            <h3 className="text-emerald-400 font-bold text-base mb-2">
+                              Impacto Social
+                            </h3>
+                            <p className="text-offwhite/80 text-sm leading-relaxed">
+                              {cobertura.impacto_social}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    </div>
+                  </>
+                );
+              })()}
+            </motion.div>
+          )}
            
           {/* Advertencia para casos en curso */}
           {caso.caso_en_curso && (
@@ -645,6 +810,16 @@ export default function CasoDetailPage() {
                 </motion.div>
               )}
 
+              {/* 
+                SECCIÓN DE COBERTURA MEDIÁTICA (SEGUNDA UBICACIÓN)
+                ===================================================
+                Esta sección fue removida temporalmente (después del marco legal).
+                La cobertura mediática solo aparece al inicio del caso.
+                
+                Si se necesita en el futuro, puede restaurarse desde el historio de Git.
+                Commit: [buscar "Cobertura Mediática - Solo para casos específicos"]
+              */}
+
               {/* Imágenes */}
               {caso.contenido?.imagenes && (
                                  <motion.div
@@ -728,6 +903,44 @@ export default function CasoDetailPage() {
                     </button>
                   </div>
                                      <div className={`space-y-6 overflow-hidden transition-all duration-300 ${expandedSections.enlaces ? 'max-h-none' : 'max-h-0'}`}>
+                     {/* Cobertura mediática adicional */}
+                     {(() => {
+                       const translation = getCaseTranslation(caso.id, language);
+                       const cobertura = translation?.contenido?.cobertura_mediatica;
+                       if (!cobertura) return null;
+                       
+                       return (
+                         <div>
+                           <h3 className="text-lg font-semibold text-purple-400 mb-3 flex items-center gap-2">
+                             <Tv className="w-5 h-5" />
+                             Cobertura Mediática
+                           </h3>
+                           <div className="bg-purple-900/10 border border-purple-500/20 rounded-lg p-4">
+                             <a
+                               href={cobertura.noticia.url}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               className="flex items-start gap-3 hover:bg-purple-900/20 -m-2 p-2 rounded-lg transition-colors"
+                             >
+                               <Newspaper className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                               <div className="flex-1">
+                                 <h4 className="text-gold font-medium mb-1 hover:text-apricot transition-colors">
+                                   {cobertura.noticia.titulo}
+                                 </h4>
+                                 <p className="text-xs text-offwhite/60 mb-2">
+                                   {cobertura.noticia.medio} • {cobertura.noticia.fecha}
+                                 </p>
+                                 <div className="flex items-center gap-2 text-sm text-purple-400">
+                                   <ExternalLink className="w-4 h-4" />
+                                   Ver entrevista completa
+                                 </div>
+                               </div>
+                             </a>
+                           </div>
+                         </div>
+                       );
+                     })()}
+                     
                      {/* Mostrar noticias del Excel si existen */}
                      {caso.noticias && (
                        <div>

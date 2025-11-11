@@ -5,16 +5,16 @@ export function useCaseTranslation(caseId: string) {
   const { language } = useLanguage();
   
   const getTranslation = (): CaseTranslation | null => {
-    return getCaseTranslation(parseInt(caseId), language as 'es' | 'ar');
+    return getCaseTranslation(parseInt(caseId), language as 'es' | 'ar' | 'en' | 'fr');
   };
-  
+
   const getField = (field: keyof CaseTranslation): string => {
-    return getTranslatedCaseField(parseInt(caseId), field, language as 'es' | 'ar');
+    return getTranslatedCaseField(parseInt(caseId), field, language as 'es' | 'ar' | 'en' | 'fr');
   };
   
-  const getContent = (section: keyof CaseTranslation['contenido']): string => {
+  const getContent = (section: Exclude<keyof CaseTranslation['contenido'], 'cobertura_mediatica'>): string => {
     const translation = getTranslation();
-    return translation?.contenido?.[section] || '';
+    return (translation?.contenido?.[section] as string) || '';
   };
   
   return {

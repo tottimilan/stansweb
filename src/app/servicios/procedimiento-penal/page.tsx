@@ -48,68 +48,166 @@ const faqs = {
       question: "كم تستغرق التحقيقات في قضية جنائية؟",
       answer: "التحقيق العادي يستمر 18 شهرًا كحد أقصى (قابلة للتمديد 18 شهرًا إضافية في القضايا المعقدة). الإجراءات المختصرة لها 6 أشهر. إذا تجاوزت هذه المدد دون تمديد مبرر، يجب حفظ القضية."
     }
+  ],
+  en: [
+    {
+      question: "What is habeas corpus?",
+      answer: "It is an urgent procedure for a judge to examine the legality of a detention. It must be resolved within a maximum of 24 hours and allows the release of anyone detained illegally or in inadequate conditions."
+    },
+    {
+      question: "When can I appeal a criminal sentence?",
+      answer: "Generally, you have 10 days to appeal and 5 days for cassation from the notification. It is crucial to act quickly and have solid grounds: error in the assessment of evidence, procedural infringement or breach of law."
+    },
+    {
+      question: "What are precautionary measures?",
+      answer: "They are temporary restrictions during the procedure: provisional prison, release on bail, passport withdrawal, travel ban, periodic appearances. They are reviewed every 3 months and can be modified according to the evolution of the case."
+    },
+    {
+      question: "How long does the investigation of a criminal case take?",
+      answer: "The ordinary investigation lasts a maximum of 18 months (extendable by 18 more months in complex cases). Summary proceedings have 6 months. If these deadlines are exceeded without justified extension, the case must be archived."
+    }
+  ],
+  fr: [
+    {
+      question: "Qu'est-ce que l'habeas corpus?",
+      answer: "C'est une procédure urgente pour qu'un juge examine la légalité d'une détention. Elle doit être résolue dans un maximum de 24 heures et permet la libération de toute personne détenue illégalement ou dans des conditions inadéquates."
+    },
+    {
+      question: "Quand puis-je faire appel d'une sentence pénale?",
+      answer: "Généralement, vous avez 10 jours pour faire appel et 5 jours pour la cassation à compter de la notification. Il est crucial d'agir rapidement et d'avoir des motifs solides : erreur dans l'appréciation des preuves, atteinte procédurale ou violation de la loi."
+    },
+    {
+      question: "Quelles sont les mesures précautionnelles?",
+      answer: "Ce sont des restrictions temporaires pendant la procédure : prison provisoire, liberté sous caution, retrait du passeport, interdiction de voyager, comparutions périodiques. Elles sont révisées tous les 3 mois et peuvent être modifiées selon l'évolution de l'affaire."
+    },
+    {
+      question: "Combien de temps dure l'enquête d'une affaire pénale?",
+      answer: "L'enquête ordinaire dure un maximum de 18 mois (prolongeable de 18 mois supplémentaires dans les affaires complexes). Les procédures sommaires ont 6 mois. Si ces délais sont dépassés sans prolongation justifiée, l'affaire doit être archivée."
+    }
   ]
 };
 
 export default function ProcedimientoPenalPage() {
   const { language } = useLanguage();
-  const t = language === 'ar' ? {
-    title: "محامي الإجراءات الجنائية والطعون",
-    subtitle: "دفاع متخصص في جميع مراحل الإجراءات الجنائية من الاعتقال إلى الطعون",
-    description: "متخصصون في جميع مراحل الإجراءات الجنائية. من الدفاع في الاعتقال الأولي إلى الطعون في المحكمة العليا. خبرة في الإحضار القضائي والتدابير الاحترازية والطعون والموارد الاستثنائية.",
-    features: {
-      title: "خدماتنا في الإجراءات الجنائية",
-      items: [
-        "الدفاع العاجل في الاعتقالات - 24/7",
-        "الإحضار القضائي والطعون الاستعجالية",
-        "التدابير الاحترازية والحرية المؤقتة",
-        "الطعون: الاستئناف والنقض والطعن",
-        "الموارد الاستثنائية والمراجعة",
-        "المرافقة في جميع مراحل الإجراءات"
-      ]
+  const translations = {
+    es: {
+      title: "Abogado Procedimiento Penal y Recursos",
+      subtitle: "Defensa especializada en todas las fases del procedimiento penal desde la detención hasta los recursos",
+      description: "Especialistas en todas las fases del procedimiento penal. Desde la defensa en la detención inicial hasta los recursos ante el Tribunal Supremo. Experiencia en habeas corpus, medidas cautelares, apelaciones y recursos extraordinarios.",
+      features: {
+        title: "Nuestros Servicios en Procedimiento Penal",
+        items: [
+          "Defensa urgente en detenciones - 24/7",
+          "Habeas corpus y recursos de urgencia",
+          "Medidas cautelares y libertad provisional",
+          "Recursos: apelación, casación y amparo",
+          "Recursos extraordinarios y revisión",
+          "Acompañamiento en todas las fases procesales"
+        ]
+      },
+      relatedCases: "Artículos relacionados",
+      faq: "Preguntas Frecuentes",
+      cta: {
+        title: "¿Necesitas Defensa Urgente o Recurrir una Sentencia?",
+        description: "Nuestro equipo especializado en procedimiento penal está disponible 24/7 para proteger tus derechos en cualquier fase",
+        button: "Defensa Urgente"
+      },
+      seo: {
+        title: "Abogados Especialistas en Procedimiento Penal y Recursos en Madrid",
+        content1: "En STANS ABOGADOS somos expertos en todas las fases del procedimiento penal. Desde el primer momento de la detención hasta los recursos finales ante el Tribunal Supremo, ofrecemos una defensa técnica especializada que garantiza la protección de tus derechos fundamentales.",
+        content2: "Nuestro equipo cuenta con amplia experiencia en procedimientos urgentes como el habeas corpus, así como en la preparación y presentación de todo tipo de recursos. Trabajamos con rapidez y eficacia para garantizar el mejor resultado posible en cada fase del proceso.",
+        content3: "Ofrecemos un servicio integral que incluye la defensa en fase de instrucción, negociación de medidas cautelares, representación en juicios orales y preparación de recursos. Disponibles 24/7 para respuesta inmediata en situaciones de emergencia."
+      }
     },
-    relatedCases: "مقالات ذات صلة",
-    faq: "أسئلة متكررة",
-    cta: {
-      title: "هل تحتاج إلى دفاع عاجل أو طعن في حكم؟",
-      description: "فريقنا المتخصص في الإجراءات الجنائية متاح 24/7 لحماية حقوقك في أي مرحلة",
-      button: "دفاع عاجل"
+    ar: {
+      title: "محامي الإجراءات الجنائية والطعون",
+      subtitle: "دفاع متخصص في جميع مراحل الإجراءات الجنائية من الاعتقال إلى الطعون",
+      description: "متخصصون في جميع مراحل الإجراءات الجنائية. من الدفاع في الاعتقال الأولي إلى الطعون في المحكمة العليا. خبرة في الإحضار القضائي والتدابير الاحترازية والطعون والموارد الاستثنائية.",
+      features: {
+        title: "خدماتنا في الإجراءات الجنائية",
+        items: [
+          "الدفاع العاجل في الاعتقالات - 24/7",
+          "الإحضار القضائي والطعون الاستعجالية",
+          "التدابير الاحترازية والحرية المؤقتة",
+          "الطعون: الاستئناف والنقض والطعن",
+          "الموارد الاستثنائية والمراجعة",
+          "المرافقة في جميع مراحل الإجراءات"
+        ]
+      },
+      relatedCases: "قضايا ذات صلة",
+      faq: "أسئلة متكررة",
+      cta: {
+        title: "هل تحتاج إلى دفاع عاجل أو طعن في حكم؟",
+        description: "فريقنا المتخصص في الإجراءات الجنائية متاح 24/7 لحماية حقوقك في أي مرحلة",
+        button: "دفاع عاجل"
+      },
+      seo: {
+        title: "محامون متخصصون في الإجراءات الجنائية والطعون في مدريد",
+        content1: "في ستانس للمحاماة، نحن خبراء في جميع مراحل الإجراءات الجنائية. من اللحظة الأولى للاعتقال إلى الطعون النهائية في المحكمة العليا، نقدم دفاعًا تقنيًا متخصصًا يضمن حماية حقوقك الأساسية.",
+        content2: "فريقنا لديه خبرة واسعة في الإجراءات العاجلة مثل الإحضار القضائي، وكذلك في إعداد وتقديم جميع أنواع الطعون. نعمل بسرعة وفعالية لضمان أفضل نتيجة ممكنة في كل مرحلة من مراحل العملية.",
+        content3: "نقدم خدمة شاملة تشمل الدفاع في مرحلة التحقيق، والتفاوض على التدابير الاحترازية، والتمثيل في المحاكمات، وإعداد الطعون. متاحون 24/7 للاستجابة الفورية في حالات الطوارئ."
+      }
     },
-    seo: {
-      title: "محامون متخصصون في الإجراءات الجنائية والطعون في مدريد",
-      content1: "في ستانس للمحاماة، نحن خبراء في جميع مراحل الإجراءات الجنائية. من اللحظة الأولى للاعتقال إلى الطعون النهائية في المحكمة العليا، نقدم دفاعًا تقنيًا متخصصًا يضمن حماية حقوقك الأساسية.",
-      content2: "فريقنا لديه خبرة واسعة في الإجراءات العاجلة مثل الإحضار القضائي، وكذلك في إعداد وتقديم جميع أنواع الطعون. نعمل بسرعة وفعالية لضمان أفضل نتيجة ممكنة في كل مرحلة من مراحل العملية.",
-      content3: "نقدم خدمة شاملة تشمل الدفاع في مرحلة التحقيق، والتفاوض على التدابير الاحترازية، والتمثيل في المحاكمات، وإعداد الطعون. متاحون 24/7 للاستجابة الفورية في حالات الطوارئ."
-    }
-  } : {
-    title: "Abogado Procedimiento Penal y Recursos",
-    subtitle: "Defensa especializada en todas las fases del procedimiento penal desde la detención hasta los recursos",
-    description: "Especialistas en todas las fases del procedimiento penal. Desde la defensa en la detención inicial hasta los recursos ante el Tribunal Supremo. Experiencia en habeas corpus, medidas cautelares, apelaciones y recursos extraordinarios.",
-    features: {
-      title: "Nuestros Servicios en Procedimiento Penal",
-      items: [
-        "Defensa urgente en detenciones - 24/7",
-        "Habeas corpus y recursos de urgencia",
-        "Medidas cautelares y libertad provisional",
-        "Recursos: apelación, casación y amparo",
-        "Recursos extraordinarios y revisión",
-        "Acompañamiento en todas las fases procesales"
-      ]
+    en: {
+      title: "Criminal Procedure and Appeals Lawyer",
+      subtitle: "Specialized defense in all phases of criminal proceedings from arrest to appeals",
+      description: "Specialists in all phases of criminal proceedings. From defense in initial arrest to appeals before the Supreme Court. Experience in habeas corpus, precautionary measures, appeals and extraordinary remedies.",
+      features: {
+        title: "Our Services in Criminal Procedure",
+        items: [
+          "Urgent defense in arrests - 24/7",
+          "Habeas corpus and urgent appeals",
+          "Precautionary measures and provisional release",
+          "Appeals: appeal, cassation and amparo",
+          "Extraordinary remedies and review",
+          "Accompaniment in all procedural phases"
+        ]
+      },
+      relatedCases: "Related Articles",
+      faq: "Frequently Asked Questions",
+      cta: {
+        title: "Do you need urgent defense or to appeal a sentence?",
+        description: "Our specialized team in criminal proceedings is available 24/7 to protect your rights at any stage",
+        button: "Urgent Defense"
+      },
+      seo: {
+        title: "Lawyers Specialized in Criminal Procedure and Appeals in Madrid",
+        content1: "At STANS ABOGADOS we are experts in all phases of criminal proceedings. From the first moment of arrest to the final appeals in the Supreme Court, we offer specialized technical defense that ensures the protection of your fundamental rights.",
+        content2: "Our team has extensive experience in urgent procedures such as habeas corpus, as well as in the preparation and presentation of all types of appeals. We work quickly and efficiently to guarantee the best possible result in each phase of the process.",
+        content3: "We offer a comprehensive service that includes defense in the investigation phase, negotiation of precautionary measures, representation in oral trials and preparation of appeals. Available 24/7 for immediate response in emergency situations."
+      }
     },
-    relatedCases: "Artículos relacionados",
-    faq: "Preguntas Frecuentes",
-    cta: {
-      title: "¿Necesitas Defensa Urgente o Recurrir una Sentencia?",
-      description: "Nuestro equipo especializado en procedimiento penal está disponible 24/7 para proteger tus derechos en cualquier fase",
-      button: "Defensa Urgente"
-    },
-    seo: {
-      title: "Abogados Especialistas en Procedimiento Penal y Recursos en Madrid",
-      content1: "En STANS ABOGADOS somos expertos en todas las fases del procedimiento penal. Desde el primer momento de la detención hasta los recursos finales ante el Tribunal Supremo, ofrecemos una defensa técnica especializada que garantiza la protección de tus derechos fundamentales.",
-      content2: "Nuestro equipo cuenta con amplia experiencia en procedimientos urgentes como el habeas corpus, así como en la preparación y presentación de todo tipo de recursos. Trabajamos con rapidez y eficacia para garantizar el mejor resultado posible en cada fase del proceso.",
-      content3: "Ofrecemos un servicio integral que incluye la defensa en fase de instrucción, negociación de medidas cautelares, representación en juicios orales y preparación de recursos. Disponibles 24/7 para respuesta inmediata en situaciones de emergencia."
+    fr: {
+      title: "Avocat Procédure Pénale et Ressources",
+      subtitle: "Défense spécialisée dans toutes les phases de la procédure pénale de l'arrestation aux recours",
+      description: "Spécialistes dans toutes les phases de la procédure pénale. De la défense lors de l'arrestation initiale aux recours devant le Tribunal Suprême. Expérience en habeas corpus, mesures précautionnelles, appels et recours extraordinaires.",
+      features: {
+        title: "Nos Services en Procédure Pénale",
+        items: [
+          "Défense urgente en arrestations - 24/7",
+          "Habeas corpus et recours d'urgence",
+          "Mesures précautionnelles et liberté provisoire",
+          "Recours : appel, cassation et amparo",
+          "Recours extraordinaires et révision",
+          "Accompagnement dans toutes les phases procédurales"
+        ]
+      },
+      relatedCases: "Articles Connexes",
+      faq: "Questions Fréquemment Posées",
+      cta: {
+        title: "Avez-vous besoin d'une défense urgente ou de faire appel d'une sentence?",
+        description: "Notre équipe spécialisée en procédure pénale est disponible 24/7 pour protéger vos droits à n'importe quelle étape",
+        button: "Défense Urgente"
+      },
+      seo: {
+        title: "Avocats Spécialisés en Procédure Pénale et Ressources à Madrid",
+        content1: "Chez STANS ABOGADOS nous sommes experts dans toutes les phases de la procédure pénale. Du premier moment de l'arrestation aux recours finaux devant le Tribunal Suprême, nous offrons une défense technique spécialisée qui garantit la protection de vos droits fondamentaux.",
+        content2: "Notre équipe possède une vaste expérience dans les procédures urgentes telles que l'habeas corpus, ainsi que dans la préparation et la présentation de tous types de recours. Nous travaillons rapidement et efficacement pour garantir le meilleur résultat possible à chaque phase du processus.",
+        content3: "Nous offrons un service complet qui comprend la défense en phase d'instruction, la négociation des mesures précautionnelles, la représentation aux procès oraux et la préparation des recours. Disponibles 24/7 pour une réponse immédiate en situations d'urgence."
+      }
     }
   };
+  const t = translations[language] || translations.es;
 
   return (
     <>
@@ -150,7 +248,7 @@ export default function ProcedimientoPenalPage() {
                   className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-black font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   <Phone className="h-5 w-5" />
-                  <span>Llamar Ahora</span>
+                  <span>{language === 'ar' ? 'اتصل الآن' : language === 'en' ? 'Call Now' : language === 'fr' ? 'Appeler Maintenant' : 'Llamar Ahora'}</span>
                 </a>
                 <a
                   href={`https://wa.me/${WHATSAPP}`}
@@ -169,9 +267,9 @@ export default function ProcedimientoPenalPage() {
         <section className="bg-white py-3">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <nav aria-label="Breadcrumb" className={`text-sm ${language === 'ar' ? 'text-right' : 'text-left'} text-black/60`}>
-              <Link href="/" className="hover:text-gold">{language === 'ar' ? 'الصفحة الرئيسية' : 'Inicio'}</Link>
+              <Link href="/" className="hover:text-gold">{language === 'ar' ? 'الصفحة الرئيسية' : language === 'en' ? 'Home' : language === 'fr' ? 'Accueil' : 'Inicio'}</Link>
               <span className="px-2">›</span>
-              <Link href="/servicios" className="hover:text-gold">{language === 'ar' ? 'الخدمات' : 'Servicios'}</Link>
+              <Link href="/servicios" className="hover:text-gold">{language === 'ar' ? 'الخدمات' : language === 'en' ? 'Services' : language === 'fr' ? 'Services' : 'Servicios'}</Link>
               <span className="px-2">›</span>
               <span className="text-black">{t.title}</span>
             </nav>
@@ -246,7 +344,7 @@ export default function ProcedimientoPenalPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-gold mb-8 text-center">
-                {language === 'ar' ? 'مقالات ذات صلة' : 'Artículos relacionados'}
+                {t.relatedCases}
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -294,27 +392,27 @@ export default function ProcedimientoPenalPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-2xl sm:text-3xl font-bold text-gold mb-8 text-center">
-                {language === 'ar' ? 'قضايا مرتبطة' : 'Casos relacionados'}
+                {language === 'ar' ? 'قضايا مرتبطة' : language === 'en' ? 'Related Cases' : language === 'fr' ? 'Cas Connexes' : 'Casos relacionados'}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Link href="/casos/18" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
+                <Link href="/casos/ejecuciones-penales-revocacion-requisitorias" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Ejecución penal</h3>
                   <p className="text-black/70 text-sm">Tercer grado y permisos penitenciarios</p>
                 </Link>
-                <Link href="/casos/1" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
+                <Link href="/casos/sobreseimiento-queque-abogados-cristianos" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Habeas/archivos</h3>
                   <p className="text-black/70 text-sm">Sobreseimiento por derechos fundamentales</p>
                 </Link>
-                <Link href="/casos/3" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
+                <Link href="/casos/operacion-luco-banda-rolex" className="group bg-gray-50 border-2 border-gold/20 rounded-xl p-6 hover:border-gold/50 hover:shadow-xl transition-all">
                   <FileText className="h-8 w-8 text-gold mb-4" />
                   <h3 className="text-lg font-semibold text-black mb-2 group-hover:text-gold transition-colors">Revisión de medidas</h3>
                   <p className="text-black/70 text-sm">Archivo respecto de nuestro cliente</p>
                 </Link>
               </div>
               <div className="text-center mt-6">
-                <Link href="/casos" className="text-gold font-semibold hover:text-gold/80">{language === 'ar' ? 'عرض جميع الحالات' : 'Ver todos los casos'} →</Link>
+                <Link href="/casos" className="text-gold font-semibold hover:text-gold/80">{language === 'ar' ? 'عرض جميع الحالات' : language === 'en' ? 'View all cases' : language === 'fr' ? 'Voir tous les cas' : 'Ver todos los casos'} →</Link>
               </div>
             </motion.div>
           </div>
@@ -334,7 +432,7 @@ export default function ProcedimientoPenalPage() {
               </h2>
               
               <div className="space-y-6">
-                {faqs[language === 'ar' ? 'ar' : 'es'].map((faq, index) => (
+                {faqs[language]?.map((faq, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
@@ -412,57 +510,61 @@ export default function ProcedimientoPenalPage() {
               </p>
 
               <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-                {language === 'ar' ? 'مراحل الإجراءات الجنائية التي نغطيها' : 'Fases del Procedimiento Penal que Cubrimos'}
+                {language === 'ar' ? 'مراحل الإجراءات الجنائية التي نغطيها' : language === 'en' ? 'Phases of Criminal Procedure We Cover' : language === 'fr' ? 'Phases de la Procédure Pénale que Nous Couvrons' : 'Fases del Procedimiento Penal que Cubrimos'}
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الاعتقال والتحقيق' : 'Detención e Instrucción'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع فوري من اللحظة الأولى' : 'Defensa inmediata desde el primer momento'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الاعتقال والتحقيق' : language === 'en' ? 'Arrest and Investigation' : language === 'fr' ? 'Arrestation et Instruction' : 'Detención e Instrucción'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع فوري من اللحظة الأولى' : language === 'en' ? 'Immediate defense from the first moment' : language === 'fr' ? 'Défense immédiate dès le premier instant' : 'Defensa inmediata desde el primer momento'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التدابير الاحترازية' : 'Medidas Cautelares'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'تفاوض وطعن في السجن المؤقت' : 'Negociación y recursos contra prisión provisional'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التدابير الاحترازية' : language === 'en' ? 'Precautionary Measures' : language === 'fr' ? 'Mesures Précautionnelles' : 'Medidas Cautelares'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'تفاوض وطعن في السجن المؤقت' : language === 'en' ? 'Negotiation and appeals against provisional prison' : language === 'fr' ? 'Négociation et recours contre la prison provisoire' : 'Negociación y recursos contra prisión provisional'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'المحاكمة الشفوية' : 'Juicio Oral'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع تقني في جلسات المحاكمة' : 'Defensa técnica en vista oral'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'المحاكمة الشفوية' : language === 'en' ? 'Oral Trial' : language === 'fr' ? 'Procès Oral' : 'Juicio Oral'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع تقني في جلسات المحاكمة' : language === 'en' ? 'Technical defense in trial sessions' : language === 'fr' ? 'Défense technique dans les audiences' : 'Defensa técnica en vista oral'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الطعون' : 'Recursos'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'الاستئناف والنقض والطعن بالدستورية' : 'Apelación, casación y amparo constitucional'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الطعون' : language === 'en' ? 'Appeals' : language === 'fr' ? 'Recours' : 'Recursos'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'الاستئناف والنقض والطعن بالدستورية' : language === 'en' ? 'Appeal, cassation and constitutional protection' : language === 'fr' ? 'Appel, cassation et protection constitutionnelle' : 'Apelación, casación y amparo constitucional'}</p>
                 </div>
               </div>
 
               <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-                {language === 'ar' ? 'لماذا تختار ستانس للمحاماة للإجراءات الجنائية؟' : '¿Por Qué Elegir STANS ABOGADOS para Procedimiento Penal?'}
+                {language === 'ar' ? 'لماذا تختار ستانس للمحاماة للإجراءات الجنائية؟' : language === 'en' ? 'Why Choose STANS ABOGADOS for Criminal Procedure?' : language === 'fr' ? 'Pourquoi Choisir STANS ABOGADOS pour la Procédure Pénale?' : '¿Por Qué Elegir STANS ABOGADOS para Procedimiento Penal?'}
               </h3>
 
               <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
-                <li><strong>{language === 'ar' ? 'توفر 24/7:' : 'Disponibilidad 24/7:'}</strong> {language === 'ar' ? 'استجابة فورية في حالات الطوارئ' : 'Respuesta inmediata en situaciones de emergencia'}</li>
-                <li><strong>{language === 'ar' ? 'خبرة إجرائية:' : 'Experiencia procesal:'}</strong> {language === 'ar' ? 'معرفة عميقة بجميع مراحل الإجراءات' : 'Conocimiento profundo de todas las fases procesales'}</li>
-                <li><strong>{language === 'ar' ? 'طعون فعالة:' : 'Recursos efectivos:'}</strong> {language === 'ar' ? 'نسبة نجاح عالية في الطعون' : 'Alto índice de éxito en recursos y apelaciones'}</li>
-                <li><strong>{language === 'ar' ? 'دفاع شامل:' : 'Defensa integral:'}</strong> {language === 'ar' ? 'من الاعتقال إلى الحكم النهائي' : 'Desde la detención hasta la sentencia firme'}</li>
+                <li><strong>{language === 'ar' ? 'توفر 24/7:' : language === 'en' ? '24/7 Availability:' : language === 'fr' ? 'Disponibilité 24/7:' : 'Disponibilidad 24/7:'}</strong> {language === 'ar' ? 'استجابة فورية في حالات الطوارئ' : language === 'en' ? 'Immediate response in emergency situations' : language === 'fr' ? 'Réponse immédiate en situations d\'urgence' : 'Respuesta inmediata en situaciones de emergencia'}</li>
+                <li><strong>{language === 'ar' ? 'خبرة إجرائية:' : language === 'en' ? 'Procedural experience:' : language === 'fr' ? 'Expérience procédurale:' : 'Experiencia procesal:'}</strong> {language === 'ar' ? 'معرفة عميقة بجميع مراحل الإجراءات' : language === 'en' ? 'Deep knowledge of all procedural phases' : language === 'fr' ? 'Connaissance approfondie de toutes les phases procédurales' : 'Conocimiento profundo de todas las fases procesales'}</li>
+                <li><strong>{language === 'ar' ? 'طعون فعالة:' : language === 'en' ? 'Effective appeals:' : language === 'fr' ? 'Recours efficaces:' : 'Recursos efectivos:'}</strong> {language === 'ar' ? 'نسبة نجاح عالية في الطعون' : language === 'en' ? 'High success rate in appeals and appeals' : language === 'fr' ? 'Taux de succès élevé dans les recours et appels' : 'Alto índice de éxito en recursos y apelaciones'}</li>
+                <li><strong>{language === 'ar' ? 'دفاع شامل:' : language === 'en' ? 'Comprehensive defense:' : language === 'fr' ? 'Défense intégrale:' : 'Defensa integral:'}</strong> {language === 'ar' ? 'من الاعتقال إلى الحكم النهائي' : language === 'en' ? 'From arrest to final judgment' : language === 'fr' ? 'De l\'arrestation au jugement définitif' : 'Desde la detención hasta la sentencia firme'}</li>
               </ul>
 
                   <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
                     <p className="text-lg font-semibold text-gold mb-3">
-                      {language === 'ar' ? 'هل تحتاج إلى دفاع عاجل أو تريد الطعن في حكم؟' : '¿Necesitas Defensa Urgente o Quieres Recurrir una Sentencia?'}
+                      {language === 'ar' ? 'هل تحتاج إلى دفاع عاجل أو تريد الطعن في حكم؟' : language === 'en' ? 'Do you need urgent defense or want to appeal a sentence?' : language === 'fr' ? 'Avez-vous besoin d\'une défense urgente ou souhaitez-vous faire appel d\'une sentence?' : '¿Necesitas Defensa Urgente o Quieres Recurrir una Sentencia?'}
                 </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت حاسم في الإجراءات الجنائية. اتصل بنا فورًا للحصول على دفاع متخصص. فريقنا جاهز للتدخل في أي مرحلة من مراحل الإجراءات لحماية حقوقك.'
+                    : language === 'en'
+                    ? 'Time is crucial in criminal proceedings. Contact us immediately for specialized defense. Our team is prepared to intervene in any phase of the proceedings to protect your rights.'
+                    : language === 'fr'
+                    ? 'Le temps est crucial dans la procédure pénale. Contactez-nous immédiatement pour une défense spécialisée. Notre équipe est prête à intervenir à n\'importe quelle étape de la procédure pour protéger vos droits.'
                     : 'El tiempo es crucial en procedimiento penal. Contacta inmediatamente para obtener defensa especializada. Nuestro equipo está preparado para intervenir en cualquier fase del procedimiento y proteger tus derechos.'}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a 
+                  <a
                     href="tel:+34611687226"
                     className="inline-flex items-center justify-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
                   >
                     <Phone className="h-5 w-5" />
-                    {language === 'ar' ? 'اتصل: 34 611 68 72 26+' : 'Llamar: +34 611 68 72 26'}
+                    {language === 'ar' ? 'اتصل: 34 611 68 72 26+' : language === 'en' ? 'Call: +34 611 68 72 26' : language === 'fr' ? 'Appeler: +34 611 68 72 26' : 'Llamar: +34 611 68 72 26'}
                   </a>
-                  <a 
+                  <a
                     href="mailto:info@stansabogados.com"
                     className="inline-flex items-center justify-center gap-2 border border-gold text-gold hover:bg-gold hover:text-black px-6 py-3 rounded-lg font-medium transition"
                   >
