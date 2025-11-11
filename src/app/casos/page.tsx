@@ -103,10 +103,30 @@ const tipoMap: { [key: string]: string } = {
   'Revocación': 'إلغاء'
 };
 
+// Función para convertir texto en mayúsculas a formato título normal
+const toTitleCase = (text: string): string => {
+  // Remover prefijo "CASO" o "CASO -" si existe
+  text = text.replace(/^CASO\s*-?\s*/i, '');
+  
+  // Convertir a minúsculas y luego capitalizar cada palabra importante
+  return text.toLowerCase().split(' ').map((word, index) => {
+    // Palabras que deben permanecer en minúsculas (excepto si son la primera palabra)
+    const minusculas = ['de', 'del', 'la', 'el', 'en', 'por', 'a', 'con', 'y', 'o', 'para', 'ante'];
+    if (index > 0 && minusculas.includes(word)) {
+      return word;
+    }
+    // Capitalizar primera letra
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }).join(' ');
+};
+
 // Función para traducir títulos de casos
 const getTranslatedCaseName = (caseId: number, originalName: string, language: string) => {
-  if (language === 'es') return originalName;
-  return getTranslatedCaseField(caseId, 'nombre', language as 'es' | 'ar', originalName);
+  if (language === 'es') return toTitleCase(originalName);
+  
+  const translatedName = getTranslatedCaseField(caseId, 'nombre', language as 'es' | 'ar', originalName);
+  // Para árabe, no aplicar toTitleCase ya que tiene su propia estructura
+  return translatedName;
 };
 
 // Función para traducir categorías

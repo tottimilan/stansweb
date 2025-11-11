@@ -216,12 +216,32 @@ const getTranslatedLabel = (label: string, language: string, t: any) => {
   return labelMap[label] || label;
 };
 
+// Función para convertir texto en mayúsculas a formato título normal
+const toTitleCase = (text: string): string => {
+  // Remover prefijo "CASO" o "CASO -" si existe
+  text = text.replace(/^CASO\s*-?\s*/i, '');
+  
+  // Convertir a minúsculas y luego capitalizar cada palabra
+  return text.toLowerCase().split(' ').map((word, index) => {
+    // Palabras que deben permanecer en minúsculas (excepto si son la primera palabra)
+    const minusculas = ['de', 'del', 'la', 'el', 'en', 'por', 'a', 'con', 'y', 'o', 'para', 'ante'];
+    if (index > 0 && minusculas.includes(word)) {
+      return word;
+    }
+    // Capitalizar primera letra
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }).join(' ');
+};
+
 // Traducir título del caso
 const getTranslatedCaseName = (caseId: number, originalName: string, language: string) => {
-  if (language === 'es') return originalName;
+  if (language === 'es') return toTitleCase(originalName);
 
   const caseTranslation = casesTranslations.ar.cases[caseId as keyof typeof casesTranslations.ar.cases];
-  return caseTranslation?.nombre || originalName;
+  const translatedName = caseTranslation?.nombre || originalName;
+  
+  // Para árabe, no aplicar toTitleCase ya que tiene su propia estructura
+  return translatedName;
 };
 
 // Traducir resumen del caso
