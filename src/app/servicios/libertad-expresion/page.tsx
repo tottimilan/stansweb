@@ -49,40 +49,47 @@ const faqs = {
       question: "ما هي العقوبات على الجرائم ضد المشاعر الدينية؟",
       answer: "السخرية العلنية من العقائد أو المعتقدات أو الشعائر الدينية قد تؤدي إلى غرامات من 8 إلى 12 شهرًا. إذا تم ذلك في مكان العبادة، قد تكون العقوبات أكبر."
     }
+  ],
+  en: [
+    {
+      question: "What is a hate crime?",
+      answer: "A hate crime is any criminal offense motivated by prejudice towards the victim's race, religion, sexual orientation, disability or ideology. In Spain it is punished with specific aggravating circumstances."
+    },
+    {
+      question: "What is the difference between freedom of expression and slander?",
+      answer: "Freedom of expression is a fundamental right protected, but it has limits when it attacks the honor of third parties. Slander are expressions that injure dignity by diminishing reputation or attacking self-esteem."
+    },
+    {
+      question: "Can I be convicted for a comment on social networks?",
+      answer: "Yes, comments on social networks can constitute crimes if they incite hatred, contain threats or serious slander. The publicity of the medium aggravates criminal liability."
+    },
+    {
+      question: "What penalties do crimes against religious feelings have?",
+      answer: "Public mockery of dogmas, beliefs or religious ceremonies can carry fines of 8 to 12 months. If done in a place of worship, penalties can be higher."
+    }
+  ],
+  fr: [
+    {
+      question: "Qu'est-ce qu'un crime de haine?",
+      answer: "Un crime de haine est toute infraction pénale motivée par des préjugés envers la race, la religion, l'orientation sexuelle, le handicap ou l'idéologie de la victime. En Espagne, il est puni avec des circonstances aggravantes spécifiques."
+    },
+    {
+      question: "Quelle est la différence entre liberté d'expression et injures?",
+      answer: "La liberté d'expression est un droit fondamental protégé, mais il a des limites lorsqu'il attaque l'honneur de tiers. Les injures sont des expressions qui blessent la dignité en diminuant la réputation ou en attaquant l'estime de soi."
+    },
+    {
+      question: "Puis-je être condamné pour un commentaire sur les réseaux sociaux?",
+      answer: "Oui, les commentaires sur les réseaux sociaux peuvent constituer des crimes s'ils incitent à la haine, contiennent des menaces ou des injures graves. La publicité du média aggrave la responsabilité pénale."
+    },
+    {
+      question: "Quelles peines pour les crimes contre les sentiments religieux?",
+      answer: "La moquerie publique des dogmes, croyances ou cérémonies religieuses peut entraîner des amendes de 8 à 12 mois. Si cela se fait dans un lieu de culte, les peines peuvent être plus élevées."
+    }
   ]
 };
 
-export default function LibertadExpresionPage() {
-  const { language } = useLanguage();
-  const t = language === 'ar' ? {
-    title: "محامي جرائم الكراهية وحرية التعبير",
-    subtitle: "دفاع متخصص في جرائم الكراهية والإهانات والافتراء والجرائم ضد المشاعر الدينية",
-    description: "نحن متخصصون في الدفاع عن الحقوق الأساسية في حرية التعبير. فريقنا لديه خبرة واسعة في القضايا الإعلامية والمعقدة أمام المحكمة الوطنية.",
-    features: {
-      title: "خدماتنا في حرية التعبير",
-      items: [
-        "الدفاع في جرائم الكراهية والتمييز",
-        "القضايا الإعلامية وحرية الصحافة",
-        "الإهانات والافتراء في وسائل التواصل الاجتماعي",
-        "الجرائم ضد المشاعر الدينية",
-        "التشهير والهجوم على الشرف",
-        "الدفاع في البرامج الساخرة والفكاهية"
-      ]
-    },
-    relatedCases: "مقالات ذات صلة",
-    faq: "أسئلة متكررة",
-    cta: {
-      title: "هل تحتاج إلى دفاع في قضية حرية التعبير؟",
-      description: "فريقنا متاح 24/7 للدفاع عن حقوقك الأساسية",
-      button: "استشارة عاجلة"
-    },
-    seo: {
-      title: "محامون متخصصون في حرية التعبير في مدريد",
-      content1: "في ستانس للمحاماة، نحن خبراء في الدفاع عن حرية التعبير وجرائم الكراهية في مدريد وجميع أنحاء إسبانيا. نفهم التوازن الدقيق بين الحق الأساسي في حرية التعبير وحماية حقوق الآخرين.",
-      content2: "فريقنا من المحامين المتخصصين لديه خبرة واسعة في الدفاع عن الصحفيين والفنانين والمواطنين في قضايا الإهانات والافتراء والجرائم ضد المشاعر الدينية. نعمل مع فهم عميق للسوابق القضائية للمحكمة الدستورية والمحكمة الأوروبية لحقوق الإنسان.",
-      content3: "نقدم دفاعًا فوريًا على مدار 24 ساعة في جميع أنواع القضايا المتعلقة بحرية التعبير، من التعليقات على وسائل التواصل الاجتماعي إلى المنشورات الصحفية. خبرتنا تشمل القضايا أمام المحكمة الوطنية في الجرائم ذات التأثير الإعلامي الكبير."
-    }
-  } : {
+const translations = {
+  es: {
     title: "Abogado Delitos de Odio y Libertad de Expresión",
     subtitle: "Defensa especializada en delitos de odio, injurias, calumnias y delitos contra los sentimientos religiosos",
     description: "Somos especialistas en la defensa del derecho fundamental a la libertad de expresión. Nuestro equipo cuenta con amplia experiencia en casos mediáticos y complejos ante la Audiencia Nacional.",
@@ -110,7 +117,99 @@ export default function LibertadExpresionPage() {
       content2: "Nuestro equipo de abogados especializados cuenta con amplia experiencia defendiendo a periodistas, artistas y ciudadanos en casos de injurias, calumnias y delitos contra los sentimientos religiosos. Trabajamos con un profundo conocimiento de la jurisprudencia del Tribunal Constitucional y del Tribunal Europeo de Derechos Humanos.",
       content3: "Ofrecemos defensa inmediata 24 horas en todo tipo de casos relacionados con la libertad de expresión, desde comentarios en redes sociales hasta publicaciones periodísticas. Nuestra experiencia incluye casos ante la Audiencia Nacional en delitos de gran repercusión mediática."
     }
-  };
+  },
+  ar: {
+    title: "محامي جرائم الكراهية وحرية التعبير",
+    subtitle: "دفاع متخصص في جرائم الكراهية والإهانات والافتراء والجرائم ضد المشاعر الدينية",
+    description: "نحن متخصصون في الدفاع عن الحقوق الأساسية في حرية التعبير. فريقنا لديه خبرة واسعة في القضايا الإعلامية والمعقدة أمام المحكمة الوطنية.",
+    features: {
+      title: "خدماتنا في حرية التعبير",
+      items: [
+        "الدفاع في جرائم الكراهية والتمييز",
+        "القضايا الإعلامية وحرية الصحافة",
+        "الإهانات والافتراء في وسائل التواصل الاجتماعي",
+        "الجرائم ضد المشاعر الدينية",
+        "التشهير والهجوم على الشرف",
+        "الدفاع في البرامج الساخرة والفكاهية"
+      ]
+    },
+    relatedCases: "مقالات ذات صلة",
+    faq: "أسئلة متكررة",
+    cta: {
+      title: "هل تحتاج إلى دفاع في قضية حرية التعبير؟",
+      description: "فريقنا متاح 24/7 للدفاع عن حقوقك الأساسية",
+      button: "استشارة عاجلة"
+    },
+    seo: {
+      title: "محامون متخصصون في حرية التعبير في مدريد",
+      content1: "في ستانس للمحاماة، نحن خبراء في الدفاع عن حرية التعبير وجرائم الكراهية في مدريد وجميع أنحاء إسبانيا. نفهم التوازن الدقيق بين الحق الأساسي في حرية التعبير وحماية حقوق الآخرين.",
+      content2: "فريقنا من المحامين المتخصصين لديه خبرة واسعة في الدفاع عن الصحفيين والفنانين والمواطنين في قضايا الإهانات والافتراء والجرائم ضد المشاعر الدينية. نعمل مع فهم عميق للسوابق القضائية للمحكمة الدستورية والمحكمة الأوروبية لحقوق الإنسان.",
+      content3: "نقدم دفاعًا فوريًا على مدار 24 ساعة في جميع أنواع القضايا المتعلقة بحرية التعبير، من التعليقات على وسائل التواصل الاجتماعي إلى المنشورات الصحفية. خبرتنا تشمل القضايا أمام المحكمة الوطنية في الجرائم ذات التأثير الإعلامي الكبير."
+    }
+  },
+  en: {
+    title: "Hate Crimes and Freedom of Expression Lawyer",
+    subtitle: "Specialized defense in hate crimes, slander, defamation and crimes against religious feelings",
+    description: "We are specialists in the defense of the fundamental right to freedom of expression. Our team has extensive experience in media cases and complex cases before the National High Court.",
+    features: {
+      title: "Our Services in Freedom of Expression",
+      items: [
+        "Defense in hate crimes and discrimination",
+        "Media cases and press freedom",
+        "Slander and defamation on social networks",
+        "Crimes against religious feelings",
+        "Libel and attacks on honor",
+        "Defense in satirical and humorous programs"
+      ]
+    },
+    relatedCases: "Related Articles",
+    faq: "Frequently Asked Questions",
+    cta: {
+      title: "Do you need defense in a freedom of expression case?",
+      description: "Our team is available 24/7 to defend your fundamental rights",
+      button: "Urgent Consultation"
+    },
+    seo: {
+      title: "Lawyers Specialized in Freedom of Expression in Madrid",
+      content1: "At STANS ABOGADOS we are experts in the defense of freedom of expression and hate crimes in Madrid and throughout Spain. We understand the delicate balance between the fundamental right to freedom of expression and the protection of third parties' rights.",
+      content2: "Our team of specialized lawyers has extensive experience in defending journalists, artists and citizens in cases of slander, defamation and crimes against religious feelings. We work with deep knowledge of the jurisprudence of the Constitutional Court and the European Court of Human Rights.",
+      content3: "We offer immediate 24-hour defense in all types of cases related to freedom of expression, from social media comments to journalistic publications. Our experience includes cases before the National High Court in crimes of great media impact."
+    }
+  },
+  fr: {
+    title: "Avocat pour Crimes de Haine et Liberté d'Expression",
+    subtitle: "Défense spécialisée en crimes de haine, injures, diffamation et crimes contre les sentiments religieux",
+    description: "Nous sommes spécialistes dans la défense du droit fondamental à la liberté d'expression. Notre équipe compte une vaste expérience dans les affaires médiatiques et complexes devant l'Audience Nationale.",
+    features: {
+      title: "Nos Services en Liberté d'Expression",
+      items: [
+        "Défense dans les crimes de haine et discrimination",
+        "Affaires médiatiques et liberté de presse",
+        "Injures et diffamation sur les réseaux sociaux",
+        "Crimes contre les sentiments religieux",
+        "Diffamation et attaques à l'honneur",
+        "Défense dans les programmes satiriques et humoristiques"
+      ]
+    },
+    relatedCases: "Articles Connexes",
+    faq: "Questions Fréquemment Posées",
+    cta: {
+      title: "Avez-vous besoin de défense dans une affaire de liberté d'expression?",
+      description: "Notre équipe est disponible 24/7 pour défendre vos droits fondamentaux",
+      button: "Consultation Urgente"
+    },
+    seo: {
+      title: "Avocats Spécialisés en Liberté d'Expression à Madrid",
+      content1: "Chez STANS ABOGADOS nous sommes experts dans la défense de la liberté d'expression et des crimes de haine à Madrid et dans toute l'Espagne. Nous comprenons l'équilibre délicat entre le droit fondamental à la liberté d'expression et la protection des droits des tiers.",
+      content2: "Notre équipe d'avocats spécialisés possède une vaste expérience dans la défense des journalistes, artistes et citoyens dans les affaires d'injures, diffamation et crimes contre les sentiments religieux. Nous travaillons avec une profonde connaissance de la jurisprudence de la Cour Constitutionnelle et de la Cour Européenne des Droits de l'Homme.",
+      content3: "Nous offrons une défense immédiate 24 heures sur 24 dans tous les types d'affaires liées à la liberté d'expression, des commentaires sur les réseaux sociaux aux publications journalistiques. Notre expérience comprend les affaires devant l'Audience Nationale dans les crimes d'impact médiatique important."
+    }
+  }
+};
+
+export default function LibertadExpresionPage() {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.es;
 
   return (
     <>
@@ -170,9 +269,9 @@ export default function LibertadExpresionPage() {
         <section className="bg-white py-3">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <nav aria-label="Breadcrumb" className={`text-sm ${language === 'ar' ? 'text-right' : 'text-left'} text-black/60`}>
-              <Link href="/" className="hover:text-gold">{language === 'ar' ? 'الصفحة الرئيسية' : 'Inicio'}</Link>
+              <Link href="/" className="hover:text-gold">{language === 'ar' ? 'الصفحة الرئيسية' : language === 'en' ? 'Home' : language === 'fr' ? 'Accueil' : 'Inicio'}</Link>
               <span className="px-2">›</span>
-              <Link href="/servicios" className="hover:text-gold">{language === 'ar' ? 'الخدمات' : 'Servicios'}</Link>
+              <Link href="/servicios" className="hover:text-gold">{language === 'ar' ? 'الخدمات' : language === 'en' ? 'Services' : language === 'fr' ? 'Services' : 'Servicios'}</Link>
               <span className="px-2">›</span>
               <span className="text-black">{t.title}</span>
             </nav>
@@ -247,7 +346,7 @@ export default function LibertadExpresionPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-gold mb-8 text-center">
-                {language === 'ar' ? 'مقالات ذات صلة' : 'Artículos relacionados'}
+                {t.relatedCases}
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -285,7 +384,7 @@ export default function LibertadExpresionPage() {
               </h2>
               
               <div className="space-y-6">
-                {faqs[language === 'ar' ? 'ar' : 'es'].map((faq, index) => (
+                {faqs[language]?.map((faq, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
@@ -363,23 +462,27 @@ export default function LibertadExpresionPage() {
               </p>
 
               <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-                {language === 'ar' ? 'لماذا تختار ستانس للمحاماة لقضايا حرية التعبير؟' : '¿Por Qué Elegir STANS ABOGADOS para Casos de Libertad de Expresión?'}
+                {language === 'ar' ? 'لماذا تختار ستانس للمحاماة لقضايا حرية التعبير؟' : language === 'en' ? 'Why Choose STANS ABOGADOS for Freedom of Expression Cases?' : language === 'fr' ? 'Pourquoi Choisir STANS ABOGADOS pour les Affaires de Liberté d\'Expression?' : '¿Por Qué Elegir STANS ABOGADOS para Casos de Libertad de Expresión?'}
               </h3>
 
               <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
-                <li><strong>{language === 'ar' ? 'خبرة مثبتة:' : 'Experiencia demostrada:'}</strong> {language === 'ar' ? 'أكثر من 50 قضية مُبرأة في جرائم الكراهية وحرية التعبير' : 'Más de 50 casos favorables en delitos de odio y libertad de expresión'}</li>
-                <li><strong>{language === 'ar' ? 'دفاع فوري:' : 'Defensa inmediata:'}</strong> {language === 'ar' ? 'متاحون 24/7 للقضايا العاجلة' : 'Disponibles 24/7 para casos urgentes con respuesta en menos de 1 hora'}</li>
-                <li><strong>{language === 'ar' ? 'فريق متخصص:' : 'Equipo especializado:'}</strong> {language === 'ar' ? 'محامون خبراء في القانون الجنائي والدستوري' : 'Abogados expertos en derecho penal y constitucional'}</li>
-                <li><strong>{language === 'ar' ? 'نهج استراتيجي:' : 'Enfoque estratégico:'}</strong> {language === 'ar' ? 'دفاع مخصص يوازن بين الحقوق الأساسية' : 'Defensa personalizada que equilibra derechos fundamentales'}</li>
+                <li><strong>{language === 'ar' ? 'خبرة مثبتة:' : language === 'en' ? 'Proven experience:' : language === 'fr' ? 'Expérience éprouvée:' : 'Experiencia demostrada:'}</strong> {language === 'ar' ? 'أكثر من 50 قضية مُبرأة في جرائم الكراهية وحرية التعبير' : language === 'en' ? 'More than 50 favorable cases in hate crimes and freedom of expression' : language === 'fr' ? 'Plus de 50 affaires favorables dans les crimes de haine et liberté d\'expression' : 'Más de 50 casos favorables en delitos de odio y libertad de expresión'}</li>
+                <li><strong>{language === 'ar' ? 'دفاع فوري:' : language === 'en' ? 'Immediate defense:' : language === 'fr' ? 'Défense immédiate:' : 'Defensa inmediata:'}</strong> {language === 'ar' ? 'متاحون 24/7 للقضايا العاجلة' : language === 'en' ? 'Available 24/7 for urgent cases with response in less than 1 hour' : language === 'fr' ? 'Disponibles 24/7 pour les affaires urgentes avec réponse en moins de 1 heure' : 'Disponibles 24/7 para casos urgentes con respuesta en menos de 1 hora'}</li>
+                <li><strong>{language === 'ar' ? 'فريق متخصص:' : language === 'en' ? 'Specialized team:' : language === 'fr' ? 'Équipe spécialisée:' : 'Equipo especializado:'}</strong> {language === 'ar' ? 'محامون خبراء في القانون الجنائي والدستوري' : language === 'en' ? 'Lawyers experts in criminal and constitutional law' : language === 'fr' ? 'Avocats experts en droit pénal et constitutionnel' : 'Abogados expertos en derecho penal y constitucional'}</li>
+                <li><strong>{language === 'ar' ? 'نهج استراتيجي:' : language === 'en' ? 'Strategic approach:' : language === 'fr' ? 'Approche stratégique:' : 'Enfoque estratégico:'}</strong> {language === 'ar' ? 'دفاع مخصص يوازن بين الحقوق الأساسية' : language === 'en' ? 'Customized defense that balances fundamental rights' : language === 'fr' ? 'Défense personnalisée qui équilibre les droits fondamentaux' : 'Defensa personalizada que equilibra derechos fundamentales'}</li>
               </ul>
 
               <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
                 <p className="text-lg font-semibold text-gold mb-3">
-                  {language === 'ar' ? 'هل تواجه اتهامات تتعلق بحرية التعبير؟' : '¿Enfrentas Acusaciones Relacionadas con la Libertad de Expresión?'}
+                  {language === 'ar' ? 'هل تواجه اتهامات تتعلق بحرية التعبير؟' : language === 'en' ? 'Are you facing accusations related to freedom of expression?' : language === 'fr' ? 'Faites-vous face à des accusations liées à la liberté d\'expression?' : '¿Enfrentas Acusaciones Relacionadas con la Libertad de Expresión?'}
                 </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'لا تنتظر. اتصل بنا الآن للحصول على دفاع متخصص. نحن نفهم تعقيدات هذه القضايا ونعرف كيفية الدفاع عن حقوقك الأساسية.'
+                    : language === 'en'
+                    ? 'Don\'t wait any longer. Contact us now for specialized defense. We understand the complexity of these cases and know how to protect your fundamental rights.'
+                    : language === 'fr'
+                    ? 'N\'attendez plus. Contactez-nous maintenant pour une défense spécialisée. Nous comprenons la complexité de ces affaires et savons comment protéger vos droits fondamentaux.'
                     : 'No esperes más. Contacta ahora para obtener una defensa especializada. Entendemos la complejidad de estos casos y sabemos cómo proteger tus derechos fundamentales.'}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">

@@ -124,3 +124,8 @@ export default function RelatedCases({ currentCaseId, categoria, maxCases = 4 }:
   );
 }
 
+
+
+
+
+

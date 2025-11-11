@@ -17,9 +17,9 @@ const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ type = "LegalService", data
           "@context": "https://schema.org",
           "@type": "LegalService",
           "@id": "https://www.stansabogados.com/#organization",
-          name: t.metadata?.schema?.name || "STANS ABOGADOS",
+          name: (t as any).metadata?.schema?.name || "STANS ABOGADOS",
           alternateName: "STANS Abogados Penalistas",
-          description: t.metadata?.schema?.description || "Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7.",
+          description: (t as any).metadata?.schema?.description || "Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7.",
           url: "https://www.stansabogados.com",
           logo: {
             "@type": "ImageObject",

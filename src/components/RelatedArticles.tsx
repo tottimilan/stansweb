@@ -138,3 +138,8 @@ export default function RelatedArticles({ currentSlug, category, maxArticles = 6
   );
 }
 
+
+
+
+
+

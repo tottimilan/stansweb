@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowRight, Shield, Clock, Users, Award, FileText, Globe, Check } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 type Props = {
   title: string;
@@ -22,6 +23,7 @@ const getIcon = (title: string) => {
 };
 
 export default function AreaCard({ title, excerpt, href = '#', features = [] }: Props) {
+  const { language } = useLanguage();
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -60,7 +62,7 @@ export default function AreaCard({ title, excerpt, href = '#', features = [] }: 
         href={href}
         className="inline-flex items-center mt-auto text-sm text-black bg-gold px-4 py-2 rounded-lg hover:opacity-90 transition group"
       >
-        Ver defensa
+        {language === 'ar' ? 'عرض الدفاع' : language === 'en' ? 'View defense' : language === 'fr' ? 'Voir la défense' : 'Ver defensa'}
         <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
       </Link>
     </motion.div>

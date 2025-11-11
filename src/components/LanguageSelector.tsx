@@ -36,6 +36,32 @@ export default function LanguageSelector() {
       >
         عربي
       </motion.button>
+      <span className="text-offwhite/50">|</span>
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={() => setLanguage('en')}
+        className={`px-3 py-1 text-sm font-medium transition-all duration-200 ${
+          language === 'en'
+            ? 'text-gold'
+            : 'text-offwhite hover:text-gold'
+        }`}
+      >
+        EN
+      </motion.button>
+      <span className="text-offwhite/50">|</span>
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={() => setLanguage('fr')}
+        className={`px-3 py-1 text-sm font-medium transition-all duration-200 ${
+          language === 'fr'
+            ? 'text-gold'
+            : 'text-offwhite hover:text-gold'
+        }`}
+      >
+        FR
+      </motion.button>
     </div>
   );
 }

@@ -48,12 +48,76 @@ const faqs = {
       question: "ما الفرق بين التسليم الإيجابي والسلبي؟",
       answer: "التسليم الإيجابي هو عندما تطلب إسبانيا تسليم شخص موجود في بلد آخر. السلبي هو عندما يطلب بلد آخر من إسبانيا تسليم شخص موجود على الأراضي الإسبانية. الإجراءات والضمانات مختلفة."
     }
+  ],
+  en: [
+    {
+      question: "What is a European Arrest Warrant (EAW)?",
+      answer: "The EAW is a mechanism of judicial cooperation between EU countries for the surrender of persons sought for crimes. It is executed in a simplified manner, but there are grounds for refusal such as double criminality, res judicata or fundamental rights."
+    },
+    {
+      question: "How long does an extradition process take?",
+      answer: "An EAW must be resolved within a maximum of 60 days (90 if there is an extension). Extraditions outside the EU can take several months. During this time, the person may be in provisional prison or released with precautionary measures."
+    },
+    {
+      question: "Can an extradition be denied?",
+      answer: "Yes, there are mandatory and optional grounds for refusal: ne bis in idem principle, prescription, minority, Spanish nationality (for some countries), violation of fundamental rights or risk of torture."
+    },
+    {
+      question: "What is the difference between active and passive extradition?",
+      answer: "Active extradition is when Spain requests the surrender of a person who is in another country. Passive is when another country requests Spain to surrender someone who is on Spanish territory. The procedures and guarantees are different."
+    }
+  ],
+  fr: [
+    {
+      question: "Qu'est-ce qu'un mandat d'arrêt européen (MAE)?",
+      answer: "Le MAE est un mécanisme de coopération judiciaire entre les pays de l'UE pour la remise des personnes recherchées pour des crimes. Il est exécuté de manière simplifiée, mais il existe des motifs de refus tels que la double incrimination, l'autorité de la chose jugée ou les droits fondamentaux."
+    },
+    {
+      question: "Combien de temps dure une procédure d'extradition?",
+      answer: "Un MAE doit être résolu dans un délai maximum de 60 jours (90 s'il y a prolongation). Les extraditions hors UE peuvent prendre plusieurs mois. Pendant ce temps, la personne peut être en prison provisoire ou en liberté avec des mesures préventives."
+    },
+    {
+      question: "Peut-on refuser une extradition?",
+      answer: "Oui, il existe des motifs obligatoires et facultatifs de refus : principe ne bis in idem, prescription, minorité, nationalité espagnole (pour certains pays), violation des droits fondamentaux ou risque de torture."
+    },
+    {
+      question: "Quelle est la différence entre extradition active et passive?",
+      answer: "L'extradition active est lorsque l'Espagne demande la remise d'une personne se trouvant dans un autre pays. La passive est lorsque un autre pays demande à l'Espagne la remise de quelqu'un se trouvant sur le territoire espagnol. Les procédures et garanties sont différentes."
+    }
   ]
 };
 
-export default function ExtradicionesPage() {
-  const { language } = useLanguage();
-  const t = language === 'ar' ? {
+const translations = {
+  es: {
+    title: "Abogado Extradiciones y OEDE",
+    subtitle: "Defensa especializada en extradiciones internacionales y Órdenes Europeas de Detención y Entrega",
+    description: "Especialistas en procedimientos de extradición internacional y Órdenes Europeas de Detención y Entrega. Experiencia en defensa contra extradiciones, cooperación judicial internacional y protección de derechos fundamentales en procedimientos transfronterizos.",
+    features: {
+      title: "Nuestros Servicios en Extradiciones",
+      items: [
+        "Defensa contra Órdenes Europeas de Detención y Entrega (OEDE)",
+        "Procedimientos de extradición desde y hacia España",
+        "Cooperación judicial internacional",
+        "Protección de derechos fundamentales en extradiciones",
+        "Medidas cautelares en procedimientos de extradición",
+        "Recursos contra decisiones de entrega"
+      ]
+    },
+    relatedCases: "Casos Relacionados",
+    faq: "Preguntas Frecuentes",
+    cta: {
+      title: "¿Enfrentas un Procedimiento de Extradición?",
+      description: "Nuestro equipo especializado en extradiciones está disponible 24/7 para proteger tus derechos",
+      button: "Consulta Urgente"
+    },
+    seo: {
+      title: "Abogados Especialistas en Extradiciones en Madrid",
+      content1: "En STANS ABOGADOS somos líderes en la defensa en procedimientos de extradición en Madrid. Nuestro equipo cuenta con amplia experiencia en todo tipo de extradiciones, desde Órdenes Europeas (OEDE) hasta extradiciones con países fuera de la UE.",
+      content2: "Comprendemos la complejidad de estos procedimientos y la necesidad de una defensa rápida y efectiva. Nuestra experiencia incluye la negociación con autoridades internacionales y la protección de los derechos fundamentales de nuestros clientes, garantizando que no sean entregados si existe riesgo de vulneración de sus derechos.",
+      content3: "Ofrecemos asistencia inmediata desde el momento de la detención, representamos a nuestros clientes ante la Audiencia Nacional y trabajamos con una red de abogados internacionales para garantizar la mejor defensa tanto en el país de origen como en el de destino."
+    }
+  },
+  ar: {
     title: "محامي التسليم والأوامر الأوروبية",
     subtitle: "دفاع متخصص في عمليات التسليم الدولية وأوامر الاعتقال والتسليم الأوروبية (OEDE)",
     description: "متخصصون في إجراءات التسليم الدولية والأوامر الأوروبية للاعتقال والتسليم. خبرة في الدفاع ضد التسليم والتعاون القضائي الدولي وحماية الحقوق الأساسية في الإجراءات العابرة للحدود.",
@@ -81,35 +145,70 @@ export default function ExtradicionesPage() {
       content2: "نفهم تعقيد هذه الإجراءات والحاجة إلى دفاع سريع وفعال. خبرتنا تشمل التفاوض مع السلطات الدولية وحماية الحقوق الأساسية لعملائنا، مع ضمان عدم تسليمهم إذا كان هناك خطر انتهاك حقوقهم.",
       content3: "نقدم مساعدة فورية من لحظة الاعتقال، ونمثل عملاءنا أمام المحكمة الوطنية ونعمل مع شبكة من المحامين الدوليين لضمان أفضل دفاع في بلد المنشأ وبلد الوجهة."
     }
-  } : {
-    title: "Abogado Extradiciones y OEDE",
-    subtitle: "Defensa especializada en extradiciones internacionales y Órdenes Europeas de Detención y Entrega",
-    description: "Especialistas en procedimientos de extradición internacional y Órdenes Europeas de Detención y Entrega. Experiencia en defensa contra extradiciones, cooperación judicial internacional y protección de derechos fundamentales en procedimientos transfronterizos.",
+  },
+  en: {
+    title: "Extradition and EAW Lawyer",
+    subtitle: "Specialized defense in international extraditions and European Arrest Warrants",
+    description: "Specialists in international extradition procedures and European Arrest Warrants. Experience in defense against extraditions, international judicial cooperation and protection of fundamental rights in cross-border procedures.",
     features: {
-      title: "Nuestros Servicios en Extradiciones",
+      title: "Our Services in International Extraditions",
       items: [
-        "Defensa contra Órdenes Europeas de Detención y Entrega (OEDE)",
-        "Procedimientos de extradición desde y hacia España",
-        "Cooperación judicial internacional",
-        "Protección de derechos fundamentales en extradiciones",
-        "Medidas cautelares en procedimientos de extradición",
-        "Recursos contra decisiones de entrega"
+        "Defense against European Arrest Warrants (EAW)",
+        "Extradition procedures to and from Spain",
+        "International judicial cooperation",
+        "Protection of fundamental rights in extraditions",
+        "Precautionary measures in extradition procedures",
+        "Appeals against extradition decisions"
       ]
     },
-    relatedCases: "مقالات ذات صلة",
-    faq: "Preguntas Frecuentes",
+    relatedCases: "Related Cases",
+    faq: "Frequently Asked Questions",
     cta: {
-      title: "¿Enfrentas un Procedimiento de Extradición?",
-      description: "Nuestro equipo especializado en extradiciones está disponible 24/7 para proteger tus derechos",
-      button: "Consulta Urgente"
+      title: "Are you facing international extradition proceedings?",
+      description: "Our team specialized in international extraditions is available 24/7 to protect your rights",
+      button: "Urgent Consultation"
     },
     seo: {
-      title: "Abogados Especialistas en Extradiciones en Madrid",
-      content1: "En STANS ABOGADOS somos líderes en la defensa en procedimientos de extradición en Madrid. Nuestro equipo cuenta con amplia experiencia en todo tipo de extradiciones, desde Órdenes Europeas (OEDE) hasta extradiciones con países fuera de la UE.",
-      content2: "Comprendemos la complejidad de estos procedimientos y la necesidad de una defensa rápida y efectiva. Nuestra experiencia incluye la negociación con autoridades internacionales y la protección de los derechos fundamentales de nuestros clientes, garantizando que no sean entregados si existe riesgo de vulneración de sus derechos.",
-      content3: "Ofrecemos asistencia inmediata desde el momento de la detención, representamos a nuestros clientes ante la Audiencia Nacional y trabajamos con una red de abogados internacionales para garantizar la mejor defensa tanto en el país de origen como en el de destino."
+      title: "Lawyers Specialized in International Extraditions in Madrid",
+      content1: "At STANS ABOGADOS, we are leaders in defense in international extradition procedures in Madrid. Our team has extensive experience in all types of extraditions, from European Orders (EAW) to extraditions with countries outside the EU.",
+      content2: "We understand the complexity of these procedures and the need for fast and effective defense. Our experience includes negotiation with international authorities and protection of our clients' fundamental rights, ensuring they are not extradited if there is a risk of rights violation.",
+      content3: "We offer immediate assistance from the moment of arrest, represent our clients before the National Court and work with a network of international lawyers to ensure the best defense both in the country of origin and destination."
     }
-  };
+  },
+  fr: {
+    title: "Avocat en Extraditions et MAE",
+    subtitle: "Défense spécialisée en extraditions internationales et Mandats d'Arrêt Européens",
+    description: "Spécialistes dans les procédures d'extradition internationale et les Mandats d'Arrêt Européens. Expérience en défense contre les extraditions, coopération judiciaire internationale et protection des droits fondamentaux dans les procédures transfrontalières.",
+    features: {
+      title: "Nos Services en Extraditions Internationales",
+      items: [
+        "Défense contre les Mandats d'Arrêt Européens (MAE)",
+        "Procédures d'extradition vers et depuis l'Espagne",
+        "Coopération judiciaire internationale",
+        "Protection des droits fondamentaux en extraditions",
+        "Mesures préventives dans les procédures d'extradition",
+        "Recours contre les décisions d'extradition"
+      ]
+    },
+    relatedCases: "Cas Connexes",
+    faq: "Questions Fréquemment Posées",
+    cta: {
+      title: "Faites-vous face à des procédures d'extradition internationale?",
+      description: "Notre équipe spécialisée dans les extraditions internationales est disponible 24/7 pour protéger vos droits",
+      button: "Consultation Urgente"
+    },
+    seo: {
+      title: "Avocats Spécialisés en Extraditions Internationales à Madrid",
+      content1: "Chez STANS ABOGADOS, nous sommes leaders dans la défense des procédures d'extradition internationale à Madrid. Notre équipe possède une vaste expérience dans tous types d'extraditions, des Ordres Européens (MAE) aux extraditions avec des pays hors UE.",
+      content2: "Nous comprenons la complexité de ces procédures et la nécessité d'une défense rapide et efficace. Notre expérience comprend la négociation avec les autorités internationales et la protection des droits fondamentaux de nos clients, garantissant qu'ils ne soient pas extradés s'il existe un risque de violation de leurs droits.",
+      content3: "Nous offrons une assistance immédiate dès le moment de l'arrestation, représentons nos clients devant l'Audience Nationale et travaillons avec un réseau d'avocats internationaux pour garantir la meilleure défense tant dans le pays d'origine que de destination."
+    }
+  }
+};
+
+export default function ExtradicionesPage() {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.es;
 
   return (
     <>
@@ -354,7 +453,7 @@ export default function ExtradicionesPage() {
               </h2>
               
               <div className="space-y-6">
-                {faqs[language === 'ar' ? 'ar' : 'es'].map((faq, index) => (
+                {faqs[language]?.map((faq, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}

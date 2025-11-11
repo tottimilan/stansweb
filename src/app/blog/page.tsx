@@ -384,10 +384,10 @@ export default function BlogPage() {
               className="text-center mb-8"
             >
               <h2 className="text-3xl font-bold text-black mb-4">
-                {language === 'ar' ? 'جميع المقالات' : 'Todos los Artículos'}
+                {language === 'ar' ? 'جميع المقالات' : language === 'en' ? 'All Articles' : language === 'fr' ? 'Tous les Articles' : 'Todos los Artículos'}
               </h2>
               <p className="text-black/70 text-lg mb-6">
-                {language === 'ar' ? `${filteredPosts.length} مقالاً متاحاً` : `${filteredPosts.length} artículos disponibles`}
+                {language === 'ar' ? `${filteredPosts.length} مقالاً متاحاً` : language === 'en' ? `${filteredPosts.length} articles available` : language === 'fr' ? `${filteredPosts.length} articles disponibles` : `${filteredPosts.length} artículos disponibles`}
               </p>
               
               {/* Search Bar */}
@@ -401,7 +401,7 @@ export default function BlogPage() {
                       setSearchTerm(e.target.value);
                       setVisiblePosts(9); // Reset al buscar
                     }}
-                    placeholder={language === 'ar' ? 'ابحث في المقالات...' : 'Buscar artículos...'}
+                    placeholder={language === 'ar' ? 'ابحث في المقالات...' : language === 'en' ? 'Search articles...' : language === 'fr' ? 'Rechercher des articles...' : 'Buscar artículos...'}
                     className={`w-full ${language === 'ar' ? 'pr-12 pl-12' : 'pl-12 pr-12'} py-4 rounded-xl border-2 border-gold/20 focus:border-gold/50 focus:outline-none text-black placeholder-black/40 ${language === 'ar' ? 'text-right' : ''}`}
                   />
                   {searchTerm && (
@@ -415,8 +415,12 @@ export default function BlogPage() {
                 </div>
                 {searchTerm && (
                   <p className="text-sm text-black/60 mt-2">
-                    {language === 'ar' 
+                    {language === 'ar'
                       ? `${filteredPosts.length} نتيجة للبحث عن "${searchTerm}"`
+                      : language === 'en'
+                      ? `${filteredPosts.length} results for "${searchTerm}"`
+                      : language === 'fr'
+                      ? `${filteredPosts.length} résultats pour "${searchTerm}"`
                       : `${filteredPosts.length} resultados para "${searchTerm}"`}
                   </p>
                 )}
@@ -496,8 +500,12 @@ export default function BlogPage() {
                   <ArrowRight className="h-4 w-4" />
                 </button>
                 <p className="text-black/50 text-sm mt-3">
-                  {language === 'ar' 
-                    ? `عرض ${visiblePosts} من ${filteredPosts.length} مقالاً` 
+                  {language === 'ar'
+                    ? `عرض ${visiblePosts} من ${filteredPosts.length} مقالاً`
+                    : language === 'en'
+                    ? `Showing ${visiblePosts} of ${filteredPosts.length} articles`
+                    : language === 'fr'
+                    ? `Affichage de ${visiblePosts} sur ${filteredPosts.length} articles`
                     : `Mostrando ${visiblePosts} de ${filteredPosts.length} artículos`}
                 </p>
               </motion.div>
@@ -543,28 +551,36 @@ export default function BlogPage() {
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <article className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-gold mb-6">
-                {language === 'ar' ? 'مدونة قانونية متخصصة في القانون الجنائي' : 'Blog Jurídico Especializado en Derecho Penal'}
+                {language === 'ar' ? 'مدونة قانونية متخصصة في القانون الجنائي' : language === 'en' ? 'Legal Blog Specialized in Criminal Law' : language === 'fr' ? 'Blog Juridique Spécialisé en Droit Pénal' : 'Blog Jurídico Especializado en Derecho Penal'}
               </h2>
               
               <p className="text-black/80 leading-relaxed mb-6">
                 {language === 'ar'
                   ? 'مدونة ستانس للمحاماة هي مصدر شامل للمعلومات القانونية المتخصصة في القانون الجنائي الإسباني. نكتب مقالات مفصلة حول الإرهاب، تسليم المطلوبين، حقوق المحتجزين، والإجراءات القضائية المعقدة.'
+                  : language === 'en'
+                  ? 'STANS ABOGADOS blog is a comprehensive source of legal information specialized in Spanish criminal law. We publish detailed articles about terrorism, extraditions, detainees\' rights, complex judicial procedures, and defense strategies. All our articles are written by practicing criminal lawyers with direct experience in the courts.'
+                  : language === 'fr'
+                  ? 'Le blog de STANS ABOGADOS est une source complète d\'informations juridiques spécialisées en droit pénal espagnol. Nous publions des articles détaillés sur le terrorisme, les extraditions, les droits des détenus, les procédures judiciaires complexes et les stratégies de défense. Tous nos articles sont écrits par des avocats pénalistes en exercice avec une expérience directe dans les tribunaux.'
                   : 'El blog de STANS ABOGADOS es una fuente completa de información legal especializada en derecho penal español. Publicamos artículos detallados sobre terrorismo, extradiciones, derechos de detenidos, procedimientos judiciales y estrategias de defensa. Todos nuestros artículos están escritos por abogados penalistas en ejercicio con experiencia directa en los tribunales.'}
               </p>
 
               <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-                {language === 'ar' ? 'الموضوعات الرئيسية' : 'Temáticas Principales'}
+                {language === 'ar' ? 'الموضوعات الرئيسية' : language === 'en' ? 'Main Topics' : language === 'fr' ? 'Sujets Principaux' : 'Temáticas Principales'}
               </h3>
               <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
-                <li><strong>{language === 'ar' ? 'الإرهاب والمحكمة الوطنية:' : 'Terrorismo y Audiencia Nacional:'}</strong> {language === 'ar' ? 'دليل شامل لقضايا الإرهاب في إسبانيا' : 'Guías completas sobre delitos de terrorismo en España'}</li>
-                <li><strong>{language === 'ar' ? 'تسليم المطلوبين الدولي:' : 'Extradiciones Internacionales:'}</strong> {language === 'ar' ? 'خاصة إسبانيا-المغرب' : 'Especialmente España-Marruecos y OEDE'}</li>
-                <li><strong>{language === 'ar' ? 'حقوق المحتجزين:' : 'Derechos de Detenidos:'}</strong> {language === 'ar' ? 'ما يجب أن تعرفه إذا تم احتجازك' : 'Qué debes saber si te detienen'}</li>
-                <li><strong>{language === 'ar' ? 'الدفاع الجنائي العاجل:' : 'Defensa Penal Urgente:'}</strong> {language === 'ar' ? 'خطوات فورية عند الاحتجاز' : 'Pasos inmediatos en caso de detención'}</li>
+                <li><strong>{language === 'ar' ? 'الإرهاب والمحكمة الوطنية:' : language === 'en' ? 'Terrorism and National Court:' : language === 'fr' ? 'Terrorisme et Audience Nationale:' : 'Terrorismo y Audiencia Nacional:'}</strong> {language === 'ar' ? 'دليل شامل لقضايا الإرهاب في إسبانيا' : language === 'en' ? 'Complete guides on terrorism crimes in Spain' : language === 'fr' ? 'Guides complètes sur les crimes de terrorisme en Espagne' : 'Guías completas sobre delitos de terrorismo en España'}</li>
+                <li><strong>{language === 'ar' ? 'تسليم المطلوبين الدولي:' : language === 'en' ? 'International Extraditions:' : language === 'fr' ? 'Extraditions Internationales:' : 'Extradiciones Internacionales:'}</strong> {language === 'ar' ? 'خاصة إسبانيا-المغرب' : language === 'en' ? 'Especially Spain-Morocco and EAW' : language === 'fr' ? 'Particulièrement Espagne-Maroc et Mandat d&apos;Arrêt Européen' : 'Especialmente España-Marruecos y OEDE'}</li>
+                <li><strong>{language === 'ar' ? 'حقوق المحتجزين:' : language === 'en' ? 'Detainees\' Rights:' : language === 'fr' ? 'Droits des Détenus:' : 'Derechos de Detenidos:'}</strong> {language === 'ar' ? 'ما يجب أن تعرفه إذا تم احتجازك' : language === 'en' ? 'What you should know if you are detained' : language === 'fr' ? 'Ce que vous devez savoir si vous êtes détenu' : 'Qué debes saber si te detienen'}</li>
+                <li><strong>{language === 'ar' ? 'الدفاع الجنائي العاجل:' : language === 'en' ? 'Urgent Criminal Defense:' : language === 'fr' ? 'Défense Pénale Urgente:' : 'Defensa Penal Urgente:'}</strong> {language === 'ar' ? 'خطوات فورية عند الاحتجاز' : language === 'en' ? 'Immediate steps when arrested' : language === 'fr' ? 'Étapes immédiates en cas d&apos;arrestation' : 'Pasos inmediatos en caso de detención'}</li>
               </ul>
 
               <p className="text-black/60 text-sm italic mt-8">
                 {language === 'ar'
                   ? 'جميع مقالاتنا ذات طابع إعلامي ومبنية على خبرتنا الواقعية في المحاكم الإسبانية.'
+                  : language === 'en'
+                  ? 'All our articles are for informational purposes and are based on our real experience in Spanish courts.'
+                  : language === 'fr'
+                  ? 'Tous nos articles sont à caractère informatif et sont basés sur notre expérience réelle dans les tribunaux espagnols.'
                   : 'Todos nuestros artículos son de carácter informativo y están basados en nuestra experiencia real en tribunales españoles.'}
               </p>
             </article>

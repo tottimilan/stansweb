@@ -48,12 +48,76 @@ const faqs = {
       question: "ما هي مقاومة السلطة؟",
       answer: "المقاومة هي معارضة السلطة أو وكلائها بالعنف أو التخويف عند ممارسة وظائفهم. هي أقل خطورة من الاعتداء وتُعاقب بالسجن من 3 أشهر إلى سنة أو غرامة."
     }
+  ],
+  en: [
+    {
+      question: "What are the penalties for drug trafficking crimes?",
+      answer: "Penalties vary depending on the substance and quantity. For drugs that cause serious harm to health (cocaine, heroin), penalties range from 3 to 6 years. For other substances (cannabis, hashish), from 1 to 3 years. They are aggravated if there is criminal organization or large quantity."
+    },
+    {
+      question: "What is a crime of assault against authority?",
+      answer: "Assault consists of using force, intimidation or serious resistance against authority, agents or public officials in the exercise of their functions. It is punished with imprisonment of 1 to 4 years, being aggravated if weapons are used."
+    },
+    {
+      question: "When can a final sentence be reviewed?",
+      answer: "During criminal execution, measures such as permits, third degree or conditional release can be reviewed. It is also possible to request pardons, suspensions of sentence or substitutions of penalty according to legal requirements."
+    },
+    {
+      question: "What is resistance to authority?",
+      answer: "Resistance is opposing authority or its agents with violence or intimidation when exercising their functions. It is less serious than assault and is punished with imprisonment from 3 months to 1 year or fine."
+    }
+  ],
+  fr: [
+    {
+      question: "Quelles sont les peines pour les crimes de trafic de drogue?",
+      answer: "Les peines varient selon la substance et la quantité. Pour les drogues qui causent un grave préjudice à la santé (cocaïne, héroïne), les peines vont de 3 à 6 ans. Pour d'autres substances (cannabis, hachisch), de 1 à 3 ans. Elles sont aggravées s'il y a organisation criminelle ou grande quantité."
+    },
+    {
+      question: "Qu'est-ce qu'un crime d'attentat contre l'autorité?",
+      answer: "L'attentat consiste à employer la force, l'intimidation ou une résistance grave contre l'autorité, les agents ou les fonctionnaires publics dans l'exercice de leurs fonctions. Il est puni d'une peine de prison de 1 à 4 ans, s'aggravant si des armes sont utilisées."
+    },
+    {
+      question: "Quand peut-on réviser une condamnation définitive?",
+      answer: "Pendant l'exécution pénale, on peut réviser des mesures telles que les permissions, le troisième degré ou la liberté conditionnelle. Il est également possible de demander des grâces, des suspensions de peine ou des substitutions de peine selon les exigences légales."
+    },
+    {
+      question: "Qu'est-ce que la résistance à l'autorité?",
+      answer: "La résistance consiste à s'opposer à l'autorité ou à ses agents avec violence ou intimidation lorsqu'ils exercent leurs fonctions. Elle est moins grave que l'attentat et est punie d'une peine de prison de 3 mois à 1 an ou d'une amende."
+    }
   ]
 };
 
-export default function OrdenPublicoDrogasPage() {
-  const { language } = useLanguage();
-  const t = language === 'ar' ? {
+const translations = {
+  es: {
+    title: "Abogado Orden Público y Drogas",
+    subtitle: "Defensa especializada en delitos contra la salud pública, autoridad y ejecución penal",
+    description: "Defensa en casos de orden público, delitos contra la salud pública (tráfico de drogas) y ejecución penal. Asesoramiento en resistencia a la autoridad, atentado, desobediencia, tenencia de armas, medidas cautelares, libertad provisional y recursos en fase de ejecución.",
+    features: {
+      title: "Nuestros Servicios en Orden Público y Drogas",
+      items: [
+        "Defensa en delitos de tráfico de drogas",
+        "Resistencia a la autoridad y atentado a agentes",
+        "Desobediencia y quebrantamiento de órdenes",
+        "Tenencia ilícita de armas",
+        "Ejecución penal y tercer grado",
+        "Medidas cautelares y libertad provisional"
+      ]
+    },
+    relatedCases: "Artículos relacionados",
+    faq: "Preguntas Frecuentes",
+    cta: {
+      title: "¿Necesitas Defensa en un Caso de Orden Público o Drogas?",
+      description: "Nuestro equipo especializado está disponible 24/7 para ofrecer defensa inmediata en todo tipo de delitos contra el orden público",
+      button: "Consulta Urgente"
+    },
+    seo: {
+      title: "Abogados Especialistas en Orden Público y Drogas en Madrid",
+      content1: "En STANS ABOGADOS somos expertos en la defensa de delitos contra el orden público y la salud pública en Madrid y toda España. Manejamos todo tipo de casos, desde tráfico de drogas hasta delitos contra la autoridad y ejecución penal.",
+      content2: "Nuestro equipo cuenta con amplia experiencia en la defensa de casos de drogas, desde la simple tenencia hasta el tráfico a gran escala. Entendemos la complejidad de estos casos y la necesidad de una defensa técnica que considere todas las circunstancias atenuantes y procesales.",
+      content3: "Además de la defensa en juicios, ofrecemos asesoramiento en fase de ejecución penal, incluyendo permisos, tercer grado, libertad condicional e indultos. Trabajamos para conseguir las mejores condiciones posibles para nuestros clientes en todas las fases del proceso."
+    }
+  },
+  ar: {
     title: "محامي جرائم النظام العام والمخدرات",
     subtitle: "دفاع متخصص في جرائم الصحة العامة، والسلطة، والتنفيذ الجنائي",
     description: "دفاع في قضايا النظام العام وجرائم الصحة العامة (الاتجار بالمخدرات) والتنفيذ الجنائي. استشارة في المقاومة للسلطة والاعتداء والعصيان وحيازة الأسلحة والتدابير الاحترازية والحرية المؤقتة والطعون في مرحلة التنفيذ.",
@@ -81,35 +145,70 @@ export default function OrdenPublicoDrogasPage() {
       content2: "فريقنا لديه خبرة واسعة في الدفاع في قضايا المخدرات، من الحيازة البسيطة إلى الاتجار على نطاق واسع. نفهم تعقيدات هذه القضايا والحاجة إلى دفاع تقني يأخذ في الاعتبار جميع الظروف المخففة والإجرائية.",
       content3: "بالإضافة إلى الدفاع في المحاكمات، نقدم المشورة في مرحلة التنفيذ الجنائي، بما في ذلك التصاريح والدرجة الثالثة والحرية المشروطة والعفو. نعمل لتحقيق أفضل الشروط الممكنة لعملائنا في جميع مراحل العملية."
     }
-  } : {
-    title: "Abogado Orden Público y Drogas",
-    subtitle: "Defensa especializada en delitos contra la salud pública, autoridad y ejecución penal",
-    description: "Defensa en casos de orden público, delitos contra la salud pública (tráfico de drogas) y ejecución penal. Asesoramiento en resistencia a la autoridad, atentado, desobediencia, tenencia de armas, medidas cautelares, libertad provisional y recursos en fase de ejecución.",
+  },
+  en: {
+    title: "Public Order and Drugs Lawyer",
+    subtitle: "Specialized defense in public health crimes, authority and criminal execution",
+    description: "Defense in public order cases, crimes against public health (drug trafficking) and criminal execution. Consultation on resistance to authority, assault, disobedience, weapons possession, precautionary measures, provisional release and appeals in execution phase.",
     features: {
-      title: "Nuestros Servicios en Orden Público y Drogas",
+      title: "Our Services in Public Order and Drugs",
       items: [
-        "Defensa en delitos de tráfico de drogas",
-        "Resistencia a la autoridad y atentado a agentes",
-        "Desobediencia y quebrantamiento de órdenes",
-        "Tenencia ilícita de armas",
-        "Ejecución penal y tercer grado",
-        "Medidas cautelares y libertad provisional"
+        "Defense in drug trafficking crimes",
+        "Resistance to authority and assault on agents",
+        "Disobedience and breach of expulsion orders",
+        "Illegal possession of weapons",
+        "Criminal execution and third degree",
+        "Precautionary measures and provisional release"
       ]
     },
-    relatedCases: "مقالات ذات صلة",
-    faq: "Preguntas Frecuentes",
+    relatedCases: "Related Articles",
+    faq: "Frequently Asked Questions",
     cta: {
-      title: "¿Necesitas Defensa en un Caso de Orden Público o Drogas?",
-      description: "Nuestro equipo especializado está disponible 24/7 para ofrecer defensa inmediata en todo tipo de delitos contra el orden público",
-      button: "Consulta Urgente"
+      title: "Do you need defense in a public order or drugs case?",
+      description: "Our specialized team is available 24/7 to provide immediate defense in all types of public order crimes",
+      button: "Urgent Consultation"
     },
     seo: {
-      title: "Abogados Especialistas en Orden Público y Drogas en Madrid",
-      content1: "En STANS ABOGADOS somos expertos en la defensa de delitos contra el orden público y la salud pública en Madrid y toda España. Manejamos todo tipo de casos, desde tráfico de drogas hasta delitos contra la autoridad y ejecución penal.",
-      content2: "Nuestro equipo cuenta con amplia experiencia en la defensa de casos de drogas, desde la simple tenencia hasta el tráfico a gran escala. Entendemos la complejidad de estos casos y la necesidad de una defensa técnica que considere todas las circunstancias atenuantes y procesales.",
-      content3: "Además de la defensa en juicios, ofrecemos asesoramiento en fase de ejecución penal, incluyendo permisos, tercer grado, libertad condicional e indultos. Trabajamos para conseguir las mejores condiciones posibles para nuestros clientes en todas las fases del proceso."
+      title: "Lawyers Specialized in Public Order and Drugs in Madrid",
+      content1: "At STANS ABOGADOS we are experts in the defense of public order and public health crimes in Madrid and throughout Spain. We handle all types of cases, from drug trafficking to authority crimes and criminal execution.",
+      content2: "Our team has extensive experience in defending drug cases, from simple possession to large-scale trafficking. We understand the complexity of these cases and the need for technical defense that considers all mitigating and procedural circumstances.",
+      content3: "In addition to defense in trials, we offer advice in the criminal execution phase, including permits, third degree, conditional release and pardons. We work to achieve the best possible conditions for our clients at all stages of the process."
     }
-  };
+  },
+  fr: {
+    title: "Avocat Ordre Public et Drogues",
+    subtitle: "Défense spécialisée en crimes contre la santé publique, l'autorité et l'exécution pénale",
+    description: "Défense dans les affaires d'ordre public, crimes contre la santé publique (trafic de drogue) et exécution pénale. Conseil sur la résistance à l'autorité, attentat, désobéissance, possession d'armes, mesures précautionnelles, liberté provisoire et recours en phase d'exécution.",
+    features: {
+      title: "Nos Services en Ordre Public et Drogues",
+      items: [
+        "Défense dans les crimes de trafic de drogue",
+        "Résistance à l'autorité et attentat aux agents",
+        "Désobéissance et violation des ordres d'expulsion",
+        "Possession illégale d'armes",
+        "Exécution pénale et troisième degré",
+        "Mesures précautionnelles et liberté provisoire"
+      ]
+    },
+    relatedCases: "Articles Connexes",
+    faq: "Questions Fréquemment Posées",
+    cta: {
+      title: "Avez-vous besoin de défense dans une affaire d'ordre public ou de drogues?",
+      description: "Notre équipe spécialisée est disponible 24/7 pour fournir une défense immédiate dans tous les types de crimes contre l'ordre public",
+      button: "Consultation Urgente"
+    },
+    seo: {
+      title: "Avocats Spécialisés en Ordre Public et Drogues à Madrid",
+      content1: "Chez STANS ABOGADOS nous sommes experts dans la défense des crimes d'ordre public et de santé publique à Madrid et dans toute l'Espagne. Nous traitons tous types d'affaires, du trafic de drogue aux crimes contre l'autorité et l'exécution pénale.",
+      content2: "Notre équipe possède une vaste expérience dans la défense des affaires de drogue, de la simple possession au trafic à grande échelle. Nous comprenons la complexité de ces affaires et la nécessité d'une défense technique qui prend en compte toutes les circonstances atténuantes et procédurales.",
+      content3: "En plus de la défense aux procès, nous offrons des conseils en phase d'exécution pénale, y compris les permissions, le troisième degré, la liberté conditionnelle et les grâces. Nous travaillons pour obtenir les meilleures conditions possibles pour nos clients à toutes les étapes du processus."
+    }
+  }
+};
+
+export default function OrdenPublicoDrogasPage() {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.es;
 
   return (
     <>
@@ -150,7 +249,7 @@ export default function OrdenPublicoDrogasPage() {
                   className="inline-flex items-center gap-2 bg-gold hover:bg-gold/90 text-black font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   <Phone className="h-5 w-5" />
-                  <span>Llamar Ahora</span>
+                  <span>{language === 'ar' ? 'اتصل الآن' : language === 'en' ? 'Call Now' : language === 'fr' ? 'Appeler Maintenant' : 'Llamar Ahora'}</span>
                 </a>
                 <a
                   href={`https://wa.me/${WHATSAPP}`}
@@ -169,9 +268,9 @@ export default function OrdenPublicoDrogasPage() {
         <section className="bg-white py-3">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <nav aria-label="Breadcrumb" className={`text-sm ${language === 'ar' ? 'text-right' : 'text-left'} text-black/60`}>
-              <Link href="/" className="hover:text-gold">{language === 'ar' ? 'الصفحة الرئيسية' : 'Inicio'}</Link>
+              <Link href="/" className="hover:text-gold">{language === 'ar' ? 'الصفحة الرئيسية' : language === 'en' ? 'Home' : language === 'fr' ? 'Accueil' : 'Inicio'}</Link>
               <span className="px-2">›</span>
-              <Link href="/servicios" className="hover:text-gold">{language === 'ar' ? 'الخدمات' : 'Servicios'}</Link>
+              <Link href="/servicios" className="hover:text-gold">{language === 'ar' ? 'الخدمات' : language === 'en' ? 'Services' : language === 'fr' ? 'Services' : 'Servicios'}</Link>
               <span className="px-2">›</span>
               <span className="text-black">{t.title}</span>
             </nav>
@@ -246,7 +345,7 @@ export default function OrdenPublicoDrogasPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-gold mb-8 text-center">
-                {language === 'ar' ? 'مقالات ذات صلة' : 'Artículos relacionados'}
+                {t.relatedCases}
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -291,7 +390,7 @@ export default function OrdenPublicoDrogasPage() {
                 </Link>
               </div>
               <div className="text-center mt-6">
-                <Link href="/casos" className="text-gold font-semibold hover:text-gold/80">{language === 'ar' ? 'عرض جميع الحالات' : 'Ver todos los casos'} →</Link>
+                <Link href="/casos" className="text-gold font-semibold hover:text-gold/80">{language === 'ar' ? 'عرض جميع الحالات' : language === 'en' ? 'View all cases' : language === 'fr' ? 'Voir tous les cas' : 'Ver todos los casos'} →</Link>
               </div>
             </motion.div>
           </div>
@@ -311,7 +410,7 @@ export default function OrdenPublicoDrogasPage() {
               </h2>
               
               <div className="space-y-6">
-                {faqs[language === 'ar' ? 'ar' : 'es'].map((faq, index) => (
+                {faqs[language]?.map((faq, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
@@ -389,57 +488,61 @@ export default function OrdenPublicoDrogasPage() {
               </p>
 
               <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-                {language === 'ar' ? 'أنواع قضايا النظام العام التي ندافع عنها' : 'Tipos de Casos de Orden Público que Defendemos'}
+                {language === 'ar' ? 'أنواع قضايا النظام العام التي ندافع عنها' : language === 'en' ? 'Types of Public Order Cases We Defend' : language === 'fr' ? 'Types d\'Affaires d\'Ordre Public que Nous Défendons' : 'Tipos de Casos de Orden Público que Defendemos'}
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'جرائم المخدرات' : 'Delitos de Drogas'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'الدفاع في جميع أنواع جرائم المخدرات والصحة العامة' : 'Defensa en todo tipo de delitos contra la salud pública'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'جرائم المخدرات' : language === 'en' ? 'Drug Crimes' : language === 'fr' ? 'Crimes de Drogue' : 'Delitos de Drogas'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'الدفاع في جميع أنواع جرائم المخدرات والصحة العامة' : language === 'en' ? 'Defense in all types of drug crimes and public health' : language === 'fr' ? 'Défense dans tous types de crimes de drogue et santé publique' : 'Defensa en todo tipo de delitos contra la salud pública'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'جرائم السلطة' : 'Delitos contra la Autoridad'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'المقاومة والاعتداء والعصيان' : 'Resistencia, atentado y desobediencia'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'جرائم السلطة' : language === 'en' ? 'Authority Crimes' : language === 'fr' ? 'Crimes contre l\'Autorité' : 'Delitos contra la Autoridad'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'المقاومة والاعتداء والعصيان' : language === 'en' ? 'Resistance, assault and disobedience' : language === 'fr' ? 'Résistance, attentat et désobéissance' : 'Resistencia, atentado y desobediencia'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التنفيذ الجنائي' : 'Ejecución Penal'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'التصاريح والدرجة الثالثة والحرية المشروطة' : 'Permisos, tercer grado y libertad condicional'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'التنفيذ الجنائي' : language === 'en' ? 'Criminal Execution' : language === 'fr' ? 'Exécution Pénale' : 'Ejecución Penal'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'التصاريح والدرجة الثالثة والحرية المشروطة' : language === 'en' ? 'Permits, third degree and conditional release' : language === 'fr' ? 'Permissions, troisième degré et liberté conditionnelle' : 'Permisos, tercer grado y libertad condicional'}</p>
                 </div>
                 <div className="bg-gold/5 p-4 rounded-lg">
-                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الأسلحة' : 'Armas'}</p>
-                  <p className="text-black/70 text-sm">{language === 'ar' ? 'حيازة غير قانونية وتهريب الأسلحة' : 'Tenencia ilícita y tráfico de armas'}</p>
+                  <p className="font-semibold text-black mb-2 text-base">{language === 'ar' ? 'الأسلحة' : language === 'en' ? 'Weapons' : language === 'fr' ? 'Armes' : 'Armas'}</p>
+                  <p className="text-black/70 text-sm">{language === 'ar' ? 'حيازة غير قانونية وتهريب الأسلحة' : language === 'en' ? 'Illegal possession and arms trafficking' : language === 'fr' ? 'Possession illégale et trafic d\'armes' : 'Tenencia ilícita y tráfico de armas'}</p>
                 </div>
               </div>
 
               <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-                {language === 'ar' ? 'خبرتنا في الدفاع عن جرائم المخدرات' : 'Nuestra Experiencia en Defensa de Delitos de Drogas'}
+                {language === 'ar' ? 'خبرتنا في الدفاع عن جرائم المخدرات' : language === 'en' ? 'Our Experience in Defense of Drug Crimes' : language === 'fr' ? 'Notre Expérience dans la Défense des Crimes de Drogue' : 'Nuestra Experiencia en Defensa de Delitos de Drogas'}
               </h3>
 
               <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
-                <li><strong>{language === 'ar' ? 'دفاع تقني:' : 'Defensa técnica:'}</strong> {language === 'ar' ? 'تحليل الأدلة وسلسلة الحفظ' : 'Análisis de pruebas y cadena de custodia'}</li>
-                <li><strong>{language === 'ar' ? 'تدابير بديلة:' : 'Medidas alternativas:'}</strong> {language === 'ar' ? 'برامج إعادة التأهيل كبديل للسجن' : 'Programas de deshabituación como alternativa a prisión'}</li>
-                <li><strong>{language === 'ar' ? 'تخفيف العقوبة:' : 'Atenuantes:'}</strong> {language === 'ar' ? 'تطبيق جميع الظروف المخففة الممكنة' : 'Aplicación de todas las atenuantes posibles'}</li>
-                <li><strong>{language === 'ar' ? 'التنفيذ:' : 'Ejecución:'}</strong> {language === 'ar' ? 'استشارة في مرحلة التنفيذ الجنائي' : 'Asesoramiento en fase de ejecución penal'}</li>
+                <li><strong>{language === 'ar' ? 'دفاع تقني:' : language === 'en' ? 'Technical defense:' : language === 'fr' ? 'Défense technique:' : 'Defensa técnica:'}</strong> {language === 'ar' ? 'تحليل الأدلة وسلسلة الحفظ' : language === 'en' ? 'Evidence analysis and chain of custody' : language === 'fr' ? 'Analyse des preuves et chaîne de conservation' : 'Análisis de pruebas y cadena de custodia'}</li>
+                <li><strong>{language === 'ar' ? 'تدابير بديلة:' : language === 'en' ? 'Alternative measures:' : language === 'fr' ? 'Mesures alternatives:' : 'Medidas alternativas:'}</strong> {language === 'ar' ? 'برامج إعادة التأهيل كبديل للسجن' : language === 'en' ? 'Rehabilitation programs as alternative to prison' : language === 'fr' ? 'Programmes de réhabilitation comme alternative à la prison' : 'Programas de deshabituación como alternativa a prisión'}</li>
+                <li><strong>{language === 'ar' ? 'تخفيف العقوبة:' : language === 'en' ? 'Sentence reduction:' : language === 'fr' ? 'Réduction de peine:' : 'Atenuantes:'}</strong> {language === 'ar' ? 'تطبيق جميع الظروف المخففة الممكنة' : language === 'en' ? 'Application of all possible mitigating circumstances' : language === 'fr' ? 'Application de toutes les circonstances atténuantes possibles' : 'Aplicación de todas las atenuantes posibles'}</li>
+                <li><strong>{language === 'ar' ? 'التنفيذ:' : language === 'en' ? 'Execution:' : language === 'fr' ? 'Exécution:' : 'Ejecución:'}</strong> {language === 'ar' ? 'استشارة في مرحلة التنفيذ الجنائي' : language === 'en' ? 'Advice in criminal execution phase' : language === 'fr' ? 'Conseil en phase d\'exécution pénale' : 'Asesoramiento en fase de ejecución penal'}</li>
               </ul>
 
                   <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
                     <p className="text-lg font-semibold text-gold mb-3">
-                      {language === 'ar' ? 'هل تواجه اتهامات بجرائم المخدرات أو النظام العام؟' : '¿Enfrentas Acusaciones por Drogas o Delitos de Orden Público?'}
+                      {language === 'ar' ? 'هل تواجه اتهامات بجرائم المخدرات أو النظام العام؟' : language === 'en' ? 'Are you facing charges for drugs or public order crimes?' : language === 'fr' ? 'Faites-vous face à des accusations pour drogues ou crimes d\'ordre public?' : '¿Enfrentas Acusaciones por Drogas o Delitos de Orden Público?'}
                 </p>
                 <p className="text-black/80 mb-4">
                   {language === 'ar'
                     ? 'الوقت حاسم في هذه القضايا. اتصل بنا الآن للحصول على دفاع متخصص. فريقنا لديه الخبرة اللازمة للتعامل مع جميع أنواع جرائم النظام العام والمخدرات.'
+                    : language === 'en'
+                    ? 'Time is crucial in these cases. Contact us now for specialized defense. Our team has the necessary experience to handle all types of public order and drug crimes.'
+                    : language === 'fr'
+                    ? 'Le temps est crucial dans ces affaires. Contactez-nous maintenant pour une défense spécialisée. Notre équipe a l\'expérience nécessaire pour traiter tous types de crimes d\'ordre public et de drogue.'
                     : 'El tiempo es crucial en estos casos. Contacta ahora para obtener defensa especializada. Nuestro equipo tiene la experiencia necesaria para manejar todo tipo de delitos contra el orden público y drogas.'}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a 
+                  <a
                     href="tel:+34611687226"
                     className="inline-flex items-center justify-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
                   >
                     <Phone className="h-5 w-5" />
-                    {language === 'ar' ? 'اتصل: 34 611 68 72 26+' : 'Llamar: +34 611 68 72 26'}
+                    {language === 'ar' ? 'اتصل: 34 611 68 72 26+' : language === 'en' ? 'Call: +34 611 68 72 26' : language === 'fr' ? 'Appeler: +34 611 68 72 26' : 'Llamar: +34 611 68 72 26'}
                   </a>
-                  <a 
+                  <a
                     href="mailto:info@stansabogados.com"
                     className="inline-flex items-center justify-center gap-2 border border-gold text-gold hover:bg-gold hover:text-black px-6 py-3 rounded-lg font-medium transition"
                   >

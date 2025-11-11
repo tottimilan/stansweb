@@ -221,9 +221,9 @@ export const lawyers: Lawyer[] = [
       'Defensa de Empresas'
     ],
     notableCases: [7, 10, 15], // Estafa Jaén, Blanqueo, Derechos trabajadores
-    image: '/images/Equipo-optimized/Ada1.webp?v=2',
-    hoverImage: '/images/Equipo-optimized/Ada4.webp?v=2',
-    backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=2',
+    image: '/images/Equipo-optimized/Ada1.webp?v=4',
+    hoverImage: '/images/Equipo-optimized/Ada4.webp?v=3',
+    backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=3',
     email: 'adeblas@stansabogados.com',
     caseTypes: [
       'Delitos económicos y contra el patrimonio',
