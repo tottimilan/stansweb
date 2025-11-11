@@ -39,9 +39,34 @@ const getIcon = (categoria: string) => {
   return <Award className="h-6 w-6" />;
 };
 
+// Mapeo de IDs a slugs SEO
+const caseIdToSlug: { [key: number]: string } = {
+  1: 'sobreseimiento-queque-abogados-cristianos',
+  2: 'sobreseimiento-nordin-workout',
+  3: 'operacion-luco-banda-rolex',
+  4: 'caso-dominican-dont-play-ddp',
+  5: 'caso-academia-yihad',
+  6: 'caso-lesiones-getafe',
+  7: 'caso-estafa-blanqueo-jaen',
+  8: 'absolucion-resistencia-autoridad',
+  9: 'caso-robo-violencia-absolucion',
+  10: 'absolucion-blanqueo-imprudencia',
+  11: 'absolucion-robo-violencia-juzgado-22',
+  12: 'sobreseimiento-amenazas-coacciones-extorsion',
+  13: 'sobreseimiento-delito-salud-publica',
+  14: 'caso-robo-violencia-pozuelo',
+  15: 'sobreseimiento-derechos-trabajadores',
+  16: 'sobreseimiento-robo-fuerza-mostoles',
+  17: 'sobreseimiento-robo-fuerza-navalcarnero',
+  18: 'ejecuciones-penales-revocacion-requisitorias',
+  19: 'abderrahim-akkouh-homicidio-torrejon',
+  20: 'operacion-bop-trafico-drogas'
+};
+
 const getCaseUrl = (caso: Case) => {
-  // Usar el ID del caso para la URL
-  return `/casos/${caso.id}`;
+  // Usar el slug SEO si existe, sino usar el ID como fallback
+  const slug = caseIdToSlug[caso.id];
+  return slug ? `/casos/${slug}` : `/casos/${caso.id}`;
 };
 
 // Traducir categorías
