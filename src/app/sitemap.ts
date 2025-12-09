@@ -68,9 +68,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Páginas de miembros del equipo - Alta prioridad para SEO local
+  // Última actualización: Sección de medios y navegación rápida (Dic 2024)
   const teamPages = allLawyerSlugs.map(slug => ({
     url: `${baseUrl}/equipo/${slug}`,
-    lastModified: currentDate,
+    lastModified: new Date('2024-12-09'), // Actualizado con medios y navegación
     changeFrequency: "monthly" as const,
     priority: 0.85, // Alta prioridad - búsquedas por nombre de abogado
   }))

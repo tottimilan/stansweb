@@ -70,7 +70,7 @@ export const lawyers: Lawyer[] = [
     image: '/images/Equipo-optimized/Ruben1.webp?v=4',
     hoverImage: '/images/Equipo-optimized/Ruben4.webp?v=4',
     backgroundImage: '/images/Equipo-optimized/Ruben3.webp?v=4',
-    email: 'rvaquero@stansabogados.com',
+    email: 'info@stansabogados.com',
     caseTypes: [
       'Delitos económicos y contra el patrimonio',
       'Delitos de odio y libertad de expresión',
@@ -121,7 +121,7 @@ export const lawyers: Lawyer[] = [
     image: '/images/Equipo-optimized/Mounir1.webp?v=4',
     hoverImage: '/images/Equipo-optimized/Mounir4.webp?v=4',
     backgroundImage: '/images/Equipo-optimized/Mounir3.webp?v=4',
-    email: 'melyemlahy@stansabogados.com',
+    email: 'info@stansabogados.com',
     caseTypes: [
       'Terrorismo y Audiencia Nacional',
       'Robos con violencia y grupo criminal',
@@ -171,7 +171,7 @@ export const lawyers: Lawyer[] = [
     image: '/images/Equipo-optimized/Diego1.webp?v=3',
     hoverImage: '/images/Equipo-optimized/Diego4.webp?v=3',
     backgroundImage: '/images/Equipo-optimized/Diego3.webp?v=3',
-    email: 'dcardona@stansabogados.com',
+    email: 'info@stansabogados.com',
     caseTypes: [
       'Robos con violencia y grupo criminal',
       'Terrorismo y Audiencia Nacional',
@@ -224,7 +224,7 @@ export const lawyers: Lawyer[] = [
     image: '/images/Equipo-optimized/Ada1.webp?v=4',
     hoverImage: '/images/Equipo-optimized/Ada4.webp?v=3',
     backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=3',
-    email: 'adeblas@stansabogados.com',
+    email: 'info@stansabogados.com',
     caseTypes: [
       'Delitos económicos y contra el patrimonio',
       'Delitos contra los derechos de los trabajadores'
