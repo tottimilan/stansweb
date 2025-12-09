@@ -27,7 +27,12 @@ export const lawyerTranslations = {
     favorable: 'FAVORABLE',
     year: 'Año',
     casesByLawyer: 'casos defendidos',
-    lawyerProfile: 'Perfil del abogado'
+    lawyerProfile: 'Perfil del abogado',
+    mediaSection: 'Medios y Apariciones',
+    mediaSectionSubtitle: 'Entrevistas y apariciones en medios de comunicación',
+    watch: 'Ver',
+    listen: 'Escuchar',
+    moreContentSoon: 'Más contenido se añadirá próximamente'
   },
   ar: {
     backToTeam: 'العودة إلى الفريق',
@@ -55,7 +60,12 @@ export const lawyerTranslations = {
     favorable: 'مؤاتي',
     year: 'السنة',
     casesByLawyer: 'قضايا تم الدفاع عنها',
-    lawyerProfile: 'ملف المحامي'
+    lawyerProfile: 'ملف المحامي',
+    mediaSection: 'الوسائط والمظاهر',
+    mediaSectionSubtitle: 'مقابلات ومظاهر في وسائل الإعلام',
+    watch: 'مشاهدة',
+    listen: 'استمع',
+    moreContentSoon: 'سيتم إضافة المزيد من المحتوى قريباً'
   }
 };
 

@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date()
   
   // Fechas específicas para diferentes tipos de contenido
-  const blogContentDate = new Date('2025-01-17') // Última actualización de blogs (hoy)
+  const blogContentDate = new Date('2025-11-30') // Última actualización de blogs (hoy)
   const casesContentDate = new Date('2025-01-15') // Fecha de última actualización de casos
   
   // Generar sitemap con estructura optimizada para Google Sitelinks
@@ -139,7 +139,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Artículos especializados adicionales
     "/blog/delitos-salud-publica-drogas-consecuencias",
     "/blog/terrorismo-internet-enaltecimiento-captacion",
-    "/blog/blanqueo-capitales-detectar-defenderse"
+    "/blog/blanqueo-capitales-detectar-defenderse",
+    
+    // NUEVOS BLOGS 2025 - Reformas Penales (10 artículos)
+    "/blog/nuevos-delitos-codigo-penal-2025",
+    "/blog/cambios-ley-enjuiciamiento-criminal-2025",
+    "/blog/justicia-restaurativa-penal-espana",
+    "/blog/delitos-odio-marco-penal-jurisprudencia",
+    "/blog/ciberincidentes-ciberdelitos-espana",
+    "/blog/reformas-delitos-sexuales-espana",
+    "/blog/violencia-vicaria-tipificacion-penal",
+    "/blog/deepfakes-grooming-delitos-digitales",
+    "/blog/digitalizacion-procedimientos-penales",
+    "/blog/financiacion-ilegal-inhabilitacion",
+
+    // ===== NUEVOS BLOGS ENERO 2026 - ARTÍCULOS ESPECIALIZADOS =====
+    // Hub: Defensa Penal Urgente (7 nuevos)
+    "/blog/delito-lesiones-puedo-ir-carcel-pelea",
+    "/blog/medidas-cautelares-puedo-irme-pais-esperando-juicio",
+    "/blog/defraudacion-seguridad-social-es-delito-no-pagar",
+    "/blog/triple-de-la-mayor-limite-cumplimiento-condenas",
+    "/blog/blanqueo-capitales-puedo-acabar-carcel",
+    "/blog/revelacion-secretos-empresariales-puedo-ir-prision",
+    "/blog/acuerdos-abusivos-socio-minoritario-defensa-legal",
+
+    // Hub: Derechos de Detenidos (4 nuevos)
+    "/blog/recurso-apelacion-prision-provisional-como-recuperar-libertad",
+    "/blog/que-hacer-si-me-detienen-madrid-guia-derechos",
+    "/blog/orden-busqueda-captura-que-puedo-hacer",
+    "/blog/antecedentes-policiales-como-limpiarlos"
   ].map(path => ({
     url: `${baseUrl}${path}`,
     lastModified: blogContentDate,

@@ -14,6 +14,9 @@ import { lawyerTranslations, lawyersDataAr } from '@/translations/lawyers';
 import { notFound, useParams } from 'next/navigation';
 import { getLawyerBySlug, isValidLawyerSlug } from '@/data/lawyers';
 import LawyerSchema from '@/components/LawyerSchema';
+import LawyerMediaSection from '@/components/LawyerMediaSection';
+import LawyerQuickNav from '@/components/LawyerQuickNav';
+import { getLawyerMedia, hasMediaContent } from '@/data/lawyerMedia';
 import casosData from '../../../../public/casos/casos-procesados.json';
 import seoInfo from '../../../../public/casos/seo-info.json';
 
@@ -40,6 +43,10 @@ export default function LawyerPage() {
     .map(caseId => casosData.find((c: any) => c.id === caseId))
     .filter(Boolean)
     .slice(0, 3);
+
+  // Obtener medios del abogado
+  const lawyerMedia = getLawyerMedia(slug);
+  const showMediaSection = hasMediaContent(slug);
 
   // Obtener traducciones
   const lt = lawyerTranslations[language as 'es' | 'ar'];
@@ -123,7 +130,7 @@ export default function LawyerPage() {
                 </p>
 
                 {/* Idiomas */}
-                <div className="flex flex-wrap gap-3 mb-6">
+                <div className="flex flex-wrap gap-3">
                   {lawyer.languageLabels.map((lang, index) => (
                     <span
                       key={index}
@@ -134,13 +141,20 @@ export default function LawyerPage() {
                     </span>
                   ))}
                 </div>
+
+                {/* Navegación Rápida a Secciones */}
+                <LawyerQuickNav 
+                  language={language as 'es' | 'ar'}
+                  hasMedia={showMediaSection}
+                  hasCases={relatedCases.length > 0}
+                />
               </motion.div>
             </div>
           </div>
         </section>
 
         {/* Biografía Completa */}
-        <section className="bg-white py-16">
+        <section id="biografia" className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -162,7 +176,7 @@ export default function LawyerPage() {
         </section>
 
         {/* Especializaciones */}
-        <section className="bg-charleston py-16">
+        <section id="especializaciones" className="bg-charleston py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -201,7 +215,7 @@ export default function LawyerPage() {
         </section>
 
         {/* Formación Académica */}
-        <section className="bg-white py-16">
+        <section id="formacion" className="bg-white py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -233,7 +247,7 @@ export default function LawyerPage() {
         </section>
 
         {/* Logros y Reconocimientos */}
-        <section className="bg-charleston py-16">
+        <section id="logros" className="bg-charleston py-16">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -269,7 +283,7 @@ export default function LawyerPage() {
         </section>
 
         {/* Áreas de Práctica */}
-        <section className="bg-white py-16">
+        <section id="areas" className="bg-white py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -308,7 +322,7 @@ export default function LawyerPage() {
 
         {/* Casos Destacados */}
         {relatedCases.length > 0 && (
-          <section className="bg-charleston py-16">
+          <section id="casos" className="bg-charleston py-16">
             <div className="mx-auto max-w-6xl px-4 sm:px-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -386,8 +400,19 @@ export default function LawyerPage() {
           </section>
         )}
 
+        {/* Sección de Medios y Apariciones - Solo si hay contenido */}
+        {showMediaSection && (
+          <div id="medios">
+            <LawyerMediaSection 
+            media={lawyerMedia}
+            lawyerName={lawyer.name}
+            language={language as 'es' | 'ar'}
+          />
+          </div>
+        )}
+
         {/* CTA - Consulta */}
-        <section className="bg-gradient-to-r from-black to-charleston py-20 border-t border-gold/20">
+        <section id="consulta" className="bg-gradient-to-r from-black to-charleston py-20 border-t border-gold/20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
