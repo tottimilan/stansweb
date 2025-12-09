@@ -26,22 +26,22 @@ export const lawyerMediaData: LawyerMedia[] = [
     slug: 'ruben-vaquero-arribas',
     media: [
       {
-        id: 'podcast-la-hora-de-padri-1',
+        id: 'podcast-carne-cruda-1584',
         type: 'podcast',
-        title: 'La Hora de Padri - Terrorismo y Sistema Judicial',
-        description: 'En este extracto hablo con el abogado penalista Rubén Vaquero sobre qué casos lleva su despacho: no es inmigración, sino terrorismo y terrorismo yihadista. Vaquero denuncia un trato desigual hacia los musulmanes, incluso los nacidos en España, dentro de un sistema que define como estructuralmente racista. También analizamos el caso de Torrejón de Ardoz, donde un ciudadano musulmán murió presuntamente a manos de un policía, y cómo el vídeo grabado por vecinos cambió todo.',
+        title: 'Carne Cruda #1584 - Tu palabra contra la de la policía',
+        description: '¿Por qué una institución pública tan poderosa como la Policía no está sujeta a un estricto control externo? Llevamos a juicio a la policía a través del caso de África, que perdió un ojo por el disparo de una pelota de foam durante una manifestación contra el encarcelamiento de Pablo Hasel en 2021. Rubén Vaquero analiza el caso de Abderrahim, que murió asfixiado en junio en el municipio madrileño de Torrejón de Ardoz, y examina qué falla para que no se investigue en condiciones a las fuerzas de seguridad.',
         url: 'https://open.spotify.com/episode/2B3PDnbg2UPfJd9gLsQdQP?si=I3pD34LtQQmEWousY_OePg&t=2900',
-        platform: 'Spotify',
+        platform: 'Spotify - Carne Cruda',
         startTime: 2900, // 48:20 en segundos
-        date: '2024'
+        date: '26 Nov 2024'
       },
       {
         id: 'youtube-la-hora-de-padri-1',
         type: 'youtube',
-        title: '¿Es legal grabar a la policía? - La Hora de Padri',
-        description: 'Charla sobre casos de terrorismo yihadista, trato desigual hacia musulmanes en el sistema judicial español, el caso de Torrejón de Ardoz y la legalidad de grabar actuaciones policiales. "Se puede y SE DEBE grabar las actuaciones policiales si no entorpeces la intervención. Es casi una obligación ciudadana en una democracia."',
+        title: 'La Hora de Padri - Terrorismo Yihadista y Sistema Judicial',
+        description: 'En este extracto hablo con el abogado penalista Rubén Vaquero sobre qué casos lleva su despacho: no es inmigración, sino terrorismo y terrorismo yihadista. Vaquero denuncia un trato desigual hacia los musulmanes, incluso los nacidos en España, dentro de un sistema que define como estructuralmente racista. También analizamos el caso de Torrejón de Ardoz y la legalidad de grabar actuaciones policiales: "Se puede y SE DEBE grabar las actuaciones policiales si no entorpeces la intervención. Es casi una obligación ciudadana en una democracia."',
         url: 'https://www.youtube.com/watch?v=q6Ut_P8wioE',
-        platform: 'YouTube',
+        platform: 'YouTube - La Hora de Padri',
         thumbnail: 'https://img.youtube.com/vi/q6Ut_P8wioE/maxresdefault.jpg',
         date: '2024'
       }
