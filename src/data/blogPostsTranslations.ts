@@ -385,22 +385,6 @@ export const newBlogsEN = {
       conclusion: 'Having search and capture order not means unprotected. Acting with rapidity, consulting penal lawyer and following adequate procedure are best forms to resolve with lesser consequences. If evade order, judge can interpret as escape attempt with more restrictive measures like provisional prison. In STANS Lawyers we help verify orders existence, negotiate voluntary appearance and defend your rights. Contact urgently.'
     }
   },
-  60: {
-    title: 'Police Antecedents: How to Clean Them | STANS',
-    excerpt: 'Differences between police and penal antecedents, when generated, consultation how, cancellation procedure and terms according to data protection law.',
-    category: 'Detained Rights',
-    content: {
-      introduction: 'If cancelled criminal records but when police stops to identify you asks for that 2012 day in that night in police station, surely interested in cleaning police antecedents. Many people confuse police antecedents with penal or judicial, and believe sufficient instar cancellation of these. However, National Police, Civil Guard, Mossos, Ertzaintza and local police count with own registers where collect all detention information practiced.',
-      sections: [
-        { title: 'What Are Police Antecedents', content: 'Administrative registers that security forces generate when person has been detained, investigated or identified in relation to presumed crime or administrative infraction. Unlike penal (derived from condemnatory sentence), police generated from detention or investigation moment, although no penal condemnation derives. Not appear in Justice Ministry Criminal Antecedents Certificate.' },
-        { title: 'When Generated', content: 'Created when police acts: person detained in relation to crime, identified in police investigation, taken declaration in police headquarters, denounced for administrative infraction. Diverse police structure: national level (Police and Civil Guard), autonomic (Mossos, Ertzaintza, Foral Navarra, Canary), local (municipal police). Each body collects information in own registers.' },
-        { title: 'How to Know If Have Police Antecedents', content: 'Can solicit Police Antecedents Certificate: go to corresponding police station with ID or NIE, present writing soliciting data access, wait existence response. Access right under Data Protection Law.' },
-        { title: 'Can Be Cancelled', content: 'Yes, but must instar elimination through request, not eliminated automatically. No legal term established, so can instar from archive or overseinment decree moment. If condemnation, after fulfilling prescription terms and cancelling penal. Important: when condemnation, cancel first penal and then police. Not cancelled if immersed in another pending penal cause.' },
-        { title: 'Cancellation Procedure', content: 'If conditions fulfilled, present petition before police body that registered data, under LOPD. Can go accompanied by lawyer or lawyer can do in representation. Important cancel them because can influence in oppositions or residence permits. Can be cancelled if no maintenance justification exists. Remember not eliminated automatically, must instar erasure.' }
-      ],
-      conclusion: 'Police antecedents independent of penal and require specific cancellation request. In STANS Lawyers we help manage police antecedents cancellation before all security bodies. We guarantee effective management according to data protection law. Contact to initiate procedure.'
-    }
-  },
   // ===== BLOGS DICIEMBRE 2025 - MES FEBRERO (INGLÉS) =====
   60: {
     title: 'How Does Criminal Record Registry Work and Can I Clean It?',
@@ -787,22 +771,6 @@ export const newBlogsFR = {
         { title: 'Comment Vérifier Ordre', content: 'Information ordres publique formes légales existent: consultation judiciaire (avocat sollicite information tribunal), registres police (avocat vérifie bases données police), ordres internationaux (avocat contacte INTERPOL CCF révise systèmes alertes).' }
       ],
       conclusion: 'Ordre recherche capture signifie pas protégé. Agir rapidité consulter avocat pénal suivre procédure adéquate meilleures formes résoudre conséquences moindres. Évade ordre, juge interpréter tentative fuite mesures restrictives prison provisoire. STANS Avocats aidons vérifier ordres existence négocier comparution volontaire défendons droits. Contactez urgence.'
-    }
-  },
-  60: {
-    title: 'Antécédents Policiers: Comment Nettoyer | STANS',
-    excerpt: 'Différences antécédents policiers pénaux, générés, consultation comment, procédure annulation termes loi protection données.',
-    category: 'Droits Détenus',
-    content: {
-      introduction: 'Annulé antécédents pénaux police arrête identifier demandes jour 2012 passé nuit commissariat, sûrement intéressé nettoyer antécédents policiers. Beaucoup personnes confondent antécédents policiers pénaux judiciaires, croient suffisant instar annulation ces derniers. Cependant, Police Nationale, Garde Civile, Mossos, Ertzaintza polices locales comptent registres propres collectent information arrestations pratiquées.',
-      sections: [
-        { title: 'Qu\'sont Antécédents Policiers', content: 'Registres administratifs forces sécurité génèrent personne arrêtée, enquêtée identifiée relation présumé crime infraction administrative. Contrairement pénaux (dérivés sentence condamnatoire), policiers générés arrêt investigation moment, bien condamnation pénale dérive. Apparaissent Certificat Antécédents Pénaux Ministère Justice.' },
-        { title: 'Générés Quand', content: 'Créés actes policiers: personne arrêtée relation crime, identifiée investigation policière, prise déclaration siège police, dénoncée infraction administrative. Structure policière diverse: niveau national (Police Garde Civile), autonómico (Mossos, Ertzaintza, Foral Navarra, Canaries), local (polices municipales). Corps collecte information registres propres.' },
-        { title: 'Savoir Antécédents Policiers', content: 'Solliciter Certificat Antécédents Policiers: diriger commissariat correspondant carte identité NIE, présenter écrit sollicitant données accès, attendre existence réponse. Droit accès au amparo Loi Protection Données.' },
-        { title: 'Peuvent Annulés', content: 'Oui, mais instar élimination sollicitation, éliminés automatiquement. Terme légal établi, instar archive surséimement décret moment. Condamnation, après plénitudes prescription termes annulé pénaux. Important: condamnation, annuler pénaux ensuite policiers. Annulés immergé cause pénale pendante.' },
-        { title: 'Procédure Annulation', content: 'Conditions remplies, présenter pétition corps policier enregistré données, au amparo LOPD. Aller accompagné avocat avocat faire représentation. Important annuler influencent opposés permis résidence. Peuvent annulés justification maintenance existe. Rappeler éliminés automatiquement, instar effacement.' }
-      ],
-      conclusion: 'Antécédents policiers indépendants pénaux nécessitent sollicitation annulation spécifique. STANS Avocats aidons gérer annulation antécédents policiers corps sécurité. Garantissons gestion efficace conforme loi protection données. Contactez initier procédure.'
     }
   },
   // ===== BLOGS DÉCEMBRE 2025 - MOIS FÉVRIER (FRANÇAIS) =====
