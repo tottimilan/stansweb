@@ -7,9 +7,18 @@ export async function POST(req: Request) {
   try {
     const { email, mensaje = '', idioma = 'es', utm = '', nombre = '', telefono = '' } = await req.json();
 
-    // Validación mínima
+    // Validaciones
+    if (!nombre || nombre.trim().length === 0)
+      return NextResponse.json({ ok: false, error: 'NOMBRE_REQUERIDO' }, { status: 400 });
+    
+    if (!telefono || telefono.trim().length === 0)
+      return NextResponse.json({ ok: false, error: 'TELEFONO_REQUERIDO' }, { status: 400 });
+
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
       return NextResponse.json({ ok: false, error: 'EMAIL_INVALIDO' }, { status: 400 });
+
+    if (!mensaje || mensaje.trim().length < 50)
+      return NextResponse.json({ ok: false, error: 'MENSAJE_MINIMO_50_CARACTERES' }, { status: 400 });
 
     // (Opcional) rate-limit simple por IP
     const ip = req.headers.get('x-forwarded-for')?.split(',')[0] || '0.0.0.0';

@@ -1744,7 +1744,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis completo de las reformas en delitos sexuales en España: unificación de abuso y agresión sexual, ajustes de penas LO 4/2023, imprescriptibilidad y competencias judiciales.',
     category: 'Derechos de Detenidos',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-12-01',
+    date: '2025-11-01',
     readTime: '16 min',
     image: '/images/blog/delitos-sexuales-reforma.jpg',
     slug: 'reformas-delitos-sexuales-espana',
@@ -1786,7 +1786,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Todo sobre el nuevo delito de violencia vicaria: definición, anteproyecto de ley 2025, penas de prisión, prohibición de publicaciones y medidas de protección para víctimas.',
     category: 'Derechos de Detenidos',
     author: 'Diego Cardona Valero',
-    date: '2025-12-04',
+    date: '2025-11-04',
     readTime: '13 min',
     image: '/images/blog/violencia-vicaria.jpg',
     slug: 'violencia-vicaria-tipificacion-penal',
@@ -1828,7 +1828,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Proyecto de ley 2025 para penalizar deepfakes sexuales y grooming: penas, agravantes, control parental obligatorio y protección de menores en entornos digitales.',
     category: 'Terrorismo y Audiencia Nacional',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-12-07',
+    date: '2025-11-07',
     readTime: '14 min',
     image: '/images/blog/deepfakes-grooming.jpg',
     slug: 'deepfakes-grooming-delitos-digitales',
@@ -1870,7 +1870,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis de la digitalización de procedimientos penales en España: presentación electrónica, expediente digital, videoconferencias y modernización de la vigilancia penitenciaria con garantías.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-12-10',
+    date: '2025-11-10',
     readTime: '13 min',
     image: '/images/blog/digitalizacion-judicial.jpg',
     slug: 'digitalizacion-procedimientos-penales',
@@ -1912,7 +1912,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del refuerzo penal contra la financiación ilegal de partidos: arts. 304 bis y ter CP, novedades 2025, penas de inhabilitación reforzadas y transparencia política.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-12-13',
+    date: '2025-11-13',
     readTime: '14 min',
     image: '/images/blog/financiacion-ilegal.jpg',
     slug: 'financiacion-ilegal-inhabilitacion',
@@ -1955,7 +1955,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis completo del delito de lesiones en España: cuándo es delito, qué penas contempla, diferencias entre lesiones graves y leves, peleas mutuas y estrategias de defensa.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-12-16',
+    date: '2025-11-16',
     readTime: '12 min',
     image: '/images/blog/delito-lesiones.jpg',
     slug: 'delito-lesiones-puedo-ir-carcel-pelea',
@@ -1998,7 +1998,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía sobre medidas cautelares en procesos penales: libertad provisional, prohibición de salida del país, retirada de pasaporte y consecuencias de incumplimiento.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-12-19',
+    date: '2025-11-19',
     readTime: '11 min',
     image: '/images/blog/medidas-cautelares-libertad.jpg',
     slug: 'medidas-cautelares-puedo-irme-pais-esperando-juicio',
@@ -2021,7 +2021,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de defraudación a la Seguridad Social: umbral de 50.000€, conductas típicas, penas, regularización voluntaria y defensa especializada.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-12-22',
+    date: '2025-11-22',
     readTime: '13 min',
     image: '/images/blog/defraudacion-seguridad-social.jpg',
     slug: 'defraudacion-seguridad-social-es-delito-no-pagar',
@@ -2045,7 +2045,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía sobre el artículo 76 CP y la regla de la triple de la mayor: cómo funciona, requisitos, cálculo de penas acumuladas y procedimiento de solicitud.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-12-25',
+    date: '2025-11-25',
     readTime: '14 min',
     image: '/images/blog/triple-de-la-mayor.jpg',
     slug: 'triple-de-la-mayor-limite-cumplimiento-condenas',
@@ -2069,7 +2069,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía completa sobre blanqueo de capitales: art. 301 CP, conductas típicas, autoblanqueo, sujetos obligados, penas, decomiso y estrategias de defensa.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-12-28',
+    date: '2025-11-28',
     readTime: '15 min',
     image: '/images/blog/blanqueo-capitales-carcel.jpg',
     slug: 'blanqueo-capitales-puedo-acabar-carcel',
@@ -2094,7 +2094,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de revelación de secretos de empresa: arts. 278-280 CP, qué se considera secreto, conductas típicas, penas y defensas aplicables.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-12-31',
+    date: '2025-11-30',
     readTime: '13 min',
     image: '/images/blog/revelacion-secretos-empresariales.jpg',
     slug: 'revelacion-secretos-empresariales-puedo-ir-prision',
@@ -2208,28 +2208,127 @@ export const blogPosts: BlogPost[] = [
       conclusion: 'Tener orden de búsqueda y captura no significa estar desprotegido. Actuar con rapidez, consultar abogado penalista y seguir procedimiento adecuado son mejores formas de resolver con menores consecuencias. Si evades orden, juez puede interpretarlo como intento de fuga con medidas más restrictivas como prisión preventiva. En STANS Abogados te ayudamos a verificar existencia de órdenes, negociar tu comparecencia voluntaria y defender tus derechos. Contacta urgentemente.'
     }
   },
-  // ===== ANTECEDENTES POLICIALES =====
+  // ===== BLOGS DICIEMBRE 2025 - MES FEBRERO =====
   {
     id: 60,
-    title: 'Antecedentes Policiales: Cómo Limpiarlos | STANS',
-    excerpt: 'Diferencias entre antecedentes policiales y penales, cuándo se generan, cómo consultarlos, procedimiento de cancelación y plazos según la ley de protección de datos.',
-    category: 'Derechos de Detenidos',
-    author: 'Mounir Elyemlahy Chouati',
-    date: '2026-01-15',
-    readTime: '10 min',
-    image: '/images/blog/antecedentes-policiales-limpiar.jpg',
-    slug: 'antecedentes-policiales-como-limpiarlos',
-    tags: ['antecedentes policiales', 'cancelación antecedentes', 'protección datos', 'Policía Nacional', 'registro policial'],
+    title: '¿Cómo Funciona el Registro de Antecedentes Penales y Puedo Limpiarlo?',
+    excerpt: 'Guía completa sobre el Registro Central de Penados en España: qué contiene, cómo afecta tu vida profesional, requisitos para la cancelación y procedimiento para limpiar antecedentes penales.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2025-12-17',
+    readTime: '11 min',
+    image: '/images/blog/registro-antecedentes-penales.jpg',
+    slug: 'como-funciona-registro-antecedentes-penales-puedo-limpiarlo',
+    tags: ['antecedentes penales', 'cancelación antecedentes', 'Registro Central Penados', 'certificado antecedentes', 'Código Penal'],
     content: {
-      introduction: 'Si has cancelado tus antecedentes penales pero cuando la policía te para para identificarte te pregunta por aquel día de 2012 en que pasaste una noche en comisaría, seguramente te interese borrar tus antecedentes policiales. Muchas personas confunden los antecedentes policiales con los penales o judiciales, y creen que es suficiente con instar la cancelación de estos últimos. Sin embargo, la Policía Nacional, Guardia Civil, Mossos, Ertzaintza y policías locales cuentan con sus propios registros donde recopilan toda la información sobre detenciones practicadas.',
+      introduction: 'Es importante eliminar antecedentes para evitar que tu pasado te genere más problemas en el futuro. El **Registro Central de Penados** en España es un tema crucial para cualquier persona que haya enfrentado un proceso judicial. En este artículo, te explicamos qué contiene este registro, cómo puede afectar tu vida personal y profesional, y qué pasos puedes seguir para limpiarlo. Es indispensable saber **diferenciar los antecedentes penales o judiciales de los antecedentes policiales**. Para saber qué son los antecedentes policiales y cómo limpiarlos, consulta este artículo en nuestra web.',
       sections: [
-        { title: 'Qué son los Antecedentes Policiales', content: 'Son registros administrativos que fuerzas y cuerpos de seguridad generan cuando una persona ha sido detenida, investigada o identificada en relación con presunto delito o falta administrativa. A diferencia de antecedentes penales (derivados de sentencia condenatoria), los policiales se generan desde momento de detención o investigación, aunque no haya condena posterior. No aparecen en Certificado de Antecedentes Penales del Ministerio de Justicia.' },
-        { title: 'Cuándo se Generan', content: 'Se crean cuando hay actuaciones policiales: persona detenida en relación con delito, identificada en investigación policial, se le toma declaración en sede policial, se emite denuncia en su contra. Estructura policial diversa: nivel nacional (Policía y Guardia Civil), autonómico (Mossos, Ertzaintza, Foral Navarra, Canaria), local (policías municipales). Cada cuerpo recopila información en sus registros.' },
-        { title: 'Cómo Saber Si Tienes Antecedentes Policiales', content: 'Puedes solicitar Certificado de antecedentes policiales: dirigirte a comisaría correspondiente con DNI o NIE, presentar escrito solicitando acceso a tus datos, esperar respuesta sobre existencia de registros. Derecho de acceso al amparo de Ley de Protección de Datos.' },
-        { title: 'Se Pueden Cancelar', content: 'Sí, pero debe instarse la eliminación mediante solicitud, no se eliminan automáticamente. No hay plazo legal establecido, por lo que se puede instar desde momento de archivo o sobreseimiento. Si hubo condena, tras cumplir plazos de prescripción y cancelar antecedentes penales. Importante: cuando hay condena, cancelar primero penales y después policiales. No se cancelarán si estás inmerso en otra causa penal pendiente.' },
-        { title: 'Procedimiento de Cancelación', content: 'Si cumples condiciones, presentar petición ante cuerpo policial que registró datos, al amparo de LOPD. Puedes ir acompañado de abogado o este puede hacerlo en tu representación. Importante cancelarlos porque pueden influir en oposiciones o permisos de residencia. Se pueden cancelar si ya no existe motivo para mantenimiento. Recuerda que no se eliminan automáticamente, deberás instar su borrado.' }
+        {
+          title: '¿Qué Es el Registro de Antecedentes Penales?',
+          content: 'El **registro de antecedentes penales** es un sistema gestionado por el **Ministerio de Justicia** que recopila información sobre las **condenas firmes** dictadas por los tribunales españoles. Este registro **no incluye infracciones administrativas ni delitos menores** que no hayan resultado en condenas penales. Según el **artículo 136 del Código Penal**, las inscripciones del registro de antecedentes **no serán públicas**, y durante su vigencia sólo se emitirán certificaciones con las limitaciones que establecen las leyes específicas y en todo caso se librarán las que soliciten los jueces o tribunales. Por lo tanto, el registro es **confidencial** y solo pueden acceder a él: el propio interesado mediante solicitud al Ministerio de Justicia o a través de su abogado, las autoridades judiciales y policiales en el marco de una investigación, y algunas entidades autorizadas en casos específicos (por ejemplo, en algunos procesos de selección para cargos públicos). Hay muchos otros trámites para los que te podrían solicitar **certificado negativo de antecedentes penales**, como por ejemplo, para renovar una autorización de residencia, pedir un visado para visitar ciertos países o para dar clases en un colegio necesitarás acreditar que **no tienes antecedentes por delitos sexuales**.'
+        },
+        {
+          title: '¿Puedo Eliminar Mis Antecedentes Penales?',
+          content: 'La buena noticia es que **sí es posible limpiar tu registro de antecedentes penales**. Esto se conoce como **cancelación de antecedentes penales** y está regulado por el **artículo 136 del Código Penal**. Para que se eliminen tus antecedentes penales, deben cumplirse los siguientes requisitos: **cumplimiento de la condena** (incluye penas principales y accesorias, así como las responsabilidades civiles derivadas del delito), y **transcurso del plazo legal sin reincidencia**. Los plazos son: **6 meses** para penas leves, **2 años** para penas inferiores a 1 año o por delitos imprudentes, **3 años** para penas entre 1 y 3 años, y **5 años** para penas graves. El procedimiento de **cancelación de antecedentes penales** se realiza ante el Ministerio de Justicia. Si detectas errores en el proceso de cancelación, tienes derecho a presentar un **recurso administrativo**. Si persisten las irregularidades, puedes acudir a los **tribunales contencioso-administrativos** para proteger tus derechos.'
+        },
+        {
+          title: '¿Puedo Tener Antecedentes Sin Saberlo?',
+          content: 'Es posible si **no has sido notificado correctamente** o si existe un **error administrativo**. Incluso es posible que se te haya juzgado **en rebeldía** y no conozcas una sentencia condenatoria que ha recaído en tu contra. Por eso es recomendable solicitar un **certificado de antecedentes penales** si tienes dudas. Puedes solicitarlo de forma presencial en las oficinas del Ministerio de Justicia, por correo postal o de forma telemática a través de la sede electrónica. El certificado es **gratuito** y se expide en pocos días laborables.'
+        },
+        {
+          title: '¿Los Antecedentes Penales Desaparecen Automáticamente?',
+          content: '**No**. La cancelación requiere una **solicitud formal** y no ocurre de manera automática tras cumplir los plazos. Aunque en los casos en que, a pesar de cumplirse los requisitos de la cancelación esta no se haya solicitado, el **juez o tribunal no tendrá en cuenta los antecedentes penales cancelables** a efectos de reincidencia. Es importante destacar que si vuelves a cometer un delito durante el periodo de espera, el cómputo del plazo para la cancelación de la condena anterior **se reinicia**. Por tanto, es fundamental mantener un **comportamiento intachable** durante el periodo de rehabilitación.'
+        },
+        {
+          title: '¿Qué Pasa con los Antecedentes Policiales?',
+          content: 'Si tienes **antecedentes policiales**, datos recopilados tras tu paso por una comisaría al haber sufrido una detención, haber ido a declarar, a identificarte o por haberse interpuesto una denuncia en tu contra, estos datos **no desaparecen automáticamente** tras la cancelación de antecedentes penales. Tu abogado debe gestionar este procedimiento **por separado**. Los antecedentes policiales se gestionan por el **Ministerio del Interior** (no por el Ministerio de Justicia), y el procedimiento de cancelación es diferente. Para más información sobre cómo eliminar antecedentes policiales, consulta nuestro artículo especializado en la web de STANS Abogados.'
+        }
       ],
-      conclusion: 'Los antecedentes policiales son independientes de los penales y requieren solicitud específica de cancelación. En STANS Abogados te ayudamos a tramitar la cancelación de tus antecedentes policiales ante todos los cuerpos de seguridad. Garantizamos gestión eficaz de tu solicitud conforme a la normativa de protección de datos. Contacta para iniciar el procedimiento.'
+      conclusion: 'Limpiar tu registro de antecedentes penales es un paso **esencial** para superar los obstáculos legales y personales derivados de una condena. Aunque el proceso puede parecer complejo, con el **asesoramiento adecuado** y los pasos correctos, puedes lograrlo de manera eficiente. Si necesitas ayuda para gestionar la **cancelación de tus antecedentes penales** o tienes dudas sobre tu situación, **contáctanos**. En **STANS Abogados** contamos con amplia experiencia gestionando cancelaciones de antecedentes penales y policiales. Te ayudamos a recuperar tu reputación y a avanzar sin las limitaciones de tu pasado judicial.'
+    }
+  },
+  {
+    id: 61,
+    title: 'El Delito de Blanqueo de Capitales por Imprudencia Grave',
+    excerpt: 'Análisis del delito de blanqueo de capitales por imprudencia grave: conductas sancionadas, penas, jurisprudencia del Tribunal Supremo (STS 1337/24) y estrategias de defensa en casos de buena fe.',
+    category: 'Defensa Penal Urgente',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2025-12-19',
+    readTime: '14 min',
+    image: '/images/blog/blanqueo-capitales-imprudencia.jpg',
+    slug: 'delito-blanqueo-capitales-imprudencia-grave',
+    tags: ['blanqueo capitales', 'imprudencia grave', 'artículo 301 CP', 'buena fe', 'Tribunal Supremo'],
+    content: {
+      introduction: 'Conocido en otros contextos como **lavado o reciclaje de dinero**, el **delito de blanqueo de capitales** condena diferentes conductas que tienen todas ellas como finalidad **ocultar o encubrir su origen ilícito** o ayudar al autor del delito antecedente a eludir las consecuencias legales de sus actos. Por ello se configura como un **tipo mixto alternativo**, es decir, la norma penal establece varias conductas que pueden dar lugar a la misma infracción, de manera que **basta con que se realice cualquiera de ellas** para que se configure el delito. En el caso del blanqueo de capitales, el delito puede cometerse mediante distintos actos como **adquirir, poseer, utilizar, ocultar o encubrir bienes de origen ilícito**. No es necesario que se cumplan todas estas acciones simultáneamente; basta con que se realice una de ellas para que el delito se configure, siempre que el fin sea ayudar a la persona que haya participado en la infracción a eludir las consecuencias legales de sus actos.',
+      sections: [
+        {
+          title: 'Conductas Sancionadas en el Blanqueo de Capitales',
+          content: 'El **artículo 301 del Código Penal** establece que comete delito de blanqueo de capitales quien: **adquiera, posea, utilice, convierta, o transmita** bienes, sabiendo que éstos tienen su origen en una actividad delictiva; **realice cualquier otro acto para ocultar o encubrir** su origen ilícito; o **ayude a la persona que haya participado** en la infracción o infracciones a eludir las consecuencias legales de sus actos. Sin embargo, el legislador ha decidido **punir la comisión por imprudencia grave**, con la pena de **seis meses a dos años**, pese a que parecería evidente que dichas conductas sólo debieran ser punibles a título de **dolo**, es decir, con conocimiento y voluntad de lavar el dinero, aunque fuera este dolo eventual. La acción sancionada como blanqueo no consiste, por consiguiente, en el simple hecho de adquirir, poseer o utilizar los beneficios adquiridos sino, como precisa el tipo, en **realizar estos u otros actos cuando tiendan a ocultar o encubrir su origen ilícito**.'
+        },
+        {
+          title: 'El Blanqueo por Imprudencia Grave: Una Pena Desproporcionada',
+          content: 'En su **modalidad imprudente**, la imprudencia no debe recaer sobre la forma en que se ejecuta el hecho, sino sobre el **conocimiento de la naturaleza delictiva de los bienes**. Exige una **omisión de la diligencia más elemental y exigible**. Con todo ello, la punición de la imprudencia grave, resulta **desproporcionada por sus altas penas** (de seis meses a dos años de prisión). Esto ha generado un intenso debate doctrinal y jurisprudencial, pues se cuestiona si es legítimo castigar penalmente a quien **actuó de buena fe** pero debería haber sospechado del origen ilícito de los fondos. La clave está en determinar qué nivel de diligencia es **exigible a un ciudadano medio** en operaciones económicas cotidianas, especialmente cuando intervienen terceros que aparentan legitimidad.'
+        },
+        {
+          title: 'Caso Resuelto por el Juzgado de lo Penal Nº 3 de Jaén',
+          content: 'El pasado mes de enero, el **Juzgado de lo Penal Nº 3 de Jaén** resolvió un caso que subraya la importancia de la **buena fe** en las transacciones económicas y la **presunción de inocencia**, principios esenciales del marco jurídico español. El procedimiento se centró en un ciudadano, residente en España como **Profesional Altamente Cualificado**, acusado de un delito de blanqueo de capitales por imprudencia grave. El acusado, tras llegar legalmente al país, desarrolló una actividad profesional como supervisor en una prestigiosa firma internacional. Paralelamente, realizaba **operaciones con criptomonedas** a través de plataformas reguladas, como **Binance España**, una práctica habitual en su país de origen como protección frente a la inflación. Sin embargo, en enero de 2024, un tercero contactó con el acusado para participar en un supuesto negocio de intercambio de divisas. **Confiando en la legitimidad de la propuesta**, el acusado llevó a cabo las transacciones, descubriendo días después que estas estaban vinculadas a **actividades fraudulentas**. Como consecuencia, su cuenta bancaria fue señalada en el procedimiento penal.'
+        },
+        {
+          title: 'La Estrategia de Defensa: Buena Fe y Jurisprudencia',
+          content: 'El **Ministerio Fiscal** calificó inicialmente los hechos como constitutivos de un delito de blanqueo de capitales por imprudencia grave, solicitando una pena de prisión y multa económica. Desde nuestra posición como defensa, **argumentamos la ausencia de culpabilidad** en las acciones del acusado y la **falta de pruebas concluyentes** que sustentaran la acusación. En nuestro despacho de abogados, nos sentimos orgullosos de haber conseguido una **sentencia absolutoria** en un caso tan complejo y delicado. Desde el inicio, defendimos que nuestro cliente **actuó siempre de buena fe**, confiando en la legitimidad de las propuestas de terceros. Para sustentar nuestra defensa, nos apoyamos en la **jurisprudencia más reciente y relevante**, destacando la **Sentencia del Tribunal Supremo (STS 1337/24, de 7 de marzo de 2024)**, redactada por el ponente D. Antonio del Moral.'
+        },
+        {
+          title: 'Criterios del Tribunal Supremo (STS 1337/24)',
+          content: 'Esta sentencia estableció **criterios clave** que aplicamos en nuestro caso: La **apertura o uso de una cuenta bancaria** utilizada por terceros en actividades fraudulentas **no constituye blanqueo de capitales** si no existe intención de "legalizar" los fondos ilícitos. El delito de blanqueo requiere una **conexión directa con un delito antecedente** que genere ganancias significativas, circunstancia que no concurría en este caso. Las cantidades involucradas, por ser **reducidas**, no alcanzaban el umbral necesario para considerarse "**capitales**" en el sentido del artículo 301 del Código Penal, bajo el **principio de insignificancia**. Estos argumentos fueron **decisivos** para demostrar que las acciones de nuestro cliente no encajaban en el tipo penal del blanqueo de capitales, ni siquiera en su modalidad imprudente.'
+        },
+        {
+          title: 'La Sentencia Absolutoria del Juzgado de Jaén',
+          content: 'El **Juzgado**, tras un análisis exhaustivo, determinó que las transacciones **no cumplían con los elementos típicos** del delito imputado. No se trataba de actividades dirigidas a ocultar el origen ilícito de fondos, sino de una **colaboración instrumental** en un esquema fraudulento desconocido para el acusado. Además, el fallo destacó que las cantidades involucradas eran **irrelevantes** desde una perspectiva jurídica y económica, aplicando el **principio de insignificancia**. Gracias a una **línea de defensa sólida y fundamentada**, el tribunal acogió nuestra postura y **absolvió al acusado**. Esta sentencia constituye un importante precedente que refuerza la protección de quienes actúan de buena fe en transacciones económicas y subraya la importancia de una **defensa técnica especializada** en casos de blanqueo de capitales.'
+        }
+      ],
+      conclusion: 'El delito de **blanqueo de capitales por imprudencia grave** es una figura controvertida que puede afectar a personas que actúan de **buena fe** en operaciones económicas aparentemente legítimas. La **jurisprudencia reciente del Tribunal Supremo** ha establecido criterios garantistas que protegen a quienes no tenían intención de participar en actividades ilícitas. Si te enfrentas a una acusación de blanqueo de capitales, es fundamental contar con un **abogado penalista especializado** que conozca en profundidad la legislación y la jurisprudencia aplicable. En **STANS Abogados** hemos conseguido sentencias absolutorias en casos complejos de blanqueo de capitales, defendiendo con éxito la **presunción de inocencia** y la **buena fe** de nuestros clientes. **Contáctanos** para una consulta personalizada.'
+    }
+  },
+  {
+    id: 62,
+    title: '¿Qué Hacer Si Me Detienen con Drogas en Madrid? Guía Legal',
+    excerpt: 'Guía práctica sobre qué hacer si te detienen con drogas en Madrid: diferencia entre tenencia, consumo y tráfico, consecuencias legales, derechos del detenido y estrategias de defensa penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Diego Cardona Valero',
+    date: '2025-12-23',
+    readTime: '13 min',
+    image: '/images/blog/detencion-drogas-madrid.jpg',
+    slug: 'que-hacer-si-me-detienen-con-drogas-madrid',
+    tags: ['drogas', 'tráfico drogas', 'delitos salud pública', 'detención', 'defensa penal'],
+    content: {
+      introduction: 'Ser **detenido con drogas en Madrid** puede generar angustia y confusión, pero es fundamental mantener la calma y conocer tus **derechos** y las **consecuencias legales** que puedes enfrentar. La legislación española establece diferencias cruciales entre la **tenencia para consumo propio**, el **consumo en lugar público** (infracción administrativa) y el **tráfico de drogas** (delito penal grave). En este artículo te explicamos qué hacer si te encuentras en esta situación, cuáles son tus derechos como detenido y qué estrategias de defensa puede implementar tu abogado penalista para proteger tus intereses.',
+      sections: [
+        {
+          title: 'Diferencias Legales: Tenencia, Consumo y Tráfico de Drogas',
+          content: '**Consumo en lugar público**: Regulado por la **Ley Orgánica 1/1992** de Protección de la Seguridad Ciudadana. Es una **infracción administrativa grave** sancionada con multa de 601 a 30.000 euros. No implica antecedentes penales. **Tenencia para consumo propio**: Si la cantidad es pequeña y existen indicios de que es para uso personal (sin ánimo de tráfico), puede considerarse una conducta impune penalmente pero sancionable administrativamente. **Tráfico de drogas (artículos 368-378 CP)**: Es un **delito contra la salud pública** que sanciona actos de cultivo, elaboración, tráfico, o posesión con fines de tráfico. Las penas van desde **3 a 9 años de prisión** (o más según agravantes). Genera antecedentes penales. La clave está en determinar el **ánimo de tráfico**: si la droga se destina a la distribución o venta, aunque sea en pequeñas cantidades, se considera delito.'
+        },
+        {
+          title: 'Indicios que la Policía Valora para Determinar Tráfico',
+          content: 'Cuando la policía te detiene con drogas, valora varios **indicios objetivos** para determinar si existe ánimo de tráfico: **Cantidad de droga**: cantidades superiores a las de un consumo diario pueden interpretarse como tráfico. **Forma de envasado**: múltiples dosis individualizadas, envoltorios separados, uso de precisión de peso. **Presencia de dinero en efectivo**: especialmente si son billetes de pequeña denominación. **Listas, anotaciones o mensajes**: que sugieran actividad de distribución. **Instrumentos**: balanzas de precisión, material de envasado, sustancias de corte. **Pureza de la sustancia**: drogas de alta pureza pueden indicar proximidad a la fuente de suministro. **Declaraciones de testigos o intervenciones telefónicas**: que demuestren actividad de venta. Es fundamental que tu **abogado penalista** analice estos indicios y cuestione aquellos que sean débiles o estén basados en meras suposiciones.'
+        },
+        {
+          title: 'Tus Derechos Inmediatos al Ser Detenido con Drogas',
+          content: 'Desde el momento de la detención, tienes **derechos fundamentales** que la policía debe respetar: **Derecho a guardar silencio**: No estás obligado a declarar. Puedes decir: "Ejerceré mi derecho a no declarar hasta que esté presente mi abogado". **Derecho a asistencia letrada**: Puedes solicitar un abogado de oficio o designar uno de tu confianza. No declares sin abogado presente. **Derecho a ser informado de la acusación**: La policía debe informarte claramente de qué se te acusa y los hechos concretos. **Derecho a comunicar la detención**: Puedes avisar a un familiar o persona de tu elección. **Derecho a intérprete**: Si eres extranjero y no hablas español. **Derecho a reconocimiento médico**: Especialmente importante si eres consumidor y necesitas asistencia. **Plazo máximo de detención**: 72 horas, tras las cuales debes ser puesto en libertad o a disposición judicial.'
+        },
+        {
+          title: 'Qué NO Hacer Si Te Detienen con Drogas',
+          content: '**NO declares sin abogado**: Cualquier cosa que digas puede ser usada en tu contra. Espera a tu abogado para valorar si conviene declarar. **NO consientas registros sin orden judicial**: Si la policía quiere registrar tu domicilio, puede hacerlo solo con tu consentimiento expreso o con autorización judicial. Si consientes, todo lo encontrado será prueba válida. **NO firmes nada sin leerlo y sin presencia de tu abogado**: Actas, declaraciones, diligencias... todo debe ser revisado por tu letrado. **NO intentes deshacerte de la droga**: Hacerlo tras el aviso policial puede constituir delito de **destrucción de pruebas** y agravar tu situación. **NO ofrezcas información adicional**: No hables de terceras personas, lugares de compra o distribución. Guarda silencio. **NO minimices la gravedad**: Aunque pienses que es "poca cantidad", el ánimo de tráfico puede inferirse de otros indicios.'
+        },
+        {
+          title: 'Consecuencias Legales: Penas y Agravantes',
+          content: 'Las **penas por tráfico de drogas** varían según la gravedad: **Delito básico (art. 368 CP)**: 3 a 6 años de prisión y multa del tanto al triplo del valor de la droga. **Sustancias que NO causan grave daño a la salud (cannabis)**: 1 a 3 años de prisión y multa. **Agravantes (art. 369 CP)**: Penas de 9 a 13 años si concurre: pertenencia a organización, utilización de menores de edad, autoridad o funcionario público, gran cantidad o extrema gravedad. **Notoria importancia (art. 370 CP)**: Penas superiores en grado (hasta 18-20 años en casos extremos). **Atenuantes posibles**: **Drogadicción del acusado** (si está en tratamiento), **colaboración con la justicia**, **insignificancia de la cantidad**, **confesión**. Un buen abogado puede solicitar la **suspensión de la pena** si es la primera vez, la pena no supera 2 años y te comprometes a tratamiento de deshabituación.'
+        },
+        {
+          title: 'Estrategias de Defensa Penal en Delitos de Drogas',
+          content: 'Un **abogado penalista especializado** en delitos de drogas puede implementar varias líneas de defensa: **Cuestionar la legalidad del registro**: Si el registro fue sin consentimiento y sin orden judicial, las pruebas podrían ser nulas. **Demostrar consumo propio**: Argumentar que la cantidad es compatible con consumo personal y no existe ánimo de tráfico. **Impugnar la cadena de custodia**: Si la droga no fue correctamente identificada, pesada y custodiada, puede cuestionarse su validez probatoria. **Alegar contaminación o manipulación**: En casos donde la droga fue plantada o manipulada. **Solicitar atenuantes**: Drogadicción, colaboración, reparación del daño. **Negociar conformidad**: En algunos casos, llegar a un acuerdo con la fiscalía puede reducir significativamente la pena. **Solicitar suspensión de la ejecución de la pena**: Si es primera vez y la pena no supera 2 años, puedes evitar el ingreso en prisión.'
+        }
+      ],
+      conclusion: 'Ser **detenido con drogas en Madrid** es una situación grave que requiere **asesoramiento legal inmediato**. Las diferencias entre consumo, tenencia y tráfico son determinantes para tu futuro, y contar con un **abogado penalista especializado** desde el primer momento puede marcar la diferencia entre una sanción administrativa, una pena de prisión o incluso la absolución. En **STANS Abogados** contamos con amplia experiencia defendiendo **delitos contra la salud pública** y conocemos las estrategias más efectivas para proteger tus derechos. **Disponibles 24/7** para asistirte en cualquier momento. No esperes, cada minuto cuenta. **Contáctanos ahora**.'
     }
   }
 ];
@@ -2309,7 +2408,6 @@ export const allBlogSlugs = [
   'recurso-apelacion-prision-provisional-como-recuperar-libertad',
   'que-hacer-si-me-detienen-madrid-guia-derechos',
   'orden-busqueda-captura-que-puedo-hacer',
-  'antecedentes-policiales-como-limpiarlos',
 
   // Hub: Terrorismo y Audiencia Nacional (2 nuevos)
   'ciberincidentes-ciberdelitos-espana',
@@ -2317,7 +2415,12 @@ export const allBlogSlugs = [
   
   // Hub: Derechos de Detenidos (2 nuevos)
   'reformas-delitos-sexuales-espana',
-  'violencia-vicaria-tipificacion-penal'
+  'violencia-vicaria-tipificacion-penal',
+
+  // Blogs Diciembre 2025 - Mes Febrero
+  'como-funciona-registro-antecedentes-penales-puedo-limpiarlo',
+  'delito-blanqueo-capitales-imprudencia-grave',
+  'que-hacer-si-me-detienen-con-drogas-madrid'
 ];
 
 // Función helper para obtener un post por slug

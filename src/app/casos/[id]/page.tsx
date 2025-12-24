@@ -976,6 +976,37 @@ export default function CasoDetailPage() {
                         </div>
                       )}
                      
+                     {/* Mostrar documentos del expediente si existen */}
+                     {caso.contenido?.enlaces && (
+                       <div>
+                         <h3 className="text-lg font-semibold text-gold mb-3 flex items-center gap-2">
+                           <FileText className="w-5 h-5" />
+                           Documentos del Expediente:
+                         </h3>
+                         <div className="bg-emerald-900/10 border border-emerald-500/20 rounded-lg p-4">
+                           <a
+                             href={caso.contenido.enlaces}
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             className="flex items-start gap-3 hover:bg-emerald-900/20 -m-2 p-2 rounded-lg transition-colors"
+                           >
+                             <FileText className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                             <div className="flex-1">
+                               <h4 className="text-gold font-medium mb-1 hover:text-apricot transition-colors">
+                                 {caso.contenido.imagenes || 'Documento judicial'}
+                               </h4>
+                               <p className="text-xs text-offwhite/60 mb-2">
+                                 Auto de {caso.tipo_resolucion} • {caso.fecha}
+                               </p>
+                               <div className="flex items-center gap-2 text-sm text-emerald-400">
+                                 <ExternalLink className="w-4 h-4" />
+                                 Ver documento completo (PDF)
+                               </div>
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+                     )}
                      
                    </div>
                 </motion.div>

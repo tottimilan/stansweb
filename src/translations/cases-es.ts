@@ -92,6 +92,174 @@ export const casesES = {
       marco_legal: "Se aplican los artículos 575 y 576 del Código Penal relativos al adoctrinamiento y enaltecimiento terrorista, así como los artículos 503 y 504 de la Ley de Enjuiciamiento Criminal sobre la prisión provisional y sus presupuestos. La jurisprudencia del Tribunal Supremo exige que las publicaciones vayan acompañadas de una llamada efectiva a cometer delitos graves para apreciar adoctrinamiento."
     }
   },
+  // Caso 21 - ROBO CON VIOLENCIA - SOBRESEIMIENTO POZUELO
+  21: {
+    nombre: "CASO ROBO CON VIOLENCIA - SOBRESEIMIENTO POZUELO",
+    delito_principal: "Robo con violencia e intimidación",
+    resultado: "Sobreseimiento provisional y archivo",
+    contenido: {
+      resumen: "Dos personas fueron investigadas por un presunto robo con violencia en Pozuelo de Alarcón tras la denuncia de Diego García Rico Rodríguez, quien manifestó que le habían arrancado una cadena por la espalda. El Juzgado de Instrucción nº 3 de Pozuelo de Alarcón decretó el sobreseimiento provisional y archivo de las actuaciones al no poder identificarse fehacientemente al autor del robo. La defensa, ejercida por el letrado Diego Cardona Valero, logró demostrar la insuficiencia probatoria para sustentar la acusación.",
+      hechos: "El 18 de noviembre de 2025, el Juzgado de Instrucción nº 3 de Pozuelo de Alarcón dictó el Auto nº 692/2025 en las diligencias previas 469/2023. Los hechos investigados se referían a un presunto robo con violencia ocurrido en Pozuelo de Alarcón, donde el denunciante Diego García Rico Rodríguez manifestó que le habían arrancado una cadena de oro. Inicialmente se investigó a dos personas: Hamza Beggar Ibnrouin (defendido por Diego Cardona Valero de STANS Abogados) y Marouane Bouali (defendido por Luis Auxilio Torres Martínez). Las diligencias se iniciaron en virtud de atestado policial de la Comisaría Local de Pozuelo de Alarcón en 2023. Durante la instrucción, se tomó declaración al denunciante y a una testigo presencial. El denunciante manifestó en sede judicial que no vio quién le arrancaba la cadena, que el tirón fue por detrás y que dudaba de poder reconocer al autor. Por su parte, la testigo declaró que, aunque conocía de vista a los investigados, no vio el momento en que le quitaron el collar al denunciante y confirmó expresamente que \"no vio a ninguno de ellos quitar el collar a Diego\". Estas declaraciones fueron determinantes para el resultado del procedimiento.",
+      estrategia: "La estrategia de defensa se centró en cuestionar la identificación del autor del robo y la suficiencia de las pruebas de cargo. Se puso de manifiesto la ausencia de elementos probatorios que vincularan de forma inequívoca a los investigados con los hechos denunciados. La defensa subrayó la trascendencia de las declaraciones del propio denunciante y de la testigo presencial, quienes no pudieron identificar fehacientemente a los autores del robo. Se argumentó que la mera presencia en las inmediaciones del lugar de los hechos o el conocimiento previo de los investigados por parte de la testigo no constituían, por sí solos, indicios suficientes de participación en el delito. La defensa invocó el principio de presunción de inocencia y solicitó el sobreseimiento de las actuaciones por aplicación del artículo 641.2 de la Ley de Enjuiciamiento Criminal, al no poder identificarse al autor del delito. Se insistió en que, conforme a la jurisprudencia consolidada, cuando las diligencias practicadas no permiten determinar quién es el responsable de los hechos, procede el archivo provisional de las actuaciones. La estrategia resultó exitosa, ya que el juzgado estimó las alegaciones defensivas y acordó el sobreseimiento.",
+      pruebas: "Las pruebas fundamentales en este procedimiento fueron las declaraciones prestadas en sede judicial. Por una parte, la declaración del denunciante Diego García Rico Rodríguez, quien reconoció expresamente que no vio quién le arrancó la cadena, que el tirón fue por detrás y que dudaba de poder reconocer al autor. Esta declaración fue determinante, ya que evidenció la imposibilidad de una identificación positiva. Por otra parte, la declaración de la testigo presencial, quien manifestó que, pese a conocer de vista a los investigados, no presenció el momento del robo y confirmó categóricamente que no vio a ninguno de ellos quitar el collar al denunciante. El atestado policial de la Comisaría Local de Pozuelo de Alarcón, que dio inicio a las diligencias, no aportó elementos adicionales que permitieran vincular de forma concluyente a los investigados con los hechos. La ausencia de otras pruebas de cargo (testigos adicionales, grabaciones de videovigilancia, objetos intervenidos o pruebas periciales) reforzó la posición de la defensa. En definitiva, el resultado de las diligencias practicadas no acreditó suficientemente la perpetración del delito ni la identificación del autor, lo que motivó el sobreseimiento.",
+      resolucion: "Mediante Auto nº 692/2025 de fecha 18 de noviembre de 2025, la magistrada-juez M. Carmen Neira Formigo del Juzgado de Instrucción nº 3 de Pozuelo de Alarcón decretó el sobreseimiento provisional y archivo de las diligencias previas 469/2023. La resolución se fundamentó en los artículos 779.1.1º y 641.1º de la Ley de Enjuiciamiento Criminal, al considerar que de lo actuado no apareció debidamente justificada la perpetración del delito. El juzgado valoró especialmente las declaraciones del denunciante y de la testigo, quienes no pudieron identificar al autor del robo. En aplicación del artículo 641.2 de la LECrim, se acordó el sobreseimiento al no identificarse al autor de los hechos. Como consecuencia del sobreseimiento, quedaron sin efecto cuantas medidas cautelares se hubieran impuesto con anterioridad a los investigados, quedando ambos completamente libres de cargos. La resolución fue notificada al Ministerio Fiscal, a las demás partes personadas y a la víctima del delito en la forma prevista en el artículo 636 de la LECrim. Contra el auto cabía interponer recurso de reforma y subsidiario de apelación o bien recurso de apelación directo. El resultado fue plenamente favorable para nuestro cliente, quien quedó liberado de toda imputación penal.",
+      marco_legal: "El sobreseimiento se acordó conforme a los artículos 779.1.1º, 641.1º y 641.2º de la Ley de Enjuiciamiento Criminal. El artículo 641.2º LECrim establece que procederá el sobreseimiento provisional cuando \"no resulte debidamente justificada la perpetración del delito que haya dado motivo a la formación de la causa\". En este caso, la imposibilidad de identificar fehacientemente al autor del robo determinó la aplicación de dicho precepto. La resolución se fundamenta también en el principio constitucional de presunción de inocencia (art. 24.2 de la Constitución Española) y en la jurisprudencia consolidada del Tribunal Supremo, que exige que las pruebas de cargo sean suficientes, lícitas y obtenidas con todas las garantías procesales. La defensa invocó asimismo el derecho a la tutela judicial efectiva y el principio \"in dubio pro reo\", que obliga a resolver las dudas probatorias a favor del investigado. El delito investigado era el previsto en los artículos 237 y 242 del Código Penal (robo con violencia o intimidación en las personas), que se castiga con penas de prisión de dos a cinco años. No obstante, la insuficiencia probatoria impidió que el procedimiento prosperara."
+    }
+  },
+  // Caso 50 - DELITO DE LESIONES
+  50: {
+    nombre: "DELITO DE LESIONES",
+    delito_principal: "Lesiones",
+    resultado: "Defensa especializada en casos de lesiones",
+    contenido: {
+      resumen: "Las peleas físicas que ocurren en contextos cotidianos pueden derivar en procedimientos penales por delito de lesiones. El Código Penal castiga las agresiones físicas cuando causan perjuicio a la salud o integridad corporal. Comprender cuándo es delito, qué penas contempla y las estrategias de defensa es fundamental para afrontar situaciones de este tipo.",
+      hechos: "Las lesiones se configuran cuando hay un perjuicio a la salud o integridad corporal causado por violencia. Lo que marca la diferencia es si hubo asistencia médica, tratamiento quirúrgico o baja laboral. En muchos casos, la pelea ha sido mutua y existe provocación previa, elementos que pueden atenuar significativamente la responsabilidad penal.",
+      estrategia: "La defensa se centra en cuestionar la tipicidad del delito, demostrar la existencia de legítima defensa, provocación previa o inexistencia de dolo. Es fundamental reconstruir los hechos correctamente y aportar todas las pruebas disponibles: testigos, vídeos, partes médicos. La conformidad con la acusación puede reducir significativamente la pena si se repara el daño antes del juicio oral.",
+      pruebas: "Las pruebas fundamentales incluyen partes médicos, testimonios de testigos presenciales, grabaciones de cámaras de seguridad y declaraciones de las partes. La valoración judicial se centra en factores como la existencia de provocación previa, la proporcionalidad de la respuesta y la existencia de lesiones realmente acreditadas.",
+      resolucion: "En casos de lesiones, la resolución puede oscilar desde la absolución cuando existe legítima defensa o provocación suficiente, hasta condenas que van desde multas en delitos leves hasta penas de prisión de hasta 3 años en casos graves. La suspensión de la condena es habitual cuando no hay antecedentes penales.",
+      marco_legal: "El delito básico de lesiones está previsto en el artículo 147 del Código Penal con pena de prisión de 3 meses a 3 años o multa de 6 a 12 meses. Cuando hay lesiones graves, la pena aumenta a 2-5 años. La jurisprudencia reconoce la legítima defensa (art. 20.4 CP) cuando la respuesta es proporcional a la agresión sufrida. También se aplica la atenuante de reparación del daño (art. 21.5 CP) cuando se indemniza voluntariamente al perjudicado."
+    }
+  },
+  // Caso 51 - MEDIDAS CAUTELARES
+  51: {
+    nombre: "MEDIDAS CAUTELARES",
+    delito_principal: "Restricciones de libertad en procesos penales",
+    resultado: "Asesoramiento especializado en medidas cautelares",
+    contenido: {
+      resumen: "Las medidas cautelares son restricciones que el juzgado impone durante la instrucción de un proceso penal para garantizar la eficacia del procedimiento. La más común es la obligación de comparecer periódicamente, pero pueden incluir retirada del pasaporte o prohibición de salir del territorio nacional cuando existe riesgo de fuga.",
+      hechos: "Durante la fase de instrucción, el juzgado puede acordar libertad provisional con medidas cautelares o decretar prisión provisional. Las medidas cautelares deben ser proporcionadas, necesarias y acordadas en auto motivado. La retirada del pasaporte o la prohibición de salir del país se adoptan cuando el juzgado considera que existe riesgo de fuga.",
+      estrategia: "La defensa puede impugnar las medidas cautelares cuando son desproporcionadas o innecesarias. Es posible solicitar su modificación o sustitución por medidas menos gravosas. También se puede recurrir contra la prisión provisional cuando no concurren los presupuestos legales exigidos.",
+      pruebas: "Para impugnar medidas cautelares, es necesario acreditar que no existe riesgo procesal (fuga, destrucción de pruebas, reiteración delictiva) o que las medidas impuestas son excesivas. La defensa puede aportar garantías personales, arraigo familiar o laboral, y antecedentes de cumplimiento de obligaciones judiciales.",
+      resolucion: "El órgano competente puede confirmar las medidas, modificarlas sustituyéndolas por otras menos gravosas, o revocarlas completamente. En caso de recurso contra prisión provisional, el tribunal superior puede decretar la libertad provisional del investigado.",
+      marco_legal: "Las medidas cautelares se regulan en los artículos 529 y siguientes de la Ley de Enjuiciamiento Criminal. La prisión provisional requiere que concurran indicios racionales de criminalidad y riesgo de fuga, destrucción de pruebas o reiteración delictiva (art. 503 LECrim). Las medidas deben ser proporcionales y revisables periódicamente."
+    }
+  },
+  // Caso 52 - DEFRAUDACIÓN SEGURIDAD SOCIAL
+  52: {
+    nombre: "DEFRAUDACIÓN SEGURIDAD SOCIAL",
+    delito_principal: "Defraudación a la Seguridad Social",
+    resultado: "Defensa en casos de defraudación contributiva",
+    contenido: {
+      resumen: "La defraudación a la Seguridad Social consiste en eludir el pago de cuotas mediante acciones u omisiones dolosas. Para que constituya delito penal, la cuantía defraudada debe superar los 50.000 euros y debe existir una conducta de ocultación o simulación. Se diferencia de los impagos puntuales que solo generan responsabilidad administrativa.",
+      hechos: "La defraudación se produce cuando se ocultan trabajadores, se falsean datos declarativos, se solicitan devoluciones indebidas o se utilizan empresas pantalla. La cuantía se calcula sumando las cuotas defraudadas durante un periodo de hasta cuatro años. Es habitual en casos de economía sumergida o manipulación de contratos laborales.",
+      estrategia: "La defensa se centra en demostrar que no existe dolo defraudatorio, que la cuantía no supera el umbral penal o que se ha regularizado voluntariamente. También se puede alegar error de cálculo o discrepancias interpretativas en la aplicación de la normativa contributiva. La regularización antes de que inicien actuaciones inspectoras evita el proceso penal.",
+      pruebas: "Las pruebas incluyen atestados de la Inspección de Trabajo, informes de la Tesorería General de la Seguridad Social, declaraciones de trabajadores y documentación contable. La defensa puede aportar contratos laborales, justificantes de pagos y dictámenes periciales sobre la correcta aplicación de la normativa.",
+      resolucion: "Si se supera el umbral de 50.000 euros y existe dolo, se condena a prisión de uno a cinco años y multa del tanto al séxtuplo. La regularización voluntaria o el pago en los dos meses siguientes a la citación como imputado permiten reducir la pena en uno o dos grados.",
+      marco_legal: "El delito se regula en el artículo 307 del Código Penal. Se requiere cuantía superior a 50.000 euros y conducta dolosa de ocultación. La jurisprudencia exige una maniobra defraudatoria más allá del simple impago. La regularización voluntaria (art. 307.3 CP) permite evitar la condena penal."
+    }
+  },
+  // Caso 53 - TRIPLE DE LA MAYOR
+  53: {
+    nombre: "TRIPLE DE LA MAYOR",
+    delito_principal: "Límite de cumplimiento de condenas",
+    resultado: "Aplicación de la regla de la triple de la mayor",
+    contenido: {
+      resumen: "La regla de la triple de la mayor limita el tiempo máximo de cumplimiento efectivo de penas cuando concurren varias condenas por la misma persona. El máximo es el triple de la pena más grave, con límite general de 20 años. Esta limitación busca humanizar la ejecución penal y evitar condenas perpetuas de hecho.",
+      hechos: "Cuando una persona acumula varias condenas, no se suman mecánicamente las penas. La ley establece que el cumplimiento efectivo no puede exceder el triple de la pena más grave impuesta. Esto se aplica cuando los delitos fueron cometidos antes de la primera sentencia condenatoria firme.",
+      estrategia: "Para beneficiarse de esta limitación, debe solicitarse expresamente mediante incidente de acumulación de condenas. Es necesario acreditar que concurren los requisitos temporales y que los hechos permiten la acumulación. La defensa debe aportar todas las sentencias condenatorias y demostrar la conexidad temporal entre los delitos.",
+      pruebas: "Las pruebas incluyen todas las sentencias condenatorias firmes, certificados penitenciarios que acrediten el cumplimiento parcial de penas, y documentación que demuestre la conexidad temporal entre los delitos cometidos. También se aportan informes sobre la evolución penitenciaria del condenado.",
+      resolucion: "El tribunal acuerda la acumulación convirtiendo las penas en una única condena a efectos penitenciarios. A partir de ese momento, el tratamiento penitenciario (permisos, progresión de grado, libertad condicional) se basa en la nueva condena resultante, que no puede exceder el triple de la pena más grave.",
+      marco_legal: "El artículo 76 del Código Penal establece que cuando concurren varias condenas, el máximo de cumplimiento es el triple de la pena más grave. Se requiere que los delitos fueran cometidos antes de la primera sentencia condenatoria. La jurisprudencia del Tribunal Supremo ha establecido criterios para determinar cuándo procede la acumulación."
+    }
+  },
+  // Caso 54 - BLANQUEO DE CAPITALES
+  54: {
+    nombre: "BLANQUEO DE CAPITALES",
+    delito_principal: "Blanqueo de capitales",
+    resultado: "Defensa en operaciones de blanqueo",
+    contenido: {
+      resumen: "El blanqueo de capitales consiste en adquirir, convertir, transmitir, poseer o utilizar bienes procedentes de un delito, con intención de ocultar su origen ilícito. Desde 2010 es delito autónomo y se castiga el autoblanqueo. Las penas pueden llegar hasta 6 años de prisión y el decomiso de todos los bienes implicados.",
+      hechos: "El blanqueo se produce cuando se intenta dar apariencia lícita a bienes procedentes de actividades delictivas. Conductas típicas incluyen ingresar efectivo en cuentas bancarias fraccionadamente, comprar inmuebles a nombre de terceros, crear sociedades pantalla o convertir criptomonedas. El delito requiere que los bienes procedan de un delito previo, aunque no sea necesario que este esté condenado.",
+      estrategia: "La defensa se centra en demostrar que los fondos tienen origen lícito, que no existía intención de ocultar, o que se trata de una operación de cuantía insignificante. También se puede alegar error sobre el origen ilícito de los fondos o falta de dolo eventual. La colaboración con la autoridad y la devolución de los bienes permiten reducir significativamente las penas.",
+      pruebas: "Las pruebas incluyen rastreos bancarios, informes periciales financieros, declaraciones de testigos, y documentación sobre el origen de los fondos. La defensa puede aportar contratos, facturas y justificantes que acrediten la licitud de las operaciones cuestionadas. También se practican informes periciales sobre las operaciones financieras realizadas.",
+      resolucion: "Las condenas por blanqueo oscilan entre 6 meses y 6 años de prisión, más multa hasta el triple del valor blanqueado. Las personas jurídicas pueden ser multadas o disueltas. Se decreta el decomiso de todos los bienes relacionados con el delito. La colaboración procesal permite reducciones significativas de pena.",
+      marco_legal: "El artículo 301 del Código Penal tipifica el blanqueo. Se requiere que los bienes procedan de un delito y que exista intención de ocultar su origen. La jurisprudencia del Tribunal Supremo ha establecido que el mero gasto cotidiano no constituye blanqueo si no hay ánimo de disimular el patrimonio ilícito."
+    }
+  },
+  // Caso 55 - REVELACIÓN SECRETOS EMPRESARIALES
+  55: {
+    nombre: "REVELACIÓN SECRETOS EMPRESARIALES",
+    delito_principal: "Revelación de secretos empresariales",
+    resultado: "Defensa en casos de espionaje industrial",
+    contenido: {
+      resumen: "La revelación de secretos empresariales se produce cuando una persona con deber de reserva difunde información estratégica de la empresa. Se castiga con penas de hasta 4 años de prisión cuando afecta a intereses económicos relevantes. Es habitual en conflictos societarios o despidos de directivos.",
+      hechos: "El delito requiere que exista un secreto empresarial (conocimiento no público que tenga valor económico) y que el autor tenga un deber especial de reserva (socios, empleados, proveedores). Conductas típicas incluyen copiar bases de datos de clientes, fotografiar prototipos o compartir información confidencial con competidores.",
+      estrategia: "La defensa se centra en demostrar que la información no era secreta, que no existía deber de reserva, o que la revelación no tuvo intención de perjudicar. También se puede alegar que la información ya era pública o que la difusión fue accidental. La reparación del daño y la entrega voluntaria del material sustraído permiten atenuantes significativos.",
+      pruebas: "Las pruebas incluyen contratos de confidencialidad, correos electrónicos, testimonios de testigos y documentación que acredite la naturaleza secreta de la información. La defensa puede aportar informes periciales sobre el valor económico de la información revelada y sobre si cumplía los requisitos de secreto empresarial.",
+      resolucion: "Las penas oscilan entre 2 y 4 años de prisión, más multa. Cuando se revela para beneficio propio, la pena se reduce a la mitad inferior. Las condenas incluyen indemnizaciones por daños y perjuicios a la empresa afectada. La jurisprudencia exige que la información tenga valor económico real.",
+      marco_legal: "Los artículos 278-280 del Código Penal regulan el delito. Se requiere que el autor tenga deber de reserva y que la información constituya secreto empresarial según la Ley 1/2019. La jurisprudencia del Tribunal Supremo establece que no basta la mera difusión, sino que debe existir intención de perjudicar la competencia."
+    }
+  },
+  // Caso 56 - ACUERDOS ABUSIVOS SOCIO MINORITARIO
+  56: {
+    nombre: "ACUERDOS ABUSIVOS SOCIO MINORITARIO",
+    delito_principal: "Acuerdos abusivos en sociedades",
+    resultado: "Defensa de derechos del socio minoritario",
+    contenido: {
+      resumen: "Los acuerdos abusivos en sociedades se producen cuando la mayoría impone decisiones que solo benefician a sus intereses, en perjuicio injustificado de los socios minoritarios. Los artículos 291-292 del Código Penal castigan estas conductas con penas de hasta 3 años de prisión. Es habitual en conflictos societarios entre mayorías y minorías.",
+      hechos: "El abuso societario se produce cuando la mayoría aprueba acuerdos sin necesidad razonable para la sociedad, con ánimo de lucro propio y perjuicio para los minoritarios. Ejemplos incluyen ampliaciones de capital dilutivas, repartos arbitrarios de dividendos, o contratos onerosos con empresas del socio mayoritario. También se castiga la creación artificial de mayorías mediante firmas en blanco o votos inválidos.",
+      estrategia: "La defensa del socio minoritario se centra en demostrar el carácter abusivo del acuerdo, la inexistencia de beneficio para la sociedad y el perjuicio injustificado. Se puede impugnar en vía mercantil y denunciar penalmente. La estrategia incluye aportar informes periciales que cuantifiquen el daño y prueben la desproporción de la decisión adoptada.",
+      pruebas: "Las pruebas incluyen actas de juntas, contratos societarios, informes contables y testimonios de otros socios. La defensa aporta dictámenes periciales sobre el valor de las participaciones, el perjuicio sufrido y la inexistencia de justificación empresarial para el acuerdo adoptado.",
+      resolucion: "Las condenas incluyen penas de prisión de 6 meses a 3 años, más indemnizaciones. También puede declararse la nulidad del acuerdo abusivo. La jurisprudencia protege especialmente a los socios minoritarios en situaciones de clara desigualdad de poder.",
+      marco_legal: "Los artículos 291-292 del Código Penal castigan los acuerdos abusivos y la manipulación de votaciones. La jurisprudencia del Tribunal Supremo exige que el acuerdo carezca de utilidad para la sociedad y cause perjuicio injustificado al minoritario. También se aplica el derecho societario mercantil para impugnar estos acuerdos."
+    }
+  },
+  // Caso 57 - RECURSO PRISIÓN PROVISIONAL
+  57: {
+    nombre: "RECURSO PRISIÓN PROVISIONAL",
+    delito_principal: "Impugnación de prisión provisional",
+    resultado: "Libertad provisional conseguida",
+    contenido: {
+      resumen: "El recurso de apelación contra la prisión provisional permite impugnar esta medida cautelar ante el tribunal superior. Tiene carácter preferente y urgente, ya que afecta al derecho fundamental a la libertad. Se puede recurrir por falta de motivación, inexistencia de riesgo procesal o desproporcionalidad de la medida.",
+      hechos: "Cuando un juzgado decreta prisión provisional, el investigado puede impugnar esta decisión mediante recurso de apelación en el plazo de 5 días hábiles. El recurso se presenta ante el mismo juzgado y se eleva al tribunal superior competente. La resolución debe dictarse en un plazo máximo de 30 días.",
+      estrategia: "La estrategia se centra en demostrar que no concurren los presupuestos de la prisión provisional: falta de indicios racionales de criminalidad, inexistencia de riesgo de fuga, destrucción de pruebas o reiteración delictiva. También se puede alegar que existen medidas cautelares menos gravosas que pueden sustituir la prisión.",
+      pruebas: "Las pruebas incluyen arraigo familiar y laboral, antecedentes de cumplimiento de obligaciones judiciales, y garantías personales. También se aporta documentación que acredite la falta de riesgo procesal y la desproporcionalidad de mantener la prisión preventiva.",
+      resolucion: "El tribunal superior puede confirmar la prisión, revocarla decretando libertad provisional con medidas cautelares, o modificar las condiciones de la privación de libertad. La estimación del recurso supone la inmediata puesta en libertad del recurrente.",
+      marco_legal: "El artículo 507 de la Ley de Enjuiciamiento Criminal regula el recurso contra prisión provisional. Se requiere que la medida sea proporcionada, necesaria y motivada. La jurisprudencia constitucional protege el derecho a la libertad y exige control estricto de las medidas privativas de libertad."
+    }
+  },
+  // Caso 58 - ¿QUÉ HACER SI ME DETIENEN EN MADRID?
+  58: {
+    nombre: "¿QUÉ HACER SI ME DETIENEN EN MADRID?",
+    delito_principal: "Derechos del detenido",
+    resultado: "Asesoramiento sobre derechos en detención",
+    contenido: {
+      resumen: "La detención es una medida cautelar que priva temporalmente de libertad para garantizar la comparecencia judicial. En España, el plazo máximo es de 72 horas, prorrogables a 5 días en casos de terrorismo. Es fundamental conocer los derechos y actuar correctamente desde el primer momento.",
+      hechos: "La detención puede ser ordenada por la policía o decretada judicialmente. Durante este tiempo, la persona permanece incomunicada en dependencias policiales hasta ser puesta a disposición judicial. El objetivo es evitar la fuga, destrucción de pruebas o reiteración delictiva.",
+      estrategia: "Es fundamental designar abogado inmediatamente y ejercer el derecho a guardar silencio. No se debe declarar sin asistencia letrada. Se pueden solicitar exploraciones médicas, comunicaciones con familiares y acceso a actuaciones. La estrategia inicial marca el desarrollo de toda la defensa.",
+      pruebas: "Durante la detención se pueden practicar pruebas urgentes como reconocimientos médicos, reconstrucciones de hechos o careos. Es crucial que estas diligencias se realicen con todas las garantías y en presencia del abogado defensor.",
+      resolucion: "Tras la detención, el juzgado decide si decreta prisión provisional, libertad provisional con medidas cautelares o libertad sin condiciones. La resolución debe ser motivada y puede ser recurrida.",
+      marco_legal: "La Ley de Enjuiciamiento Criminal regula los derechos de los detenidos en sus artículos 17 y siguientes. Se garantiza el derecho a no declarar contra sí mismo, a ser informado de derechos, a designar abogado y a comunicarse con familiares. La jurisprudencia del Tribunal Constitucional protege especialmente estos derechos."
+    }
+  },
+  // Caso 59 - ORDEN DE BÚSQUEDA Y CAPTURA
+  59: {
+    nombre: "ORDEN DE BÚSQUEDA Y CAPTURA",
+    delito_principal: "Orden de búsqueda internacional",
+    resultado: "Gestión de órdenes de detención",
+    contenido: {
+      resumen: "Una orden de búsqueda y captura es una medida judicial que autoriza a las fuerzas de seguridad a localizar y detener a una persona requerida por la justicia. Puede tener alcance nacional, europeo o internacional. No significa culpabilidad, sino que se busca garantizar la comparecencia judicial.",
+      hechos: "Las órdenes se emiten cuando una persona no comparece a citaciones judiciales, quebranta condenas o existe riesgo de fuga en procesos penales. Pueden ser nacionales (válidas en España), europeas (coordinadas por Europol) o internacionales (gestionadas por Interpol con notificación roja).",
+      estrategia: "La defensa puede impugnar la legalidad de la orden, solicitar su revocación acreditando que no concurren los presupuestos, o gestionar la comparecencia voluntaria. También se puede solicitar el alcance territorial de la orden y verificar su vigencia. En casos internacionales, se coordina con consulados y se tramitan extradiciones.",
+      pruebas: "Para impugnar la orden, se acredita comparecencia voluntaria, inexistencia de riesgo procesal, o vulneración de derechos. Se aportan documentos que demuestren arraigo y cumplimiento de obligaciones judiciales anteriores.",
+      resolucion: "La orden puede revocarse si se acredita la comparecencia voluntaria o se demuestra su improcedencia. En caso contrario, la detención se produce en cualquier momento y lugar, procediéndose a la puesta a disposición judicial inmediata.",
+      marco_legal: "Las órdenes de búsqueda se regulan en la Ley de Enjuiciamiento Criminal y en normativas europeas e internacionales. Requieren resolución judicial motivada y proporcionalidad. La jurisprudencia exige que la medida sea necesaria para garantizar la comparecencia."
+    }
+  },
+  // Caso 60 - ANTECEDENTES POLICIALES
+  60: {
+    nombre: "ANTECEDENTES POLICIALES",
+    delito_principal: "Registro policial administrativo",
+    resultado: "Cancelación de antecedentes policiales",
+    contenido: {
+      resumen: "Los antecedentes policiales son registros administrativos que las fuerzas de seguridad mantienen sobre detenciones, identificaciones o denuncias. A diferencia de los penales, no aparecen en el certificado oficial pero pueden afectar a oposiciones, permisos y empleos. Se pueden cancelar cuando no existe motivo para su mantenimiento.",
+      hechos: "Los antecedentes policiales se generan desde el momento de la detención o identificación policial, aunque no deriven en condena penal. Incluyen arrestos, identificaciones en manifestaciones, denuncias por faltas administrativas o intervenciones policiales. Se mantienen en bases de datos de Policía Nacional, Guardia Civil, Mossos y policías locales.",
+      estrategia: "Para cancelar antecedentes policiales, debe solicitarse ante el cuerpo que los registró, invocando la Ley de Protección de Datos. Es necesario que haya prescrito la posibilidad de sanción administrativa o que se haya archivado el procedimiento penal. La solicitud debe ser motivada y puede incluirse en recurso contra sanciones administrativas.",
+      pruebas: "Se aportan certificados de antecedentes penales que acrediten la cancelación de los judiciales, resoluciones de archivo de procedimientos, o documentos que acrediten que han transcurrido los plazos de prescripción administrativa. También se puede acreditar el cumplimiento de posibles sanciones administrativas impuestas.",
+      resolucion: "Si se cumplen los requisitos, el cuerpo policial procede a la cancelación de los antecedentes. Esta decisión puede ser recurrida si es denegada. La cancelación impide que estos registros aparezcan en futuras consultas policiales o afecten a procesos administrativos.",
+      marco_legal: "La Ley Orgánica 4/2015 regula los antecedentes policiales. Se rigen por la Ley de Protección de Datos (15/1999) y por normativas autonómicas. Los plazos de conservación son más cortos que los penales y deben cancelarse cuando no existe justificación para su mantenimiento."
+    }
+  },
   // Caso 6 - LESIONES
   6: {
     nombre: "CASO LESIONES",
@@ -300,6 +468,20 @@ export const casesES = {
       pruebas: "Aún se están analizando las diligencias policiales y los atestados. El procedimiento se basa en intervenciones telefónicas, informes de seguimiento y decomisos de droga. La defensa propondrá testigos de descargo y periciales informáticas.",
       resolucion: "Al cierre de este informe, la causa permanece en fase de instrucción. No se ha dictado resolución definitiva respecto de nuestro cliente.",
       marco_legal: "Resultan de aplicación los artículos 368 y siguientes del Código Penal sobre tráfico de drogas y el artículo 570 bis relativo a pertenencia a organización criminal. Se tendrán en cuenta las directrices jurisprudenciales sobre participación mínima y consumación."
+    }
+  },
+  // Caso 22 - CLUB ESPEJOS AZULES
+  22: {
+    nombre: "CASO CLUB ESPEJOS AZULES - SOBRESEIMIENTO",
+    delito_principal: "Delito contra la salud pública (asociación de cannabis)",
+    resultado: "Sobreseimiento provisional y archivo de la causa",
+    contenido: {
+      resumen: "En STANS ABOGADOS logramos el sobreseimiento provisional y archivo de las Diligencias Previas 2071/2025 del Juzgado de Instrucción nº 53 de Madrid. Se investigaba al Club Espejos Azules, una asociación de consumidores de cannabis, por un presunto delito contra la salud pública. Gracias al trabajo especializado de nuestros abogados Rubén Vaquero Arribas y Diego Cardona Valero, el juzgado concluyó que no existían indicios de infracción penal, archivando la causa conforme al artículo 641.1º de la Ley de Enjuiciamiento Criminal.",
+      hechos: "Durante el año 2024, la Policía Nacional y la Policía Municipal de Madrid llevaron a cabo una investigación sobre tres establecimientos relacionados con el cultivo y suministro de cannabis en el distrito de Ciudad Lineal. Uno de estos locales era el Club Espejos Azules, que funcionaba como asociación de consumidores. El 11 de junio de 2024 se practicó entrada y registro en los tres locales, interviniendo casi un kilogramo de hachís, más de un kilogramo de marihuana, semillas, y otros productos relacionados. Nuestros abogados estuvieron presentes durante el registro, garantizando el respeto de los derechos de los investigados. Se imputó a los responsables del club un presunto delito contra la salud pública. La investigación continuó durante meses hasta que, el 27 de noviembre de 2025, el Juzgado de Instrucción nº 53 de Madrid dictó auto de sobreseimiento provisional.",
+      estrategia: "La estrategia de defensa se centró en demostrar que la actividad del Club Espejos Azules era lícita, interna y propia del consumo compartido, desmontando cualquier sospecha de tráfico de drogas. Argumentamos la existencia de una estructura asociativa válida, con estatutos registrados, ausencia de ánimo de lucro, control estricto de socios y documentación completa de las entregas. Se demostró que todo el cannabis se destinaba exclusivamente al consumo de los socios, sin publicidad ni captación externa. Nuestra intervención fue decisiva desde el momento de la entrada y registro, donde garantizamos que se respetaran todos los derechos procesales, evitamos valoraciones policiales incorrectas y mediamos directamente con los investigadores. Presentamos informes jurídicos sobre la licitud de las asociaciones cannábicas conforme a la jurisprudencia del Tribunal Supremo y documentación que acreditaba el funcionamiento interno del club.",
+      pruebas: "Las principales pruebas consistieron en: la documentación interna del club (estatutos, libros de registro de socios, actas de asambleas, registros de entregas), informes periciales sobre las cantidades intervenidas que demostraban que eran proporcionales al número de socios, ausencia de indicios de publicidad o captación externa, declaraciones de los socios que confirmaron el carácter cerrado y privado del club, y jurisprudencia del Tribunal Supremo que avala el modelo de asociaciones de consumidores. No existían pruebas de ventas a terceros, ánimo de lucro, ni operaciones de tráfico. El informe del Ministerio Fiscal del 13 de noviembre de 2025 fue clave, al concluir que no existían indicios suficientes de delito.",
+      resolucion: "El 27 de noviembre de 2025, el Juzgado de Instrucción nº 53 de Madrid dictó auto de sobreseimiento provisional y archivo de la causa. El juzgado siguió la posición del Ministerio Fiscal y concluyó que no existían indicios de que los hechos denunciados revistieran caracteres de infracción penal. La resolución se fundamentó en el artículo 641.1º y 780 de la Ley de Enjuiciamiento Criminal. Contra esta resolución cabía recurso de apelación en el plazo de cinco días, pero ninguna parte lo interpuso, quedando firme el archivo. Este resultado confirma el liderazgo de STANS ABOGADOS en la defensa penal de asociaciones cannábicas y clubes de consumidores en Madrid.",
+      marco_legal: "El caso se enmarca en el artículo 368 del Código Penal que tipifica el delito contra la salud pública por tráfico de drogas. La jurisprudencia del Tribunal Supremo (entre otras, STS 484/2015 y STS 1377/2015) ha establecido que las asociaciones de consumidores de cannabis no constituyen delito cuando: (1) tienen una estructura asociativa válida y transparente, (2) el consumo es compartido y cerrado a los socios, (3) no existe ánimo de lucro, (4) no hay captación externa ni publicidad, y (5) se controla la proporcionalidad de las cantidades. El sobreseimiento provisional se dictó conforme al artículo 641.1º de la Ley de Enjuiciamiento Criminal por no existir indicios suficientes de criminalidad. Este caso demuestra la importancia de contar con asesoramiento legal especializado desde las fases iniciales de la investigación policial."
     }
   }
 };

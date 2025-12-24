@@ -10,8 +10,8 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
-import { terrorismBlogCardsAr } from '@/data/blogPostsTranslations';
-import { allBlogSlugs } from '@/data/blogPosts';
+import { terrorismBlogCardsAr, getNewBlogTranslation } from '@/data/blogPostsTranslations';
+import { allBlogSlugs, blogPosts } from '@/data/blogPosts';
 import Breadcrumb from '@/components/Breadcrumb';
 
 const WHATSAPP = '34611687226';
@@ -168,7 +168,7 @@ const getPillarPages = (t: any) => [
     title: t.blog.hubs.terrorismoAudienciaNacional.title,
     description: t.blog.hubs.terrorismoAudienciaNacional.description,
     icon: AlertTriangle,
-    articles: 9,
+    articles: 11,
     slug: 'terrorismo-audiencia-nacional',
     color: 'from-red-600 to-red-800'
   },
@@ -176,7 +176,7 @@ const getPillarPages = (t: any) => [
     title: t.blog.hubs.defensaPenalUrgente.title,
     description: t.blog.hubs.defensaPenalUrgente.description,
     icon: Shield,
-    articles: 8,
+    articles: 21,
     slug: 'defensa-penal-urgente',
     color: 'from-blue-600 to-blue-800'
   },
@@ -192,7 +192,7 @@ const getPillarPages = (t: any) => [
     title: t.blog.hubs.derechosDetenidos.title,
     description: t.blog.hubs.derechosDetenidos.description,
     icon: FileText,
-    articles: 10,
+    articles: 16,
     slug: 'derechos-detenidos',
     color: 'from-green-600 to-green-800'
   }
@@ -210,7 +210,26 @@ export default function BlogPage() {
       // Buscar en posts destacados primero
       const featured = featuredPosts.find(p => p.slug === slug);
       if (featured) return featured;
-      
+
+      // Buscar en blogPosts (datos reales)
+      const realBlog = blogPosts.find(blog => blog.slug === slug);
+      if (realBlog) {
+        // Obtener traducción si existe
+        const translation = getNewBlogTranslation(realBlog.id, language);
+        return {
+          id: realBlog.id,
+          title: translation?.title || realBlog.title,
+          excerpt: translation?.excerpt || realBlog.excerpt,
+          category: translation?.category || realBlog.category,
+          author: realBlog.author,
+          date: realBlog.date,
+          readTime: realBlog.readTime,
+          image: realBlog.image,
+          slug: realBlog.slug,
+          tags: realBlog.tags
+        };
+      }
+
       // Si no está, crear entrada genérica
       return {
         id: slug,
@@ -225,7 +244,7 @@ export default function BlogPage() {
         tags: []
       };
     });
-  }, [featuredPosts]);
+  }, [featuredPosts, language]);
   
   // Estado para controlar cuántos artículos mostrar
   const [visiblePosts, setVisiblePosts] = useState(9);

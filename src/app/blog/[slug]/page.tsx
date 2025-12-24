@@ -13,6 +13,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
 import { notFound, useParams } from 'next/navigation';
 import { blogPosts, getBlogPostBySlug, isValidBlogSlug } from '@/data/blogPosts';
+import { getNewBlogTranslation } from '@/data/blogPostsTranslations';
 import BlogPostSchema from '@/components/BlogPostSchema';
 import RelatedArticles from '@/components/RelatedArticles';
 
@@ -47,10 +48,25 @@ export default function BlogPostPage() {
     notFound();
   }
   
-  const post = getBlogPostBySlug(slug);
+  const basePost = getBlogPostBySlug(slug);
 
-  if (!post) {
+  if (!basePost) {
     notFound();
+  }
+
+  // Aplicar traducciones si existen para los nuevos blogs (IDs 40-62)
+  let post = basePost;
+  if (language !== 'es' && basePost.id >= 40 && basePost.id <= 62) {
+    const translation = getNewBlogTranslation(basePost.id, language);
+    if (translation) {
+      post = {
+        ...basePost,
+        title: translation.title,
+        excerpt: translation.excerpt,
+        category: translation.category,
+        content: translation.content
+      };
+    }
   }
 
   // Generar Table of Contents desde las secciones

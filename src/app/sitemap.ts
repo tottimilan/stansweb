@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date()
   
   // Fechas específicas para diferentes tipos de contenido
-  const blogContentDate = new Date('2025-11-30') // Última actualización de blogs (hoy)
+  const blogContentDate = new Date('2025-12-23') // Última actualización de blogs (3 nuevos blogs diciembre)
   const casesContentDate = new Date('2025-01-15') // Fecha de última actualización de casos
   
   // Generar sitemap con estructura optimizada para Google Sitelinks
@@ -168,7 +168,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/recurso-apelacion-prision-provisional-como-recuperar-libertad",
     "/blog/que-hacer-si-me-detienen-madrid-guia-derechos",
     "/blog/orden-busqueda-captura-que-puedo-hacer",
-    "/blog/antecedentes-policiales-como-limpiarlos"
+
+    // ===== BLOGS DICIEMBRE 2025 - MES FEBRERO =====
+    "/blog/como-funciona-registro-antecedentes-penales-puedo-limpiarlo",
+    "/blog/delito-blanqueo-capitales-imprudencia-grave",
+    "/blog/que-hacer-si-me-detienen-con-drogas-madrid"
   ].map(path => ({
     url: `${baseUrl}${path}`,
     lastModified: blogContentDate,
