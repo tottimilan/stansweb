@@ -25,22 +25,31 @@ export default function LeadForm({ className = '', utm = '' }: Props) {
     setLoading(true);
     setError(null);
     const form = e.currentTarget;
+    const nombre = (form.elements.namedItem('nombre') as HTMLInputElement).value;
+    const telefono = (form.elements.namedItem('telefono') as HTMLInputElement).value;
     const email = (form.elements.namedItem('email') as HTMLInputElement).value;
-    const mensaje = (form.elements.namedItem('mensaje') as HTMLInputElement).value;
+    const mensaje = (form.elements.namedItem('mensaje') as HTMLTextAreaElement).value;
     const honeypot = (form.elements.namedItem('website') as HTMLInputElement).value; // campo honey
 
     if (honeypot) return; // bot
+
+    // Validar mínimo 50 caracteres en el mensaje
+    if (mensaje.length < 50) {
+      setError(t.contact.leadForm.mensajeCorto);
+      setLoading(false);
+      return;
+    }
 
     const res = await fetch('/api/lead', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 
+        nombre,
+        telefono,
         email, 
         mensaje, 
         idioma: language, 
-        utm,
-        nombre: '', // LeadForm no tiene nombre
-        telefono: '' // LeadForm no tiene teléfono
+        utm
       }),
     });
 
@@ -51,27 +60,57 @@ export default function LeadForm({ className = '', utm = '' }: Props) {
     } else {
       const data = await res.json().catch(() => ({}));
       setOk(false);
-      setError(data?.error || 'ERROR');
+      // Traducir errores del servidor a mensajes amigables
+      const errorMessages: { [key: string]: string } = {
+        'NOMBRE_REQUERIDO': t.contact.leadForm.nombreRequerido || 'El nombre es requerido',
+        'TELEFONO_REQUERIDO': t.contact.leadForm.telefonoRequerido || 'El teléfono es requerido',
+        'EMAIL_INVALIDO': t.contact.leadForm.emailInvalido || 'El email no es válido',
+        'MENSAJE_MINIMO_50_CARACTERES': t.contact.leadForm.mensajeCorto,
+      };
+      setError(errorMessages[data?.error] || t.contact.leadForm.error || 'Ha ocurrido un error');
     }
   }
 
   return (
-    <form onSubmit={onSubmit} className={`grid gap-3 ${className}`} aria-live="polite">
+    <form onSubmit={onSubmit} className={`flex flex-col gap-3 ${className}`} aria-live="polite">
       {/* Honeypot anti-spam */}
       <input type="text" name="website" className="hidden" tabIndex={-1} autoComplete="off" />
 
-      <input
-        name="email"
-        type="email"
-        required
-        placeholder={t.contact.leadForm.email}
-        className="bg-charleston text-offwhite placeholder-white/50 rounded-xl px-4 py-3 outline-none ring-1 ring-apricot/20 focus:ring-2 focus:ring-gold focus-ring"
-        style={{ direction: language === 'ar' ? 'rtl' : 'ltr' }}
-      />
-      <input
+      {/* Campos en línea horizontal en desktop */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+        <input
+          name="nombre"
+          type="text"
+          required
+          placeholder={t.contact.leadForm.nombre}
+          className="bg-charleston text-offwhite placeholder-white/50 rounded-xl px-4 py-3 outline-none ring-1 ring-apricot/20 focus:ring-2 focus:ring-gold focus-ring"
+          style={{ direction: language === 'ar' ? 'rtl' : 'ltr' }}
+        />
+        <input
+          name="telefono"
+          type="tel"
+          required
+          placeholder={t.contact.leadForm.telefono}
+          className="bg-charleston text-offwhite placeholder-white/50 rounded-xl px-4 py-3 outline-none ring-1 ring-apricot/20 focus:ring-2 focus:ring-gold focus-ring"
+          style={{ direction: language === 'ar' ? 'rtl' : 'ltr' }}
+        />
+        <input
+          name="email"
+          type="email"
+          required
+          placeholder={t.contact.leadForm.email}
+          className="bg-charleston text-offwhite placeholder-white/50 rounded-xl px-4 py-3 outline-none ring-1 ring-apricot/20 focus:ring-2 focus:ring-gold focus-ring"
+          style={{ direction: language === 'ar' ? 'rtl' : 'ltr' }}
+        />
+      </div>
+
+      <textarea
         name="mensaje"
+        required
+        minLength={50}
         placeholder={t.contact.leadForm.mensaje}
-        className="bg-charleston text-offwhite placeholder-white/50 rounded-xl px-4 py-3 outline-none ring-1 ring-apricot/20 focus:ring-2 focus:ring-gold focus-ring"
+        className="bg-charleston text-offwhite placeholder-white/50 rounded-xl px-4 py-3 outline-none ring-1 ring-apricot/20 focus:ring-2 focus:ring-gold focus-ring resize-none"
+        rows={4}
         style={{ direction: language === 'ar' ? 'rtl' : 'ltr' }}
       />
 
@@ -100,7 +139,7 @@ export default function LeadForm({ className = '', utm = '' }: Props) {
       )}
       {error && (
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-red-400 text-sm">
-          {t.contact.leadForm.error}
+          {error}
         </motion.p>
       )}
     </form>

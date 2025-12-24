@@ -138,6 +138,13 @@ export default function ContactSection() {
     const email = formData.get('email') as string;
     const telefono = formData.get('telefono') as string;
     const mensaje = formData.get('mensaje') as string;
+
+    // Validación adicional en el cliente
+    if (mensaje.trim().length < 50) {
+      setError(t.contact.leadForm.mensajeCorto);
+      setLoading(false);
+      return;
+    }
     
     try {
       const res = await fetch('/api/lead', {
@@ -162,11 +169,18 @@ export default function ContactSection() {
       } else {
         const data = await res.json().catch(() => ({}));
         setOk(false);
-        setError(data?.error || 'ERROR');
+        // Traducir errores del servidor a mensajes amigables
+        const errorMessages: { [key: string]: string } = {
+          'NOMBRE_REQUERIDO': t.contact.leadForm.nombreRequerido || 'El nombre es requerido',
+          'TELEFONO_REQUERIDO': t.contact.leadForm.telefonoRequerido || 'El teléfono es requerido',
+          'EMAIL_INVALIDO': t.contact.leadForm.emailInvalido || 'El email no es válido',
+          'MENSAJE_MINIMO_50_CARACTERES': t.contact.leadForm.mensajeCorto || 'El mensaje debe tener al menos 50 caracteres',
+        };
+        setError(errorMessages[data?.error] || t.contact.leadForm.error || 'Ha ocurrido un error');
       }
     } catch (err) {
       setOk(false);
-      setError('Error de conexión');
+      setError(t.contact.leadForm.errorConexion || 'Error de conexión');
     } finally {
       setLoading(false);
     }
@@ -255,23 +269,24 @@ export default function ContactSection() {
                  />
                </div>
               
-                                                           <div>
-                  <label className="block text-sm font-medium text-offwhite mb-2">
-                    {t.contact.form.mensaje}
-                  </label>
-                 <div className="relative">
-                                       <textarea
-                      name="mensaje"
-                      required
-                      rows={4}
-                      value={textareaValue}
-                      onChange={handleTextareaChange}
-                      onClick={handleTextareaClick}
-                      onFocus={handleTextareaFocus}
-                      onBlur={handleTextareaBlur}
-                      className="w-full bg-black/50 border border-gold/30 rounded-lg px-4 py-3 text-offwhite placeholder-offwhite/50 focus:border-gold focus:outline-none transition-colors resize-none relative z-10"
-                      placeholder={showPlaceholder ? defaultPlaceholder : ''}
-                    />
+                  <div>
+                 <label className="block text-sm font-medium text-offwhite mb-2">
+                   {t.contact.form.mensaje}
+                 </label>
+                <div className="relative">
+                                      <textarea
+                     name="mensaje"
+                     required
+                     minLength={50}
+                     rows={4}
+                     value={textareaValue}
+                     onChange={handleTextareaChange}
+                     onClick={handleTextareaClick}
+                     onFocus={handleTextareaFocus}
+                     onBlur={handleTextareaBlur}
+                     className="w-full bg-black/50 border border-gold/30 rounded-lg px-4 py-3 text-offwhite placeholder-offwhite/50 focus:border-gold focus:outline-none transition-colors resize-none relative z-10"
+                     placeholder={showPlaceholder ? defaultPlaceholder : ''}
+                   />
                                        {isTyping && !isFocused && textareaValue.length === 0 && (
                       <div className="absolute inset-0 pointer-events-none z-20 flex items-start pt-3 pl-4">
                         <span className="text-offwhite/50">
