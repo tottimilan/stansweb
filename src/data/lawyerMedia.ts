@@ -74,9 +74,11 @@ export function hasMediaContent(slug: string): boolean {
   return media.length > 0;
 }
 
+type SupportedLanguage = 'es' | 'en' | 'fr' | 'ar';
+
 // Función para obtener el icono del tipo de medio
-export function getMediaTypeLabel(type: MediaType, language: 'es' | 'ar' = 'es'): string {
-  const labels = {
+export function getMediaTypeLabel(type: MediaType, language: SupportedLanguage = 'es'): string {
+  const labels: Record<SupportedLanguage, Record<MediaType, string>> = {
     es: {
       podcast: 'Podcast',
       youtube: 'Video',
@@ -84,6 +86,22 @@ export function getMediaTypeLabel(type: MediaType, language: 'es' | 'ar' = 'es')
       prensa: 'Prensa',
       radio: 'Radio',
       tv: 'Televisión'
+    },
+    en: {
+      podcast: 'Podcast',
+      youtube: 'Video',
+      articulo: 'Article',
+      prensa: 'Press',
+      radio: 'Radio',
+      tv: 'Television'
+    },
+    fr: {
+      podcast: 'Podcast',
+      youtube: 'Vidéo',
+      articulo: 'Article',
+      prensa: 'Presse',
+      radio: 'Radio',
+      tv: 'Télévision'
     },
     ar: {
       podcast: 'بودكاست',
@@ -95,6 +113,6 @@ export function getMediaTypeLabel(type: MediaType, language: 'es' | 'ar' = 'es')
     }
   };
   
-  return labels[language][type];
+  return labels[language]?.[type] || labels.es[type];
 }
 

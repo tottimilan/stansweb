@@ -435,6 +435,194 @@ export const newBlogsEN = {
       ],
       conclusion: 'Being **arrested with drugs in Madrid** is a serious situation that requires **immediate legal advice**. The differences between consumption, possession and trafficking are determining for your future, and having a **specialized criminal lawyer** from the first moment can make the difference between an administrative sanction, a prison sentence or even acquittal. At **STANS Lawyers** we have extensive experience defending **crimes against public health** and know the most effective strategies to protect your rights. **Available 24/7** to assist you at any time. Do not wait, every minute counts. **Contact us now**.'
     }
+  },
+  // ===== NEW BLOGS JANUARY 2025 - 11 ARTICLES (EN) =====
+  63: {
+    title: 'Computer Fraud and Phishing: Specialized Criminal Defense',
+    excerpt: 'Complete guide on computer fraud and phishing in Spain. Types of cybercrimes, Criminal Code penalties, what to do if accused and legal defense strategies.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: '**Computer fraud** has become one of the most frequent crimes in Spain. According to Ministry of Interior data, cybercrimes increased by 72% in the last five years. **Phishing**, **smishing**, **vishing** and other digital fraud modalities can have serious criminal consequences for both direct perpetrators and those participating as intermediaries (so-called "money mules"). If you are accused of computer fraud, it is essential to know the legal framework and have specialized defense.',
+      sections: [
+        { title: 'Legal Framework: Articles 248 and 249 of Criminal Code', content: '**Article 248 of the Criminal Code** defines fraud as sufficient deception to produce error in another, inducing them to make a disposition to their own or another\'s detriment. **Paragraph 2** specifically includes computer fraud: "those who, with intent to profit and using any computer manipulation or similar artifice, obtain an unconsented transfer of any patrimonial asset". **Basic penalties** (art. 249 CP) range from **6 months to 3 years imprisonment** when the amount exceeds €400. If less, it is considered a minor offense with a fine of 1 to 3 months.' },
+        { title: 'Most Frequent Types of Computer Fraud', content: '**Phishing**: Identity impersonation through emails mimicking banks or companies to obtain credentials. **Smishing**: SMS variant with malicious links. **Vishing**: Phone scam where criminal poses as bank employee. **Pharming**: Web traffic redirection to fake pages. **Carding**: Fraudulent use of credit card data. **Business Email Compromise (BEC)**: Executive impersonation to order transfers. **Romance scam**: Online sentimental scams. Each modality has specific evidentiary and defensive particularities.' },
+        { title: '"Money Mules": Criminal Liability of Intermediary', content: '**Money mules** are people who receive money of illicit origin in their accounts and forward it in exchange for a commission. Although many act deceived by "easy job" offers, Supreme Court jurisprudence (STS 834/2012, STS 228/2013) establishes that **eventual intent** may exist: if there were clear signs of illegality and the person "closed their eyes" to them, they are criminally liable. Penalties can be for **fraud** (necessary cooperator) or **money laundering** (art. 301 CP). Defense must demonstrate absence of knowledge or invincible error.' },
+        { title: 'Aggravating Factors and Qualified Penalties', content: '**Article 250 CP** provides penalties of **1 to 6 years imprisonment** when aggravating factors concur: affects housing, essential goods or artistic heritage; performed using checks, promissory notes or cards; of special gravity due to amount (more than €50,000), number of affected or economic situation of victim; committed with abuse of personal or professional relationships; performed through falsification of public document. If amount exceeds **€250,000** or affects a large number of people, penalty can reach **4 to 8 years**.' },
+        { title: 'Police Investigation and Digital Evidence', content: 'The **Technological Investigation Brigade** (BIT) of National Police and **Telematic Crimes Group** of Civil Guard investigate these crimes. They use: IP address tracking, device analysis, international cooperation, cryptocurrency tracking, communication interception. **Digital evidence** has specific chain of custody requirements. Device **hash** must match before and after analysis. A procedural error can invalidate crucial evidence. Your lawyer must verify all guarantees have been respected.' },
+        { title: 'Criminal Defense Strategies', content: 'Main defense lines include: **Challenge digital evidence** for chain of custody violation or fundamental rights infringement. **Demonstrate invincible error** in cases of mules acting deceived. **Question intent** proving there was no knowledge of illicit origin. **Allege mitigating factors**: confession, damage reparation, undue delays. **Negotiate conformity** when evidence is solid to minimize penalty. **Request sentence suspension** if penalty does not exceed 2 years and no prior record. At STANS Lawyers we analyze each case to design the most effective strategy.' }
+      ],
+      conclusion: '**Computer fraud** are complex crimes requiring specialized technical defense. Whether victim, accused or investigated as intermediary, it is essential to act quickly and have lawyers who know both Criminal Law and technical aspects of digital evidence. At **STANS Lawyers** we have experience in cybercrimes and are available **24/7** to advise you. Do not testify without a lawyer: every word counts.'
+    }
+  },
+  64: {
+    title: 'Tax Crime: When Treasury Becomes Criminal Code',
+    excerpt: 'Analysis of crime against Public Treasury (art. 305 CP). €120,000 thresholds, differences with tax infraction, penalties, voluntary regularization and defense strategies.',
+    category: 'Economic Criminal Law',
+    content: {
+      introduction: 'Not every non-payment to Treasury constitutes a crime. **Crime against Public Treasury** (art. 305 of Criminal Code) requires defrauded amount to exceed **€120,000** and existence of willful conduct of concealment or deception. However, when that threshold is exceeded, consequences can be devastating: penalties of **1 to 5 years imprisonment**, million-euro fines and publication of name in debtors list. If you receive communication from Tax Agency indicating criminal proceedings have begun, you need urgent specialized advice.',
+      sections: [
+        { title: 'Elements of Tax Crime (Art. 305 CP)', content: '**Article 305 of Criminal Code** punishes whoever "by action or omission, defrauds Public Treasury, evading payment of taxes, retained amounts or amounts that should have been retained or payments on account". **Essential elements** are: 1) Active or omissive fraudulent conduct, 2) Effective damage to public treasury, 3) Amount exceeding €120,000 per tax and fiscal year, 4) Intent or intention to defraud. Mere accounting error or reasonable interpretation of norm does not constitute crime.' },
+        { title: '€120,000 Threshold: How Calculated', content: '**€120,000 threshold** is calculated per tax (IRPF, VAT, Corporate) and per fiscal year. Different taxes or different years are not added together. **Calculation base** is defrauded quota, not hidden tax base. For example: if you hide €500,000 income but resulting quota is €100,000, there is no tax crime (although there is serious tax infraction). Tax Agency must prove amount exceeds threshold with final assessment. A good expert can question Treasury calculations.' },
+        { title: 'Differences: Tax Infraction vs Tax Crime', content: '**Tax infraction** (General Tax Law): Amount below €120,000 or absence of intent. Administrative sanction (fine of 50% to 150% of quota). Does not generate criminal record. Processed by AEAT itself. **Tax crime** (Criminal Code): Amount above €120,000 with intent. Penalty of 1 to 5 years imprisonment and fine from amount to sextuple. Generates criminal record. Processed before criminal jurisdiction. AEAT must refer file to Prosecutor when crime indicators are appreciated. This is a critical "border" where defense can act to avoid criminal referral.' },
+        { title: 'Penalties and Aggravating Factors of Tax Crime', content: '**Basic type** (art. 305.1 CP) provides penalties of **1 to 5 years imprisonment** and fine from amount to sextuple of defrauded amount, plus loss of subsidies for 3 to 6 years. **Aggravated type** (art. 305 bis CP) with penalties of **2 to 6 years** applies when: amount exceeds €600,000, committed within criminal organization, or interposed persons, fiduciary businesses or tax havens are used. **Statute of limitations** for tax crime is **5 years** from when it could be prosecuted (generally, from self-assessment filing or deadline expiration).' },
+        { title: 'Voluntary Regularization: Absolute Excuse', content: '**Art. 305.4 CP** establishes an **absolute excuse**: exempt from criminal liability whoever regularizes their tax situation before Tax Administration has notified start of verification actions or before Public Prosecutor files complaint. Regularization must be **complete**: acknowledge full debt, file supplementary self-assessments and pay or request deferral. This is a key tool: if you suspect you may have a serious tax problem, urgently consult with a lawyer to assess voluntary regularization before it is too late.' },
+        { title: 'Defense Strategies in Tax Crime', content: 'Main defense lines include: **Question quota calculation**: errors in Treasury assessments can place amount below €120,000. **Deny intent**: demonstrate there was a reasonable interpretation of norm or invincible error. **Allege statute of limitations**: tax crime prescribes at 5 years. **Challenge evidence**: entry and search must comply with constitutional guarantees. **Request mitigating factors**: confession, damage reparation, undue delays. **Late regularization**: although not exempting from penalty, highly qualified mitigating factor can apply. **Negotiate conformity**: in clear cases, minimizing penalty may be best option.' }
+      ],
+      conclusion: '**Tax crime** has serious consequences beyond prison sentence: disqualification, publication in debtor lists, million-euro civil liability. But there are also effective defense mechanisms and, above all, possibility of **voluntary regularization** that can avoid criminal proceedings. At **STANS Lawyers** we are specialists in **economic criminal law** and know both criminal and tax aspects. If you have received Treasury communication or suspect you may have a problem, **consult us before it is too late**.'
+    }
+  },
+  65: {
+    title: 'Digital Identity Theft: Criminal Consequences',
+    excerpt: 'Everything about identity theft on internet. Social media impersonation, data theft, identity phishing, penalties and specialized legal defense.',
+    category: 'Terrorism and National Court',
+    content: {
+      introduction: '**Digital identity theft** has become one of the most serious problems of the internet era. Creating fake profiles on social networks, using another person\'s data to contract services, or impersonating identity in electronic communications are conducts that can have **serious criminal consequences**. Spanish Criminal Code contemplates several applicable criminal types: from civil status usurpation (art. 401) to crimes against privacy (art. 197) or fraud (art. 248). If you are accused of impersonating someone online, or if you are victim of impersonation, you need to know the legal framework.',
+      sections: [
+        { title: 'Legal Framework: Crimes Applicable to Digital Impersonation', content: 'There is no specific crime of "digital identity theft", but several criminal figures are applicable: **Art. 401 CP - Civil status usurpation**: "Whoever usurps another\'s civil status shall be punished with imprisonment from 6 months to 3 years". Applied when someone completely impersonates another person. **Art. 197 CP - Discovery and disclosure of secrets**: When personal data is accessed without authorization. **Art. 248 CP - Fraud**: If impersonation has profit purpose. **Art. 172 ter CP - Stalking**: If impersonation is part of harassment. **Art. 173 CP - Insults and slander**: If fake profile is used to defame.' },
+        { title: 'Typical Online Identity Theft Conducts', content: '**Fake social media profiles**: Creating Facebook, Instagram, Twitter or TikTok accounts with another person\'s name and photos. Especially serious if used to contact third parties or spread harmful content. **Dating app impersonation**: Using another person\'s photos on Tinder, Bumble, etc. Can lead to fraud if money is obtained. **Identity phishing**: Sending emails impersonating another person (boss, family member, bank) to obtain data or transfers. **Account hijacking**: Hacking legitimate profiles and using them as own. **Deepfakes**: Creating manipulated videos or images with another person\'s face. Especially serious if sexual content.' },
+        { title: 'Penalties According to Criminal Type', content: '**Civil status usurpation (art. 401)**: Imprisonment from 6 months to 3 years. **Discovery of secrets (art. 197)**: Imprisonment from 1 to 4 years and fine. If data is disclosed: 2 to 5 years. **Fraud (art. 248-250)**: From 6 months to 6 years depending on amount and aggravating factors. **Harassment/stalking (art. 172 ter)**: Imprisonment from 3 months to 2 years or fine. **Insults (art. 208)**: Fine from 3 to 7 months. **Slander (art. 205)**: Imprisonment from 6 months to 2 years or fine. In serious cases with multiple victims or high property damage, penalties can accumulate (concurrent crimes).' },
+        { title: 'Investigation and Proof of Impersonation', content: 'Digital identity theft investigation presents significant technical challenges. Police can: request from platforms (Meta, Google, X) fake profile creator data (IP, registration email), trace IP address to connection holder, analyze metadata of uploaded images, request international cooperation if servers are outside Spain. **Important**: Platforms do not always cooperate and data may be anonymized (VPN, Tor). Evidence must be solid for conviction. Expert lawyer can question attribution of fake profile to accused.' },
+        { title: 'What to Do if You Are Victim of Impersonation', content: '1) **Document everything**: Screenshots of fake profile, messages received, URLs. 2) **Report on platform**: All social networks have impersonation reporting mechanisms. 3) **File police report**: Bring all documented evidence. Technological Investigation Brigade can investigate. 4) **Request precautionary measures**: Lawyer can judicially request profile closure and author identification. 5) **Consider civil actions**: In addition to criminal route, you can claim compensation for moral and property damages.' },
+        { title: 'Criminal Defense if Accused of Impersonation', content: 'If accused of usurping another person\'s identity online, defense strategies may include: **Deny authorship**: Demonstrate another person created fake profile (from different IP, device, etc.). **Absence of intent**: Argue there was no intention to cause harm or impersonate another person. **Consent**: If alleged victim authorized use of their image or data. **Type error**: Ignorance that conduct was criminal. **Mitigating factors**: Damage reparation (profile deletion, public apologies), confession. At **STANS Lawyers** we analyze each case and design most effective defense.' }
+      ],
+      conclusion: '**Digital identity theft** is a growing phenomenon with increasingly serious criminal consequences. Whether victim or accused of impersonation, it is essential to act quickly and have specialized advice. At **STANS Lawyers** we combine technical and legal knowledge to offer comprehensive defense. **Available 24/7** for emergencies. Consult your case without obligation.'
+    }
+  },
+  66: {
+    title: 'Gender Violence: Defense of Investigated Person and Rights',
+    excerpt: 'Guide on rights of accused in gender violence proceedings. Restraining order, fast-track trial, presumption of innocence and legal defense strategies.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: 'Being accused of **gender violence** crime generates enormous personal, social and legal pressure. Spanish legislation (LO 1/2004) establishes reinforced protection regime for victims including specialized courts, accelerated procedures and almost automatic precautionary measures. However, **right to presumption of innocence** and **procedural guarantees** remain in force. If you have been reported for gender violence, knowing your rights and having technical defense from first moment is crucial.',
+      sections: [
+        { title: 'Legal Framework: LO 1/2004 and Criminal Code', content: '**Organic Law 1/2004** on Comprehensive Protection Measures against Gender Violence establishes specific framework including: specialized courts (Courts on Violence against Women), specialized prosecutors, penalty aggravation when aggressor is male and victim is female partner or ex-partner, protection measures (restraining order, electronic bracelet). Most frequent **crimes** are: occasional abuse (art. 153 CP, penalty 6 months to 1 year), threats (art. 171.4 CP), coercion (art. 172.2 CP), injuries (art. 148.4 CP), breach of precautionary measure (art. 468 CP).' },
+        { title: 'Procedure: Report, Detention and Appearance', content: 'Typical procedure begins with victim\'s report (at police station, duty court or health center). If there are indications, **immediate detention** of investigated person may occur. Within 24-72 hours **appearance** is held before Court on Violence against Women where decision is made on: provisional release, precautionary measures (restraining, communication ban), or exceptionally provisional imprisonment. If offense is minor and there is conformity, **fast-track trial** may be held in same act. **Important**: Everything you say at police station can be used against you. Do not testify without lawyer.' },
+        { title: 'Restraining Order and Precautionary Measures', content: '**Restraining order** (art. 544 bis LECrim) prohibits approaching victim, their home, workplace or frequented places. May include: communication ban (calls, messages, social media), departure from common home, suspension of visitation regime with minor children, use of **GPS electronic bracelet**. **Breach** of restraining order is crime (art. 468 CP) with penalty of imprisonment from 6 months to 1 year. This includes responding to messages from victim herself: even if she initiates contact, you commit crime by responding. Order can be appealed alleging disproportionality or absence of risk.' },
+        { title: 'Rights of Investigated: Presumption of Innocence', content: 'Despite special victim protection, investigated person **retains all fundamental rights**: **Presumption of innocence** (art. 24.2 CE): No one can be convicted without sufficient incriminating evidence. **Right not to testify**: You can remain silent totally or partially. **Legal assistance**: From detention and in all proceedings. **Information of accusation**: Know facts imputed to you. **Evidence proposal**: Witnesses, documents, expert reports. **Contradiction**: Question witnesses and prosecution experts. **Appeal**: Against sentence and precautionary measures. Victim statement can be sufficient evidence, but must meet requirements (STS 119/2019): absence of subjective incredibility, plausibility, persistence in incrimination.' },
+        { title: 'Defense Strategies in Gender Violence', content: 'Defense lines vary according to case: **Victim contradiction**: Analyze inconsistencies between reports, statements and medical evidence. **Defense witnesses**: People who witnessed facts or relationship. **Expert evidence**: Psychological, forensic reports on injuries. **Messages and communications**: WhatsApps, emails showing relationship context. **Cross-reports**: If both parties report each other. **Victim retraction**: Although does not extinguish criminal action, affects credibility. **Mitigating factors**: Confession, reparation, rage or blindness. **Negotiated conformity**: In clear cases, may be most favorable option.' },
+        { title: 'Consequences of Conviction: Record and Visitation', content: 'Gender violence conviction entails, in addition to penalty: **Criminal record**: Affecting public employment, weapons, nationality. **Special disqualification**: For exercising parental authority, guardianship. **Restraining as accessory penalty**: Added to precautionary measure. **Training program**: Mandatory on equality matters. **Effect on visitation**: Family Court will consider conviction. **Work with minors**: Disqualification for professions involving contact with minors. Therefore, it is essential to evaluate all defense options before accepting conformity.' }
+      ],
+      conclusion: '**Gender violence** proceedings have particularities requiring specialized defense. Social stigma, procedure speed and almost automatic precautionary measures make many investigated feel defenseless. But **presumption of innocence** remains in force and there are effective defense strategies. At **STANS Lawyers** we defend your rights with technical rigor and without prejudice. **24/7 availability** for urgent assistance after detention. Your first consultation, without obligation.'
+    }
+  },
+  67: {
+    title: 'Asset Concealment: What It Is and How to Avoid Conviction',
+    excerpt: 'Analysis of asset concealment crime (art. 257 CP). Requirements, differences with punishable insolvency, penalties up to 4 years and legal defense strategies.',
+    category: 'Economic Criminal Law',
+    content: {
+      introduction: 'Hiding assets to avoid paying debts can constitute **asset concealment crime** (art. 257 of Criminal Code), punished with penalties of **1 to 4 years imprisonment**. Many businesspeople and individuals in financial difficulties make this mistake thinking they are protecting their assets, when they are actually exposing themselves to serious criminal consequences. If you have significant debts and are thinking of putting assets in relatives\' names, selling properties or transferring money abroad, you must know legal limits and legitimate alternatives.',
+      sections: [
+        { title: 'Legal Definition: Article 257 of Criminal Code', content: '**Article 257 CP** punishes whoever "absconds with their assets to detriment of creditors". Supreme Court (STS 801/2005, STS 440/2012) has defined type elements: 1) **Real or apparent insolvency situation**: Debtor reduces assets so cannot answer for debts. 2) **Concealment or disposition action**: Transfer assets, donate them, sell them for vile price, simulate fictitious debts. 3) **Creditor damage**: Creditors cannot collect their legitimate credits. 4) **Intent**: Intention to harm creditors knowing existence of debts. Basic penalty is **1 to 4 years imprisonment**.' },
+        { title: 'Typical Asset Concealment Conducts', content: 'Most frequent conducts leading to convictions are: **Donations to relatives**: Putting home in spouse, children or parents\' name when there are pending debts. **Simulated or vile price sales**: Selling €300,000 property for €50,000 to acquaintance. **Fictitious mortgage constitution**: Creating charges on properties to simulate preferential debt. **Transfers abroad**: Moving money to accounts in tax havens or non-cooperating countries. **Shell company creation**: Transferring assets to companies controlled by frontmen. **Account emptying**: Massively withdrawing cash before seizure. **Asset destruction**: Intentionally damaging assets so they cannot be executed.' },
+        { title: 'Differences with Other Insolvency Crimes', content: 'Criminal Code contemplates several related crimes: **Asset concealment (art. 257)**: Generic asset concealment before any creditor. Penalty: 1 to 4 years. **Specific concealment (art. 257.1.2º)**: When injured party is Public Treasury, Social Security or other public entity. Penalty: 1 to 6 years. **Punishable insolvency of bankrupt debtor (art. 259)**: When in bankruptcy, acts harming creditor estate are performed. Penalty: 1 to 4 years. **Creditor favoritism (art. 260)**: Paying one creditor to detriment of others once bankruptcy is declared. Penalty: 1 to 3 years. Each type has different requirements and defense strategies.' },
+        { title: 'Requirements for Crime to Exist', content: 'Not every conduct of asset disposition constitutes asset concealment. Jurisprudence requires: **Prior existence of due and enforceable debts**: Future or contingent debts are not enough (although there are exceptions). **Knowledge of debts**: Debtor must know they have pending obligations. **Causal relationship**: Concealment must be cause of creditors being unable to collect. **Effective damage**: There must be real damage, not merely potential. **Absence of alternative assets**: If debtor retains sufficient assets to answer, there is no concealment. STS 163/2006 established there must be "at least partial insolvency situation willfully caused by debtor".' },
+        { title: 'How Concealment Is Detected: Administration and Creditors', content: 'Most common discovery routes are: **Property Registry**: Creditors consult property transmissions and charges. **Tax declarations**: Treasury contrasts declared assets with seizures. **Bankruptcy administrator investigation**: In bankruptcy proceedings, administrator reviews all transactions from previous 2 years. **Bank reports**: Account movements, international transfers. **Creditor complaints**: Who have unsuccessfully attempted asset seizure. Crime **statute of limitations** is **5 years** from when concealment occurred (or was discovered).' },
+        { title: 'Criminal Defense Strategies', content: 'Main defense lines include: **Absence of insolvency**: Demonstrate debtor retained sufficient assets after transmission. **Denial of intent**: Prove transmission had legitimate purpose (prior debt payment, market price sale). **Non-existence or imprecision of debts**: Question whether debts were due and enforceable at time of disposition. **Statute of limitations**: Crime prescribes at 5 years. **Mitigating factors**: Confession, damage reparation (payment to creditors), undue delays. **Negotiated conformity**: When evidence is solid, negotiating minimum penalty can avoid imprisonment if no prior record.' }
+      ],
+      conclusion: '**Asset concealment** is more frequent crime than it seems and convictions are common when there is clear evidence of concealment. Before transferring assets while having debts, consult specialized lawyer: there are legitimate alternatives (creditor agreements, bankruptcy, payment in kind) without criminal risk. At **STANS Lawyers** we are experts in **economic criminal law** and can advise you both preventively and if you already face accusation. **Consult your case without obligation**.'
+    }
+  },
+  68: {
+    title: 'Fatal Traffic Accident: When Is It Crime?',
+    excerpt: 'Analysis of negligent homicide from traffic accident. Differences with intentional homicide, penalties up to 4 years, aggravating factors (alcohol, drugs, speeding) and defense.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: 'A **traffic accident with fatal victims** can turn a driver into defendant for **negligent homicide** (art. 142 CP). Although no one intended to cause death, criminal law punishes negligent conducts with fatal consequences. Penalties can reach **4 years imprisonment** and up to **6 years license revocation**. If you have had a serious accident and have been charged, you need to understand procedure and have specialized defense from first moment.',
+      sections: [
+        { title: 'Legal Framework: Negligent Homicide and Injuries', content: '**Criminal Code** typifies: **Negligent homicide (art. 142)**: "Whoever through gross negligence causes death of another shall be punished with imprisonment from 1 to 4 years". If committed with motor vehicle, deprivation of right to drive from 1 to 6 years is added. **Serious negligent injuries (art. 152)**: Imprisonment from 3 months to 3 years or fine, plus license revocation from 1 to 4 years. **Less serious negligent homicide (art. 142.2)**: When negligence is less serious, fine penalty from 3 to 18 months. Difference between "gross" and "less serious" negligence is key and depends on infraction committed and case circumstances.' },
+        { title: 'Gross Negligence vs Less Serious Negligence', content: 'Supreme Court (STS 661/2014, STS 279/2019) distinguishes: **Gross negligence**: Omission of most elementary precautions, violation of basic care norms any person would observe. Examples: driving at 180 km/h, running red light, driving drunk with very high level. **Less serious negligence**: Infraction of care norms not reaching previous gravity but exceeding mere administrative infraction. Examples: small speeding, momentary distraction, inadequate maneuver. **Slight negligence**: Does not constitute crime (since 2015 reform). Only gives rise to civil liability. Classification depends on: infraction gravity, result foreseeability, road and traffic conditions.' },
+        { title: 'Aggravating Factors: Alcohol, Drugs, Speed', content: 'Specific **aggravating circumstances** (art. 142 bis, 152 bis CP) are: **Driving under alcohol influence** (level above 0.60 mg/l in breath or 1.2 g/l in blood). **Driving under drug effects**. **Speeding exceeding 50%** of permitted limit. **Manifest reckless driving** (art. 380 CP). When these circumstances concur, penalties are aggravated: imprisonment of **2 to 5 years** in homicide. Additionally, other crimes may concur: drunk driving (art. 379), reckless driving (art. 380), failure to render assistance (art. 195). In very serious cases with eventual intent, could be classified as **intentional homicide**.' },
+        { title: 'Criminal Procedure After Fatal Accident', content: 'After accident with fatal victims: 1) **Police report**: Civil Guard or Local Police prepares report with sketch, photos, statements and breathalyzer/drug tests. 2) **Judicial investigation**: Preliminary proceedings opened. Reconstruction of facts, accidentology expert report may be ordered. 3) **Charging**: If there are indications, driver is summoned as investigated person. 4) **Trial**: Generally before Criminal Court (penalties up to 5 years). **Important**: Do not testify in police report without reflection. You have right to request testimony be given in court with lawyer present.' },
+        { title: 'Defense Strategies in Traffic Accidents', content: 'Most common defense lines are: **Question negligence**: Demonstrate driver acted diligently and accident was fortuitous or due to external cause (mechanical failure, third party action, road condition). **Reduce classification**: From gross to less serious negligence, substantially reducing penalty. **Challenge police report**: Errors in sketch, measurements or reconstruction of facts. **Accidentology expert**: Technical report questioning Civil Guard conclusions. **Contributory fault**: Demonstrate victim contributed to accident (not wearing seatbelt, crossing improperly). **Mitigating factors**: Confession, damage reparation (compensation), rage.' },
+        { title: 'Consequences: Penalties, Compensation and Insurance', content: '**Prison penalties**: From 1 to 4 years (basic type) or 2 to 5 years (with aggravating factors). If no prior record and penalty does not exceed 2 years, can be suspended. **License revocation**: From 1 to 6 years. **Civil liability**: Compensation to victim\'s relatives according to Accident Scale (can exceed €500,000 in death). **Compulsory insurance**: SOA covers civil liability, but does NOT cover if there is intent or driver had no valid license. **Criminal record**: Affects public employment, license renewal, nationality. Effective defense must work on all fronts: criminal, civil and insurance.' }
+      ],
+      conclusion: 'A **fatal traffic accident** marks a before and after in driver\'s life. Although no one intended the result, criminal consequences can be very serious. Specialized technical defense can make difference between prison sentence and suspended penalty or even acquittal. At **STANS Lawyers** we have experience in traffic crimes and know most effective strategies. If you have had a serious accident, **consult us as soon as possible**: first moments are critical.'
+    }
+  },
+  69: {
+    title: 'Criminal Liability of Company Administrator',
+    excerpt: 'Guide on criminal liability of corporate administrator. Corporate crimes, tax, labor, unfaithful administration, compliance and defense strategies.',
+    category: 'Economic Criminal Law',
+    content: {
+      introduction: 'Being **administrator of a company** entails enormous responsibility that can lead to criminal consequences when things go wrong. Tax crimes, Social Security crimes, unfaithful administration, misappropriation, punishable insolvencies... Catalog of criminal figures that can affect administrator is extensive. 2015 Criminal Code reform also introduced **criminal liability of legal persons**, revolutionizing corporate compliance approach. If you are administrator and face investigation, or want to prevent risks, you need specialized advice.',
+      sections: [
+        { title: 'Legal Basis: Why Does Administrator Answer?', content: '**Administrator** can answer criminally for: **Own action**: When personally commits crime (signs false invoices, orders illicit payments). **Commission by omission**: When having guarantor duty, does not prevent crime they could and should have avoided (art. 11 CP). **Mediate authorship**: When uses others to commit crime. **Art. 31 CP liability**: "Whoever acts as de facto or de jure administrator of legal person... shall answer personally". This means that even crimes committed by employees can be attributed to administrator if they had control duty and did not exercise it.' },
+        { title: 'Main Corporate Administrator Crimes', content: '**Corporate crimes (arts. 290-297 CP)**: Falsity in annual accounts (1-3 years), imposition of abusive agreements (6 months-3 years). **Unfaithful administration (art. 252 CP)**: Harming company or partners by exceeding powers. Penalty 6 months to 6 years. **Misappropriation (art. 253 CP)**: Appropriating company assets. Similar penalty. **Tax crime (art. 305 CP)**: If company defrauds more than €120,000 per tax, administrator answers. 1-5 years. **Against Social Security (art. 307 CP)**: Non-payment of contributions exceeding €50,000. 1-5 years. **Against workers (arts. 311-318 CP)**: Non-payment of wages, illegal conditions. Up to 6 years. **Asset concealment (art. 257 CP)**: Emptying company before creditors. 1-4 years.' },
+        { title: 'De Facto Administrator vs De Jure Administrator', content: 'Criminal liability does not depend on formal position: **De jure administrator**: Appointed and registered in Commercial Registry. Has presumed liability for formal position. **De facto administrator**: Who exercises administration functions without formal appointment or with defective appointment. "Decision power" is key. Supreme Court (STS 598/2012) considers de facto administrator whoever: makes strategic decisions, has bank accounts, externally represents company, gives instructions to employees. **Front men**: "Straw" administrator can avoid liability if demonstrating no effective control, but must prove it.' },
+        { title: 'Criminal Liability of Legal Person (art. 31 bis CP)', content: 'Since 2015, **commercial companies** can be criminally liable for crimes committed by administrators or employees for their benefit. Penalties for legal persons include: fine (up to 5 years of profit), suspension of activities (up to 5 years), closure of premises, dissolution, ban on contracting with Administration, judicial intervention. Company is EXEMPT if it had an effective **crime prevention model (compliance)** before crime commission. Therefore, implementing compliance program not only protects company but also administrator.' },
+        { title: 'Compliance as Defensive Shield', content: 'Effective **criminal compliance program** according to art. 31 bis CP must include: 1) Criminal risk map specific to activity. 2) Ethical code and action protocols. 3) Internal whistleblowing channel. 4) Independent compliance body. 5) Periodic employee training. 6) Disciplinary system. 7) Periodic model review. If program existed and was adequate, company can be exempt and administrator can allege they fulfilled their control duty. At STANS Lawyers we advise on compliance program implementation and defense when they fail.' },
+        { title: 'Administrator Defense Strategies', content: 'Most effective defense lines include: **Lack of actual knowledge**: Demonstrate administrator was unaware of criminal facts and could not know them. **Effective delegation**: Prove functions were delegated to others with capacity and means. **Existence of compliance**: Prevention program worked and fact was isolated. **Absence of company benefit**: Crime was not committed in name or benefit of company. **Statute of limitations**: Periods vary according to crime. **Mitigating factors**: Confession, collaboration with investigation, damage reparation. **Negotiated conformity**: In clear cases, minimizing penalty is best option.' }
+      ],
+      conclusion: '**Administrator criminal liability** is a reality affecting thousands of businesspeople each year. Prevention and defense are two sides of same coin: implementing good compliance program drastically reduces risk, and having specialized defense is crucial if investigation has already begun. At **STANS Lawyers** we combine experience in **economic criminal law** and corporate compliance. **Consult your case**: prevention is always cheaper than defense.'
+    }
+  },
+  70: {
+    title: 'Criminal Conformity: Advantages and Risks of Agreeing with Prosecutor',
+    excerpt: 'Everything about conformity in Spanish criminal procedure. When to accept, how to negotiate with Prosecutor, penalty reduction and alternatives. Guide for defendants.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: '**Criminal conformity** is a mechanism allowing accused to accept penalty proposed by Prosecutor in exchange for avoiding oral trial and obtaining penalty reduction. It is a widely used tool in Spain (more than 50% of criminal trials end in conformity), but has advantages and risks you must know before accepting. When is it worth conforming? What penalty reduction is reasonable? Can I negotiate with prosecutor? In this article we explain everything you need to know.',
+      sections: [
+        { title: 'Legal Framework: Conformity in LECrim', content: '**Criminal Procedure Law** regulates conformity in several precepts: **Art. 655 (Ordinary Procedure)**: Accused can conform to most serious requested penalty if it does not exceed 6 years imprisonment. **Art. 787 (Abbreviated Procedure)**: Conformity possible until oral trial begins. Penalty cannot exceed 6 years. **Art. 801 (Fast-Track Trial)**: Immediate conformity with 1/3 penalty reduction if presented before trial starts. **Art. 784.3**: "Rewarded" conformity with penalty reduction for fact acknowledgment. Conformity requires: free acceptance by accused, lawyer assistance, judge verification that accused understands consequences.' },
+        { title: 'Advantages of Criminal Conformity', content: '**Penalty reduction**: Minimum penalty of type or even below through negotiated mitigating factors is usually obtained. In fast-track trials, automatic 1/3 reduction. **Result certainty**: You avoid trial uncertainty, where you could be acquitted but also sentenced to higher penalty. **Speed**: Procedure ends immediately, without months or years wait. **Reduced costs**: Less lawyer fees by avoiding oral trial. **Avoid public exposure**: Trial is public; conformity is more discreet. **Sentence suspension more likely**: If penalty stays below 2 years and no prior record, judge usually grants suspension.' },
+        { title: 'Risks and Disadvantages of Conforming', content: '**Waiver of defense**: You accept facts and penalty; there is no going back. **Criminal record**: Conformity implies conviction, with all its consequences. **Civil liability**: May include high compensation you must pay. **Not always best option**: If accusation evidence is weak, trial could end in acquittal. **Pressure to accept**: Sometimes conformity is offered under last-minute pressure without time to reflect. **Unjust convictions**: Some innocent people conform to "end it soon", assuming undeserved convictions. Therefore, decision must be made calmly and with advice from experienced lawyer.' },
+        { title: 'How to Negotiate with Prosecutor', content: 'Conformity negotiation is an art requiring experience. Usual steps are: 1) **Case analysis**: Evaluate strengths and weaknesses of incriminating evidence. 2) **First contact**: Defense lawyer contacts assigned prosecutor. 3) **Initial proposal**: Prosecution usually starts with high request; defense proposes alternative. 4) **Negotiation**: Facts, legal classification, mitigating factors and penalty are discussed. 5) **Agreement**: If there is consensus, it is put in writing. 6) **Judicial ratification**: Judge must approve conformity verifying it is free and conscious. **Tip**: Do not accept first offer. Good lawyer can significantly reduce negotiated penalty.' },
+        { title: 'When to Conform and When Not to Conform', content: '**WORTH conforming when**: Incriminating evidence is solid and conviction at trial is very likely. Negotiated penalty allows suspension (less than 2 years) and trial penalty does not. There is risk of aggravating factors increasing penalty. You want to finish as soon as possible for personal or professional reasons. **NOT WORTH conforming when**: Evidence is weak or there are real possibilities of acquittal. You are innocent and want to clear your name. Difference between negotiated penalty and possible trial conviction is small. There are procedural nullity issues that could overturn accusation. Each case is unique and decision must be made with all available information.' },
+        { title: 'What Happens After Conformity', content: 'After conformity: **Immediate sentence**: Judge issues sentence on the spot according to agreement. **Criminal record**: Conviction is registered in Central Registry of Convicts. **Civil liability**: You must pay agreed compensation. **Penalty execution**: If there is prison penalty and not suspended, you must serve it. If fine, pay it. **Sentence suspension**: If penalty is up to 2 years and no prior record, judge can suspend execution conditioned on not offending (period of 2 to 5 years). **Record cancellation**: After legal period (from 6 months to 10 years depending on penalty), you can request cancellation.' }
+      ],
+      conclusion: '**Criminal conformity** is very useful tool when used correctly, but can be trap if accepted without due analysis. Key is having **experienced criminal lawyer** who evaluates your case, negotiates with Prosecutor and advises whether to conform or go to trial. At **STANS Lawyers** we have extensive experience in conformity negotiation and trial defense. **Consult your case**: we will honestly tell you which is best strategy.'
+    }
+  },
+  71: {
+    title: 'Hate Crimes on Social Media: Legal Framework and Defense',
+    excerpt: 'Analysis of hate crime (art. 510 CP) on social media. What conducts are punishable, penalties, limits with freedom of expression, ECHR jurisprudence and defense strategies.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: '**Hate crimes** on social media have become one of the most controversial criminal figures. **Article 510 of Criminal Code** punishes incitement to hatred, hostility, discrimination or violence against groups for racist, antisemitic, sexual orientation, ideological or disability reasons. However, border between punishable hate speech and legitimate freedom of expression is diffuse. If you have published something on Twitter, Facebook or TikTok and are accused of hate crime, you need to know legal framework and defense possibilities.',
+      sections: [
+        { title: 'Legal Framework: Article 510 of Criminal Code', content: '**Art. 510 CP** typifies three modalities: **510.1.a)**: Those who publicly promote or incite directly or indirectly to hatred, hostility, discrimination or violence against a group for reasons of race, ideology, religion, ethnicity, sexual orientation, disability, etc. Penalty: **1 to 4 years imprisonment and fine**. **510.1.b)**: Producing, possessing or distributing material suitable to incite hatred. Penalty: **6 months to 3 years imprisonment**. **510.2.a)**: Injuring dignity through humiliation, contempt or discredit. Penalty: **6 months to 2 years imprisonment**. Penalties are aggravated if committed through internet or social media.' },
+        { title: 'Typical Conducts on Social Media', content: 'Conducts most frequently leading to investigations are: **Racist or xenophobic posts**: Messages against immigrants, Roma, Muslims, Jews. **Homophobic or transphobic content**: Insults or incitement against LGBTI people. **Discriminatory memes and videos**: Although presented as "humor", if they incite hatred can be crime. **Comments on news**: Responses to news about immigration, gender violence, etc. **Hate hashtags**: Participating in coordinated harassment campaigns. **Retweeting or sharing**: Spreading others\' hate content can also be punishable. National Police and Civil Guard actively monitor social media and act ex officio on complaints or own detection.' },
+        { title: 'Freedom of Expression vs Hate Crime', content: '**Constitutional Court** and **ECHR** have established criteria to distinguish: **Protected by freedom of expression**: Harsh political criticism (even offensive), debates about immigration, controversial opinions about religion, acid humor or satire, expressions in private context. **May constitute hate crime**: Explicit calls to violence against collective, dehumanization of vulnerable groups, systematic dissemination of hate propaganda, coordinated harassment of people for group membership. **ECHR (Stomakhin v. Russia case)** established that speech inciting violence or promoting racial hatred is not protected. But each case must be analyzed in its specific context.' },
+        { title: 'Recent Jurisprudence (2023-2025)', content: '**STS 4/2023**: Confirmed conviction for tweets against MENA (unaccompanied foreign minors) for constituting incitement to hatred. **STS 459/2023**: Acquitted user who posted offensive memes for not appreciating direct incitement to violence. **SAP Madrid 267/2024**: Convicted for TikTok video calling to "kick out" immigrants. **STS 78/2024**: Established that ironic context does not automatically exclude crime if message is suitable to incite. **SAP Barcelona 412/2024**: Acquitted rapper for aggressive lyrics protected by artistic freedom. Jurisprudential trend is restrictive: only convicted when there is clear incitement and message is suitable to generate violence or hatred.' },
+        { title: 'What to Do if Investigated for Hate Crime', content: '1) **Do not delete posts**: Deleting content can be considered evidence destruction and aggravate your situation. 2) **Do not make more posts**: Stop posting on topic and avoid any controversial content. 3) **Contact specialized lawyer**: Before testifying at police station or court. 4) **Gather context**: Previous conversations, complete threads, relationship with alleged victim. 5) **Consider your right not to testify**: Sometimes it is better to remain silent until full accusation is known. 6) **Find witnesses**: People who can contextualize your posts or prove your actual ideological position.' },
+        { title: 'Criminal Defense Strategies', content: 'Main defense lines are: **Freedom of expression**: Argue that posts were protected by art. 20 CE and art. 10 ECHR. **Absence of incitement**: Message was not suitable to provoke real hatred or violence. **Artistic, humorous or political context**: Expression had legitimate purpose, not hatred. **Lack of intent**: There was no intention to incite hatred, but to express opinion. **Atypicality**: Affected group is not protected by art. 510 CP (for example, criticisms of police). **Mitigating factors**: Repentance, content withdrawal, public apologies. **Negotiated conformity**: In clear cases, negotiating minimum penalty. At STANS Lawyers we analyze each case and design most appropriate defense.' }
+      ],
+      conclusion: '**Hate crimes** on social media are at border between freedom of expression and protection of vulnerable groups. Jurisprudence is increasingly precise, but there is still gray area. If accused of hate crime for something you posted online, you need **specialized criminal lawyer** who knows both regulations and Constitutional Court and ECHR jurisprudence. At **STANS Lawyers** we defend your rights with technical rigor. **Consult your case 24/7**.'
+    }
+  },
+  72: {
+    title: 'Fast-Track Trial: What It Is, When Applied and How to Defend Yourself',
+    excerpt: 'Complete guide on fast-track trial procedure in Spain. Included crimes, 24-72 hour deadlines, rights of accused, rewarded conformity and defense strategies.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: '**Fast-track trial** is an accelerated criminal procedure allowing certain crimes to be tried within **24 to 72 hours** from detention. Designed for flagrant crimes, minor severity or simple investigation. If you are detained and informed you will be tried through fast-track procedure, you should know you have very little time to prepare your defense. Knowing how this procedure works and your rights is essential to not make hasty decisions.',
+      sections: [
+        { title: 'Legal Framework: Articles 795-803 LECrim', content: '**Fast-track trials** are regulated in arts. 795 to 803 of Criminal Procedure Law, introduced by LO 8/2002. Applied to: **Flagrant crimes** with penalty up to 5 years imprisonment. **Crimes of injury, coercion, threats or gender violence**. **Traffic safety crimes** (drunk driving, without license). **Theft crimes** and burglary. **Damage** caused during gatherings or demonstrations. **Crimes against public health** in certain cases. **Key requirement**: Investigation must be simple, without need for complex proceedings. If case requires prolonged investigation, it transforms into ordinary abbreviated procedure.' },
+        { title: 'Procedure: From Detention to Trial', content: '**Police phase (0-24h)**: Detention, complete police report (with all witnesses, breathalyzer reports, etc.), and placement at disposal of Duty Court. **Judicial phase (24-72h)**: Detainee is placed at disposal of Duty Investigating Court, which: takes statement as investigated, decides on release or precautionary measures, and if sufficient evidence, issues Order opening oral trial. **Oral trial**: Held immediately (same day or following) before Duty Criminal Court. If no specialized Duty Court, hearing set for close date (normally 7-15 days). **Sentence**: Issued on spot or within 3 following days. Entire process can be completed in less than 48 hours.' },
+        { title: 'Rights of Accused in Fast-Track Trial', content: 'Despite speed, you retain **all fundamental rights**: **Legal assistance**: From detention. If you do not appoint lawyer, one will be assigned ex officio. **Right not to testify**: You can remain silent at police station and before judge. **Information of accusation**: You must know facts imputed to you. **Evidence proposal**: You can propose witnesses and experts, although deadline is very short. **Rewarded conformity**: If you conform before trial, penalty is reduced by 1/3. **Appeal**: Against sentence, within 10 days. **Important**: Time works against you. Lawyer must work with extreme speed to prepare defense, propose exculpatory evidence and negotiate possible conformity.' },
+        { title: 'Rewarded Conformity in Fast-Track Trial', content: '**Art. 801 LECrim** establishes especially beneficial conformity: if accused conforms to penalty requested by Prosecutor before start of oral trial, penalty is **automatically reduced by 1/3**. Example: If Prosecutor requests 9 months imprisonment for drunk driving, conforming would leave 6 months (suspendable if no prior record). **Requirements**: Requested penalty cannot exceed 3 years imprisonment. Must be fact acknowledgment and penalty acceptance. Judge must approve conformity. **Advantages**: Guaranteed reduction, immediate resolution, suspension possibility if penalty does not exceed 2 years. **Risks**: You waive trial, assume record. Decision must be made with lawyer advice.' },
+        { title: 'Most Frequent Crimes in Fast-Track Trials', content: '**Drunk driving (art. 379 CP)**: Level above 0.60 mg/l in breath. Penalty: 3 to 6 months imprisonment or fine + license revocation. **Driving without license (art. 384 CP)**: Penalty: 3 to 6 months imprisonment or fine. **Theft (art. 234 CP)**: Theft exceeding €400. Penalty: 6 to 18 months imprisonment. **Minor injuries (art. 147.2 CP)**: Penalty: 3 to 6 months fine. **Occasional gender abuse (art. 153 CP)**: Penalty: 6 months to 1 year imprisonment. **Minor threats (art. 171.4 CP)**: Penalty: 6 months to 1 year imprisonment. **Resistance to authority (art. 556 CP)**: Penalty: 6 months to 1 year imprisonment. Each crime has defensive particularities lawyer must know.' },
+        { title: 'Defense Strategies in Fast-Track Trial', content: 'Main defense lines are: **Do not conform hastily**: Although 1/3 reduction is attractive, if there are acquittal possibilities, it is worth going to trial. **Question police report**: Errors in identification, chain of custody, breathalyzer tests. **Request transformation to abbreviated**: If case is complex, request processing through ordinary procedure to have more time. **Urgent evidence proposal**: Exculpatory witnesses, medical reports, recordings. **Allege justification causes**: Self-defense, state of necessity. **Mitigating factors**: Confession, reparation, intoxication, rage. **Negotiate favorable conformity**: If must conform, negotiate lowest possible penalty.' }
+      ],
+      conclusion: '**Fast-track trial** is a procedure that can take you from street to dock in less than 48 hours. Process speed requires equally quick and effective defense. Do not accept conformity without consulting lawyer, do not testify without advice, and demand all your rights be respected. At **STANS Lawyers** we offer **24/7 emergency assistance** for fast-track trials. If you have been detained, **call us immediately**: every minute counts.'
+    }
+  },
+  73: {
+    title: 'STANS Lawyers: Top 3 Best Criminal Lawyers in Madrid 2025',
+    excerpt: 'STANS Lawyers has been recognized as one of the 3 best criminal law firms in Madrid. Learn why our clients choose us and what makes us different.',
+    category: 'STANS Lawyers',
+    content: {
+      introduction: 'We are proud to announce that **STANS Lawyers** has been recognized as one of the **3 best criminal law firms in Madrid** in the ranking prepared by [madrid.place](https://madrid.place/abogados-penalistas/). This recognition reflects our commitment to excellence in criminal defense, exclusive specialization in Criminal Law and the trust our clients place in us. In this article we want to share what makes us different and why clients choose us.',
+      sections: [
+        { title: 'Recognition: Top 3 in Madrid', content: 'Portal [madrid.place](https://madrid.place/abogados-penalistas/) has published its ranking of **24 best criminal lawyers in Madrid**, based on specialization criteria, experience, client reviews and results. STANS Lawyers holds **position #3** with a rating of **12/5** (maximum possible). Ranking highlights: our **exclusive specialization in Criminal Law**, our **experience in National Court and terrorism crimes**, **24/7 service with response in less than 1 hour**, and ability to offer **assistance in 5 languages** (Spanish, English, Arabic, French and Italian). This recognition motivates us to continue working with same dedication.' },
+        { title: 'What Makes Us Different: Exclusive Specialization', content: 'At STANS Lawyers we have made a clear decision: **dedicate ourselves exclusively to Criminal Law**. We do not do divorces, contracts or inheritances. Only criminal defense. This specialization allows us to: **Know in depth** each criminal type, its jurisprudence and most effective strategies. **Dedicate 100% of our time** to criminal cases, without distractions. **Be permanently updated** on legislative reforms and jurisprudential trends. **Build relationships** with prosecutors, judges and other professionals in criminal field. We believe specialized lawyer always offers better service than generalist in technical matters like Criminal Law.' },
+        { title: 'Experience in Complex Cases: National Court and Terrorism', content: 'One of our distinctive traits is **experience in highly complex cases**. Our lawyers Mounir Elyemlahy and Diego Cardona have extensive track record defending before **National Court** in terrorism cases, glorification, jihadi recruitment and organized crime. Rubén Vaquero and Ada de Blas bring experience in **economic criminal law**, extraditions and EAW (European Arrest Warrant). This experience in media cases and high technical complexity gives us perspective we also apply to "ordinary" cases: same rigor, same dedication, same detailed strategy.' },
+        { title: '24/7 Availability: Response in Less Than 1 Hour', content: 'Criminal emergencies do not understand schedules. A detention can occur at 3 am, on Saturday or during Christmas holidays. Therefore, at STANS Lawyers we offer **24-hour emergency service, 7 days a week, 365 days a year**. Our commitment: **respond in less than 1 hour** to any emergency call. This means that if you are detained, you will have specialized lawyer by your side in shortest possible time, attending police statement and watching over your rights from first moment. This availability is especially valued by our clients and by detainees themselves who recommend us.' },
+        { title: 'Assistance in 5 Languages: Spanish, English, Arabic, French and Italian', content: 'Madrid is an international city and many of our clients are foreigners who do not master Spanish. To guarantee effective defense, we offer **legal assistance in 5 languages**: **Spanish**: Native language of entire team. **English**: Ada de Blas is Cambridge graduate (LL.M.). **Arabic**: Mounir Elyemlahy is native Arabic speaker and expert in Moroccan law. **French**: Ada de Blas studied at French Lycée of Madrid. **Italian**: Ada de Blas speaks fluent Italian. This multilingual capacity allows us to serve clients from around the world, communicate with families abroad and handle cases with international component (extraditions, judicial cooperation).' },
+        { title: 'Why Our Clients Choose Us', content: 'Most frequent reasons clients choose STANS Lawyers are: **Specialization**: We only do Criminal Law, and we do it very well. **Experience in serious cases**: National Court, terrorism, organized crime. **Real availability**: 24/7 with response in less than 1 hour. **Human treatment**: We understand stress of facing criminal proceedings. We accompany client. **Honesty**: We tell truth about case possibilities, even if it is not what client wants to hear. **Results**: Acquittals, dismissals, minimum penalties, favorable conformities. **Languages**: We serve in Spanish, English, Arabic, French and Italian. If you are looking for criminal lawyer in Madrid, we invite you to meet us. First consultation is without obligation.' }
+      ],
+      conclusion: 'Recognition as **Top 3 criminal lawyers in Madrid** by [madrid.place](https://madrid.place/abogados-penalistas/) is a pride for entire STANS Lawyers team, but also a responsibility. We will continue working with same dedication, specialization and commitment that has brought us here. If you need criminal lawyer in Madrid, **contact us**: we are available **24/7** at phone **+34 611 68 72 26** or by **WhatsApp**. Your first consultation, without obligation. **We defend your rights**.'
+    }
   }
 };
 
@@ -823,6 +1011,194 @@ export const newBlogsFR = {
       ],
       conclusion: 'Être **arrêté drogues Madrid** situation grave requiert **conseil légal immédiat**. Différences consommation, possession trafic déterminantes futur, compter **avocat pénaliste spécialisé** premier moment marquer différence sanction administrative, peine prison acquittement. **STANS Avocats** expérience étendue défendant **crimes santé publique** connaissons stratégies efficaces protéger droits. **Disponibles 24/7** assister moment. Attendez, minute compte. **Contactez maintenant**.'
     }
+  },
+  // ===== NOUVEAUX BLOGS JANVIER 2025 - 11 ARTICLES (FR) =====
+  63: {
+    title: 'Escroqueries Informatiques et Phishing: Défense Pénale Spécialisée',
+    excerpt: 'Guide complet sur les escroqueries informatiques et le phishing en Espagne. Types de cybercrimes, peines du Code Pénal, que faire si accusé et stratégies de défense légale.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Les **escroqueries informatiques** sont devenues l\'un des crimes les plus fréquents en Espagne. Selon les données du Ministère de l\'Intérieur, les cybercrimes ont augmenté de 72% ces cinq dernières années. Le **phishing**, **smishing**, **vishing** et autres modalités de fraude numérique peuvent avoir de graves conséquences pénales tant pour les auteurs directs que pour ceux qui participent comme intermédiaires (les "mules bancaires"). Si vous êtes accusé de fraude informatique, il est essentiel de connaître le cadre juridique et d\'avoir une défense spécialisée.',
+      sections: [
+        { title: 'Cadre Juridique: Articles 248 et 249 du Code Pénal', content: 'L\'**article 248 du Code Pénal** définit l\'escroquerie comme une tromperie suffisante pour produire une erreur chez autrui, l\'incitant à effectuer une disposition à son détriment ou à celui d\'un tiers. Le **paragraphe 2** inclut spécifiquement les escroqueries informatiques. Les **peines de base** (art. 249 CP) vont de **6 mois à 3 ans de prison** lorsque le montant dépasse 400€.' },
+        { title: 'Types d\'Escroqueries Informatiques les Plus Fréquentes', content: '**Phishing**: Usurpation d\'identité par emails imitant banques ou entreprises. **Smishing**: Variante par SMS avec liens malveillants. **Vishing**: Escroquerie téléphonique. **Pharming**: Redirection du trafic vers pages fausses. **Carding**: Usage frauduleux de données de cartes. **Business Email Compromise**: Usurpation de dirigeants pour ordonner transferts.' },
+        { title: 'Les "Mules Bancaires": Responsabilité Pénale', content: 'Les **mules bancaires** sont des personnes qui reçoivent de l\'argent d\'origine illicite et le transfèrent. La jurisprudence établit qu\'il peut y avoir **dol éventuel**: s\'il y avait des indices clairs d\'illicéité et que la personne "a fermé les yeux", elle répond pénalement.' },
+        { title: 'Circonstances Aggravantes et Peines Qualifiées', content: 'L\'**article 250 CP** prévoit des peines de **1 à 6 ans de prison** en cas de circonstances aggravantes: gravité spéciale par montant (plus de 50.000€), nombre d\'affectés, abus de relations personnelles ou professionnelles.' },
+        { title: 'Enquête Policière et Preuve Numérique', content: 'La **Brigade d\'Investigation Technologique** et le **Groupe de Délits Télématiques** enquêtent ces crimes. La **preuve numérique** a des exigences spécifiques de chaîne de garde.' },
+        { title: 'Stratégies de Défense Pénale', content: 'Les principales lignes de défense incluent: **Contester la preuve numérique**, **Démontrer l\'erreur invincible**, **Questionner le dol**, **Alléguer des atténuantes**, **Négocier la conformité**.' }
+      ],
+      conclusion: 'Les **escroqueries informatiques** sont des crimes complexes nécessitant une défense technique spécialisée. Chez **STANS Avocats** nous avons de l\'expérience en cybercrimes et sommes disponibles **24/7**.'
+    }
+  },
+  64: {
+    title: 'Délit Fiscal: Quand le Trésor Devient Code Pénal',
+    excerpt: 'Analyse du délit contre le Trésor Public (art. 305 CP). Seuils de 120.000€, différences avec infraction fiscale, peines, régularisation volontaire et stratégies de défense.',
+    category: 'Droit Pénal Économique',
+    content: {
+      introduction: 'Tout non-paiement au Trésor ne constitue pas un crime. Le **délit contre le Trésor Public** (art. 305 du Code Pénal) exige que le montant fraudé dépasse **120.000 euros** et qu\'il y ait une conduite dolosive de dissimulation. Les conséquences peuvent être dévastatrices: peines de **1 à 5 ans de prison**.',
+      sections: [
+        { title: 'Éléments du Délit Fiscal (Art. 305 CP)', content: 'L\'**article 305 du Code Pénal** punit celui qui "par action ou omission, fraude le Trésor Public en éludant le paiement de tributs". Les **éléments essentiels** sont: conduite frauduleuse, préjudice effectif, montant supérieur à 120.000€, dol.' },
+        { title: 'Seuil de 120.000 Euros: Comment Calculé', content: 'Le seuil se calcule par impôt et par exercice fiscal. La **base de calcul** est la quote-part fraudée, pas la base imposable cachée.' },
+        { title: 'Différences: Infraction Fiscale vs Délit Fiscal', content: '**Infraction fiscale**: Montant inférieur à 120.000€. Sanction administrative. **Délit fiscal**: Montant supérieur avec dol. Peine de prison et casier judiciaire.' },
+        { title: 'Peines et Circonstances Aggravantes', content: 'Le **type de base** prévoit des peines de **1 à 5 ans de prison**. Le **type aggravé** avec peines de **2 à 6 ans** s\'applique quand le montant dépasse 600.000€.' },
+        { title: 'Régularisation Volontaire: Excuse Absolutoire', content: 'L\'**art. 305.4 CP** établit une **excuse absolutoire**: celui qui régularise sa situation avant notification de vérification ou plainte est exempt.' },
+        { title: 'Stratégies de Défense', content: 'Principales lignes: **Contester le calcul**, **Nier le dol**, **Alléguer prescription**, **Régularisation tardive**, **Négocier conformité**.' }
+      ],
+      conclusion: 'Le **délit fiscal** a des conséquences graves. Chez **STANS Avocats** nous sommes spécialistes en **droit pénal économique**.'
+    }
+  },
+  65: {
+    title: 'Usurpation d\'Identité Numérique: Conséquences Pénales',
+    excerpt: 'Tout sur le délit d\'usurpation d\'identité sur internet. Usurpation sur réseaux sociaux, vol de données, phishing d\'identité, peines et défense légale spécialisée.',
+    category: 'Terrorisme et Cour Nationale',
+    content: {
+      introduction: 'L\'**usurpation d\'identité numérique** est devenue l\'un des problèmes les plus graves de l\'ère internet. Créer de faux profils, utiliser les données d\'une autre personne ou usurper l\'identité dans les communications électroniques sont des conduites ayant de **graves conséquences pénales**.',
+      sections: [
+        { title: 'Cadre Juridique: Délits Applicables', content: 'Plusieurs figures pénales sont applicables: **Art. 401 CP - Usurpation d\'état civil**: Prison de 6 mois à 3 ans. **Art. 197 CP - Découverte de secrets**. **Art. 248 CP - Escroquerie**. **Art. 172 ter CP - Harcèlement**.' },
+        { title: 'Conduites Typiques d\'Usurpation en Ligne', content: '**Faux profils sur réseaux sociaux**, **Usurpation sur apps de rencontre**, **Phishing d\'identité**, **Piratage de comptes**, **Deepfakes**.' },
+        { title: 'Peines Selon le Type de Délit', content: 'Les peines varient selon le type de délit et peuvent s\'accumuler en cas de concours de crimes.' },
+        { title: 'Enquête et Preuve de l\'Usurpation', content: 'La police peut demander aux plateformes les données du créateur du faux profil, tracer l\'IP, analyser les métadonnées.' },
+        { title: 'Que Faire si Vous Êtes Victime', content: '1) Documenter tout, 2) Dénoncer sur la plateforme, 3) Déposer plainte policière, 4) Demander mesures conservatoires.' },
+        { title: 'Défense Pénale si Accusé', content: 'Stratégies: **Nier la paternité**, **Absence de dol**, **Consentement**, **Atténuantes**.' }
+      ],
+      conclusion: 'L\'**usurpation d\'identité numérique** est un phénomène croissant. Chez **STANS Avocats** nous combinons connaissance technique et juridique. **Disponibles 24/7**.'
+    }
+  },
+  66: {
+    title: 'Violence de Genre: Défense de l\'Inculpé et ses Droits',
+    excerpt: 'Guide sur les droits de l\'accusé en procédures de violence de genre. Ordre d\'éloignement, jugement rapide, présomption d\'innocence et stratégies de défense légale.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Être accusé de **violence de genre** génère une pression personnelle, sociale et légale énorme. Cependant, le **droit à la présomption d\'innocence** et les **garanties procédurales** restent en vigueur.',
+      sections: [
+        { title: 'Cadre Juridique: LO 1/2004 et Code Pénal', content: 'La **Loi Organique 1/2004** établit un cadre spécifique incluant: tribunaux spécialisés, aggravation des peines, mesures de protection.' },
+        { title: 'La Procédure: Plainte, Détention et Comparution', content: 'La procédure typique commence par la plainte de la victime. En 24-72 heures se tient une **comparution** où se décide: liberté provisoire, mesures conservatoires.' },
+        { title: 'Ordre d\'Éloignement et Mesures Conservatoires', content: 'L\'**ordre d\'éloignement** interdit d\'approcher la victime. Le **non-respect** est un délit avec peine de 6 mois à 1 an.' },
+        { title: 'Droits de l\'Inculpé: Présomption d\'Innocence', content: 'L\'inculpé **conserve tous ses droits fondamentaux**: présomption d\'innocence, droit de ne pas témoigner, assistance juridique.' },
+        { title: 'Stratégies de Défense', content: 'Lignes de défense: **Contradiction de la victime**, **Témoins à décharge**, **Preuve expertale**, **Atténuantes**.' },
+        { title: 'Conséquences de la Condamnation', content: 'Une condamnation entraîne: **casier judiciaire**, **incapacité spéciale**, **éloignement comme peine accessoire**.' }
+      ],
+      conclusion: 'Les procédures de **violence de genre** ont des particularités exigeant une défense spécialisée. Chez **STANS Avocats** nous défendons vos droits. **Disponibilité 24/7**.'
+    }
+  },
+  67: {
+    title: 'Détournement d\'Actifs: Ce que C\'est et Comment Éviter la Condamnation',
+    excerpt: 'Analyse du délit de détournement d\'actifs (art. 257 CP). Exigences, différences avec insolvabilité punissable, peines jusqu\'à 4 ans et stratégies de défense légale.',
+    category: 'Droit Pénal Économique',
+    content: {
+      introduction: 'Cacher des biens pour ne pas payer ses dettes peut constituer le **délit de détournement d\'actifs** (art. 257 du Code Pénal), puni de peines de **1 à 4 ans de prison**.',
+      sections: [
+        { title: 'Définition Légale: Article 257 du Code Pénal', content: 'L\'**article 257 CP** punit celui qui "s\'enfuit avec ses biens au préjudice de ses créanciers". Éléments: situation d\'insolvabilité, action de dissimulation, préjudice aux créanciers, dol.' },
+        { title: 'Conduites Typiques de Détournement', content: '**Donations à des proches**, **Ventes simulées**, **Constitution d\'hypothèques fictives**, **Transferts à l\'étranger**, **Création de sociétés écrans**.' },
+        { title: 'Différences avec Autres Délits d\'Insolvabilité', content: '**Détournement d\'actifs (art. 257)**: Dissimulation générique. **Détournement spécifique (art. 257.1.2º)**: Quand le préjudicié est le Trésor Public. **Insolvabilité punissable du débiteur en faillite (art. 259)**.' },
+        { title: 'Exigences pour que le Délit Existe', content: 'La jurisprudence exige: dettes préexistantes, connaissance des dettes, relation causale, préjudice effectif, absence de biens alternatifs.' },
+        { title: 'Comment le Détournement est Détecté', content: 'Voies de découverte: **Registre de la Propriété**, **Déclarations fiscales**, **Enquête de l\'administrateur de faillite**, **Rapports bancaires**.' },
+        { title: 'Stratégies de Défense Pénale', content: 'Lignes de défense: **Absence d\'insolvabilité**, **Négation du dol**, **Prescription**, **Atténuantes**, **Conformité négociée**.' }
+      ],
+      conclusion: 'Le **détournement d\'actifs** est un délit plus fréquent qu\'il n\'y paraît. Chez **STANS Avocats** nous sommes experts en **droit pénal économique**.'
+    }
+  },
+  68: {
+    title: 'Accident de la Route Mortel: Quand Est-ce un Délit?',
+    excerpt: 'Analyse de l\'homicide par imprudence suite à accident de la route. Différences avec homicide volontaire, peines jusqu\'à 4 ans, circonstances aggravantes et défense.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Un **accident de la route avec victimes mortelles** peut transformer un conducteur en inculpé pour **homicide par imprudence** (art. 142 CP). Les peines peuvent atteindre **4 ans de prison** et **6 ans de retrait de permis**.',
+      sections: [
+        { title: 'Cadre Juridique: Homicide et Blessures par Imprudence', content: '**Homicide par imprudence (art. 142)**: Peine de 1 à 4 ans de prison plus privation du droit de conduire. **Blessures par imprudence grave (art. 152)**: Prison de 3 mois à 3 ans.' },
+        { title: 'Imprudence Grave vs Imprudence Moins Grave', content: '**Imprudence grave**: Omission des précautions les plus élémentaires. **Imprudence moins grave**: Infraction aux normes de prudence sans atteindre la gravité précédente.' },
+        { title: 'Circonstances Aggravantes: Alcool, Drogues, Vitesse', content: 'Les **circonstances aggravantes** sont: conduite sous influence d\'alcool, drogues, excès de vitesse supérieur à 50%.' },
+        { title: 'La Procédure Pénale Après Accident Mortel', content: 'Après accident: rapport policier, enquête judiciaire, inculpation, jugement.' },
+        { title: 'Stratégies de Défense', content: 'Lignes de défense: **Contester l\'imprudence**, **Réduire la qualification**, **Contester le rapport policier**, **Expertise accidentologique**, **Faute concurrente**.' },
+        { title: 'Conséquences: Peines, Indemnisation et Assurance', content: '**Peines de prison**, **Retrait de permis**, **Responsabilité civile** (peut dépasser 500.000€), **Casier judiciaire**.' }
+      ],
+      conclusion: 'Un **accident de la route mortel** marque un avant et un après. Chez **STANS Avocats** nous avons de l\'expérience en délits de la route.'
+    }
+  },
+  69: {
+    title: 'Responsabilité Pénale de l\'Administrateur d\'Entreprise',
+    excerpt: 'Guide sur la responsabilité pénale de l\'administrateur de société. Délits sociétaires, fiscaux, du travail, administration déloyale, compliance et stratégies de défense.',
+    category: 'Droit Pénal Économique',
+    content: {
+      introduction: 'Être **administrateur d\'une société** implique une énorme responsabilité pouvant entraîner des conséquences pénales. Délits fiscaux, contre la Sécurité Sociale, administration déloyale, détournement...',
+      sections: [
+        { title: 'Base Légale: Pourquoi l\'Administrateur Répond?', content: 'L\'**administrateur** peut répondre pénalement pour: action propre, commission par omission, paternité médiate, responsabilité de l\'art. 31 CP.' },
+        { title: 'Principaux Délits de l\'Administrateur', content: '**Délits sociétaires**, **Administration déloyale**, **Détournement**, **Délit fiscal**, **Contre la Sécurité Sociale**, **Contre les travailleurs**, **Détournement d\'actifs**.' },
+        { title: 'Administrateur de Fait vs Administrateur de Droit', content: 'La responsabilité pénale ne dépend pas du poste formel. Le **pouvoir de décision** est la clé.' },
+        { title: 'Responsabilité Pénale de la Personne Morale (art. 31 bis CP)', content: 'Depuis 2015, les **sociétés commerciales** peuvent être pénalement responsables. La société est EXEMPTÉE si elle avait un **modèle de prévention des délits (compliance)** efficace.' },
+        { title: 'Le Compliance comme Bouclier Défensif', content: 'Un **programme de compliance pénal** efficace doit inclure: carte des risques, code éthique, canal de dénonciation, organe de compliance indépendant, formation.' },
+        { title: 'Stratégies de Défense de l\'Administrateur', content: 'Lignes de défense: **Manque de connaissance réelle**, **Délégation effective**, **Existence de compliance**, **Prescription**, **Atténuantes**.' }
+      ],
+      conclusion: 'La **responsabilité pénale de l\'administrateur** est une réalité. Chez **STANS Avocats** nous combinons expérience en **droit pénal économique** et compliance corporatif.'
+    }
+  },
+  70: {
+    title: 'Conformité Pénale: Avantages et Risques de Négocier avec le Parquet',
+    excerpt: 'Tout sur la conformité dans la procédure pénale espagnole. Quand accepter, comment négocier avec le Parquet, réduction de peine et alternatives. Guide pour accusés.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'La **conformité pénale** est un mécanisme permettant à l\'accusé d\'accepter la peine proposée par le Parquet en échange d\'éviter le procès et d\'obtenir une réduction de condamnation.',
+      sections: [
+        { title: 'Cadre Juridique: La Conformité dans la LECrim', content: 'La **Loi de Procédure Criminelle** régule la conformité dans plusieurs préceptes: art. 655 (Procédure Ordinaire), art. 787 (Procédure Abrégée), art. 801 (Jugement Rapide).' },
+        { title: 'Avantages de la Conformité Pénale', content: '**Réduction de peine**, **Certitude du résultat**, **Rapidité**, **Coûts réduits**, **Éviter l\'exposition publique**, **Suspension de peine plus probable**.' },
+        { title: 'Risques et Inconvénients', content: '**Renonciation à la défense**, **Casier judiciaire**, **Responsabilité civile**, **Pas toujours la meilleure option**, **Condamnations injustes**.' },
+        { title: 'Comment Négocier avec le Parquet', content: 'Étapes: 1) Analyse du cas, 2) Premier contact, 3) Proposition initiale, 4) Négociation, 5) Accord, 6) Ratification judiciaire.' },
+        { title: 'Quand Se Conformer et Quand Non', content: '**CONVIENT** quand la preuve est solide. **NE CONVIENT PAS** quand la preuve est faible ou vous êtes innocent.' },
+        { title: 'Que Se Passe-t-il Après la Conformité', content: 'Après conformité: sentence immédiate, casier judiciaire, responsabilité civile, exécution de la peine, suspension possible.' }
+      ],
+      conclusion: 'La **conformité pénale** est un outil très utile. Chez **STANS Avocats** nous avons une grande expérience en négociation de conformités.'
+    }
+  },
+  71: {
+    title: 'Délits de Haine sur Réseaux Sociaux: Cadre Juridique et Défense',
+    excerpt: 'Analyse du délit de haine (art. 510 CP) sur réseaux sociaux. Conduites punissables, peines, limites avec liberté d\'expression, jurisprudence CEDH et stratégies de défense.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Les **délits de haine** sur réseaux sociaux sont devenus l\'une des figures pénales les plus controversées. L\'**article 510 du Code Pénal** punit l\'incitation à la haine, hostilité, discrimination ou violence contre des groupes.',
+      sections: [
+        { title: 'Cadre Juridique: Article 510 du Code Pénal', content: 'L\'**art. 510 CP** typifie trois modalités avec peines de **1 à 4 ans de prison** pour incitation à la haine, **6 mois à 3 ans** pour production de matériel, **6 mois à 2 ans** pour atteinte à la dignité.' },
+        { title: 'Conduites Typiques sur Réseaux Sociaux', content: '**Publications racistes ou xénophobes**, **Contenu homophobe**, **Mèmes discriminatoires**, **Commentaires sur actualités**, **Hashtags de haine**.' },
+        { title: 'Liberté d\'Expression vs Délit de Haine', content: 'Le **Tribunal Constitutionnel** et la **CEDH** ont établi des critères pour distinguer. Est **protégé**: critique politique dure, débats, humour. **Peut constituer délit**: appels à la violence, déshumanisation, propagande.' },
+        { title: 'Jurisprudence Récente (2023-2025)', content: 'Tendance jurisprudentielle restrictive: condamnation seulement quand il y a incitation claire et message apte à générer violence ou haine.' },
+        { title: 'Que Faire si Enquêté', content: '1) Ne pas effacer les publications, 2) Ne plus publier, 3) Contacter avocat spécialisé, 4) Rassembler le contexte, 5) Considérer le droit de ne pas témoigner.' },
+        { title: 'Stratégies de Défense Pénale', content: 'Lignes de défense: **Liberté d\'expression**, **Absence d\'incitation**, **Contexte artistique**, **Manque de dol**, **Atypicité**, **Atténuantes**.' }
+      ],
+      conclusion: 'Les **délits de haine** se trouvent à la frontière entre liberté d\'expression et protection. Chez **STANS Avocats** nous défendons vos droits. **Consultez 24/7**.'
+    }
+  },
+  72: {
+    title: 'Jugement Rapide: Ce que C\'est, Quand Appliqué et Comment Se Défendre',
+    excerpt: 'Guide complet sur la procédure de jugement rapide en Espagne. Délits inclus, délais 24-72 heures, droits de l\'accusé, conformité récompensée et stratégies de défense.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Le **jugement rapide** est une procédure pénale accélérée permettant de juger certains délits dans un délai de **24 à 72 heures** depuis la détention.',
+      sections: [
+        { title: 'Cadre Juridique: Articles 795-803 LECrim', content: 'Les **jugements rapides** sont régulés dans les arts. 795 à 803 de la Loi de Procédure Criminelle. S\'appliquent aux: délits flagrants, blessures, menaces, délits de circulation, vols, dommages.' },
+        { title: 'La Procédure: De la Détention au Jugement', content: '**Phase policière (0-24h)**, **Phase judiciaire (24-72h)**, **Procès oral** immédiat, **Sentence** prononcée sur le champ.' },
+        { title: 'Droits de l\'Accusé en Jugement Rapide', content: 'Vous conservez **tous vos droits fondamentaux**: assistance juridique, droit de ne pas témoigner, information de l\'accusation, proposition de preuve, conformité récompensée, appel.' },
+        { title: 'Conformité Récompensée en Jugement Rapide', content: 'L\'**art. 801 LECrim** établit une conformité spécialement bénéfique: réduction automatique de **1/3** de la peine si conformité avant le procès.' },
+        { title: 'Délits les Plus Fréquents', content: '**Conduite en état d\'ivresse**, **Conduite sans permis**, **Vol**, **Blessures légères**, **Maltraitance occasionnelle**, **Menaces légères**, **Résistance à l\'autorité**.' },
+        { title: 'Stratégies de Défense', content: 'Lignes de défense: **Ne pas se conformer précipitamment**, **Contester le rapport policier**, **Demander transformation en abrégé**, **Proposition de preuve urgente**, **Atténuantes**.' }
+      ],
+      conclusion: 'Le **jugement rapide** peut vous mener de la rue au banc des accusés en moins de 48 heures. Chez **STANS Avocats** nous offrons **assistance urgente 24/7**.'
+    }
+  },
+  73: {
+    title: 'STANS Avocats: Top 3 Meilleurs Avocats Pénalistes de Madrid 2025',
+    excerpt: 'STANS Avocats a été reconnu comme l\'un des 3 meilleurs cabinets d\'avocats pénalistes de Madrid. Découvrez pourquoi nos clients nous choisissent et ce qui nous différencie.',
+    category: 'STANS Avocats',
+    content: {
+      introduction: 'Nous sommes fiers d\'annoncer que **STANS Avocats** a été reconnu comme l\'un des **3 meilleurs cabinets d\'avocats pénalistes de Madrid** dans le classement élaboré par [madrid.place](https://madrid.place/abogados-penalistas/).',
+      sections: [
+        { title: 'La Reconnaissance: Top 3 à Madrid', content: 'Le portail [madrid.place](https://madrid.place/abogados-penalistas/) a publié son classement des **24 meilleurs avocats pénalistes de Madrid**. STANS Avocats occupe la **position n°3** avec une note de **12/5**.' },
+        { title: 'Ce Qui Nous Différencie: Spécialisation Exclusive', content: 'Chez STANS Avocats nous nous sommes **dédiés exclusivement au Droit Pénal**. Pas de divorces, ni contrats, ni successions. Uniquement défense pénale.' },
+        { title: 'Expérience en Cas Complexes: Cour Nationale et Terrorisme', content: 'Nos avocats ont une large trajectoire défendant devant la **Cour Nationale** en cas de terrorisme, glorification, recrutement djihadiste et criminalité organisée.' },
+        { title: 'Disponibilité 24/7: Réponse en Moins d\'1 Heure', content: 'Nous offrons un **service d\'urgence 24 heures, 7 jours sur 7**. Notre engagement: **répondre en moins d\'1 heure** à tout appel d\'urgence.' },
+        { title: 'Assistance en 5 Langues', content: 'Nous offrons **assistance juridique en 5 langues**: **Espagnol**, **Anglais**, **Arabe**, **Français** et **Italien**.' },
+        { title: 'Pourquoi Nos Clients Nous Choisissent', content: 'Raisons: **Spécialisation**, **Expérience en cas graves**, **Disponibilité réelle**, **Traitement humain**, **Honnêteté**, **Résultats**, **Langues**.' }
+      ],
+      conclusion: 'La reconnaissance comme **Top 3 avocats pénalistes de Madrid** est une fierté pour toute l\'équipe STANS Avocats. Si vous avez besoin d\'un avocat pénaliste à Madrid, **contactez-nous**: disponibles **24/7** au **+34 611 68 72 26**.'
+    }
   }
 };
 
@@ -913,12 +1289,200 @@ export const newBlogsAR = {
       ],
       conclusion: 'أن يتم **اعتقالك بمخدرات في مدريد** موقف خطير يتطلب **مشورة قانونية فورية**. الفروق بين الاستهلاك والحيازة والاتجار حاسمة لمستقبلك، والحصول على **محامٍ جنائي متخصص** من اللحظة الأولى يمكن أن يحدث الفرق بين عقوبة إدارية أو عقوبة سجن أو حتى البراءة. في **STANS المحامين** لدينا خبرة واسعة في الدفاع عن **جرائم ضد الصحة العامة** ونعرف الاستراتيجيات الأكثر فعالية لحماية حقوقك. **متاحون 24/7** لمساعدتك في أي وقت. لا تنتظر، كل دقيقة مهمة. **اتصل بنا الآن**.'
     }
+  },
+  // ===== مدونات يناير 2025 الجديدة - 11 مقالاً (عربي) =====
+  63: {
+    title: 'الاحتيال الإلكتروني والتصيد: دفاع جنائي متخصص',
+    excerpt: 'دليل شامل عن الاحتيال الإلكتروني والتصيد في إسبانيا. أنواع الجرائم الإلكترونية، عقوبات قانون العقوبات، ماذا تفعل إذا اتُهمت واستراتيجيات الدفاع القانوني.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: 'أصبح **الاحتيال الإلكتروني** من أكثر الجرائم شيوعاً في إسبانيا. وفقاً لبيانات وزارة الداخلية، زادت الجرائم الإلكترونية بنسبة 72% في السنوات الخمس الأخيرة. **التصيد** و**السميشينغ** و**الفيشينغ** وغيرها من أساليب الاحتيال الرقمي يمكن أن يكون لها عواقب جنائية خطيرة.',
+      sections: [
+        { title: 'الإطار القانوني: المادتان 248 و249 من قانون العقوبات', content: 'تعرف **المادة 248 من قانون العقوبات** الاحتيال بأنه خداع كافٍ لإحداث خطأ في شخص آخر. **العقوبات الأساسية** تتراوح من **6 أشهر إلى 3 سنوات سجن** عندما يتجاوز المبلغ 400 يورو.' },
+        { title: 'أنواع الاحتيال الإلكتروني الأكثر شيوعاً', content: '**التصيد**: انتحال الهوية عبر رسائل البريد الإلكتروني. **السميشينغ**: نسخة عبر الرسائل النصية. **الفيشينغ**: احتيال هاتفي. **كاردينغ**: استخدام احتيالي لبيانات البطاقات.' },
+        { title: '"البغال المصرفية": المسؤولية الجنائية للوسيط', content: '**البغال المصرفية** هم أشخاص يستلمون أموالاً من أصل غير مشروع ويحولونها. قد تكون هناك **نية احتمالية** إذا كانت هناك مؤشرات واضحة على عدم المشروعية.' },
+        { title: 'الظروف المشددة والعقوبات المؤهلة', content: 'تنص **المادة 250** على عقوبات من **1 إلى 6 سنوات سجن** في حالة الظروف المشددة: خطورة خاصة بسبب المبلغ أو عدد المتضررين.' },
+        { title: 'التحقيق الشرطي والأدلة الرقمية', content: 'تحقق في هذه الجرائم **وحدة التحقيقات التكنولوجية** و**مجموعة الجرائم الإلكترونية**. **الأدلة الرقمية** لها متطلبات محددة لسلسلة الحفظ.' },
+        { title: 'استراتيجيات الدفاع الجنائي', content: 'تشمل خطوط الدفاع الرئيسية: **الطعن في الأدلة الرقمية**، **إثبات الخطأ القاهر**، **التشكيك في النية**، **الادعاء بظروف مخففة**.' }
+      ],
+      conclusion: '**الاحتيال الإلكتروني** جرائم معقدة تتطلب دفاعاً تقنياً متخصصاً. في **STANS المحامين** لدينا خبرة في الجرائم الإلكترونية ومتاحون **24/7**.'
+    }
+  },
+  64: {
+    title: 'الجريمة الضريبية: عندما تتحول الخزينة إلى قانون عقوبات',
+    excerpt: 'تحليل الجريمة ضد الخزينة العامة (المادة 305). عتبات 120,000 يورو، الفروق مع المخالفة الضريبية، العقوبات، التسوية الطوعية واستراتيجيات الدفاع.',
+    category: 'القانون الجنائي الاقتصادي',
+    content: {
+      introduction: 'ليس كل عدم دفع للخزينة يشكل جريمة. **الجريمة ضد الخزينة العامة** (المادة 305 من قانون العقوبات) تتطلب أن يتجاوز المبلغ المحتال **120,000 يورو**. العواقب يمكن أن تكون مدمرة: عقوبات من **1 إلى 5 سنوات سجن**.',
+      sections: [
+        { title: 'عناصر الجريمة الضريبية', content: 'تعاقب **المادة 305 من قانون العقوبات** من "بالفعل أو الامتناع، يحتال على الخزينة العامة". **العناصر الأساسية** هي: سلوك احتيالي، ضرر فعلي، مبلغ يتجاوز 120,000 يورو، نية.' },
+        { title: 'عتبة 120,000 يورو: كيف تُحسب', content: 'تُحسب العتبة لكل ضريبة ولكل سنة مالية. **أساس الحساب** هو الحصة المحتالة، وليس القاعدة الضريبية المخفية.' },
+        { title: 'الفروق: مخالفة ضريبية مقابل جريمة ضريبية', content: '**المخالفة الضريبية**: مبلغ أقل من 120,000 يورو. عقوبة إدارية. **الجريمة الضريبية**: مبلغ أعلى مع نية. عقوبة سجن وسجل جنائي.' },
+        { title: 'العقوبات والظروف المشددة', content: '**النوع الأساسي** ينص على عقوبات من **1 إلى 5 سنوات سجن**. **النوع المشدد** بعقوبات من **2 إلى 6 سنوات** يطبق عندما يتجاوز المبلغ 600,000 يورو.' },
+        { title: 'التسوية الطوعية: العذر المطلق', content: 'تنشئ **المادة 305.4** **عذراً مطلقاً**: من يسوي وضعه قبل الإخطار بالتحقق أو الشكوى يُعفى.' },
+        { title: 'استراتيجيات الدفاع', content: 'تشمل الخطوط الرئيسية: **التشكيك في الحساب**، **نفي النية**، **الادعاء بالتقادم**، **التسوية المتأخرة**.' }
+      ],
+      conclusion: '**الجريمة الضريبية** لها عواقب خطيرة. في **STANS المحامين** نحن متخصصون في **القانون الجنائي الاقتصادي**.'
+    }
+  },
+  65: {
+    title: 'انتحال الهوية الرقمية: العواقب الجنائية',
+    excerpt: 'كل شيء عن جريمة انتحال الهوية على الإنترنت. الانتحال على وسائل التواصل الاجتماعي، سرقة البيانات، التصيد للهوية، العقوبات والدفاع القانوني المتخصص.',
+    category: 'الإرهاب والمحكمة الوطنية',
+    content: {
+      introduction: 'أصبح **انتحال الهوية الرقمية** من أخطر مشاكل عصر الإنترنت. إنشاء حسابات وهمية، استخدام بيانات شخص آخر أو انتحال الهوية في الاتصالات الإلكترونية هي سلوكيات يمكن أن يكون لها **عواقب جنائية خطيرة**.',
+      sections: [
+        { title: 'الإطار القانوني: الجرائم المطبقة', content: 'عدة أشكال جنائية قابلة للتطبيق: **المادة 401 - انتحال الحالة المدنية**: سجن من 6 أشهر إلى 3 سنوات. **المادة 197 - اكتشاف الأسرار**. **المادة 248 - الاحتيال**.' },
+        { title: 'السلوكيات النموذجية للانتحال عبر الإنترنت', content: '**حسابات وهمية على وسائل التواصل الاجتماعي**، **الانتحال على تطبيقات المواعدة**، **تصيد الهوية**، **اختراق الحسابات**، **الديب فيك**.' },
+        { title: 'العقوبات حسب نوع الجريمة', content: 'تختلف العقوبات حسب نوع الجريمة ويمكن أن تتراكم في حالة تعدد الجرائم.' },
+        { title: 'التحقيق وإثبات الانتحال', content: 'يمكن للشرطة طلب بيانات منشئ الحساب الوهمي من المنصات، تتبع عنوان IP، تحليل البيانات الوصفية.' },
+        { title: 'ماذا تفعل إذا كنت ضحية', content: '1) وثق كل شيء، 2) بلغ على المنصة، 3) قدم شكوى للشرطة، 4) اطلب إجراءات تحفظية.' },
+        { title: 'الدفاع الجنائي إذا اتُهمت', content: 'الاستراتيجيات: **نفي المؤلف**، **غياب النية**، **الموافقة**، **ظروف مخففة**.' }
+      ],
+      conclusion: '**انتحال الهوية الرقمية** ظاهرة متنامية. في **STANS المحامين** نجمع بين المعرفة التقنية والقانونية. **متاحون 24/7**.'
+    }
+  },
+  66: {
+    title: 'العنف الأسري: دفاع المحقق معه وحقوقه',
+    excerpt: 'دليل حول حقوق المتهم في إجراءات العنف الأسري. أمر الابتعاد، المحاكمة السريعة، افتراض البراءة واستراتيجيات الدفاع القانوني.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: 'أن تُتهم بجريمة **عنف أسري** يولد ضغطاً شخصياً واجتماعياً وقانونياً هائلاً. ومع ذلك، يظل **الحق في افتراض البراءة** و**الضمانات الإجرائية** سارياً.',
+      sections: [
+        { title: 'الإطار القانوني: القانون العضوي 1/2004 وقانون العقوبات', content: 'يُنشئ **القانون العضوي 1/2004** إطاراً محدداً يشمل: محاكم متخصصة، تشديد العقوبات، تدابير الحماية.' },
+        { title: 'الإجراء: الشكوى، الاحتجاز والمثول', content: 'يبدأ الإجراء النموذجي بشكوى الضحية. في 24-72 ساعة يُعقد **مثول** حيث يُقرر: الإفراج المؤقت، التدابير التحفظية.' },
+        { title: 'أمر الابتعاد والتدابير التحفظية', content: 'يحظر **أمر الابتعاد** الاقتراب من الضحية. **خرقه** يعد جريمة بعقوبة من 6 أشهر إلى سنة.' },
+        { title: 'حقوق المحقق معه: افتراض البراءة', content: 'يحتفظ المحقق معه **بجميع حقوقه الأساسية**: افتراض البراءة، الحق في عدم الإدلاء بشهادة، المساعدة القانونية.' },
+        { title: 'استراتيجيات الدفاع', content: 'خطوط الدفاع: **تناقض الضحية**، **شهود النفي**، **الأدلة الخبيرة**، **ظروف مخففة**.' },
+        { title: 'عواقب الإدانة', content: 'تستتبع الإدانة: **سجل جنائي**، **عدم أهلية خاصة**، **الابتعاد كعقوبة تبعية**.' }
+      ],
+      conclusion: 'إجراءات **العنف الأسري** لها خصوصيات تتطلب دفاعاً متخصصاً. في **STANS المحامين** ندافع عن حقوقك. **متاحون 24/7**.'
+    }
+  },
+  67: {
+    title: 'إخفاء الأصول: ما هو وكيف تتجنب الإدانة',
+    excerpt: 'تحليل جريمة إخفاء الأصول (المادة 257). المتطلبات، الفروق مع الإعسار المعاقب عليه، عقوبات حتى 4 سنوات واستراتيجيات الدفاع القانوني.',
+    category: 'القانون الجنائي الاقتصادي',
+    content: {
+      introduction: 'إخفاء الأصول لتجنب سداد الديون يمكن أن يشكل **جريمة إخفاء الأصول** (المادة 257 من قانون العقوبات)، المعاقب عليها بـ **1 إلى 4 سنوات سجن**.',
+      sections: [
+        { title: 'التعريف القانوني: المادة 257 من قانون العقوبات', content: 'تعاقب **المادة 257** من "يهرب بأصوله إضراراً بدائنيه". العناصر: حالة إعسار، فعل إخفاء، ضرر للدائنين، نية.' },
+        { title: 'السلوكيات النموذجية لإخفاء الأصول', content: '**التبرعات للأقارب**، **البيع الوهمي**، **تأسيس رهون وهمية**، **التحويلات للخارج**، **إنشاء شركات واجهة**.' },
+        { title: 'الفروق مع جرائم الإعسار الأخرى', content: '**إخفاء الأصول (المادة 257)**: إخفاء عام. **الإخفاء المحدد (المادة 257.1.2)**: عندما يكون المتضرر هو الخزينة العامة. **الإعسار المعاقب عليه للمفلس (المادة 259)**.' },
+        { title: 'متطلبات وجود الجريمة', content: 'يتطلب الاجتهاد القضائي: ديون سابقة، معرفة بالديون، علاقة سببية، ضرر فعلي، غياب أصول بديلة.' },
+        { title: 'كيف يُكتشف الإخفاء', content: 'طرق الاكتشاف: **السجل العقاري**، **الإقرارات الضريبية**، **تحقيق أمين الإفلاس**، **التقارير المصرفية**.' },
+        { title: 'استراتيجيات الدفاع الجنائي', content: 'خطوط الدفاع: **غياب الإعسار**، **نفي النية**، **التقادم**، **ظروف مخففة**، **موافقة تفاوضية**.' }
+      ],
+      conclusion: '**إخفاء الأصول** جريمة أكثر شيوعاً مما يبدو. في **STANS المحامين** نحن خبراء في **القانون الجنائي الاقتصادي**.'
+    }
+  },
+  68: {
+    title: 'حادث مروري مميت: متى يكون جريمة؟',
+    excerpt: 'تحليل القتل بإهمال نتيجة حادث مروري. الفروق مع القتل العمد، عقوبات حتى 4 سنوات، ظروف مشددة (كحول، مخدرات، سرعة زائدة) والدفاع.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: '**حادث مروري بضحايا قتلى** يمكن أن يحول السائق إلى متهم بـ**القتل بإهمال** (المادة 142). يمكن أن تصل العقوبات إلى **4 سنوات سجن** و**6 سنوات سحب رخصة**.',
+      sections: [
+        { title: 'الإطار القانوني: القتل والإصابات بإهمال', content: '**القتل بإهمال (المادة 142)**: عقوبة من 1 إلى 4 سنوات سجن بالإضافة إلى حرمان من حق القيادة. **الإصابات بإهمال جسيم (المادة 152)**: سجن من 3 أشهر إلى 3 سنوات.' },
+        { title: 'الإهمال الجسيم مقابل الإهمال الأقل جسامة', content: '**الإهمال الجسيم**: إغفال أكثر الاحتياطات أساسية. **الإهمال الأقل جسامة**: انتهاك قواعد الحذر دون الوصول للجسامة السابقة.' },
+        { title: 'الظروف المشددة: الكحول، المخدرات، السرعة', content: '**الظروف المشددة** هي: القيادة تحت تأثير الكحول، المخدرات، السرعة الزائدة بأكثر من 50%.' },
+        { title: 'الإجراء الجنائي بعد الحادث المميت', content: 'بعد الحادث: تقرير الشرطة، التحقيق القضائي، الاتهام، المحاكمة.' },
+        { title: 'استراتيجيات الدفاع', content: 'خطوط الدفاع: **التشكيك في الإهمال**، **تخفيض التصنيف**، **الطعن في تقرير الشرطة**، **خبرة الحوادث**، **الخطأ المشترك**.' },
+        { title: 'العواقب: العقوبات، التعويض والتأمين', content: '**عقوبات السجن**، **سحب الرخصة**، **المسؤولية المدنية** (يمكن أن تتجاوز 500,000 يورو)، **السجل الجنائي**.' }
+      ],
+      conclusion: '**حادث مروري مميت** يميز ما قبل وما بعد. في **STANS المحامين** لدينا خبرة في جرائم المرور.'
+    }
+  },
+  69: {
+    title: 'المسؤولية الجنائية لمدير الشركة',
+    excerpt: 'دليل عن المسؤولية الجنائية لمدير الشركة. جرائم الشركات، الضرائب، العمل، الإدارة الخائنة، الامتثال واستراتيجيات الدفاع.',
+    category: 'القانون الجنائي الاقتصادي',
+    content: {
+      introduction: 'أن تكون **مديراً لشركة** يستتبع مسؤولية هائلة يمكن أن تؤدي إلى عواقب جنائية. جرائم ضريبية، ضد الضمان الاجتماعي، إدارة خائنة، اختلاس...',
+      sections: [
+        { title: 'الأساس القانوني: لماذا يُسأل المدير؟', content: 'يمكن أن يُسأل **المدير** جنائياً عن: فعل خاص، ارتكاب بالامتناع، تأليف وسيط، مسؤولية المادة 31.' },
+        { title: 'الجرائم الرئيسية لمدير الشركة', content: '**جرائم الشركات**، **الإدارة الخائنة**، **الاختلاس**، **الجريمة الضريبية**، **ضد الضمان الاجتماعي**، **ضد العمال**، **إخفاء الأصول**.' },
+        { title: 'المدير الفعلي مقابل المدير القانوني', content: 'لا تعتمد المسؤولية الجنائية على المنصب الرسمي. **سلطة القرار** هي المفتاح.' },
+        { title: 'المسؤولية الجنائية للشخص الاعتباري (المادة 31 مكرر)', content: 'منذ 2015، يمكن أن تكون **الشركات التجارية** مسؤولة جنائياً. الشركة تُعفى إذا كان لديها **نموذج لمنع الجرائم (امتثال)** فعال.' },
+        { title: 'الامتثال كدرع دفاعي', content: 'يجب أن يشمل **برنامج الامتثال الجنائي** الفعال: خريطة المخاطر، مدونة أخلاقية، قناة إبلاغ، هيئة امتثال مستقلة، تدريب.' },
+        { title: 'استراتيجيات دفاع المدير', content: 'خطوط الدفاع: **نقص المعرفة الفعلية**، **التفويض الفعال**، **وجود الامتثال**، **التقادم**، **ظروف مخففة**.' }
+      ],
+      conclusion: '**المسؤولية الجنائية للمدير** واقع. في **STANS المحامين** نجمع الخبرة في **القانون الجنائي الاقتصادي** وامتثال الشركات.'
+    }
+  },
+  70: {
+    title: 'الموافقة الجنائية: مزايا ومخاطر التفاوض مع النيابة',
+    excerpt: 'كل شيء عن الموافقة في الإجراء الجنائي الإسباني. متى تقبل، كيف تتفاوض مع النيابة، تخفيض العقوبة والبدائل. دليل للمتهمين.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: '**الموافقة الجنائية** آلية تسمح للمتهم بقبول العقوبة المقترحة من النيابة مقابل تجنب المحاكمة والحصول على تخفيض في الحكم.',
+      sections: [
+        { title: 'الإطار القانوني: الموافقة في قانون الإجراءات الجنائية', content: 'ينظم **قانون الإجراءات الجنائية** الموافقة في عدة مواد: المادة 655 (الإجراء العادي)، المادة 787 (الإجراء المختصر)، المادة 801 (المحاكمة السريعة).' },
+        { title: 'مزايا الموافقة الجنائية', content: '**تخفيض العقوبة**، **يقين النتيجة**، **السرعة**، **تكاليف مخفضة**، **تجنب التعرض العام**، **تعليق العقوبة أكثر احتمالاً**.' },
+        { title: 'المخاطر والعيوب', content: '**التنازل عن الدفاع**، **السجل الجنائي**، **المسؤولية المدنية**، **ليست دائماً الخيار الأفضل**، **إدانات ظالمة**.' },
+        { title: 'كيف تتفاوض مع النيابة', content: 'الخطوات: 1) تحليل القضية، 2) الاتصال الأول، 3) الاقتراح الأولي، 4) التفاوض، 5) الاتفاق، 6) التصديق القضائي.' },
+        { title: 'متى توافق ومتى لا توافق', content: '**يُنصح** عندما تكون الأدلة قوية. **لا يُنصح** عندما تكون الأدلة ضعيفة أو أنت بريء.' },
+        { title: 'ماذا يحدث بعد الموافقة', content: 'بعد الموافقة: حكم فوري، سجل جنائي، مسؤولية مدنية، تنفيذ العقوبة، إمكانية التعليق.' }
+      ],
+      conclusion: '**الموافقة الجنائية** أداة مفيدة جداً. في **STANS المحامين** لدينا خبرة واسعة في التفاوض على الموافقات.'
+    }
+  },
+  71: {
+    title: 'جرائم الكراهية على وسائل التواصل الاجتماعي: الإطار القانوني والدفاع',
+    excerpt: 'تحليل جريمة الكراهية (المادة 510) على وسائل التواصل الاجتماعي. السلوكيات المعاقبة، العقوبات، الحدود مع حرية التعبير، اجتهاد المحكمة الأوروبية واستراتيجيات الدفاع.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: 'أصبحت **جرائم الكراهية** على وسائل التواصل الاجتماعي من أكثر الأشكال الجنائية إثارة للجدل. تعاقب **المادة 510 من قانون العقوبات** التحريض على الكراهية أو العداء أو التمييز أو العنف ضد الجماعات.',
+      sections: [
+        { title: 'الإطار القانوني: المادة 510 من قانون العقوبات', content: 'تصنف **المادة 510** ثلاث طرق بعقوبات من **1 إلى 4 سنوات سجن** للتحريض على الكراهية، **6 أشهر إلى 3 سنوات** لإنتاج المواد، **6 أشهر إلى سنتين** للمساس بالكرامة.' },
+        { title: 'السلوكيات النموذجية على وسائل التواصل الاجتماعي', content: '**منشورات عنصرية أو كارهة للأجانب**، **محتوى معادي للمثليين**، **ميمات تمييزية**، **تعليقات على الأخبار**، **هاشتاغات الكراهية**.' },
+        { title: 'حرية التعبير مقابل جريمة الكراهية', content: 'أنشأت **المحكمة الدستورية** و**المحكمة الأوروبية لحقوق الإنسان** معايير للتمييز. **محمي**: النقد السياسي الحاد، النقاشات، الفكاهة. **قد يشكل جريمة**: الدعوات للعنف، تجريد الإنسانية، الدعاية.' },
+        { title: 'الاجتهاد القضائي الحديث (2023-2025)', content: 'اتجاه قضائي مقيد: إدانة فقط عندما يكون هناك تحريض واضح ورسالة قادرة على توليد عنف أو كراهية.' },
+        { title: 'ماذا تفعل إذا كنت قيد التحقيق', content: '1) لا تحذف المنشورات، 2) لا تنشر المزيد، 3) اتصل بمحامٍ متخصص، 4) اجمع السياق، 5) فكر في حقك في عدم الإدلاء بشهادة.' },
+        { title: 'استراتيجيات الدفاع الجنائي', content: 'خطوط الدفاع: **حرية التعبير**، **غياب التحريض**، **السياق الفني**، **انعدام النية**، **عدم النمطية**، **ظروف مخففة**.' }
+      ],
+      conclusion: '**جرائم الكراهية** تقع على الحدود بين حرية التعبير والحماية. في **STANS المحامين** ندافع عن حقوقك. **استشر 24/7**.'
+    }
+  },
+  72: {
+    title: 'المحاكمة السريعة: ما هي، متى تُطبق وكيف أدافع عن نفسي',
+    excerpt: 'دليل شامل عن إجراء المحاكمة السريعة في إسبانيا. الجرائم المشمولة، المواعيد 24-72 ساعة، حقوق المتهم، الموافقة المكافأة واستراتيجيات الدفاع.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: '**المحاكمة السريعة** إجراء جنائي معجل يسمح بمحاكمة جرائم معينة في مدة **24 إلى 72 ساعة** من الاحتجاز.',
+      sections: [
+        { title: 'الإطار القانوني: المواد 795-803 من قانون الإجراءات الجنائية', content: 'تُنظم **المحاكمات السريعة** في المواد 795 إلى 803. تُطبق على: الجرائم المتلبس بها، الإصابات، التهديدات، جرائم المرور، السرقات، الأضرار.' },
+        { title: 'الإجراء: من الاحتجاز إلى المحاكمة', content: '**المرحلة الشرطية (0-24 ساعة)**، **المرحلة القضائية (24-72 ساعة)**، **المحاكمة الشفوية** الفورية، **الحكم** يُصدر فوراً.' },
+        { title: 'حقوق المتهم في المحاكمة السريعة', content: 'تحتفظ **بجميع حقوقك الأساسية**: المساعدة القانونية، الحق في عدم الإدلاء بشهادة، الإعلام بالاتهام، اقتراح الأدلة، الموافقة المكافأة، الاستئناف.' },
+        { title: 'الموافقة المكافأة في المحاكمة السريعة', content: 'تنشئ **المادة 801** موافقة مفيدة بشكل خاص: تخفيض تلقائي **بمقدار الثلث** من العقوبة إذا تمت الموافقة قبل المحاكمة.' },
+        { title: 'الجرائم الأكثر شيوعاً', content: '**القيادة في حالة سكر**، **القيادة بدون رخصة**، **السرقة**، **الإصابات الطفيفة**، **الإيذاء العرضي**، **التهديدات الطفيفة**، **مقاومة السلطة**.' },
+        { title: 'استراتيجيات الدفاع', content: 'خطوط الدفاع: **لا توافق بتسرع**، **طعن تقرير الشرطة**، **طلب التحويل للمختصر**، **اقتراح أدلة عاجلة**، **ظروف مخففة**.' }
+      ],
+      conclusion: '**المحاكمة السريعة** يمكن أن تنقلك من الشارع إلى قفص الاتهام في أقل من 48 ساعة. في **STANS المحامين** نقدم **مساعدة طوارئ 24/7**.'
+    }
+  },
+  73: {
+    title: 'STANS المحامين: أفضل 3 محامين جنائيين في مدريد 2025',
+    excerpt: 'تم الاعتراف بـ STANS المحامين كواحد من أفضل 3 مكاتب محاماة جنائية في مدريد. تعرف على سبب اختيار عملائنا لنا وما الذي يميزنا.',
+    category: 'STANS المحامين',
+    content: {
+      introduction: 'نفخر بالإعلان أن **STANS المحامين** قد تم الاعتراف به كواحد من **أفضل 3 مكاتب محاماة جنائية في مدريد** في التصنيف الذي أعده [madrid.place](https://madrid.place/abogados-penalistas/).',
+      sections: [
+        { title: 'الاعتراف: المركز الثالث في مدريد', content: 'نشر بوابة [madrid.place](https://madrid.place/abogados-penalistas/) تصنيفه لـ **أفضل 24 محامياً جنائياً في مدريد**. يحتل STANS المحامين **المركز رقم 3** بتقييم **12/5**.' },
+        { title: 'ما يميزنا: التخصص الحصري', content: 'في STANS المحامين **تخصصنا حصرياً في القانون الجنائي**. لا نتعامل مع الطلاق أو العقود أو الميراث. فقط الدفاع الجنائي.' },
+        { title: 'الخبرة في القضايا المعقدة: المحكمة الوطنية والإرهاب', content: 'يتمتع محامونا بسجل واسع في الدفاع أمام **المحكمة الوطنية** في قضايا الإرهاب والتمجيد والتجنيد الجهادي والجريمة المنظمة.' },
+        { title: 'التوفر 24/7: رد في أقل من ساعة', content: 'نقدم **خدمة طوارئ على مدار الساعة، 7 أيام في الأسبوع**. التزامنا: **الرد في أقل من ساعة** على أي مكالمة طوارئ.' },
+        { title: 'مساعدة بـ 5 لغات', content: 'نقدم **مساعدة قانونية بـ 5 لغات**: **الإسبانية**، **الإنجليزية**، **العربية**، **الفرنسية** و**الإيطالية**.' },
+        { title: 'لماذا يختارنا عملاؤنا', content: 'الأسباب: **التخصص**، **الخبرة في القضايا الخطيرة**، **التوفر الحقيقي**، **المعاملة الإنسانية**، **الصدق**، **النتائج**، **اللغات**.' }
+      ],
+      conclusion: 'الاعتراف بنا كـ**أفضل 3 محامين جنائيين في مدريد** فخر لفريق STANS المحامين بأكمله. إذا كنت بحاجة إلى محامٍ جنائي في مدريد، **اتصل بنا**: متاحون **24/7** على الهاتف **+34 611 68 72 26**.'
+    }
   }
 };
 
 // Función helper para obtener traducciones de nuevos blogs
 export function getNewBlogTranslation(id: number, language: string) {
-  if (id < 40 || id > 62) return null;
+  if (id < 40 || id > 73) return null;
   
   switch(language) {
     case 'en':

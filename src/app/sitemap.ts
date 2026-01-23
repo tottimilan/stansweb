@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date()
   
   // Fechas específicas para diferentes tipos de contenido
-  const blogContentDate = new Date('2025-12-23') // Última actualización de blogs (3 nuevos blogs diciembre)
+  const blogContentDate = new Date('2025-01-07') // Última actualización de blogs (11 nuevos blogs enero 2025)
   const casesContentDate = new Date('2025-01-15') // Fecha de última actualización de casos
   
   // Generar sitemap con estructura optimizada para Google Sitelinks
@@ -172,7 +172,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ===== BLOGS DICIEMBRE 2025 - MES FEBRERO =====
     "/blog/como-funciona-registro-antecedentes-penales-puedo-limpiarlo",
     "/blog/delito-blanqueo-capitales-imprudencia-grave",
-    "/blog/que-hacer-si-me-detienen-con-drogas-madrid"
+    "/blog/que-hacer-si-me-detienen-con-drogas-madrid",
+
+    // ===== NUEVOS BLOGS ENERO 2025 - 11 ARTÍCULOS =====
+    "/blog/estafas-informaticas-phishing-defensa",
+    "/blog/delito-fiscal-fraude-hacienda-penal",
+    "/blog/usurpacion-identidad-digital-suplantacion",
+    "/blog/violencia-genero-defensa-investigado",
+    "/blog/alzamiento-bienes-insolvencia-punible",
+    "/blog/accidente-trafico-homicidio-imprudente",
+    "/blog/responsabilidad-penal-administrador-empresa",
+    "/blog/conformidad-penal-acuerdo-fiscalia",
+    "/blog/delitos-odio-redes-sociales-discurso",
+    "/blog/juicio-rapido-procedimiento-defensa",
+    "/blog/top-3-abogados-penalistas-madrid-2025"
   ].map(path => ({
     url: `${baseUrl}${path}`,
     lastModified: blogContentDate,

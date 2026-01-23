@@ -10,7 +10,7 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ScrollProgress from '@/components/ScrollProgress';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/translations';
-import { lawyerTranslations, lawyersDataAr } from '@/translations/lawyers';
+import { lawyerTranslations, lawyersDataAr, lawyersDataEn, lawyersDataFr } from '@/translations/lawyers';
 import { notFound, useParams } from 'next/navigation';
 import { getLawyerBySlug, isValidLawyerSlug } from '@/data/lawyers';
 import LawyerSchema from '@/components/LawyerSchema';
@@ -49,17 +49,32 @@ export default function LawyerPage() {
   const showMediaSection = hasMediaContent(slug);
 
   // Obtener traducciones
-  const lt = lawyerTranslations[language as 'es' | 'ar'];
-  const lawyerAr = language === 'ar' && (lawyersDataAr as any)[slug];
+  const lt = lawyerTranslations[language as keyof typeof lawyerTranslations] || lawyerTranslations.es;
+  
+  // Obtener datos traducidos del abogado según el idioma
+  const getTranslatedLawyerData = () => {
+    switch (language) {
+      case 'en':
+        return lawyersDataEn[slug];
+      case 'fr':
+        return lawyersDataFr[slug];
+      case 'ar':
+        return lawyersDataAr[slug];
+      default:
+        return null;
+    }
+  };
+  
+  const translatedData = getTranslatedLawyerData();
   
   // Datos del abogado traducidos
   const lawyerData = {
-    summary: lawyerAr?.summary || lawyer.summary,
-    longBio: lawyerAr?.longBio || lawyer.longBio,
-    specializations: lawyerAr?.specializations || lawyer.specializations,
-    education: lawyerAr?.education || lawyer.education,
-    achievements: lawyerAr?.achievements || lawyer.achievements,
-    practiceAreas: lawyerAr?.practiceAreas || lawyer.practiceAreas,
+    summary: translatedData?.summary || lawyer.summary,
+    longBio: translatedData?.longBio || lawyer.longBio,
+    specializations: translatedData?.specializations || lawyer.specializations,
+    education: translatedData?.education || lawyer.education,
+    achievements: translatedData?.achievements || lawyer.achievements,
+    practiceAreas: translatedData?.practiceAreas || lawyer.practiceAreas,
   };
 
   return (
@@ -144,7 +159,7 @@ export default function LawyerPage() {
 
                 {/* Navegación Rápida a Secciones */}
                 <LawyerQuickNav 
-                  language={language as 'es' | 'ar'}
+                  language={language as 'es' | 'en' | 'fr' | 'ar'}
                   hasMedia={showMediaSection}
                   hasCases={relatedCases.length > 0}
                 />
@@ -406,7 +421,7 @@ export default function LawyerPage() {
             <LawyerMediaSection 
             media={lawyerMedia}
             lawyerName={lawyer.name}
-            language={language as 'es' | 'ar'}
+            language={language as 'es' | 'en' | 'fr' | 'ar'}
           />
           </div>
         )}
@@ -461,31 +476,58 @@ export default function LawyerPage() {
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <article className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-gold mb-6">
-                {language === 'ar' ? `خبرة ${lawyer.name} في الدفاع الجنائي` : `Experiencia y Enfoque de ${lawyer.name}`}
+                {{
+                  es: `Experiencia y Enfoque de ${lawyer.name}`,
+                  en: `Experience and Approach of ${lawyer.name}`,
+                  fr: `Expérience et Approche de ${lawyer.name}`,
+                  ar: `خبرة ${lawyer.name} في الدفاع الجنائي`
+                }[language] || `Experiencia y Enfoque de ${lawyer.name}`}
               </h2>
               
               <div className="bg-gold/5 border-l-4 border-gold p-6 mb-8">
                 <h3 className="text-xl font-semibold text-black/90 mb-3">
-                  {language === 'ar' ? 'الفلسفة المهنية' : 'Filosofía Profesional'}
+                  {{
+                    es: 'Filosofía Profesional',
+                    en: 'Professional Philosophy',
+                    fr: 'Philosophie Professionnelle',
+                    ar: 'الفلسفة المهنية'
+                  }[language] || 'Filosofía Profesional'}
                 </h3>
                 <p className="text-black/80 leading-relaxed mb-4">
-                  {lawyer.slug === 'ruben-vaquero-arribas' && (language === 'ar' 
-                    ? 'يؤمن روبين بأن الدفاع الجنائي الفعال يتطلب معرفة عميقة بالقانون الجنائي الاقتصادي والإجراءات المعقدة. نهجه يجمع بين التحليل التقني الدقيق والاستراتيجية الإجرائية المخصصة لكل حالة.'
-                    : 'Rubén cree firmemente que la defensa penal efectiva requiere un conocimiento profundo del derecho penal económico y de los procedimientos complejos. Su enfoque combina el análisis técnico riguroso con una estrategia procesal personalizada para cada caso. Especialmente en casos de extradiciones y OEDE, donde la coordinación internacional es clave, su experiencia marca la diferencia.')}
-                  {lawyer.slug === 'mounir-elyemlahy-chouati' && (language === 'ar'
-                    ? 'يجمع منير بين المعرفة العميقة بالقانون الإسباني والمغربي، مما يجعله فريداً في مدريد. قدرته على فهم الفروق الثقافية والقانونية بين النظامين القضائيين تمنحه ميزة استراتيجية في قضايا تسليم المطلوبين والإرهاب.'
-                    : 'Mounir combina el conocimiento profundo del derecho español y marroquí, lo que le hace único en Madrid. Su capacidad para entender los matices culturales y legales entre ambos sistemas jurídicos le proporciona una ventaja estratégica en casos de extradiciones y terrorismo. Su dominio del árabe permite una comunicación directa y precisa con clientes árabe-parlantes, eliminando barreras lingüísticas en momentos críticos.')}
-                  {lawyer.slug === 'diego-cardona-valero' && (language === 'ar'
-                    ? 'يتميز دييغو بقدرته الاستراتيجية في التقاضي المعقد وإعداد الطعون أمام المحاكم العليا. تخصصه في القانون الإجرائي الجنائي يسمح له بتحديد الثغرات الإجرائية وتصميم استراتيجيات دفاع قوية.'
-                    : 'Diego se caracteriza por su capacidad estratégica en litigación compleja y preparación de recursos ante tribunales superiores. Su especialización en derecho procesal penal le permite identificar vulneraciones procesales y diseñar estrategias de defensa técnicamente sólidas. Ha participado en operaciones policiales de gran envergadura, logrando resultados favorables en casos de criminalidad organizada.')}
-                  {lawyer.slug === 'ada-de-blas-pascual' && (language === 'ar'
-                    ? 'تجمع آدا بين التكوين الدولي في كامبريدج والمعرفة العملية بالنظام القضائي الإسباني. تخصصها في القانون الجنائي الدولي والاقتصادي يجعلها مثالية للقضايا ذات البعد الدولي أو المكون المالي المعقد.'
-                    : 'Ada combina la formación internacional en Cambridge con el conocimiento práctico del sistema judicial español. Su especialización en derecho penal internacional y económico la hace ideal para casos con dimensión internacional o componente financiero complejo. Su dominio de cuatro idiomas facilita la coordinación en procedimientos transfronterizos.')}
+                  {lawyer.slug === 'ruben-vaquero-arribas' && ({
+                    es: 'Rubén cree firmemente que la defensa penal efectiva requiere un conocimiento profundo del derecho penal económico y de los procedimientos complejos. Su enfoque combina el análisis técnico riguroso con una estrategia procesal personalizada para cada caso. Especialmente en casos de extradiciones y OEDE, donde la coordinación internacional es clave, su experiencia marca la diferencia.',
+                    en: 'Rubén firmly believes that effective criminal defense requires deep knowledge of economic criminal law and complex procedures. His approach combines rigorous technical analysis with a personalized procedural strategy for each case. Especially in extradition cases and EAW, where international coordination is key, his experience makes the difference.',
+                    fr: 'Rubén croit fermement qu\'une défense pénale efficace nécessite une connaissance approfondie du droit pénal économique et des procédures complexes. Son approche combine une analyse technique rigoureuse avec une stratégie procédurale personnalisée pour chaque cas. Particulièrement dans les cas d\'extradition et MAE, où la coordination internationale est essentielle, son expérience fait la différence.',
+                    ar: 'يؤمن روبين بأن الدفاع الجنائي الفعال يتطلب معرفة عميقة بالقانون الجنائي الاقتصادي والإجراءات المعقدة. نهجه يجمع بين التحليل التقني الدقيق والاستراتيجية الإجرائية المخصصة لكل حالة.'
+                  }[language] || 'Rubén cree firmemente que la defensa penal efectiva requiere un conocimiento profundo del derecho penal económico y de los procedimientos complejos. Su enfoque combina el análisis técnico riguroso con una estrategia procesal personalizada para cada caso.')}
+                  {lawyer.slug === 'mounir-elyemlahy-chouati' && ({
+                    es: 'Mounir combina el conocimiento profundo del derecho español y marroquí, lo que le hace único en Madrid. Su capacidad para entender los matices culturales y legales entre ambos sistemas jurídicos le proporciona una ventaja estratégica en casos de extradiciones y terrorismo. Su dominio del árabe permite una comunicación directa y precisa con clientes árabe-parlantes, eliminando barreras lingüísticas en momentos críticos.',
+                    en: 'Mounir combines deep knowledge of Spanish and Moroccan law, making him unique in Madrid. His ability to understand the cultural and legal nuances between both legal systems provides him with a strategic advantage in extradition and terrorism cases. His command of Arabic allows direct and precise communication with Arabic-speaking clients, eliminating language barriers in critical moments.',
+                    fr: 'Mounir combine une connaissance approfondie du droit espagnol et marocain, ce qui le rend unique à Madrid. Sa capacité à comprendre les nuances culturelles et juridiques entre les deux systèmes juridiques lui confère un avantage stratégique dans les affaires d\'extradition et de terrorisme. Sa maîtrise de l\'arabe permet une communication directe et précise avec les clients arabophones.',
+                    ar: 'يجمع منير بين المعرفة العميقة بالقانون الإسباني والمغربي، مما يجعله فريداً في مدريد. قدرته على فهم الفروق الثقافية والقانونية بين النظامين القضائيين تمنحه ميزة استراتيجية في قضايا تسليم المطلوبين والإرهاب.'
+                  }[language] || 'Mounir combina el conocimiento profundo del derecho español y marroquí, lo que le hace único en Madrid.')}
+                  {lawyer.slug === 'diego-cardona-valero' && ({
+                    es: 'Diego se caracteriza por su capacidad estratégica en litigación compleja y preparación de recursos ante tribunales superiores. Su especialización en derecho procesal penal le permite identificar vulneraciones procesales y diseñar estrategias de defensa técnicamente sólidas. Ha participado en operaciones policiales de gran envergadura, logrando resultados favorables en casos de criminalidad organizada.',
+                    en: 'Diego is characterized by his strategic capacity in complex litigation and preparation of appeals before higher courts. His specialization in criminal procedural law allows him to identify procedural violations and design technically solid defense strategies. He has participated in large-scale police operations, achieving favorable results in organized crime cases.',
+                    fr: 'Diego se caractérise par sa capacité stratégique dans les litiges complexes et la préparation des recours devant les juridictions supérieures. Sa spécialisation en droit de procédure pénale lui permet d\'identifier les violations procédurales et de concevoir des stratégies de défense techniquement solides.',
+                    ar: 'يتميز دييغو بقدرته الاستراتيجية في التقاضي المعقد وإعداد الطعون أمام المحاكم العليا. تخصصه في القانون الإجرائي الجنائي يسمح له بتحديد الثغرات الإجرائية وتصميم استراتيجيات دفاع قوية.'
+                  }[language] || 'Diego se caracteriza por su capacidad estratégica en litigación compleja y preparación de recursos ante tribunales superiores.')}
+                  {lawyer.slug === 'ada-de-blas-pascual' && ({
+                    es: 'Ada combina la formación internacional en Cambridge con el conocimiento práctico del sistema judicial español. Su especialización en derecho penal internacional y económico la hace ideal para casos con dimensión internacional o componente financiero complejo. Su dominio de cuatro idiomas facilita la coordinación en procedimientos transfronterizos.',
+                    en: 'Ada combines international training at Cambridge with practical knowledge of the Spanish judicial system. Her specialization in international and economic criminal law makes her ideal for cases with international dimension or complex financial components. Her command of four languages facilitates coordination in cross-border proceedings.',
+                    fr: 'Ada combine une formation internationale à Cambridge avec une connaissance pratique du système judiciaire espagnol. Sa spécialisation en droit pénal international et économique la rend idéale pour les affaires à dimension internationale ou à composante financière complexe. Sa maîtrise de quatre langues facilite la coordination dans les procédures transfrontalières.',
+                    ar: 'تجمع آدا بين التكوين الدولي في كامبريدج والمعرفة العملية بالنظام القضائي الإسباني. تخصصها في القانون الجنائي الدولي والاقتصادي يجعلها مثالية للقضايا ذات البعد الدولي أو المكون المالي المعقد.'
+                  }[language] || 'Ada combina la formación internacional en Cambridge con el conocimiento práctico del sistema judicial español.')}
                 </p>
               </div>
 
               <h3 className="text-xl font-semibold text-black/90 mb-4">
-                {language === 'ar' ? 'المجالات الرئيسية للممارسة' : 'Áreas Principales de Práctica'}
+                {{
+                  es: 'Áreas Principales de Práctica',
+                  en: 'Main Practice Areas',
+                  fr: 'Principaux Domaines de Pratique',
+                  ar: 'المجالات الرئيسية للممارسة'
+                }[language] || 'Áreas Principales de Práctica'}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 {lawyerData.practiceAreas.slice(0, 8).map((area: string, index: number) => (
@@ -497,7 +539,12 @@ export default function LawyerPage() {
               </div>
 
               <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-                {language === 'ar' ? 'لماذا تختار هذا المحامي؟' : '¿Por Qué Elegir a este Abogado?'}
+                {{
+                  es: '¿Por Qué Elegir a este Abogado?',
+                  en: 'Why Choose This Lawyer?',
+                  fr: 'Pourquoi Choisir Cet Avocat?',
+                  ar: 'لماذا تختار هذا المحامي؟'
+                }[language] || '¿Por Qué Elegir a este Abogado?'}
               </h3>
               <ul className="list-disc list-inside space-y-2 mb-6 ml-4 text-black/80">
                 {lawyer.achievements.map((achievement, index) => (
@@ -507,25 +554,43 @@ export default function LawyerPage() {
 
               <div className="bg-gold/10 border border-gold/30 rounded-xl p-6 mt-8">
                 <h4 className="text-lg font-semibold text-gold mb-3">
-                  {language === 'ar' ? 'استشارة مباشرة' : 'Consulta Directa'}
+                  {{
+                    es: 'Consulta Directa',
+                    en: 'Direct Consultation',
+                    fr: 'Consultation Directe',
+                    ar: 'استشارة مباشرة'
+                  }[language] || 'Consulta Directa'}
                 </h4>
                 <p className="text-black/80 mb-4">
-                  {language === 'ar'
-                    ? `إذا كنت تحتاج إلى مساعدة قانونية في ${lawyerData.specializations[0]}، يمكنك التواصل مباشرة مع ${lawyer.name} عبر نموذج الاتصال أو الهاتف 24/7.`
-                    : `Si necesitas asistencia legal en ${lawyerData.specializations[0].toLowerCase()}, puedes contactar directamente con ${lawyer.name} a través del formulario de contacto o por teléfono 24/7.`}
+                  {{
+                    es: `Si necesitas asistencia legal en ${lawyerData.specializations[0].toLowerCase()}, puedes contactar directamente con ${lawyer.name} a través del formulario de contacto o por teléfono 24/7.`,
+                    en: `If you need legal assistance in ${lawyerData.specializations[0].toLowerCase()}, you can contact ${lawyer.name} directly through the contact form or by phone 24/7.`,
+                    fr: `Si vous avez besoin d'assistance juridique en ${lawyerData.specializations[0].toLowerCase()}, vous pouvez contacter ${lawyer.name} directement via le formulaire de contact ou par téléphone 24/7.`,
+                    ar: `إذا كنت تحتاج إلى مساعدة قانونية في ${lawyerData.specializations[0]}، يمكنك التواصل مباشرة مع ${lawyer.name} عبر نموذج الاتصال أو الهاتف 24/7.`
+                  }[language] || `Si necesitas asistencia legal en ${lawyerData.specializations[0].toLowerCase()}, puedes contactar directamente con ${lawyer.name} a través del formulario de contacto o por teléfono 24/7.`}
                 </p>
                 <div className="flex gap-4 flex-wrap">
                   <a 
                     href="/#contacto"
                     className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
                   >
-                    {language === 'ar' ? 'نموذج الاتصال' : 'Formulario de Contacto'}
+                    {{
+                      es: 'Formulario de Contacto',
+                      en: 'Contact Form',
+                      fr: 'Formulaire de Contact',
+                      ar: 'نموذج الاتصال'
+                    }[language] || 'Formulario de Contacto'}
                   </a>
                   <a 
                     href="tel:+34611687226"
                     className="inline-flex items-center gap-2 bg-gold text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition"
                   >
-                    {language === 'ar' ? 'اتصل الآن' : 'Llamar Ahora'}
+                    {{
+                      es: 'Llamar Ahora',
+                      en: 'Call Now',
+                      fr: 'Appeler Maintenant',
+                      ar: 'اتصل الآن'
+                    }[language] || 'Llamar Ahora'}
                   </a>
                 </div>
               </div>

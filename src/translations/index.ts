@@ -19,15 +19,15 @@ export const translations = {
       cta: 'Consulta Gratuita',
       especialistas: 'Especialistas en Defensa Penal',
       defensa24h: 'Defensa Penal 24/7\nMadrid y España',
-      descripcionCompleta: 'Especialistas en Derecho Penal. Español-Inglés-Árabe. Respondemos en menos de 15 minutos.',
+      descripcionCompleta: 'Especialistas en Derecho Penal. Español-Inglés-Árabe-Francés-Italiano. Respondemos en menos de 15 minutos.',
              respuesta15min: 'Respuesta < 1 hr urgencias',
-      espanolArabeIngles: 'Español-Inglés-Árabe',
+      espanolArabeIngles: 'Español-Inglés-Árabe-Francés-Italiano',
       especialidad: 'Especialistas en Derecho Penal',
-      idiomas: 'Español-Inglés-Árabe',
+      idiomas: 'Español-Inglés-Árabe-Francés-Italiano',
       respuestaRapida: 'Respondemos urgencias en menos de 1 hora',
                   extradicion: 'Extradiciones',
       penalPuro: 'Enfoque único en la defensa penal',
-      abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Inglés/Árabe | Colegiados ICAM',
+      abogadosPenalistas: 'Abogados penalistas | Idiomas: Español/Inglés/Árabe/Francés/Italiano | Colegiados ICAM',
       holaAyuda: 'Hola, necesito ayuda penal urgente.'
     },
     
@@ -37,7 +37,7 @@ export const translations = {
       subtitle: 'Abogados especialistas en derecho penal',
       description: 'Contamos con un equipo de abogados penalistas con amplia experiencia en la defensa de casos complejos.',
       nuestroEquipo: 'Nuestro Equipo de Abogados Penalistas',
-      descripcionCompleta: 'Abogados penalistas especializados con amplia experiencia en casos complejos. Defensa integral en español, inglés y árabe.',
+      descripcionCompleta: 'Abogados penalistas especializados con amplia experiencia en casos complejos. Defensa integral en español, inglés, árabe, francés e italiano.',
       consultaEspecifica: '¿Necesitas consultar con un abogado específico?',
       consultaDescripcion: 'Cada miembro de nuestro equipo tiene especializaciones únicas. Te conectamos con el abogado más adecuado para tu caso.',
                   consultaGratuita: 'Enviar Consulta',
@@ -150,9 +150,9 @@ export const translations = {
          description: 'Asistencia inmediata 24/7'
        },
       idiomas: {
-        number: '3',
+        number: '5',
         label: 'Idiomas',
-        description: 'Español, Inglés y Árabe'
+        description: 'Español, Inglés, Árabe, Francés e Italiano'
       }
     },
     
@@ -205,7 +205,7 @@ export const translations = {
       cookies: 'Política de Cookies',
       avisoLegal: 'Aviso Legal',
       terminos: 'Términos de Uso',
-      descripcion: 'Especialistas en defensa penal con más de 15 años de experiencia. Atención 24/7 en español y árabe.',
+      descripcion: 'Especialistas en defensa penal con más de 15 años de experiencia. Atención 24/7 en español, inglés, árabe, francés e italiano.',
       contacto: 'Contacto',
       servicios: 'Servicios',
       atencion: 'Atención',
@@ -216,7 +216,7 @@ export const translations = {
       disponible24h: '24/7 Disponible',
       emergencias: 'Emergencias penales',
       idiomas: 'Idiomas',
-      espanolArabeIngles: 'Español • Inglés • Árabe',
+      espanolArabeIngles: 'Español • Inglés • Árabe • Francés • Italiano',
       respuestaTiempo: 'Menos de 1 hora',
       atencion24h: 'Atención 24/7',
       blog: 'Blog',
@@ -779,11 +779,11 @@ export const translations = {
     // Metadatos del sitio web
     metadata: {
       title: 'STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España | Abogados Penalistas',
-      description: 'Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Servicios en español, inglés y árabe. Extradiciones, OEDE, casos complejos.',
+      description: 'Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Servicios en español, inglés, árabe, francés e italiano. Extradiciones, OEDE, casos complejos.',
       keywords: 'abogado penal Madrid, defensa penal España, abogado penalista, derecho penal, extradición España Marruecos, OEDE, defensa 24/7, abogado árabe Madrid, penal económico, derechos fundamentales, criminalidad organizada, terrorismo, robos hurtos, tráfico drogas, violencia género, alcoholemia tráfico, falsedad documental, delitos informáticos',
       openGraph: {
         title: 'STANS ABOGADOS — Defensa Penal 24/7 en Madrid y España',
-        description: 'Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Español, inglés y árabe.',
+        description: 'Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Español, inglés, árabe, francés e italiano.',
         alt: 'STANS ABOGADOS - Defensa Penal 24/7'
       },
       twitter: {
@@ -826,11 +826,11 @@ export const translations = {
       cta: 'استشارة مجانية',
       especialistas: 'متخصصون في الدفاع الجنائي',
       defensa24h: 'الدفاع الجنائي 24/7\nمدريد وإسبانيا',
-      descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–الإنجليزية–العربية. نرد في أقل من 15 دقيقة.',
+      descripcionCompleta: 'متخصصون في القانون الجنائي. الإسبانية–الإنجليزية–العربية–الفرنسية–الإيطالية. نرد في أقل من 15 دقيقة.',
              respuesta15min: 'الرد < 1 ساعة طوارئ',
-      espanolArabeIngles: 'الإسبانية–الإنجليزية–العربية',
+      espanolArabeIngles: 'الإسبانية–الإنجليزية–العربية–الفرنسية–الإيطالية',
       especialidad: 'متخصصون في القانون الجنائي',
-      idiomas: 'الإسبانية–الإنجليزية–العربية',
+      idiomas: 'الإسبانية–الإنجليزية–العربية–الفرنسية–الإيطالية',
       respuestaRapida: 'نرد على الطوارئ في أقل من ساعة واحدة',
                   extradicion: 'تسليم المجرمين',
       penalPuro: 'نهج فريد في الدفاع الجنائي',
@@ -844,7 +844,7 @@ export const translations = {
       subtitle: 'محامون متخصصون في القانون الجنائي',
       description: 'نمتلك فريقاً من المحاميين الجنائيين ذوي الخبرة الواسعة في الدفاع عن القضايا المعقدة.',
       nuestroEquipo: 'فريقنا من المحاميين الجنائيين',
-      descripcionCompleta: 'محامون جنائيون متخصصون مع خبرة واسعة في القضايا المعقدة. دفاع شامل باللغات الإسبانية والإنجليزية والعربية.',
+      descripcionCompleta: 'محامون جنائيون متخصصون مع خبرة واسعة في القضايا المعقدة. دفاع شامل باللغات الإسبانية والإنجليزية والعربية والفرنسية والإيطالية.',
       consultaEspecifica: 'هل تحتاج للاستشارة مع محامي متخصص؟',
       consultaDescripcion: 'كل عضو في فريقنا لديه تخصصات فريدة. نربطك بالمحامي الأنسب لقضيتك.',
                   consultaGratuita: 'إرسال استشارة',
@@ -957,9 +957,9 @@ export const translations = {
         description: 'مساعدة فورية 24/7'
       },
       idiomas: {
-        number: '3',
+        number: '5',
         label: 'اللغات',
-        description: 'الإسبانية والإنجليزية والعربية'
+        description: 'الإسبانية والإنجليزية والعربية والفرنسية والإيطالية'
       }
     },
     
@@ -1012,7 +1012,7 @@ export const translations = {
       cookies: 'سياسة ملفات تعريف الارتباط',
       avisoLegal: 'إشعار قانوني',
       terminos: 'شروط الاستخدام',
-      descripcion: 'متخصصون في الدفاع الجنائي مع أكثر من 15 عاماً من الخبرة. خدمة 24/7 باللغتين الإسبانية والعربية.',
+      descripcion: 'متخصصون في الدفاع الجنائي مع أكثر من 15 عاماً من الخبرة. خدمة 24/7 بالإسبانية والإنجليزية والعربية والفرنسية والإيطالية.',
       contacto: 'اتصل بنا',
       servicios: 'الخدمات',
       atencion: 'الاهتمام',
@@ -1023,7 +1023,7 @@ export const translations = {
       disponible24h: 'متاح 24/7',
       emergencias: 'الطوارئ الجنائية',
       idiomas: 'اللغات',
-      espanolArabeIngles: 'الإسبانية • الإنجليزية • العربية',
+      espanolArabeIngles: 'الإسبانية • الإنجليزية • العربية • الفرنسية • الإيطالية',
       respuestaTiempo: 'أقل من ساعة واحدة',
       atencion24h: 'الاهتمام 24/7',
       blog: 'المدونة',
@@ -2282,7 +2282,7 @@ export const translations = {
     // Metadatos del sitio web
     metadata: {
       title: 'STANS ABOGADOS — دفاع جنائي 24/7 في مدريد وإسبانيا | محامون جنائيون',
-      description: 'متخصصون في القانون الجنائي في مدريد وإسبانيا. دفاع جنائي 24/7، استجابة في أقل من 15 دقيقة. محامون جنائيون مسجلون في ICAM. خدمات بالإسبانية والإنجليزية والعربية. تسليم المجرمين، OEDE، قضايا معقدة.',
+      description: 'متخصصون في القانون الجنائي في مدريد وإسبانيا. دفاع جنائي 24/7، استجابة في أقل من 15 دقيقة. محامون جنائيون مسجلون في ICAM. خدمات بالإسبانية والإنجليزية والعربية والفرنسية والإيطالية. تسليم المجرمين، OEDE، قضايا معقدة.',
       keywords: 'محامي جنائي مدريد، دفاع جنائي إسبانيا، محامي جنائي، قانون جنائي، تسليم إسبانيا المغرب، OEDE، دفاع 24/7، محامي عربي مدريد، جنائي اقتصادي، حقوق أساسية، جريمة منظمة، إرهاب، سرقة اعتداء، تجارة مخدرات، عنف جنسي، كحول مرور، تزوير وثائق، جرائم معلوماتية',
       openGraph: {
         title: 'STANS ABOGADOS — دفاع جنائي 24/7 في مدريد وإسبانيا',
@@ -2370,15 +2370,15 @@ export const translations = {
       cta: 'Free Consultation',
       especialistas: 'Criminal Defense Specialists',
       defensa24h: 'Criminal Defense 24/7\nMadrid and Spain',
-      descripcionCompleta: 'Specialists in Criminal Law. Spanish-English-Arabic. We respond within 15 minutes.',
+      descripcionCompleta: 'Specialists in Criminal Law. Spanish-English-Arabic-French-Italian. We respond within 15 minutes.',
              respuesta15min: 'Response < 1 hour emergencies',
-      espanolArabeIngles: 'Spanish-English-Arabic',
+      espanolArabeIngles: 'Spanish-English-Arabic-French-Italian',
       especialidad: 'Specialists in Criminal Law',
-      idiomas: 'Spanish-English-Arabic',
+      idiomas: 'Spanish-English-Arabic-French-Italian',
       respuestaRapida: 'We respond to emergencies in less than 1 hour',
                   extradicion: 'Extraditions',
       penalPuro: 'Unique focus on criminal defense',
-      abogadosPenalistas: 'Criminal Lawyers | Languages: Spanish/English/Arabic | ICAM Members',
+      abogadosPenalistas: 'Criminal Lawyers | Languages: Spanish/English/Arabic/French/Italian | ICAM Members',
       holaAyuda: 'Hello, I need urgent criminal help.'
     },
 
@@ -2388,7 +2388,7 @@ export const translations = {
       subtitle: 'Specialized criminal law lawyers',
       description: 'We have a team of criminal lawyers with extensive experience in defending complex cases.',
       nuestroEquipo: 'Our Team of Criminal Lawyers',
-      descripcionCompleta: 'Specialized criminal lawyers with extensive experience in complex cases. Comprehensive defense in Spanish, English and Arabic.',
+      descripcionCompleta: 'Specialized criminal lawyers with extensive experience in complex cases. Comprehensive defense in Spanish, English, Arabic, French and Italian.',
       consultaEspecifica: 'Do you need to consult with a specific lawyer?',
       consultaDescripcion: 'Each member of our team has unique specializations. We connect you with the lawyer most suitable for your case.',
                   consultaGratuita: 'Send Consultation',
@@ -2928,20 +2928,20 @@ export const translations = {
         description: '24/7 immediate assistance'
       },
       idiomas: {
-        number: '3',
+        number: '5',
         label: 'Languages',
-        description: 'Spanish, English and Arabic'
+        description: 'Spanish, English, Arabic, French and Italian'
       }
     },
 
     // Website metadata
     metadata: {
       title: 'STANS ABOGADOS — Criminal Defense 24/7 in Madrid and Spain | Criminal Lawyers',
-      description: 'Criminal Law specialists in Madrid and Spain. Criminal defense 24/7, response in less than 15 minutes. ICAM registered criminal lawyers. Services in Spanish, English and Arabic. Extraditions, EAW, complex cases.',
+      description: 'Criminal Law specialists in Madrid and Spain. Criminal defense 24/7, response in less than 15 minutes. ICAM registered criminal lawyers. Services in Spanish, English, Arabic, French and Italian. Extraditions, EAW, complex cases.',
       keywords: 'criminal lawyer Madrid, criminal defense Spain, criminal lawyer, criminal law, extradition Spain Morocco, EAW, 24/7 defense, Arabic lawyer Madrid, economic crime, fundamental rights, organized crime, terrorism, robbery theft, drug trafficking, gender violence, drunk driving, document forgery, computer crimes',
       openGraph: {
         title: 'STANS ABOGADOS — Criminal Defense 24/7 in Madrid and Spain',
-        description: 'Criminal Law specialists. Criminal defense 24/7, response in less than 15 minutes. ICAM registered criminal lawyers. Spanish, English and Arabic.',
+        description: 'Criminal Law specialists. Criminal defense 24/7, response in less than 15 minutes. ICAM registered criminal lawyers. Spanish, English, Arabic, French and Italian.',
         alt: 'STANS ABOGADOS - Criminal Defense 24/7'
       },
       twitter: {
@@ -2999,15 +2999,15 @@ export const translations = {
       cta: 'Consultation Gratuite',
       especialistas: 'Spécialistes en Défense Pénale',
       defensa24h: 'Défense Pénale 24/7\nMadrid et Espagne',
-      descripcionCompleta: 'Spécialistes en Droit Pénal. Espagnol-Anglais-Arabe. Nous répondons en moins de 15 minutes.',
+      descripcionCompleta: 'Spécialistes en Droit Pénal. Espagnol-Anglais-Arabe-Français-Italien. Nous répondons en moins de 15 minutes.',
              respuesta15min: 'Réponse < 1 heure urgences',
-      espanolArabeIngles: 'Espagnol-Anglais-Arabe',
+      espanolArabeIngles: 'Espagnol-Anglais-Arabe-Français-Italien',
       especialidad: 'Spécialistes en Droit Pénal',
-      idiomas: 'Espagnol-Anglais-Arabe',
+      idiomas: 'Espagnol-Anglais-Arabe-Français-Italien',
       respuestaRapida: 'Nous répondons aux urgences en moins de 1 heure',
                   extradicion: 'Extraditions',
       penalPuro: 'Approche unique de la défense pénale',
-      abogadosPenalistas: 'Avocats pénalistes | Langues: Espagnol/Anglais/Arabe | Membres ICAM',
+      abogadosPenalistas: 'Avocats pénalistes | Langues: Espagnol/Anglais/Arabe/Français/Italien | Membres ICAM',
       holaAyuda: 'Bonjour, j\'ai besoin d\'aide pénale urgente.'
     },
 
@@ -3017,7 +3017,7 @@ export const translations = {
       subtitle: 'Avocats spécialisés en droit pénal',
       description: 'Nous disposons d\'une équipe d\'avocats pénalistes avec une vaste expérience dans la défense de cas complexes.',
       nuestroEquipo: 'Notre Équipe d\'Avocats Pénalistes',
-      descripcionCompleta: 'Avocats pénalistes spécialisés avec une vaste expérience dans les cas complexes. Défense intégrale en espagnol, anglais et arabe.',
+      descripcionCompleta: 'Avocats pénalistes spécialisés avec une vaste expérience dans les cas complexes. Défense intégrale en espagnol, anglais, arabe, français et italien.',
       consultaEspecifica: 'Avez-vous besoin de consulter un avocat spécifique?',
       consultaDescripcion: 'Chaque membre de notre équipe a des spécialisations uniques. Nous vous connectons avec l\'avocat le plus adapté à votre cas.',
                   consultaGratuita: 'Envoyer Consultation',
@@ -3557,20 +3557,20 @@ export const translations = {
         description: 'Assistance immédiate 24/7'
       },
       idiomas: {
-        number: '3',
+        number: '5',
         label: 'Langues',
-        description: 'Espagnol, Anglais et Arabe'
+        description: 'Espagnol, Anglais, Arabe, Français et Italien'
       }
     },
 
     // Website metadata
     metadata: {
       title: 'STANS ABOGADOS — Défense Pénale 24/7 à Madrid et en Espagne | Avocats Pénaux',
-      description: 'Spécialistes en Droit Pénal à Madrid et en Espagne. Défense pénale 24/7, réponse en moins de 15 minutes. Avocats pénaux inscrits à l\'ICAM. Services en espagnol, anglais et arabe. Extraditions, MAE, affaires complexes.',
+      description: 'Spécialistes en Droit Pénal à Madrid et en Espagne. Défense pénale 24/7, réponse en moins de 15 minutes. Avocats pénaux inscrits à l\'ICAM. Services en espagnol, anglais, arabe, français et italien. Extraditions, MAE, affaires complexes.',
       keywords: 'avocat pénal Madrid, défense pénale Espagne, avocat pénal, droit pénal, extradition Espagne Maroc, MAE, défense 24/7, avocat arabe Madrid, pénal économique, droits fondamentaux, criminalité organisée, terrorisme, vol cambriolage, trafic drogue, violence genre, alcoolemie trafic, falsification document, crimes informatiques',
       openGraph: {
         title: 'STANS ABOGADOS — Défense Pénale 24/7 à Madrid et en Espagne',
-        description: 'Spécialistes en Droit Pénal. Défense pénale 24/7, réponse en moins de 15 minutes. Avocats pénaux inscrits à l\'ICAM. Espagnol, anglais et arabe.',
+        description: 'Spécialistes en Droit Pénal. Défense pénale 24/7, réponse en moins de 15 minutes. Avocats pénaux inscrits à l\'ICAM. Espagnol, anglais, arabe, français et italien.',
         alt: 'STANS ABOGADOS - Défense Pénale 24/7'
       },
       twitter: {

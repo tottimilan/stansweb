@@ -95,7 +95,7 @@ export default async function Image() {
                 border: '2px solid #A56B37',
               }}
             >
-              Español-Inglés-Árabe
+              ES-EN-AR-FR-IT
             </div>
           </div>
         </div>

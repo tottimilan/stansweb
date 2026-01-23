@@ -6,13 +6,19 @@ import { useState, useEffect } from 'react';
 
 interface NavSection {
   id: string;
-  label: string;
-  labelAr: string;
+  labels: {
+    es: string;
+    en: string;
+    fr: string;
+    ar: string;
+  };
   icon: any;
 }
 
+type SupportedLanguage = 'es' | 'en' | 'fr' | 'ar';
+
 interface LawyerQuickNavProps {
-  language: 'es' | 'ar';
+  language: SupportedLanguage;
   hasMedia?: boolean;
   hasCases?: boolean;
 }
@@ -21,22 +27,22 @@ export default function LawyerQuickNav({ language = 'es', hasMedia = false, hasC
   const [activeSection, setActiveSection] = useState('biografia');
 
   const sections: NavSection[] = [
-    { id: 'biografia', label: 'Biografía', labelAr: 'السيرة', icon: FileText },
-    { id: 'especializaciones', label: 'Especialización', labelAr: 'التخصص', icon: Shield },
-    { id: 'formacion', label: 'Formación', labelAr: 'التعليم', icon: GraduationCap },
-    { id: 'logros', label: 'Logros', labelAr: 'الإنجازات', icon: Award },
-    { id: 'areas', label: 'Áreas', labelAr: 'المجالات', icon: Scale },
+    { id: 'biografia', labels: { es: 'Biografía', en: 'Biography', fr: 'Biographie', ar: 'السيرة' }, icon: FileText },
+    { id: 'especializaciones', labels: { es: 'Especialización', en: 'Specialization', fr: 'Spécialisation', ar: 'التخصص' }, icon: Shield },
+    { id: 'formacion', labels: { es: 'Formación', en: 'Education', fr: 'Formation', ar: 'التعليم' }, icon: GraduationCap },
+    { id: 'logros', labels: { es: 'Logros', en: 'Achievements', fr: 'Réalisations', ar: 'الإنجازات' }, icon: Award },
+    { id: 'areas', labels: { es: 'Áreas', en: 'Areas', fr: 'Domaines', ar: 'المجالات' }, icon: Scale },
   ];
 
   if (hasCases) {
-    sections.push({ id: 'casos', label: 'Casos', labelAr: 'القضايا', icon: Briefcase });
+    sections.push({ id: 'casos', labels: { es: 'Casos', en: 'Cases', fr: 'Affaires', ar: 'القضايا' }, icon: Briefcase });
   }
 
   if (hasMedia) {
-    sections.push({ id: 'medios', label: 'Medios', labelAr: 'الوسائط', icon: Radio });
+    sections.push({ id: 'medios', labels: { es: 'Medios', en: 'Media', fr: 'Médias', ar: 'الوسائط' }, icon: Radio });
   }
 
-  sections.push({ id: 'consulta', label: 'Contacto', labelAr: 'اتصال', icon: Phone });
+  sections.push({ id: 'consulta', labels: { es: 'Contacto', en: 'Contact', fr: 'Contact', ar: 'اتصال' }, icon: Phone });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -97,7 +103,7 @@ export default function LawyerQuickNav({ language = 'es', hasMedia = false, hasC
               `}
             >
               <Icon className={`h-4 w-4 ${isActive ? '' : 'group-hover:rotate-12 transition-transform'}`} />
-              <span>{language === 'ar' ? section.labelAr : section.label}</span>
+              <span>{section.labels[language] || section.labels.es}</span>
               
               {isActive && (
                 <motion.div
@@ -136,7 +142,7 @@ export default function LawyerQuickNav({ language = 'es', hasMedia = false, hasC
                 `}
               >
                 <Icon className="h-4 w-4" />
-                <span className="whitespace-nowrap">{language === 'ar' ? section.labelAr : section.label}</span>
+                <span className="whitespace-nowrap">{section.labels[language] || section.labels.es}</span>
               </button>
             );
           })}

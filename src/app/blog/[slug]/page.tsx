@@ -1,5 +1,6 @@
 'use client';
 
+import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, User, Share2, ArrowRight, HelpCircle, CheckCircle } from 'lucide-react';
@@ -18,6 +19,52 @@ import BlogPostSchema from '@/components/BlogPostSchema';
 import RelatedArticles from '@/components/RelatedArticles';
 
 const WHATSAPP = '34611687226';
+
+// Función para renderizar markdown básico (negritas y links)
+const renderMarkdown = (text: string): ReactNode => {
+  if (!text) return null;
+  
+  // Regex para encontrar negritas y links
+  const markdownRegex = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g;
+  
+  // Dividir el texto por los patrones de markdown
+  const parts = text.split(markdownRegex);
+  
+  return (
+    <>
+      {parts.map((part, index) => {
+        // Verificar si es negrita
+        const boldMatch = part.match(/^\*\*([^*]+)\*\*$/);
+        if (boldMatch) {
+          return (
+            <strong key={index} className="font-semibold">
+              {boldMatch[1]}
+            </strong>
+          );
+        }
+        
+        // Verificar si es link
+        const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (linkMatch) {
+          return (
+            <a 
+              key={index}
+              href={linkMatch[2]} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gold hover:text-gold/80 underline underline-offset-2 transition-colors"
+            >
+              {linkMatch[1]}
+            </a>
+          );
+        }
+        
+        // Texto normal
+        return part;
+      })}
+    </>
+  );
+};
 
 const relatedArticles = [
   {
@@ -54,9 +101,9 @@ export default function BlogPostPage() {
     notFound();
   }
 
-  // Aplicar traducciones si existen para los nuevos blogs (IDs 40-62)
+  // Aplicar traducciones si existen para los nuevos blogs (IDs 40-73)
   let post = basePost;
-  if (language !== 'es' && basePost.id >= 40 && basePost.id <= 62) {
+  if (language !== 'es' && basePost.id >= 40 && basePost.id <= 73) {
     const translation = getNewBlogTranslation(basePost.id, language);
     if (translation) {
       post = {
@@ -208,7 +255,7 @@ export default function BlogPostPage() {
             >
               {/* Introduction */}
               <div className={`text-black/80 leading-relaxed mb-12 text-lg ${language === 'ar' ? 'text-right' : ''}`}>
-                {post.content.introduction}
+                {renderMarkdown(post.content.introduction)}
               </div>
 
               {/* Article Sections with IDs for TOC */}
@@ -223,11 +270,11 @@ export default function BlogPostPage() {
                   className="mb-12 scroll-mt-32"
                 >
                   <h2 className={`text-2xl font-bold text-black mb-6 border-b border-gold/20 pb-2 ${language === 'ar' ? 'text-right' : ''}`}>
-                    {section.title}
+                    {renderMarkdown(section.title)}
                   </h2>
-                  <p className={`text-black/70 leading-relaxed text-base ${language === 'ar' ? 'text-right' : ''}`}>
-                    {section.content}
-                  </p>
+                  <div className={`text-black/70 leading-relaxed text-base ${language === 'ar' ? 'text-right' : ''}`}>
+                    {renderMarkdown(section.content)}
+                  </div>
                 </motion.div>
               ))}
 
@@ -268,11 +315,11 @@ export default function BlogPostPage() {
                       >
                         <h3 className={`text-lg font-semibold text-black mb-3 flex items-start gap-2 ${language === 'ar' ? 'text-right flex-row-reverse' : ''}`}>
                           <CheckCircle className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" />
-                          {faq.question}
+                          {renderMarkdown(faq.question)}
                         </h3>
-                        <p className={`text-black/70 leading-relaxed ${language === 'ar' ? 'text-right' : ''}`}>
-                          {faq.answer}
-                        </p>
+                        <div className={`text-black/70 leading-relaxed ${language === 'ar' ? 'text-right' : ''}`}>
+                          {renderMarkdown(faq.answer)}
+                        </div>
                       </motion.div>
                     ))}
                   </div>
@@ -284,9 +331,9 @@ export default function BlogPostPage() {
                 <h3 className={`text-xl font-semibold text-gold mb-4 ${language === 'ar' ? 'text-right' : ''}`}>
                   {language === 'ar' ? 'الخاتمة' : 'Conclusión'}
                 </h3>
-                <p className={`text-white/90 leading-relaxed ${language === 'ar' ? 'text-right' : ''}`}>
-                  {post.content.conclusion}
-                </p>
+                <div className={`text-white/90 leading-relaxed [&_strong]:text-white [&_a]:text-gold [&_a]:hover:text-gold/80 ${language === 'ar' ? 'text-right' : ''}`}>
+                  {renderMarkdown(post.content.conclusion)}
+                </div>
               </div>
 
               {/* Share Section */}
@@ -382,9 +429,12 @@ export default function BlogPostPage() {
                   {language === 'ar' ? 'خبرة ستانس للمحاماة في هذا المجال' : 'Experiencia de STANS ABOGADOS en esta Materia'}
                 </h4>
                 <p className="text-black/70 text-sm leading-relaxed">
-                  {language === 'ar'
-                    ? 'فريقنا من المحامين الجنائيين لديه خبرة مباشرة في قضايا مماثلة أمام المحاكم الإسبانية. نحن نجمع بين المعرفة التقنية العميقة والقدرة على التفاوض والتقاضي الفعال. خدماتنا متاحة بالإسبانية والإنجليزية والعربية.'
-                    : 'Nuestro equipo de abogados penalistas cuenta con experiencia directa en casos similares ante tribunales españoles. Combinamos conocimiento técnico profundo con capacidad de negociación y litigación efectiva. Nuestros servicios están disponibles en español, inglés y árabe.'}
+                  {{
+                    es: 'Nuestro equipo de abogados penalistas cuenta con experiencia directa en casos similares ante tribunales españoles. Combinamos conocimiento técnico profundo con capacidad de negociación y litigación efectiva. Nuestros servicios están disponibles en español, inglés, árabe, francés e italiano.',
+                    en: 'Our team of criminal lawyers has direct experience in similar cases before Spanish courts. We combine deep technical knowledge with negotiation and effective litigation capabilities. Our services are available in Spanish, English, Arabic, French and Italian.',
+                    fr: 'Notre équipe d\'avocats pénalistes possède une expérience directe dans des affaires similaires devant les tribunaux espagnols. Nous combinons une connaissance technique approfondie avec des capacités de négociation et de contentieux efficaces. Nos services sont disponibles en espagnol, anglais, arabe, français et italien.',
+                    ar: 'فريقنا من المحامين الجنائيين لديه خبرة مباشرة في قضايا مماثلة أمام المحاكم الإسبانية. نحن نجمع بين المعرفة التقنية العميقة والقدرة على التفاوض والتقاضي الفعال. خدماتنا متاحة بالإسبانية والإنجليزية والعربية والفرنسية والإيطالية.'
+                  }[language] || 'Nuestro equipo de abogados penalistas cuenta con experiencia directa en casos similares ante tribunales españoles. Combinamos conocimiento técnico profundo con capacidad de negociación y litigación efectiva. Nuestros servicios están disponibles en español, inglés, árabe, francés e italiano.'}
                 </p>
               </div>
 

@@ -26,7 +26,7 @@ export default function WebsiteSchema() {
             "query-input": "required name=search_term_string"
           }
         ],
-        "inLanguage": ["es", "ar", "en"]
+        "inLanguage": ["es", "ar", "en", "fr"]
       },
       {
         "@type": "Organization",
@@ -58,7 +58,7 @@ export default function WebsiteSchema() {
             "contactType": "Emergencia Legal 24/7",
             "contactOption": ["TollFree", "HearingImpairedSupported"],
             "areaServed": ["ES", "MA"],
-            "availableLanguage": ["Spanish", "English", "Arabic"]
+            "availableLanguage": ["Spanish", "English", "Arabic", "French", "Italian"]
           }
         ]
       }

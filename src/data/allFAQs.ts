@@ -440,7 +440,7 @@ export const allFAQs: FAQ[] = [
   {
     id: 'interprete-idioma',
     question: '¿Tengo derecho a intérprete en mi idioma si me acusan de terrorismo?',
-    answer: 'SÍ, es un derecho fundamental. Si no hablas español, tienes derecho a intérprete gratuito en todas las fases: detención, declaraciones, juicio, lectura de sentencia. El intérprete debe ser oficial y jurado. En STANS ABOGADOS nuestro abogado Mounir Elyemlahy habla árabe, inglés y español.',
+    answer: 'SÍ, es un derecho fundamental. Si no hablas español, tienes derecho a intérprete gratuito en todas las fases: detención, declaraciones, juicio, lectura de sentencia. El intérprete debe ser oficial y jurado. En STANS ABOGADOS ofrecemos atención en 5 idiomas: español, inglés, árabe, francés e italiano.',
     category: 'Terrorismo',
     blogSlug: 'derechos-fundamentales-procedimientos-terrorismo',
     lawyerSlug: 'mounir-elyemlahy-chouati',

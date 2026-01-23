@@ -5,7 +5,7 @@ export default function LocalBusinessSchema() {
     "@id": "https://www.stansabogados.com/#legal-service",
     "name": "STANS ABOGADOS",
     "alternateName": "STANS Abogados Penalistas Madrid",
-    "description": "Despacho de abogados penalistas especializado en defensa penal, terrorismo, extradiciones y derechos fundamentales. Atención 24/7 en español, inglés y árabe.",
+    "description": "Despacho de abogados penalistas especializado en defensa penal, terrorismo, extradiciones y derechos fundamentales. Atención 24/7 en español, inglés, árabe, francés e italiano.",
     "url": "https://www.stansabogados.com",
     "logo": {
       "@type": "ImageObject",

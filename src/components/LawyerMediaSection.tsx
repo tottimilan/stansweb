@@ -4,10 +4,12 @@ import { motion } from 'framer-motion';
 import { Radio, Youtube, FileText, Mic, Tv, ExternalLink, Play } from 'lucide-react';
 import { MediaItem, MediaType, getMediaTypeLabel } from '@/data/lawyerMedia';
 
+type SupportedLanguage = 'es' | 'en' | 'fr' | 'ar';
+
 interface LawyerMediaSectionProps {
   media: MediaItem[];
   lawyerName: string;
-  language?: 'es' | 'ar';
+  language?: SupportedLanguage;
 }
 
 // Función para obtener el icono según el tipo de medio
@@ -57,13 +59,47 @@ const formatStartTime = (seconds: number): string => {
   return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
 };
 
+const sectionTitles: Record<SupportedLanguage, string> = {
+  es: 'Medios y Apariciones',
+  en: 'Media & Appearances',
+  fr: 'Médias et Apparitions',
+  ar: 'الوسائط والمظاهر'
+};
+
+const watchLabels: Record<SupportedLanguage, string> = {
+  es: 'Ver',
+  en: 'Watch',
+  fr: 'Regarder',
+  ar: 'مشاهدة'
+};
+
+const listenLabels: Record<SupportedLanguage, string> = {
+  es: 'Escuchar',
+  en: 'Listen',
+  fr: 'Écouter',
+  ar: 'استمع'
+};
+
+const moreContentLabels: Record<SupportedLanguage, string> = {
+  es: 'Más contenido se añadirá próximamente',
+  en: 'More content will be added soon',
+  fr: 'Plus de contenu sera ajouté prochainement',
+  ar: 'سيتم إضافة المزيد من المحتوى قريباً'
+};
+
 export default function LawyerMediaSection({ media, lawyerName, language = 'es' }: LawyerMediaSectionProps) {
-  const sectionTitle = language === 'ar' ? 'الوسائط والمظاهر' : 'Medios y Apariciones';
-  const sectionSubtitle = language === 'ar' 
-    ? `شاهد وانتاج مقابلات ${lawyerName.split(' ')[0]} في وسائل الإعلام`
-    : `Entrevistas y apariciones de ${lawyerName.split(' ')[0]} en medios de comunicación`;
-  const watchLabel = language === 'ar' ? 'مشاهدة' : 'Ver';
-  const listenLabel = language === 'ar' ? 'استمع' : 'Escuchar';
+  const sectionTitle = sectionTitles[language] || sectionTitles.es;
+  
+  const subtitleTemplates: Record<SupportedLanguage, string> = {
+    es: `Entrevistas y apariciones de ${lawyerName.split(' ')[0]} en medios de comunicación`,
+    en: `Interviews and media appearances by ${lawyerName.split(' ')[0]}`,
+    fr: `Interviews et apparitions de ${lawyerName.split(' ')[0]} dans les médias`,
+    ar: `شاهد وانتاج مقابلات ${lawyerName.split(' ')[0]} في وسائل الإعلام`
+  };
+  const sectionSubtitle = subtitleTemplates[language] || subtitleTemplates.es;
+  
+  const watchLabel = watchLabels[language] || watchLabels.es;
+  const listenLabel = listenLabels[language] || listenLabels.es;
 
   return (
     <section className="bg-gradient-to-br from-charleston via-black to-charleston py-16 border-t border-gold/20">
@@ -198,9 +234,7 @@ export default function LawyerMediaSection({ media, lawyerName, language = 'es' 
           className="mt-8 text-center"
         >
           <p className="text-white/50 text-sm">
-            {language === 'ar' 
-              ? 'سيتم إضافة المزيد من المحتوى قريباً' 
-              : 'Más contenido se añadirá próximamente'}
+            {moreContentLabels[language] || moreContentLabels.es}
           </p>
         </motion.div>
       </div>

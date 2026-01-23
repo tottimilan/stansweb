@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía completa sobre la defensa legal en delitos de terrorismo. Derechos del acusado, procedimiento ante la Audiencia Nacional y estrategias de defensa por abogados especializados.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-01-15',
+    date: '2024-12-30',
     readTime: '15 min',
     image: '/images/blog/terrorismo-audiencia-nacional.jpg',
     slug: 'defensa-penal-terrorismo-audiencia-nacional',
@@ -128,7 +128,7 @@ export const blogPosts: BlogPost[] = [
         },
         {
           title: 'Importancia del Abogado Especializado',
-          content: 'Los casos de terrorismo ante la Audiencia Nacional no son comparables a otros procedimientos penales ordinarios. La complejidad del marco legal, la presión mediática, la duración de los procedimientos (que pueden extenderse años), y las graves consecuencias hacen imprescindible contar con un abogado penalista especializado en terrorismo. Un abogado generalista puede no conocer las particularidades procesales de la Audiencia Nacional, la jurisprudencia específica en esta materia, o las estrategias de defensa más efectivas. En STANS ABOGADOS contamos con experiencia directa en casos mediáticos de terrorismo, conocimiento profundo de la legislación antiterrorista, y un equipo trilingüe (español, inglés y árabe) que puede asistir a personas de cualquier origen.'
+          content: 'Los casos de terrorismo ante la Audiencia Nacional no son comparables a otros procedimientos penales ordinarios. La complejidad del marco legal, la presión mediática, la duración de los procedimientos (que pueden extenderse años), y las graves consecuencias hacen imprescindible contar con un abogado penalista especializado en terrorismo. Un abogado generalista puede no conocer las particularidades procesales de la Audiencia Nacional, la jurisprudencia específica en esta materia, o las estrategias de defensa más efectivas. En STANS ABOGADOS contamos con experiencia directa en casos mediáticos de terrorismo, conocimiento profundo de la legislación antiterrorista, y un equipo multilingüe (español, inglés, árabe, francés e italiano) que puede asistir a personas de cualquier origen.'
         }
       ],
       conclusion: 'Si tú o un familiar habéis sido acusados de un delito de terrorismo, no esperéis. Contactad inmediatamente con un abogado especializado. En STANS ABOGADOS ofrecemos atención 24/7 y primera consulta para valorar vuestro caso. Nuestros abogados Mounir Elyemlahy y Diego Cardona tienen experiencia específica defendiendo ante la Audiencia Nacional en casos de terrorismo, enaltecimiento, captación yihadista y organización terrorista. Defendemos tus derechos fundamentales y garantías procesales desde el primer momento.'
@@ -140,7 +140,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de enaltecimiento del terrorismo en redes sociales. Límites de la libertad de expresión, jurisprudencia del TEDH y estrategias de defensa legal.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-01-18',
+    date: '2024-12-31',
     readTime: '14 min',
     image: '/images/blog/enaltecimiento-terrorismo.jpg',
     slug: 'enaltecimiento-terrorismo-redes-sociales-defensa',
@@ -182,7 +182,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Todo sobre el delito de captación yihadista online. Elementos del tipo penal, actuación policial, diferencias con autoadoctrinamiento y estrategias de defensa especializada.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-01-22',
+    date: '2025-01-01',
     readTime: '14 min',
     image: '/images/blog/captacion-yihadista.jpg',
     slug: 'captacion-adoctrinamiento-yihadista-internet',
@@ -220,7 +220,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía sobre delitos de terrorismo en internet. Enaltecimiento, captación, difusión de propaganda y límites de la libertad de expresión online. Defensa legal especializada.',
     category: 'Terrorismo',
     author: 'Diego Cardona Valero',
-    date: '2025-01-25',
+    date: '2025-01-02',
     readTime: '13 min',
     image: '/images/blog/terrorismo-internet.jpg',
     slug: 'terrorismo-internet-redes-sociales-limites',
@@ -258,7 +258,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de autoadoctrinamiento terrorista. Diferencias con organización, elementos del tipo penal, el concepto del "lobo solitario" y estrategias de defensa legal.',
     category: 'Terrorismo',
     author: 'Diego Cardona Valero',
-    date: '2025-01-29',
+    date: '2025-01-03',
     readTime: '13 min',
     image: '/images/blog/autoadoctrinamiento-terrorista.jpg',
     slug: 'autoadoctrinamiento-terrorista-defensa-legal',
@@ -296,7 +296,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Todo sobre el delito de financiación del terrorismo. Relación con blanqueo de capitales, donaciones, criptomonedas, penas de hasta 15 años y estrategias de defensa.',
     category: 'Terrorismo',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-02-01',
+    date: '2025-01-04',
     readTime: '14 min',
     image: '/images/blog/financiacion-terrorismo.jpg',
     slug: 'financiacion-terrorismo-tipos-penas-defensa',
@@ -334,7 +334,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis legal del delito de pertenencia a organización terrorista. Elementos del tipo penal, diferencia con colaboración, penas de hasta 15 años y estrategias de defensa.',
     category: 'Terrorismo',
     author: 'Diego Cardona Valero',
-    date: '2025-02-05',
+    date: '2025-01-05',
     readTime: '14 min',
     image: '/images/blog/organizacion-terrorista.jpg',
     slug: 'pertenencia-organizacion-terrorista-defensa',
@@ -372,7 +372,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Garantías procesales en casos de terrorismo. Incomunicación, prisión preventiva, secreto de sumario, TEDH y cómo reclamar vulneraciones de derechos fundamentales.',
     category: 'Terrorismo',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-02-08',
+    date: '2025-01-06',
     readTime: '13 min',
     image: '/images/blog/derechos-terrorismo.jpg',
     slug: 'derechos-fundamentales-procedimientos-terrorismo',
@@ -414,7 +414,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del conflicto entre libertad de expresión y delitos de terrorismo. Jurisprudencia del TC y TEDH, casos de raperos, humor político y límites constitucionales.',
     category: 'Terrorismo',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-02-12',
+    date: '2025-01-07',
     readTime: '14 min',
     image: '/images/blog/libertad-expresion-terrorismo.jpg',
     slug: 'terrorismo-libertad-expresion-limite-legal',
@@ -1491,7 +1491,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Centro completo de recursos sobre defensa en casos de terrorismo ante la Audiencia Nacional. Enaltecimiento, captación, organización terrorista y derechos fundamentales.',
     category: 'Terrorismo',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-01-15',
+    date: '2024-12-28',
     readTime: '12 min',
     image: '/images/blog/hub-terrorismo.jpg',
     slug: 'terrorismo-audiencia-nacional',
@@ -1534,7 +1534,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía completa sobre los nuevos delitos incorporados en la reforma del Código Penal 2025: matrimonio forzado, stalking, difusión de imágenes íntimas. Penas, agravantes y cómo denunciar.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-11-15',
+    date: '2024-11-15',
     readTime: '14 min',
     image: '/images/blog/nuevos-delitos-2025.jpg',
     slug: 'nuevos-delitos-codigo-penal-2025',
@@ -1576,7 +1576,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis de la reforma procesal penal por LO 1/2025: limitaciones a denuncias telemáticas, nuevo régimen de conformidades, audiencia preliminar y digitalización judicial.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-11-18',
+    date: '2024-11-18',
     readTime: '15 min',
     image: '/images/blog/lecrim-2025.jpg',
     slug: 'cambios-ley-enjuiciamiento-criminal-2025',
@@ -1618,7 +1618,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Qué es la justicia restaurativa penal y cómo funciona según la LO 1/2025. Principios, delitos aplicables, fases del proceso y diferencias con conformidades tradicionales.',
     category: 'Defensa Penal Urgente',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-11-21',
+    date: '2024-11-21',
     readTime: '13 min',
     image: '/images/blog/justicia-restaurativa.jpg',
     slug: 'justicia-restaurativa-penal-espana',
@@ -1660,7 +1660,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis completo del delito de odio en España: definición legal (art. 510 CP), conductas sancionadas, penas, jurisprudencia reciente y límites con la libertad de expresión.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-11-24',
+    date: '2024-11-24',
     readTime: '14 min',
     image: '/images/blog/delitos-odio.jpg',
     slug: 'delitos-odio-marco-penal-jurisprudencia',
@@ -1702,7 +1702,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del panorama actual de ciberdelitos en España: datos 2024, uso de IA, ransomware, phishing. Marco legal, sectores afectados y cómo defenderse.',
     category: 'Terrorismo y Audiencia Nacional',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-11-27',
+    date: '2024-11-27',
     readTime: '15 min',
     image: '/images/blog/ciberdelitos.jpg',
     slug: 'ciberincidentes-ciberdelitos-espana',
@@ -1744,7 +1744,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis completo de las reformas en delitos sexuales en España: unificación de abuso y agresión sexual, ajustes de penas LO 4/2023, imprescriptibilidad y competencias judiciales.',
     category: 'Derechos de Detenidos',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-11-01',
+    date: '2024-11-01',
     readTime: '16 min',
     image: '/images/blog/delitos-sexuales-reforma.jpg',
     slug: 'reformas-delitos-sexuales-espana',
@@ -1786,7 +1786,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Todo sobre el nuevo delito de violencia vicaria: definición, anteproyecto de ley 2025, penas de prisión, prohibición de publicaciones y medidas de protección para víctimas.',
     category: 'Derechos de Detenidos',
     author: 'Diego Cardona Valero',
-    date: '2025-11-04',
+    date: '2024-11-04',
     readTime: '13 min',
     image: '/images/blog/violencia-vicaria.jpg',
     slug: 'violencia-vicaria-tipificacion-penal',
@@ -1828,7 +1828,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Proyecto de ley 2025 para penalizar deepfakes sexuales y grooming: penas, agravantes, control parental obligatorio y protección de menores en entornos digitales.',
     category: 'Terrorismo y Audiencia Nacional',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-11-07',
+    date: '2024-11-07',
     readTime: '14 min',
     image: '/images/blog/deepfakes-grooming.jpg',
     slug: 'deepfakes-grooming-delitos-digitales',
@@ -1870,7 +1870,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis de la digitalización de procedimientos penales en España: presentación electrónica, expediente digital, videoconferencias y modernización de la vigilancia penitenciaria con garantías.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-11-10',
+    date: '2024-11-10',
     readTime: '13 min',
     image: '/images/blog/digitalizacion-judicial.jpg',
     slug: 'digitalizacion-procedimientos-penales',
@@ -1912,7 +1912,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del refuerzo penal contra la financiación ilegal de partidos: arts. 304 bis y ter CP, novedades 2025, penas de inhabilitación reforzadas y transparencia política.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-11-13',
+    date: '2024-11-13',
     readTime: '14 min',
     image: '/images/blog/financiacion-ilegal.jpg',
     slug: 'financiacion-ilegal-inhabilitacion',
@@ -1948,14 +1948,14 @@ export const blogPosts: BlogPost[] = [
       conclusion: 'El refuerzo de las sanciones penales por financiación ilegal de partidos políticos representa un paso necesario, aunque insuficiente, en la lucha contra la corrupción política en España. Las penas de prisión incrementadas y, especialmente, las inhabilitaciones prolongadas buscan generar un efecto disuasorio y excluir de la vida pública a quienes vulneran las reglas democráticas básicas. Sin embargo, la eficacia de estas reformas dependerá de su aplicación práctica: de la capacidad investigadora de fiscalías y policías, de la independencia judicial, y de la voluntad política real de transparencia. Tanto si eres víctima de corrupción política y deseas denunciar, como si eres investigado por financiación ilegal y necesitas una defensa técnica rigurosa, en STANS Abogados podemos ayudarte. Contamos con experiencia en delitos económicos complejos y en procedimientos ante la Audiencia Nacional. Contacta con nosotros para una consulta confidencial.'
     }
   },
-  // ===== NUEVOS BLOGS ENERO 2026 - ARTÍCULOS ESPECIALIZADOS =====
+  // ===== NUEVOS BLOGS ENERO 2025 - ARTÍCULOS ESPECIALIZADOS =====
   {
     id: 50,
     title: 'Delito de Lesiones: ¿Puedo Ir a la Cárcel por una Pelea? | STANS',
     excerpt: 'Análisis completo del delito de lesiones en España: cuándo es delito, qué penas contempla, diferencias entre lesiones graves y leves, peleas mutuas y estrategias de defensa.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-11-16',
+    date: '2024-11-16',
     readTime: '12 min',
     image: '/images/blog/delito-lesiones.jpg',
     slug: 'delito-lesiones-puedo-ir-carcel-pelea',
@@ -1991,14 +1991,14 @@ export const blogPosts: BlogPost[] = [
       conclusion: '¿Te han denunciado por lesiones tras una pelea y no sabes qué hacer? Cada caso presenta matices propios, y una actuación rápida y bien asesorada puede marcar la diferencia entre una condena evitable y una resolución justa. Un análisis riguroso de los hechos y una estrategia bien dirigida son la mejor garantía de defensa ante este tipo de acusaciones. En STANS Abogados contamos con amplia experiencia en la defensa de casos de lesiones, desde delitos leves hasta lesiones graves con uso de instrumentos peligrosos. Nuestro equipo puede ayudarte a construir la mejor defensa posible, ya sea mediante la impugnación de pruebas, la acreditación de legítima defensa o la negociación de una conformidad ventajosa. Contacta con nosotros para una valoración personalizada de tu caso.'
     }
   },
-  // ===== NUEVOS BLOGS ENERO 2026 - MEDIDAS CAUTELARES =====
+  // ===== NUEVOS BLOGS ENERO 2025 - MEDIDAS CAUTELARES =====
   {
     id: 51,
     title: 'Medidas Cautelares: ¿Puedo Irme del País Esperando Juicio? | STANS',
     excerpt: 'Guía sobre medidas cautelares en procesos penales: libertad provisional, prohibición de salida del país, retirada de pasaporte y consecuencias de incumplimiento.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-11-19',
+    date: '2024-11-19',
     readTime: '11 min',
     image: '/images/blog/medidas-cautelares-libertad.jpg',
     slug: 'medidas-cautelares-puedo-irme-pais-esperando-juicio',
@@ -2021,7 +2021,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de defraudación a la Seguridad Social: umbral de 50.000€, conductas típicas, penas, regularización voluntaria y defensa especializada.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-11-22',
+    date: '2024-11-22',
     readTime: '13 min',
     image: '/images/blog/defraudacion-seguridad-social.jpg',
     slug: 'defraudacion-seguridad-social-es-delito-no-pagar',
@@ -2045,7 +2045,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía sobre el artículo 76 CP y la regla de la triple de la mayor: cómo funciona, requisitos, cálculo de penas acumuladas y procedimiento de solicitud.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-11-25',
+    date: '2024-11-25',
     readTime: '14 min',
     image: '/images/blog/triple-de-la-mayor.jpg',
     slug: 'triple-de-la-mayor-limite-cumplimiento-condenas',
@@ -2069,7 +2069,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía completa sobre blanqueo de capitales: art. 301 CP, conductas típicas, autoblanqueo, sujetos obligados, penas, decomiso y estrategias de defensa.',
     category: 'Defensa Penal Urgente',
     author: 'Rubén Vaquero Arribas',
-    date: '2025-11-28',
+    date: '2024-11-28',
     readTime: '15 min',
     image: '/images/blog/blanqueo-capitales-carcel.jpg',
     slug: 'blanqueo-capitales-puedo-acabar-carcel',
@@ -2094,7 +2094,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de revelación de secretos de empresa: arts. 278-280 CP, qué se considera secreto, conductas típicas, penas y defensas aplicables.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-11-30',
+    date: '2024-11-30',
     readTime: '13 min',
     image: '/images/blog/revelacion-secretos-empresariales.jpg',
     slug: 'revelacion-secretos-empresariales-puedo-ir-prision',
@@ -2119,7 +2119,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de imposición de acuerdos abusivos: arts. 291-292 CP, mayoría ficticia, penas y estrategias de impugnación en derecho societario.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2026-01-03',
+    date: '2025-01-03',
     readTime: '14 min',
     image: '/images/blog/acuerdos-abusivos-socio-minoritario.jpg',
     slug: 'acuerdos-abusivos-socio-minoritario-defensa-legal',
@@ -2143,7 +2143,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía completa sobre el recurso contra auto de prisión provisional: plazos, motivos de impugnación, tramitación y estrategias para conseguir la libertad.',
     category: 'Derechos de Detenidos',
     author: 'Rubén Vaquero Arribas',
-    date: '2026-01-06',
+    date: '2025-01-06',
     readTime: '12 min',
     image: '/images/blog/recurso-prision-provisional.jpg',
     slug: 'recurso-apelacion-prision-provisional-como-recuperar-libertad',
@@ -2167,7 +2167,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía completa sobre qué hacer si te detienen: derechos del detenido, asistencia letrada, derecho a guardar silencio, plazos y primeros pasos en comisaría.',
     category: 'Derechos de Detenidos',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2026-01-09',
+    date: '2025-01-05',
     readTime: '13 min',
     image: '/images/blog/que-hacer-si-me-detienen-madrid.jpg',
     slug: 'que-hacer-si-me-detienen-madrid-guia-derechos',
@@ -2191,7 +2191,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Todo sobre órdenes de búsqueda y captura: qué son, causas comunes, alcance nacional e internacional, INTERPOL, cómo verificarlas y estrategias de defensa.',
     category: 'Derechos de Detenidos',
     author: 'Diego Cardona Valero',
-    date: '2026-01-12',
+    date: '2025-01-07',
     readTime: '12 min',
     image: '/images/blog/orden-busqueda-captura.jpg',
     slug: 'orden-busqueda-captura-que-puedo-hacer',
@@ -2215,7 +2215,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía completa sobre el Registro Central de Penados en España: qué contiene, cómo afecta tu vida profesional, requisitos para la cancelación y procedimiento para limpiar antecedentes penales.',
     category: 'Defensa Penal Urgente',
     author: 'Equipo STANS Abogados',
-    date: '2025-12-17',
+    date: '2024-12-17',
     readTime: '11 min',
     image: '/images/blog/registro-antecedentes-penales.jpg',
     slug: 'como-funciona-registro-antecedentes-penales-puedo-limpiarlo',
@@ -2253,7 +2253,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Análisis del delito de blanqueo de capitales por imprudencia grave: conductas sancionadas, penas, jurisprudencia del Tribunal Supremo (STS 1337/24) y estrategias de defensa en casos de buena fe.',
     category: 'Defensa Penal Urgente',
     author: 'Mounir Elyemlahy Chouati',
-    date: '2025-12-19',
+    date: '2024-12-19',
     readTime: '14 min',
     image: '/images/blog/blanqueo-capitales-imprudencia.jpg',
     slug: 'delito-blanqueo-capitales-imprudencia-grave',
@@ -2295,7 +2295,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guía práctica sobre qué hacer si te detienen con drogas en Madrid: diferencia entre tenencia, consumo y tráfico, consecuencias legales, derechos del detenido y estrategias de defensa penal.',
     category: 'Defensa Penal Urgente',
     author: 'Diego Cardona Valero',
-    date: '2025-12-23',
+    date: '2024-12-23',
     readTime: '13 min',
     image: '/images/blog/detencion-drogas-madrid.jpg',
     slug: 'que-hacer-si-me-detienen-con-drogas-madrid',
@@ -2329,6 +2329,469 @@ export const blogPosts: BlogPost[] = [
         }
       ],
       conclusion: 'Ser **detenido con drogas en Madrid** es una situación grave que requiere **asesoramiento legal inmediato**. Las diferencias entre consumo, tenencia y tráfico son determinantes para tu futuro, y contar con un **abogado penalista especializado** desde el primer momento puede marcar la diferencia entre una sanción administrativa, una pena de prisión o incluso la absolución. En **STANS Abogados** contamos con amplia experiencia defendiendo **delitos contra la salud pública** y conocemos las estrategias más efectivas para proteger tus derechos. **Disponibles 24/7** para asistirte en cualquier momento. No esperes, cada minuto cuenta. **Contáctanos ahora**.'
+    }
+  },
+  // ===== NUEVOS BLOGS ENERO 2025 - 11 ARTÍCULOS =====
+  {
+    id: 63,
+    title: 'Estafas Informáticas y Phishing: Defensa Penal Especializada',
+    excerpt: 'Guía completa sobre estafas informáticas y phishing en España. Tipos de ciberdelitos, penas del Código Penal, cómo actuar si te acusan y estrategias de defensa legal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Ada de Blas Pascual',
+    date: '2024-12-25',
+    readTime: '12 min',
+    image: '/images/blog/estafas-informaticas.jpg',
+    slug: 'estafas-informaticas-phishing-defensa',
+    tags: ['estafa informática', 'phishing', 'ciberdelitos', 'fraude online', 'defensa penal'],
+    content: {
+      introduction: 'Las **estafas informáticas** se han convertido en uno de los delitos más frecuentes en España. Según datos del Ministerio del Interior, los ciberdelitos aumentaron un 72% en los últimos cinco años. El **phishing**, **smishing**, **vishing** y otras modalidades de fraude digital pueden tener graves consecuencias penales tanto para los autores directos como para quienes participan como intermediarios (las llamadas "mulas bancarias"). Si te acusan de un delito de estafa informática, es fundamental conocer el marco legal y contar con una defensa especializada.',
+      sections: [
+        {
+          title: 'Marco Legal: Artículo 248 y 249 del Código Penal',
+          content: 'El **artículo 248 del Código Penal** define la estafa como el engaño bastante para producir error en otro, induciéndolo a realizar un acto de disposición en perjuicio propio o ajeno. El **apartado 2** incluye específicamente las estafas informáticas: "los que, con ánimo de lucro y valiéndose de alguna manipulación informática o artificio semejante, consigan una transferencia no consentida de cualquier activo patrimonial". Las **penas básicas** (art. 249 CP) van de **6 meses a 3 años de prisión** cuando la cuantía supera 400€. Si es inferior, se considera delito leve con pena de multa de 1 a 3 meses.'
+        },
+        {
+          title: 'Tipos de Estafas Informáticas más Frecuentes',
+          content: '**Phishing**: Suplantación de identidad mediante correos electrónicos que imitan entidades bancarias o empresas para obtener credenciales. **Smishing**: Variante por SMS con enlaces maliciosos. **Vishing**: Estafa telefónica donde el delincuente se hace pasar por empleado bancario. **Pharming**: Redirección de tráfico web a páginas falsas. **Carding**: Uso fraudulento de datos de tarjetas de crédito. **Business Email Compromise (BEC)**: Suplantación de directivos para ordenar transferencias. **Romance scam**: Estafas sentimentales online. Cada modalidad tiene particularidades probatorias y defensivas específicas.'
+        },
+        {
+          title: 'Las "Mulas Bancarias": Responsabilidad Penal del Intermediario',
+          content: 'Las **mulas bancarias** son personas que reciben dinero de origen ilícito en sus cuentas y lo reenvían a cambio de una comisión. Aunque muchas veces actúan engañadas por ofertas de "trabajo fácil", la jurisprudencia del Tribunal Supremo (STS 834/2012, STS 228/2013) establece que puede existir **dolo eventual**: si había indicios claros de ilicitud y la persona "cerró los ojos" ante ellos, responde penalmente. Las penas pueden ser por **estafa** (cooperador necesario) o por **blanqueo de capitales** (art. 301 CP). La defensa debe demostrar ausencia de conocimiento o error invencible.'
+        },
+        {
+          title: 'Agravantes y Penas Cualificadas',
+          content: 'El **artículo 250 CP** prevé penas de **1 a 6 años de prisión** cuando concurren agravantes: recaiga sobre vivienda, bienes de primera necesidad o patrimonio artístico; se realice mediante cheques, pagarés o tarjetas; revista especial gravedad por cuantía (más de 50.000€), número de afectados o situación económica de la víctima; se cometa con abuso de relaciones personales o profesionales; se realice mediante falsificación de documento público. Si la cuantía supera **250.000€** o afecta a un elevado número de personas, la pena puede alcanzar **4 a 8 años**.'
+        },
+        {
+          title: 'Investigación Policial y Prueba Digital',
+          content: 'La **Brigada de Investigación Tecnológica** (BIT) de la Policía Nacional y el **Grupo de Delitos Telemáticos** de la Guardia Civil investigan estos delitos. Utilizan: rastreo de direcciones IP, análisis de dispositivos, cooperación internacional, seguimiento de criptomonedas, intervención de comunicaciones. La **prueba digital** tiene requisitos específicos de cadena de custodia. El **hash** del dispositivo debe coincidir antes y después del análisis. Un error en el procedimiento puede invalidar pruebas cruciales. Tu abogado debe verificar que se han respetado todas las garantías.'
+        },
+        {
+          title: 'Estrategias de Defensa Penal',
+          content: 'Las principales líneas de defensa incluyen: **Impugnar la prueba digital** por vulneración de cadena de custodia o derechos fundamentales. **Demostrar error invencible** en casos de mulas que actuaron engañadas. **Cuestionar el dolo** acreditando que no existía conocimiento del origen ilícito. **Alegar atenuantes**: confesión, reparación del daño, dilaciones indebidas. **Negociar conformidad** cuando la prueba es sólida para minimizar la pena. **Solicitar suspensión de condena** si la pena no supera 2 años y no hay antecedentes. En STANS Abogados analizamos cada caso para diseñar la estrategia más efectiva.'
+        }
+      ],
+      conclusion: 'Las **estafas informáticas** son delitos complejos que requieren una defensa técnica especializada. Ya seas víctima, acusado o investigado como intermediario, es fundamental actuar con rapidez y contar con abogados que conozcan tanto el Derecho Penal como los aspectos técnicos de la prueba digital. En **STANS Abogados** tenemos experiencia en ciberdelitos y estamos disponibles **24/7** para asesorarte. No declares sin abogado: cada palabra cuenta.'
+    }
+  },
+  {
+    id: 64,
+    title: 'Delito Fiscal: Cuándo Hacienda Pasa al Código Penal',
+    excerpt: 'Análisis del delito contra la Hacienda Pública (art. 305 CP). Umbrales de 120.000€, diferencias con infracción tributaria, penas, regularización voluntaria y estrategias de defensa.',
+    category: 'Derecho Penal Económico',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-26',
+    readTime: '14 min',
+    image: '/images/blog/delito-fiscal.jpg',
+    slug: 'delito-fiscal-fraude-hacienda-penal',
+    tags: ['delito fiscal', 'fraude hacienda', 'derecho penal económico', 'IRPF', 'IVA', 'sociedades'],
+    content: {
+      introduction: 'No todo impago a Hacienda constituye delito. El **delito contra la Hacienda Pública** (art. 305 del Código Penal) requiere que la cuantía defraudada supere los **120.000 euros** y que exista una conducta dolosa de ocultación o engaño. Sin embargo, cuando se supera ese umbral, las consecuencias pueden ser devastadoras: penas de **1 a 5 años de prisión**, multas millonarias y la publicación del nombre en el listado de deudores. Si recibes una comunicación de la Agencia Tributaria indicando que se ha iniciado un procedimiento penal, necesitas asesoramiento especializado urgente.',
+      sections: [
+        {
+          title: 'Elementos del Delito Fiscal (Art. 305 CP)',
+          content: 'El **artículo 305 del Código Penal** castiga a quien "por acción u omisión, defraude a la Hacienda Pública estatal, autonómica, foral o local, eludiendo el pago de tributos, cantidades retenidas o que se hubieran debido retener o ingresos a cuenta". Los **elementos esenciales** son: 1) Conducta defraudatoria activa u omisiva, 2) Perjuicio efectivo al erario público, 3) Cuantía superior a 120.000€ por tributo y ejercicio, 4) Dolo o intención de defraudar. El mero error contable o la interpretación razonable de la norma no constituyen delito.'
+        },
+        {
+          title: 'Umbral de 120.000 Euros: Cómo se Calcula',
+          content: 'El umbral de **120.000 euros** se calcula por cada tributo (IRPF, IVA, Sociedades) y por cada ejercicio fiscal. No se suman diferentes impuestos ni diferentes años. La **base de cálculo** es la cuota defraudada, no la base imponible ocultada. Por ejemplo: si ocultas 500.000€ de ingresos pero la cuota resultante es de 100.000€, no hay delito fiscal (aunque sí infracción tributaria grave). La Agencia Tributaria debe probar que la cuantía supera el umbral con liquidación definitiva. Un buen perito puede cuestionar los cálculos de Hacienda.'
+        },
+        {
+          title: 'Diferencias: Infracción Tributaria vs Delito Fiscal',
+          content: '**Infracción tributaria** (Ley General Tributaria): Cuantía inferior a 120.000€ o ausencia de dolo. Sanción administrativa (multa del 50% al 150% de la cuota). No genera antecedentes penales. Se tramita por la propia AEAT. **Delito fiscal** (Código Penal): Cuantía superior a 120.000€ con dolo. Pena de 1 a 5 años de prisión y multa del tanto al séxtuplo. Genera antecedentes penales. Se tramita ante la jurisdicción penal. La AEAT debe remitir el expediente a Fiscalía cuando aprecie indicios de delito. Esta es una "frontera" crítica donde la defensa puede actuar para evitar la derivación penal.'
+        },
+        {
+          title: 'Penas y Agravantes del Delito Fiscal',
+          content: 'El **tipo básico** (art. 305.1 CP) prevé penas de **1 a 5 años de prisión** y multa del tanto al séxtuplo de la cuantía defraudada, además de pérdida de subvenciones durante 3 a 6 años. El **tipo agravado** (art. 305 bis CP) con penas de **2 a 6 años** se aplica cuando: la cuantía supera 600.000€, se comete en el seno de organización criminal, o se utilizan personas interpuestas, negocios fiduciarios o paraísos fiscales. La **prescripción** del delito fiscal es de **5 años** desde que pudo perseguirse (generalmente, desde la presentación de la autoliquidación o desde que finalizó el plazo).'
+        },
+        {
+          title: 'Regularización Voluntaria: Excusa Absolutoria',
+          content: 'El **art. 305.4 CP** establece una **excusa absolutoria**: queda exento de responsabilidad penal quien regularice su situación tributaria antes de que la Administración Tributaria le haya notificado el inicio de actuaciones de comprobación o antes de que el Ministerio Fiscal presente querella. La regularización debe ser **completa**: reconocer la deuda íntegra, presentar autoliquidaciones complementarias y pagar o solicitar aplazamiento. Esta es una herramienta clave: si sospechas que puedes tener un problema fiscal grave, consulta urgentemente con un abogado para valorar la regularización voluntaria antes de que sea tarde.'
+        },
+        {
+          title: 'Estrategias de Defensa en el Delito Fiscal',
+          content: 'Las principales líneas de defensa incluyen: **Cuestionar el cálculo de la cuota**: errores en las liquidaciones de Hacienda pueden situar la cuantía por debajo de 120.000€. **Negar el dolo**: demostrar que existía una interpretación razonable de la norma o error invencible. **Alegar prescripción**: el delito fiscal prescribe a los 5 años. **Impugnar pruebas**: la entrada y registro debe cumplir garantías constitucionales. **Solicitar atenuantes**: confesión, reparación del daño, dilaciones indebidas. **Regularización extemporánea**: aunque no exima de pena, puede aplicarse atenuante muy cualificada. **Negociar conformidad**: en casos claros, minimizar la pena puede ser la mejor opción.'
+        }
+      ],
+      conclusion: 'El **delito fiscal** tiene consecuencias graves que van más allá de la pena de prisión: inhabilitación, publicación en listados de morosos, responsabilidad civil millonaria. Pero también existen mecanismos de defensa eficaces y, sobre todo, la posibilidad de **regularización voluntaria** que puede evitar el proceso penal. En **STANS Abogados** somos especialistas en **derecho penal económico** y conocemos tanto la vertiente penal como la tributaria. Si has recibido una comunicación de Hacienda o sospechas que puedes tener un problema, **consúltanos antes de que sea tarde**.'
+    }
+  },
+  {
+    id: 65,
+    title: 'Usurpación de Identidad Digital: Consecuencias Penales',
+    excerpt: 'Todo sobre el delito de usurpación de identidad en internet. Suplantación en redes sociales, robo de datos, phishing de identidad, penas y defensa legal especializada.',
+    category: 'Terrorismo y Audiencia Nacional',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2024-12-27',
+    readTime: '11 min',
+    image: '/images/blog/usurpacion-identidad.jpg',
+    slug: 'usurpacion-identidad-digital-suplantacion',
+    tags: ['usurpación identidad', 'suplantación digital', 'redes sociales', 'robo identidad', 'ciberdelitos'],
+    content: {
+      introduction: 'La **usurpación de identidad digital** se ha convertido en uno de los problemas más graves de la era de internet. Crear perfiles falsos en redes sociales, usar los datos de otra persona para contratar servicios, o suplantar la identidad en comunicaciones electrónicas son conductas que pueden tener **graves consecuencias penales**. El Código Penal español contempla varios tipos delictivos aplicables: desde la usurpación del estado civil (art. 401) hasta delitos contra la intimidad (art. 197) o estafa (art. 248). Si te acusan de suplantar a alguien online, o si eres víctima de suplantación, necesitas conocer el marco legal.',
+      sections: [
+        {
+          title: 'Marco Legal: Delitos Aplicables a la Suplantación Digital',
+          content: 'No existe un delito específico de "usurpación de identidad digital", pero varias figuras penales son aplicables: **Art. 401 CP - Usurpación del estado civil**: "El que usurpare el estado civil de otro será castigado con pena de prisión de 6 meses a 3 años". Se aplica cuando alguien se hace pasar completamente por otra persona. **Art. 197 CP - Descubrimiento y revelación de secretos**: Cuando se accede a datos personales sin autorización. **Art. 248 CP - Estafa**: Si la suplantación tiene finalidad de lucro. **Art. 172 ter CP - Stalking**: Si la suplantación forma parte de acoso. **Art. 173 CP - Injurias y calumnias**: Si se usa el perfil falso para difamar.'
+        },
+        {
+          title: 'Conductas Típicas de Usurpación de Identidad Online',
+          content: '**Perfiles falsos en redes sociales**: Crear cuentas de Facebook, Instagram, Twitter o TikTok con el nombre y fotos de otra persona. Especialmente grave si se usa para contactar a terceros o difundir contenido dañino. **Suplantación en apps de citas**: Usar fotos de otra persona en Tinder, Bumble, etc. Puede derivar en estafa si se obtiene dinero. **Phishing de identidad**: Enviar correos haciéndose pasar por otra persona (jefe, familiar, banco) para obtener datos o transferencias. **Usurpación de cuentas**: Hackear perfiles legítimos y usarlos como propios. **Deepfakes**: Crear vídeos o imágenes manipuladas con la cara de otra persona. Especialmente grave si son de contenido sexual.'
+        },
+        {
+          title: 'Penas según el Tipo Delictivo',
+          content: '**Usurpación de estado civil (art. 401)**: Prisión de 6 meses a 3 años. **Descubrimiento de secretos (art. 197)**: Prisión de 1 a 4 años y multa. Si se difunden los datos: 2 a 5 años. **Estafa (art. 248-250)**: Desde 6 meses hasta 6 años según cuantía y agravantes. **Acoso/stalking (art. 172 ter)**: Prisión de 3 meses a 2 años o multa. **Injurias (art. 208)**: Multa de 3 a 7 meses. **Calumnias (art. 205)**: Prisión de 6 meses a 2 años o multa. En casos graves con múltiples víctimas o daño patrimonial elevado, las penas pueden acumularse (concurso de delitos).'
+        },
+        {
+          title: 'Investigación y Prueba de la Suplantación',
+          content: 'La investigación de la usurpación de identidad digital presenta desafíos técnicos importantes. La Policía puede: solicitar a las plataformas (Meta, Google, X) los datos del creador del perfil falso (IP, email de registro), rastrear la dirección IP hasta el titular de la conexión, analizar metadatos de imágenes subidas, solicitar cooperación internacional si los servidores están fuera de España. **Importante**: Las plataformas no siempre colaboran y los datos pueden estar anonimizados (VPN, Tor). La prueba debe ser sólida para una condena. Un abogado experto puede cuestionar la atribución del perfil falso al acusado.'
+        },
+        {
+          title: 'Qué Hacer si Eres Víctima de Suplantación',
+          content: '1) **Documenta todo**: Capturas de pantalla del perfil falso, mensajes recibidos, URLs. 2) **Denuncia en la plataforma**: Todas las redes sociales tienen mecanismos de denuncia por suplantación. 3) **Presenta denuncia policial**: Lleva todas las pruebas documentadas. La Brigada de Investigación Tecnológica puede investigar. 4) **Solicita medidas cautelares**: Un abogado puede pedir judicialmente el cierre del perfil y la identificación del autor. 5) **Valora acciones civiles**: Además de la vía penal, puedes reclamar indemnización por daños morales y patrimoniales.'
+        },
+        {
+          title: 'Defensa Penal si te Acusan de Suplantación',
+          content: 'Si te acusan de usurpar la identidad de otra persona online, las estrategias de defensa pueden incluir: **Negar la autoría**: Demostrar que otra persona creó el perfil falso (desde otra IP, dispositivo, etc.). **Ausencia de dolo**: Argumentar que no había intención de causar daño o de hacerse pasar por otra persona. **Consentimiento**: Si la supuesta víctima autorizó el uso de su imagen o datos. **Error de tipo**: Desconocimiento de que la conducta era delictiva. **Atenuantes**: Reparación del daño (eliminar perfil, disculpas públicas), confesión. En **STANS Abogados** analizamos cada caso y diseñamos la defensa más efectiva.'
+        }
+      ],
+      conclusion: 'La **usurpación de identidad digital** es un fenómeno creciente con consecuencias penales cada vez más graves. Tanto si eres víctima como si te acusan de suplantación, es fundamental actuar con rapidez y contar con asesoramiento especializado. En **STANS Abogados** combinamos conocimiento técnico y jurídico para ofrecer una defensa integral. **Disponibles 24/7** para urgencias. Consulta tu caso sin compromiso.'
+    }
+  },
+  {
+    id: 66,
+    title: 'Violencia de Género: Defensa del Investigado y sus Derechos',
+    excerpt: 'Guía sobre derechos del acusado en procedimientos de violencia de género. Orden de alejamiento, juicio rápido, presunción de inocencia y estrategias de defensa legal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Diego Cardona Valero',
+    date: '2024-12-28',
+    readTime: '13 min',
+    image: '/images/blog/violencia-genero-defensa.jpg',
+    slug: 'violencia-genero-defensa-investigado',
+    tags: ['violencia de género', 'orden alejamiento', 'juicio rápido', 'defensa penal', 'derechos acusado'],
+    content: {
+      introduction: 'Ser acusado de un delito de **violencia de género** genera una situación de enorme presión personal, social y legal. La legislación española (LO 1/2004) establece un régimen de protección reforzada para las víctimas que incluye juzgados especializados, procedimientos acelerados y medidas cautelares de aplicación casi automática. Sin embargo, el **derecho a la presunción de inocencia** y las **garantías procesales** siguen vigentes. Si te han denunciado por violencia de género, conocer tus derechos y contar con una defensa técnica desde el primer momento es crucial.',
+      sections: [
+        {
+          title: 'Marco Legal: LO 1/2004 y Código Penal',
+          content: 'La **Ley Orgánica 1/2004** de Medidas de Protección Integral contra la Violencia de Género establece un marco específico que incluye: juzgados especializados (Juzgados de Violencia sobre la Mujer), fiscalías especializadas, agravación de penas cuando el agresor es hombre y la víctima es pareja o ex pareja mujer, medidas de protección (orden de alejamiento, pulsera telemática). Los **delitos más frecuentes** son: maltrato ocasional (art. 153 CP, pena de 6 meses a 1 año), amenazas (art. 171.4 CP), coacciones (art. 172.2 CP), lesiones (art. 148.4 CP), quebrantamiento de medida cautelar (art. 468 CP).'
+        },
+        {
+          title: 'El Procedimiento: Denuncia, Detención y Comparecencia',
+          content: 'El procedimiento típico se inicia con denuncia de la víctima (en comisaría, juzgado de guardia o centro sanitario). Si hay indicios, puede producirse **detención inmediata** del investigado. En 24-72 horas se celebra **comparecencia** ante el Juzgado de Violencia sobre la Mujer donde se decide: libertad provisional, medidas cautelares (alejamiento, prohibición de comunicación), o excepcionalmente prisión provisional. Si el delito es leve y hay conformidad, puede celebrarse **juicio rápido** en el mismo acto. **Importante**: Todo lo que digas en comisaría puede ser usado en tu contra. No declares sin abogado.'
+        },
+        {
+          title: 'Orden de Alejamiento y Medidas Cautelares',
+          content: 'La **orden de alejamiento** (art. 544 bis LECrim) prohíbe aproximarse a la víctima, su domicilio, lugar de trabajo o lugares frecuentados. Puede incluir: prohibición de comunicación (llamadas, mensajes, redes sociales), salida del domicilio común, suspensión del régimen de visitas a hijos menores, uso de **pulsera telemática** GPS. El **incumplimiento** de la orden de alejamiento es delito (art. 468 CP) con pena de prisión de 6 meses a 1 año. Esto incluye responder a mensajes de la propia víctima: aunque ella inicie el contacto, tú comes delito al responder. La orden puede recurrirse en apelación alegando desproporción o ausencia de riesgo.'
+        },
+        {
+          title: 'Derechos del Investigado: Presunción de Inocencia',
+          content: 'A pesar de la especial protección a las víctimas, el investigado **conserva todos sus derechos fundamentales**: **Presunción de inocencia** (art. 24.2 CE): Nadie puede ser condenado sin prueba de cargo suficiente. **Derecho a no declarar**: Puedes guardar silencio total o parcial. **Asistencia letrada**: Desde la detención y en todas las actuaciones. **Información de la acusación**: Conocer los hechos que se te imputan. **Proposición de prueba**: Testigos, documentos, periciales. **Contradicción**: Interrogar a testigos y peritos de la acusación. **Recurso**: Contra la sentencia y contra las medidas cautelares. La declaración de la víctima puede ser prueba suficiente, pero debe cumplir requisitos (STS 119/2019): ausencia de incredibilidad subjetiva, verosimilitud, persistencia en la incriminación.'
+        },
+        {
+          title: 'Estrategias de Defensa en Violencia de Género',
+          content: 'Las líneas de defensa varían según el caso: **Contradicción de la víctima**: Analizar incoherencias entre denuncias, declaraciones y pruebas médicas. **Testigos de descargo**: Personas que presenciaron los hechos o la relación. **Prueba pericial**: Informes psicológicos, forenses, sobre lesiones. **Mensajes y comunicaciones**: WhatsApps, emails que muestren el contexto de la relación. **Denuncias cruzadas**: Si ambas partes se denuncian mutuamente. **Retractación de la víctima**: Aunque no extingue la acción penal, afecta a la credibilidad. **Atenuantes**: Confesión, reparación, arrebato u obcecación. **Conformidad negociada**: En casos claros, puede ser la opción más favorable.'
+        },
+        {
+          title: 'Consecuencias de la Condena: Antecedentes y Régimen de Visitas',
+          content: 'Una condena por violencia de género conlleva, además de la pena: **Antecedentes penales**: Que afectan a empleo público, armas, nacionalidad. **Inhabilitación especial**: Para ejercer patria potestad, tutela o guarda. **Alejamiento como pena accesoria**: Que se suma al de medida cautelar. **Programa formativo**: Obligatorio en materia de igualdad. **Afectación al régimen de visitas**: El Juzgado de Familia tendrá en cuenta la condena. **Trabajo con menores**: Inhabilitación para profesiones que impliquen contacto con menores. Por ello, es fundamental valorar todas las opciones de defensa antes de aceptar una conformidad.'
+        }
+      ],
+      conclusion: 'Los procedimientos de **violencia de género** tienen particularidades que exigen una defensa especializada. El estigma social, la rapidez del procedimiento y las medidas cautelares casi automáticas hacen que muchos investigados se sientan indefensos. Pero la **presunción de inocencia** sigue vigente y existen estrategias de defensa efectivas. En **STANS Abogados** defendemos tus derechos con rigor técnico y sin prejuicios. **Disponibilidad 24/7** para asistencia urgente tras detención. Tu primera consulta, sin compromiso.'
+    }
+  },
+  {
+    id: 67,
+    title: 'Alzamiento de Bienes: Qué Es y Cómo Evitar la Condena',
+    excerpt: 'Análisis del delito de alzamiento de bienes (art. 257 CP). Requisitos, diferencias con insolvencia punible, penas de hasta 4 años y estrategias de defensa legal.',
+    category: 'Derecho Penal Económico',
+    author: 'Rubén Vaquero Arribas',
+    date: '2024-12-30',
+    readTime: '11 min',
+    image: '/images/blog/alzamiento-bienes.jpg',
+    slug: 'alzamiento-bienes-insolvencia-punible',
+    tags: ['alzamiento de bienes', 'insolvencia punible', 'deudas', 'fraude acreedores', 'derecho penal económico'],
+    content: {
+      introduction: 'Ocultar bienes para no pagar deudas puede constituir el **delito de alzamiento de bienes** (art. 257 del Código Penal), castigado con penas de **1 a 4 años de prisión**. Muchos empresarios y particulares en dificultades económicas cometen este error pensando que protegen su patrimonio, cuando en realidad se exponen a consecuencias penales graves. Si tienes deudas importantes y estás pensando en poner bienes a nombre de familiares, vender propiedades o transferir dinero al extranjero, debes conocer los límites legales y las alternativas legítimas.',
+      sections: [
+        {
+          title: 'Definición Legal: Artículo 257 del Código Penal',
+          content: 'El **artículo 257 CP** castiga a quien "se alce con sus bienes en perjuicio de sus acreedores". El Tribunal Supremo (STS 801/2005, STS 440/2012) ha definido los elementos del tipo: 1) **Situación de insolvencia real o aparente**: El deudor reduce su patrimonio de forma que no puede responder de sus deudas. 2) **Acción de ocultación o disposición**: Transferir bienes, donarlos, venderlos por precio vil, simular deudas ficticias. 3) **Perjuicio a acreedores**: Que los acreedores no puedan cobrar sus créditos legítimos. 4) **Dolo**: Intención de perjudicar a los acreedores conociendo la existencia de las deudas. La pena básica es de **1 a 4 años de prisión**.'
+        },
+        {
+          title: 'Conductas Típicas de Alzamiento de Bienes',
+          content: 'Las conductas más frecuentes que dan lugar a condenas son: **Donaciones a familiares**: Poner la vivienda a nombre del cónyuge, hijos o padres cuando hay deudas pendientes. **Ventas simuladas o por precio vil**: Vender un inmueble de 300.000€ por 50.000€ a un conocido. **Constitución de hipotecas ficticias**: Crear cargas sobre inmuebles para simular deuda preferente. **Transferencias al extranjero**: Mover dinero a cuentas en paraísos fiscales o países no colaboradores. **Creación de sociedades pantalla**: Transferir el patrimonio a sociedades controladas por testaferros. **Vaciamiento de cuentas**: Retirar efectivo masivamente antes de un embargo. **Destrucción de bienes**: Dañar intencionadamente activos para que no puedan ser ejecutados.'
+        },
+        {
+          title: 'Diferencias con Otros Delitos de Insolvencia',
+          content: 'El Código Penal contempla varios delitos relacionados: **Alzamiento de bienes (art. 257)**: Ocultación genérica de bienes ante cualquier acreedor. Pena: 1 a 4 años. **Alzamiento específico (art. 257.1.2º)**: Cuando el perjudicado es la Hacienda Pública, Seguridad Social u otra entidad pública. Pena: 1 a 6 años. **Insolvencia punible del deudor concursado (art. 259)**: Cuando estando en concurso de acreedores, se realizan actos que perjudican a la masa. Pena: 1 a 4 años. **Favorecimiento de acreedores (art. 260)**: Pagar a un acreedor en perjuicio de otros una vez declarado el concurso. Pena: 1 a 3 años. Cada tipo tiene requisitos y estrategias de defensa diferentes.'
+        },
+        {
+          title: 'Requisitos para que Exista Delito',
+          content: 'No toda conducta de disposición patrimonial constituye alzamiento de bienes. La jurisprudencia exige: **Existencia previa de deudas vencidas y exigibles**: No basta con deudas futuras o contingentes (aunque hay excepciones). **Conocimiento de las deudas**: El deudor debe saber que tiene obligaciones pendientes. **Relación causal**: La ocultación debe ser la causa de que los acreedores no puedan cobrar. **Perjuicio efectivo**: Debe existir un daño real, no meramente potencial. **Ausencia de bienes alternativos**: Si el deudor conserva patrimonio suficiente para responder, no hay alzamiento. La STS 163/2006 estableció que debe haber "una situación de insolvencia al menos parcial provocada dolosamente por el deudor".'
+        },
+        {
+          title: 'Cómo Detectan el Alzamiento: Administración y Acreedores',
+          content: 'Las vías de descubrimiento más habituales son: **Registro de la Propiedad**: Los acreedores consultan las transmisiones de inmuebles y cargas. **Declaraciones fiscales**: Hacienda contrasta patrimonio declarado con embargos. **Investigación del administrador concursal**: En concursos de acreedores, el administrador revisa todas las operaciones de los 2 años anteriores. **Informes bancarios**: Movimientos de cuentas, transferencias internacionales. **Denuncias de acreedores**: Que han intentado sin éxito el embargo de bienes. El plazo de **prescripción** del delito es de **5 años** desde que se produjo la ocultación (o desde que se conoció).'
+        },
+        {
+          title: 'Estrategias de Defensa Penal',
+          content: 'Las principales líneas de defensa incluyen: **Ausencia de insolvencia**: Demostrar que el deudor conservaba patrimonio suficiente tras la transmisión. **Negación del dolo**: Acreditar que la transmisión tenía una finalidad legítima (pago de deuda previa, venta a precio de mercado). **Inexistencia o imprecisión de las deudas**: Cuestionar que las deudas fueran vencidas y exigibles en el momento de la disposición. **Prescripción**: El delito prescribe a los 5 años. **Atenuantes**: Confesión, reparación del daño (pago a los acreedores), dilaciones indebidas. **Conformidad negociada**: Cuando la prueba es sólida, negociar pena mínima puede evitar prisión si no hay antecedentes.'
+        }
+      ],
+      conclusion: 'El **alzamiento de bienes** es un delito más frecuente de lo que parece y las condenas son habituales cuando hay prueba clara de la ocultación. Antes de transferir bienes teniendo deudas, consulta con un abogado especializado: existen alternativas legítimas (acuerdos con acreedores, concurso de acreedores, dación en pago) que no conllevan riesgo penal. En **STANS Abogados** somos expertos en **derecho penal económico** y podemos asesorarte tanto preventivamente como si ya enfrentas una acusación. **Consulta tu caso sin compromiso**.'
+    }
+  },
+  {
+    id: 68,
+    title: 'Accidente de Tráfico con Resultado de Muerte: ¿Cuándo es Delito?',
+    excerpt: 'Análisis del homicidio imprudente por accidente de tráfico. Diferencias con homicidio doloso, penas de hasta 4 años, agravantes (alcohol, drogas, exceso de velocidad) y defensa.',
+    category: 'Defensa Penal Urgente',
+    author: 'Diego Cardona Valero',
+    date: '2025-01-02',
+    readTime: '12 min',
+    image: '/images/blog/accidente-trafico-mortal.jpg',
+    slug: 'accidente-trafico-homicidio-imprudente',
+    tags: ['accidente de tráfico', 'homicidio imprudente', 'lesiones imprudentes', 'seguridad vial', 'defensa penal'],
+    content: {
+      introduction: 'Un **accidente de tráfico con víctimas mortales** puede convertir a un conductor en imputado por **homicidio imprudente** (art. 142 CP). Aunque nadie pretendía causar la muerte, la ley penal sanciona las conductas imprudentes que tienen consecuencias fatales. Las penas pueden alcanzar **4 años de prisión** y hasta **6 años de retirada del carné**. Si has tenido un accidente grave y te han imputado, necesitas entender el procedimiento y contar con una defensa especializada desde el primer momento.',
+      sections: [
+        {
+          title: 'Marco Legal: Homicidio y Lesiones Imprudentes',
+          content: 'El **Código Penal** tipifica: **Homicidio imprudente (art. 142)**: "El que por imprudencia grave causare la muerte de otro, será castigado con pena de prisión de 1 a 4 años". Si se comete con vehículo a motor, se añade privación del derecho a conducir de 1 a 6 años. **Lesiones imprudentes graves (art. 152)**: Prisión de 3 meses a 3 años o multa, más retirada de carné de 1 a 4 años. **Homicidio imprudente menos grave (art. 142.2)**: Cuando la imprudencia es menos grave, pena de multa de 3 a 18 meses. La diferencia entre imprudencia "grave" y "menos grave" es clave y depende de la infracción cometida y las circunstancias del caso.'
+        },
+        {
+          title: 'Imprudencia Grave vs Imprudencia Menos Grave',
+          content: 'El Tribunal Supremo (STS 661/2014, STS 279/2019) distingue: **Imprudencia grave**: Omisión de las cautelas más elementales, vulneración de normas de cuidado básicas que cualquier persona observaría. Ejemplos: circular a 180 km/h, saltarse un semáforo en rojo, conducir ebrio con tasa muy alta. **Imprudencia menos grave**: Infracción de normas de cuidado que no alcanza la gravedad anterior pero supera la mera infracción administrativa. Ejemplos: pequeño exceso de velocidad, distracción momentánea, maniobra inadecuada. **Imprudencia leve**: No constituye delito (desde la reforma de 2015). Solo da lugar a responsabilidad civil. La calificación depende de: gravedad de la infracción, previsibilidad del resultado, condiciones de la vía y el tráfico.'
+        },
+        {
+          title: 'Agravantes: Alcohol, Drogas, Velocidad',
+          content: 'Las **circunstancias agravantes** específicas (art. 142 bis, 152 bis CP) son: **Conducción bajo influencia de alcohol** (tasa superior a 0,60 mg/l en aire espirado o 1,2 g/l en sangre). **Conducción bajo efectos de drogas**. **Exceso de velocidad superior al 50%** del límite permitido. **Conducción temeraria manifiesta** (art. 380 CP). Cuando concurren estas circunstancias, las penas se agravan: prisión de **2 a 5 años** en homicidio. Además, pueden concurrir otros delitos: conducción etílica (art. 379), conducción temeraria (art. 380), omisión del deber de socorro (art. 195). En casos muy graves con dolo eventual, podría calificarse como **homicidio doloso**.'
+        },
+        {
+          title: 'El Procedimiento Penal tras un Accidente Mortal',
+          content: 'Tras un accidente con víctimas mortales: 1) **Atestado policial**: La Guardia Civil o Policía Local elabora un atestado con croquis, fotos, declaraciones y pruebas de alcoholemia/drogas. 2) **Investigación judicial**: Se abre diligencias previas. Puede ordenarse reconstrucción de los hechos, informe pericial de accidentología. 3) **Imputación**: Si hay indicios, se cita al conductor como investigado. 4) **Juicio**: Generalmente ante el Juzgado de lo Penal (penas hasta 5 años). **Importante**: No declares en el atestado policial sin reflexionar. Tienes derecho a solicitar que la declaración se realice en sede judicial con abogado presente.'
+        },
+        {
+          title: 'Estrategias de Defensa en Accidentes de Tráfico',
+          content: 'Las líneas de defensa más habituales son: **Cuestionar la imprudencia**: Demostrar que el conductor actuó diligentemente y el accidente fue fortuito o por causa ajena (fallo mecánico, actuación de tercero, estado de la vía). **Reducir la calificación**: De imprudencia grave a menos grave, lo que reduce sustancialmente la pena. **Impugnar el atestado policial**: Errores en el croquis, en las mediciones o en la reconstrucción de los hechos. **Pericial de accidentología**: Informe técnico que cuestione las conclusiones de la Guardia Civil. **Concurrencia de culpas**: Demostrar que la víctima contribuyó al accidente (no llevaba cinturón, cruzó indebidamente). **Atenuantes**: Confesión, reparación del daño (indemnización), arrebato.'
+        },
+        {
+          title: 'Consecuencias: Penas, Indemnización y Seguro',
+          content: '**Penas de prisión**: De 1 a 4 años (tipo básico) o 2 a 5 años (con agravantes). Si no hay antecedentes y la pena no supera 2 años, puede suspenderse. **Privación del carné**: De 1 a 6 años. **Responsabilidad civil**: Indemnización a los familiares de la víctima según el Baremo de Accidentes (puede superar los 500.000€ en fallecimiento). **Seguro obligatorio**: El SOA cubre la responsabilidad civil, pero NO cubre si hay dolo o si el conductor no tenía permiso válido. **Antecedentes penales**: Afectan a empleo público, renovación del carné, nacionalidad. Una defensa efectiva debe trabajar en todos los frentes: penal, civil y de seguros.'
+        }
+      ],
+      conclusion: 'Un **accidente de tráfico mortal** marca un antes y un después en la vida del conductor. Aunque nadie pretendía el resultado, las consecuencias penales pueden ser muy graves. Una defensa técnica especializada puede marcar la diferencia entre una condena de prisión y una pena suspendida o incluso la absolución. En **STANS Abogados** tenemos experiencia en delitos de tráfico y conocemos las estrategias más efectivas. Si has tenido un accidente grave, **consúltanos cuanto antes**: los primeros momentos son críticos.'
+    }
+  },
+  {
+    id: 69,
+    title: 'Responsabilidad Penal del Administrador de Empresa',
+    excerpt: 'Guía sobre responsabilidad penal del administrador societario. Delitos societarios, fiscales, laborales, administración desleal, compliance y estrategias de defensa.',
+    category: 'Derecho Penal Económico',
+    author: 'Ada de Blas Pascual',
+    date: '2025-01-03',
+    readTime: '13 min',
+    image: '/images/blog/responsabilidad-administrador.jpg',
+    slug: 'responsabilidad-penal-administrador-empresa',
+    tags: ['responsabilidad administrador', 'delitos societarios', 'administración desleal', 'compliance', 'derecho penal económico'],
+    content: {
+      introduction: 'Ser **administrador de una sociedad** conlleva una enorme responsabilidad que puede derivar en consecuencias penales cuando las cosas van mal. Delitos fiscales, contra la Seguridad Social, administración desleal, apropiación indebida, insolvencias punibles... El catálogo de figuras delictivas que pueden afectar al administrador es extenso. La reforma del Código Penal de 2015 introdujo además la **responsabilidad penal de las personas jurídicas**, lo que ha revolucionado el enfoque del compliance corporativo. Si eres administrador y te enfrentas a una investigación, o quieres prevenir riesgos, necesitas asesoramiento especializado.',
+      sections: [
+        {
+          title: 'Base Legal: ¿Por qué Responde el Administrador?',
+          content: 'El **administrador** puede responder penalmente por: **Actuación propia**: Cuando personalmente comete un delito (firma facturas falsas, ordena pagos ilícitos). **Comisión por omisión**: Cuando teniendo deber de garante, no impide un delito que podía y debía evitar (art. 11 CP). **Autoría mediata**: Cuando utiliza a otros para cometer el delito. **Responsabilidad del art. 31 CP**: "El que actúe como administrador de hecho o de derecho de una persona jurídica... responderá personalmente". Esto significa que incluso delitos cometidos por empleados pueden imputarse al administrador si tenía el deber de control y no lo ejerció.'
+        },
+        {
+          title: 'Principales Delitos del Administrador Societario',
+          content: '**Delitos societarios (arts. 290-297 CP)**: Falsedad en cuentas anuales (1-3 años), imposición de acuerdos abusivos (6 meses-3 años). **Administración desleal (art. 252 CP)**: Perjudicar a la sociedad o socios excediéndose en las facultades. Pena de 6 meses a 6 años. **Apropiación indebida (art. 253 CP)**: Apropiarse de bienes de la sociedad. Pena similar. **Delito fiscal (art. 305 CP)**: Si la sociedad defrauda más de 120.000€ por impuesto, el administrador responde. 1-5 años. **Contra la Seguridad Social (art. 307 CP)**: Impago de cuotas superior a 50.000€. 1-5 años. **Delitos contra los trabajadores (arts. 311-318 CP)**: Impago de salarios, condiciones ilegales. Hasta 6 años. **Alzamiento de bienes (art. 257 CP)**: Vaciamiento de la sociedad ante acreedores. 1-4 años.'
+        },
+        {
+          title: 'Administrador de Hecho vs Administrador de Derecho',
+          content: 'La responsabilidad penal no depende del cargo formal: **Administrador de derecho**: El nombrado e inscrito en el Registro Mercantil. Tiene responsabilidad presunta por su posición formal. **Administrador de hecho**: Quien ejerce funciones de administración sin nombramiento formal o con nombramiento defectuoso. El "poder de decisión" es la clave. El TS (STS 598/2012) considera administrador de hecho a quien: toma decisiones estratégicas, dispone de las cuentas bancarias, representa externamente a la sociedad, da instrucciones a empleados. **Testaferros**: El administrador "de paja" puede evitar responsabilidad si demuestra que no tenía control efectivo, pero debe probarlo.'
+        },
+        {
+          title: 'Responsabilidad Penal de la Persona Jurídica (art. 31 bis CP)',
+          content: 'Desde 2015, las **sociedades mercantiles** pueden ser penalmente responsables por delitos cometidos por administradores o empleados en su provecho. Las penas para personas jurídicas incluyen: multa (hasta 5 años del beneficio), suspensión de actividades (hasta 5 años), clausura de locales, disolución, prohibición de contratar con la Administración, intervención judicial. La sociedad queda EXENTA si tenía un **modelo de prevención de delitos (compliance)** eficaz antes de la comisión del delito. Por ello, implementar un programa de compliance no solo protege a la empresa, sino también al administrador.'
+        },
+        {
+          title: 'El Compliance como Escudo Defensivo',
+          content: 'Un **programa de compliance penal** eficaz según el art. 31 bis CP debe incluir: 1) Mapa de riesgos penales específico de la actividad. 2) Código ético y protocolos de actuación. 3) Canal de denuncias interno (whistleblowing). 4) Órgano de compliance independiente. 5) Formación periódica a empleados. 6) Sistema disciplinario. 7) Revisión periódica del modelo. Si el programa existía y era adecuado, la empresa puede quedar exenta y el administrador puede alegar que cumplió su deber de control. En STANS Abogados asesoramos en la implementación de programas de compliance y en la defensa cuando fallan.'
+        },
+        {
+          title: 'Estrategias de Defensa del Administrador',
+          content: 'Las líneas de defensa más efectivas incluyen: **Falta de conocimiento real**: Demostrar que el administrador desconocía los hechos delictivos y no podía conocerlos. **Delegación efectiva**: Acreditar que las funciones estaban delegadas en otros con capacidad y medios. **Existencia de compliance**: El programa de prevención funcionaba y el hecho fue aislado. **Ausencia de beneficio para la sociedad**: El delito no se cometió en nombre ni provecho de la empresa. **Prescripción**: Los plazos varían según el delito. **Atenuantes**: Confesión, colaboración con la investigación, reparación del daño. **Conformidad negociada**: En casos claros, minimizar pena es la mejor opción.'
+        }
+      ],
+      conclusion: 'La **responsabilidad penal del administrador** es una realidad que afecta a miles de empresarios cada año. Prevención y defensa son las dos caras de una misma moneda: implementar un buen programa de compliance reduce drásticamente el riesgo, y contar con defensa especializada es crucial si la investigación ya ha comenzado. En **STANS Abogados** combinamos experiencia en **derecho penal económico** y en compliance corporativo. **Consulta tu caso**: la prevención siempre es más barata que la defensa.'
+    }
+  },
+  {
+    id: 70,
+    title: 'Conformidad Penal: Ventajas y Riesgos de Pactar con Fiscalía',
+    excerpt: 'Todo sobre la conformidad en el proceso penal español. Cuándo conviene aceptar, cómo negociar con Fiscalía, reducción de penas y alternativas. Guía para acusados.',
+    category: 'Defensa Penal Urgente',
+    author: 'Rubén Vaquero Arribas',
+    date: '2025-01-04',
+    readTime: '10 min',
+    image: '/images/blog/conformidad-penal.jpg',
+    slug: 'conformidad-penal-acuerdo-fiscalia',
+    tags: ['conformidad penal', 'acuerdo fiscalía', 'negociación pena', 'procedimiento abreviado', 'juicio rápido'],
+    content: {
+      introduction: 'La **conformidad penal** es un mecanismo que permite al acusado aceptar la pena propuesta por la Fiscalía a cambio de evitar el juicio oral y obtener una reducción de condena. Es una herramienta muy utilizada en España (más del 50% de los juicios penales terminan en conformidad), pero tiene ventajas y riesgos que debes conocer antes de aceptar. ¿Cuándo conviene conformarse? ¿Qué reducción de pena es razonable? ¿Puedo negociar con el fiscal? En este artículo te explicamos todo lo que necesitas saber.',
+      sections: [
+        {
+          title: 'Marco Legal: La Conformidad en la LECrim',
+          content: 'La **Ley de Enjuiciamiento Criminal** regula la conformidad en varios preceptos: **Art. 655 (Procedimiento Ordinario)**: El acusado puede conformarse con la pena más grave solicitada si no excede de 6 años de prisión. **Art. 787 (Procedimiento Abreviado)**: Conformidad posible hasta que comience el juicio oral. La pena no puede superar 6 años. **Art. 801 (Juicio Rápido)**: Conformidad inmediata con reducción de 1/3 de la pena si se presenta antes del inicio del juicio. **Art. 784.3**: Conformidad "premiada" con reducción de pena por reconocimiento de hechos. La conformidad requiere: aceptación libre del acusado, asistencia de abogado, que el juez verifique que el acusado entiende las consecuencias.'
+        },
+        {
+          title: 'Ventajas de la Conformidad Penal',
+          content: '**Reducción de pena**: Habitualmente se obtiene la pena mínima del tipo o incluso por debajo mediante atenuantes negociadas. En juicios rápidos, reducción automática de 1/3. **Certeza del resultado**: Evitas la incertidumbre del juicio, donde podrías ser absuelto pero también condenado a pena mayor. **Rapidez**: El procedimiento termina inmediatamente, sin esperas de meses o años. **Costes reducidos**: Menos honorarios de abogado al evitar el juicio oral. **Evitar exposición pública**: El juicio es público; la conformidad es más discreta. **Suspensión de pena más probable**: Si la pena queda por debajo de 2 años y no hay antecedentes, el juez suele conceder la suspensión.'
+        },
+        {
+          title: 'Riesgos y Desventajas de Conformarse',
+          content: '**Renuncia a la defensa**: Aceptas los hechos y la pena; no hay vuelta atrás. **Antecedentes penales**: La conformidad implica condena, con todas sus consecuencias. **Responsabilidad civil**: Puede incluir indemnizaciones elevadas que deberás pagar. **No siempre es la mejor opción**: Si la prueba de la acusación es débil, el juicio podría terminar en absolución. **Presión para aceptar**: A veces se ofrece conformidad bajo presión de última hora sin tiempo para reflexionar. **Condenas injustas**: Algunos inocentes se conforman para "acabar cuanto antes", asumiendo condenas que no merecen. Por ello, la decisión debe tomarse con calma y con asesoramiento de un abogado experimentado.'
+        },
+        {
+          title: 'Cómo Negociar con la Fiscalía',
+          content: 'La negociación de la conformidad es un arte que requiere experiencia. Los pasos habituales son: 1) **Análisis del caso**: Evaluar fortalezas y debilidades de la prueba de cargo. 2) **Primer contacto**: El abogado defensor contacta con el fiscal asignado. 3) **Propuesta inicial**: Fiscalía suele partir de una petición alta; la defensa propone una alternativa. 4) **Negociación**: Se discuten hechos, calificación jurídica, atenuantes y pena. 5) **Acuerdo**: Si hay consenso, se plasma por escrito. 6) **Ratificación judicial**: El juez debe aprobar la conformidad verificando que es libre y consciente. **Consejo**: No aceptes la primera oferta. Un buen abogado puede reducir significativamente la pena negociada.'
+        },
+        {
+          title: 'Cuándo Conviene y Cuándo No Conviene Conformarse',
+          content: '**CONVIENE conformarse cuando**: La prueba de cargo es sólida y la condena en juicio es muy probable. La pena negociada permite suspensión (menos de 2 años) y la de juicio no. Hay riesgo de agravantes que aumenten la pena. Quieres acabar cuanto antes por razones personales o profesionales. **NO CONVIENE conformarse cuando**: La prueba es débil o hay posibilidades reales de absolución. Eres inocente y quieres limpiar tu nombre. La diferencia entre pena negociada y posible condena en juicio es pequeña. Hay cuestiones de nulidad procesal que podrían tumbar la acusación. Cada caso es único y la decisión debe tomarse con toda la información disponible.'
+        },
+        {
+          title: '¿Qué Pasa Después de la Conformidad?',
+          content: 'Tras la conformidad: **Sentencia inmediata**: El juez dicta sentencia en el acto conforme a lo pactado. **Antecedentes penales**: La condena se inscribe en el Registro Central de Penados. **Responsabilidad civil**: Deberás pagar la indemnización acordada. **Ejecución de pena**: Si hay pena de prisión y no se suspende, deberás cumplirla. Si es multa, pagarla. **Suspensión de condena**: Si la pena es de hasta 2 años y no tienes antecedentes, el juez puede suspender la ejecución condicionada a no delinquir (plazo de 2 a 5 años). **Cancelación de antecedentes**: Transcurrido el plazo legal (desde 6 meses hasta 10 años según la pena), puedes solicitar la cancelación.'
+        }
+      ],
+      conclusion: 'La **conformidad penal** es una herramienta muy útil cuando se usa correctamente, pero puede ser una trampa si se acepta sin el debido análisis. La clave es contar con un **abogado penalista experimentado** que evalúe tu caso, negocie con la Fiscalía y te asesore sobre si conformarte o ir a juicio. En **STANS Abogados** tenemos amplia experiencia en negociación de conformidades y defensa en juicio. **Consulta tu caso**: te diremos con honestidad cuál es la mejor estrategia.'
+    }
+  },
+  {
+    id: 71,
+    title: 'Delitos de Odio en Redes Sociales: Marco Legal y Defensa',
+    excerpt: 'Análisis del delito de odio (art. 510 CP) en redes sociales. Qué conductas son punibles, penas, límites con libertad de expresión, jurisprudencia del TEDH y estrategias de defensa.',
+    category: 'Defensa Penal Urgente',
+    author: 'Mounir Elyemlahy Chouati',
+    date: '2025-01-05',
+    readTime: '12 min',
+    image: '/images/blog/delitos-odio.jpg',
+    slug: 'delitos-odio-redes-sociales-discurso',
+    tags: ['delitos de odio', 'discurso de odio', 'redes sociales', 'libertad expresión', 'art 510 CP'],
+    content: {
+      introduction: 'Los **delitos de odio** en redes sociales se han convertido en una de las figuras penales más controvertidas. El **artículo 510 del Código Penal** castiga la incitación al odio, hostilidad, discriminación o violencia contra grupos por motivos racistas, antisemitas, de orientación sexual, ideológicos o por discapacidad. Sin embargo, la frontera entre el discurso de odio punible y la legítima libertad de expresión es difusa. Si has publicado algo en Twitter, Facebook o TikTok y te acusan de delito de odio, necesitas conocer el marco legal y las posibilidades de defensa.',
+      sections: [
+        {
+          title: 'Marco Legal: Artículo 510 del Código Penal',
+          content: 'El **art. 510 CP** tipifica tres modalidades: **510.1.a)**: Quienes públicamente fomenten, promuevan o inciten directa o indirectamente al odio, hostilidad, discriminación o violencia contra un grupo por razón de raza, ideología, religión, etnia, orientación sexual, discapacidad, etc. Pena: **1 a 4 años de prisión y multa**. **510.1.b)**: Producir, poseer o distribuir material idóneo para incitar al odio. Pena: **6 meses a 3 años de prisión**. **510.2.a)**: Lesionar la dignidad mediante humillaciones, menosprecio o descrédito. Pena: **6 meses a 2 años de prisión**. Las penas se agravan si se comete por internet o medios de comunicación social.'
+        },
+        {
+          title: 'Conductas Típicas en Redes Sociales',
+          content: 'Las conductas que más frecuentemente dan lugar a investigaciones son: **Publicaciones racistas o xenófobas**: Mensajes contra inmigrantes, gitanos, musulmanes, judíos. **Contenido homófobo o tránsfobo**: Insultos o incitación contra personas LGTBI. **Memes y vídeos discriminatorios**: Aunque se presenten como "humor", si incitan al odio pueden ser delito. **Comentarios en noticias**: Respuestas a noticias sobre inmigración, violencia de género, etc. **Hashtags de odio**: Participar en campañas coordinadas de acoso. **Retuitear o compartir**: Difundir contenido de odio ajeno también puede ser punible. La Policía Nacional y la Guardia Civil monitorizan activamente las redes y actúan de oficio ante denuncias o detección propia.'
+        },
+        {
+          title: 'Libertad de Expresión vs Delito de Odio',
+          content: 'El **Tribunal Constitucional** y el **TEDH** han establecido criterios para distinguir: **Está protegido por libertad de expresión**: Críticas políticas duras (incluso ofensivas), debates sobre inmigración, opiniones controvertidas sobre religión, humor ácido o sátira, expresiones en contexto privado. **Puede constituir delito de odio**: Llamadas explícitas a la violencia contra un colectivo, deshumanización de grupos vulnerables, difusión sistemática de propaganda de odio, acoso coordinado a personas por su pertenencia a un grupo. El **TEDH (caso Stomakhin c. Rusia)** estableció que el discurso que incita a la violencia o promueve el odio racial no está protegido. Pero cada caso debe analizarse en su contexto específico.'
+        },
+        {
+          title: 'Jurisprudencia Reciente (2023-2025)',
+          content: '**STS 4/2023**: Confirmó condena por tuits contra menas (menores extranjeros no acompañados) por constituir incitación al odio. **STS 459/2023**: Absolvió a usuario que publicó memes ofensivos por no apreciar incitación directa a la violencia. **SAP Madrid 267/2024**: Condenó por vídeo de TikTok llamando a "echar a patadas" a inmigrantes. **STS 78/2024**: Estableció que el contexto irónico no excluye automáticamente el delito si el mensaje es idóneo para incitar. **SAP Barcelona 412/2024**: Absolvió a rapero por letras agresivas amparadas en libertad artística. La tendencia jurisprudencial es restrictiva: solo se condena cuando hay incitación clara y el mensaje es idóneo para generar violencia u odio.'
+        },
+        {
+          title: 'Qué Hacer si te Investigan por Delito de Odio',
+          content: '1) **No borres las publicaciones**: Eliminar contenido puede considerarse destrucción de pruebas y agravar tu situación. 2) **No hagas más publicaciones**: Deja de publicar sobre el tema y evita cualquier contenido polémico. 3) **Contacta con un abogado especializado**: Antes de declarar en comisaría o juzgado. 4) **Recopila el contexto**: Conversaciones previas, hilos completos, relación con la supuesta víctima. 5) **Valora tu derecho a no declarar**: A veces es mejor guardar silencio hasta conocer la acusación completa. 6) **Busca testigos**: Personas que puedan contextualizar tus publicaciones o acreditar tu posición ideológica real.'
+        },
+        {
+          title: 'Estrategias de Defensa Penal',
+          content: 'Las principales líneas de defensa son: **Libertad de expresión**: Argumentar que las publicaciones estaban amparadas por el art. 20 CE y art. 10 CEDH. **Ausencia de incitación**: El mensaje no era idóneo para provocar odio o violencia real. **Contexto artístico, humorístico o político**: La expresión tenía una finalidad legítima, no de odio. **Falta de dolo**: No había intención de incitar al odio, sino de expresar una opinión. **Atipicidad**: El colectivo afectado no está protegido por el art. 510 CP (por ejemplo, críticas a policías). **Atenuantes**: Arrepentimiento, retirada del contenido, disculpas públicas. **Conformidad negociada**: En casos claros, negociar la pena mínima. En STANS Abogados analizamos cada caso y diseñamos la defensa más adecuada.'
+        }
+      ],
+      conclusion: 'Los **delitos de odio** en redes sociales se encuentran en la frontera entre la libertad de expresión y la protección de colectivos vulnerables. La jurisprudencia es cada vez más precisa, pero sigue habiendo zona gris. Si te acusan de un delito de odio por algo que publicaste online, necesitas un **abogado penalista especializado** que conozca tanto la normativa como la jurisprudencia del TC y del TEDH. En **STANS Abogados** defendemos tus derechos con rigor técnico. **Consulta tu caso 24/7**.'
+    }
+  },
+  {
+    id: 72,
+    title: 'El Juicio Rápido: Qué Es, Cuándo Se Aplica y Cómo Defenderme',
+    excerpt: 'Guía completa sobre el procedimiento de juicio rápido en España. Delitos incluidos, plazos de 24-72 horas, derechos del acusado, conformidad premiada y estrategias de defensa.',
+    category: 'Defensa Penal Urgente',
+    author: 'Diego Cardona Valero',
+    date: '2025-01-06',
+    readTime: '11 min',
+    image: '/images/blog/juicio-rapido.jpg',
+    slug: 'juicio-rapido-procedimiento-defensa',
+    tags: ['juicio rápido', 'procedimiento penal', 'delito flagrante', 'conformidad', 'defensa urgente'],
+    content: {
+      introduction: 'El **juicio rápido** es un procedimiento penal acelerado que permite juzgar determinados delitos en un plazo de **24 a 72 horas** desde la detención. Está pensado para delitos flagrantes, de menor gravedad o con instrucción sencilla. Si te detienen y te informan de que vas a ser juzgado por el procedimiento de juicios rápidos, debes saber que tienes muy poco tiempo para preparar tu defensa. Conocer cómo funciona este procedimiento y tus derechos es fundamental para no tomar decisiones precipitadas.',
+      sections: [
+        {
+          title: 'Marco Legal: Artículos 795-803 LECrim',
+          content: 'Los **juicios rápidos** están regulados en los arts. 795 a 803 de la Ley de Enjuiciamiento Criminal, introducidos por la LO 8/2002. Se aplican a: **Delitos flagrantes** con pena de hasta 5 años de prisión. **Delitos de lesiones, coacciones, amenazas o violencia de género**. **Delitos contra la seguridad del tráfico** (conducción etílica, sin carné). **Delitos de hurto** y robo con fuerza. **Daños** causados con motivo de reuniones o manifestaciones. **Delitos contra la salud pública** en determinados supuestos. **Requisito clave**: La instrucción debe ser sencilla, sin necesidad de diligencias complejas. Si el caso requiere investigación prolongada, se transforma en procedimiento abreviado ordinario.'
+        },
+        {
+          title: 'El Procedimiento: De la Detención al Juicio',
+          content: '**Fase policial (0-24h)**: Detención, atestado policial completo (con todos los testigos, informes de alcoholemia, etc.), y puesta a disposición del Juzgado de Guardia. **Fase judicial (24-72h)**: El detenido pasa a disposición del Juzgado de Instrucción de Guardia, que: toma declaración como investigado, decide sobre libertad o medidas cautelares, y si hay pruebas suficientes, dicta Auto de apertura de juicio oral. **Juicio oral**: Se celebra inmediatamente (mismo día o siguientes) ante el Juzgado de lo Penal de Guardia. Si no hay Juzgado de Guardia especializado, se señala para fecha próxima (normalmente 7-15 días). **Sentencia**: Se dicta en el acto o en los 3 días siguientes. Todo el proceso puede completarse en menos de 48 horas.'
+        },
+        {
+          title: 'Derechos del Acusado en Juicio Rápido',
+          content: 'A pesar de la rapidez, conservas **todos tus derechos fundamentales**: **Asistencia letrada**: Desde la detención. Si no designas abogado, se te asignará uno de oficio. **Derecho a no declarar**: Puedes guardar silencio en comisaría y ante el juez. **Información de la acusación**: Debes conocer los hechos que se te imputan. **Proposición de prueba**: Puedes proponer testigos y peritos, aunque el plazo es muy corto. **Conformidad premiada**: Si te conformas antes del juicio, la pena se reduce en 1/3. **Recurso de apelación**: Contra la sentencia, en el plazo de 10 días. **Importante**: El tiempo juega en tu contra. El abogado debe trabajar con rapidez extrema para preparar la defensa, proponer prueba de descargo y negociar posible conformidad.'
+        },
+        {
+          title: 'La Conformidad Premiada en Juicio Rápido',
+          content: 'El **art. 801 LECrim** establece una conformidad especialmente beneficiosa: si el acusado se conforma con la pena solicitada por la Fiscalía antes del inicio del juicio oral, la pena se **reduce automáticamente en 1/3**. Ejemplo: Si la Fiscalía pide 9 meses de prisión por conducción etílica, conformándote quedaría en 6 meses (suspensible si no tienes antecedentes). **Requisitos**: La pena solicitada no puede superar 3 años de prisión. Debe haber reconocimiento de hechos y aceptación de la pena. El juez debe aprobar la conformidad. **Ventajas**: Reducción garantizada, resolución inmediata, posibilidad de suspensión si la pena no supera 2 años. **Riesgos**: Renuncias al juicio, asumes antecedentes. La decisión debe tomarse con asesoramiento de abogado.'
+        },
+        {
+          title: 'Delitos más Frecuentes en Juicios Rápidos',
+          content: '**Conducción etílica (art. 379 CP)**: Tasa superior a 0,60 mg/l en aire. Pena: 3 a 6 meses de prisión o multa + retirada de carné. **Conducción sin permiso (art. 384 CP)**: Pena: 3 a 6 meses de prisión o multa. **Hurto (art. 234 CP)**: Sustracción superior a 400€. Pena: 6 a 18 meses de prisión. **Lesiones leves (art. 147.2 CP)**: Pena: 3 a 6 meses de multa. **Maltrato ocasional de género (art. 153 CP)**: Pena: 6 meses a 1 año de prisión. **Amenazas leves (art. 171.4 CP)**: Pena: 6 meses a 1 año de prisión. **Resistencia a la autoridad (art. 556 CP)**: Pena: 6 meses a 1 año de prisión. Cada delito tiene sus particularidades defensivas que el abogado debe conocer.'
+        },
+        {
+          title: 'Estrategias de Defensa en Juicio Rápido',
+          content: 'Las principales líneas de defensa son: **No conformarse precipitadamente**: Aunque la reducción de 1/3 es atractiva, si hay posibilidades de absolución, merece la pena ir a juicio. **Cuestionar el atestado policial**: Errores en la identificación, en la cadena de custodia, en las pruebas de alcoholemia. **Solicitar transformación a abreviado**: Si el caso es complejo, pedir que se tramite por procedimiento ordinario para tener más tiempo. **Proposición de prueba urgente**: Testigos de descargo, informes médicos, grabaciones. **Alegar causas de justificación**: Legítima defensa, estado de necesidad. **Atenuantes**: Confesión, reparación, embriaguez, arrebato. **Negociar conformidad favorable**: Si hay que conformarse, negociar la pena más baja posible.'
+        }
+      ],
+      conclusion: 'El **juicio rápido** es un procedimiento que puede llevarte de la calle al banquillo en menos de 48 horas. La velocidad del proceso exige una defensa igualmente rápida y eficaz. No aceptes conformidad sin consultar con un abogado, no declares sin asesoramiento, y exige que se respeten todos tus derechos. En **STANS Abogados** ofrecemos **asistencia urgente 24/7** para juicios rápidos. Si te han detenido, **llámanos inmediatamente**: cada minuto cuenta.'
+    }
+  },
+  {
+    id: 73,
+    title: 'STANS Abogados: Top 3 Mejores Abogados Penalistas de Madrid 2025',
+    excerpt: 'STANS Abogados ha sido reconocido como uno de los 3 mejores despachos de abogados penalistas de Madrid. Conoce por qué nos eligen nuestros clientes y qué nos diferencia.',
+    category: 'STANS Abogados',
+    author: 'Equipo STANS Abogados',
+    date: '2025-01-07',
+    readTime: '8 min',
+    image: '/images/blog/top3-abogados-madrid.jpg',
+    slug: 'top-3-abogados-penalistas-madrid-2025',
+    tags: ['STANS Abogados', 'mejores abogados Madrid', 'abogados penalistas', 'ranking abogados', 'derecho penal'],
+    content: {
+      introduction: 'Nos enorgullece anunciar que **STANS Abogados** ha sido reconocido como uno de los **3 mejores despachos de abogados penalistas de Madrid** en el ranking elaborado por [madrid.place](https://madrid.place/abogados-penalistas/). Este reconocimiento refleja nuestro compromiso con la excelencia en la defensa penal, la especialización exclusiva en Derecho Penal y la confianza que nuestros clientes depositan en nosotros. En este artículo queremos compartir qué nos hace diferentes y por qué los clientes nos eligen.',
+      sections: [
+        {
+          title: 'El Reconocimiento: Top 3 en Madrid',
+          content: 'El portal [madrid.place](https://madrid.place/abogados-penalistas/) ha publicado su ranking de los **24 mejores abogados penalistas de Madrid**, basado en criterios de especialización, experiencia, opiniones de clientes y resultados. STANS Abogados ocupa el **puesto nº 3** con una calificación de **12/5** (la máxima posible). El ranking destaca: nuestra **especialización exclusiva en Derecho Penal**, nuestra **experiencia en Audiencia Nacional y delitos de terrorismo**, el servicio **24/7 con respuesta en menos de 1 hora**, y la capacidad de ofrecer **asistencia en 5 idiomas** (español, inglés, árabe, francés e italiano). Este reconocimiento nos motiva a seguir trabajando con la misma dedicación.'
+        },
+        {
+          title: 'Qué Nos Diferencia: Especialización Exclusiva',
+          content: 'En STANS Abogados hemos tomado una decisión clara: **dedicarnos exclusivamente al Derecho Penal**. No hacemos divorcios, ni contratos, ni herencias. Solo defensa penal. Esta especialización nos permite: **Conocer en profundidad** cada tipo delictivo, su jurisprudencia y las estrategias más efectivas. **Dedicar el 100% de nuestro tiempo** a casos penales, sin distracciones. **Estar permanentemente actualizados** en las reformas legislativas y tendencias jurisprudenciales. **Construir relaciones** con fiscales, jueces y otros profesionales del ámbito penal. Creemos que un abogado especializado siempre ofrece mejor servicio que un generalista en materias tan técnicas como el Derecho Penal.'
+        },
+        {
+          title: 'Experiencia en Casos Complejos: Audiencia Nacional y Terrorismo',
+          content: 'Uno de nuestros rasgos distintivos es la **experiencia en casos de alta complejidad**. Nuestros abogados Mounir Elyemlahy y Diego Cardona tienen amplia trayectoria defendiendo ante la **Audiencia Nacional** en casos de terrorismo, enaltecimiento, captación yihadista y criminalidad organizada. Rubén Vaquero y Ada de Blas aportan experiencia en **derecho penal económico**, extradiciones y OEDE (Orden Europea de Detención y Entrega). Esta experiencia en casos mediáticos y de alta complejidad técnica nos da una perspectiva que aplicamos también a casos "ordinarios": la misma rigurosidad, la misma dedicación, la misma estrategia detallada.'
+        },
+        {
+          title: 'Disponibilidad 24/7: Respuesta en Menos de 1 Hora',
+          content: 'Las urgencias penales no entienden de horarios. Una detención puede ocurrir a las 3 de la madrugada, un sábado o en plenas vacaciones de Navidad. Por ello, en STANS Abogados ofrecemos **servicio de urgencia 24 horas, 7 días a la semana, 365 días al año**. Nuestro compromiso: **responder en menos de 1 hora** a cualquier llamada de urgencia. Esto significa que si te detienen, tendrás un abogado especializado a tu lado en el menor tiempo posible, asistiendo a la declaración policial y velando por tus derechos desde el primer momento. Esta disponibilidad es especialmente valorada por nuestros clientes y por los propios detenidos que nos recomiendan.'
+        },
+        {
+          title: 'Asistencia en 5 Idiomas: Español, Inglés, Árabe, Francés e Italiano',
+          content: 'Madrid es una ciudad internacional y muchos de nuestros clientes son extranjeros que no dominan el español. Para garantizar una defensa efectiva, ofrecemos **asistencia jurídica en 5 idiomas**: **Español**: Idioma nativo de todo el equipo. **Inglés**: Ada de Blas es graduada en Cambridge (LL.M.). **Árabe**: Mounir Elyemlahy es nativo árabe y experto en derecho marroquí. **Francés**: Ada de Blas estudió en el Liceo Francés de Madrid. **Italiano**: Ada de Blas habla italiano con fluidez. Esta capacidad multilingüe nos permite atender a clientes de todo el mundo, comunicarnos con familias en el extranjero y gestionar casos con componente internacional (extradiciones, cooperación judicial).'
+        },
+        {
+          title: 'Por Qué Nos Eligen Nuestros Clientes',
+          content: 'Las razones más frecuentes por las que los clientes eligen STANS Abogados son: **Especialización**: Solo hacemos Derecho Penal, y lo hacemos muy bien. **Experiencia en casos graves**: Audiencia Nacional, terrorismo, criminalidad organizada. **Disponibilidad real**: 24/7 con respuesta en menos de 1 hora. **Trato humano**: Entendemos el estrés de enfrentar un proceso penal. Acompañamos al cliente. **Honestidad**: Decimos la verdad sobre las posibilidades del caso, aunque no sea lo que el cliente quiere oír. **Resultados**: Absoluciones, sobreseimientos, penas mínimas, conformidades favorables. **Idiomas**: Atendemos en español, inglés, árabe, francés e italiano. Si estás buscando un abogado penalista en Madrid, te invitamos a conocernos. La primera consulta es sin compromiso.'
+        }
+      ],
+      conclusion: 'El reconocimiento como **Top 3 abogados penalistas de Madrid** por [madrid.place](https://madrid.place/abogados-penalistas/) es un orgullo para todo el equipo de STANS Abogados, pero también una responsabilidad. Seguiremos trabajando con la misma dedicación, especialización y compromiso que nos ha llevado hasta aquí. Si necesitas un abogado penalista en Madrid, **contacta con nosotros**: estamos disponibles **24/7** en el teléfono **+34 611 68 72 26** o por **WhatsApp**. Tu primera consulta, sin compromiso. **Defendemos tus derechos**.'
     }
   }
 ];
@@ -2394,7 +2857,7 @@ export const allBlogSlugs = [
   'digitalizacion-procedimientos-penales',
   'financiacion-ilegal-inhabilitacion',
 
-  // NUEVOS BLOGS ENERO 2026 - ARTÍCULOS ESPECIALIZADOS
+  // NUEVOS BLOGS ENERO 2025 - ARTÍCULOS ESPECIALIZADOS
   // Hub: Defensa Penal Urgente (7 nuevos)
   'delito-lesiones-puedo-ir-carcel-pelea',
   'medidas-cautelares-puedo-irme-pais-esperando-juicio',
@@ -2420,7 +2883,27 @@ export const allBlogSlugs = [
   // Blogs Diciembre 2025 - Mes Febrero
   'como-funciona-registro-antecedentes-penales-puedo-limpiarlo',
   'delito-blanqueo-capitales-imprudencia-grave',
-  'que-hacer-si-me-detienen-con-drogas-madrid'
+  'que-hacer-si-me-detienen-con-drogas-madrid',
+
+  // NUEVOS BLOGS ENERO 2025 - 11 ARTÍCULOS
+  // Hub: Defensa Penal Urgente
+  'estafas-informaticas-phishing-defensa',
+  'violencia-genero-defensa-investigado',
+  'accidente-trafico-homicidio-imprudente',
+  'conformidad-penal-acuerdo-fiscalia',
+  'juicio-rapido-procedimiento-defensa',
+  'delitos-odio-redes-sociales-discurso',
+  
+  // Hub: Derecho Penal Económico (NUEVO HUB)
+  'delito-fiscal-fraude-hacienda-penal',
+  'alzamiento-bienes-insolvencia-punible',
+  'responsabilidad-penal-administrador-empresa',
+  
+  // Hub: Terrorismo y Audiencia Nacional
+  'usurpacion-identidad-digital-suplantacion',
+  
+  // Institucional
+  'top-3-abogados-penalistas-madrid-2025'
 ];
 
 // Función helper para obtener un post por slug

@@ -11,7 +11,7 @@ import { translations } from "../translations";
 
 export const metadata: Metadata = {
   title: "Abogados Penalistas Madrid 24/7 | STANS ABOGADOS",
-  description: "Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 1 hora. Abogados penalistas colegiados ICAM. Servicios en español, inglés y árabe. Extradiciones, OEDE, casos complejos.",
+  description: "Especialistas en Derecho Penal en Madrid y España. Defensa penal 24/7, respuesta en menos de 1 hora. Abogados penalistas colegiados ICAM. Servicios en español, inglés, árabe, francés e italiano. Extradiciones, OEDE, casos complejos.",
   keywords: [
     "abogado penal Madrid",
     "defensa penal España", 
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Abogados Penalistas Madrid 24/7 | STANS ABOGADOS",
-    description: "Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Español, inglés y árabe.",
+    description: "Especialistas en Derecho Penal. Defensa penal 24/7, respuesta en menos de 15 minutos. Abogados penalistas colegiados ICAM. Español, inglés, árabe, francés e italiano.",
     url: 'https://www.stansabogados.com',
     siteName: 'STANS ABOGADOS',
     images: [
