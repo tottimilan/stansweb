@@ -680,8 +680,8 @@ export default function SEOContentSection() {
 
           <ul className="list-disc list-inside text-black/80 space-y-2 mb-6 ml-4">
             <li><strong>Derecho a guardar silencio:</strong> No estás obligado a declarar contra ti mismo</li>
-            <li><strong>Derecho a un abogado:</strong> Puedes elegir tu propio abogado o solicitar uno de oficio</li>
-            <li><strong>Derecho a intérprete:</strong> Si no hablas español, tienes derecho a un intérprete gratuito</li>
+            <li><strong>Derecho a un abogado:</strong> Puedes elegir tu propio abogado</li>
+            <li><strong>Derecho a intérprete:</strong> Si no hablas español, tienes derecho a un intérprete</li>
             <li><strong>Derecho a comunicar la detención:</strong> Puedes avisar a un familiar o persona de tu elección</li>
             <li><strong>Derecho a reconocimiento médico:</strong> Puedes solicitar asistencia médica si lo necesitas</li>
             <li><strong>Derecho a conocer los motivos:</strong> La policía debe informarte de por qué estás detenido</li>
@@ -705,9 +705,9 @@ export default function SEOContentSection() {
             </div>
 
             <div className="bg-charleston/5 p-6 rounded-lg">
-              <p className="font-semibold text-black mb-2 text-base">¿Qué diferencia hay entre un abogado de oficio y un abogado particular?</p>
+              <p className="font-semibold text-black mb-2 text-base">¿Por qué elegir un abogado especializado?</p>
               <p className="text-black/70 text-sm leading-relaxed">
-                El abogado de oficio es asignado por el turno de oficio y es gratuito si no tienes recursos. Un abogado particular te permite elegir un especialista en tu tipo de delito, garantiza dedicación exclusiva a tu caso y mayor disponibilidad. En casos complejos, la especialización marca la diferencia en el resultado.
+                Un abogado particular especializado te permite elegir un profesional experto en tu tipo de delito, garantiza dedicación exclusiva a tu caso y mayor disponibilidad. En casos complejos ante la Audiencia Nacional, extradiciones o delitos económicos, la especialización marca la diferencia en el resultado.
               </p>
             </div>
           </div>

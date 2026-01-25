@@ -84,7 +84,7 @@ export default function ViolenciaGeneroLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita y confidencial",
+              "name": "Primera consulta confidencial",
               "price": "0",
               "priceCurrency": "EUR"
             }

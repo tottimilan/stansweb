@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Drogas Madrid | Orden Público Defensa | STANS',
-  description: 'Abogados especialistas en delitos contra la salud pública, tráfico de drogas y orden público en Madrid. Defensa 24/7. Ejecución penal. Primera consulta gratuita.',
+  description: 'Abogados especialistas en delitos contra la salud pública, tráfico de drogas y orden público en Madrid. Defensa 24/7. Ejecución penal.',
   keywords: 'abogado drogas madrid, defensa tráfico estupefacientes, abogado salud pública, resistencia autoridad defensa, atentado agentes abogado, ejecución penal madrid, tercer grado abogado',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/orden-publico-drogas',
@@ -84,7 +84,7 @@ export default function OrdenPublicoDrogasLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita",
+              "name": "Consulta especializada",
               "price": "0",
               "priceCurrency": "EUR"
             }

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Terrorismo Audiencia Nacional Madrid | STANS ABOGADOS',
-  description: 'Abogados especialistas en terrorismo ante la Audiencia Nacional. Defensa en enaltecimiento, captación yihadista y financiación. Disponibles 24/7. Primera consulta gratuita.',
+  description: 'Abogados especialistas en terrorismo ante la Audiencia Nacional. Defensa en enaltecimiento, captación yihadista y financiación. Disponibles 24/7.',
   keywords: 'abogado terrorismo audiencia nacional, defensa enaltecimiento terrorismo, abogado penal terrorismo madrid, captación yihadista abogado, financiación terrorismo defensa, abogado audiencia nacional, terrorismo redes sociales',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/terrorismo-audiencia-nacional',
@@ -83,7 +83,7 @@ export default function TerrorismoAudienciaNacionalLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita",
+              "name": "Consulta especializada",
               "price": "0",
               "priceCurrency": "EUR"
             }

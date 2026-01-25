@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Delitos de Odio Madrid | Libertad de Expresión | STANS',
-  description: 'Abogados especialistas en delitos de odio, libertad de expresión, injurias y calumnias en Madrid. Defensa 24/7. Primera consulta gratuita. Experiencia en Audiencia Nacional.',
+  description: 'Abogados especialistas en delitos de odio, libertad de expresión, injurias y calumnias en Madrid. Defensa 24/7. Experiencia en Audiencia Nacional.',
   keywords: 'abogado delitos odio madrid, defensa libertad expresión, injurias calumnias abogado, delitos odio españa, abogado sentimientos religiosos, defensa redes sociales, abogado penal expresión',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/libertad-expresion',
@@ -83,7 +83,7 @@ export default function LibertadExpresionLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita",
+              "name": "Consulta especializada",
               "price": "0",
               "priceCurrency": "EUR"
             }

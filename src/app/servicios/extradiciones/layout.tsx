@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Extradición España | OEDE Defensa | STANS',
-  description: 'Abogados especialistas en extradiciones y OEDE. Defensa contra órdenes europeas de detención y extradición internacional. Disponibles 24/7. Primera consulta gratuita.',
+  description: 'Abogados especialistas en extradiciones y OEDE. Defensa contra órdenes europeas de detención y extradición internacional. Disponibles 24/7.',
   keywords: 'abogado extradición españa, defensa OEDE, abogado extradición internacional, orden europea detención, extradición marruecos españa, abogado audiencia nacional extradición, euroorden defensa',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/extradiciones',
@@ -94,7 +94,7 @@ export default function ExtradicionesLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita",
+              "name": "Consulta especializada",
               "price": "0",
               "priceCurrency": "EUR"
             }

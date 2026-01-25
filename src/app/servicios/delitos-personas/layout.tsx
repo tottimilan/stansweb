@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Delitos contra las Personas Madrid | STANS ABOGADOS',
-  description: 'Abogados especialistas en delitos contra las personas: homicidio, lesiones, amenazas, violencia de género. Defensa penal 24/7 en Madrid. Primera consulta gratuita.',
+  description: 'Abogados especialistas en delitos contra las personas: homicidio, lesiones, amenazas, violencia de género. Defensa penal 24/7 en Madrid.',
   keywords: 'abogado violencia madrid, defensa penal lesiones, abogado homicidio, amenazas coacciones abogado, violencia género madrid, detención ilegal defensa, abogado penal personas',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/delitos-personas',
@@ -84,7 +84,7 @@ export default function DelitosPersonasLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita",
+              "name": "Consulta especializada",
               "price": "0",
               "priceCurrency": "EUR"
             }

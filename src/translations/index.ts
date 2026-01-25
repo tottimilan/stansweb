@@ -16,7 +16,7 @@ export const translations = {
       subtitle: 'ABOGADOS PENALISTAS',
       description: 'Defensa penal especializada en Madrid y toda España',
       location: 'Madrid, España',
-      cta: 'Consulta Gratuita',
+      cta: 'Contactar Ahora',
       especialistas: 'Especialistas en Defensa Penal',
       defensa24h: 'Defensa Penal 24/7\nMadrid y España',
       descripcionCompleta: 'Especialistas en Derecho Penal. Español-Inglés-Árabe-Francés-Italiano. Respondemos en menos de 15 minutos.',
@@ -94,7 +94,7 @@ export const translations = {
       disponibilidad247: 'Disponibilidad 24/7',
       disponibilidadDescripcion: 'Atención inmediata en urgencias penales. Respuesta en menos de 1 hora para situaciones críticas.',
       necesitasAsesoramiento: '¿Necesitas asesoramiento legal urgente?',
-      contactaEquipo: 'Contacta con nuestro equipo de abogados penalistas. Primera consulta gratuita.',
+      contactaEquipo: 'Contacta con nuestro equipo de abogados penalistas.',
       consultarCaso: 'Consultar mi caso',
       whatsapp247: 'WhatsApp 24/7',
       // Datos de las áreas penales
@@ -546,11 +546,11 @@ export const translations = {
           },
           asistenciaLetrada: {
             titulo: 'Asistencia Letrada',
-            descripcion: 'Derecho a un abogado desde el primer momento. Puede ser de oficio o de tu elección.',
+            descripcion: 'Derecho a un abogado desde el primer momento.',
             items: [
               'Asistencia inmediata 24/7',
-              'Abogado de oficio gratuito',
-              'Derecho a elegir abogado privado',
+              'Derecho a elegir tu abogado',
+              'Derecho a abogado privado',
               'Presencia en todas las diligencias'
             ]
           },
@@ -738,7 +738,7 @@ export const translations = {
           articulos: [
             'Artículo 17 de la Constitución Española: Derecho a la libertad personal',
             'Artículo 24 de la Constitución Española: Derechos y garantías en el proceso penal',
-            'Ley 5/2015 de asistencia jurídica gratuita',
+            'Ley 5/2015 de asistencia jurídica',
             'Ley Orgánica 6/1985 de Fuerza y Seguridad',
             'Ley Orgánica 10/1995 de Código Penal'
           ]
@@ -1579,7 +1579,7 @@ export const translations = {
           },
           {
             titulo: 'Derecho a Abogado',
-            descripcion: 'Puedes solicitar un abogado de oficio gratuito inmediatamente. Tiene derecho a estar presente en todas las diligencias.',
+            descripcion: 'Puedes solicitar un abogado inmediatamente. Tiene derecho a estar presente en todas las diligencias.',
             icono: 'Abogado'
           },
           {
@@ -1610,7 +1610,7 @@ export const translations = {
         pasos: [
           'Mantén la calma y no opongas resistencia física',
           'Identifícate si te lo solicitan, pero no declares nada más',
-          'Solicita inmediatamente un abogado de oficio',
+          'Solicita inmediatamente un abogado',
           'Informa sobre tu detención a un familiar',
           'No firmes ningún documento sin leerlo previamente',
           'Solicita atención médica si la necesitas'
@@ -1633,7 +1633,7 @@ export const translations = {
         descripcion: 'La presencia de un abogado desde el primer momento es fundamental:',
         aspectos: [
           'El abogado debe estar presente en todas las diligencias',
-          'Puedes elegir abogado privado o solicitar de oficio gratuito',
+          'Puedes elegir tu abogado privado',
           'El abogado puede solicitar medidas cautelares alternativas',
           'Tiene derecho a consultar el expediente completo'
         ]

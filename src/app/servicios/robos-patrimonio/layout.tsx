@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Robos y Delitos Patrimoniales Madrid | STANS ABOGADOS',
-  description: 'Abogados especialistas en robos con violencia, hurtos, organización criminal y receptación en Madrid. Defensa penal 24/7. Primera consulta gratuita.',
+  description: 'Abogados especialistas en robos con violencia, hurtos, organización criminal y receptación en Madrid. Defensa penal 24/7.',
   keywords: 'abogado robos madrid, defensa hurtos, abogado robo violencia, organización criminal abogado, receptación defensa, delitos patrimonio madrid, abogado penal robos',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/robos-patrimonio',
@@ -84,7 +84,7 @@ export default function RobosPatrimonioLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita",
+              "name": "Consulta especializada",
               "price": "0",
               "priceCurrency": "EUR"
             }

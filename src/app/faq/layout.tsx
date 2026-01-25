@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Preguntas Frecuentes | STANS ABOGADOS',
   description: 'Respuestas a tus preguntas sobre defensa penal, terrorismo, extradiciones, detenidos y derechos. Más de 25 FAQs de abogados especializados en Madrid. Encuentra tu respuesta ahora.',
-  keywords: 'preguntas frecuentes abogado, FAQ derecho penal, qué hacer si me detienen, abogado terrorismo preguntas, dudas legales Madrid, consulta abogado gratis, preguntas penalista',
+  keywords: 'preguntas frecuentes abogado, FAQ derecho penal, qué hacer si me detienen, abogado terrorismo preguntas, dudas legales Madrid, consulta abogado penal, preguntas penalista',
   openGraph: {
     title: 'Preguntas Frecuentes | STANS ABOGADOS',
     description: 'Más de 25 preguntas frecuentes sobre defensa penal, terrorismo, extradiciones y derechos. Respuestas de abogados especializados.',

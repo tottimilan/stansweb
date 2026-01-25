@@ -408,7 +408,7 @@ export const allFAQs: FAQ[] = [
   {
     id: 'que-es-incomunicacion',
     question: '¿Qué es la incomunicación y cuánto dura?',
-    answer: 'La incomunicación impide al detenido comunicarse con terceros (excepto abogado de oficio). Solo en terrorismo y crimen organizado. Duración: máximo 5 días prorrogables otros 5 (total 10 días). Durante incomunicación: no eliges abogado, no avisas a familia, no te reconoce médico de tu elección. El TC limita su uso: debe ser proporcional y excepcional.',
+    answer: 'La incomunicación impide al detenido comunicarse con terceros (excepto su abogado). Solo en terrorismo y crimen organizado. Duración: máximo 5 días prorrogables otros 5 (total 10 días). Durante incomunicación: no eliges abogado, no avisas a familia, no te reconoce médico de tu elección. El TC limita su uso: debe ser proporcional y excepcional.',
     category: 'Terrorismo',
     blogSlug: 'derechos-fundamentales-procedimientos-terrorismo',
     keywords: ['incomunicación', 'qué es incomunicación', 'cuánto dura incomunicación']
@@ -416,10 +416,10 @@ export const allFAQs: FAQ[] = [
   {
     id: 'elegir-abogado-incomunicado',
     question: '¿Puedo elegir a mi abogado si estoy incomunicado?',
-    answer: 'NO durante la incomunicación. Durante ese periodo (máximo 5+5 días) solo puedes tener abogado de oficio designado por el turno. Una vez levantada la incomunicación, puedes elegir abogado de confianza. La incomunicación es medida excepcional que requiere autorización judicial motivada.',
+    answer: 'NO durante la incomunicación. Durante ese periodo (máximo 5+5 días) solo puedes tener el abogado designado por el turno. Una vez levantada la incomunicación, puedes elegir abogado de confianza. La incomunicación es medida excepcional que requiere autorización judicial motivada.',
     category: 'Terrorismo',
     blogSlug: 'derechos-fundamentales-procedimientos-terrorismo',
-    keywords: ['elegir abogado incomunicación', 'abogado de oficio']
+    keywords: ['elegir abogado incomunicación', 'abogado turno']
   },
   {
     id: 'secreto-sumario-terrorismo',
@@ -440,7 +440,7 @@ export const allFAQs: FAQ[] = [
   {
     id: 'interprete-idioma',
     question: '¿Tengo derecho a intérprete en mi idioma si me acusan de terrorismo?',
-    answer: 'SÍ, es un derecho fundamental. Si no hablas español, tienes derecho a intérprete gratuito en todas las fases: detención, declaraciones, juicio, lectura de sentencia. El intérprete debe ser oficial y jurado. En STANS ABOGADOS ofrecemos atención en 5 idiomas: español, inglés, árabe, francés e italiano.',
+    answer: 'SÍ, es un derecho fundamental. Si no hablas español, tienes derecho a intérprete en todas las fases: detención, declaraciones, juicio, lectura de sentencia. El intérprete debe ser oficial y jurado. En STANS ABOGADOS ofrecemos atención en 5 idiomas: español, inglés, árabe, francés e italiano.',
     category: 'Terrorismo',
     blogSlug: 'derechos-fundamentales-procedimientos-terrorismo',
     lawyerSlug: 'mounir-elyemlahy-chouati',
@@ -645,22 +645,6 @@ export const allFAQs: FAQ[] = [
     keywords: ['cuánto tiempo detenido', 'máximo 72 horas']
   },
   {
-    id: 'abogado-oficio-confianza',
-    question: '¿Es mejor abogado de oficio o de confianza?',
-    answer: 'Ambos son abogados colegiados con la misma formación. Diferencias: OFICIO (gratuito, asignado por turno, conoce el juzgado). CONFIANZA (eliges quién, especialización específica, seguimiento personalizado, disponibilidad 24/7). En casos complejos (terrorismo, Audiencia Nacional), abogado especializado de confianza es recomendable. STANS ofrece primera consulta.',
-    category: 'Defensa Urgente',
-    blogSlug: 'defensa-penal-urgente-guia-completa',
-    keywords: ['abogado oficio vs confianza', 'mejor abogado oficio']
-  },
-  {
-    id: 'asistencia-letrada-gratuita',
-    question: '¿La asistencia letrada de urgencia es gratuita?',
-    answer: 'Sí, la asistencia letrada en comisaría es SIEMPRE gratuita, independientemente de tus ingresos. Es un derecho constitucional (art. 17.3 CE). El abogado de oficio en detención no cobra al detenido. Si luego quieres abogado de confianza para el procedimiento, puedes cambiar. La primera asistencia es gratis para todos.',
-    category: 'Defensa Urgente',
-    blogSlug: 'asistencia-letrada-urgencia',
-    keywords: ['asistencia letrada gratuita', 'abogado gratis detención']
-  },
-  {
     id: 'firmar-declaracion',
     question: '¿Debo firmar mi declaración en comisaría?',
     answer: 'SOLO si estás de acuerdo con lo escrito y tu abogado lo recomienda. Antes de firmar: 1) Lee TODO detenidamente, 2) Asegúrate de que refleja exactamente lo dicho, 3) Consulta con tu abogado, 4) Si hay errores, corrígelos ANTES de firmar, 5) Puedes negarte a firmar si no estás conforme. Nunca firmes sin leer.',
@@ -752,14 +736,6 @@ export const allFAQs: FAQ[] = [
     keywords: ['diferencia habeas amparo', 'habeas vs amparo']
   },
   {
-    id: 'justicia-gratuita-terrorismo',
-    question: '¿Tengo derecho a justicia gratuita en casos de terrorismo?',
-    answer: 'SÍ, si cumples requisitos económicos (ingresos familiares por debajo de 2 veces IPREM). Cubre: abogado, procurador, peritos, tasas judiciales. Se solicita mediante formulario al Colegio de Abogados. En casos de terrorismo, dado lo complejo, muchos optan por abogado de confianza especializado aunque no tengan justicia gratuita.',
-    category: 'Derechos Fundamentales',
-    blogSlug: 'defensa-penal-terrorismo-audiencia-nacional',
-    keywords: ['justicia gratuita terrorismo', 'abogado gratis']
-  },
-  {
     id: 'vulneracion-derechos-que-hacer',
     question: '¿Qué hacer si vulneran mis derechos durante el procedimiento?',
     answer: 'Acciones inmediatas: 1) Documentar la vulneración (testigos, grabaciones si es legal), 2) Informar a tu abogado INMEDIATAMENTE, 3) Presentar queja formal ante el juez, 4) Solicitar nulidad de actuaciones, 5) Recurrir decisiones judiciales, 6) Si procede, recurso de amparo o TEDH. Las vulneraciones probadas pueden anular pruebas o llevar a absolución.',
@@ -834,7 +810,7 @@ export const allFAQs: FAQ[] = [
   {
     id: 'coste-abogado-terrorismo',
     question: '¿Cuánto cuesta un abogado para caso de terrorismo?',
-    answer: 'Los honorarios varían según complejidad. Factores: fase del procedimiento (instrucción, juicio oral, recursos), duración estimada (casos de terrorismo pueden durar 2-5 años), número de sesiones, complejidad técnica. En STANS ABOGADOS ofrecemos primera consulta para valorar tu caso y presupuesto transparente. Disponible justicia gratuita si cumples requisitos económicos. Contacta 24/7.',
+    answer: 'Los honorarios varían según complejidad. Factores: fase del procedimiento (instrucción, juicio oral, recursos), duración estimada (casos de terrorismo pueden durar 2-5 años), número de sesiones, complejidad técnica. En STANS ABOGADOS ofrecemos primera consulta para valorar tu caso y presupuesto transparente. Contacta 24/7.',
     category: 'Terrorismo',
     blogSlug: 'defensa-penal-terrorismo-audiencia-nacional',
     keywords: ['cuánto cuesta abogado terrorismo', 'precio abogado audiencia nacional']
@@ -842,7 +818,7 @@ export const allFAQs: FAQ[] = [
   {
     id: 'coste-primera-consulta',
     question: '¿Cuánto cuesta la primera consulta?',
-    answer: 'Ofrecemos primera consulta para valorar tu caso y explicarte opciones. El coste varía según complejidad. Contacta al +34 611 68 72 26 o WhatsApp 24/7 para discutir tu situación específica y presupuesto personalizado. En casos con justicia gratuita, todo el procedimiento es sin coste. Transparencia total en honorarios.',
+    answer: 'Ofrecemos primera consulta para valorar tu caso y explicarte opciones. El coste varía según complejidad. Contacta al +34 611 68 72 26 o WhatsApp 24/7 para discutir tu situación específica y presupuesto personalizado. Transparencia total en honorarios.',
     category: 'Defensa Urgente',
     keywords: ['cuánto cuesta consulta', 'precio primera consulta', 'coste abogado']
   },

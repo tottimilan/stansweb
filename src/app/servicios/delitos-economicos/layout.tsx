@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Delitos Económicos Madrid | Blanqueo Estafa | STANS',
-  description: 'Abogados especialistas en delitos económicos: blanqueo de capitales, estafa, delitos fiscales y societarios. Defensa técnica en Madrid. Primera consulta gratuita.',
+  description: 'Abogados especialistas en delitos económicos: blanqueo de capitales, estafa, delitos fiscales y societarios. Defensa técnica en Madrid.',
   keywords: 'abogado blanqueo capitales, defensa estafa madrid, abogado delitos económicos, delito fiscal abogado, apropiación indebida defensa, falsedad documental madrid, abogado penal económico',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/delitos-economicos',
@@ -84,7 +84,7 @@ export default function DelitosEconomicosLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita",
+              "name": "Consulta especializada",
               "price": "0",
               "priceCurrency": "EUR"
             }

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Abogado Penal Urgente Madrid | Habeas Corpus | STANS',
-  description: 'Abogados penalistas 24/7 en Madrid. Defensa urgente, habeas corpus, recursos penales y medidas cautelares. Respuesta inmediata. Primera consulta gratuita.',
+  description: 'Abogados penalistas 24/7 en Madrid. Defensa urgente, habeas corpus, recursos penales y medidas cautelares. Respuesta inmediata.',
   keywords: 'abogado penal urgente madrid, defensa 24 horas, habeas corpus abogado, recurso apelación penal, medidas cautelares madrid, abogado penalista urgente, defensa detención urgente',
   alternates: {
     canonical: 'https://www.stansabogados.com/servicios/procedimiento-penal',
@@ -99,7 +99,7 @@ export default function ProcedimientoPenalLayout({
             },
             "offers": {
               "@type": "Offer",
-              "name": "Primera consulta gratuita - Respuesta inmediata 24/7",
+              "name": "Consulta - Respuesta inmediata 24/7",
               "price": "0",
               "priceCurrency": "EUR"
             }
