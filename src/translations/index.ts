@@ -72,6 +72,7 @@ export const translations = {
     // LawyerCard Component
     lawyerCard: {
       dragToFlip: 'Arrastra para voltear →',
+      tapToFlip: 'Toca para ver más',
       experience: 'de experiencia',
       viewProfile: 'Ver perfil completo',
       specializations: 'Especializaciones',
@@ -924,6 +925,7 @@ export const translations = {
     // LawyerCard Component
     lawyerCard: {
       dragToFlip: '← اسحب للقلب',
+      tapToFlip: 'اضغط لرؤية المزيد',
       experience: 'من الخبرة',
       viewProfile: 'عرض الملف الكامل',
       specializations: 'التخصصات',
@@ -2513,6 +2515,7 @@ export const translations = {
     // LawyerCard Component
     lawyerCard: {
       dragToFlip: 'Drag to flip →',
+      tapToFlip: 'Tap to see more',
       experience: 'of experience',
       viewProfile: 'View full profile',
       specializations: 'Specializations',
@@ -3188,6 +3191,7 @@ export const translations = {
     // LawyerCard Component
     lawyerCard: {
       dragToFlip: 'Glissez pour retourner →',
+      tapToFlip: 'Appuyez pour en voir plus',
       experience: 'd\'expérience',
       viewProfile: 'Voir le profil complet',
       specializations: 'Spécialisations',

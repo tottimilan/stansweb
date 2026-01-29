@@ -29,6 +29,22 @@ export default function LawyerCard({
   const [isFlipped, setIsFlipped] = useState(false);
   const [autoFlipTimer, setAutoFlipTimer] = useState<NodeJS.Timeout | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  // Detectar si es un dispositivo táctil
+  useEffect(() => {
+    const checkTouchDevice = () => {
+      setIsTouchDevice(
+        'ontouchstart' in window || 
+        navigator.maxTouchPoints > 0 ||
+        window.matchMedia('(pointer: coarse)').matches
+      );
+    };
+    checkTouchDevice();
+    // También escuchar cambios (ej: modo responsive en DevTools)
+    window.addEventListener('resize', checkTouchDevice);
+    return () => window.removeEventListener('resize', checkTouchDevice);
+  }, []);
   
   // Motion values para el drag - memoizado para mejor performance
   const dragX = useMotionValue(0);
@@ -54,6 +70,23 @@ export default function LawyerCard({
       setIsFlipped(false);
       clearAutoFlipTimer();
     }
+  };
+
+  // Handler para click en móvil - voltea la tarjeta
+  const handleMobileClick = (e: React.MouseEvent) => {
+    // Solo en dispositivos táctiles
+    if (!isTouchDevice) return;
+    
+    // Verificar que no sea un click en el nombre (Link) o en el botón de voltear
+    const target = e.target as HTMLElement;
+    const isNameLink = target.closest('a[href*="/equipo/"]');
+    const isFlipButton = target.closest('button');
+    
+    // Si hizo click en el nombre o en el botón de voltear, no hacer nada
+    if (isNameLink || isFlipButton) return;
+    
+    // Voltear la tarjeta
+    handleFlip();
   };
 
   // Funciones para manejar el drag
@@ -141,6 +174,7 @@ export default function LawyerCard({
         <div 
           className="absolute inset-0 rounded-2xl overflow-hidden backface-hidden select-none"
           style={{ backfaceVisibility: 'hidden' }}
+          onClick={handleMobileClick}
         >
           {image ? (
             <div className="relative w-full h-full min-h-[400px] group">
@@ -192,9 +226,9 @@ export default function LawyerCard({
                     <h3 className="text-xl font-semibold group-hover:text-gold transition-all duration-1000 group-hover:scale-105 transform origin-left">{name}</h3>
                   )}
                   <p className="text-white/80 text-sm mt-1 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
-                  <div className="mt-2 text-xs text-white/60 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
-                    <span className="bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full px-3 py-1 text-gold/80 group-hover:text-gold group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300">
-                      {t.lawyerCard.dragToFlip}
+                  <div className={`mt-2 text-xs text-white/60 flex items-center gap-2 transition-all duration-300 ${isTouchDevice ? 'opacity-100' : 'opacity-0 group-hover:opacity-100 group-hover:translate-x-1'}`}>
+                    <span className="bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full px-3 py-1 text-gold/80 group-hover:text-gold group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300 animate-pulse">
+                      {isTouchDevice ? (t.lawyerCard.tapToFlip || 'Toca para ver más') : t.lawyerCard.dragToFlip}
                     </span>
                   </div>
                 </div>
@@ -218,6 +252,7 @@ export default function LawyerCard({
             backfaceVisibility: 'hidden',
             transform: 'rotateY(180deg)'
           }}
+          onClick={handleMobileClick}
         >
           {/* Imagen de fondo con blur */}
           {backgroundImage && (
@@ -275,18 +310,6 @@ export default function LawyerCard({
           
           <p className="mt-2 text-white/80 text-xs leading-snug flex-grow transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-1">{summary}</p>
           
-          {slug && (
-            <div className="mt-3 pt-3 border-t border-gold/20">
-              <Link 
-                href={`/equipo/${slug}`}
-                className="inline-flex items-center gap-2 text-gold hover:text-gold/80 text-xs font-semibold transition-all duration-300 group/link"
-              >
-                <ExternalLink className="h-3 w-3 transition-transform group-hover/link:translate-x-1" />
-                {t.lawyerCard.viewProfile}
-              </Link>
-            </div>
-          )}
-
           {!!tags.length && (
             <div className="mt-3 transition-all duration-1000 group-hover:translate-x-2">
               <div className="flex items-center mb-1.5">
@@ -318,6 +341,21 @@ export default function LawyerCard({
               ))}
             </div>
           </div>
+
+          {/* Botón Ver perfil - al final de la tarjeta */}
+          {slug && (
+            <div className="mt-auto pt-4">
+              <Link 
+                href={`/equipo/${slug}`}
+                className="group/link inline-flex items-center justify-center gap-2 w-full border border-gold/40 hover:border-gold hover:bg-gold/10 text-gold text-xs font-semibold py-2.5 px-4 rounded-lg transition-all duration-300"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <ExternalLink className="h-3.5 w-3.5 transition-transform group-hover/link:scale-110" />
+                {t.lawyerCard.viewProfile}
+                <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover/link:translate-x-1" />
+              </Link>
+            </div>
+          )}
         </div>
         </div>
           </motion.article>

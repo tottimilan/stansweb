@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
+import TopRankingBadge from '@/components/TopRankingBadge';
 import LawyerCard from '@/components/LawyerCard';
 import AreaCard from '@/components/AreaCard';
 import LeadForm from '@/components/LeadForm';
@@ -144,6 +145,9 @@ export default function Page() {
         >
           <Hero whatsapp={WHATSAPP} />
         </section>
+
+        {/* Top 3 Ranking Recognition Badge */}
+        <TopRankingBadge />
 
         {/* Cases Section */}
         <CasesSection />
