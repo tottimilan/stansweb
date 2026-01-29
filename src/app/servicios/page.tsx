@@ -246,7 +246,7 @@ export default function ServiciosPage() {
                       href={service.href}
                       className={`inline-flex items-center gap-2 text-gold hover:text-gold/80 font-medium transition-colors group-hover:gap-3 ${language === 'ar' ? 'flex-row-reverse' : ''}`}
                     >
-                      {language === 'ar' ? 'مزيد من المعلومات' : 'Más información'}
+                      {t.areas.masInformacion}
                       <ArrowRight className={`h-4 w-4 transition-all ${language === 'ar' ? 'rotate-180' : ''}`} />
                     </Link>
                     {service.casosRelacionados.length > 0 && (

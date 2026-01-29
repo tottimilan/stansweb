@@ -166,5 +166,173 @@ export const casesTranslations = {
         resumen: "عملية 'بوب' هي تحقيق شرطي يركز على مجموعة منظمة مشتبه بها متخصصة في تهريب المخدرات. تم اعتقال عدة مشتبه بهم في عام 2025 وبعضهم لا يزالون في السجن الاحتياطي. مكتبنا يتولى الدفاع عن أحدهم، مدعياً أنه لا يمتلك صلة بالمنظمة وأن اعتقاله كان بسبب مجرد علاقة صداقة مع أحد المتورطين. الإجراء في مرحلة أولية ويتم ممارسة التحقيقات."
       }
     }
+  },
+  en: {
+    cases: {
+      1: {
+        nombre: "QUIQUE CASE - FREEDOM OF EXPRESSION DISMISSAL",
+        resumen: "An association filed a complaint against comedian Héctor de Miguel (artistically known as \"Quequé\") for alleged hate speech made on his program Hora Veintipico. The Investigation Court No. 38 of Madrid prosecuted the comedian for an alleged hate crime and offense against religious feelings. Both the defense and the Public Prosecutor appealed the decision, and through Order No. 379/2025 of April 30, 2025, Section 30 of the Madrid Provincial Court upheld both appeals and ordered the full dismissal of the proceedings, considering that the statements were protected by freedom of expression and artistic creation."
+      },
+      2: {
+        nombre: "NORDIN WORKOUT CASE",
+        resumen: "The client, of Moroccan nationality, was arrested by the National Police as part of an anti-terrorism operation. He was accused of jihadist self-indoctrination after several files and videos related to radical Salafism were found on his mobile phone. The Central Investigation Court No. 2 of the National Court initially prosecuted the case. However, after the investigation, the court ordered the full dismissal due to insufficient evidence to maintain the accusation."
+      },
+      3: {
+        nombre: "ALVARO GARCIA CASE",
+        resumen: "The client was arrested by the Civil Guard as part of an operation against arms trafficking. He was charged with storage and trafficking of war weapons, as well as document forgery. After the investigation, the Central Investigation Court No. 6 of the National Court ordered the full dismissal due to insufficient evidence."
+      },
+      4: {
+        nombre: "LA MANCHA CASE",
+        resumen: "The client was arrested by the National Police accused of belonging to a criminal organization dedicated to drug trafficking. He was charged with drug trafficking and membership in a criminal organization. After the investigation, Criminal Court No. 21 of Madrid ordered the dismissal due to lack of evidence."
+      },
+      5: {
+        nombre: "JORGE SANCHEZ CASE",
+        resumen: "The client was arrested by the National Police accused of drug trafficking and illegal possession of weapons. After the investigation, Criminal Court No. 25 of Madrid ordered the acquittal due to insufficient evidence."
+      },
+      6: {
+        nombre: "MARIA JESUS CASE",
+        resumen: "The client was arrested by the Civil Guard accused of drug trafficking. After the investigation, Criminal Court No. 3 of Madrid ordered the acquittal due to lack of evidence."
+      },
+      7: {
+        nombre: "ANTONIO LOPEZ CASE",
+        resumen: "The client was arrested by the National Police accused of robbery with violence and intimidation in a public establishment. After the investigation, the Provincial Court of Jaén ordered the acquittal due to lack of evidence."
+      },
+      8: {
+        nombre: "CARLOS MARTINEZ CASE",
+        resumen: "The client was arrested by the Local Police of Madrid accused of shoplifting. After the investigation, Investigation Court No. 1 of Jaén ordered the case to be archived due to lack of evidence."
+      },
+      9: {
+        nombre: "ANA GOMEZ CASE",
+        resumen: "The client was arrested by the Civil Guard accused of document forgery and fraud. After the investigation, Investigation Court No. 12 of Madrid ordered the dismissal."
+      },
+      10: {
+        nombre: "PEDRO RODRIGUEZ CASE",
+        resumen: "The client was arrested by the National Police accused of a crime against public health (drug trafficking). After the investigation, Investigation Court No. 15 of Madrid ordered the case to be archived."
+      },
+      11: {
+        nombre: "LUIS FERNANDEZ CASE",
+        resumen: "The client was arrested by the National Police accused of a crime against freedom (kidnapping). After the investigation, Criminal Court No. 4 of Madrid ordered the acquittal."
+      },
+      12: {
+        nombre: "CARMEN DIAZ CASE",
+        resumen: "The client was arrested by the Civil Guard accused of a crime against workers' rights. After the investigation, Investigation Court No. 8 of Madrid ordered the dismissal."
+      },
+      13: {
+        nombre: "MIGUEL HERNANDEZ CASE",
+        resumen: "The client was arrested by the National Police accused of a property crime (fraud). After the investigation, the Court of First Instance and Investigation No. 6 of Getafe ordered the acquittal."
+      },
+      14: {
+        nombre: "ISABEL RAMOS CASE",
+        resumen: "The client was arrested by the National Police accused of a crime against property (theft). After the investigation, Central Investigation Court No. 6 (National Court) ordered the case to be archived."
+      },
+      15: {
+        nombre: "DAVID MORENO CASE",
+        resumen: "The client was arrested by the Civil Guard accused of a crime against life (homicide). After the investigation, Investigation Court No. 4 of Pozuelo de Alarcón ordered the dismissal."
+      },
+      16: {
+        nombre: "SOFIA NAVARRO CASE",
+        resumen: "The client was arrested by the Local Police of Madrid accused of a crime against physical integrity. After the investigation, Section 30 of the Madrid Provincial Court ordered the acquittal."
+      },
+      17: {
+        nombre: "RAFAEL GIL CASE",
+        resumen: "The client was arrested by the National Police accused of criminal execution (escape). After the investigation, the Investigation Court (to be determined) ordered the case to be archived."
+      },
+      18: {
+        nombre: "ELENA CASTRO CASE",
+        resumen: "The client was arrested by the Civil Guard accused of a crime against authority. After the investigation, Criminal Court No. 21 of Madrid ordered the dismissal."
+      },
+      19: {
+        nombre: "ABDERRAHIM AKKOUH CASE - TORREJÓN LOCAL POLICE",
+        resumen: "On June 18, 2025, Madrid Municipal Police officer Juan C. subdued and kept Abderrahim Akkouh immobilized, who had allegedly tried to steal his mobile phone in Torrejón de Ardoz. The victim died from anoxia. Investigation Judge No. 4 charged the officer with homicide and released him on provisional freedom with precautionary measures. Our firm represents the victim's family as private prosecution, requesting the classification of murder and the pre-trial detention of the defendant."
+      },
+      20: {
+        nombre: "OPERATION BOP",
+        resumen: "Operation 'BOP' is a police investigation focused on an alleged organized group dedicated to drug trafficking. Several suspects were arrested in 2025 and some remain in provisional detention. Our firm assumes the defense of one of them, arguing that he has no connection to the organization and that his arrest was due to a mere friendship with one of those involved. The procedure is in its initial phase and investigations are being carried out."
+      }
+    }
+  },
+  fr: {
+    cases: {
+      1: {
+        nombre: "AFFAIRE QUIQUE - LIBERTÉ D'EXPRESSION NON-LIEU",
+        resumen: "Une association a déposé une plainte contre l'humoriste Héctor de Miguel (connu artistiquement sous le nom de \"Quequé\") pour des propos de haine présumés tenus dans son émission Hora Veintipico. Le Tribunal d'Instruction n° 38 de Madrid a poursuivi le comédien pour un délit de haine présumé et une offense aux sentiments religieux. La défense et le Ministère Public ont tous deux fait appel de la décision et, par l'ordonnance n° 379/2025 du 30 avril 2025, la Section 30 de la Cour Provinciale de Madrid a accueilli les deux appels et ordonné le non-lieu définitif, considérant que les déclarations étaient protégées par la liberté d'expression et de création artistique."
+      },
+      2: {
+        nombre: "AFFAIRE NORDIN WORKOUT",
+        resumen: "Le client, de nationalité marocaine, a été arrêté par la Police Nationale dans le cadre d'une opération antiterroriste. Il était accusé d'auto-endoctrinement djihadiste après la découverte de plusieurs fichiers et vidéos liés au salafisme radical sur son téléphone portable. Le Tribunal Central d'Instruction n° 2 de l'Audience Nationale a initialement poursuivi l'affaire. Cependant, après l'instruction, le tribunal a ordonné le non-lieu par manque de preuves suffisantes pour maintenir l'accusation."
+      },
+      3: {
+        nombre: "AFFAIRE ALVARO GARCIA",
+        resumen: "Le client a été arrêté par la Garde Civile dans le cadre d'une opération contre le trafic d'armes. Il était accusé de détention et trafic d'armes de guerre, ainsi que de falsification de documents. Après l'instruction, le Tribunal Central d'Instruction n° 6 de l'Audience Nationale a ordonné le non-lieu par manque de preuves suffisantes."
+      },
+      4: {
+        nombre: "AFFAIRE LA MANCHA",
+        resumen: "Le client a été arrêté par la Police Nationale accusé d'appartenance à une organisation criminelle dédiée au trafic de drogue. Il était accusé de trafic de drogue et d'appartenance à une organisation criminelle. Après l'instruction, le Tribunal Pénal n° 21 de Madrid a ordonné le non-lieu par manque de preuves."
+      },
+      5: {
+        nombre: "AFFAIRE JORGE SANCHEZ",
+        resumen: "Le client a été arrêté par la Police Nationale accusé de trafic de drogue et de détention illégale d'armes. Après l'instruction, le Tribunal Pénal n° 25 de Madrid a prononcé l'acquittement par manque de preuves suffisantes."
+      },
+      6: {
+        nombre: "AFFAIRE MARIA JESUS",
+        resumen: "La cliente a été arrêtée par la Garde Civile accusée de trafic de drogue. Après l'instruction, le Tribunal Pénal n° 3 de Madrid a prononcé l'acquittement par manque de preuves."
+      },
+      7: {
+        nombre: "AFFAIRE ANTONIO LOPEZ",
+        resumen: "Le client a été arrêté par la Police Nationale accusé de vol avec violence et intimidation dans un établissement public. Après l'instruction, la Cour Provinciale de Jaén a prononcé l'acquittement par manque de preuves."
+      },
+      8: {
+        nombre: "AFFAIRE CARLOS MARTINEZ",
+        resumen: "Le client a été arrêté par la Police Locale de Madrid accusé de vol dans un commerce. Après l'instruction, le Tribunal d'Instruction n° 1 de Jaén a ordonné le classement de l'affaire par manque de preuves."
+      },
+      9: {
+        nombre: "AFFAIRE ANA GOMEZ",
+        resumen: "La cliente a été arrêtée par la Garde Civile accusée de falsification de documents et d'escroquerie. Après l'instruction, le Tribunal d'Instruction n° 12 de Madrid a ordonné le non-lieu."
+      },
+      10: {
+        nombre: "AFFAIRE PEDRO RODRIGUEZ",
+        resumen: "Le client a été arrêté par la Police Nationale accusé d'un délit contre la santé publique (trafic de drogue). Après l'instruction, le Tribunal d'Instruction n° 15 de Madrid a ordonné le classement de l'affaire."
+      },
+      11: {
+        nombre: "AFFAIRE LUIS FERNANDEZ",
+        resumen: "Le client a été arrêté par la Police Nationale accusé d'un délit contre la liberté (enlèvement). Après l'instruction, le Tribunal Pénal n° 4 de Madrid a prononcé l'acquittement."
+      },
+      12: {
+        nombre: "AFFAIRE CARMEN DIAZ",
+        resumen: "La cliente a été arrêtée par la Garde Civile accusée d'un délit contre les droits des travailleurs. Après l'instruction, le Tribunal d'Instruction n° 8 de Madrid a ordonné le non-lieu."
+      },
+      13: {
+        nombre: "AFFAIRE MIGUEL HERNANDEZ",
+        resumen: "Le client a été arrêté par la Police Nationale accusé d'un délit patrimonial (escroquerie). Après l'instruction, le Tribunal de Première Instance et d'Instruction n° 6 de Getafe a prononcé l'acquittement."
+      },
+      14: {
+        nombre: "AFFAIRE ISABEL RAMOS",
+        resumen: "La cliente a été arrêtée par la Police Nationale accusée d'un délit contre le patrimoine (vol). Après l'instruction, le Tribunal Central d'Instruction n° 6 (Audience Nationale) a ordonné le classement de l'affaire."
+      },
+      15: {
+        nombre: "AFFAIRE DAVID MORENO",
+        resumen: "Le client a été arrêté par la Garde Civile accusé d'un délit contre la vie (homicide). Après l'instruction, le Tribunal d'Instruction n° 4 de Pozuelo de Alarcón a ordonné le non-lieu."
+      },
+      16: {
+        nombre: "AFFAIRE SOFIA NAVARRO",
+        resumen: "La cliente a été arrêtée par la Police Locale de Madrid accusée d'un délit contre l'intégrité physique. Après l'instruction, la Section 30 de la Cour Provinciale de Madrid a prononcé l'acquittement."
+      },
+      17: {
+        nombre: "AFFAIRE RAFAEL GIL",
+        resumen: "Le client a été arrêté par la Police Nationale accusé d'exécution pénale (évasion). Après l'instruction, le Tribunal d'Instruction (à déterminer) a ordonné le classement de l'affaire."
+      },
+      18: {
+        nombre: "AFFAIRE ELENA CASTRO",
+        resumen: "La cliente a été arrêtée par la Garde Civile accusée d'un délit contre l'autorité. Après l'instruction, le Tribunal Pénal n° 21 de Madrid a ordonné le non-lieu."
+      },
+      19: {
+        nombre: "AFFAIRE ABDERRAHIM AKKOUH - POLICE LOCALE DE TORREJÓN",
+        resumen: "Le 18 juin 2025, l'agent de la Police Municipale de Madrid Juan C. a maîtrisé et maintenu immobilisé Abderrahim Akkouh, qui aurait tenté de voler son téléphone portable à Torrejón de Ardoz. La victime est décédée par anoxie. La juge d'instruction n° 4 a inculpé l'agent d'homicide et l'a laissé en liberté provisoire avec des mesures de précaution. Notre cabinet représente la famille de la victime en tant que partie civile, demandant la qualification d'assassinat et le placement en détention provisoire de l'accusé."
+      },
+      20: {
+        nombre: "OPÉRATION BOP",
+        resumen: "L'opération 'BOP' est une enquête policière centrée sur un groupe organisé présumé dédié au trafic de stupéfiants. Plusieurs suspects ont été arrêtés en 2025 et certains restent en détention provisoire. Notre cabinet assure la défense de l'un d'entre eux, soutenant qu'il n'a aucun lien avec l'organisation et que son arrestation était due à une simple relation d'amitié avec l'un des impliqués. La procédure est en phase initiale et des investigations sont en cours."
+      }
+    }
   }
 };

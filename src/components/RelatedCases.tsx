@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowRight, Scale } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/translations';
 
 interface RelatedCase {
   title: string;
@@ -60,6 +61,7 @@ const getCasesByCategory = (category: string): RelatedCase[] => {
 
 export default function RelatedCases({ currentCaseId, categoria, maxCases = 4 }: RelatedCasesProps) {
   const { language } = useLanguage();
+  const t = translations[language];
 
   // Obtener casos relacionados por categoría
   let related = getCasesByCategory(categoria);
@@ -93,7 +95,7 @@ export default function RelatedCases({ currentCaseId, categoria, maxCases = 4 }:
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <h3 className="text-2xl font-bold text-gold mb-6 flex items-center gap-2">
           <Scale className="h-6 w-6" />
-          {language === 'ar' ? 'قضايا مشابهة' : 'Casos Similares'}
+          {t.casosDestacados.casosSimilares}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {related.map((caso, index) => (
@@ -111,7 +113,7 @@ export default function RelatedCases({ currentCaseId, categoria, maxCases = 4 }:
                     {caso.title}
                   </h4>
                   <span className="text-xs text-black/60">
-                    {language === 'ar' ? 'عرض التفاصيل' : 'Ver detalles'}
+                    {t.casosDestacados.verDetalles}
                   </span>
                 </div>
                 <ArrowRight className="h-5 w-5 text-gold flex-shrink-0 ml-3 group-hover:translate-x-1 transition-transform" />

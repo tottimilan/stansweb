@@ -68,6 +68,15 @@ export const translations = {
         tags: ['Derecho Penal Económico', 'Derecho Penal Internacional', 'Extradiciones y OEDE', 'Personas Jurídicas', 'Integridad Física y Moral']
       }
     },
+
+    // LawyerCard Component
+    lawyerCard: {
+      dragToFlip: 'Arrastra para voltear →',
+      experience: 'de experiencia',
+      viewProfile: 'Ver perfil completo',
+      specializations: 'Especializaciones',
+      languages: 'Idiomas'
+    },
     
     // Practice Areas
     areas: {
@@ -85,6 +94,7 @@ export const translations = {
       asistenciaMultiidioma: 'Asistencia Multiidioma',
       verCasosExito: 'Ver casos de éxito',
       casosRelacionados: 'casos relacionados',
+      masInformacion: 'Más información',
       porQueElegir: '¿Por qué elegir STANS ABOGADOS?',
       experienciaSubtitle: 'Experiencia, dedicación y resultados comprobados en casos complejos',
       experienciaComprobada: 'Experiencia Comprobada',
@@ -232,8 +242,25 @@ export const translations = {
       operacionLuco: 'Operación Luco',
       academiaYihad: 'Academia Yihad',
       blanqueoCapitales: 'Blanqueo de Capitales',
-      verTodosCasos: 'Ver todos los casos →',
-      verTodosServicios: 'Ver todos los servicios →'
+      verTodosCasos: 'Ver todos los casos',
+      verTodosServicios: 'Ver todos los servicios →',
+      // Footer adicionales para traducciones completas
+      enlacesRapidos: 'Enlaces Rápidos',
+      articulosDestacados: 'Artículos Destacados',
+      informacionLegal: 'Información Legal',
+      conocerEquipo: 'Conocer al equipo',
+      madridEspana: 'Madrid, España',
+      // Servicios del footer
+      libertadExpresionServicio: 'Libertad de Expresión',
+      terrorismoServicio: 'Terrorismo',
+      delitosPersonasServicio: 'Delitos Personas',
+      delitosEconomicosServicio: 'Delitos Económicos',
+      extradicionesServicio: 'Extradiciones',
+      robosPatrimonioServicio: 'Robos y Patrimonio',
+      ordenPublicoDrogasServicio: 'Orden Público y Drogas',
+      violenciaGeneroServicio: 'Violencia de Género',
+      procedimientoPenalServicio: 'Procedimiento Penal',
+      todosServicios: 'Todos los servicios'
     },
     
     // Language Selector
@@ -373,7 +400,11 @@ export const translations = {
       verTodosCasos: 'Ver todos los casos',
       favorable: 'FAVORABLE',
       enCurso: 'En curso',
-      informacionProtegida: 'Información protegida'
+      informacionProtegida: 'Información protegida',
+      casoEnInvestigacion: 'CASO EN INVESTIGACIÓN',
+      articulosRelacionados: 'Artículos Relacionados',
+      casosSimilares: 'Casos Similares',
+      verDetalles: 'Ver detalles'
     },
 
     // Individual Case Page
@@ -875,6 +906,15 @@ export const translations = {
         tags: ['القانون الجنائي الاقتصادي', 'القانون الجنائي الدولي', 'التسليم وOEDE', 'الأشخاص الاعتباريون', 'السلامة البدنية والمعنوية']
       }
     },
+
+    // LawyerCard Component
+    lawyerCard: {
+      dragToFlip: '← اسحب للقلب',
+      experience: 'من الخبرة',
+      viewProfile: 'عرض الملف الكامل',
+      specializations: 'التخصصات',
+      languages: 'اللغات'
+    },
     
     // Practice Areas
     areas: {
@@ -892,6 +932,7 @@ export const translations = {
       asistenciaMultiidioma: 'مساعدة متعددة اللغات',
       verCasosExito: 'عرض قضايا النجاح',
       casosRelacionados: 'قضايا مرتبطة',
+      masInformacion: 'مزيد من المعلومات',
       porQueElegir: 'لماذا تختار ستانس أبودادوس؟',
       experienciaSubtitle: 'الخبرة والتفاني والنتائج المثبتة في القضايا المعقدة',
       experienciaComprobada: 'خبرة مثبتة',
@@ -1040,7 +1081,24 @@ export const translations = {
       academiaYihad: 'أكاديمية الجهاد',
       blanqueoCapitales: 'غسيل الأموال',
       verTodosCasos: 'عرض جميع القضايا ←',
-      verTodosServicios: 'عرض جميع الخدمات ←'
+      verTodosServicios: 'عرض جميع الخدمات ←',
+      // Footer adicionales para traducciones completas
+      enlacesRapidos: 'روابط سريعة',
+      articulosDestacados: 'مقالات مميزة',
+      informacionLegal: 'معلومات قانونية',
+      conocerEquipo: 'معرفة الفريق',
+      madridEspana: 'مدريد، إسبانيا',
+      // Servicios del footer
+      libertadExpresionServicio: 'حرية التعبير',
+      terrorismoServicio: 'الإرهاب',
+      delitosPersonasServicio: 'الجرائم ضد الأشخاص',
+      delitosEconomicosServicio: 'الجرائم الاقتصادية',
+      extradicionesServicio: 'التسليم',
+      robosPatrimonioServicio: 'السرقة',
+      ordenPublicoDrogasServicio: 'النظام العام',
+      violenciaGeneroServicio: 'العنف الجنسي',
+      procedimientoPenalServicio: 'الإجراءات الجنائية',
+      todosServicios: 'جميع الخدمات'
     },
     
     // Language Selector
@@ -1180,7 +1238,11 @@ export const translations = {
       verTodosCasos: 'عرض جميع القضايا',
       favorable: 'مؤاتي',
       enCurso: 'قيد التنفيذ',
-      informacionProtegida: 'المعلومات محمية'
+      informacionProtegida: 'المعلومات محمية',
+      casoEnInvestigacion: 'قضية قيد التحقيق',
+      articulosRelacionados: 'مقالات ذات صلة',
+      casosSimilares: 'قضايا مشابهة',
+      verDetalles: 'عرض التفاصيل'
     },
 
     // Individual Case Page
@@ -2420,6 +2482,15 @@ export const translations = {
       }
     },
 
+    // LawyerCard Component
+    lawyerCard: {
+      dragToFlip: 'Drag to flip →',
+      experience: 'of experience',
+      viewProfile: 'View full profile',
+      specializations: 'Specializations',
+      languages: 'Languages'
+    },
+
     // Practice Areas
     areas: {
       title: 'Our Services',
@@ -2436,6 +2507,7 @@ export const translations = {
       asistenciaMultiidioma: 'Multilingual Assistance',
       verCasosExito: 'View success cases',
       casosRelacionados: 'related cases',
+      masInformacion: 'More information',
       porQueElegir: 'Why choose STANS ABOGADOS?',
       experienciaSubtitle: 'Experience, dedication and proven results in complex cases',
       experienciaComprobada: 'Proven Experience',
@@ -2549,7 +2621,25 @@ export const translations = {
       casosExito: 'Success Cases',
       libertadExpresion: 'Freedom of Expression',
       operacionLuco: 'Operation Luco',
-      academiaYihad: 'Jihad Academy'
+      academiaYihad: 'Jihad Academy',
+      // Footer adicionales para traducciones completas
+      enlacesRapidos: 'Quick Links',
+      articulosDestacados: 'Featured Articles',
+      informacionLegal: 'Legal Information',
+      verTodosCasos: 'View all cases',
+      conocerEquipo: 'Meet the team',
+      madridEspana: 'Madrid, Spain',
+      // Servicios del footer
+      libertadExpresionServicio: 'Freedom of Expression',
+      terrorismoServicio: 'Terrorism',
+      delitosPersonasServicio: 'Crimes Against Persons',
+      delitosEconomicosServicio: 'Economic Crimes',
+      extradicionesServicio: 'Extraditions',
+      robosPatrimonioServicio: 'Robberies and Property',
+      ordenPublicoDrogasServicio: 'Public Order and Drugs',
+      violenciaGeneroServicio: 'Gender Violence',
+      procedimientoPenalServicio: 'Criminal Procedure',
+      todosServicios: 'All services'
     },
 
     // Contact Section
@@ -2700,7 +2790,11 @@ export const translations = {
       verTodosCasos: 'View all cases',
       favorable: 'FAVORABLE',
       enCurso: 'IN PROGRESS',
-      informacionProtegida: 'Protected information for confidentiality reasons'
+      informacionProtegida: 'Protected information for confidentiality reasons',
+      casoEnInvestigacion: 'CASE UNDER INVESTIGATION',
+      articulosRelacionados: 'Related Articles',
+      casosSimilares: 'Similar Cases',
+      verDetalles: 'View details'
     },
 
     // Case Section
@@ -3049,6 +3143,15 @@ export const translations = {
       }
     },
 
+    // LawyerCard Component
+    lawyerCard: {
+      dragToFlip: 'Glissez pour retourner →',
+      experience: 'd\'expérience',
+      viewProfile: 'Voir le profil complet',
+      specializations: 'Spécialisations',
+      languages: 'Langues'
+    },
+
     // Practice Areas
     areas: {
       title: 'Nos Services',
@@ -3065,6 +3168,7 @@ export const translations = {
       asistenciaMultiidioma: 'Assistance Multilingue',
       verCasosExito: 'Voir les cas de succès',
       casosRelacionados: 'cas liés',
+      masInformacion: 'Plus d\'informations',
       porQueElegir: 'Pourquoi choisir STANS ABOGADOS?',
       experienciaSubtitle: 'Expérience, dévouement et résultats éprouvés dans les cas complexes',
       experienciaComprobada: 'Expérience Éprouvée',
@@ -3178,7 +3282,25 @@ export const translations = {
       casosExito: 'Cas de Succès',
       libertadExpresion: 'Liberté d\'Expression',
       operacionLuco: 'Opération Luco',
-      academiaYihad: 'Académie Jihad'
+      academiaYihad: 'Académie Jihad',
+      // Footer adicionales para traducciones completas
+      enlacesRapidos: 'Liens Rapides',
+      articulosDestacados: 'Articles en Vedette',
+      informacionLegal: 'Informations Légales',
+      verTodosCasos: 'Voir tous les cas',
+      conocerEquipo: 'Connaître l\'équipe',
+      madridEspana: 'Madrid, Espagne',
+      // Servicios del footer
+      libertadExpresionServicio: 'Liberté d\'Expression',
+      terrorismoServicio: 'Terrorisme',
+      delitosPersonasServicio: 'Délits Contre les Personnes',
+      delitosEconomicosServicio: 'Délits Économiques',
+      extradicionesServicio: 'Extraditions',
+      robosPatrimonioServicio: 'Vols et Patrimoine',
+      ordenPublicoDrogasServicio: 'Ordre Public et Drogues',
+      violenciaGeneroServicio: 'Violence de Genre',
+      procedimientoPenalServicio: 'Procédure Pénale',
+      todosServicios: 'Tous les services'
     },
 
     // Contact Section
@@ -3329,7 +3451,11 @@ export const translations = {
       verTodosCasos: 'Voir toutes les affaires',
       favorable: 'FAVORABLE',
       enCurso: 'EN COURS',
-      informacionProtegida: 'Informations protégées pour des raisons de confidentialité'
+      informacionProtegida: 'Informations protégées pour des raisons de confidentialité',
+      casoEnInvestigacion: 'AFFAIRE EN COURS D\'ENQUÊTE',
+      articulosRelacionados: 'Articles Connexes',
+      casosSimilares: 'Affaires Similaires',
+      verDetalles: 'Voir détails'
     },
 
     // Case Section

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/translations';
 
 interface RelatedArticle {
   title: string;
@@ -78,6 +79,7 @@ const getRelatedArticlesByCategory = (category: string): RelatedArticle[] => {
 
 export default function RelatedArticles({ currentSlug, category, maxArticles = 6 }: RelatedArticlesProps) {
   const { language } = useLanguage();
+  const t = translations[language];
 
   // Obtener artículos relacionados por categoría
   let related = category ? getRelatedArticlesByCategory(category) : [];
@@ -110,7 +112,7 @@ export default function RelatedArticles({ currentSlug, category, maxArticles = 6
     <section className="bg-charleston/5 py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <h3 className="text-2xl font-bold text-gold mb-6">
-          {language === 'ar' ? 'مقالات ذات صلة' : 'Artículos Relacionados'}
+          {t.casosDestacados.articulosRelacionados}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {related.map((article) => (

@@ -4,6 +4,7 @@ import { motion, useMotionValue, useTransform, PanInfo } from 'framer-motion';
 import { Award, Languages, Shield, ArrowRight, Clock, ExternalLink } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -24,6 +25,7 @@ export default function LawyerCard({
   name, role = 'Abogado Penalista', summary, tags = [], languages = [], experience, image, hoverImage, backgroundImage, slug
 }: Props) {
   const { language } = useLanguage();
+  const t = translations[language];
   const [isFlipped, setIsFlipped] = useState(false);
   const [autoFlipTimer, setAutoFlipTimer] = useState<NodeJS.Timeout | null>(null);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -192,7 +194,7 @@ export default function LawyerCard({
                   <p className="text-white/80 text-sm mt-1 transition-all duration-1000 group-hover:text-white/90 group-hover:translate-x-2">{role}</p>
                   <div className="mt-2 text-xs text-white/60 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1">
                     <span className="bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full px-3 py-1 text-gold/80 group-hover:text-gold group-hover:bg-gold/30 group-hover:border-gold/50 transition-all duration-300">
-                      Arrastra para voltear →
+                      {t.lawyerCard.dragToFlip}
                     </span>
                   </div>
                 </div>
@@ -267,7 +269,7 @@ export default function LawyerCard({
           {experience && (
             <div className="flex items-center gap-2 mb-2 transition-all duration-1000 group-hover:translate-x-2">
               <Clock className="h-3 w-3 text-gold transition-all duration-1000 group-hover:scale-110" />
-              <span className="text-[10px] text-gold font-medium transition-all duration-1000 group-hover:text-gold/90">{experience} de experiencia</span>
+              <span className="text-[10px] text-gold font-medium transition-all duration-1000 group-hover:text-gold/90">{experience} {t.lawyerCard.experience}</span>
             </div>
           )}
           
@@ -280,7 +282,7 @@ export default function LawyerCard({
                 className="inline-flex items-center gap-2 text-gold hover:text-gold/80 text-xs font-semibold transition-all duration-300 group/link"
               >
                 <ExternalLink className="h-3 w-3 transition-transform group-hover/link:translate-x-1" />
-                Ver perfil completo
+                {t.lawyerCard.viewProfile}
               </Link>
             </div>
           )}
@@ -289,7 +291,7 @@ export default function LawyerCard({
             <div className="mt-3 transition-all duration-1000 group-hover:translate-x-2">
               <div className="flex items-center mb-1.5">
                 <Award className="h-3 w-3 mr-1.5 text-gold transition-all duration-1000 group-hover:scale-110" />
-                <span className="text-[10px] text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">Especializaciones</span>
+                <span className="text-[10px] text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">{t.lawyerCard.specializations}</span>
               </div>
               <div className="flex flex-wrap gap-1.5">
                 {tags.map(t => (
@@ -304,9 +306,9 @@ export default function LawyerCard({
           <div className="mt-3 transition-all duration-1000 group-hover:translate-x-2">
             <div className="flex items-center mb-1.5">
               <Languages className="h-3 w-3 mr-1.5 text-gold transition-all duration-1000 group-hover:scale-110" />
-                              <span className="text-[10px] text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">
-                  {language === 'ar' ? 'اللغات' : 'Idiomas'}
-                </span>
+              <span className="text-[10px] text-offwhite/60 font-medium transition-all duration-1000 group-hover:text-offwhite/80">
+                {t.lawyerCard.languages}
+              </span>
             </div>
             <div className="flex gap-1.5">
               {languages.map(lang => (

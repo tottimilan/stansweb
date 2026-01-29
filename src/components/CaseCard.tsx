@@ -237,18 +237,27 @@ const toTitleCase = (text: string): string => {
 const getTranslatedCaseName = (caseId: number, originalName: string, language: string) => {
   if (language === 'es') return toTitleCase(originalName);
 
-  const caseTranslation = casesTranslations.ar.cases[caseId as keyof typeof casesTranslations.ar.cases];
+  // Obtener traducciones del idioma correcto
+  const langTranslations = casesTranslations[language as keyof typeof casesTranslations];
+  if (!langTranslations) return toTitleCase(originalName);
+  
+  const caseTranslation = langTranslations.cases[caseId as keyof typeof langTranslations.cases];
   const translatedName = caseTranslation?.nombre || originalName;
   
   // Para árabe, no aplicar toTitleCase ya que tiene su propia estructura
-  return translatedName;
+  if (language === 'ar') return translatedName;
+  return toTitleCase(translatedName);
 };
 
 // Traducir resumen del caso
 const getTranslatedCaseSummary = (caseId: number, originalSummary: string, language: string) => {
   if (language === 'es') return originalSummary;
 
-  const caseTranslation = casesTranslations.ar.cases[caseId as keyof typeof casesTranslations.ar.cases];
+  // Obtener traducciones del idioma correcto
+  const langTranslations = casesTranslations[language as keyof typeof casesTranslations];
+  if (!langTranslations) return originalSummary;
+  
+  const caseTranslation = langTranslations.cases[caseId as keyof typeof langTranslations.cases];
   return caseTranslation?.resumen || originalSummary;
 };
 
@@ -313,7 +322,7 @@ export default function CaseCard({ caso }: Props) {
         {isOngoingCase ? (
           <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 text-center">
             <div className="text-sm font-semibold text-orange-800 mb-1">
-              🔒 {language === 'ar' ? 'قضية قيد التحقيق' : 'CASO EN INVESTIGACIÓN'}
+              🔒 {t.casosDestacados.casoEnInvestigacion}
             </div>
             <div className="text-xs text-orange-700">
               {t.casosDestacados.informacionProtegida}

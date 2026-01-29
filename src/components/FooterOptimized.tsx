@@ -58,7 +58,7 @@ export default function Footer() {
                 </a>
                 <div className="flex items-center text-offwhite/80">
                   <MapPin className="h-4 w-4 mr-3 text-gold flex-shrink-0" aria-hidden="true" />
-                  <span className="text-sm">Madrid, España</span>
+                  <span className="text-sm">{t.footer.madridEspana}</span>
                 </div>
                 <div className="flex items-center text-gold">
                   <Clock className="h-4 w-4 mr-3 flex-shrink-0" aria-hidden="true" />
@@ -116,7 +116,7 @@ export default function Footer() {
                       href="/#equipo" 
                       className={`text-gold hover:text-gold/80 text-sm font-semibold transition-colors inline-flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
                     >
-                      {language === 'ar' ? 'معرفة الفريق' : 'Conocer al equipo'}
+                      {t.footer.conocerEquipo}
                       <span className={`${language === 'ar' ? 'mr-1' : 'ml-1'}`}>→</span>
                     </Link>
                   </li>
@@ -141,7 +141,7 @@ export default function Footer() {
                       href="/servicios/libertad-expresion" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'حرية التعبير' : 'Libertad de Expresión'}
+                      {t.footer.libertadExpresionServicio}
                     </Link>
                   </li>
                   <li>
@@ -149,7 +149,7 @@ export default function Footer() {
                       href="/servicios/terrorismo-audiencia-nacional" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'الإرهاب' : 'Terrorismo'}
+                      {t.footer.terrorismoServicio}
                     </Link>
                   </li>
                   <li>
@@ -157,7 +157,7 @@ export default function Footer() {
                       href="/servicios/delitos-personas" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'الجرائم ضد الأشخاص' : 'Delitos Personas'}
+                      {t.footer.delitosPersonasServicio}
                     </Link>
                   </li>
                   <li>
@@ -165,7 +165,7 @@ export default function Footer() {
                       href="/servicios/delitos-economicos" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'الجرائم الاقتصادية' : 'Delitos Económicos'}
+                      {t.footer.delitosEconomicosServicio}
                     </Link>
                   </li>
                   <li>
@@ -173,7 +173,7 @@ export default function Footer() {
                       href="/servicios/extradiciones" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'التسليم' : 'Extradiciones'}
+                      {t.footer.extradicionesServicio}
                     </Link>
                   </li>
                   <li>
@@ -181,7 +181,7 @@ export default function Footer() {
                       href="/servicios/robos-patrimonio" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'السرقة' : 'Robos y Patrimonio'}
+                      {t.footer.robosPatrimonioServicio}
                     </Link>
                   </li>
                   <li>
@@ -189,7 +189,7 @@ export default function Footer() {
                       href="/servicios/orden-publico-drogas" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'النظام العام' : 'Orden Público y Drogas'}
+                      {t.footer.ordenPublicoDrogasServicio}
                     </Link>
                   </li>
                   <li>
@@ -197,7 +197,7 @@ export default function Footer() {
                       href="/servicios/violencia-genero" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'العنف الجنسي' : 'Violencia de Género'}
+                      {t.footer.violenciaGeneroServicio}
                     </Link>
                   </li>
                   <li>
@@ -205,7 +205,7 @@ export default function Footer() {
                       href="/servicios/procedimiento-penal" 
                       className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
                     >
-                      {language === 'ar' ? 'الإجراءات الجنائية' : 'Procedimiento Penal'}
+                      {t.footer.procedimientoPenalServicio}
                     </Link>
                   </li>
                   <li className="pt-3">
@@ -213,7 +213,7 @@ export default function Footer() {
                       href="/servicios" 
                       className={`text-gold hover:text-gold/80 text-sm font-semibold transition-colors inline-flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
                     >
-                      {t.footer.verTodosServicios || (language === 'ar' ? 'جميع الخدمات' : 'Todos los servicios')}
+                      {t.footer.todosServicios}
                       <span className={`${language === 'ar' ? 'mr-1' : 'ml-1'}`}>→</span>
                     </Link>
                   </li>
@@ -229,7 +229,7 @@ export default function Footer() {
             >
               <p className={`text-gold font-semibold text-lg mb-4 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <Scale className={`h-5 w-5 ${language === 'ar' ? 'ml-2' : 'mr-2'}`} aria-hidden="true" />
-                {language === 'ar' ? 'روابط سريعة' : 'Enlaces Rápidos'}
+                {t.footer.enlacesRapidos}
               </p>
               <nav aria-label="Enlaces rápidos">
                 <ul className={`space-y-2.5 ${language === 'ar' ? '' : ''}`}>
@@ -291,7 +291,7 @@ export default function Footer() {
             >
               <p className={`text-offwhite font-medium text-sm mb-3 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <BookOpen className={`h-4 w-4 ${language === 'ar' ? 'ml-2' : 'mr-2'} text-gold`} aria-hidden="true" />
-                {language === 'ar' ? 'مقالات مميزة' : 'Artículos Destacados'}
+                {t.footer.articulosDestacados}
               </p>
               <nav aria-label="Artículos del blog destacados">
                 <ul className={`space-y-2 ${language === 'ar' ? '' : ''}`}>
@@ -367,7 +367,7 @@ export default function Footer() {
                       href="/casos" 
                       className={`text-gold hover:text-gold/80 text-xs font-semibold transition-colors inline-flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
                     >
-                      {language === 'ar' ? 'عرض جميع الحالات' : 'Ver todos los casos'}
+                      {t.footer.verTodosCasos}
                       <span className={`${language === 'ar' ? 'mr-1' : 'ml-1'}`}>→</span>
                     </Link>
                   </li>
@@ -384,7 +384,7 @@ export default function Footer() {
             >
               <p className={`text-offwhite font-medium text-sm mb-3 flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <Briefcase className={`h-4 w-4 ${language === 'ar' ? 'ml-2' : 'mr-2'} text-gold`} aria-hidden="true" />
-                {language === 'ar' ? 'معلومات قانونية' : 'Información Legal'}
+                {t.footer.informacionLegal}
               </p>
               <nav aria-label="Enlaces legales">
                 <ul className="grid grid-cols-2 sm:grid-cols-4 gap-2">
