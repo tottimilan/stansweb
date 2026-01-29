@@ -385,6 +385,20 @@ export const translations = {
         auto: 'Auto',
         diligencias: 'Diligencias',
         archivo: 'Archivo'
+      },
+      seoContent: {
+        casosExitoTitle: 'Casos de Éxito Reales y Resultados Verificables',
+        casosExitoDescription: 'En STANS ABOGADOS nos enorgullecemos de nuestros resultados y los compartimos con transparencia. Cada caso mostrado aquí es real y representa una defensa que hemos realizado en tribunales españoles. Solo mostramos casos que pueden ser publicados públicamente, respetando completamente la privacidad y el secreto profesional.',
+        tiposCasosTitle: 'Tipos de Casos que Defendemos',
+        terrorismo: 'Terrorismo',
+        terrorismoDesc: 'Ante la Audiencia Nacional',
+        crimenOrganizado: 'Crimen Organizado',
+        crimenOrganizadoDesc: 'Operaciones de gran envergadura',
+        delitosEconomicos: 'Delitos Económicos',
+        delitosEconomicosDesc: 'Blanqueo de capitales y estafa',
+        libertadExpresion: 'Libertad de Expresión',
+        libertadExpresionDesc: 'Defensa de derechos fundamentales',
+        contactoFinal: 'Si enfrentas una situación legal similar a cualquiera de los casos mostrados, no dudes en contactarnos. Cada caso es único y requiere una estrategia de defensa personalizada basada en sus circunstancias específicas.'
       }
     },
 
@@ -1218,6 +1232,20 @@ export const translations = {
         auto: 'قرار',
         diligencias: 'إجراءات',
         archivo: 'حفظ'
+      },
+      seoContent: {
+        casosExitoTitle: 'قضايا نجاح حقيقية ونتائج قابلة للتحقق',
+        casosExitoDescription: 'في ستانس للمحاماة، نحن فخورون بنتائجنا ونشاركها بشفافية. كل حالة معروضة هنا حقيقية وتمثل دفاعاً قدمناه في المحاكم الإسبانية. نعرض فقط القضايا المسموح بنشرها علناً، مع احترام كامل للخصوصية والسرية المهنية.',
+        tiposCasosTitle: 'أنواع القضايا التي ندافع عنها',
+        terrorismo: 'الإرهاب',
+        terrorismoDesc: 'أمام المحكمة الوطنية',
+        crimenOrganizado: 'الجريمة المنظمة',
+        crimenOrganizadoDesc: 'عمليات واسعة النطاق',
+        delitosEconomicos: 'الجرائم الاقتصادية',
+        delitosEconomicosDesc: 'غسيل الأموال والاحتيال',
+        libertadExpresion: 'حرية التعبير',
+        libertadExpresionDesc: 'دفاع عن الحقوق الأساسية',
+        contactoFinal: 'إذا كنت تواجه موقفاً قانونياً مشابهاً لأي من القضايا المعروضة، لا تتردد في الاتصال بنا. كل قضية فريدة وتتطلب استراتيجية دفاع مخصصة.'
       },
       privacidad: {
         title: 'ملاحظة الخصوصية',
@@ -2775,6 +2803,20 @@ export const translations = {
         auto: 'Order',
         diligencias: 'Proceedings',
         archivo: 'Filing'
+      },
+      seoContent: {
+        casosExitoTitle: 'Real Success Cases and Verifiable Results',
+        casosExitoDescription: 'At STANS ABOGADOS we are proud of our results and share them transparently. Every case shown here is real and represents a defense we have conducted in Spanish courts. We only show cases that can be published publicly, fully respecting privacy and professional confidentiality.',
+        tiposCasosTitle: 'Types of Cases We Defend',
+        terrorismo: 'Terrorism',
+        terrorismoDesc: 'Before the National Court',
+        crimenOrganizado: 'Organized Crime',
+        crimenOrganizadoDesc: 'Large-scale operations',
+        delitosEconomicos: 'Economic Crimes',
+        delitosEconomicosDesc: 'Money laundering and fraud',
+        libertadExpresion: 'Freedom of Expression',
+        libertadExpresionDesc: 'Defense of fundamental rights',
+        contactoFinal: 'If you face a legal situation similar to any of the cases shown, do not hesitate to contact us. Each case is unique and requires a personalized defense strategy based on its specific circumstances.'
       }
     },
 
@@ -3436,6 +3478,20 @@ export const translations = {
         auto: 'Ordonnance',
         diligencias: 'Diligences',
         archivo: 'Classement'
+      },
+      seoContent: {
+        casosExitoTitle: 'Cas de Succès Réels et Résultats Vérifiables',
+        casosExitoDescription: 'Chez STANS ABOGADOS, nous sommes fiers de nos résultats et les partageons en toute transparence. Chaque cas présenté ici est réel et représente une défense que nous avons menée devant les tribunaux espagnols. Nous ne montrons que les cas pouvant être publiés publiquement, dans le respect total de la vie privée et du secret professionnel.',
+        tiposCasosTitle: 'Types d\'Affaires que Nous Défendons',
+        terrorismo: 'Terrorisme',
+        terrorismoDesc: 'Devant la Cour Nationale',
+        crimenOrganizado: 'Crime Organisé',
+        crimenOrganizadoDesc: 'Opérations de grande envergure',
+        delitosEconomicos: 'Délits Économiques',
+        delitosEconomicosDesc: 'Blanchiment de capitaux et escroquerie',
+        libertadExpresion: 'Liberté d\'Expression',
+        libertadExpresionDesc: 'Défense des droits fondamentaux',
+        contactoFinal: 'Si vous faites face à une situation juridique similaire à l\'un des cas présentés, n\'hésitez pas à nous contacter. Chaque affaire est unique et nécessite une stratégie de défense personnalisée basée sur ses circonstances spécifiques.'
       }
     },
 

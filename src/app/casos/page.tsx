@@ -36,71 +36,221 @@ const getCategorias = (t: any) => [
   t.casos.categorias.delitosIntegridad
 ];
 
-// Funciones de traducción para casos
-const organoMap: { [key: string]: string } = {
-  'Juzgado de Instrucción nº 38 de Madrid': 'محكمة التحقيق رقم 38 في مدريد',
-  'Audiencia Provincial de Madrid': 'محكمة الاستئناف في مدريد',
-  'Juzgado de lo Penal nº 21 de Madrid': 'محكمة الجنايات رقم 21 في مدريد',
-  'Juzgado Central de Instrucción nº 2': 'محكمة التحقيق المركزية رقم 2',
-  'Juzgado de Instrucción nº 30 de Madrid': 'محكمة التحقيق رقم 30 في مدريد',
-  'Juzgado de lo Penal nº 25 de Madrid': 'محكمة الجنايات رقم 25 في مدريد',
-  'Juzgado de lo Penal nº 3 de Madrid': 'محكمة الجنايات رقم 3 في مدريد',
-  'Audiencia Provincial de Jaén': 'محكمة الاستئناف في خاين',
-  'Juzgado de Instrucción nº 1 de Jaén': 'محكمة التحقيق رقم 1 في خاين',
-  'Juzgado de Instrucción nº 12 de Madrid': 'محكمة التحقيق رقم 12 في مدريد',
-  'Juzgado de Instrucción nº 15 de Madrid': 'محكمة التحقيق رقم 15 في مدريد',
-  'Juzgado de lo Penal nº 4 de Madrid': 'محكمة الجنايات رقم 4 في مدريد',
-  'Juzgado de Instrucción nº 8 de Madrid': 'محكمة التحقيق رقم 8 في مدريد',
-  'Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe': 'محكمة الدرجة الأولى والتحقيق رقم 6 في خيتافي',
-  'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'محكمة التحقيق المركزية رقم 6 (المحكمة الوطنية)',
-  'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'محكمة التحقيق رقم 4 في بوزويلو دي ألاركون',
-  'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد',
-  'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)',
-  'Juzgado de lo Penal nº 3 de Jaén': 'محكمة الجنايات رقم 3 في خاين',
-  'Juzgado de lo Penal nº 22 de Madrid': 'محكمة الجنايات رقم 22 في مدريد',
-  'Juzgado de Instrucción nº 13 de Madrid': 'محكمة التحقيق رقم 13 في مدريد',
-  'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو',
-  'Juzgado de Instrucción nº 1 de Móstoles': 'محكمة التحقيق رقم 1 في موستوليس',
-  'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو',
-  'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية',
-  'Juzgado de Instrucción nº 1 de San Roque (Cádiz)': 'محكمة التحقيق رقم 1 في سان روكي (قادس)'
+// Funciones de traducción multiidioma para casos
+const getTranslatedOrgano = (organo: string, language: string) => {
+  if (language === 'es') return organo;
+  
+  const organoMaps: { [lang: string]: { [key: string]: string } } = {
+    ar: {
+      'Juzgado de Instrucción nº 38 de Madrid': 'محكمة التحقيق رقم 38 في مدريد',
+      'Audiencia Provincial de Madrid': 'محكمة الاستئناف في مدريد',
+      'Juzgado de lo Penal nº 21 de Madrid': 'محكمة الجنايات رقم 21 في مدريد',
+      'Juzgado Central de Instrucción nº 2': 'محكمة التحقيق المركزية رقم 2',
+      'Juzgado de Instrucción nº 30 de Madrid': 'محكمة التحقيق رقم 30 في مدريد',
+      'Juzgado de lo Penal nº 25 de Madrid': 'محكمة الجنايات رقم 25 في مدريد',
+      'Juzgado de lo Penal nº 3 de Madrid': 'محكمة الجنايات رقم 3 في مدريد',
+      'Audiencia Provincial de Jaén': 'محكمة الاستئناف في خاين',
+      'Juzgado de Instrucción nº 1 de Jaén': 'محكمة التحقيق رقم 1 في خاين',
+      'Juzgado de Instrucción nº 12 de Madrid': 'محكمة التحقيق رقم 12 في مدريد',
+      'Juzgado de Instrucción nº 15 de Madrid': 'محكمة التحقيق رقم 15 في مدريد',
+      'Juzgado de lo Penal nº 4 de Madrid': 'محكمة الجنايات رقم 4 في مدريد',
+      'Juzgado de Instrucción nº 8 de Madrid': 'محكمة التحقيق رقم 8 في مدريد',
+      'Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe': 'محكمة الدرجة الأولى والتحقيق رقم 6 في خيتافي',
+      'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'محكمة التحقيق المركزية رقم 6 (المحكمة الوطنية)',
+      'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'محكمة التحقيق رقم 4 في بوزويلو دي ألاركون',
+      'Sección 30 de la Audiencia Provincial de Madrid': 'الدائرة 30 من محكمة الاستئناف في مدريد',
+      'Juzgado de Instrucción (por determinar)': 'محكمة التحقيق (قيد التحديد)',
+      'Juzgado de lo Penal nº 3 de Jaén': 'محكمة الجنايات رقم 3 في خاين',
+      'Juzgado de lo Penal nº 22 de Madrid': 'محكمة الجنايات رقم 22 في مدريد',
+      'Juzgado de Instrucción nº 13 de Madrid': 'محكمة التحقيق رقم 13 في مدريد',
+      'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'محكمة الدرجة الأولى والتحقيق رقم 5 في فالديمورو',
+      'Juzgado de Instrucción nº 1 de Móstoles': 'محكمة التحقيق رقم 1 في موستوليس',
+      'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'محكمة الدرجة الأولى والتحقيق رقم 1 في نافالكارنيرو',
+      'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'محكمة التحقيق المركزية رقم 2 - المحكمة الوطنية',
+      'Juzgado de Instrucción nº 1 de San Roque (Cádiz)': 'محكمة التحقيق رقم 1 في سان روكي (قادس)'
+    },
+    en: {
+      'Juzgado de Instrucción nº 38 de Madrid': 'Investigation Court No. 38 of Madrid',
+      'Audiencia Provincial de Madrid': 'Madrid Provincial Court',
+      'Juzgado de lo Penal nº 21 de Madrid': 'Criminal Court No. 21 of Madrid',
+      'Juzgado Central de Instrucción nº 2': 'Central Investigation Court No. 2',
+      'Juzgado de Instrucción nº 30 de Madrid': 'Investigation Court No. 30 of Madrid',
+      'Juzgado de lo Penal nº 25 de Madrid': 'Criminal Court No. 25 of Madrid',
+      'Juzgado de lo Penal nº 3 de Madrid': 'Criminal Court No. 3 of Madrid',
+      'Audiencia Provincial de Jaén': 'Jaén Provincial Court',
+      'Juzgado de Instrucción nº 1 de Jaén': 'Investigation Court No. 1 of Jaén',
+      'Juzgado de Instrucción nº 12 de Madrid': 'Investigation Court No. 12 of Madrid',
+      'Juzgado de Instrucción nº 15 de Madrid': 'Investigation Court No. 15 of Madrid',
+      'Juzgado de lo Penal nº 4 de Madrid': 'Criminal Court No. 4 of Madrid',
+      'Juzgado de Instrucción nº 8 de Madrid': 'Investigation Court No. 8 of Madrid',
+      'Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe': 'Court of First Instance and Investigation No. 6 of Getafe',
+      'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'Central Investigation Court No. 6 (National Court)',
+      'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'Investigation Court No. 4 of Pozuelo de Alarcón',
+      'Sección 30 de la Audiencia Provincial de Madrid': 'Section 30 of the Madrid Provincial Court',
+      'Juzgado de Instrucción (por determinar)': 'Investigation Court (to be determined)',
+      'Juzgado de lo Penal nº 3 de Jaén': 'Criminal Court No. 3 of Jaén',
+      'Juzgado de lo Penal nº 22 de Madrid': 'Criminal Court No. 22 of Madrid',
+      'Juzgado de Instrucción nº 13 de Madrid': 'Investigation Court No. 13 of Madrid',
+      'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'Court of First Instance and Investigation No. 5 of Valdemoro',
+      'Juzgado de Instrucción nº 1 de Móstoles': 'Investigation Court No. 1 of Móstoles',
+      'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'Court of First Instance and Investigation No. 1 of Navalcarnero',
+      'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'Central Investigation Court No. 2 – National Court',
+      'Juzgado de Instrucción nº 1 de San Roque (Cádiz)': 'Investigation Court No. 1 of San Roque (Cádiz)'
+    },
+    fr: {
+      'Juzgado de Instrucción nº 38 de Madrid': 'Tribunal d\'instruction nº 38 de Madrid',
+      'Audiencia Provincial de Madrid': 'Cour provinciale de Madrid',
+      'Juzgado de lo Penal nº 21 de Madrid': 'Tribunal pénal nº 21 de Madrid',
+      'Juzgado Central de Instrucción nº 2': 'Tribunal central d\'instruction nº 2',
+      'Juzgado de Instrucción nº 30 de Madrid': 'Tribunal d\'instruction nº 30 de Madrid',
+      'Juzgado de lo Penal nº 25 de Madrid': 'Tribunal pénal nº 25 de Madrid',
+      'Juzgado de lo Penal nº 3 de Madrid': 'Tribunal pénal nº 3 de Madrid',
+      'Audiencia Provincial de Jaén': 'Cour provinciale de Jaén',
+      'Juzgado de Instrucción nº 1 de Jaén': 'Tribunal d\'instruction nº 1 de Jaén',
+      'Juzgado de Instrucción nº 12 de Madrid': 'Tribunal d\'instruction nº 12 de Madrid',
+      'Juzgado de Instrucción nº 15 de Madrid': 'Tribunal d\'instruction nº 15 de Madrid',
+      'Juzgado de lo Penal nº 4 de Madrid': 'Tribunal pénal nº 4 de Madrid',
+      'Juzgado de Instrucción nº 8 de Madrid': 'Tribunal d\'instruction nº 8 de Madrid',
+      'Juzgado de 1ª Instancia e Instrucción nº 6 de Getafe': 'Tribunal de première instance et d\'instruction nº 6 de Getafe',
+      'Juzgado Central de Instrucción nº 6 (Audiencia Nacional)': 'Tribunal central d\'instruction nº 6 (Cour nationale)',
+      'Juzgado de Instrucción nº 4 de Pozuelo de Alarcón': 'Tribunal d\'instruction nº 4 de Pozuelo de Alarcón',
+      'Sección 30 de la Audiencia Provincial de Madrid': 'Section 30 de la Cour provinciale de Madrid',
+      'Juzgado de Instrucción (por determinar)': 'Tribunal d\'instruction (à déterminer)',
+      'Juzgado de lo Penal nº 3 de Jaén': 'Tribunal pénal nº 3 de Jaén',
+      'Juzgado de lo Penal nº 22 de Madrid': 'Tribunal pénal nº 22 de Madrid',
+      'Juzgado de Instrucción nº 13 de Madrid': 'Tribunal d\'instruction nº 13 de Madrid',
+      'Juzgado de 1ª Instancia e Instrucción nº 5 de Valdemoro': 'Tribunal de première instance et d\'instruction nº 5 de Valdemoro',
+      'Juzgado de Instrucción nº 1 de Móstoles': 'Tribunal d\'instruction nº 1 de Móstoles',
+      'Juzgado de 1ª Instancia e Instrucción nº 1 de Navalcarnero': 'Tribunal de première instance et d\'instruction nº 1 de Navalcarnero',
+      'Juzgado Central de Instrucción nº 2 – Audiencia Nacional': 'Tribunal central d\'instruction nº 2 – Cour nationale',
+      'Juzgado de Instrucción nº 1 de San Roque (Cádiz)': 'Tribunal d\'instruction nº 1 de San Roque (Cadix)'
+    }
+  };
+  const langMap = organoMaps[language];
+  return langMap?.[organo] || organo;
 };
 
-const resultMap: { [key: string]: string } = {
-  'Sobreseimiento': 'إغلاق الدعوى',
-  'Absolución': 'البراءة',
-  'Condena': 'الإدانة',
-  'Archivo de Diligencias': 'حفظ الإجراءات',
-  'Auto de Sobreseimiento': 'قرار إغلاق الدعوى',
-  'Sentencia Absolutoria': 'حكم بالبراءة',
-  'Sentencia Condenatoria': 'حكم بالإدانة',
-  'La Audiencia Provincial decreta el Sobreseimiento': 'تصدر محكمة الاستئناف قرار إغلاق الدعوى',
-  'Sobreseimiento sólo para nuestro cliente': 'إغلاق الدعوى لعميلنا فقط',
-  'Absolución con todos los pronunciamientos favorables': 'البراءة مع جميع الأحكام المواتية',
-  'Modificación de prisión provisional a libertad provisional sin fianza': 'تعديل السجن المؤقت إلى الحرية المؤقتة بدون كفالة',
-  'Auto de sobreseimiento provisional': 'قرار إغلاق الدعوى المؤقت',
-  'Audiencia Provincial estima recurso y archiva la causa': 'تقبل محكمة الاستئناف الاستئناف وتحفظ القضية',
-  'Auto de sobreseimiento y archivo': 'قرار إغلاق الدعوى وحفظها',
-  'Revocación de orden de búsqueda y captura': 'إلغاء أمر البحث والقبض',
-  'Investigación en curso': 'التحقيق جارٍ',
-  'Auto concediendo libertad provisional': 'قرار منح الحرية المؤقتة',
-  'Sentencia absolutoria': 'حكم بالبراءة'
+const getTranslatedResult = (resultado: string, language: string) => {
+  if (language === 'es') return resultado;
+  
+  const resultMaps: { [lang: string]: { [key: string]: string } } = {
+    ar: {
+      'Sobreseimiento': 'إغلاق الدعوى',
+      'Absolución': 'البراءة',
+      'Condena': 'الإدانة',
+      'Archivo de Diligencias': 'حفظ الإجراءات',
+      'Auto de Sobreseimiento': 'قرار إغلاق الدعوى',
+      'Sentencia Absolutoria': 'حكم بالبراءة',
+      'Sentencia Condenatoria': 'حكم بالإدانة',
+      'La Audiencia Provincial decreta el Sobreseimiento': 'تصدر محكمة الاستئناف قرار إغلاق الدعوى',
+      'Sobreseimiento sólo para nuestro cliente': 'إغلاق الدعوى لعميلنا فقط',
+      'Absolución con todos los pronunciamientos favorables': 'البراءة مع جميع الأحكام المواتية',
+      'Modificación de prisión provisional a libertad provisional sin fianza': 'تعديل السجن المؤقت إلى الحرية المؤقتة بدون كفالة',
+      'Auto de sobreseimiento provisional': 'قرار إغلاق الدعوى المؤقت',
+      'Audiencia Provincial estima recurso y archiva la causa': 'تقبل محكمة الاستئناف الاستئناف وتحفظ القضية',
+      'Auto de sobreseimiento y archivo': 'قرار إغلاق الدعوى وحفظها',
+      'Revocación de orden de búsqueda y captura': 'إلغاء أمر البحث والقبض',
+      'Investigación en curso': 'التحقيق جارٍ',
+      'Auto concediendo libertad provisional': 'قرار منح الحرية المؤقتة',
+      'Sentencia absolutoria': 'حكم بالبراءة'
+    },
+    en: {
+      'Sobreseimiento': 'Dismissal',
+      'Absolución': 'Acquittal',
+      'Condena': 'Conviction',
+      'Archivo de Diligencias': 'Case Filed',
+      'Auto de Sobreseimiento': 'Dismissal Order',
+      'Sentencia Absolutoria': 'Acquittal Judgment',
+      'Sentencia Condenatoria': 'Conviction Judgment',
+      'La Audiencia Provincial decreta el Sobreseimiento': 'Provincial Court Orders Dismissal',
+      'Sobreseimiento sólo para nuestro cliente': 'Dismissal for Our Client Only',
+      'Absolución con todos los pronunciamientos favorables': 'Full Acquittal with All Favorable Rulings',
+      'Modificación de prisión provisional a libertad provisional sin fianza': 'Pretrial Detention Modified to Release Without Bail',
+      'Auto de sobreseimiento provisional': 'Provisional Dismissal Order',
+      'Audiencia Provincial estima recurso y archiva la causa': 'Provincial Court Grants Appeal and Archives Case',
+      'Auto de sobreseimiento y archivo': 'Dismissal and Archiving Order',
+      'Revocación de orden de búsqueda y captura': 'Revocation of Arrest Warrant',
+      'Investigación en curso': 'Investigation Ongoing',
+      'Auto concediendo libertad provisional': 'Order Granting Provisional Release',
+      'Sentencia absolutoria': 'Acquittal Judgment'
+    },
+    fr: {
+      'Sobreseimiento': 'Non-lieu',
+      'Absolución': 'Acquittement',
+      'Condena': 'Condamnation',
+      'Archivo de Diligencias': 'Classement sans suite',
+      'Auto de Sobreseimiento': 'Ordonnance de non-lieu',
+      'Sentencia Absolutoria': 'Jugement d\'acquittement',
+      'Sentencia Condenatoria': 'Jugement de condamnation',
+      'La Audiencia Provincial decreta el Sobreseimiento': 'La Cour Provinciale ordonne le non-lieu',
+      'Sobreseimiento sólo para nuestro cliente': 'Non-lieu uniquement pour notre client',
+      'Absolución con todos los pronunciamientos favorables': 'Acquittement total avec toutes les décisions favorables',
+      'Modificación de prisión provisional a libertad provisional sin fianza': 'Modification de la détention provisoire en liberté sans caution',
+      'Auto de sobreseimiento provisional': 'Ordonnance de non-lieu provisoire',
+      'Audiencia Provincial estima recurso y archiva la causa': 'La Cour Provinciale accepte le recours et classe l\'affaire',
+      'Auto de sobreseimiento y archivo': 'Ordonnance de non-lieu et classement',
+      'Revocación de orden de búsqueda y captura': 'Révocation du mandat d\'arrêt',
+      'Investigación en curso': 'Enquête en cours',
+      'Auto concediendo libertad provisional': 'Ordonnance accordant la liberté provisoire',
+      'Sentencia absolutoria': 'Jugement d\'acquittement'
+    }
+  };
+  const langMap = resultMaps[language];
+  return langMap?.[resultado] || resultado;
 };
 
-const tipoMap: { [key: string]: string } = {
-  'Sobreseimiento': 'إغلاق الدعوى',
-  'Sentencia': 'حكم',
-  'Auto': 'قرار',
-  'Diligencias': 'إجراءات',
-  'Archivo': 'حفظ',
-  'Libertad provisional': 'الحرية المؤقتة',
-  'Investigación en curso': 'التحقيق جارٍ',
-  'Pendiente': 'معلق',
-  'Absolución': 'البراءة',
-  'Sustitución de prisión por libertad provisional': 'استبدال السجن بالحرية المؤقتة',
-  'Sobreseimiento provisional': 'إغلاق الدعوى المؤقت',
-  'Revocación / Archivo': 'إلغاء / حفظ',
-  'Revocación': 'إلغاء'
+const getTranslatedTipo = (tipo: string, language: string) => {
+  if (language === 'es') return tipo;
+  
+  const tipoMaps: { [lang: string]: { [key: string]: string } } = {
+    ar: {
+      'Sobreseimiento': 'إغلاق الدعوى',
+      'Sentencia': 'حكم',
+      'Auto': 'قرار',
+      'Diligencias': 'إجراءات',
+      'Archivo': 'حفظ',
+      'Libertad provisional': 'الحرية المؤقتة',
+      'Investigación en curso': 'التحقيق جارٍ',
+      'Pendiente': 'معلق',
+      'Absolución': 'البراءة',
+      'Sustitución de prisión por libertad provisional': 'استبدال السجن بالحرية المؤقتة',
+      'Sobreseimiento provisional': 'إغلاق الدعوى المؤقت',
+      'Revocación / Archivo': 'إلغاء / حفظ',
+      'Revocación': 'إلغاء'
+    },
+    en: {
+      'Sobreseimiento': 'Dismissal',
+      'Sentencia': 'Judgment',
+      'Auto': 'Court Order',
+      'Diligencias': 'Proceedings',
+      'Archivo': 'Filing',
+      'Libertad provisional': 'Provisional Release',
+      'Investigación en curso': 'Ongoing Investigation',
+      'Pendiente': 'Pending',
+      'Absolución': 'Acquittal',
+      'Sustitución de prisión por libertad provisional': 'Prison Substituted by Provisional Release',
+      'Sobreseimiento provisional': 'Provisional Dismissal',
+      'Revocación / Archivo': 'Revocation / Filing',
+      'Revocación': 'Revocation'
+    },
+    fr: {
+      'Sobreseimiento': 'Non-lieu',
+      'Sentencia': 'Jugement',
+      'Auto': 'Ordonnance',
+      'Diligencias': 'Procédures',
+      'Archivo': 'Classement',
+      'Libertad provisional': 'Liberté provisoire',
+      'Investigación en curso': 'Enquête en cours',
+      'Pendiente': 'En attente',
+      'Absolución': 'Acquittement',
+      'Sustitución de prisión por libertad provisional': 'Substitution de prison par liberté provisoire',
+      'Sobreseimiento provisional': 'Non-lieu provisoire',
+      'Revocación / Archivo': 'Révocation / Classement',
+      'Revocación': 'Révocation'
+    }
+  };
+  const langMap = tipoMaps[language];
+  return langMap?.[tipo] || tipo;
 };
 
 // Función para convertir texto en mayúsculas a formato título normal
@@ -477,19 +627,19 @@ export default function CasosPage() {
                           'bg-gold'
                         }`}></div>
                                               <span className="text-sm text-offwhite/80">
-                          <strong className="text-gold">{t.casos.casos.resultado}</strong> {language === 'es' ? caso.resultado : (resultMap[caso.resultado] || caso.resultado)}
+                          <strong className="text-gold">{t.casos.casos.resultado}</strong> {getTranslatedResult(caso.resultado, language)}
                         </span>
                      </div>
                                           <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-gold rounded-full"></div>
                         <span className="text-sm text-offwhite/80">
-                          <strong className="text-gold">{t.casos.casos.organo}</strong> {language === 'es' ? caso.organo : (organoMap[caso.organo] || caso.organo)}
+                          <strong className="text-gold">{t.casos.casos.organo}</strong> {getTranslatedOrgano(caso.organo, language)}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-apricot rounded-full"></div>
                         <span className="text-sm text-offwhite/80">
-                          <strong className="text-gold">{t.casos.casos.tipo}</strong> {language === 'es' ? caso.tipo_resolucion : (tipoMap[caso.tipo_resolucion] || caso.tipo_resolucion)}
+                          <strong className="text-gold">{t.casos.casos.tipo}</strong> {getTranslatedTipo(caso.tipo_resolucion, language)}
                         </span>
                       </div>
                    </div>
@@ -596,41 +746,37 @@ export default function CasosPage() {
          <div className="mx-auto max-w-4xl px-4 sm:px-6">
            <article className="prose prose-lg max-w-none">
              <h2 className="text-2xl font-bold text-gold mb-6">
-               {language === 'ar' ? 'قضايا نجاح حقيقية ونتائج قابلة للتحقق' : 'Casos de Éxito Reales y Resultados Verificables'}
+               {t.casos.seoContent.casosExitoTitle}
              </h2>
              
              <p className="text-black/80 leading-relaxed mb-6">
-               {language === 'ar'
-                 ? 'في ستانس للمحاماة، نحن فخورون بنتائجنا ونشاركها بشفافية. كل حالة معروضة هنا حقيقية وتمثل دفاعاً قدمناه في المحاكم الإسبانية. نعرض فقط القضايا المسموح بنشرها علناً، مع احترام كامل للخصوصية والسرية المهنية.'
-                 : 'En STANS ABOGADOS nos enorgullecemos de nuestros resultados y los compartimos con transparencia. Cada caso mostrado aquí es real y representa una defensa que hemos realizado en tribunales españoles. Solo mostramos casos que pueden ser publicados públicamente, respetando completamente la privacidad y el secreto profesional.'}
+               {t.casos.seoContent.casosExitoDescription}
              </p>
 
              <h3 className="text-xl font-semibold text-black/90 mt-8 mb-4">
-               {language === 'ar' ? 'أنواع القضايا التي ندافع عنها' : 'Tipos de Casos que Defendemos'}
+               {t.casos.seoContent.tiposCasosTitle}
              </h3>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                <div className="bg-gold/5 p-4 rounded-lg">
-                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الإرهاب' : 'Terrorismo'}</h4>
-                 <p className="text-black/70 text-sm">{language === 'ar' ? 'أمام المحكمة الوطنية' : 'Ante la Audiencia Nacional'}</p>
+                 <h4 className="font-semibold text-black mb-2">{t.casos.seoContent.terrorismo}</h4>
+                 <p className="text-black/70 text-sm">{t.casos.seoContent.terrorismoDesc}</p>
                </div>
                <div className="bg-gold/5 p-4 rounded-lg">
-                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الجريمة المنظمة' : 'Crimen Organizado'}</h4>
-                 <p className="text-black/70 text-sm">{language === 'ar' ? 'عمليات واسعة النطاق' : 'Operaciones de gran envergadura'}</p>
+                 <h4 className="font-semibold text-black mb-2">{t.casos.seoContent.crimenOrganizado}</h4>
+                 <p className="text-black/70 text-sm">{t.casos.seoContent.crimenOrganizadoDesc}</p>
                </div>
                <div className="bg-gold/5 p-4 rounded-lg">
-                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'الجرائم الاقتصادية' : 'Delitos Económicos'}</h4>
-                 <p className="text-black/70 text-sm">{language === 'ar' ? 'غسيل الأموال والاحتيال' : 'Blanqueo de capitales y estafa'}</p>
+                 <h4 className="font-semibold text-black mb-2">{t.casos.seoContent.delitosEconomicos}</h4>
+                 <p className="text-black/70 text-sm">{t.casos.seoContent.delitosEconomicosDesc}</p>
                </div>
                <div className="bg-gold/5 p-4 rounded-lg">
-                 <h4 className="font-semibold text-black mb-2">{language === 'ar' ? 'حرية التعبير' : 'Libertad de Expresión'}</h4>
-                 <p className="text-black/70 text-sm">{language === 'ar' ? 'دفاع عن الحقوق الأساسية' : 'Defensa de derechos fundamentales'}</p>
+                 <h4 className="font-semibold text-black mb-2">{t.casos.seoContent.libertadExpresion}</h4>
+                 <p className="text-black/70 text-sm">{t.casos.seoContent.libertadExpresionDesc}</p>
                </div>
              </div>
 
              <p className="text-black/80 leading-relaxed mb-4">
-               {language === 'ar'
-                 ? 'إذا كنت تواجه موقفاً قانونياً مشابهاً لأي من القضايا المعروضة، لا تتردد في الاتصال بنا. كل قضية فريدة وتتطلب استراتيجية دفاع مخصصة.'
-                 : 'Si enfrentas una situación legal similar a cualquiera de los casos mostrados, no dudes en contactarnos. Cada caso es único y requiere una estrategia de defensa personalizada basada en sus circunstancias específicas.'}
+               {t.casos.seoContent.contactoFinal}
              </p>
            </article>
          </div>
