@@ -129,7 +129,7 @@ export default function SEOContentSection() {
             <h3 className="text-2xl font-semibold text-gold mt-10 mb-4">Our Team of Specialized Criminal Lawyers</h3>
 
             <p className="text-black/80 leading-relaxed mb-4">
-              The STANS ABOGADOS team is composed of four criminal lawyers registered with ICAM, each with complementary specializations that allow us to offer <strong>comprehensive defense</strong> in any type of criminal procedure:
+              The STANS ABOGADOS team is composed of three criminal lawyers registered with ICAM, each with complementary specializations that allow us to offer <strong>comprehensive defense</strong> in any type of criminal procedure:
             </p>
 
             <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
@@ -150,13 +150,6 @@ export default function SEOContentSection() {
               <p className="font-semibold text-black mb-2 text-base">Diego Cardona Valero - Partner Lawyer</p>
               <p className="text-black/70 text-sm">
                 Specialist in criminal procedural law, organized crime and terrorism. High strategic capacity in litigation and preparation of appeals before higher courts. Specialized training at the Centro de Estudios de Investigación Jurídica (CEIJ).
-              </p>
-            </div>
-
-            <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
-              <p className="font-semibold text-black mb-2 text-base">Ada de Blas Pascual - Lawyer</p>
-              <p className="text-black/70 text-sm">
-                International training with LL.M. from the University of Cambridge (United Kingdom). Specialist in international criminal law and economic criminal law. Quadrilingual (Spanish, English, French, Italian) with experience in complex cases of international dimension.
               </p>
             </div>
 
@@ -363,7 +356,7 @@ export default function SEOContentSection() {
             <h3 className="text-2xl font-semibold text-gold mt-10 mb-4">Notre Équipe d'Avocats Pénalistes Spécialisés</h3>
 
             <p className="text-black/80 leading-relaxed mb-4">
-              L'équipe de STANS ABOGADOS est composée de quatre avocats pénalistes inscrits à l'ICAM, chacun avec des spécialisations complémentaires qui nous permettent d'offrir une <strong>défense intégrale</strong> dans tout type de procédure pénale:
+              L'équipe de STANS ABOGADOS est composée de trois avocats pénalistes inscrits à l'ICAM, chacun avec des spécialisations complémentaires qui nous permettent d'offrir une <strong>défense intégrale</strong> dans tout type de procédure pénale:
             </p>
 
             <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
@@ -384,13 +377,6 @@ export default function SEOContentSection() {
               <p className="font-semibold text-black mb-2 text-base">Diego Cardona Valero - Associé Avocat</p>
               <p className="text-black/70 text-sm">
                 Spécialiste en droit procédural pénal, crime organisé et terrorisme. Grande capacité stratégique en litige et préparation des recours devant les juridictions supérieures. Formation spécialisée au Centro de Estudios de Investigación Jurídica (CEIJ).
-              </p>
-            </div>
-
-            <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
-              <p className="font-semibold text-black mb-2 text-base">Ada de Blas Pascual - Avocate</p>
-              <p className="text-black/70 text-sm">
-                Formation internationale avec LL.M. de l'Université de Cambridge (Royaume-Uni). Spécialiste en droit pénal international et droit pénal économique. Quadrilingue (espagnol, anglais, français, italien) avec expérience dans les affaires complexes de dimension internationale.
               </p>
             </div>
 
@@ -596,7 +582,7 @@ export default function SEOContentSection() {
           <h3 className="text-2xl font-semibold text-gold mt-10 mb-4">Nuestro Equipo de Abogados Penalistas Especializados</h3>
           
           <p className="text-black/80 leading-relaxed mb-4">
-            El equipo de STANS ABOGADOS está compuesto por cuatro abogados penalistas colegiados, cada uno con especialidades complementarias que nos permiten ofrecer una <strong>defensa integral</strong> en cualquier tipo de procedimiento penal:
+            El equipo de STANS ABOGADOS está compuesto por tres abogados penalistas colegiados, cada uno con especialidades complementarias que nos permiten ofrecer una <strong>defensa integral</strong> en cualquier tipo de procedimiento penal:
           </p>
 
           <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
@@ -617,13 +603,6 @@ export default function SEOContentSection() {
             <p className="font-semibold text-black mb-2 text-base">Diego Cardona Valero - Socio Abogado</p>
             <p className="text-black/70 text-sm">
               Especialista en derecho procesal penal, criminalidad organizada y terrorismo. Alta capacidad estratégica en litigación y preparación de recursos ante instancias superiores. Formación especializada en el Centro de Estudios de Investigación Jurídica (CEIJ).
-            </p>
-          </div>
-
-          <div className="bg-gold/5 border-l-4 border-gold p-6 mb-6">
-            <p className="font-semibold text-black mb-2 text-base">Ada de Blas Pascual - Abogada</p>
-            <p className="text-black/70 text-sm">
-              Formación internacional con LL.M. por la University of Cambridge (Reino Unido). Especialista en derecho penal internacional y derecho penal económico. Cuatrilingüe (español, inglés, francés, italiano) con experiencia en causas complejas de dimensión internacional.
             </p>
           </div>
 

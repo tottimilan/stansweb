@@ -60,12 +60,6 @@ export const translations = {
         role: 'Socio Abogado',
         summary: 'Abogado del ICAM especializado en derecho procesal penal. Experiencia en delincuencia organizada y terrorismo. Capacidad estratégica en litigación y preparación de recursos en procedimientos de alta complejidad.',
         tags: ['Derecho Procesal Penal', 'Delincuencia Organizada', 'Terrorismo', 'Litigación', 'Recursos']
-      },
-      ada: {
-        name: 'Ada de Blas Pascual',
-        role: 'Abogada',
-        summary: 'Abogada del ICAM especializada en Derecho Penal Económico e Internacional. Formación internacional (Cambridge LL.M.). Experiencia en extradiciones, OEDE y defensa de personas jurídicas. Asistencia multilingüe.',
-        tags: ['Derecho Penal Económico', 'Derecho Penal Internacional', 'Extradiciones y OEDE', 'Personas Jurídicas', 'Integridad Física y Moral']
       }
     },
 
@@ -913,12 +907,6 @@ export const translations = {
         role: 'شريك محامي',
         summary: 'محامي في المجلس العلمي لمحامي مدريد متخصص في القانون الجنائي الإجرائي. خبرة في الجريمة المنظمة والإرهاب. قدرة استراتيجية في التقاضي وإعداد الموارد في إجراءات عالية التعقيد.',
         tags: ['القانون الجنائي الإجرائي', 'الجريمة المنظمة', 'الإرهاب', 'التقاضي', 'الموارد']
-      },
-      ada: {
-        name: 'آدا دي بلاس باسكوال',
-        role: 'محامية',
-        summary: 'محامية في المجلس العلمي لمحامي مدريد متخصصة في القانون الجنائي الاقتصادي والدولي. تكوين دولي (ماجستير من كامبريدج). خبرة في التسليم وOEDE والدفاع عن الأشخاص الاعتباريين. مساعدة متعددة اللغات.',
-        tags: ['القانون الجنائي الاقتصادي', 'القانون الجنائي الدولي', 'التسليم وOEDE', 'الأشخاص الاعتباريون', 'السلامة البدنية والمعنوية']
       }
     },
 
@@ -2503,12 +2491,6 @@ export const translations = {
         role: 'Partner Lawyer',
         summary: 'ICAM lawyer specialized in criminal procedural law. Experience in organized crime and terrorism. Strategic capacity in litigation and preparation of resources in high-complexity procedures.',
         tags: ['Criminal Procedural Law', 'Organized Crime', 'Terrorism', 'Litigation', 'Appeals']
-      },
-      ada: {
-        name: 'Ada de Blas Pascual',
-        role: 'Lawyer',
-        summary: 'ICAM lawyer specialized in Economic Criminal Law and International Criminal Law. International training (Cambridge LL.M.). Experience in extraditions, OEDE and defense of legal persons. Multilingual assistance.',
-        tags: ['Economic Criminal Law', 'International Criminal Law', 'Extraditions and OEDE', 'Legal Persons', 'Physical and Moral Integrity']
       }
     },
 
@@ -3179,12 +3161,6 @@ export const translations = {
         role: 'Avocat Associé',
         summary: 'Avocat du Barreau de Madrid spécialisé en droit procédural pénal. Expérience en criminalité organisée et terrorisme. Capacité stratégique en contentieux et préparation de recours dans les procédures de haute complexité.',
         tags: ['Droit Procédural Pénal', 'Criminalité Organisée', 'Terrorisme', 'Contentieux', 'Recours']
-      },
-      ada: {
-        name: 'Ada de Blas Pascual',
-        role: 'Avocate',
-        summary: 'Avocate du Barreau de Madrid spécialisée en Droit Pénal Économique et International. Formation internationale (Cambridge LL.M.). Expérience en extraditions, OEDE et défense des personnes morales. Assistance multilingue.',
-        tags: ['Droit Pénal Économique', 'Droit Pénal International', 'Extraditions et OEDE', 'Personnes Morales', 'Intégrité Physique et Morale']
       }
     },
 

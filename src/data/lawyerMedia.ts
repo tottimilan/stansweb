@@ -55,10 +55,6 @@ export const lawyerMediaData: LawyerMedia[] = [
   {
     slug: 'diego-cardona-valero',
     media: []
-  },
-  {
-    slug: 'ada-de-blas-pascual',
-    media: []
   }
 ];
 

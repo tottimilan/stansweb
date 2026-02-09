@@ -5,7 +5,7 @@ export default function LocalBusinessSchema() {
     "@id": "https://www.stansabogados.com/#legal-service",
     "name": "STANS ABOGADOS",
     "alternateName": "STANS Abogados Penalistas Madrid",
-    "description": "Despacho de abogados penalistas especializado en defensa penal, terrorismo, extradiciones y derechos fundamentales. Atención 24/7 en español, inglés, árabe, francés e italiano.",
+    "description": "Despacho de abogados penalistas especializado en defensa penal, terrorismo, extradiciones y derechos fundamentales. Atención 24/7 en español, inglés y árabe.",
     "url": "https://www.stansabogados.com",
     "logo": {
       "@type": "ImageObject",
@@ -78,7 +78,7 @@ export default function LocalBusinessSchema() {
     ],
     
     // Idiomas que habla el equipo (formato correcto Schema.org)
-    "knowsLanguage": ["es", "en", "ar", "fr", "it"],
+    "knowsLanguage": ["es", "en", "ar"],
     
     // Año de fundación
     "foundingDate": "2024",
@@ -86,7 +86,7 @@ export default function LocalBusinessSchema() {
     // Número de empleados
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
-      "value": 4
+      "value": 3
     },
     
     // Servicios ofrecidos
@@ -165,15 +165,6 @@ export default function LocalBusinessSchema() {
         "description": "Especialista en Derecho Procesal Penal y Criminalidad Organizada",
         "knowsLanguage": ["es"],
         "url": "https://www.stansabogados.com/equipo/diego-cardona-valero"
-      },
-      {
-        "@type": "Person",
-        "@id": "https://www.stansabogados.com/equipo/ada-de-blas-pascual",
-        "name": "Ada de Blas Pascual",
-        "jobTitle": "Abogada",
-        "description": "Especialista en Derecho Penal Internacional y Económico",
-        "knowsLanguage": ["es", "en", "fr", "it"],
-        "url": "https://www.stansabogados.com/equipo/ada-de-blas-pascual"
       }
     ],
     

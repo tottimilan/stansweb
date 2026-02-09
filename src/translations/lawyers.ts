@@ -249,43 +249,6 @@ export const lawyersDataEn: Record<string, {
       'Highly Complex Proceedings'
     ]
   },
-  'ada-de-blas-pascual': {
-    summary: 'ICAM-certified lawyer, specialized in Criminal Law and International Law. Double degree UCM and Cambridge LL.M. Education at Lycée Français de Madrid. Expert in extraditions, EAW, and international economic crimes. Multilingual: Spanish, English, French, and Italian.',
-    longBio: 'Ada de Blas Pascual is a lawyer at Stans Abogados, certified by the Illustrious Bar Association of Madrid (ICAM), specialized in Criminal Law, International Law, and European Union Law. With exceptional academic training, she completed her studies at the Lycée Français de Madrid, obtained a double degree in Law and Philosophy from the Complutense University of Madrid, and completed a Master in International Law (LL.M.) from Cambridge University (UK), one of the most prestigious academic institutions in the world. Throughout her career, she has developed strong expertise in criminal matters, both nationally and internationally, with particular distinction in her ability to handle cross-border cases with high legal complexity.',
-    specializations: [
-      'Criminal Law',
-      'Economic Criminal Law',
-      'International Law and EU Law',
-      'International Extradition',
-      'EAW (European Arrest Warrant)',
-      'Corporate Defense'
-    ],
-    education: [
-      'Double Degree in Law and Philosophy - Complutense University of Madrid (UCM)',
-      'Master in International Law (LL.M.) - Cambridge University (UK)',
-      'Lycée Français de Madrid',
-      'Member of the Illustrious Bar Association of Madrid (ICAM)'
-    ],
-    achievements: [
-      'International training at Cambridge University (LL.M.)',
-      'Strong expertise in national and international Criminal Law',
-      'Specialist in extradition and EAW proceedings',
-      'Expert in Economic and International Criminal Law',
-      'Multilingual legal consulting in 4 languages'
-    ],
-    practiceAreas: [
-      'Economic Criminal Law',
-      'Money Laundering',
-      'International Fraud and Forgery',
-      'Corporate Crimes',
-      'Criminal Compliance',
-      'Corporate Criminal Liability',
-      'International Extradition',
-      'EAW',
-      'Crimes against Physical Integrity',
-      'Corporate Defense'
-    ]
-  }
 };
 
 // Traducciones de datos de abogados en francés
@@ -402,43 +365,6 @@ export const lawyersDataFr: Record<string, {
       'Procédures Très Complexes'
     ]
   },
-  'ada-de-blas-pascual': {
-    summary: 'Avocate certifiée ICAM, spécialisée en Droit Pénal et Droit International. Double diplôme UCM et LL.M. Cambridge. Formation au Lycée Français de Madrid. Experte en extraditions, MAE et délits économiques internationaux. Multilingue: Espagnol, Anglais, Français et Italien.',
-    longBio: 'Ada de Blas Pascual est avocate chez Stans Abogados, certifiée par l\'Illustre Barreau de Madrid (ICAM), spécialisée en Droit Pénal, Droit International et Droit de l\'Union Européenne. Avec une formation académique exceptionnelle, elle a effectué ses études au Lycée Français de Madrid, obtenu un double diplôme en Droit et Philosophie à l\'Université Complutense de Madrid, et complété un Master en Droit International (LL.M.) à l\'Université de Cambridge (Royaume-Uni).',
-    specializations: [
-      'Droit Pénal',
-      'Droit Pénal Économique',
-      'Droit International et de l\'UE',
-      'Extradition Internationale',
-      'MAE (Mandat d\'Arrêt Européen)',
-      'Défense des Personnes Morales'
-    ],
-    education: [
-      'Double Diplôme en Droit et Philosophie - Université Complutense de Madrid (UCM)',
-      'Master en Droit International (LL.M.) - Université de Cambridge (UK)',
-      'Lycée Français de Madrid',
-      'Membre de l\'Illustre Barreau de Madrid (ICAM)'
-    ],
-    achievements: [
-      'Formation internationale à l\'Université de Cambridge (LL.M.)',
-      'Solide expertise en Droit Pénal national et international',
-      'Spécialiste des procédures d\'extradition et MAE',
-      'Experte en Droit Pénal Économique et International',
-      'Conseil juridique multilingue en 4 langues'
-    ],
-    practiceAreas: [
-      'Droit Pénal Économique',
-      'Blanchiment d\'Argent',
-      'Fraude et Faux Internationaux',
-      'Délits d\'Entreprise',
-      'Conformité Pénale',
-      'Responsabilité Pénale des Entreprises',
-      'Extradition Internationale',
-      'MAE',
-      'Délits contre l\'Intégrité Physique',
-      'Défense des Entreprises'
-    ]
-  }
 };
 
 // Traducciones de datos de abogados en árabe
@@ -555,42 +481,5 @@ export const lawyersDataAr: Record<string, {
       'الإجراءات عالية التعقيد'
     ]
   },
-  'ada-de-blas-pascual': {
-    summary: 'محامية معتمدة من ICAM، متخصصة في القانون الجنائي والقانون الدولي. شهادة مزدوجة UCM وماجستير كامبريدج. تعليم في الليسيه الفرنسي بمدريد. خبيرة في تسليم المجرمين وOEDE والجرائم الاقتصادية الدولية. متعددة اللغات: القشتالية، الإنجليزية، الفرنسية والإيطالية.',
-    longBio: 'آدا دي بلاس باسكوال هي محامية في مكتب ستانس للمحاماة، معتمدة من نقابة المحامين المرموقة في مدريد (ICAM)، متخصصة في القانون الجنائي والقانون الدولي وقانون الاتحاد الأوروبي. بتكوين أكاديمي استثنائي، أكملت دراستها في الليسيه الفرنسي بمدريد، وحصلت على شهادة مزدوجة في القانون والفلسفة من جامعة كومبلوتنسي بمدريد، وأكملت ماجستير في القانون الدولي (LL.M.) من جامعة كامبريدج (المملكة المتحدة)، إحدى أكثر المؤسسات الأكاديمية المرموقة في العالم. على مدار مسيرتها المهنية، طورت خبرة قوية في المجال الجنائي، على المستوى الوطني والدولي على حد سواء، مع تميز خاص في قدرتها على معالجة القضايا العابرة للحدود وذات التعقيد القانوني العالي. تركز ممارستها المهنية على الدفاع في الإجراءات الجنائية المعقدة، مع اهتمام خاص بالقانون الجنائي الاقتصادي، والقانون الجنائي الدولي، وإجراءات تسليم المجرمين وتلك المتعلقة بأمر الاعتقال والتسليم الأوروبي (OEDE). بالإضافة إلى ذلك، تمتلك خبرة واسعة في الجرائم المتعلقة بالأشخاص الاعتباريين (الشركات)، والامتثال الجنائي للشركات، والجرائم ضد السلامة الجسدية والمعنوية. بفضل تكوينها الدولي وملفها الشخصي متعدد الثقافات، تقدم استشارات قانونية متعددة اللغات بالقشتالية والإنجليزية والفرنسية والإيطالية، مما يجعلها محامية موضع تقدير خاص للعملاء الدوليين وإجراءات التعاون القضائي الأوروبي.',
-    specializations: [
-      'القانون الجنائي',
-      'القانون الجنائي الاقتصادي',
-      'القانون الدولي وقانون الاتحاد الأوروبي',
-      'تسليم المجرمين الدولي',
-      'OEDE (أمر الاعتقال والتسليم الأوروبي)',
-      'الدفاع عن الأشخاص الاعتباريين'
-    ],
-    education: [
-      'شهادة مزدوجة في القانون والفلسفة - جامعة كومبلوتنسي بمدريد (UCM)',
-      'ماجستير في القانون الدولي (LL.M.) - جامعة كامبريدج (المملكة المتحدة)',
-      'الليسيه الفرنسي بمدريد',
-      'عضو نقابة المحامين المرموقة في مدريد (ICAM)'
-    ],
-    achievements: [
-      'تكوين دولي في جامعة كامبريدج (LL.M.)',
-      'خبرة قوية في القانون الجنائي الوطني والدولي',
-      'متخصصة في إجراءات تسليم المجرمين وOEDE',
-      'خبيرة في القانون الجنائي الاقتصادي والدولي',
-      'استشارات قانونية متعددة اللغات بـ 4 لغات'
-    ],
-    practiceAreas: [
-      'القانون الجنائي الاقتصادي',
-      'غسل الأموال',
-      'الاحتيال والتزوير الدولي',
-      'جرائم الشركات',
-      'الامتثال الجنائي',
-      'المسؤولية الجنائية للشركات',
-      'تسليم المجرمين الدولي',
-      'OEDE',
-      'الجرائم ضد السلامة الجسدية',
-      'الدفاع عن الشركات'
-    ]
-  }
 };
 

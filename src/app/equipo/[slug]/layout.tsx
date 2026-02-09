@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...lawyer.practiceAreas,
   ];
 
-  // Keywords específicas por idiomas (especialmente importante para Mounir y Ada)
+  // Keywords específicas por idiomas (especialmente importante para Mounir)
   const languageKeywords = lawyer.languageLabels.flatMap(lang => [
     `abogado ${lang.toLowerCase()} Madrid`,
     `abogado penalista ${lang.toLowerCase()}`,
@@ -59,15 +59,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'extradiciones España Marruecos',
       'abogado árabe penalista',
       'abogado trilingüe Madrid'
-    );
-  } else if (lawyer.slug === 'ada-de-blas-pascual') {
-    uniqueKeywords.push(
-      'abogada Cambridge Madrid',
-      'abogada LL.M. Cambridge',
-      'abogada multilingüe Madrid',
-      'abogada derecho internacional Madrid',
-      'abogada 4 idiomas Madrid',
-      'abogada penal económico internacional'
     );
   } else if (lawyer.slug === 'ruben-vaquero-arribas') {
     uniqueKeywords.push(

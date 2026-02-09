@@ -177,58 +177,6 @@ export const lawyers: Lawyer[] = [
       'Terrorismo y Audiencia Nacional',
       'Delitos contra la salud pública'
     ]
-  },
-  {
-    id: '4',
-    slug: 'ada-de-blas-pascual',
-    name: 'Ada de Blas Pascual',
-    role: 'Abogada',
-    summary: 'Abogada colegiada ICAM, especializada en Derecho Penal y Derecho Internacional. Doble Grado UCM y LL.M. Cambridge. Formación en Liceo Francés de Madrid. Experta en extradiciones, OEDE y delitos económicos internacionales. Multilingüe: castellano, inglés, francés e italiano.',
-    longBio: 'Ada de Blas Pascual es Abogada de STANS ABOGADOS, colegiada del Ilustre Colegio de la Abogacía de Madrid (ICAM), especializada en Derecho Penal y en Derecho Internacional y de la Unión Europea. Con una formación académica excepcional, cursó sus estudios en el Liceo Francés de Madrid, obtuvo un Doble Grado en Derecho y Filosofía en la Universidad Complutense de Madrid, y completó un Máster en Derecho Internacional (LL.M.) por la University of Cambridge (Reino Unido), una de las instituciones académicas más prestigiosas del mundo. A lo largo de su trayectoria profesional, ha desarrollado una sólida experiencia en el ámbito penal, tanto a nivel nacional como internacional, destacando por su capacidad para abordar casos transfronterizos y de alta complejidad jurídica. Su práctica profesional se centra en la defensa en procedimientos penales complejos, con especial atención al Derecho Penal Económico, el Derecho Penal Internacional, los procedimientos de extradición y aquellos relacionados con la Orden Europea de Detención y Entrega (OEDE). Además, posee amplia experiencia en delitos vinculados a personas jurídicas (empresas), compliance penal corporativo y delitos contra la integridad física y moral. Gracias a su formación internacional y a su perfil multicultural, presta asesoramiento jurídico multilingüe en castellano, inglés, francés e italiano, lo que la convierte en una abogada especialmente valorada para clientes internacionales y procedimientos de cooperación judicial europea.',
-    specializations: [
-      'Derecho Penal',
-      'Derecho Penal Económico',
-      'Derecho Internacional y de la Unión Europea',
-      'Extradiciones Internacionales',
-      'OEDE (Orden Europea de Detención y Entrega)',
-      'Defensa de Personas Jurídicas'
-    ],
-    languages: ['ES', 'EN', 'FR', 'IT'],
-    languageLabels: ['Castellano', 'Inglés', 'Francés', 'Italiano'],
-    education: [
-      'Doble Grado en Derecho y Filosofía - Universidad Complutense de Madrid (UCM)',
-      'LL.M. en Derecho Internacional - University of Cambridge (UK)',
-      'Liceo Francés de Madrid',
-      'Colegiada Ilustre Colegio de la Abogacía de Madrid (ICAM)'
-    ],
-    achievements: [
-      'Formación internacional en University of Cambridge (LL.M.)',
-      'Sólida experiencia en Derecho Penal nacional e internacional',
-      'Especialista en procedimientos de extradición y OEDE',
-      'Experta en Derecho Penal Económico e Internacional',
-      'Asesoramiento jurídico multilingüe en 4 idiomas'
-    ],
-    practiceAreas: [
-      'Derecho Penal Económico',
-      'Blanqueo de Capitales',
-      'Estafa y Fraudes Internacionales',
-      'Delitos Societarios',
-      'Compliance Penal',
-      'Responsabilidad Penal Corporativa',
-      'Extradiciones Internacionales',
-      'OEDE',
-      'Delitos contra la Integridad Física',
-      'Defensa de Empresas'
-    ],
-    notableCases: [7, 10, 15], // Estafa Jaén, Blanqueo, Derechos trabajadores
-    image: '/images/Equipo-optimized/Ada1.webp?v=4',
-    hoverImage: '/images/Equipo-optimized/Ada4.webp?v=3',
-    backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=3',
-    email: 'info@stansabogados.com',
-    caseTypes: [
-      'Delitos económicos y contra el patrimonio',
-      'Delitos contra los derechos de los trabajadores'
-    ]
   }
 ];
 

@@ -73,6 +73,11 @@
       "source": "/casos/academia-yihad-libertad-provisional",
       "destination": "/casos/caso-academia-yihad",
       "permanent": true
+    },
+    {
+      "source": "/equipo/ada-de-blas-pascual",
+      "destination": "/equipo/ruben-vaquero-arribas",
+      "permanent": true
     }
   ]
 }

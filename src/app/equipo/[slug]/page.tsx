@@ -512,12 +512,6 @@ export default function LawyerPage() {
                     fr: 'Diego se caractérise par sa capacité stratégique dans les litiges complexes et la préparation des recours devant les juridictions supérieures. Sa spécialisation en droit de procédure pénale lui permet d\'identifier les violations procédurales et de concevoir des stratégies de défense techniquement solides.',
                     ar: 'يتميز دييغو بقدرته الاستراتيجية في التقاضي المعقد وإعداد الطعون أمام المحاكم العليا. تخصصه في القانون الإجرائي الجنائي يسمح له بتحديد الثغرات الإجرائية وتصميم استراتيجيات دفاع قوية.'
                   }[language] || 'Diego se caracteriza por su capacidad estratégica en litigación compleja y preparación de recursos ante tribunales superiores.')}
-                  {lawyer.slug === 'ada-de-blas-pascual' && ({
-                    es: 'Ada combina la formación internacional en Cambridge con el conocimiento práctico del sistema judicial español. Su especialización en derecho penal internacional y económico la hace ideal para casos con dimensión internacional o componente financiero complejo. Su dominio de cuatro idiomas facilita la coordinación en procedimientos transfronterizos.',
-                    en: 'Ada combines international training at Cambridge with practical knowledge of the Spanish judicial system. Her specialization in international and economic criminal law makes her ideal for cases with international dimension or complex financial components. Her command of four languages facilitates coordination in cross-border proceedings.',
-                    fr: 'Ada combine une formation internationale à Cambridge avec une connaissance pratique du système judiciaire espagnol. Sa spécialisation en droit pénal international et économique la rend idéale pour les affaires à dimension internationale ou à composante financière complexe. Sa maîtrise de quatre langues facilite la coordination dans les procédures transfrontalières.',
-                    ar: 'تجمع آدا بين التكوين الدولي في كامبريدج والمعرفة العملية بالنظام القضائي الإسباني. تخصصها في القانون الجنائي الدولي والاقتصادي يجعلها مثالية للقضايا ذات البعد الدولي أو المكون المالي المعقد.'
-                  }[language] || 'Ada combina la formación internacional en Cambridge con el conocimiento práctico del sistema judicial español.')}
                 </p>
               </div>
 

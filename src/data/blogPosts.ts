@@ -2337,7 +2337,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Estafas Informáticas y Phishing: Defensa Penal Especializada',
     excerpt: 'Guía completa sobre estafas informáticas y phishing en España. Tipos de ciberdelitos, penas del Código Penal, cómo actuar si te acusan y estrategias de defensa legal.',
     category: 'Defensa Penal Urgente',
-    author: 'Ada de Blas Pascual',
+    author: 'Rubén Vaquero Arribas',
     date: '2024-12-25',
     readTime: '12 min',
     image: '/images/blog/estafas-informaticas.jpg',
@@ -2589,7 +2589,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Responsabilidad Penal del Administrador de Empresa',
     excerpt: 'Guía sobre responsabilidad penal del administrador societario. Delitos societarios, fiscales, laborales, administración desleal, compliance y estrategias de defensa.',
     category: 'Derecho Penal Económico',
-    author: 'Ada de Blas Pascual',
+    author: 'Rubén Vaquero Arribas',
     date: '2025-01-03',
     readTime: '13 min',
     image: '/images/blog/responsabilidad-administrador.jpg',
@@ -2776,15 +2776,15 @@ export const blogPosts: BlogPost[] = [
         },
         {
           title: 'Experiencia en Casos Complejos: Audiencia Nacional y Terrorismo',
-          content: 'Uno de nuestros rasgos distintivos es la **experiencia en casos de alta complejidad**. Nuestros abogados Mounir Elyemlahy y Diego Cardona tienen amplia trayectoria defendiendo ante la **Audiencia Nacional** en casos de terrorismo, enaltecimiento, captación yihadista y criminalidad organizada. Rubén Vaquero y Ada de Blas aportan experiencia en **derecho penal económico**, extradiciones y OEDE (Orden Europea de Detención y Entrega). Esta experiencia en casos mediáticos y de alta complejidad técnica nos da una perspectiva que aplicamos también a casos "ordinarios": la misma rigurosidad, la misma dedicación, la misma estrategia detallada.'
+          content: 'Uno de nuestros rasgos distintivos es la **experiencia en casos de alta complejidad**. Nuestros abogados Mounir Elyemlahy y Diego Cardona tienen amplia trayectoria defendiendo ante la **Audiencia Nacional** en casos de terrorismo, enaltecimiento, captación yihadista y criminalidad organizada. Rubén Vaquero aporta experiencia en **derecho penal económico**, extradiciones y OEDE (Orden Europea de Detención y Entrega). Esta experiencia en casos mediáticos y de alta complejidad técnica nos da una perspectiva que aplicamos también a casos "ordinarios": la misma rigurosidad, la misma dedicación, la misma estrategia detallada.'
         },
         {
           title: 'Disponibilidad 24/7: Respuesta en Menos de 1 Hora',
           content: 'Las urgencias penales no entienden de horarios. Una detención puede ocurrir a las 3 de la madrugada, un sábado o en plenas vacaciones de Navidad. Por ello, en STANS Abogados ofrecemos **servicio de urgencia 24 horas, 7 días a la semana, 365 días al año**. Nuestro compromiso: **responder en menos de 1 hora** a cualquier llamada de urgencia. Esto significa que si te detienen, tendrás un abogado especializado a tu lado en el menor tiempo posible, asistiendo a la declaración policial y velando por tus derechos desde el primer momento. Esta disponibilidad es especialmente valorada por nuestros clientes y por los propios detenidos que nos recomiendan.'
         },
         {
-          title: 'Asistencia en 5 Idiomas: Español, Inglés, Árabe, Francés e Italiano',
-          content: 'Madrid es una ciudad internacional y muchos de nuestros clientes son extranjeros que no dominan el español. Para garantizar una defensa efectiva, ofrecemos **asistencia jurídica en 5 idiomas**: **Español**: Idioma nativo de todo el equipo. **Inglés**: Ada de Blas es graduada en Cambridge (LL.M.). **Árabe**: Mounir Elyemlahy es nativo árabe y experto en derecho marroquí. **Francés**: Ada de Blas estudió en el Liceo Francés de Madrid. **Italiano**: Ada de Blas habla italiano con fluidez. Esta capacidad multilingüe nos permite atender a clientes de todo el mundo, comunicarnos con familias en el extranjero y gestionar casos con componente internacional (extradiciones, cooperación judicial).'
+          title: 'Asistencia en 3 Idiomas: Español, Inglés y Árabe',
+          content: 'Madrid es una ciudad internacional y muchos de nuestros clientes son extranjeros que no dominan el español. Para garantizar una defensa efectiva, ofrecemos **asistencia jurídica en 3 idiomas**: **Español**: Idioma nativo de todo el equipo. **Inglés**: Rubén Vaquero domina el inglés con fluidez. **Árabe**: Mounir Elyemlahy es nativo árabe y experto en derecho marroquí. Esta capacidad multilingüe nos permite atender a clientes de todo el mundo, comunicarnos con familias en el extranjero y gestionar casos con componente internacional (extradiciones, cooperación judicial).'
         },
         {
           title: 'Por Qué Nos Eligen Nuestros Clientes',

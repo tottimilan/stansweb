@@ -103,14 +103,6 @@ export default function Footer() {
                       {language === 'ar' ? 'دييغو كاردونا فالييرو' : 'Diego Cardona Valero'}
                     </Link>
                   </li>
-                  <li>
-                    <Link 
-                      href="/equipo/ada-de-blas-pascual" 
-                      className={`text-offwhite/70 hover:text-gold text-sm transition-colors block ${language === 'ar' ? 'text-right' : ''}`}
-                    >
-                      {language === 'ar' ? 'آدا دي بلاس باسكوال' : 'Ada de Blas Pascual'}
-                    </Link>
-                  </li>
                   <li className="pt-3">
                     <Link 
                       href="/#equipo" 

@@ -56,18 +56,6 @@ const getLawyers = (t: any) => [
     backgroundImage: '/images/Equipo-optimized/Diego3.webp?v=3',
     slug: 'diego-cardona-valero',
   },
-  {
-    name: t.team.ada.name,
-    role: t.team.ada.role,
-    summary: t.team.ada.summary,
-    tags: t.team.ada.tags,
-    languages: ['ES', 'EN', 'FR', 'IT'],
-    experience: t.team.ada.experience,
-    image: '/images/Equipo-optimized/Ada1.webp?v=4',
-    hoverImage: '/images/Equipo-optimized/Ada4.webp?v=3',
-    backgroundImage: '/images/Equipo-optimized/Ada3.webp?v=3',
-    slug: 'ada-de-blas-pascual',
-  },
 ];
 
 const getAreas = (t: any) => [
@@ -186,7 +174,7 @@ export default function Page() {
           </motion.div>
           
           <div 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lawyer-cards-container"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lawyer-cards-container max-w-5xl mx-auto"
             role="list"
             aria-label={t.common.listaAbogados}
           >
