@@ -2793,6 +2793,382 @@ export const blogPosts: BlogPost[] = [
       ],
       conclusion: 'El reconocimiento como **Top 3 abogados penalistas de Madrid** por [madrid.place](https://madrid.place/abogados-penalistas/) es un orgullo para todo el equipo de STANS Abogados, pero también una responsabilidad. Seguiremos trabajando con la misma dedicación, especialización y compromiso que nos ha llevado hasta aquí. Si necesitas un abogado penalista en Madrid, **contacta con nosotros**: estamos disponibles **24/7** en el teléfono **+34 611 68 72 26** o por **WhatsApp**. Tu primera consulta, sin compromiso. **Defendemos tus derechos**.'
     }
+  },
+  // ===== NUEVOS BLOGS FEBRERO 2026 - ARTÍCULOS FEBRERO =====
+  // Artículo 1: Tráfico de drogas
+  {
+    id: 74,
+    title: 'Abogados Penalistas Expertos en Tráfico de Drogas | STANS',
+    excerpt: 'Defensa penal especializada en delitos de tráfico de drogas en Madrid y toda España. Tipos de sustancias, penas, autoconsumo, atenuantes y conformidad con Fiscalía.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-01',
+    readTime: '14 min',
+    image: '/images/blog/trafico-drogas-defensa.jpg',
+    slug: 'abogados-penalistas-trafico-drogas',
+    tags: ['tráfico drogas', 'salud pública', 'art 368 CP', 'autoconsumo', 'conformidad penal'],
+    content: {
+      introduction: 'El delito de tráfico de drogas es uno de los delitos más graves y perseguidos del Código Penal español, con penas de prisión que pueden alcanzar cifras muy elevadas, especialmente cuando concurren agravantes o se trata de organizaciones criminales. En STANS ABOGADOS, despacho de abogados penalistas en Madrid con intervención en todo el territorio nacional, ofrecemos defensa penal especializada en delitos contra la salud pública, tanto si has sido acusado como si te encuentras investigado en una fase inicial del procedimiento.',
+      sections: [
+        {
+          title: 'La Importancia de Contar con un Abogado Especialista en Tráfico de Drogas',
+          content: 'En los delitos de tráfico de drogas, una correcta estrategia de defensa puede suponer la diferencia entre entrar en prisión o evitarla, o entre una pena mínima y una condena de muchos años. Nuestros abogados penalistas analizan desde el primer momento: la legalidad de la detención y de los registros, la naturaleza y cantidad de la sustancia intervenida, la posible existencia de autoconsumo, el grado de participación del investigado y la concurrencia de atenuantes o agravantes. Acompañamos al cliente durante todo el procedimiento, desde la detención hasta la resolución final del caso.'
+        },
+        {
+          title: '¿Qué se Considera Droga a Efectos Penales?',
+          content: 'A efectos del delito de tráfico de drogas, se considera droga toda sustancia que, introducida en el organismo, produce alteraciones de sus funciones, genera dependencia y provoca tolerancia y síndrome de abstinencia. Estas sustancias están definidas en Convenios Internacionales suscritos por España y sirven de referencia para la aplicación del Derecho Penal. El Código Penal distingue entre sustancias que causan grave daño a la salud y aquellas que no causan grave daño, diferencia que resulta clave para determinar la pena.'
+        },
+        {
+          title: 'Tipos de Drogas según el Código Penal',
+          content: '**Drogas que no causan grave daño a la salud**: Entre ellas se incluyen principalmente los derivados del cannabis, como marihuana, hachís y resina. Su principal componente psicoactivo es el THC (tetrahidrocannabinol). **Drogas que causan grave daño a la salud**: Se consideran especialmente peligrosas las sustancias que generan una fuerte dependencia y un alto riesgo para la vida, entre ellas: heroína y otros derivados del opio, fentanilo y opioides sintéticos, MDMA o éxtasis, cocaína y sus derivados como el crack. Estas drogas presentan un elevado potencial adictivo y pueden causar daños irreversibles o incluso la muerte.'
+        },
+        {
+          title: '¿Qué Conductas Castiga el Delito de Tráfico de Drogas?',
+          content: 'El Código Penal sanciona a quienes: cultiven drogas, las elaboren o transformen, las trafiquen o distribuyan, promuevan, favorezcan o faciliten su consumo ilegal, o posean sustancias con finalidad de tráfico. Dentro de estas conductas existen distintos grados de autoría y participación, lo que influye directamente en la pena.'
+        },
+        {
+          title: 'Penas por Delito de Tráfico de Drogas',
+          content: 'Las penas varían en función del tipo de sustancia y de las circunstancias del caso. **Tráfico de drogas que no causan grave daño a la salud**: En general, se castiga con prisión de 1 a 3 años. No obstante, la pena puede reducirse hasta 6 meses si concurren atenuantes, o incrementarse de forma muy notable cuando existen agravantes, pudiendo alcanzar hasta 15 años de prisión en casos de jefatura de organizaciones criminales. **Tráfico de drogas que causan grave daño a la salud**: Las penas son más severas: prisión de 3 a 6 años, pudiendo reducirse hasta 1 año y 6 meses con atenuantes, o elevarse hasta 18 años de prisión cuando concurren las circunstancias más graves. **Delitos conexos**: Con frecuencia, el delito de tráfico de drogas aparece vinculado a otros delitos como blanqueo de capitales o tenencia ilícita de armas. En estos casos, la suma de condenas puede superar los 20 años de prisión.'
+        },
+        {
+          title: '¿Está Penado el Autoconsumo de Drogas?',
+          content: 'En España, el consumo de drogas no es delito, aunque puede ser sancionado administrativamente en determinados supuestos. La posesión de droga para consumo propio tampoco es delito penal, siempre que no se pueda acreditar que la finalidad es el tráfico. La jurisprudencia, especialmente del Tribunal Supremo, ha establecido criterios orientativos sobre las cantidades que se consideran destinadas al autoconsumo y aquellas que permiten presumir ánimo de traficar. Un abogado especialista en tráfico de drogas conoce estos criterios y puede utilizarlos para excluir la responsabilidad penal.'
+        },
+        {
+          title: 'Atenuantes y Estrategia de Defensa Penal',
+          content: 'La pena por tráfico de drogas puede verse significativamente reducida mediante la aplicación de circunstancias atenuantes, como: reconocimiento de los hechos, colaboración con la justicia, drogadicción y reparación del daño. Muchas de estas atenuantes pueden activarse antes del juicio, por lo que la actuación temprana del abogado es decisiva.'
+        },
+        {
+          title: '¿Conviene Alcanzar una Conformidad con la Fiscalía?',
+          content: 'En casos donde los hechos están claramente acreditados, una conformidad con el Ministerio Fiscal puede permitir: una reducción muy importante de la pena, evitar un juicio con alto riesgo y limitar el impacto penitenciario. Solo un abogado penalista especializado en tráfico de drogas puede valorar correctamente si conviene negociar o acudir a juicio, analizando pruebas, calificación jurídica y expectativas reales de absolución.'
+        }
+      ],
+      conclusion: 'En STANS ABOGADOS, despacho de abogados penalistas en Madrid con actuación en toda España, ofrecemos una defensa integral en delitos de tráfico de drogas, acompañando al cliente desde la detención o investigación inicial, las declaraciones policiales y judiciales, la fase de instrucción y la negociación con Fiscalía o el juicio oral. Nuestro objetivo es siempre proteger tus derechos, reducir al máximo las consecuencias penales y ofrecer la mejor estrategia legal posible. Contacta con nosotros para una valoración personalizada de tu caso.'
+    }
+  },
+  // Artículo 2: Euroorden
+  {
+    id: 75,
+    title: 'Euroorden en España: Qué Es, Cómo Funciona y Defensa Especializada | STANS',
+    excerpt: 'Guía completa sobre la Orden Europea de Detención y Entrega (OEDE). Marco legal, requisitos, tramitación, motivos de oposición y defensa especializada en Madrid.',
+    category: 'Extradiciones',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-02',
+    readTime: '15 min',
+    image: '/images/blog/euroorden-espana.jpg',
+    slug: 'euroorden-espana-abogado-especializado',
+    tags: ['euroorden', 'OEDE', 'orden europea detención', 'Audiencia Nacional', 'cooperación judicial'],
+    content: {
+      introduction: 'La Euroorden, conocida oficialmente como Orden Europea de Detención y Entrega (OEDE), es un instrumento jurídico que permite la detención y entrega de una persona entre los Estados miembros de la Unión Europea (UE), con el objetivo de ser procesada penalmente por un delito cometido en otro Estado miembro o cumplir una sentencia impuesta en ese Estado miembro. Si te han notificado una euroorden mientras te encuentras en España, necesitas comprender qué implica, cómo se tramita y cuáles son tus derechos. En Stans Abogados, despacho con sede en Madrid y actuación en toda España, somos especialistas en procedimientos OEDE / euroorden y defendemos a clientes tanto españoles como extranjeros.',
+      sections: [
+        {
+          title: 'Marco Legal de la Euroorden en España',
+          content: 'La euroorden tiene base en normas de la Unión Europea y en la legislación interna española que las desarrolla. Las principales normas relevantes son: la Decisión Marco 2002/584/JAI del Consejo de la Unión Europea, por la que se establece el procedimiento de la euroorden y la entrega entre Estados miembros; la Ley de Cooperación Jurídica Internacional en Materia Penal, que incorpora la euroorden al ordenamiento español; y la Ley de Enjuiciamiento Criminal (LECrim), en sus disposiciones sobre cooperación internacional. A diferencia de la extradición tradicional, la euroorden no requiere intervención del Gobierno ni pasa por canales diplomáticos, sino que se tramita directamente entre autoridades judiciales de la UE, lo que reduce plazos y formalidades.'
+        },
+        {
+          title: 'Concepto y Requisitos de la Euroorden',
+          content: 'La euroorden es una orden de detención emitida por una autoridad judicial de un Estado de la UE, solicitando a otro Estado miembro que detenga y entregue a una persona buscada. Los elementos fundamentales son: autoridad emisora competente y jurisdicción clara, identidad de la persona buscada, hechos delictivos concretos con indicación clara del tipo penal o de la condena, base legal en la ley penal del Estado emisor, y solicitud de entrega ya sea para proceso penal o para cumplimiento de pena. La euroorden no se basa en tratados bilaterales ni en procedimientos diplomáticos: opera bajo el principio de reconocimiento mutuo de decisiones judiciales entre Estados miembros de la UE.'
+        },
+        {
+          title: 'Diferencias con la Extradición Tradicional',
+          content: 'Aunque ambas figuran como mecanismos para la cooperación internacional, es importante diferenciar: la euroorden es un procedimiento predominantemente judicial, con plazos más breves y limitada intervención gubernativa, mientras que la extradición tradicional es un procedimiento mixto (judicial y gubernativo) con plazos más extensos y requiere decisión final del Consejo de Ministros. Estas diferencias implican que la estrategia de defensa y los derechos procesales no son idénticos en cada uno de los procedimientos.'
+        },
+        {
+          title: '¿Cómo se Inicia y Tramita una Euroorden en España?',
+          content: '**1. Emisión y difusión**: La autoridad judicial del Estado miembro emisor emite la euroorden y la comunica a través de sistemas como ECRIS o canales judiciales oficiales. **2. Detención en España**: Las Fuerzas y Cuerpos de Seguridad del Estado pueden ejecutar la detención de la persona reclamada en cualquier punto del territorio español. **3. Comparecencia ante la Autoridad Judicial**: La persona detenida debe comparecer ante el Juzgado Central de Instrucción de la Audiencia Nacional, que examina la legalidad de la detención y la euroorden. **4. Fase de ejecución**: La autoridad judicial española evalúa si concurren los requisitos de entrega: identidad, competencia judicial, defensa de derechos fundamentales, garantías procesales, y posibles motivos de oposición.'
+        },
+        {
+          title: 'Motivos de Oposición a una Euroorden',
+          content: 'Aunque la euroorden se basa en reconocimiento mutuo, la legislación española y europea permiten motivos claros de oposición o denegación, entre los cuales destacan: riesgo de violación de derechos fundamentales como trato inhumano o tortura, falta de competencia judicial en el Estado emisor, inexistencia o insuficiencia de motivación de la orden, no aplicación de garantías procesales mínimas, y principio de no discriminación o circunstancias humanas excepcionales. Un abogado especializado en euroorden puede plantear estos argumentos de forma técnica ante la autoridad judicial competente.'
+        },
+        {
+          title: 'Consecuencias Jurídicas y Plazos',
+          content: 'Si la autoridad judicial española decide ejecutar la euroorden favorablemente: la persona será entregada al Estado miembro emisor, puede enfrentar proceso penal o cumplimiento de pena, su situación migratoria en España puede verse afectada y sus derechos de circulación en la UE pueden estar restringidos. La euroorden está diseñada para ser más ágil que la extradición tradicional. En ausencia de motivos de oposición planteados oportunamente, el procedimiento puede resolverse en cuestión de semanas, aunque causas complejas o recursos pueden alargar el plazo.'
+        }
+      ],
+      conclusion: 'La euroorden es una herramienta clave para la cooperación judicial penal dentro de la Unión Europea, pero su ejecución puede tener graves consecuencias personales y jurídicas si no se aborda con el debido asesoramiento. En Stans Abogados, como especialistas en euroorden y procedimientos OEDE, contamos con experiencia en defensa técnica ante autoridades judiciales españolas, planteamiento de recursos y motivos de oposición, atención multilingüe para clientes de toda la UE y extracomunitarios, y representación desde Madrid y en toda España. Si te han notificado una euroorden o temes recibir una, actuar con rapidez y con el apoyo de un abogado penalista especializado es crucial para proteger tus derechos y diseñar una defensa eficaz.'
+    }
+  },
+  // Artículo 3: Me están pidiendo la extradición
+  {
+    id: 76,
+    title: 'Me Están Pidiendo la Extradición: Qué Hacer | STANS',
+    excerpt: 'Guía práctica sobre extradición pasiva en España. Procedimiento ante la Audiencia Nacional, derechos del reclamado, diferencias con OEDE y defensa especializada.',
+    category: 'Extradiciones',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-03',
+    readTime: '15 min',
+    image: '/images/blog/extradicion-que-hacer.jpg',
+    slug: 'me-piden-extradicion-que-hacer',
+    tags: ['extradición pasiva', 'Audiencia Nacional', 'OEDE', 'INTERPOL', 'cooperación internacional'],
+    content: {
+      introduction: 'Recibir una notificación de que otro Estado solicita a España tu extradición es una situación especialmente delicada, que suele generar preocupación, incertidumbre y muchas dudas jurídicas. Esto ocurre con frecuencia en personas que residen en España pero no tienen nacionalidad española. Es importante saber desde el primer momento que no se trata de una entrega automática. El ordenamiento jurídico español establece un procedimiento reglado, con garantías, que permite oponerse a la extradición y ejercer el derecho de defensa. Desde Stans Abogados, despacho penalista con sede en Madrid y actuación en toda España, te explicamos qué significa una solicitud de extradición y qué pasos conviene dar.',
+      sections: [
+        {
+          title: '¿Qué es la Extradición Pasiva?',
+          content: 'La extradición es un instrumento de cooperación judicial internacional mediante el cual un Estado solicita a otro la entrega de una persona que se encuentra en su territorio para ser juzgada por hechos delictivos o cumplir una condena penal ya impuesta. Cuando España recibe una solicitud de este tipo, hablamos de extradición pasiva. Este procedimiento se regula principalmente por la Ley 4/1985 de Extradición Pasiva, los tratados internacionales suscritos por España con otros Estados y, de forma complementaria, por el Código Penal y la Ley de Enjuiciamiento Criminal.'
+        },
+        {
+          title: '¿Cómo Llega la Solicitud a España?',
+          content: 'La solicitud puede llegar por distintas vías: **Orden internacional de detención**: emitida por una autoridad judicial del Estado reclamante, canalizada frecuentemente a través de Interpol mediante una Notificación Roja, que permite a las fuerzas policiales identificar y detener provisionalmente a la persona. Esta detención tiene carácter provisional para asegurar la disponibilidad mientras se formaliza la solicitud. **Solicitud formal de extradición**: presentada por el Estado reclamante, cursada por vía diplomática al Ministerio de Justicia o, cuando la normativa lo permita, directamente entre autoridades judiciales. La existencia de una solicitud no implica que España deba concederla automáticamente.'
+        },
+        {
+          title: 'Procedimiento de Extradición Pasiva en España',
+          content: 'El procedimiento es mixto, combinando una fase judicial y una gubernativa: **1. Recepción y examen**: Las autoridades verifican que la solicitud esté correctamente formulada y acompañada de la documentación exigida. **2. Fase judicial**: La Audiencia Nacional analiza si la extradición es jurídicamente procedente, valorando el principio de doble incriminación, la gravedad del delito y la inexistencia de causas legales de denegación. La persona reclamada tiene derecho a abogado, a ser oída y a oponerse. **3. Fase gubernativa**: Si la Audiencia Nacional considera la extradición posible, el expediente se eleva al Consejo de Ministros, que adopta la decisión final sobre la entrega.'
+        },
+        {
+          title: '¿Cuándo Puede Denegarse la Extradición?',
+          content: 'La legislación española protege los derechos fundamentales de la persona reclamada. La extradición puede denegarse cuando: el hecho no es delito en España, existe riesgo de tratos inhumanos o vulneración de derechos fundamentales, el delito tiene carácter político, la persona ya está siendo juzgada o fue condenada en España por los mismos hechos, o la acción penal o la pena están prescritas conforme a la ley española. Cada caso exigirá un análisis jurídico individualizado y pormenorizado.'
+        },
+        {
+          title: '¿Se Puede Recurrir una Decisión de Extradición?',
+          content: 'Sí. La extradición pasiva permite impugnar la decisión en distintas fases. Es posible recurrir ante los tribunales competentes las resoluciones adoptadas en la fase judicial. También pueden formularse alegaciones y recursos ante el Consejo de Ministros durante la fase gubernativa. Esta doble vertiente judicial y administrativa hace especialmente relevante contar con abogados con experiencia específica en extradición.'
+        },
+        {
+          title: 'Diferencias entre Extradición Pasiva y OEDE',
+          content: 'Cuando la reclamación procede de otro Estado de la Unión Europea, el mecanismo habitual es la Orden Europea de Detención y Entrega (OEDE). Las principales diferencias son: **Ámbito**: La extradición pasiva aplica a Estados no miembros de la UE; la OEDE solo entre Estados miembros. **Normativa**: La extradición se rige por la Ley de Extradición Pasiva y tratados internacionales; la OEDE por normativa europea basada en reconocimiento mutuo. **Intervención del Gobierno**: En la extradición, el Consejo de Ministros tiene papel decisivo; en la OEDE, la intervención gubernativa es mínima. **Plazos**: La OEDE suele ser más rápida. Determinar correctamente si el caso se rige por extradición o por OEDE es esencial desde el inicio.'
+        }
+      ],
+      conclusion: 'Ante una solicitud de extradición o una OEDE, es fundamental buscar asesoramiento legal inmediato, contactar con un abogado penalista especializado, analizar con detalle la documentación recibida y diseñar una estrategia de defensa desde las primeras fases. Una actuación temprana puede ser decisiva. En Stans Abogados somos especialistas en procedimientos de extradición pasiva y OEDE, con experiencia sólida en procedimientos penales extradicionales complejos, interviniendo en todas sus fases ante la Audiencia Nacional y otros órganos competentes. Ofrecemos atención multilingüe y actuamos en toda España. Si te enfrentas a una extradición, contáctanos de inmediato.'
+    }
+  },
+  // Artículo 4: Apropiación indebida
+  {
+    id: 77,
+    title: 'Apropiación Indebida en España: Guía Completa | STANS',
+    excerpt: 'Análisis del delito de apropiación indebida: art. 253 CP, elementos del delito, diferencias con estafa y hurto, tipos, penas y defensa especializada.',
+    category: 'Derecho Penal Económico',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-04',
+    readTime: '15 min',
+    image: '/images/blog/apropiacion-indebida.jpg',
+    slug: 'apropiacion-indebida-espana-guia-completa',
+    tags: ['apropiación indebida', 'art 253 CP', 'delito patrimonial', 'derecho penal económico', 'estafa'],
+    content: {
+      introduction: 'La apropiación indebida es uno de los delitos patrimoniales más comunes en el Derecho Penal español. Se produce cuando una persona recibe dinero, bienes o efectos con obligación de devolverlos o destinarlos a un fin concreto y, en lugar de hacerlo, se los queda o les da un uso distinto. La apropiación indebida está regulada en el artículo 253 del Código Penal.',
+      sections: [
+        {
+          title: 'Elementos del Delito de Apropiación Indebida',
+          content: 'Para que exista apropiación indebida deben concurrir los siguientes elementos: **1. Recepción legítima del bien**: El autor recibe el dinero u objeto de forma legal y voluntaria, normalmente en virtud de una relación de confianza (administrador que recibe fondos, profesional que recibe una señal, gestor que recibe dinero para invertir). **2. Obligación de devolverlo o administrarlo**: La persona tiene el deber jurídico de devolver, entregar a un tercero o utilizar para un fin concreto. **3. Apropiación o uso indebido**: El sujeto se queda con el bien o lo utiliza para fines distintos a los acordados. No es necesario que se venda: basta con disponer de él indebidamente. **4. Perjuicio económico para el titular**: La conducta debe causar un daño patrimonial real. **5. Intención dolosa**: El autor actúa con conocimiento y voluntad. No basta un simple error o negligencia.'
+        },
+        {
+          title: 'Diferencia entre Apropiación Indebida, Hurto y Estafa',
+          content: '**Apropiación indebida (art. 253 CP)**: El autor recibe el bien de forma legítima, con consentimiento del titular, y posteriormente se lo queda o lo utiliza indebidamente. **Estafa (art. 248 CP)**: El autor obtiene el bien mediante engaño previo, provocando un error en la víctima desde el inicio. En la estafa, el engaño existe antes de recibir el dinero; en la apropiación indebida, surge después. **Hurto**: Se toma el bien sin consentimiento del propietario. En la práctica, muchos casos se sitúan en una zona intermedia donde la calificación dependerá de la intención inicial del autor y de las pruebas disponibles.'
+        },
+        {
+          title: 'Tipos de Apropiación Indebida y Penas',
+          content: '**Apropiación indebida básica (art. 253 CP)**: Prisión de 6 meses a 3 años o multa. **Apropiación indebida agravada (art. 250 CP)**: Cuando afecta a bienes de especial valor, causa grave perjuicio o se comete con abuso de confianza profesional. Prisión de 1 a 6 años y multa. **Apropiación indebida leve (art. 254 CP)**: Cuando la cuantía es inferior a 400 euros. Multa de 1 a 3 meses. Además de la pena principal, pueden imponerse indemnización por daños, inhabilitación y responsabilidad civil.'
+        },
+        {
+          title: 'Apropiación Indebida en el Ámbito Empresarial',
+          content: 'Es frecuente en: administradores que desvían fondos, empleados que se quedan con dinero de la empresa y gestores que usan fondos para fines personales. Puede aplicarse el art. 252 CP si existe abuso de funciones de administración. La víctima puede denunciar ante Policía, Fiscalía o Juzgado, y el procedimiento puede ser juicio rápido, procedimiento abreviado o juicio por delito leve.'
+        },
+        {
+          title: 'Ejemplos Prácticos',
+          content: 'Un cliente entrega 5.000 € a un gestor para invertirlos en un fondo. El gestor recibe el dinero legítimamente, tiene la obligación de administrarlo conforme a lo acordado, pero lo utiliza para gastos personales. El cliente pierde el dinero y el gestor actúa conscientemente. En este caso concurren todos los elementos del delito. Otros ejemplos: administrador que desvía fondos societarios, empleado que se queda con cobros de clientes, gestor que no devuelve cantidades recibidas.'
+        }
+      ],
+      conclusion: 'La apropiación indebida es un delito grave que protege la confianza en las relaciones patrimoniales. Conocer sus elementos y consecuencias es esencial para prevenir riesgos legales, especialmente en el ámbito empresarial. La intervención de un abogado penalista especializado resulta esencial para determinar la correcta calificación del delito, valorar la pena aplicable y diseñar la estrategia procesal más adecuada. En STANS Abogados contamos con experiencia en delitos patrimoniales y económicos. Contacta con nosotros para una valoración de tu caso.'
+    }
+  },
+  // Artículo 5: Estafa y estafa agravada
+  {
+    id: 78,
+    title: 'Delito de Estafa y Estafa Agravada en España | STANS',
+    excerpt: 'Guía completa sobre el delito de estafa: art. 248-251 CP, tipos de estafa, estafa agravada, penas, diferencias con apropiación indebida y defensa penal.',
+    category: 'Derecho Penal Económico',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-05',
+    readTime: '16 min',
+    image: '/images/blog/delito-estafa-espana.jpg',
+    slug: 'delito-estafa-agravada-espana',
+    tags: ['estafa', 'estafa agravada', 'art 248 CP', 'art 250 CP', 'derecho penal económico'],
+    content: {
+      introduction: 'La estafa es uno de los delitos patrimoniales más frecuentes en España. Se produce cuando una persona, mediante engaño, provoca un error en otra para obtener un beneficio económico. El delito de estafa se regula en los artículos 248 a 251 del Código Penal, y la estafa agravada se recoge en el artículo 250 CP. Según el artículo 248 CP, deben concurrir: engaño bastante, error de la víctima, acto de disposición patrimonial, ánimo de lucro y perjuicio económico.',
+      sections: [
+        {
+          title: 'Tipos de Estafa',
+          content: '**1. Estafa clásica**: Se produce cuando el autor engaña a la víctima para que entregue dinero, firme un contrato o ceda un bien. Ejemplos: vender un vehículo ocultando averías, cobrar por una reforma que nunca se realiza, simular una inversión ficticia. **2. Estafa informática (art. 249 CP)**: Se comete utilizando medios tecnológicos. Ejemplos: acceder a banca online y realizar transferencias sin consentimiento, crear web falsa para obtener datos bancarios (phishing), manipular sistemas informáticos para desviar pagos. **3. Estafa en contratos y servicios**: Cuando una parte nunca tuvo intención de cumplir. **4. Estafa inmobiliaria**: Afecta a compraventas, alquileres o inversiones en inmuebles. **5. Estafa en inversiones**: Falsos fondos de inversión, esquemas piramidales, proyectos inexistentes. **6. Estafa por suplantación de identidad**: El autor se hace pasar por otra persona para obtener dinero.'
+        },
+        {
+          title: 'Estafa Agravada (Art. 250 CP)',
+          content: 'La estafa se agrava cuando concurren circunstancias de especial gravedad: existe especial gravedad del perjuicio, la cuantía económica es elevada, se produce abuso de relaciones personales o de confianza, la víctima es especialmente vulnerable (personas mayores, dependientes, con discapacidad), o se comete aprovechando una relación profesional. Ejemplos: un falso inversor convence a varias personas para invertir 200.000 € en un proyecto inexistente (agravada por cuantía); un asesor financiero engaña a su cliente para quedarse con sus ahorros (agravada por abuso de confianza); se engaña a una persona mayor para que firme documentos (agravada por vulnerabilidad).'
+        },
+        {
+          title: 'Penas por Estafa',
+          content: '**Estafa básica (art. 248 CP)**: Prisión de 6 meses a 3 años. **Estafa agravada (art. 250 CP)**: Prisión de 1 a 6 años y multa de 6 a 12 meses. Además: posible responsabilidad civil con devolución del dinero e indemnización. En los casos más graves, la pena puede situarse en la parte alta de la horquilla. Consecuencias adicionales: antecedentes penales, embargo de bienes, pérdida de reputación profesional, inhabilitación para determinadas actividades.'
+        },
+        {
+          title: 'Diferencia entre Estafa y Apropiación Indebida',
+          content: 'La clave está en el momento del engaño. **En la estafa**: el engaño existe antes de recibir el dinero. El autor obtiene el bien mediante engaño previo. **En la apropiación indebida**: el engaño surge después, cuando no se devuelve lo recibido. El autor recibe el bien legítimamente y luego se lo queda. Ejemplo de estafa: una persona finge ser gestor y convence a la víctima para que le entregue 3.000 €. Ejemplo de apropiación indebida: un gestor real recibe el dinero y luego lo usa para gastos personales. Ambas implican perjuicio económico, pero la diferencia depende de la intención inicial.'
+        },
+        {
+          title: 'Defensa Penal Especializada en Estafas',
+          content: 'El abogado penalista económico estudia si existe engaño y perjuicio patrimonial, y si concurren elementos como elevada cuantía, abuso de confianza, afectación a múltiples víctimas o vulnerabilidad. El asesoramiento resulta clave para: cuestionar la existencia del engaño inicial, la intención dolosa, la relación causal entre el engaño y el perjuicio, o la concurrencia real de las circunstancias agravantes. La prueba documental, los informes periciales y el análisis financiero son elementos decisivos.'
+        }
+      ],
+      conclusion: 'Los delitos de estafa agravada presentan una complejidad jurídica y económica superior, por lo que la intervención de un abogado penalista experto en delitos económicos resulta imprescindible para proteger los derechos de las partes y asegurar una respuesta penal adecuada. Desde la perspectiva de la defensa, puede cuestionarse el engaño, la intención dolosa o las agravantes. Desde la acusación, permite estructurar correctamente la reclamación y garantizar la restitución. En STANS Abogados somos especialistas en derecho penal económico. Contacta con nosotros.'
+    }
+  },
+  // Artículo 6: Fraude fiscal
+  {
+    id: 79,
+    title: 'Delito de Fraude Fiscal en España: Delitos Contra la Hacienda Pública | STANS',
+    excerpt: 'Análisis del delito de fraude fiscal: arts. 305 y 305 bis CP, umbral de 120.000€, modalidad agravada, diferencia con infracción tributaria, regularización y penas.',
+    category: 'Derecho Penal Económico',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-06',
+    readTime: '13 min',
+    image: '/images/blog/fraude-fiscal-hacienda.jpg',
+    slug: 'fraude-fiscal-delitos-hacienda-publica',
+    tags: ['fraude fiscal', 'Hacienda Pública', 'art 305 CP', 'regularización fiscal', 'delito fiscal'],
+    content: {
+      introduction: 'El delito de fraude fiscal, también conocido como delito contra la Hacienda Pública, forma parte del Derecho Penal Económico y tiene como finalidad proteger los intereses económicos del Estado. Este delito se produce cuando una persona o empresa elude el pago de impuestos, obtiene devoluciones indebidas o disfruta de beneficios fiscales de forma fraudulenta, superando los límites establecidos por la ley. En España, no toda irregularidad tributaria constituye un delito. Muchas conductas se sancionan únicamente por vía administrativa. Sin embargo, cuando el fraude alcanza determinada gravedad, entra en juego el Código Penal.',
+      sections: [
+        {
+          title: 'Concepto de Delito Fiscal (Art. 305 CP)',
+          content: 'El artículo 305 del Código Penal castiga a quien defraude a la Hacienda Pública eludiendo el pago de impuestos, obteniendo devoluciones indebidas o disfrutando de beneficios fiscales sin derecho, siempre que la cuantía supere los 120.000 euros por tributo y ejercicio. Para que exista delito deben concurrir: una conducta defraudatoria, un perjuicio económico para la Hacienda Pública, una cuantía superior a 120.000 euros e intención dolosa. Ejemplos: un autónomo oculta ingresos en IRPF por valor de 150.000 euros; una empresa no declara parte del IVA cobrado; una sociedad simula gastos inexistentes para pagar menos Impuesto de Sociedades.'
+        },
+        {
+          title: 'Modalidad Agravada (Art. 305 bis CP)',
+          content: 'El delito se agrava cuando: la cuantía supera los 600.000 euros, se utiliza una estructura societaria para ocultar el fraude, existe organización criminal o hay especial gravedad del perjuicio. Ejemplo: una empresa utiliza varias sociedades pantalla para ocultar beneficios y defraudar más de 1 millón de euros.'
+        },
+        {
+          title: 'Diferencia entre Infracción Tributaria y Delito',
+          content: 'La infracción tributaria se sanciona por vía administrativa con multas. El delito fiscal se sanciona por vía penal con prisión y antecedentes penales. La diferencia principal está en: la cuantía defraudada, la intencionalidad y la gravedad de la conducta. Ejemplo: no presentar una declaración puede ser infracción; ocultar sistemáticamente ingresos elevados puede ser delito.'
+        },
+        {
+          title: 'Penas y Consecuencias',
+          content: 'El delito fiscal conlleva importantes consecuencias: **Prisión**: La duración depende de la cuantía y agravantes. En los supuestos más graves, puede ser superior a la del tipo básico. **Multa económica**: Proporcional a la cuantía defraudada, pudiendo alcanzar importes muy elevados. **Devolución del dinero defraudado**: Obligación de reintegrar todas las cantidades con recargos e intereses. **Pérdida de beneficios fiscales**: Exclusión de subvenciones públicas durante varios años. **Antecedentes penales**: Puede perjudicar gravemente la reputación profesional. **Decomiso de bienes**: Confiscación de bienes obtenidos mediante el fraude, incluido dinero, cuentas bancarias e inmuebles.'
+        },
+        {
+          title: 'Regularización Fiscal (Art. 305.4 CP)',
+          content: 'La regularización voluntaria antes de que la Administración detecte el fraude puede excluir la responsabilidad penal. Requisitos: pago íntegro de la deuda, antes de notificación oficial y reconocimiento del error. Ejemplo: un contribuyente corrige su declaración y paga la deuda antes de ser investigado. Incluso iniciado el proceso, la regularización puede llevar a la aplicación de atenuantes que reduzcan significativamente la pena.'
+        },
+        {
+          title: 'Procedimiento Penal y Pruebas',
+          content: 'La Agencia Tributaria detecta irregularidades, y si hay indicios de delito, se remite a Fiscalía. Se inicia investigación penal, se pueden embargar bienes y se celebra juicio. Las pruebas habituales incluyen: declaraciones fiscales, contabilidad, movimientos bancarios, facturas e informes periciales. La intervención de un abogado penalista especializado en Derecho Penal Económico es esencial para analizar la situación, valorar posibles regularizaciones y diseñar una estrategia de defensa eficaz.'
+        }
+      ],
+      conclusion: 'El fraude fiscal tiene graves consecuencias económicas y penales. Superar los límites legales implica penas de prisión, multas elevadas y antecedentes penales. La intervención de un abogado penalista especializado en Derecho Penal Económico es esencial para analizar la situación, valorar posibles regularizaciones y diseñar una estrategia de defensa eficaz. En STANS Abogados te asesoramos en todas las fases del procedimiento. Contacta con nosotros.'
+    }
+  },
+  // Artículo 7: Delitos contra la Seguridad Social
+  {
+    id: 80,
+    title: 'Delitos Contra la Seguridad Social en España | STANS',
+    excerpt: 'Guía sobre delitos contra la Seguridad Social: art. 307 CP, tipo básico y agravado, conductas típicas, penas, procedimiento penal y defensa especializada.',
+    category: 'Derecho Penal Económico',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-06',
+    readTime: '11 min',
+    image: '/images/blog/delitos-seguridad-social.jpg',
+    slug: 'delitos-contra-seguridad-social-espana',
+    tags: ['Seguridad Social', 'art 307 CP', 'cotizaciones', 'Inspección de Trabajo', 'fraude laboral'],
+    content: {
+      introduction: 'Los delitos contra la Seguridad Social protegen el correcto funcionamiento del sistema público de protección social, garantizando que empresas, autónomos y empleadores cumplan con sus obligaciones de cotización. Estos delitos persiguen conductas que perjudican la financiación del sistema y afectan a los derechos de los trabajadores. El delito contra la Seguridad Social se regula principalmente en el artículo 307 del Código Penal, que sanciona a quienes eludan el pago de cuotas, obtengan devoluciones indebidas o disfruten de beneficios de forma fraudulenta, siempre que se superen determinados umbrales económicos.',
+      sections: [
+        {
+          title: 'Tipo Básico del Delito',
+          content: 'El tipo básico consiste en eludir el pago de las cuotas de la Seguridad Social o en obtener indebidamente devoluciones, bonificaciones o beneficios económicos, cuando la cuantía defraudada supera el umbral legal establecido. Conductas típicas incluyen: no dar de alta a trabajadores, cotizar por bases inferiores a las reales, simular contratos a tiempo parcial cuando son a jornada completa, obtener bonificaciones sin cumplir los requisitos y declarar menos trabajadores de los reales. Ejemplo: una empresa emplea a varios trabajadores sin darlos de alta durante meses para evitar pagar cotizaciones.'
+        },
+        {
+          title: 'Modalidades Agravadas',
+          content: 'El delito se agrava cuando concurren circunstancias como: cuantías especialmente elevadas, actuación a través de estructuras organizadas, uso de sociedades interpuestas, reiteración de la conducta y afectación a un gran número de trabajadores. Ejemplo: un empresario crea varias sociedades pantalla para ocultar trabajadores y eludir el pago de cuotas durante años, alcanzando una deuda muy elevada. En estos casos, el reproche penal es mayor por el impacto económico y social de la conducta.'
+        },
+        {
+          title: 'Penas y Consecuencias',
+          content: 'Las penas por delitos contra la Seguridad Social incluyen: prisión, multa económica, pérdida de beneficios fiscales o de Seguridad Social, inhabilitación para obtener subvenciones y obligación de reintegrar las cantidades defraudadas. La duración de la pena de prisión y la cuantía de la multa dependen de la gravedad del fraude y de si se trata de un tipo básico o agravado. Además, el responsable debe devolver las cantidades adeudadas con recargos e intereses.'
+        },
+        {
+          title: 'Procedimiento Penal',
+          content: 'Las actuaciones suelen iniciarse a través de la Inspección de Trabajo y Seguridad Social, que puede: realizar inspecciones en empresas, revisar nóminas, contratos y cotizaciones, detectar irregularidades y levantar actas de infracción. Cuando los hechos superan el ámbito administrativo y presentan indicios de delito, la Inspección remite el caso a la Fiscalía o al juzgado competente. A partir de ese momento se inicia un procedimiento penal que puede incluir: investigación judicial, declaración de responsables, embargo de bienes y juicio penal.'
+        }
+      ],
+      conclusion: 'Los delitos contra la Seguridad Social tienen un impacto directo en la sostenibilidad del sistema público y en los derechos de los trabajadores. Por ello, el Código Penal castiga con penas de prisión y multa a quienes eluden sus obligaciones de cotización de forma grave. La intervención de un abogado penalista especializado en Derecho Penal Económico resulta esencial para analizar la legalidad de la conducta, valorar posibles responsabilidades y diseñar una estrategia de defensa o acusación eficaz. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  // Artículo 8: Asociaciones cannábicas
+  {
+    id: 81,
+    title: 'Asociaciones Cannábicas en España: Situación Penal | STANS',
+    excerpt: 'Análisis de la situación penal de las asociaciones cannábicas: delitos contra la salud pública, asociación ilícita, riesgos penales, penas y defensa especializada.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-07',
+    readTime: '13 min',
+    image: '/images/blog/asociaciones-cannabicas.jpg',
+    slug: 'asociaciones-cannabicas-situacion-penal-espana',
+    tags: ['asociaciones cannábicas', 'salud pública', 'art 368 CP', 'asociación ilícita', 'cannabis'],
+    content: {
+      introduction: 'Las asociaciones cannábicas surgieron en España como entidades privadas sin ánimo de lucro cuyo objetivo declarado es el consumo compartido de cannabis entre personas adultas. Sin embargo, su encaje legal es controvertido y su actividad puede generar importantes riesgos penales, especialmente en relación con el delito de asociación ilícita y los delitos contra la salud pública previstos en el Código Penal. Aunque muchas de estas asociaciones se presentan como clubes sociales, su funcionamiento puede dar lugar a responsabilidad penal cuando se superan determinados límites legales.',
+      sections: [
+        {
+          title: 'Marco Legal Aplicable',
+          content: 'La actividad de las asociaciones cannábicas puede verse afectada por dos grandes bloques normativos del Código Penal español: los delitos contra la salud pública regulados en los artículos 368 a 378 CP y el delito de asociación ilícita regulado en los artículos 515 a 521 CP. Además, pueden aplicarse las normas sobre comiso de bienes previstas en los artículos 127 y siguientes del Código Penal.'
+        },
+        {
+          title: 'Delitos Contra la Salud Pública y Cannabis',
+          content: 'El artículo 368 del Código Penal castiga a quienes ejecuten actos de cultivo, elaboración, tráfico o promuevan, favorezcan o faciliten el consumo de drogas tóxicas, estupefacientes o sustancias psicotrópicas. El cannabis es una sustancia estupefaciente a efectos penales. Por tanto, cualquier conducta que suponga cultivar marihuana, distribuirla, facilitar su consumo a terceros u organizar su reparto puede constituir delito cuando no se limita al consumo personal estrictamente privado.'
+        },
+        {
+          title: 'Riesgos Penales de las Asociaciones Cannábicas',
+          content: 'Aunque las asociaciones aleguen consumo compartido, existen factores que incrementan el riesgo penal: organización estable de cultivo y reparto, cobro de cuotas periódicas, grandes cantidades de sustancia, acceso fácil a nuevos socios, publicidad o captación de miembros, falta de control real del consumo y distribución a personas no vinculadas. Las penas previstas incluyen prisión, multa, inhabilitación y el decomiso de sustancias, dinero y locales. Los promotores, miembros de la junta directiva, cultivadores, gestores y encargados de reparto pueden ser condenados.'
+        },
+        {
+          title: 'Asociación Ilícita y Clubes Cannábicos',
+          content: 'El artículo 515 del Código Penal considera ilícitas las asociaciones que tengan por objeto cometer algún delito o promuevan su comisión. Una asociación puede encajar en este delito si su actividad principal es la distribución de cannabis, facilita el consumo ilegal, actúa como estructura organizada, tiene reparto de funciones (cultivo, gestión, distribución) y existe continuidad en el tiempo. Los artículos 517 a 521 CP prevén penas para promotores, directivos, miembros activos y colaboradores. Las consecuencias pueden incluir prisión, multas, disolución de la asociación y clausura de locales.'
+        },
+        {
+          title: 'Diferencia entre Consumo Personal y Delito',
+          content: 'El consumo privado individual no es delito penal. Sin embargo, cuando hay organización, distribución, facilitación a terceros, actividad económica o estructura asociativa, se puede cruzar el umbral penal. Ejemplo: una asociación cannábica se constituye formalmente como entidad sin ánimo de lucro, pero en realidad funciona como un punto de distribución, con turnos de atención, cuotas mensuales y reparto sistemático. En este caso, además del delito contra la salud pública, puede imputarse asociación ilícita.'
+        },
+        {
+          title: 'Comiso de Bienes y Procedimiento Penal',
+          content: 'El Código Penal permite confiscar drogas, intervenir dinero, clausurar locales e incautar material de cultivo conforme a los artículos 127 y siguientes. Las investigaciones suelen iniciarse por inspecciones, denuncias, investigaciones policiales o informes administrativos. Posteriormente se abren diligencias penales, se adoptan medidas cautelares, se realizan incautaciones y pueden ordenarse clausuras provisionales.'
+        }
+      ],
+      conclusion: 'La situación penal de las asociaciones cannábicas en España es jurídicamente compleja. Aunque se presenten como entidades sin ánimo de lucro, su actividad puede encajar en los delitos contra la salud pública y en el delito de asociación ilícita cuando existe organización, distribución y facilitación del consumo de cannabis. El Código Penal prevé penas de prisión, multas, clausura de locales y decomiso de bienes. Por ello, la intervención de un abogado penalista especializado es esencial para analizar cada caso concreto, valorar los riesgos penales y diseñar una estrategia de defensa adecuada. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  // Artículo 9: Delito de lesiones - tipos
+  {
+    id: 82,
+    title: 'Delito de Lesiones en España: Tipos Leves, Graves y Agravados | STANS',
+    excerpt: 'Clasificación completa del delito de lesiones según el Código Penal: lesiones leves, graves, muy graves, agravadas, imprudentes y en el ámbito familiar. Arts. 147-156 CP.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-02-08',
+    readTime: '12 min',
+    image: '/images/blog/delito-lesiones-tipos.jpg',
+    slug: 'delito-lesiones-tipos-leves-graves-agravados',
+    tags: ['lesiones', 'art 147 CP', 'lesiones graves', 'lesiones agravadas', 'ámbito familiar'],
+    content: {
+      introduction: 'El delito de lesiones es una de las infracciones penales más relevantes dentro del Derecho Penal español, ya que protege la integridad física y la salud de las personas. Se produce cuando una persona causa a otra un daño corporal o a su salud física o mental, con independencia del medio empleado. El Código Penal español regula este delito entre los artículos 147 y 156, diferenciando entre lesiones leves, graves, muy graves, agravadas y lesiones imprudentes, así como las cometidas en el ámbito familiar.',
+      sections: [
+        {
+          title: 'Lesiones Básicas y Leves (Art. 147 CP)',
+          content: '**Lesiones básicas (art. 147.1 CP)**: Requieren tratamiento médico o quirúrgico. Pena: prisión de 3 meses a 3 años o multa de 6 a 12 meses. Ejemplos: fractura de brazo que requiere escayola y seguimiento médico, herida profunda que necesita sutura y tratamiento posterior, agresión que provoca lesión con baja médica prolongada. **Lesiones leves (art. 147.2 CP)**: No requieren tratamiento médico. Pena: multa de 1 a 3 meses. Ejemplos: un empujón que causa un pequeño moratón, un arañazo o golpe sin necesidad de medicación, una bofetada sin lesiones persistentes.'
+        },
+        {
+          title: 'Lesiones Agravadas (Art. 148 CP)',
+          content: 'Se aplica cuando concurre: uso de armas u objetos peligrosos, víctimas especialmente vulnerables, relación familiar o ensañamiento. Pena: prisión de 2 a 5 años. Ejemplos: agresión con un cuchillo o botella rota, golpear a una persona mayor o con discapacidad, agresión reiterada a la pareja con especial violencia.'
+        },
+        {
+          title: 'Lesiones Muy Graves y Graves (Arts. 149-150 CP)',
+          content: '**Lesiones muy graves (art. 149 CP)**: Pérdida de órganos principales, ceguera, sordera o grave deformidad. Pena: prisión de 6 a 12 años. Ejemplos: pérdida de la visión de un ojo tras una agresión, amputación de un brazo o pierna, daños permanentes en el rostro con deformidad grave. **Lesiones graves (art. 150 CP)**: Pérdida de órgano no principal o deformidad no grave. Pena: prisión de 3 a 6 años. Ejemplos: pérdida de un dedo, cicatrices visibles permanentes, lesiones que afectan a un órgano no vital.'
+        },
+        {
+          title: 'Lesiones en el Ámbito Familiar y Lesiones Imprudentes',
+          content: '**Lesiones en el ámbito familiar (art. 153 CP)**: Cuando la víctima es cónyuge, expareja o familiar. Pena: prisión de 6 meses a 1 año o trabajos en beneficio de la comunidad. Ejemplos: empujar o golpear a la pareja durante una discusión, agredir a un hijo o familiar conviviente. **Lesiones imprudentes (art. 152 CP)**: Por imprudencia grave o menos grave. Pena: multa o prisión según la gravedad. Ejemplos: accidente de tráfico por exceso de velocidad que causa lesiones, negligencia médica que provoca daños físicos, caída causada por no señalizar una zona peligrosa.'
+        },
+        {
+          title: 'Circunstancias Agravantes y Procedimiento Penal',
+          content: 'Las circunstancias que agravan la pena incluyen: uso de armas u objetos peligrosos, víctimas especialmente vulnerables, relación de convivencia o parentesco, y ensañamiento o alevosía. El procedimiento puede iniciarse por denuncia, parte médico o intervención policial, y se tramita como delito leve, procedimiento abreviado o juicio rápido.'
+        }
+      ],
+      conclusion: 'El delito de lesiones protege la integridad física y la salud. El Código Penal diferencia claramente entre lesiones leves, graves y agravadas, imponiendo penas proporcionales a la gravedad del daño causado. La intervención de un abogado especializado en Derecho Penal es esencial para garantizar la correcta defensa de los derechos de la víctima o del investigado, así como para obtener la mejor estrategia jurídica posible. En STANS Abogados contamos con experiencia en la defensa de casos de lesiones de todo tipo. Contacta con nosotros para una valoración de tu caso.'
+    }
   }
 ];
 
@@ -2903,7 +3279,18 @@ export const allBlogSlugs = [
   'usurpacion-identidad-digital-suplantacion',
   
   // Institucional
-  'top-3-abogados-penalistas-madrid-2025'
+  'top-3-abogados-penalistas-madrid-2025',
+
+  // NUEVOS BLOGS FEBRERO 2026 - ARTÍCULOS FEBRERO
+  'abogados-penalistas-trafico-drogas',
+  'euroorden-espana-abogado-especializado',
+  'me-piden-extradicion-que-hacer',
+  'apropiacion-indebida-espana-guia-completa',
+  'delito-estafa-agravada-espana',
+  'fraude-fiscal-delitos-hacienda-publica',
+  'delitos-contra-seguridad-social-espana',
+  'asociaciones-cannabicas-situacion-penal-espana',
+  'delito-lesiones-tipos-leves-graves-agravados'
 ];
 
 // Función helper para obtener un post por slug

@@ -8,8 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date()
   
   // Fechas específicas para diferentes tipos de contenido
-  const blogContentDate = new Date('2025-01-07') // Última actualización de blogs (11 nuevos blogs enero 2025)
-  const casesContentDate = new Date('2025-01-15') // Fecha de última actualización de casos
+  const blogContentDate = new Date('2026-02-09') // Última actualización de blogs (9 nuevos blogs febrero 2026)
+  const casesContentDate = new Date('2026-02-09') // Fecha de última actualización de casos (Caso 23 - Operación Antiterrorista Ceuta)
   
   // Generar sitemap con estructura optimizada para Google Sitelinks
   // Prioridades basadas en importancia de negocio y búsquedas de usuarios
@@ -185,7 +185,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/conformidad-penal-acuerdo-fiscalia",
     "/blog/delitos-odio-redes-sociales-discurso",
     "/blog/juicio-rapido-procedimiento-defensa",
-    "/blog/top-3-abogados-penalistas-madrid-2025"
+    "/blog/top-3-abogados-penalistas-madrid-2025",
+
+    // ===== NUEVOS BLOGS FEBRERO 2026 =====
+    "/blog/abogados-penalistas-trafico-drogas",
+    "/blog/euroorden-espana-abogado-especializado",
+    "/blog/me-piden-extradicion-que-hacer",
+    "/blog/apropiacion-indebida-espana-guia-completa",
+    "/blog/delito-estafa-agravada-espana",
+    "/blog/fraude-fiscal-delitos-hacienda-publica",
+    "/blog/delitos-contra-seguridad-social-espana",
+    "/blog/asociaciones-cannabicas-situacion-penal-espana",
+    "/blog/delito-lesiones-tipos-leves-graves-agravados"
   ].map(path => ({
     url: `${baseUrl}${path}`,
     lastModified: blogContentDate,

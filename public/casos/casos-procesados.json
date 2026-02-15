@@ -1014,5 +1014,54 @@
       "medidas_cautelares": "Ninguna",
       "popularidad": "No"
     }
+  },
+  {
+    "id": 23,
+    "categoria": "Terrorismo y Audiencia Nacional",
+    "nombre": "OPERACIÓN ANTITERRORISTA CEUTA",
+    "delito_principal": "Presunto delito de terrorismo de índole yihadista",
+    "resultado": "Libertad provisional sin fianza",
+    "tipo_resolucion": "Libertad provisional",
+    "favorabilidad": "Favorable",
+    "fase_procesal": "Instrucción - Caso en curso",
+    "organo": "Juzgado Central de Instrucción nº 1 – Audiencia Nacional",
+    "organo_nivel": "Juzgado Central de Instrucción",
+    "seccion": "Instrucción",
+    "localidad": "Madrid",
+    "fecha": "30/01/2026",
+    "año": "2026",
+    "parte": "Defensa",
+    "medidas_cautelares": "Libertad provisional sin fianza con medidas aseguratorias",
+    "observaciones": "Operación antiterrorista conjunta hispano-marroquí con nueve detenidos entre Ceuta, Madrid, Ibiza, Tetuán y Fnideq. Tras más de un año en prisión preventiva, el Ministerio Fiscal solicitó la puesta en libertad del investigado y el Juzgado acordó la libertad provisional sin fianza.",
+    "caso_en_curso": true,
+    "noticias": "El Faro de Ceuta | OKDIARIO",
+    "links": "https://elfarodeceuta.es/campana-firmas-libertad-el-mumin-buen-musulman/\nhttps://okdiario.com/andalucia/familia-yihadista-preso-ceuta-lanza-campana-pedir-libertad-buen-musulman-14851106\nhttps://elfarodeceuta.es/operacion-antiterrorista-policia-nacional-detenidos-yihadistas-marruecos-celula-sahel/",
+    "caso_popular": "Sí",
+    "imagen": "/images/case_images/OPERACION ANTITERRORISTA CEUTA_1.png",
+    "contenido": {
+      "resumen": "En el marco de una operación antiterrorista conjunta entre España y Marruecos desarrollada en noviembre de 2024, fueron detenidas nueve personas entre Ceuta, Madrid, Ibiza, Tetuán y Fnideq por su presunta vinculación con una célula terrorista leal a ISIS en el Sahel. Nuestro cliente fue uno de los detenidos en Ceuta e ingresó en prisión provisional comunicada y sin fianza por orden de la Audiencia Nacional. Tras más de un año en prisión preventiva, el Juzgado Central de Instrucción nº 1 de la Audiencia Nacional, a instancia del Ministerio Fiscal, acordó mediante auto de 30 de enero de 2026 decretar su libertad provisional sin fianza con medidas aseguratorias. La causa continúa en fase de instrucción.",
+      "hechos": "El 22 de noviembre de 2024, la Comisaría General de Información de la Policía Nacional, en coordinación con la Brigada Provincial de Ceuta y los servicios de seguridad marroquíes (Oficina Central de Investigaciones Judiciales de la Dirección General de Vigilancia Territorial), ejecutó una operación antiterrorista simultánea en España y Marruecos. En Ceuta se practicaron registros en las barriadas de Vicedo Martínez y Príncipe Alfonso, con al menos cuatro detenidos en la ciudad. La operación se extendió a Madrid, Ibiza, Tetuán y Fnideq, alcanzando un total de nueve arrestos. Según las autoridades, los investigados formaban parte de una célula leal a ISIS en la región del Sahel. En los registros domiciliarios se incautaron armas blancas y equipos electrónicos que fueron sometidos a pericias digitales. La Audiencia Nacional acordó la prisión provisional comunicada y sin fianza para los detenidos.",
+      "estrategia": "La defensa presentó recursos de reforma y de apelación argumentando la inexistencia de pruebas concluyentes contra nuestro cliente. Se destacó el arraigo del investigado en Ceuta, donde reside con su familia, así como su situación de vulnerabilidad personal. Se argumentó que no se habían especificado conductas concretas constitutivas de delito. La estrategia incluyó la solicitud de revisión de la medida cautelar de prisión provisional conforme a los presupuestos del artículo 503 de la Ley de Enjuiciamiento Criminal, hasta obtener que el propio Ministerio Fiscal informara favorablemente la puesta en libertad con medidas alternativas.",
+      "pruebas": "Las diligencias incluyen atestados de la Comisaría General de Información de la Policía Nacional. En los registros domiciliarios se incautaron armas blancas y equipos electrónicos sometidos a pericias digitales. Las investigaciones policiales apuntaban a la presunta difusión de contenidos a través de redes sociales y a la celebración de reuniones presenciales entre los investigados. Al tratarse de un caso en curso, la información detallada sobre las pruebas está sujeta al secreto de las actuaciones.",
+      "resolucion": "Mediante auto de 30 de enero de 2026, el Juzgado Central de Instrucción nº 1 de la Audiencia Nacional acordó decretar la libertad provisional sin fianza del investigado, con medidas aseguratorias de su situación de libertad. La resolución se dictó tras el informe favorable del Ministerio Fiscal, que solicitaba la puesta en libertad del investigado con medidas alternativas para garantizar su disponibilidad procesal. El juzgado fundamentó su decisión en el artículo 503 número 1 de la Ley de Enjuiciamiento Criminal, que regula los presupuestos de la prisión provisional. La causa continúa en fase de instrucción a disposición del Juzgado Central de Instrucción nº 1.",
+      "marco_legal": "Se aplica el artículo 503 de la Ley de Enjuiciamiento Criminal, que regula los presupuestos de la prisión provisional y establece los requisitos que deben concurrir para su adopción y mantenimiento. El mismo precepto fundamenta la posibilidad de sustituir la prisión provisional por libertad provisional con medidas aseguratorias cuando las circunstancias que motivaron el internamiento preventivo se han modificado. La investigación se enmarca en el ámbito de los delitos de terrorismo regulados en los artículos 571 y siguientes del Código Penal.",
+      "imagenes": "Auto del Juzgado Central de Instrucción nº 1 de la Audiencia Nacional, de 30 de enero de 2026, que acuerda la libertad provisional sin fianza con medidas aseguratorias.",
+      "enlaces": ""
+    },
+    "ficha_detalle": {
+      "categoría": "Terrorismo – Audiencia Nacional",
+      "delito_principal": "Presunto delito de terrorismo de índole yihadista",
+      "parte": "Defensa",
+      "órgano": "Juzgado Central de Instrucción nº 1 (Audiencia Nacional)",
+      "sección": "Instrucción",
+      "localidad": "Ceuta / Madrid",
+      "fase_procesal": "Instrucción - Caso en curso",
+      "tipo_de_resolución": "Libertad provisional sin fianza conseguida",
+      "favorabilidad": "Favorable",
+      "fecha": "30/01/2026",
+      "año": "2026",
+      "medidas_cautelares": "Libertad provisional sin fianza con medidas aseguratorias",
+      "popularidad": "Sí"
+    }
   }
 ]

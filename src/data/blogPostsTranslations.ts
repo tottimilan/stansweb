@@ -623,6 +623,156 @@ export const newBlogsEN = {
       ],
       conclusion: 'Recognition as **Top 3 criminal lawyers in Madrid** by [madrid.place](https://madrid.place/abogados-penalistas/) is a pride for entire STANS Lawyers team, but also a responsibility. We will continue working with same dedication, specialization and commitment that has brought us here. If you need criminal lawyer in Madrid, **contact us**: we are available **24/7** at phone **+34 611 68 72 26** or by **WhatsApp**. Your first consultation, without obligation. **We defend your rights**.'
     }
+  },
+  // ===== NUEVOS BLOGS FEBRERO 2026 =====
+  74: {
+    title: 'Expert Criminal Lawyers in Drug Trafficking | STANS',
+    excerpt: 'Specialised criminal defence in drug trafficking offences in Madrid and throughout Spain. Types of substances, penalties, personal use, mitigating factors and plea agreements.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: 'Drug trafficking is one of the most serious and actively prosecuted offences in the Spanish Criminal Code, carrying prison sentences that can reach very high figures, especially when aggravating circumstances or criminal organisations are involved. At STANS ABOGADOS, a criminal law firm based in Madrid with nationwide coverage, we offer specialised criminal defence in offences against public health, whether you have been charged or are under investigation at an early stage.',
+      sections: [
+        { title: 'The Importance of a Specialist Drug Trafficking Lawyer', content: 'In drug trafficking offences, a sound defence strategy can mean the difference between prison and freedom, or between a minimum sentence and many years of imprisonment. Our criminal lawyers analyse from the very first moment: the legality of the arrest and searches, the nature and quantity of the substance seized, the possible existence of personal use, the degree of participation of the person under investigation, and the presence of aggravating or mitigating factors.' },
+        { title: 'What Is Considered a Drug Under Criminal Law?', content: 'For the purposes of drug trafficking offences, a drug is any substance that, when introduced into the body, alters its functions, creates dependence, and causes tolerance and withdrawal syndrome. These substances are defined in International Conventions signed by Spain. The Criminal Code distinguishes between substances that cause serious harm to health and those that do not, a distinction that is key to determining the sentence.' },
+        { title: 'Types of Drugs Under the Criminal Code', content: '**Drugs that do not cause serious harm to health**: These mainly include cannabis derivatives such as marijuana, hashish and resin. Their main psychoactive component is THC. **Drugs that cause serious harm to health**: Particularly dangerous substances that create strong dependence and high risk to life, including heroin and other opiates, fentanyl and synthetic opioids, MDMA or ecstasy, cocaine and its derivatives such as crack.' },
+        { title: 'What Conducts Are Punishable?', content: 'The Criminal Code punishes those who: cultivate drugs, process or transform them, traffic or distribute them, promote, favour or facilitate their illegal consumption, or possess substances for trafficking purposes. Within these conducts there are different degrees of authorship and participation, which directly influence the sentence.' },
+        { title: 'Penalties for Drug Trafficking', content: '**Drugs not causing serious harm**: Generally punished with 1 to 3 years imprisonment. Sentences can be reduced to 6 months with mitigating factors, or increased up to 15 years for heads of criminal organisations. **Drugs causing serious harm**: More severe penalties: 3 to 6 years imprisonment, reducible to 1 year 6 months with mitigating factors, or up to 18 years in the most serious circumstances. **Related offences**: Drug trafficking is often linked to money laundering or illegal weapons possession, with combined sentences exceeding 20 years.' },
+        { title: 'Is Personal Drug Use a Criminal Offence?', content: 'In Spain, drug consumption is not a criminal offence, although it may be subject to administrative sanctions. Possession for personal use is also not a criminal offence, provided that intent to traffic cannot be established. The courts, particularly the Supreme Court, have established guideline criteria for quantities considered personal use versus those presumed for trafficking. A specialist lawyer knows these criteria and can use them to exclude criminal liability.' },
+        { title: 'Mitigating Factors and Plea Agreements', content: 'Sentences can be significantly reduced through mitigating circumstances: admission of facts, cooperation with justice, drug addiction, and reparation of harm. Many of these can be activated before trial, making early intervention by a lawyer decisive. Where evidence is clearly established, a plea agreement with the Public Prosecutor can achieve significant sentence reductions, avoid high-risk trials and limit the impact on prison time.' }
+      ],
+      conclusion: 'At STANS ABOGADOS we offer comprehensive defence in drug trafficking offences, accompanying clients from initial detention, police and judicial statements, the investigation phase, and prosecution negotiations or oral trial. Our goal is always to protect your rights and provide the best possible legal strategy. Contact us for a personalised assessment of your case.'
+    }
+  },
+  75: {
+    title: 'European Arrest Warrant (EAW) Lawyer in Madrid | STANS',
+    excerpt: 'Specialised EAW defence in Spain. Legal framework, requirements, procedure, grounds for refusal and expert legal representation before the Audiencia Nacional.',
+    category: 'Extraditions',
+    content: {
+      introduction: 'The European Arrest Warrant (EAW) is one of the most important mechanisms for judicial cooperation in criminal matters within the European Union. Established to replace traditional extradition between Member States, the EAW allows one EU country to request the arrest and surrender of a person located in another EU country for the purpose of prosecution or to serve a custodial sentence. If you have been issued an EAW, or are at risk of being surrendered under an EAW while in Spain, you need specialised legal counsel. As EAW lawyers in Madrid, Stans Abogados advises clients from across Spain, including foreign residents and non-Spanish nationals.',
+      sections: [
+        { title: 'Legal Framework for EAW in Spain', content: 'The EAW is rooted in EU framework legislation and has been incorporated into Spanish law through domestic regulations. Key legal texts include: Council Framework Decision 2002/584/JHA on the European Arrest Warrant, Spanish Law on International Judicial Cooperation in Criminal Matters, Criminal Procedure Act (Ley de Enjuiciamiento Criminal), and relevant EU instruments on mutual recognition of judicial decisions. Unlike traditional extradition, the EAW operates on the principle of mutual recognition between EU judicial authorities, facilitating faster and more efficient surrender.' },
+        { title: 'What Is a European Arrest Warrant?', content: 'An EAW is a judicial decision issued by a competent authority in an EU Member State requiring another Member State to arrest a person wanted for prosecution or surrender a person convicted to serve a custodial sentence. The EAW streamlines procedures that would otherwise be handled through slow diplomatic channels, ensuring individuals cannot evade justice by crossing EU borders.' },
+        { title: 'Execution of an EAW in Spain', content: '**1. Notification and Arrest**: Spanish law enforcement may execute the warrant; the individual must be informed of the arrest, the contents, and their rights including legal representation. **2. Judicial Hearing**: The case is referred to the Audiencia Nacional in Madrid, which examines identity verification, validity of signatures, compliance with procedural guarantees, and possible grounds for refusal. **3. Surrender Decision**: If the court finds the EAW valid, it will issue a surrender order, unless there are recognised grounds for opposition.' },
+        { title: 'Grounds for Refusal of an EAW', content: 'Spanish law and EU law allow refusal in specific circumstances: **Fundamental rights violations** — real risk of inhuman or degrading treatment. **Non bis in idem** — already judged for the same facts. **Lack of fair trial guarantees**. **Surrender of nationals** — specific provisions may apply. A qualified EAW lawyer assesses these grounds and raises them at the appropriate time.' },
+        { title: 'Consequences and Timeline', content: 'If the EAW is executed: the individual is transferred to the requesting State, may face prosecution or serve a sentence, legal situation in Spain may be affected, and travel within Schengen may be restricted. EAW procedures are generally faster than extradition. Simple cases may conclude in weeks, but complex challenges can extend the timeline.' },
+        { title: 'How an EAW Lawyer Can Help You', content: 'A specialised lawyer provides: immediate assessment of the warrant validity, representation before the Audiencia Nacional, strategic preparation of challenges and appeals, protection of fundamental rights, coordination with foreign legal counsel, and multilingual legal support for foreign-national clients. At Stans Abogados, we combine deep legal knowledge with practical experience in EU surrender cases.' }
+      ],
+      conclusion: 'The European Arrest Warrant is a powerful tool for cross-border criminal justice cooperation, but its execution involves complex legal procedures and serious personal consequences. If you are subject to an EAW in Spain, acting quickly and securing experienced legal representation is critical. At Stans Abogados, we are dedicated to protecting your rights in EAW proceedings, providing strategic, multilingual and personalised legal defence from Madrid, with reach throughout Spain.'
+    }
+  },
+  76: {
+    title: 'Extradition Lawyer in Madrid | Criminal Defence in Extradition | STANS',
+    excerpt: 'Expert extradition defence in Spain. Passive extradition procedure, Audiencia Nacional, rights of the person sought, differences with EAW and specialised representation.',
+    category: 'Extraditions',
+    content: {
+      introduction: 'Facing an extradition request is one of the most serious and stressful legal situations a person can experience. Whether you are accused of a criminal offence abroad, subject to an international arrest warrant, or facing a European Arrest Warrant, your freedom, your future and your fundamental rights may be at stake. Spain — and particularly Madrid, where the Audiencia Nacional is located — plays a central role in extradition and international surrender proceedings. At Stans Abogados, we act as extradition lawyers in Madrid, providing defence in extradition proceedings and EAW cases.',
+      sections: [
+        { title: 'Legal Framework for Extradition in Spain', content: 'The main legal instruments are: Law 4/1985 on Passive Extradition, Spanish Criminal Code, Criminal Procedure Act, and international treaties signed by Spain. For EU countries, extradition is replaced by the European Arrest Warrant mechanism. It is crucial to distinguish between these procedures as they follow different rules and defence strategies.' },
+        { title: 'What Is Extradition Under Spanish Law?', content: 'Extradition is a form of international judicial cooperation whereby Spain agrees to surrender a person to another State to stand trial or serve a sentence. Under Spanish law, extradition is never automatic. Each request is examined to ensure compliance with legislation and fundamental rights. Requirements include: double criminality, minimum severity, valid judicial basis, and absence of mandatory grounds for refusal.' },
+        { title: 'Grounds for Refusing Extradition', content: 'Spanish law provides multiple safeguards: political offences (with exceptions), risk of torture or inhuman treatment, violation of fundamental rights, prescription of the offence under Spanish law, ne bis in idem (double jeopardy), and proceedings already pending in Spain. A specialised lawyer assesses whether any of these grounds apply.' },
+        { title: 'The Extradition Procedure in Spain', content: '**1. Provisional Arrest**: Based on international warrant or Interpol notice. **2. Formal Request**: Submitted through diplomatic channels to the Ministry of Justice or judicial channels. **3. Judicial Phase**: The Audiencia Nacional examines legal admissibility. **4. Governmental Phase**: If admissible, referred to the Council of Ministers for final decision. This dual nature makes extradition defence particularly complex.' },
+        { title: 'Can an Extradition Decision Be Challenged?', content: 'Yes. Judicial appeals before competent courts and submissions before the Council of Ministers during the governmental phase are available. Consequences of extradition include deprivation of liberty, transfer to a foreign prison system, exposure to foreign procedures, and long-term impact on residence and immigration status.' },
+        { title: 'Extradition vs European Arrest Warrant', content: 'Key differences: **Scope** — extradition applies to non-EU countries; EAW within the EU. **Procedure** — extradition is mixed (judicial + governmental); EAW is predominantly judicial. **Government involvement** — the Council of Ministers has the last word in extradition; minimal in EAW. **Timelines** — EAW is generally faster. Correctly determining which procedure applies is essential from the outset.' }
+      ],
+      conclusion: 'Extradition and EAW proceedings involve high legal complexity and serious personal consequences. Acting quickly and with specialised legal advice can make a decisive difference. If you are facing an extradition request or an EAW in Spain, Stans Abogados offers experienced, multilingual and strategic defence as your extradition lawyer in Madrid, protecting your rights at every stage of the process.'
+    }
+  },
+  77: {
+    title: 'Misappropriation of Funds in Spain: Complete Guide | STANS',
+    excerpt: 'Analysis of the offence of misappropriation: art. 253 Criminal Code, elements, differences with fraud and theft, types, penalties and specialised defence.',
+    category: 'Economic Criminal Law',
+    content: {
+      introduction: 'Misappropriation is one of the most common property offences in Spanish Criminal Law. It occurs when a person receives money, goods or assets with the obligation to return them or use them for a specific purpose and, instead of doing so, keeps them or uses them for a different purpose. Misappropriation is regulated in Article 253 of the Criminal Code.',
+      sections: [
+        { title: 'Elements of the Offence', content: '**1. Legitimate receipt**: The perpetrator receives money or goods legally and voluntarily, usually in a relationship of trust. **2. Obligation to return or manage**: The person has a legal duty to return the asset or use it for a specific purpose. **3. Misappropriation or misuse**: The person keeps the asset or uses it for different purposes. **4. Financial harm**: The conduct must cause real financial damage to the owner. **5. Criminal intent**: The perpetrator acts knowingly and willingly; simple error or negligence is not sufficient.' },
+        { title: 'Difference Between Misappropriation, Theft and Fraud', content: '**Misappropriation (art. 253)**: The perpetrator receives the asset legitimately and subsequently keeps it. **Fraud (art. 248)**: The perpetrator obtains the asset through prior deception, causing the victim to err from the beginning. In fraud, deception exists before receiving the money; in misappropriation, it arises afterwards. **Theft**: The asset is taken without the owner\'s consent.' },
+        { title: 'Types and Penalties', content: '**Basic misappropriation (art. 253)**: 6 months to 3 years imprisonment or fine. **Aggravated (art. 250)**: When affecting assets of special value, causing serious harm or committed with abuse of professional trust. 1 to 6 years imprisonment and fine. **Minor (art. 254)**: When the amount is less than €400. Fine of 1 to 3 months.' },
+        { title: 'Misappropriation in Business', content: 'Common in: directors diverting funds, employees keeping company money, managers using funds for personal purposes. Article 252 CP may apply where there is abuse of administrative functions. Victims can report to Police, Public Prosecutor or Court.' },
+        { title: 'Practical Examples', content: 'A client gives €5,000 to a manager to invest in a fund. The manager receives the money legitimately but uses it for personal expenses. The client loses the money and the manager acts consciously. All elements of the offence are present. Other examples: director diverting corporate funds, employee retaining client payments, manager not returning amounts received.' }
+      ],
+      conclusion: 'Misappropriation is a serious offence that protects trust in property relationships. A specialised criminal lawyer is essential to determine the correct classification, assess the applicable penalty and design the most appropriate procedural strategy. At STANS Abogados we have experience in property and economic offences. Contact us for an assessment of your case.'
+    }
+  },
+  78: {
+    title: 'Fraud and Aggravated Fraud in Spain | STANS',
+    excerpt: 'Complete guide to fraud offences: arts. 248-251 Criminal Code, types of fraud, aggravated fraud, penalties, differences with misappropriation and criminal defence.',
+    category: 'Economic Criminal Law',
+    content: {
+      introduction: 'Fraud is one of the most frequent property offences in Spain. It occurs when a person, through deception, causes another person to err in order to obtain an economic benefit. The offence is regulated in Articles 248 to 251 of the Criminal Code, and aggravated fraud in Article 250.',
+      sections: [
+        { title: 'Types of Fraud', content: '**1. Classic fraud**: The perpetrator deceives the victim into handing over money or signing a contract. **2. Computer fraud (art. 249)**: Committed using technological means — phishing, online banking manipulation. **3. Contractual fraud**: When one party never intended to fulfil the contract. **4. Real estate fraud**: Affecting sales, rentals or property investments. **5. Investment fraud**: Fake investment funds, pyramid schemes, non-existent projects. **6. Identity fraud**: The perpetrator impersonates another person to obtain money.' },
+        { title: 'Aggravated Fraud (Art. 250 CP)', content: 'Fraud is aggravated when: the harm is especially serious, the amount is high, there is abuse of personal or professional relationships, the victim is especially vulnerable (elderly, disabled), or a professional relationship is exploited. Examples: a fake investor obtains €200,000 (aggravated by amount); a financial advisor deceives a client (aggravated by breach of trust); an elderly person is tricked into signing documents (aggravated by vulnerability).' },
+        { title: 'Penalties', content: '**Basic fraud (art. 248)**: 6 months to 3 years imprisonment. **Aggravated fraud (art. 250)**: 1 to 6 years imprisonment and fine of 6 to 12 months. Additional consequences: criminal record, seizure of assets, loss of professional reputation, disqualification from certain activities.' },
+        { title: 'Difference Between Fraud and Misappropriation', content: 'The key is the timing of the deception. **In fraud**: deception exists before receiving the money. **In misappropriation**: deception arises afterwards. Both involve financial harm, but the difference depends on the perpetrator\'s initial intention.' },
+        { title: 'Specialised Criminal Defence', content: 'A specialised lawyer examines whether deception and financial harm exist, and whether aggravating circumstances apply. Defence strategies include: challenging the existence of initial deception, criminal intent, the causal link between deception and harm, or the actual presence of aggravating circumstances. Documentary evidence, expert reports and financial analysis are decisive.' }
+      ],
+      conclusion: 'Aggravated fraud offences present superior legal and economic complexity, making the intervention of an expert criminal lawyer essential. At STANS Abogados we specialise in economic criminal law. Contact us.'
+    }
+  },
+  79: {
+    title: 'Tax Fraud in Spain: Offences Against the Public Treasury | STANS',
+    excerpt: 'Analysis of tax fraud offences: arts. 305 and 305 bis Criminal Code, €120,000 threshold, aggravated type, voluntary regularisation, penalties and defence.',
+    category: 'Economic Criminal Law',
+    content: {
+      introduction: 'Tax fraud, also known as offences against the Public Treasury, forms part of Economic Criminal Law and aims to protect the State\'s economic interests. This offence occurs when a person or company evades tax payments, obtains undue refunds or fraudulently enjoys tax benefits exceeding legal limits. In Spain, not every tax irregularity constitutes a criminal offence — many are sanctioned only through administrative channels.',
+      sections: [
+        { title: 'Concept of Tax Fraud (Art. 305 CP)', content: 'Article 305 punishes anyone who defrauds the Public Treasury by evading tax payments, obtaining undue refunds or enjoying tax benefits without entitlement, provided the amount exceeds €120,000 per tax and fiscal year. Requirements: fraudulent conduct, financial harm to the Treasury, amount exceeding €120,000, and criminal intent.' },
+        { title: 'Aggravated Type (Art. 305 bis CP)', content: 'The offence is aggravated when: the amount exceeds €600,000, a corporate structure is used to conceal the fraud, there is a criminal organisation, or the harm is especially serious.' },
+        { title: 'Difference Between Tax Infringement and Criminal Offence', content: 'Tax infringement is sanctioned administratively with fines. Tax fraud is sanctioned criminally with imprisonment and criminal record. The main difference lies in: the amount defrauded, the intentionality, and the seriousness of the conduct.' },
+        { title: 'Penalties and Consequences', content: 'Imprisonment, economic fines proportional to the amount defrauded, obligation to repay all amounts with surcharges and interest, loss of tax benefits and subsidies, criminal record, and seizure of assets obtained through the fraud.' },
+        { title: 'Voluntary Regularisation (Art. 305.4 CP)', content: 'Voluntary regularisation before the Tax Authority detects the fraud can exclude criminal liability. Requirements: full payment of the debt, before official notification, and acknowledgment of the error. Even after proceedings have begun, regularisation can lead to significant sentence reductions.' },
+        { title: 'Criminal Procedure and Evidence', content: 'The Tax Agency detects irregularities, and if there are indications of crime, refers to the Public Prosecutor. Criminal investigation begins, assets may be seized, and trial takes place. Common evidence includes: tax returns, accounting records, bank statements, invoices and expert reports.' }
+      ],
+      conclusion: 'Tax fraud carries serious economic and criminal consequences. A specialised criminal lawyer in Economic Criminal Law is essential to analyse the situation, assess possible regularisations and design an effective defence strategy. At STANS Abogados we advise you at every stage. Contact us.'
+    }
+  },
+  80: {
+    title: 'Offences Against Social Security in Spain | STANS',
+    excerpt: 'Guide to social security offences: art. 307 Criminal Code, basic and aggravated types, typical conducts, penalties, criminal procedure and defence.',
+    category: 'Economic Criminal Law',
+    content: {
+      introduction: 'Offences against Social Security protect the proper functioning of the public social protection system, ensuring that companies, self-employed workers and employers comply with their contribution obligations. These offences target conduct that damages the financing of the system and affects workers\' rights. The offence is mainly regulated in Article 307 of the Criminal Code.',
+      sections: [
+        { title: 'Basic Type of the Offence', content: 'The basic type consists of evading Social Security contributions or unduly obtaining refunds, bonuses or economic benefits when the amount defrauded exceeds the legal threshold. Typical conducts include: not registering workers, contributing on lower bases than actual, simulating part-time contracts when they are full-time, obtaining bonuses without meeting requirements, and declaring fewer workers than actual.' },
+        { title: 'Aggravated Types', content: 'The offence is aggravated when: amounts are especially high, there is operation through organised structures, shell companies are used, the conduct is repeated, or a large number of workers are affected.' },
+        { title: 'Penalties and Consequences', content: 'Penalties include: imprisonment, economic fines, loss of tax or Social Security benefits, disqualification from subsidies, and obligation to repay defrauded amounts with surcharges and interest.' },
+        { title: 'Criminal Procedure', content: 'Proceedings usually begin through the Labour and Social Security Inspectorate, which can: carry out company inspections, review payrolls, contracts and contributions, detect irregularities, and issue infringement reports. When the facts exceed the administrative sphere, the case is referred to the Public Prosecutor or competent court.' }
+      ],
+      conclusion: 'Offences against Social Security directly impact the sustainability of the public system and workers\' rights. A specialised criminal lawyer is essential to analyse the legality of the conduct and design an effective defence strategy. At STANS Abogados we advise you. Contact us.'
+    }
+  },
+  81: {
+    title: 'Cannabis Clubs in Spain: Criminal Situation | STANS',
+    excerpt: 'Analysis of the criminal situation of cannabis clubs: public health offences, criminal association, criminal risks, penalties and specialised defence.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: 'Cannabis clubs emerged in Spain as private non-profit entities whose stated purpose is the shared consumption of cannabis among adults. However, their legal standing is controversial and their activity can generate significant criminal risks, particularly in relation to criminal association and public health offences under the Criminal Code.',
+      sections: [
+        { title: 'Applicable Legal Framework', content: 'Cannabis clubs\' activity may be affected by two major normative blocks: public health offences regulated in Articles 368 to 378 CP and the offence of criminal association in Articles 515 to 521 CP. Additionally, rules on seizure of assets under Articles 127 and following of the Criminal Code may apply.' },
+        { title: 'Public Health Offences and Cannabis', content: 'Article 368 of the Criminal Code punishes those who cultivate, process, traffic, or promote, favour or facilitate the consumption of toxic drugs or psychotropic substances. Cannabis is a narcotic substance for criminal purposes. Therefore, any conduct involving cultivating marijuana, distributing it, or facilitating third-party consumption may constitute an offence when it is not limited to strictly private personal use.' },
+        { title: 'Criminal Risks of Cannabis Clubs', content: 'Factors that increase criminal risk include: organised cultivation and distribution, periodic fee collection, large quantities of substance, easy access for new members, advertising or member recruitment, lack of real consumption control, and distribution to unrelated persons. Penalties include imprisonment, fines, disqualification and seizure of substances, money and premises.' },
+        { title: 'Criminal Association and Cannabis Clubs', content: 'Article 515 considers associations whose purpose is to commit offences as unlawful. A club may constitute a criminal association if its main activity is cannabis distribution, it facilitates illegal consumption, operates as an organised structure, has division of roles, and there is continuity over time. Articles 517-521 provide penalties for promoters, directors, active members and collaborators.' },
+        { title: 'Difference Between Personal Use and Criminal Offence', content: 'Private individual consumption is not a criminal offence. However, when there is organisation, distribution, facilitation to third parties, economic activity or an associative structure, the criminal threshold may be crossed.' },
+        { title: 'Seizure of Assets and Criminal Procedure', content: 'The Criminal Code allows seizure of drugs, money, closure of premises and confiscation of cultivation equipment. Investigations usually begin through inspections, complaints, police investigations or administrative reports.' }
+      ],
+      conclusion: 'The criminal situation of cannabis clubs in Spain is legally complex. Although they present themselves as non-profit entities, their activity may fall within public health offences and criminal association when there is organisation, distribution and facilitation of cannabis consumption. A specialised criminal lawyer is essential. At STANS Abogados we advise you. Contact us.'
+    }
+  },
+  82: {
+    title: 'Bodily Harm Offences in Spain: Minor, Serious and Aggravated Types | STANS',
+    excerpt: 'Complete classification of bodily harm offences: minor, serious, very serious, aggravated, negligent and domestic. Arts. 147-156 Criminal Code.',
+    category: 'Urgent Criminal Defense',
+    content: {
+      introduction: 'The offence of bodily harm is one of the most relevant criminal offences in Spanish Criminal Law, as it protects physical integrity and personal health. It occurs when a person causes another bodily harm or damage to their physical or mental health, regardless of the means used. The Spanish Criminal Code regulates this offence in Articles 147 to 156.',
+      sections: [
+        { title: 'Basic and Minor Injuries (Art. 147 CP)', content: '**Basic injuries (art. 147.1)**: Require medical or surgical treatment. Penalty: 3 months to 3 years imprisonment or fine of 6 to 12 months. Examples: arm fracture requiring cast and follow-up, deep wound requiring stitches. **Minor injuries (art. 147.2)**: Do not require medical treatment. Penalty: fine of 1 to 3 months. Examples: a push causing a small bruise, a scratch without medication needed.' },
+        { title: 'Aggravated Injuries (Art. 148 CP)', content: 'Applied when: weapons or dangerous objects are used, victims are especially vulnerable, there is a family relationship or cruelty. Penalty: 2 to 5 years imprisonment. Examples: assault with a knife or broken bottle, hitting an elderly or disabled person, repeated assault on a partner with special violence.' },
+        { title: 'Very Serious and Serious Injuries (Arts. 149-150 CP)', content: '**Very serious (art. 149)**: Loss of major organs, blindness, deafness or severe disfigurement. Penalty: 6 to 12 years imprisonment. **Serious (art. 150)**: Loss of non-major organ or non-serious disfigurement. Penalty: 3 to 6 years imprisonment. Examples: loss of a finger, permanent visible scars.' },
+        { title: 'Domestic Injuries and Negligent Injuries', content: '**Domestic (art. 153)**: When the victim is spouse, ex-partner or family member. Penalty: 6 months to 1 year imprisonment or community service. **Negligent injuries (art. 152)**: Through serious or minor negligence. Penalty: fine or imprisonment depending on severity. Examples: traffic accident due to speeding, medical negligence causing physical harm.' },
+        { title: 'Aggravating Circumstances and Criminal Procedure', content: 'Aggravating circumstances include: use of weapons, especially vulnerable victims, cohabitation or family relationship, and cruelty or premeditation. Proceedings may begin by complaint, medical report or police intervention, and are processed as minor offence, abbreviated procedure or fast-track trial.' }
+      ],
+      conclusion: 'The offence of bodily harm protects physical integrity and health. The Criminal Code clearly differentiates between minor, serious and aggravated injuries, imposing proportional penalties. A specialised criminal lawyer is essential. At STANS Abogados we have experience in defending all types of bodily harm cases. Contact us.'
+    }
   }
 };
 
@@ -1199,6 +1349,147 @@ export const newBlogsFR = {
       ],
       conclusion: 'La reconnaissance comme **Top 3 avocats pénalistes de Madrid** est une fierté pour toute l\'équipe STANS Avocats. Si vous avez besoin d\'un avocat pénaliste à Madrid, **contactez-nous**: disponibles **24/7** au **+34 611 68 72 26**.'
     }
+  },
+  // ===== NUEVOS BLOGS FEBRERO 2026 =====
+  74: {
+    title: 'Avocats Pénalistes Spécialistes en Trafic de Drogues | STANS',
+    excerpt: 'Défense pénale spécialisée en délits de trafic de drogues à Madrid et dans toute l\'Espagne. Types de substances, peines, consommation personnelle et accords.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Le délit de trafic de drogues est l\'un des délits les plus graves du Code Pénal espagnol, avec des peines de prison pouvant atteindre des chiffres très élevés, surtout en présence de circonstances aggravantes ou d\'organisations criminelles. Chez STANS ABOGADOS, cabinet d\'avocats pénalistes à Madrid avec couverture nationale, nous offrons une défense pénale spécialisée en délits contre la santé publique.',
+      sections: [
+        { title: 'L\'Importance d\'un Avocat Spécialiste en Trafic de Drogues', content: 'Dans les délits de trafic de drogues, une stratégie de défense correcte peut faire la différence entre la prison et la liberté. Nos avocats analysent dès le premier moment: la légalité de l\'arrestation et des perquisitions, la nature et quantité de la substance saisie, l\'existence possible d\'autoconsommation, le degré de participation de l\'accusé et la concurrence de circonstances atténuantes ou aggravantes.' },
+        { title: 'Qu\'est-ce qu\'une Drogue au Sens Pénal?', content: 'Le Code Pénal distingue entre les substances qui causent de graves dommages à la santé et celles qui n\'en causent pas. **Drogues ne causant pas de graves dommages**: principalement les dérivés du cannabis. **Drogues causant de graves dommages**: héroïne, fentanyl, MDMA, cocaïne et dérivés.' },
+        { title: 'Conduites Punissables et Peines', content: 'Le Code Pénal sanctionne ceux qui cultivent, élaborent, trafiquent, distribuent ou facilitent la consommation illégale de drogues. **Drogues légères**: prison de 1 à 3 ans. **Drogues dures**: prison de 3 à 6 ans, pouvant aller jusqu\'à 18 ans dans les cas les plus graves. Des délits connexes comme le blanchiment de capitaux peuvent augmenter considérablement les peines.' },
+        { title: 'Autoconsommation et Circonstances Atténuantes', content: 'En Espagne, la consommation de drogues n\'est pas un délit pénal. La possession pour usage personnel non plus, à condition que l\'intention de trafic ne puisse être établie. Les peines peuvent être réduites par: reconnaissance des faits, collaboration avec la justice, toxicomanie et réparation du dommage.' },
+        { title: 'Conformité avec le Ministère Public', content: 'Lorsque les faits sont clairement établis, un accord peut permettre une réduction très importante de la peine, éviter un procès à haut risque et limiter l\'impact pénitentiaire. Seul un avocat spécialisé peut évaluer correctement s\'il convient de négocier ou d\'aller en jugement.' }
+      ],
+      conclusion: 'Chez STANS ABOGADOS nous offrons une défense intégrale en délits de trafic de drogues. Notre objectif est toujours de protéger vos droits et d\'offrir la meilleure stratégie légale possible. Contactez-nous.'
+    }
+  },
+  75: {
+    title: 'Mandat d\'Arrêt Européen en Espagne: Guide Complet | STANS',
+    excerpt: 'Guide complet sur le Mandat d\'Arrêt Européen (MAE). Cadre juridique, exigences, procédure, motifs d\'opposition et défense spécialisée à Madrid.',
+    category: 'Extraditions',
+    content: {
+      introduction: 'Le Mandat d\'Arrêt Européen (MAE), connu officiellement comme Ordre Européen de Détention et de Remise, est un instrument juridique permettant la détention et la remise d\'une personne entre les États membres de l\'UE. Si un MAE vous a été notifié en Espagne, vous devez comprendre ses implications et vos droits. Chez Stans Abogados, nous sommes spécialistes en procédures MAE.',
+      sections: [
+        { title: 'Cadre Juridique du MAE en Espagne', content: 'Le MAE repose sur la Décision-cadre 2002/584/JAI du Conseil de l\'UE, la Loi de Coopération Juridique Internationale en Matière Pénale et la Loi de Procédure Criminelle. Contrairement à l\'extradition traditionnelle, le MAE se traite directement entre autorités judiciaires, réduisant délais et formalités.' },
+        { title: 'Concept et Exigences', content: 'Le MAE est une ordonnance de détention émise par une autorité judiciaire d\'un État de l\'UE demandant à un autre État de détenir et remettre une personne recherchée. Il fonctionne sous le principe de reconnaissance mutuelle des décisions judiciaires entre États membres.' },
+        { title: 'Procédure de Tramitation en Espagne', content: '**1. Émission et diffusion** par l\'autorité judiciaire émettrice. **2. Détention en Espagne** par les forces de sécurité. **3. Comparution** devant le Juge Central d\'Instruction de l\'Audiencia Nacional. **4. Phase d\'exécution**: l\'autorité judiciaire espagnole évalue les conditions de remise.' },
+        { title: 'Motifs d\'Opposition', content: 'La législation permet l\'opposition pour: risque de violation des droits fondamentaux, manque de compétence judiciaire, insuffisance de motivation de l\'ordre, non-application de garanties processuelles minimales et principe de non-discrimination.' },
+        { title: 'Conséquences et Délais', content: 'Si le MAE est exécuté: remise à l\'État émetteur, possibilité de procès pénal ou exécution de peine, situation migratoire potentiellement affectée. La procédure peut se résoudre en semaines, bien que des causes complexes puissent allonger les délais.' }
+      ],
+      conclusion: 'Le MAE est un outil clé pour la coopération judiciaire pénale dans l\'UE. Chez Stans Abogados, spécialistes en MAE, nous offrons défense technique, attention multilingue et représentation depuis Madrid. Si un MAE vous a été notifié, contactez-nous immédiatement.'
+    }
+  },
+  76: {
+    title: 'On Me Demande l\'Extradition: Que Faire | STANS',
+    excerpt: 'Guide pratique sur l\'extradition passive en Espagne. Procédure devant l\'Audiencia Nacional, droits du réclamé, différences avec le MAE et défense spécialisée.',
+    category: 'Extraditions',
+    content: {
+      introduction: 'Recevoir une notification qu\'un autre État demande à l\'Espagne votre extradition est une situation délicate. Il est important de savoir qu\'il ne s\'agit pas d\'une remise automatique. Le système juridique espagnol établit une procédure réglementée avec des garanties permettant de s\'opposer à l\'extradition. Chez Stans Abogados, nous vous expliquons ce que signifie une demande d\'extradition et les étapes à suivre.',
+      sections: [
+        { title: 'Qu\'est-ce que l\'Extradition Passive?', content: 'L\'extradition est un instrument de coopération judiciaire internationale par lequel un État demande à un autre la remise d\'une personne pour être jugée ou exécuter une peine. Ce processus est régi par la Loi 4/1985 d\'Extradition Passive, les traités internationaux et, de manière complémentaire, le Code Pénal.' },
+        { title: 'Comment Arrive la Demande?', content: 'Par mandat d\'arrêt international, souvent canalisé via Interpol (Notice Rouge), ou par demande formelle d\'extradition présentée par voie diplomatique au Ministère de la Justice ou entre autorités judiciaires. L\'existence d\'une demande n\'implique pas que l\'Espagne doive l\'accorder automatiquement.' },
+        { title: 'Procédure d\'Extradition en Espagne', content: '**1. Réception et examen** de la documentation. **2. Phase judiciaire**: l\'Audiencia Nacional analyse si l\'extradition est juridiquement fondée. **3. Phase gouvernementale**: le Conseil des Ministres adopte la décision finale.' },
+        { title: 'Motifs de Refus', content: 'L\'extradition peut être refusée quand: le fait n\'est pas un délit en Espagne, il existe un risque de traitements inhumains, le délit a un caractère politique, la personne est déjà jugée en Espagne pour les mêmes faits, ou la prescription est acquise.' },
+        { title: 'Différences entre Extradition et MAE', content: '**Portée**: extradition pour États non-UE; MAE entre États membres. **Intervention du gouvernement**: le Conseil des Ministres est décisif dans l\'extradition; minimale dans le MAE. **Délais**: le MAE est généralement plus rapide.' }
+      ],
+      conclusion: 'Face à une demande d\'extradition, il est fondamental de chercher un conseil juridique immédiat. Chez Stans Abogados, nous sommes spécialistes en extradition passive et MAE, avec une expérience solide dans des procédures complexes. Contactez-nous immédiatement.'
+    }
+  },
+  77: {
+    title: 'Abus de Confiance en Espagne: Guide Complet | STANS',
+    excerpt: 'Analyse du délit d\'abus de confiance: art. 253 CP, éléments, différences avec l\'escroquerie et le vol, types, peines et défense spécialisée.',
+    category: 'Droit Pénal Économique',
+    content: {
+      introduction: 'L\'abus de confiance (apropiación indebida) est l\'un des délits patrimoniaux les plus courants en droit pénal espagnol. Il se produit lorsqu\'une personne reçoit de l\'argent ou des biens avec l\'obligation de les restituer et, au lieu de le faire, les conserve ou les utilise à d\'autres fins. Ce délit est réglementé par l\'article 253 du Code Pénal.',
+      sections: [
+        { title: 'Éléments du Délit', content: '**1. Réception légitime**: L\'auteur reçoit le bien légalement. **2. Obligation de restitution**: Devoir juridique de restituer ou d\'administrer. **3. Appropriation indue**: Conservation ou utilisation à des fins différentes. **4. Préjudice économique**: Dommage patrimonial réel. **5. Intention dolosive**: Connaissance et volonté.' },
+        { title: 'Différence avec l\'Escroquerie et le Vol', content: '**Abus de confiance**: réception légitime puis appropriation. **Escroquerie**: obtention par tromperie préalable. **Vol**: prise sans consentement. La différence clé réside dans le moment de la tromperie.' },
+        { title: 'Types et Peines', content: '**Basique (art. 253)**: prison de 6 mois à 3 ans. **Aggravé (art. 250)**: prison de 1 à 6 ans. **Mineur (art. 254)**: amende de 1 à 3 mois pour montants inférieurs à 400€.' },
+        { title: 'Contexte Professionnel', content: 'Fréquent chez: administrateurs détournant des fonds, employés gardant l\'argent de l\'entreprise, gestionnaires utilisant des fonds à des fins personnelles. L\'article 252 CP peut s\'appliquer en cas d\'abus de fonctions d\'administration.' }
+      ],
+      conclusion: 'L\'abus de confiance est un délit grave protégeant la confiance dans les relations patrimoniales. Un avocat pénaliste spécialisé est essentiel. Chez STANS Abogados, contactez-nous.'
+    }
+  },
+  78: {
+    title: 'Délit d\'Escroquerie et Escroquerie Aggravée en Espagne | STANS',
+    excerpt: 'Guide complet sur le délit d\'escroquerie: arts. 248-251 CP, types, escroquerie aggravée, peines et défense pénale spécialisée.',
+    category: 'Droit Pénal Économique',
+    content: {
+      introduction: 'L\'escroquerie est l\'un des délits patrimoniaux les plus fréquents en Espagne. Elle se produit lorsqu\'une personne, par tromperie, provoque une erreur chez une autre pour obtenir un bénéfice économique. Le délit est réglementé aux articles 248 à 251 du Code Pénal.',
+      sections: [
+        { title: 'Types d\'Escroquerie', content: '**1. Escroquerie classique**: tromperie pour obtenir argent ou signature. **2. Escroquerie informatique (art. 249)**: par moyens technologiques — phishing, manipulation bancaire. **3. Escroquerie contractuelle**: sans intention de respecter le contrat. **4. Escroquerie immobilière**. **5. Escroquerie à l\'investissement**: faux fonds, pyramides. **6. Usurpation d\'identité** pour obtenir de l\'argent.' },
+        { title: 'Escroquerie Aggravée (Art. 250 CP)', content: 'L\'escroquerie est aggravée quand: le préjudice est spécialement grave, le montant est élevé, il y a abus de confiance, la victime est vulnérable, ou une relation professionnelle est exploitée. Peines: prison de 1 à 6 ans et amende.' },
+        { title: 'Peines', content: '**Escroquerie basique**: prison de 6 mois à 3 ans. **Aggravée**: prison de 1 à 6 ans et amende de 6 à 12 mois. Conséquences additionnelles: casier judiciaire, saisie de biens, perte de réputation professionnelle.' },
+        { title: 'Défense Pénale', content: 'L\'avocat spécialisé examine la tromperie, le préjudice et les circonstances aggravantes. Stratégies: contester la tromperie initiale, l\'intention dolosive, le lien causal ou les circonstances aggravantes. La preuve documentaire et les rapports d\'experts sont décisifs.' }
+      ],
+      conclusion: 'Les délits d\'escroquerie aggravée présentent une complexité juridique et économique supérieure. Chez STANS Abogados, spécialistes en droit pénal économique, contactez-nous.'
+    }
+  },
+  79: {
+    title: 'Fraude Fiscale en Espagne: Délits Contre le Trésor Public | STANS',
+    excerpt: 'Analyse du délit de fraude fiscale: arts. 305 et 305 bis CP, seuil de 120.000€, type aggravé, régularisation volontaire et peines.',
+    category: 'Droit Pénal Économique',
+    content: {
+      introduction: 'Le délit de fraude fiscale fait partie du Droit Pénal Économique et vise à protéger les intérêts économiques de l\'État. Il se produit lorsqu\'une personne ou entreprise élude le paiement d\'impôts de manière frauduleuse, dépassant les limites légales. En Espagne, toute irrégularité fiscale ne constitue pas un délit.',
+      sections: [
+        { title: 'Concept (Art. 305 CP)', content: 'L\'article 305 punit celui qui fraude le Trésor Public en éludant le paiement d\'impôts ou en obtenant des remboursements indus, lorsque le montant dépasse 120.000 euros par impôt et exercice fiscal. Exigences: conduite frauduleuse, préjudice au Trésor, montant supérieur à 120.000€ et intention dolosive.' },
+        { title: 'Type Aggravé (Art. 305 bis)', content: 'Le délit est aggravé quand le montant dépasse 600.000€, une structure sociétaire est utilisée, il existe une organisation criminelle ou le préjudice est spécialement grave.' },
+        { title: 'Peines et Conséquences', content: 'Prison, amendes économiques proportionnelles, obligation de restitution avec majorations et intérêts, perte de bénéfices fiscaux, casier judiciaire et saisie de biens.' },
+        { title: 'Régularisation Volontaire (Art. 305.4 CP)', content: 'La régularisation volontaire avant détection du fraude peut exclure la responsabilité pénale. Exigences: paiement intégral, avant notification officielle et reconnaissance de l\'erreur.' }
+      ],
+      conclusion: 'La fraude fiscale a de graves conséquences. Un avocat spécialisé en Droit Pénal Économique est essentiel. Chez STANS Abogados, contactez-nous.'
+    }
+  },
+  80: {
+    title: 'Délits Contre la Sécurité Sociale en Espagne | STANS',
+    excerpt: 'Guide sur les délits contre la Sécurité Sociale: art. 307 CP, type basique et aggravé, conduites typiques, peines et défense.',
+    category: 'Droit Pénal Économique',
+    content: {
+      introduction: 'Les délits contre la Sécurité Sociale protègent le bon fonctionnement du système public de protection sociale. Le délit est réglementé principalement à l\'article 307 du Code Pénal, qui sanctionne l\'évasion de cotisations, l\'obtention indue de remboursements ou la jouissance frauduleuse de bénéfices.',
+      sections: [
+        { title: 'Type Basique', content: 'Consiste à éluder le paiement des cotisations lorsque le montant dépasse le seuil légal. Conduites typiques: non-déclaration de travailleurs, cotisation sur des bases inférieures, simulation de contrats à temps partiel, obtention de bonifications sans remplir les conditions.' },
+        { title: 'Types Aggravés', content: 'Le délit est aggravé en cas de: montants spécialement élevés, structures organisées, sociétés écran, réitération de la conduite ou affectation d\'un grand nombre de travailleurs.' },
+        { title: 'Peines', content: 'Prison, amende économique, perte de bénéfices, inhabilitación pour subventions et obligation de restituer les montants fraudés avec majorations et intérêts.' },
+        { title: 'Procédure Pénale', content: 'Les actions commencent généralement par l\'Inspection du Travail, qui peut réaliser des inspections, réviser nóminas et contrats, et dresser des procès-verbaux. Quand les faits dépassent le cadre administratif, le cas est renvoyé au Ministère Public.' }
+      ],
+      conclusion: 'Les délits contre la Sécurité Sociale ont un impact direct sur la durabilité du système public. Un avocat spécialisé est essentiel. Chez STANS Abogados, contactez-nous.'
+    }
+  },
+  81: {
+    title: 'Associations Cannabiques en Espagne: Situation Pénale | STANS',
+    excerpt: 'Analyse de la situation pénale des associations cannabiques: délits contre la santé publique, association illicite, risques pénaux et défense.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Les associations cannabiques sont apparues en Espagne comme des entités privées à but non lucratif pour la consommation partagée de cannabis entre adultes. Cependant, leur cadre juridique est controversé et leur activité peut générer des risques pénaux importants.',
+      sections: [
+        { title: 'Cadre Juridique', content: 'L\'activité peut être affectée par: les délits contre la santé publique (arts. 368-378 CP) et le délit d\'association illicite (arts. 515-521 CP). Les normes sur la confiscation de biens (arts. 127 et suivants) peuvent également s\'appliquer.' },
+        { title: 'Délits Contre la Santé Publique', content: 'L\'article 368 punit ceux qui cultivent, élaborent, trafiquent ou facilitent la consommation de drogues. Le cannabis est une substance stupéfiante à des fins pénales. Toute conduite dépassant la consommation strictement personnelle et privée peut constituer un délit.' },
+        { title: 'Risques Pénaux', content: 'Facteurs aggravants: culture organisée, cotisations périodiques, grandes quantités, accès facile aux nouveaux membres, publicité, manque de contrôle et distribution à des personnes non liées. Les peines incluent prison, amendes, inhabilitación et confiscation.' },
+        { title: 'Association Illicite', content: 'L\'article 515 considère illicites les associations dont l\'objet est de commettre des délits. Un club peut être une association illicite si son activité principale est la distribution, s\'il facilite la consommation illégale et s\'il existe une continuité dans le temps.' },
+        { title: 'Consommation Personnelle vs Délit', content: 'La consommation privée individuelle n\'est pas un délit. Mais quand il y a organisation, distribution, facilitation, activité économique ou structure associative, le seuil pénal peut être franchi.' }
+      ],
+      conclusion: 'La situation pénale des associations cannabiques est juridiquement complexe. Un avocat pénaliste spécialisé est essentiel. Chez STANS Abogados, contactez-nous.'
+    }
+  },
+  82: {
+    title: 'Délit de Lésions en Espagne: Types Légères, Graves et Aggravées | STANS',
+    excerpt: 'Classification complète du délit de lésions selon le Code Pénal: lésions légères, graves, très graves, aggravées, imprudentes et familiales.',
+    category: 'Défense Pénale Urgente',
+    content: {
+      introduction: 'Le délit de lésions est l\'une des infractions pénales les plus importantes du Droit Pénal espagnol, protégeant l\'intégrité physique et la santé des personnes. Le Code Pénal réglemente ce délit aux articles 147 à 156.',
+      sections: [
+        { title: 'Lésions Basiques et Légères (Art. 147)', content: '**Lésions basiques (147.1)**: Nécessitent traitement médical ou chirurgical. Peine: prison de 3 mois à 3 ans. **Lésions légères (147.2)**: Ne nécessitent pas de traitement. Peine: amende de 1 à 3 mois.' },
+        { title: 'Lésions Aggravées (Art. 148)', content: 'Utilisation d\'armes, victimes vulnérables, relation familiale ou cruauté. Peine: prison de 2 à 5 ans.' },
+        { title: 'Lésions Très Graves et Graves (Arts. 149-150)', content: '**Très graves (149)**: Perte d\'organes principaux, cécité, surdité ou difformité grave. Peine: prison de 6 à 12 ans. **Graves (150)**: Perte d\'organe non principal. Peine: prison de 3 à 6 ans.' },
+        { title: 'Lésions Familiales et Imprudentes', content: '**Familiales (art. 153)**: Victime est conjoint, ex-partenaire ou membre de la famille. Peine: prison de 6 mois à 1 an. **Imprudentes (art. 152)**: Par imprudence grave ou moins grave. Peine: amende ou prison selon gravité.' },
+        { title: 'Circonstances Aggravantes', content: 'Utilisation d\'armes, victimes vulnérables, cohabitation ou parenté, cruauté ou préméditation. La procédure peut commencer par plainte, rapport médical ou intervention policière.' }
+      ],
+      conclusion: 'Le délit de lésions protège l\'intégrité physique. Le Code Pénal différencie clairement entre lésions légères, graves et aggravées. Un avocat spécialisé est essentiel. Chez STANS Abogados, contactez-nous.'
+    }
   }
 };
 
@@ -1477,12 +1768,153 @@ export const newBlogsAR = {
       ],
       conclusion: 'الاعتراف بنا كـ**أفضل 3 محامين جنائيين في مدريد** فخر لفريق STANS المحامين بأكمله. إذا كنت بحاجة إلى محامٍ جنائي في مدريد، **اتصل بنا**: متاحون **24/7** على الهاتف **+34 611 68 72 26**.'
     }
+  },
+  // ===== NUEVOS BLOGS FEBRERO 2026 =====
+  74: {
+    title: 'محامون جنائيون متخصصون في جرائم الاتجار بالمخدرات | STANS',
+    excerpt: 'دفاع جنائي متخصص في جرائم الاتجار بالمخدرات في مدريد وجميع أنحاء إسبانيا. أنواع المواد، العقوبات، الاستهلاك الشخصي، الظروف المخففة والتسويات.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: 'جريمة الاتجار بالمخدرات هي واحدة من أخطر الجرائم في قانون العقوبات الإسباني، مع عقوبات سجن يمكن أن تصل إلى أرقام مرتفعة جداً، خاصة في حالة وجود ظروف مشددة أو منظمات إجرامية. في STANS ABOGADOS، مكتب محامين جنائيين في مدريد مع تغطية وطنية، نقدم دفاعاً جنائياً متخصصاً في جرائم ضد الصحة العامة.',
+      sections: [
+        { title: 'أهمية وجود محامٍ متخصص في الاتجار بالمخدرات', content: 'في جرائم الاتجار بالمخدرات، يمكن لاستراتيجية الدفاع الصحيحة أن تحدث الفارق بين السجن والحرية. يحلل محامونا من اللحظة الأولى: شرعية الاعتقال والتفتيش، طبيعة وكمية المادة المصادرة، احتمال وجود استهلاك شخصي، درجة مشاركة المتهم، ووجود ظروف مشددة أو مخففة.' },
+        { title: 'ما الذي يُعتبر مخدراً بموجب القانون الجنائي؟', content: 'يميز قانون العقوبات بين المواد التي تسبب ضرراً جسيماً للصحة وتلك التي لا تسببه. **المخدرات غير الخطيرة**: بشكل رئيسي مشتقات القنب. **المخدرات الخطيرة**: الهيروين، الفنتانيل، MDMA، الكوكايين ومشتقاته.' },
+        { title: 'السلوكيات المعاقب عليها والعقوبات', content: 'يعاقب قانون العقوبات من يزرع أو يصنع أو يتاجر أو يوزع أو يسهل الاستهلاك غير القانوني للمخدرات. **المخدرات الخفيفة**: سجن من 1 إلى 3 سنوات. **المخدرات الخطيرة**: سجن من 3 إلى 6 سنوات، قد تصل إلى 18 سنة في الحالات الأشد خطورة.' },
+        { title: 'الاستهلاك الشخصي والظروف المخففة', content: 'في إسبانيا، استهلاك المخدرات ليس جريمة جنائية. الحيازة للاستخدام الشخصي أيضاً ليست جريمة، شريطة عدم إمكانية إثبات نية الاتجار. يمكن تخفيف العقوبات من خلال: الاعتراف بالوقائع، التعاون مع العدالة، الإدمان وإصلاح الضرر.' },
+        { title: 'التسوية مع النيابة العامة', content: 'عندما تكون الوقائع ثابتة بوضوح، يمكن للتسوية أن تحقق تخفيضاً كبيراً للعقوبة وتجنب محاكمة عالية المخاطر. فقط محامٍ متخصص يمكنه تقييم ما إذا كان من الأفضل التفاوض أو الذهاب إلى المحاكمة.' }
+      ],
+      conclusion: 'في STANS ABOGADOS نقدم دفاعاً شاملاً في جرائم الاتجار بالمخدرات. هدفنا دائماً هو حماية حقوقك وتقديم أفضل استراتيجية قانونية ممكنة. اتصل بنا.'
+    }
+  },
+  75: {
+    title: 'أمر الاعتقال الأوروبي في إسبانيا: دليل شامل | STANS',
+    excerpt: 'دليل شامل حول أمر الاعتقال والتسليم الأوروبي. الإطار القانوني، المتطلبات، الإجراءات، أسباب المعارضة والدفاع المتخصص في مدريد.',
+    category: 'التسليم',
+    content: {
+      introduction: 'أمر الاعتقال الأوروبي هو أداة قانونية تسمح باعتقال وتسليم شخص بين الدول الأعضاء في الاتحاد الأوروبي، بهدف محاكمته جنائياً أو تنفيذ حكم صادر. إذا تم إبلاغك بأمر اعتقال أوروبي أثناء تواجدك في إسبانيا، تحتاج إلى فهم تبعاته وحقوقك. في Stans Abogados نحن متخصصون في إجراءات أمر الاعتقال الأوروبي.',
+      sections: [
+        { title: 'الإطار القانوني في إسبانيا', content: 'يستند أمر الاعتقال الأوروبي إلى القرار الإطاري 2002/584/JAI لمجلس الاتحاد الأوروبي، وقانون التعاون القضائي الدولي في المسائل الجنائية، وقانون الإجراءات الجنائية. على عكس التسليم التقليدي، يُعالج مباشرة بين السلطات القضائية، مما يقلل المواعيد والإجراءات الشكلية.' },
+        { title: 'المفهوم والمتطلبات', content: 'أمر الاعتقال الأوروبي هو أمر احتجاز صادر عن سلطة قضائية في دولة عضو بالاتحاد الأوروبي، يطلب من دولة أخرى احتجاز وتسليم شخص مطلوب. يعمل تحت مبدأ الاعتراف المتبادل بالقرارات القضائية.' },
+        { title: 'إجراءات التنفيذ في إسبانيا', content: '**1. الإصدار والنشر** من السلطة القضائية المصدرة. **2. الاعتقال في إسبانيا** من قوات الأمن. **3. المثول** أمام قاضي التحقيق المركزي في المحكمة الوطنية. **4. مرحلة التنفيذ**: تقييم شروط التسليم.' },
+        { title: 'أسباب المعارضة', content: 'يسمح القانون بالمعارضة في حالات: خطر انتهاك الحقوق الأساسية، عدم اختصاص السلطة القضائية، عدم كفاية تسبيب الأمر، عدم تطبيق الضمانات الإجرائية الدنيا ومبدأ عدم التمييز.' },
+        { title: 'العواقب والمواعيد', content: 'في حالة تنفيذ الأمر: التسليم إلى الدولة المصدرة، إمكانية المحاكمة الجنائية أو تنفيذ العقوبة، تأثر الوضع الإقامي. يمكن حل الإجراء في غضون أسابيع، رغم أن القضايا المعقدة قد تطيل المدة.' }
+      ],
+      conclusion: 'أمر الاعتقال الأوروبي أداة رئيسية للتعاون القضائي الجنائي في الاتحاد الأوروبي. في Stans Abogados، المتخصصين في أوامر الاعتقال الأوروبية، نقدم دفاعاً تقنياً واهتماماً متعدد اللغات. اتصل بنا فوراً.'
+    }
+  },
+  76: {
+    title: 'يطلبون تسليمي: ماذا أفعل | STANS',
+    excerpt: 'دليل عملي حول التسليم السلبي في إسبانيا. الإجراءات أمام المحكمة الوطنية، حقوق المطلوب، الفروق مع أمر الاعتقال الأوروبي والدفاع المتخصص.',
+    category: 'التسليم',
+    content: {
+      introduction: 'تلقي إخطار بأن دولة أخرى تطلب من إسبانيا تسليمك هو وضع حساس للغاية. من المهم معرفة أنه لا يتعلق الأمر بتسليم تلقائي. يضع النظام القانوني الإسباني إجراءً منظماً مع ضمانات تسمح بالمعارضة. في Stans Abogados نشرح لك ما تعنيه طلب التسليم وما الخطوات التي يجب اتخاذها.',
+      sections: [
+        { title: 'ما هو التسليم السلبي؟', content: 'التسليم هو أداة للتعاون القضائي الدولي تطلب بموجبها دولة من أخرى تسليم شخص لمحاكمته أو تنفيذ عقوبة. ينظمه قانون التسليم السلبي 4/1985 والمعاهدات الدولية وقانون العقوبات.' },
+        { title: 'كيف يصل الطلب؟', content: 'عبر أمر اعتقال دولي، غالباً عبر الإنتربول (نشرة حمراء)، أو عبر طلب تسليم رسمي مقدم عبر القنوات الدبلوماسية إلى وزارة العدل. وجود الطلب لا يعني أن إسبانيا يجب أن تقبله تلقائياً.' },
+        { title: 'إجراءات التسليم في إسبانيا', content: '**1. الاستلام والفحص** للوثائق. **2. المرحلة القضائية**: المحكمة الوطنية تحلل ما إذا كان التسليم مؤسساً قانونياً. **3. المرحلة الحكومية**: مجلس الوزراء يتخذ القرار النهائي.' },
+        { title: 'أسباب الرفض', content: 'يمكن رفض التسليم عندما: الفعل ليس جريمة في إسبانيا، يوجد خطر معاملة لاإنسانية، الجريمة ذات طابع سياسي، الشخص يُحاكم بالفعل في إسبانيا عن نفس الوقائع، أو انقضت مدة التقادم.' },
+        { title: 'الفروق بين التسليم وأمر الاعتقال الأوروبي', content: '**النطاق**: التسليم للدول غير الأعضاء في الاتحاد الأوروبي؛ أمر الاعتقال الأوروبي بين الدول الأعضاء. **تدخل الحكومة**: مجلس الوزراء حاسم في التسليم؛ تدخل محدود في أمر الاعتقال الأوروبي. **المواعيد**: أمر الاعتقال الأوروبي أسرع عموماً.' }
+      ],
+      conclusion: 'في مواجهة طلب التسليم، من الأساسي البحث عن استشارة قانونية فورية. في Stans Abogados نحن متخصصون في التسليم السلبي وأمر الاعتقال الأوروبي. اتصل بنا فوراً.'
+    }
+  },
+  77: {
+    title: 'خيانة الأمانة في إسبانيا: دليل شامل | STANS',
+    excerpt: 'تحليل جريمة خيانة الأمانة: المادة 253 من قانون العقوبات، العناصر، الفروق مع الاحتيال والسرقة، الأنواع، العقوبات والدفاع المتخصص.',
+    category: 'القانون الجنائي الاقتصادي',
+    content: {
+      introduction: 'خيانة الأمانة هي واحدة من أكثر الجرائم المالية شيوعاً في القانون الجنائي الإسباني. تحدث عندما يتلقى شخص أموالاً أو ممتلكات مع التزام بإعادتها أو استخدامها لغرض محدد، وبدلاً من ذلك يحتفظ بها أو يستخدمها لغرض آخر. تنظمها المادة 253 من قانون العقوبات.',
+      sections: [
+        { title: 'عناصر الجريمة', content: '**1. الاستلام المشروع**: المرتكب يتلقى المال أو الممتلكات بشكل قانوني. **2. الالتزام بالإعادة أو الإدارة**: واجب قانوني بالإعادة أو الاستخدام لغرض محدد. **3. الاستيلاء غير المشروع**: الاحتفاظ أو الاستخدام لأغراض مختلفة. **4. الضرر المالي**: ضرر مالي حقيقي. **5. القصد الجنائي**: المعرفة والإرادة.' },
+        { title: 'الفروق مع الاحتيال والسرقة', content: '**خيانة الأمانة**: استلام مشروع ثم استيلاء. **الاحتيال**: الحصول عن طريق الخداع المسبق. **السرقة**: الأخذ دون موافقة. الفرق الرئيسي في توقيت الخداع.' },
+        { title: 'الأنواع والعقوبات', content: '**الأساسي (المادة 253)**: سجن من 6 أشهر إلى 3 سنوات. **المشدد (المادة 250)**: سجن من 1 إلى 6 سنوات. **البسيط (المادة 254)**: غرامة من 1 إلى 3 أشهر للمبالغ أقل من 400 يورو.' },
+        { title: 'في البيئة المهنية', content: 'شائع لدى: المديرين الذين يحولون الأموال، الموظفين الذين يحتفظون بأموال الشركة، المديرين الذين يستخدمون الأموال لأغراض شخصية. قد تنطبق المادة 252 في حالة إساءة استخدام وظائف الإدارة.' }
+      ],
+      conclusion: 'خيانة الأمانة جريمة خطيرة تحمي الثقة في العلاقات المالية. محامٍ جنائي متخصص ضروري. في STANS Abogados اتصل بنا.'
+    }
+  },
+  78: {
+    title: 'جريمة الاحتيال والاحتيال المشدد في إسبانيا | STANS',
+    excerpt: 'دليل شامل حول جريمة الاحتيال: المواد 248-251 من قانون العقوبات، الأنواع، الاحتيال المشدد، العقوبات والدفاع الجنائي.',
+    category: 'القانون الجنائي الاقتصادي',
+    content: {
+      introduction: 'الاحتيال هو واحد من أكثر الجرائم المالية شيوعاً في إسبانيا. يحدث عندما يتسبب شخص، من خلال الخداع، في خطأ لدى شخص آخر للحصول على منفعة اقتصادية. تنظمه المواد 248 إلى 251 من قانون العقوبات.',
+      sections: [
+        { title: 'أنواع الاحتيال', content: '**1. الاحتيال الكلاسيكي**: الخداع للحصول على المال أو التوقيع. **2. الاحتيال الإلكتروني (المادة 249)**: عبر وسائل تكنولوجية — التصيد الإلكتروني، التلاعب المصرفي. **3. الاحتيال التعاقدي**: بدون نية الوفاء بالعقد. **4. الاحتيال العقاري**. **5. الاحتيال الاستثماري**: صناديق وهمية، مخططات هرمية. **6. انتحال الهوية** للحصول على المال.' },
+        { title: 'الاحتيال المشدد (المادة 250)', content: 'يُشدد الاحتيال عندما: يكون الضرر خطيراً بشكل خاص، المبلغ مرتفع، هناك إساءة استخدام الثقة، الضحية ضعيفة بشكل خاص (كبار السن، ذوي الإعاقة)، أو يتم استغلال علاقة مهنية. العقوبات: سجن من 1 إلى 6 سنوات وغرامة.' },
+        { title: 'العقوبات', content: '**الاحتيال الأساسي**: سجن من 6 أشهر إلى 3 سنوات. **المشدد**: سجن من 1 إلى 6 سنوات وغرامة. عواقب إضافية: سجل جنائي، مصادرة أصول، فقدان السمعة المهنية.' },
+        { title: 'الدفاع الجنائي المتخصص', content: 'يفحص المحامي المتخصص الخداع والضرر المالي والظروف المشددة. استراتيجيات الدفاع: الطعن في الخداع الأولي، القصد الجنائي، العلاقة السببية أو الظروف المشددة الفعلية. الأدلة الوثائقية وتقارير الخبراء حاسمة.' }
+      ],
+      conclusion: 'جرائم الاحتيال المشدد تقدم تعقيداً قانونياً واقتصادياً أعلى. في STANS Abogados، المتخصصين في القانون الجنائي الاقتصادي، اتصل بنا.'
+    }
+  },
+  79: {
+    title: 'جريمة الاحتيال الضريبي في إسبانيا: جرائم ضد الخزينة العامة | STANS',
+    excerpt: 'تحليل جريمة الاحتيال الضريبي: المواد 305 و305 مكرر من قانون العقوبات، حد 120,000 يورو، النوع المشدد، التسوية الطوعية والعقوبات.',
+    category: 'القانون الجنائي الاقتصادي',
+    content: {
+      introduction: 'جريمة الاحتيال الضريبي هي جزء من القانون الجنائي الاقتصادي وتهدف إلى حماية المصالح الاقتصادية للدولة. تحدث عندما يتهرب شخص أو شركة من دفع الضرائب بشكل احتيالي متجاوزاً الحدود القانونية. في إسبانيا، ليست كل مخالفة ضريبية تشكل جريمة.',
+      sections: [
+        { title: 'مفهوم الجريمة الضريبية (المادة 305)', content: 'تعاقب المادة 305 من يحتال على الخزينة العامة بالتهرب من دفع الضرائب أو الحصول على مبالغ مستردة غير مستحقة، عندما يتجاوز المبلغ 120,000 يورو لكل ضريبة وسنة مالية. المتطلبات: سلوك احتيالي، ضرر للخزينة، مبلغ يتجاوز 120,000 يورو وقصد جنائي.' },
+        { title: 'النوع المشدد (المادة 305 مكرر)', content: 'تُشدد الجريمة عندما: يتجاوز المبلغ 600,000 يورو، تُستخدم هياكل شركاتية لإخفاء الاحتيال، توجد منظمة إجرامية أو يكون الضرر خطيراً بشكل خاص.' },
+        { title: 'العقوبات والعواقب', content: 'سجن، غرامات مالية متناسبة مع المبلغ المحتال عليه، التزام بالسداد مع رسوم إضافية وفوائد، فقدان المزايا الضريبية، سجل جنائي ومصادرة الأصول.' },
+        { title: 'التسوية الطوعية (المادة 305.4)', content: 'التسوية الطوعية قبل اكتشاف الاحتيال يمكن أن تستبعد المسؤولية الجنائية. المتطلبات: السداد الكامل للدين، قبل الإخطار الرسمي والاعتراف بالخطأ.' }
+      ],
+      conclusion: 'الاحتيال الضريبي له عواقب خطيرة. محامٍ متخصص في القانون الجنائي الاقتصادي ضروري. في STANS Abogados اتصل بنا.'
+    }
+  },
+  80: {
+    title: 'جرائم ضد الضمان الاجتماعي في إسبانيا | STANS',
+    excerpt: 'دليل حول جرائم الضمان الاجتماعي: المادة 307 من قانون العقوبات، النوع الأساسي والمشدد، السلوكيات النموذجية، العقوبات والدفاع.',
+    category: 'القانون الجنائي الاقتصادي',
+    content: {
+      introduction: 'تحمي جرائم الضمان الاجتماعي الأداء السليم لنظام الحماية الاجتماعية العام. تنظمها بشكل رئيسي المادة 307 من قانون العقوبات، التي تعاقب على التهرب من دفع الاشتراكات أو الحصول غير المشروع على مبالغ مستردة أو مزايا.',
+      sections: [
+        { title: 'النوع الأساسي', content: 'يتمثل في التهرب من دفع اشتراكات الضمان الاجتماعي عندما يتجاوز المبلغ الحد القانوني. السلوكيات النموذجية: عدم تسجيل العمال، الاشتراك بقواعد أقل من الحقيقية، محاكاة عقود بدوام جزئي، الحصول على مكافآت دون استيفاء الشروط.' },
+        { title: 'الأنواع المشددة', content: 'تُشدد الجريمة في حالات: مبالغ مرتفعة بشكل خاص، هياكل منظمة، شركات وهمية، تكرار السلوك أو تأثر عدد كبير من العمال.' },
+        { title: 'العقوبات', content: 'سجن، غرامة مالية، فقدان المزايا، حرمان من الإعانات والتزام بسداد المبالغ المحتال عليها مع رسوم إضافية وفوائد.' },
+        { title: 'الإجراءات الجنائية', content: 'عادة ما تبدأ الإجراءات من خلال تفتيش العمل والضمان الاجتماعي، الذي يمكنه: إجراء تفتيشات، مراجعة الرواتب والعقود، اكتشاف المخالفات وتحرير محاضر المخالفات. عندما تتجاوز الوقائع النطاق الإداري، يُحال الملف إلى النيابة العامة.' }
+      ],
+      conclusion: 'جرائم الضمان الاجتماعي لها تأثير مباشر على استدامة النظام العام. محامٍ متخصص ضروري. في STANS Abogados اتصل بنا.'
+    }
+  },
+  81: {
+    title: 'جمعيات القنب في إسبانيا: الوضع الجنائي | STANS',
+    excerpt: 'تحليل الوضع الجنائي لجمعيات القنب: جرائم ضد الصحة العامة، الجمعية غير المشروعة، المخاطر الجنائية والدفاع المتخصص.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: 'ظهرت جمعيات القنب في إسبانيا ككيانات خاصة غير هادفة للربح هدفها المعلن هو الاستهلاك المشترك للقنب بين البالغين. ومع ذلك، فإن وضعها القانوني مثير للجدل ونشاطها يمكن أن يولد مخاطر جنائية كبيرة.',
+      sections: [
+        { title: 'الإطار القانوني المطبق', content: 'يمكن أن يتأثر نشاط جمعيات القنب بـ: جرائم الصحة العامة (المواد 368-378) وجريمة الجمعية غير المشروعة (المواد 515-521 من قانون العقوبات). كما يمكن تطبيق قواعد مصادرة الأصول (المواد 127 وما يليها).' },
+        { title: 'جرائم الصحة العامة والقنب', content: 'تعاقب المادة 368 من يزرع أو يصنع أو يتاجر أو يسهل استهلاك المواد المخدرة. القنب مادة مخدرة لأغراض جنائية. أي سلوك يتجاوز الاستهلاك الشخصي الخاص بشكل صارم يمكن أن يشكل جريمة.' },
+        { title: 'المخاطر الجنائية', content: 'عوامل تزيد المخاطر: الزراعة والتوزيع المنظم، رسوم دورية، كميات كبيرة، سهولة وصول الأعضاء الجدد، الإعلان وتجنيد الأعضاء، عدم وجود رقابة حقيقية والتوزيع لغير المنتسبين. العقوبات تشمل السجن والغرامات والمصادرة.' },
+        { title: 'الجمعية غير المشروعة', content: 'تعتبر المادة 515 غير مشروعة الجمعيات التي هدفها ارتكاب الجرائم. قد يشكل النادي جمعية غير مشروعة إذا كان نشاطه الرئيسي التوزيع وإذا كان يسهل الاستهلاك غير القانوني ويعمل كهيكل منظم.' },
+        { title: 'الاستهلاك الشخصي مقابل الجريمة', content: 'الاستهلاك الخاص الفردي ليس جريمة. لكن عندما يوجد تنظيم وتوزيع وتسهيل للغير ونشاط اقتصادي أو هيكل جمعوي، يمكن تجاوز العتبة الجنائية.' }
+      ],
+      conclusion: 'الوضع الجنائي لجمعيات القنب في إسبانيا معقد قانونياً. محامٍ جنائي متخصص ضروري. في STANS Abogados اتصل بنا.'
+    }
+  },
+  82: {
+    title: 'جريمة الإصابات في إسبانيا: الأنواع الخفيفة والجسيمة والمشددة | STANS',
+    excerpt: 'تصنيف شامل لجريمة الإصابات: خفيفة، جسيمة، خطيرة جداً، مشددة، إهمالية وأسرية. المواد 147-156 من قانون العقوبات.',
+    category: 'الدفاع الجنائي العاجل',
+    content: {
+      introduction: 'جريمة الإصابات هي واحدة من أهم الجرائم في القانون الجنائي الإسباني، حيث تحمي السلامة الجسدية وصحة الأشخاص. ينظم قانون العقوبات هذه الجريمة في المواد 147 إلى 156.',
+      sections: [
+        { title: 'الإصابات الأساسية والخفيفة (المادة 147)', content: '**الإصابات الأساسية (147.1)**: تتطلب علاجاً طبياً أو جراحياً. العقوبة: سجن من 3 أشهر إلى 3 سنوات. **الإصابات الخفيفة (147.2)**: لا تتطلب علاجاً طبياً. العقوبة: غرامة من 1 إلى 3 أشهر.' },
+        { title: 'الإصابات المشددة (المادة 148)', content: 'تُطبق عند: استخدام أسلحة أو أشياء خطيرة، ضحايا ضعفاء بشكل خاص، علاقة عائلية أو قسوة. العقوبة: سجن من 2 إلى 5 سنوات.' },
+        { title: 'الإصابات الخطيرة جداً والجسيمة (المواد 149-150)', content: '**خطيرة جداً (149)**: فقدان أعضاء رئيسية، عمى، صمم أو تشوه جسيم. العقوبة: سجن من 6 إلى 12 سنة. **جسيمة (150)**: فقدان عضو غير رئيسي. العقوبة: سجن من 3 إلى 6 سنوات.' },
+        { title: 'الإصابات الأسرية والإهمالية', content: '**الأسرية (المادة 153)**: الضحية زوج/ة أو شريك/ة سابق/ة أو فرد من العائلة. العقوبة: سجن من 6 أشهر إلى سنة. **الإهمالية (المادة 152)**: بسبب إهمال جسيم. العقوبة: غرامة أو سجن حسب الخطورة.' },
+        { title: 'الظروف المشددة والإجراءات الجنائية', content: 'تشمل الظروف المشددة: استخدام الأسلحة، الضحايا الضعفاء، المعاشرة أو القرابة، والقسوة أو سبق الإصرار. يمكن أن تبدأ الإجراءات بشكوى أو تقرير طبي أو تدخل الشرطة.' }
+      ],
+      conclusion: 'جريمة الإصابات تحمي السلامة الجسدية والصحة. قانون العقوبات يفرق بوضوح بين الإصابات الخفيفة والجسيمة والمشددة. محامٍ متخصص ضروري. في STANS Abogados اتصل بنا.'
+    }
   }
 };
 
 // Función helper para obtener traducciones de nuevos blogs
 export function getNewBlogTranslation(id: number, language: string) {
-  if (id < 40 || id > 73) return null;
+  if (id < 40 || id > 82) return null;
   
   switch(language) {
     case 'en':
