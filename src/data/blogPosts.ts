@@ -3169,6 +3169,598 @@ export const blogPosts: BlogPost[] = [
       ],
       conclusion: 'El delito de lesiones protege la integridad física y la salud. El Código Penal diferencia claramente entre lesiones leves, graves y agravadas, imponiendo penas proporcionales a la gravedad del daño causado. La intervención de un abogado especializado en Derecho Penal es esencial para garantizar la correcta defensa de los derechos de la víctima o del investigado, así como para obtener la mejor estrategia jurídica posible. En STANS Abogados contamos con experiencia en la defensa de casos de lesiones de todo tipo. Contacta con nosotros para una valoración de tu caso.'
     }
+  },
+  // ===== NUEVOS BLOGS MARZO 2026 - ARTÍCULOS PROPORCIONADOS =====
+  {
+    id: 83,
+    title: 'Robo con Fuerza en España: Guía Completa | STANS Abogados',
+    excerpt: 'Todo sobre el robo con fuerza en las cosas: artículos 237-241 del Código Penal, elementos del delito, diferencias con hurto y robo con violencia, tipos agravados, penas y procedimiento penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-28',
+    readTime: '18 min',
+    image: '/images/blog/robo-con-fuerza.jpg',
+    slug: 'robo-con-fuerza-espana-guia-completa',
+    tags: ['robo con fuerza', 'art 237 CP', 'art 238 CP', 'art 240 CP', 'art 241 CP', 'delitos patrimoniales', 'escalamiento', 'llaves falsas'],
+    content: {
+      introduction: 'El robo con fuerza es uno de los delitos patrimoniales más habituales del Derecho Penal español. Se produce cuando una persona se apodera de una cosa mueble ajena con ánimo de lucro empleando fuerza en las cosas para acceder al lugar donde se encuentran los bienes o para abandonarlo después. La clave de esta figura está en que no existe violencia o intimidación sobre personas, sino una actuación material sobre puertas, cerraduras, ventanas, sistemas de alarma, llaves o elementos similares. En la práctica, el robo con fuerza aparece con frecuencia en viviendas, trasteros, garajes, locales comerciales, oficinas, naves, establecimientos y otros inmuebles o espacios cerrados. También puede cometerse mediante escalamiento, uso de llaves falsas, fractura de muebles u objetos cerrados o inutilización de sistemas de seguridad.',
+      sections: [
+        {
+          title: '¿Qué es el robo con fuerza?',
+          content: 'El robo con fuerza en las cosas es la modalidad de robo en la que el autor se apodera de bienes muebles ajenos con ánimo de lucro utilizando fuerza sobre elementos materiales para acceder o salir del lugar donde se encuentran. El artículo 237 del Código Penal define el robo como el apoderamiento de cosas muebles ajenas con ánimo de lucro empleando fuerza en las cosas para acceder o abandonar el lugar donde estas se encuentran, o violencia o intimidación en las personas. A partir de ahí, el artículo 238 concreta cuándo existe robo con fuerza en las cosas. No basta con llevarse un bien ajeno. Para que exista robo con fuerza debe concurrir alguno de los medios expresamente previstos en la ley, como el escalamiento, el rompimiento de pared, techo o suelo, la fractura de puerta o ventana, la fractura de armarios o muebles cerrados, el uso de llaves falsas o la inutilización de sistemas específicos de alarma o guarda. El robo con fuerza se diferencia del hurto porque en el hurto no existe fuerza ni violencia, y se diferencia del robo con violencia porque aquí no se actúa sobre la persona, sino sobre las cosas.'
+        },
+        {
+          title: 'Elementos del delito de robo con fuerza',
+          content: 'Para que exista robo con fuerza deben concurrir varios elementos esenciales. **Ánimo de lucro**: el autor debe actuar con intención de obtener un beneficio patrimonial, como entrar en un local para llevarse la recaudación o forzar un trastero para sustraer herramientas. **Apoderamiento de cosa mueble ajena**: debe existir sustracción de bienes muebles pertenecientes a otra persona, como dinero, joyas, aparatos electrónicos o maquinaria. **Empleo de fuerza en las cosas**: este es el elemento central. El artículo 238 enumera los supuestos legales de fuerza: escalamiento, rompimiento de pared, techo o suelo, fractura de puerta o ventana, fractura de armarios u objetos cerrados, forzamiento de cerraduras, descubrimiento de claves, uso de llaves falsas e inutilización de sistemas de alarma o guarda. **Relación entre la fuerza y el apoderamiento**: la fuerza debe emplearse para acceder al lugar donde están los bienes, para apoderarse de ellos o para abandonar el lugar con el botín. **Dolo**: el autor debe actuar sabiendo que emplea fuerza en las cosas para apoderarse de bienes ajenos.'
+        },
+        {
+          title: 'Diferencia entre robo con fuerza, hurto y robo con violencia',
+          content: 'El hurto consiste en tomar una cosa mueble ajena sin fuerza en las cosas ni violencia o intimidación en las personas. Ejemplo: una persona entra en una tienda abierta y aprovecha un descuido para coger un móvil del mostrador. El robo con fuerza requiere fuerza sobre las cosas: romper el escaparate o forzar la persiana del establecimiento para entrar y llevarse ese mismo móvil. En el robo con violencia o intimidación, el autor actúa sobre las personas, no sobre las cosas. Ejemplo: amenazar al propietario con un cuchillo para que entregue las joyas. La diferencia tiene consecuencia directa en la calificación penal y en la pena aplicable. En el robo con fuerza la prueba suele centrarse en huellas de fractura, cerraduras forzadas, escalamientos, herramientas utilizadas, alarmas inutilizadas, grabaciones y hallazgo de efectos sustraídos.'
+        },
+        {
+          title: 'Tipos de robo con fuerza y penas',
+          content: '**Robo con fuerza básico (art. 240.1 CP)**: prisión de 1 a 3 años. Se aplica cuando concurren los elementos del delito sin circunstancias agravadas adicionales. **Robo con fuerza agravado por circunstancias del artículo 235 (art. 240.2 CP)**: prisión de 2 a 5 años. Concurre cuando hay sustracción de cosas de valor artístico, histórico, cultural o científico, especial gravedad por el valor de los efectos sustraídos, uso de menores de dieciséis años o participación como miembro de una organización criminal. **Robo con fuerza en casa habitada, edificio o local abiertos al público (art. 241.1 CP)**: prisión de 2 a 5 años. **Robo con fuerza en establecimiento abierto al público fuera de horas de apertura (art. 241.1 párrafo segundo CP)**: prisión de 1 a 5 años. **Robo con fuerza especialmente grave en casa habitada o local abierto al público (art. 241.4 CP)**: prisión de 2 a 6 años.'
+        },
+        {
+          title: 'Robo con fuerza en el ámbito empresarial',
+          content: 'El robo con fuerza es especialmente frecuente en el ámbito empresarial. Puede afectar a comercios, oficinas, despachos, naves industriales, almacenes, talleres, trasteros empresariales, centros logísticos y establecimientos abiertos al público. Es habitual en supuestos como forzamiento de persianas y puertas de comercios, fractura de escaparates, inutilización de alarmas para entrar en un local, acceso mediante mandos o tarjetas obtenidos ilícitamente, sustracción de caja, recaudación o mercancía, y robo en almacenes o dependencias internas. Además del delito principal, pueden existir perjuicios económicos importantes, interrupción de actividad, daños materiales y responsabilidad civil derivada del hecho.'
+        },
+        {
+          title: 'Procedimiento penal y ejemplos prácticos',
+          content: 'La víctima puede denunciar un robo con fuerza ante Policía Nacional, Guardia Civil, policía autonómica competente, Fiscalía o Juzgado de guardia. El procedimiento suele iniciarse mediante denuncia, atestado policial o detención si se sorprende al autor en el acto. La investigación se centra en inspección ocular, huellas y vestigios, grabaciones de cámaras, herramientas utilizadas, periciales sobre cerraduras y localización de los bienes sustraídos. Puede tramitarse como juicio rápido o por procedimiento abreviado. **Ejemplo 1**: una persona escala al balcón, fuerza una ventana y accede a la vivienda para llevarse dinero y joyas — robo con fuerza en casa habitada. **Ejemplo 2**: dos personas fuerzan la persiana y la puerta de un establecimiento fuera de horario, inutilizan la alarma y sustraen teléfonos móviles — robo con fuerza en establecimiento fuera de horas de apertura. **Ejemplo 3**: una persona utiliza un mando de apertura obtenido ilícitamente para acceder a un garaje y sustraer una motocicleta — robo con fuerza por uso de llaves falsas.'
+        }
+      ],
+      conclusion: 'El robo con fuerza es un delito patrimonial grave que castiga no solo el apoderamiento de bienes ajenos, sino también el quebrantamiento material de las barreras que protegen esos bienes. La ley diferencia claramente esta figura del hurto y del robo con violencia, y prevé penas más severas cuando los hechos se cometen en casa habitada, en establecimientos abiertos al público o cuando concurren circunstancias agravadas. La correcta calificación del delito exige estudiar con detalle cómo se produjo el acceso, qué medio de fuerza se utilizó, qué bienes fueron sustraídos, qué lugar resultó afectado y si concurren circunstancias agravantes. Si necesitas asesoramiento por un robo con fuerza, contar con un abogado penalista especializado es fundamental para analizar el caso, proteger tus derechos y diseñar la estrategia procesal más adecuada. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 84,
+    title: 'Robo con Violencia en España: Guía Completa | STANS Abogados',
+    excerpt: 'Guía completa sobre el robo con violencia o intimidación: artículo 242 del Código Penal, elementos del delito, diferencias con hurto y extorsión, penas, tipos agravados y procedimiento penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-28',
+    readTime: '18 min',
+    image: '/images/blog/robo-con-violencia.jpg',
+    slug: 'robo-con-violencia-espana-guia-completa',
+    tags: ['robo con violencia', 'art 242 CP', 'robo con intimidación', 'delitos patrimoniales', 'atraco', 'tirón'],
+    content: {
+      introduction: 'El robo con violencia es uno de los delitos patrimoniales más graves del Derecho Penal español, ya que no solo afecta al patrimonio de la víctima, sino también a su integridad física, su libertad de actuación y su seguridad personal. Se produce cuando una persona se apodera de una cosa mueble ajena con ánimo de lucro empleando violencia o intimidación sobre otra persona. El Código Penal distingue esta modalidad del hurto y del robo con fuerza, precisamente por la presencia de violencia o intimidación en las personas. En la práctica, este delito aparece con frecuencia en tirones, atracos en vía pública, sustracciones en comercios, robos a repartidores, asaltos a personas mayores y hechos cometidos para asegurar la huida tras el apoderamiento.',
+      sections: [
+        {
+          title: '¿Qué es el robo con violencia?',
+          content: 'El robo con violencia es la modalidad de robo en la que el autor se apodera de una cosa mueble ajena con ánimo de lucro utilizando violencia física o intimidación sobre las personas. La definición general del robo se contiene en el artículo 237 del Código Penal, que incluye tanto el empleo de fuerza en las cosas como la violencia o intimidación en las personas. El artículo 242 regula específicamente el robo con violencia o intimidación y fija su pena básica. Lo determinante es que el autor venza o anule la voluntad de la víctima mediante agresión física, amenaza o una situación de temor suficiente para facilitar el apoderamiento o asegurar la huida. La violencia puede consistir en empujones, golpes, tirones o forcejeos, mientras que la intimidación puede producirse mediante amenazas verbales, exhibición de objetos peligrosos o cualquier conducta apta para infundir miedo.'
+        },
+        {
+          title: 'Elementos del delito de robo con violencia',
+          content: '**Ánimo de lucro**: intención de obtener un beneficio patrimonial, como quitar a una persona el bolso para quedarse con el dinero o arrebatar un móvil para venderlo. **Apoderamiento de cosa mueble ajena**: sustracción de dinero, joyas, teléfonos, bolsos, relojes o cualquier cosa mueble ajena. **Violencia o intimidación sobre las personas**: este es el elemento central. La violencia implica fuerza física ejercida sobre la víctima (empujar al suelo, golpear, sujetar con fuerza). La intimidación supone amenaza seria (exigir la entrega diciendo "dámelo o te clavo", mostrar un cuchillo). **Relación entre violencia y apoderamiento**: la violencia o intimidación debe estar conectada con la sustracción. Puede emplearse para conseguir el apoderamiento, para mantenerlo o para proteger la huida. **Dolo**: el autor debe actuar sabiendo que emplea violencia o intimidación para apoderarse de un bien ajeno.'
+        },
+        {
+          title: 'Diferencia entre robo con violencia, hurto, robo con fuerza y extorsión',
+          content: 'En el **hurto** no hay fuerza ni violencia: una persona aprovecha un descuido y se lleva un móvil de una mesa. En el **robo con fuerza** el autor no actúa contra la persona, sino contra los elementos materiales: forzar una puerta o cerradura para entrar a un local. En el **robo con violencia** hay agresión o amenaza directa sobre la persona: golpear a alguien para quitarle ese mismo móvil. La **extorsión** (art. 243 CP) se produce cuando la víctima realiza un acto patrimonial forzada por el autor, como firmar un documento o hacer una transferencia bajo amenazas. El artículo 240 castiga el robo con fuerza con prisión de 1 a 3 años, mientras que el artículo 242 castiga el robo con violencia con prisión de 2 a 5 años, reflejando su mayor gravedad. La prueba en el robo con violencia suele centrarse en la existencia del apoderamiento, la violencia o intimidación ejercida, la conexión con la sustracción y la posible existencia de lesiones, amenazas o uso de armas.'
+        },
+        {
+          title: 'Tipos de robo con violencia y penas',
+          content: '**Robo con violencia o intimidación básico (art. 242.1 CP)**: prisión de 2 a 5 años. **Robo con violencia agravado por uso de armas o medios peligrosos (art. 242.2 CP)**: pena en su mitad superior cuando el delincuente hace uso de armas u otros medios igualmente peligrosos, ya sea al cometer el delito o para proteger la huida, o cuando ataca a quienes acuden en auxilio de la víctima o le persiguen. Supuestos frecuentes: uso de cuchillo, navaja, arma simulada, sprays, barras u objetos contundentes; agresión a vigilante, policía o particular. **Supuesto atenuado por menor entidad (art. 242.3 CP)**: el Código Penal permite imponer la pena inferior en grado cuando la violencia o intimidación sea de menor entidad. **Robo de uso de vehículo con violencia (art. 244.4 CP)**: cuando la sustracción de un vehículo a motor sin ánimo de apropiación se comete con violencia, se imponen las penas del artículo 242.'
+        },
+        {
+          title: 'Robo con violencia en el ámbito empresarial',
+          content: 'El robo con violencia también aparece con frecuencia en entornos empresariales y profesionales: asaltos a dependientes para llevarse la caja, robos a repartidores o transportistas, sustracción de recaudaciones mediante amenazas, atracos en establecimientos abiertos al público y apoderamiento de mercancía usando violencia contra empleados o vigilantes. Además del delito patrimonial principal, pueden concurrir otras responsabilidades por lesiones, amenazas o daños. El artículo 242.1 establece expresamente que la pena se impone sin perjuicio de la que pudiera corresponder por los actos de violencia física realizados, lo que significa que si durante el robo se causan lesiones, pueden sumarse responsabilidades penales.'
+        },
+        {
+          title: 'Procedimiento penal y ejemplos prácticos',
+          content: 'La víctima puede denunciar los hechos ante Policía Nacional, Guardia Civil, policía autonómica, Fiscalía o Juzgado de guardia. El procedimiento suele iniciarse mediante denuncia, atestado policial o detención en flagrancia. Después se practican diligencias como declaración de víctima y testigos, reconocimiento fotográfico, análisis de grabaciones e informes médicos. **Ejemplo 1**: una persona se acerca por detrás, da un fuerte tirón del bolso arrastrando a la víctima varios metros — robo con violencia. **Ejemplo 2**: un individuo entra en una tienda, exhibe una navaja y exige al dependiente que entregue el dinero — robo con intimidación agravado por uso de arma. **Ejemplo 3**: una persona sustrae productos y, al ser interceptada por un vigilante, le golpea para escapar — robo con violencia para proteger la huida.'
+        }
+      ],
+      conclusion: 'El robo con violencia es un delito especialmente grave porque combina el apoderamiento patrimonial con una agresión o amenaza sobre la persona. La ley lo castiga con mayor severidad que el hurto y el robo con fuerza por el mayor riesgo que genera para la víctima. Su correcta calificación exige analizar la sustracción, el tipo de violencia o intimidación, el momento en que se produce y la posible concurrencia de armas, lesiones u otros delitos conexos. Si necesitas asesoramiento por un robo con violencia, una denuncia por atraco o una acusación penal, contar con un abogado penalista especializado es clave para estudiar el caso, proteger tus derechos y diseñar la defensa o acusación más adecuada. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 85,
+    title: 'Lesiones por Imprudencia Grave y Menos Grave con Vehículo a Motor en España | STANS',
+    excerpt: 'Guía completa sobre lesiones por imprudencia grave y menos grave con vehículo a motor: artículos 152 y 379 del Código Penal, diferencias, penas, retirada del carnet y procedimiento penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-28',
+    readTime: '20 min',
+    image: '/images/blog/lesiones-imprudencia-vehiculo.jpg',
+    slug: 'lesiones-imprudencia-grave-vehiculo-motor-espana',
+    tags: ['lesiones imprudentes', 'imprudencia grave', 'imprudencia menos grave', 'art 152 CP', 'art 379 CP', 'accidente tráfico', 'vehículo motor', 'retirada carnet'],
+    content: {
+      introduction: 'Las lesiones por imprudencia con vehículo a motor son uno de los supuestos más frecuentes en el ámbito penal de la circulación. Se producen cuando una persona, al conducir un coche, una moto u otro vehículo a motor, infringe de forma relevante las normas de cuidado y causa a otra un daño físico o psíquico con relevancia penal. El problema no está en la intención de lesionar, sino en la forma de conducir y en el riesgo creado. En España, el Código Penal distingue entre imprudencia grave e imprudencia menos grave en los delitos de lesiones cometidos con vehículo a motor o ciclomotor. La ley considera imprudencia grave, en todo caso, la conducción en la que concurre alguna de las circunstancias del artículo 379 del Código Penal si de ello se derivan lesiones típicas.',
+      sections: [
+        {
+          title: '¿Qué son las lesiones por imprudencia con vehículo a motor?',
+          content: 'Consisten en causar a otra persona un menoscabo en su integridad física o en su salud como consecuencia de una conducción contraria al deber objetivo de cuidado. No existe intención de agredir, pero sí una conducta descuidada, peligrosa o contraria a las normas de tráfico que acaba provocando un resultado lesivo penalmente relevante. Lo esencial no es el dolo, sino la imprudencia. Cuando la infracción del deber de cuidado es especialmente intensa, estaremos ante imprudencia grave. Cuando no alcanza ese nivel, pero deriva de una infracción grave de tráfico, podrá hablarse de imprudencia menos grave. No cualquier lesión da lugar a responsabilidad penal: el Código Penal exige que el resultado sea una lesión de las previstas en los artículos 147.1, 149 o 150. Jurídicamente hoy no se habla de imprudencia leve sino de imprudencia menos grave.'
+        },
+        {
+          title: 'Elementos del delito de lesiones por imprudencia con vehículo a motor',
+          content: '**Conducción de vehículo a motor o ciclomotor**: los hechos deben producirse utilizando un vehículo a motor, lo que activa la pena de privación del derecho a conducir. **Infracción del deber objetivo de cuidado**: conducción descuidada o antirreglamentaria, como conducir bajo la influencia del alcohol, a velocidad excesiva, sin respetar prioridad de paso, distraerse con el móvil o adelantar en zona prohibida. **Resultado lesivo penalmente relevante**: lesión que requiera tratamiento médico o quirúrgico, o una secuela grave o permanente (fractura, lesión medular, pérdida de visión, cicatriz permanente). **Relación de causalidad**: la lesión debe ser consecuencia de la conducta imprudente. **Grado de imprudencia**: será grave cuando concurra alguna circunstancia del artículo 379 y de esa conducción resulten las lesiones; será menos grave cuando el hecho sea consecuencia de una infracción grave de las normas de tráfico, apreciada por el juez, sin alcanzar la calificación de grave.'
+        },
+        {
+          title: 'Diferencia entre imprudencia grave, imprudencia menos grave y accidente sin relevancia penal',
+          content: 'La **imprudencia grave** supone una infracción muy intensa del deber de cuidado, con creación de riesgo especialmente alta. La ley la reputa grave, en todo caso, cuando concurre alguna circunstancia del artículo 379 y de ello deriva el resultado lesivo. La **imprudencia menos grave** existe cuando el hecho es consecuencia de una infracción grave de las normas de tráfico apreciada por el juez, sin alcanzar la calificación de grave. **No todo accidente es delito**: hay accidentes que generan solo responsabilidad civil o administrativa. En lenguaje coloquial todavía se usa "imprudencia leve", pero la regulación penal actual usa "imprudencia menos grave". La diferencia puede cambiar por completo la pena, la retirada del permiso y la estrategia de defensa o acusación.'
+        },
+        {
+          title: 'Tipos de lesiones imprudentes y penas',
+          content: '**Lesiones por imprudencia grave (art. 152.1 CP)**: si la lesión es del art. 147.1, prisión de 3 a 6 meses o multa de 6 a 18 meses; si es del art. 149, prisión de 1 a 3 años; si es del art. 150, prisión de 6 meses a 2 años. Además, privación del derecho a conducir de 1 a 4 años si intervino vehículo a motor. **Lesiones por imprudencia menos grave (art. 152.2 CP)**: multa de 3 a 12 meses. Posible privación del derecho a conducir de 3 meses a 1 año. Solo es perseguible mediante denuncia de la persona agraviada. **Lesiones muy graves derivadas de imprudencia**: cuando el accidente causa lesiones del artículo 149 o 150 (pérdida de un órgano principal, pérdida de un sentido, grave deformidad), la pena aumenta significativamente.'
+        },
+        {
+          title: 'Supuestos frecuentes y procedimiento penal',
+          content: 'Los supuestos más frecuentes incluyen atropellos en pasos de peatones, colisiones por semáforos en rojo, choques por exceso de velocidad, salidas de vía por distracción, adelantamientos antirreglamentarios, conducción bajo alcohol o drogas, y giros indebidos con impacto sobre motoristas o ciclistas. La víctima puede denunciar ante Policía, Guardia Civil de Tráfico, Fiscalía o Juzgado de guardia. En la imprudencia menos grave, la persecución penal exige denuncia del perjudicado. Son fundamentales el atestado policial, la reconstrucción del siniestro, la prueba de alcoholemia o drogas, los informes médicos, la pericial de biomecánica y la valoración forense de las lesiones.'
+        },
+        {
+          title: 'Ejemplos prácticos',
+          content: '**Lesiones por imprudencia grave por alcoholemia**: un conductor circula de madrugada tras consumir alcohol, se salta un semáforo en rojo y colisiona con otro vehículo, causando fractura de húmero — imprudencia grave, concurre circunstancia del artículo 379. **Lesiones por imprudencia menos grave por giro indebido**: una conductora realiza un giro sin respetar correctamente la prioridad y golpea a un motorista causándole fractura de muñeca — imprudencia menos grave, infracción grave de tráfico sin circunstancias del 379. **Atropello por distracción con móvil**: el conductor consulta el teléfono y atropella a un peatón — la calificación dependerá de la intensidad de la distracción y la dinámica del accidente. **Adelantamiento prohibido con secuelas permanentes**: un conductor adelanta en curva con línea continua y provoca choque frontal con pérdida funcional permanente de una mano — imprudencia grave, resultado del artículo 150 o 149.'
+        }
+      ],
+      conclusion: 'Las lesiones por imprudencia grave y menos grave con vehículo a motor ocupan un lugar central en el Derecho Penal de la circulación. La diferencia entre imprudencia grave y menos grave es decisiva, porque afecta a la pena, a la retirada del permiso de conducir, a la necesidad de denuncia y a toda la estrategia procesal. La mecánica del accidente, el tipo de infracción cometida, la entidad de las lesiones, el atestado y la prueba pericial pueden cambiar por completo la calificación penal. Si necesitas asesoramiento por un accidente de tráfico con lesiones o una acusación penal por vehículo a motor, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 86,
+    title: 'Juicio por Delito Leve en España: Guía Completa y Estrategia Procesal | STANS',
+    excerpt: 'Todo sobre el juicio por delito leve: qué delitos se tramitan, fases del procedimiento, estrategia procesal, penas, responsabilidad civil y diferencias con juicio rápido y procedimiento abreviado.',
+    category: 'Procedimiento Penal',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-28',
+    readTime: '16 min',
+    image: '/images/blog/juicio-delito-leve.jpg',
+    slug: 'juicio-delito-leve-espana-guia-completa',
+    tags: ['juicio delito leve', 'delito leve', 'lesiones leves', 'hurto leve', 'daños leves', 'amenazas leves', 'arts 962-971 LECrim', 'procedimiento penal'],
+    content: {
+      introduction: 'El juicio por delito leve es uno de los procedimientos penales más habituales en la práctica de los juzgados españoles. Aunque se trata de infracciones de menor gravedad que otros delitos, sus consecuencias no deben infravalorarse. Una condena por delito leve puede implicar multa, responsabilidad civil, órdenes de alejamiento en determinados supuestos y una afectación relevante a la posición procesal de las partes. La regulación procesal se contiene en los artículos 962 a 971 de la Ley de Enjuiciamiento Criminal. En la práctica, este procedimiento aparece con frecuencia en lesiones leves, hurtos leves, daños leves, amenazas leves, coacciones leves, injurias o vejaciones injustas de carácter leve en determinados supuestos, así como en conflictos vecinales, discusiones familiares e incidentes en comercios.',
+      sections: [
+        {
+          title: '¿Qué es el juicio por delito leve?',
+          content: 'Es el procedimiento penal previsto para el enjuiciamiento de infracciones penales de escasa gravedad. Sustituyó al antiguo juicio de faltas tras la reforma penal de 2015, manteniendo una tramitación ágil, oral y concentrada, aunque ya dentro de la categoría de delitos. Se trata de un procedimiento simplificado en el que, por regla general, no existe una fase de instrucción larga y compleja. Lo habitual es que, tras la denuncia o atestado, el juzgado cite rápidamente a las partes a una vista. En esa comparecencia se practican las pruebas y, en muchos casos, el asunto queda visto para sentencia el mismo día. La sentencia puede contener condena penal, multa, indemnización y otras consecuencias jurídicas.'
+        },
+        {
+          title: '¿Qué delitos se juzgan por delito leve?',
+          content: 'Entre los más habituales: **lesiones leves**, que suelen aparecer en discusiones, peleas de escasa entidad, conflictos vecinales o familiares (la diferencia con lesiones más graves suele estar en la necesidad o no de tratamiento médico o quirúrgico); **hurto leve**, muy frecuente en comercios, normalmente vinculado a apoderamientos de escasa cuantía; **daños leves**, como rayar un coche, romper un objeto de escaso valor; y **amenazas o coacciones leves**, que aparecen en discusiones personales, vecinales o de convivencia.'
+        },
+        {
+          title: 'Diferencia entre juicio por delito leve, juicio rápido y procedimiento abreviado',
+          content: 'El **juicio rápido** no se define por la menor gravedad del hecho, sino por la inmediatez del atestado, la sencillez de la investigación y el tipo de delito. El **procedimiento abreviado** se utiliza para delitos de mayor gravedad con una fase de instrucción más desarrollada y más margen para diligencias, recursos y periciales. En el **juicio por delito leve**, la concentración probatoria es mucho más intensa y la vista oral tiene un peso central. La estrategia debe adaptarse a esta rapidez: la prueba debe estar preparada desde muy pronto, la improvisación perjudica mucho y la credibilidad de las partes puede ser determinante.'
+        },
+        {
+          title: 'Fases del juicio por delito leve',
+          content: '**1. Denuncia o atestado**: el procedimiento suele comenzar por denuncia o por atestado policial. Si el hecho es flagrante, la policía puede realizar citaciones directas al juzgado. **2. Señalamiento de la vista**: el juzgado examina los hechos y, si aprecia base suficiente, cita a las partes. También puede acordar archivo si los hechos no son constitutivos de infracción penal. **3. Celebración del juicio**: se oyen a las partes, se practican las pruebas y cada interviniente formula su posición sobre hechos probados, calificación jurídica, pena solicitada y responsabilidad civil. **4. Sentencia**: puede absolver o condenar, imponiendo la pena leve correspondiente y, cuando proceda, indemnización. **5. Recurso de apelación**: la sentencia puede recurrirse ante la Audiencia Provincial.'
+        },
+        {
+          title: 'Estrategia procesal en el juicio por delito leve',
+          content: '**Preparar la prueba desde el principio**: partes médicos, presupuestos y facturas, fotografías, vídeos, mensajes, testigos presenciales, denuncias previas e informes policiales. **Ordenar el relato de hechos**: claro, cronológico, coherente y compatible con la prueba aportada. **Valorar si conviene acudir con abogado**: aunque no siempre es obligatorio, un abogado penalista puede depurar la calificación jurídica, preparar interrogatorios, impugnar preguntas improcedentes y formular correctamente la petición final. **No infravalorar la responsabilidad civil**: en muchos asuntos, el verdadero centro del procedimiento no es la multa sino la indemnización. **Revisar si los hechos son realmente penales**: una buena defensa pasa muchas veces por cuestionar si el conflicto debe resolverse en vía penal o en otra jurisdicción.'
+        },
+        {
+          title: 'Ejemplos prácticos',
+          content: '**Hurto leve en supermercado**: una persona es retenida por seguridad tras intentar salir con productos de escaso valor. Hay grabación, ticket y testigos. Estrategia: discutir autoría, ánimo de lucro o prueba de apoderamiento si existen dudas. **Lesiones leves en discusión vecinal**: dos vecinos se enfrentan y uno denuncia haber recibido un empujón con contusión leve. Solo hay parte médico y un testigo parcial. Estrategia: trabajar la contradicción de versiones y la suficiencia de la prueba. **Daños leves en vehículo**: una persona denuncia que otra rayó su coche durante una discusión de aparcamiento. Estrategia: acreditar la autoría mediante testigos, cámaras o contexto inmediato, o cuestionarla desde la defensa.'
+        }
+      ],
+      conclusion: 'El juicio por delito leve es un procedimiento aparentemente simple, pero con una gran importancia práctica. Se utiliza para infracciones penales de menor gravedad, pero puede acabar en condena penal, multa e indemnización, con consecuencias relevantes para ambas partes. Saber si los hechos tienen realmente relevancia penal, preparar bien los testigos y documentos, construir un relato sólido y valorar correctamente la responsabilidad civil son factores decisivos. Si necesitas asesoramiento sobre un juicio por delito leve, una citación judicial o una denuncia por hurto leve, lesiones leves o daños, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 87,
+    title: 'Delitos que se Juzgan por Juicio Rápido en España: Guía Completa | STANS',
+    excerpt: 'Guía completa sobre el juicio rápido: qué delitos se tramitan, requisitos del art. 795 LECrim, fases, conformidad, estrategia procesal y especial atención a delitos con vehículo a motor.',
+    category: 'Procedimiento Penal',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-28',
+    readTime: '22 min',
+    image: '/images/blog/juicio-rapido-delitos.jpg',
+    slug: 'delitos-juicio-rapido-espana-guia-completa',
+    tags: ['juicio rápido', 'art 795 LECrim', 'conformidad penal', 'alcoholemia', 'conducción sin permiso', 'seguridad vial', 'art 379 CP', 'art 383 CP', 'art 384 CP'],
+    content: {
+      introduction: 'El juicio rápido es uno de los mecanismos procesales más importantes del proceso penal español cuando los hechos son recientes, la investigación inicial es sencilla y existen elementos suficientes para impulsar el procedimiento desde el juzgado de guardia. Su finalidad es acelerar la respuesta penal en determinados delitos, evitando dilaciones innecesarias y concentrando en muy poco tiempo actuaciones policiales, asistencia letrada, comparecencia judicial y una posible conformidad con sentencia inmediata. En la práctica, el juicio rápido aparece con enorme frecuencia en delitos flagrantes, hurtos, robos, daños, violencia doméstica y, de forma muy destacada, en los delitos cometidos con vehículo a motor: alcoholemias, negativas a someterse a las pruebas, conducción sin permiso y exceso de velocidad penal.',
+      sections: [
+        {
+          title: '¿Qué es el juicio rápido?',
+          content: 'Es un procedimiento penal especial previsto para la instrucción y enjuiciamiento de determinados delitos castigados con pena de prisión no superior a cinco años, o con otras penas cuya duración no exceda de diez años, siempre que el proceso se incoe mediante atestado policial y el investigado haya sido detenido o citado para comparecer ante el juzgado de guardia. Además, debe concurrir alguna de estas circunstancias: delito flagrante, pertenencia a ciertas categorías legales de delitos o que se trate de un hecho de instrucción presumiblemente sencilla. Si el asunto es complejo, hay pluralidad delictiva no compatible o necesidad de diligencias largas, esta vía deja de ser adecuada.'
+        },
+        {
+          title: 'Requisitos del juicio rápido',
+          content: '**Pena dentro de ciertos límites**: prisión no superior a 5 años u otras penas no superiores a 10 años. **Inicio por atestado policial**: controles de alcoholemia, accidentes con intervención inmediata, conducción sin permiso detectada en carretera. **Detención o citación inmediata ante juzgado de guardia**: la Policía Judicial debe informar del derecho a comparecer asistido de abogado. **Delito flagrante, incluido legalmente o instrucción sencilla**: la ley incluye expresamente delitos de hurto, robo, daños del art. 263, violencia doméstica y delitos contra la seguridad del tráfico. **Ausencia de complejidad incompatible**: no procede si el asunto está conectado con delitos fuera de su ámbito o si resulta necesario el secreto de las actuaciones.'
+        },
+        {
+          title: '¿Qué delitos se juzgan por juicio rápido?',
+          content: 'La ley identifica categorías especialmente típicas: lesiones, coacciones, amenazas o violencia habitual en determinados contextos del art. 173.2 CP; hurto; robo; hurto y robo de uso de vehículos; delitos contra la seguridad del tráfico; daños del art. 263; determinados delitos contra la salud pública; algunos delitos flagrantes contra la propiedad intelectual e industrial; allanamiento de morada; y usurpación. Los más frecuentes en la práctica diaria: alcoholemia, conducción bajo drogas, negativa a someterse a las pruebas, conducción sin permiso, hurtos flagrantes y robos flagrantes.'
+        },
+        {
+          title: 'Fases del juicio rápido y conformidad',
+          content: '**1. Actuación policial y atestado**: la Policía Judicial practica las diligencias necesarias, obtiene informes médicos, informa al investigado de su derecho a abogado y, en delitos de tráfico, realiza las pruebas de alcoholemia. **2. Comparecencia ante juzgado de guardia**: se practican las primeras diligencias judiciales, el investigado declara o se acoge a su derecho a no hacerlo. Este momento es estratégicamente decisivo. **3. Posible apertura de juicio oral o sobreseimiento**: el juez oye al Ministerio Fiscal y a las partes. **4. Posible conformidad**: si el fiscal solicita apertura de juicio oral y presenta escrito de acusación en el acto, el acusado puede mostrar conformidad y el juzgado dictar sentencia con reducción de un tercio de la pena solicitada. Se requiere que la pena sea de hasta 3 años de prisión y que, reducida en un tercio, no supere los 2 años. **5. Señalamiento para juicio si no hay conformidad**.'
+        },
+        {
+          title: 'Delitos con vehículo a motor: los supuestos más habituales',
+          content: '**Alcoholemia penal (art. 379.2 CP)**: conducir con tasa superior a 0,60 mg/l en aire espirado o 1,2 g/l en sangre — prisión de 3 a 6 meses o multa de 6 a 12 meses y privación del derecho a conducir de 1 a 4 años. **Exceso de velocidad penal (art. 379.1 CP)**: superar en 60 km/h el límite en vía urbana o en 80 km/h en interurbana. **Conducción temeraria (art. 380 CP)**: conducir con temeridad manifiesta poniendo en peligro concreto la vida — prisión de 6 meses a 2 años y privación del derecho a conducir de 1 a 6 años. **Conducción con manifiesto desprecio (art. 381 CP)**: prisión de 2 a 5 años. **Negativa a someterse a las pruebas (art. 383 CP)**: prisión de 6 meses a 1 año y privación del derecho a conducir de 1 a 4 años. **Conducción sin permiso (art. 384 CP)**: por pérdida total de puntos, privación judicial o sin haber obtenido nunca permiso — prisión de 3 a 6 meses o multa de 12 a 24 meses.'
+        },
+        {
+          title: 'Estrategia procesal en juicio rápido',
+          content: '**Analizar si realmente procede el juicio rápido**: si existen cuestiones técnicas complejas, puede interesar cuestionar su tramitación. **Decidir si conviene declarar**: una admisión precipitada puede cerrar futuras líneas defensivas. **Revisar la legalidad de la prueba inicial**: regularidad del control, identificación del conductor, correcta práctica de la prueba de alcoholemia, derecho a contraste, cadena de custodia en drogas, claridad del requerimiento en la negativa. **Valorar la conformidad**: puede reducir mucho el impacto penal, pero hay que calcular antecedentes, suspensión de pena, duración de privación del permiso, repercusión laboral y responsabilidad civil. **Diseñar defensa sobre pena principal y accesoria**: en delitos de tráfico, muchas veces el verdadero centro estratégico es la privación del derecho a conducir, por su impacto profesional y personal.'
+        }
+      ],
+      conclusion: 'El juicio rápido es una vía procesal diseñada para dar respuesta penal ágil a delitos recientes, sencillos y acreditados por atestado policial. Su importancia práctica es enorme, especialmente en delitos cometidos con vehículo a motor, donde la rapidez de la actuación policial, la prueba técnica y la posibilidad de conformidad condicionan la estrategia desde el primer momento. La diferencia entre una buena y una mala defensa suele depender de revisar el atestado a tiempo, detectar defectos en la prueba, saber cuándo no declarar y valorar si la conformidad compensa. Si necesitas asesoramiento por un juicio rápido o una citación del juzgado de guardia por alcoholemia, negativa a someterse a las pruebas, conducción sin permiso o conducción temeraria, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  // ===== NUEVOS BLOGS MARZO 2026 - 10 ARTÍCULOS NUEVOS =====
+  {
+    id: 88,
+    title: 'Delito de Amenazas en España: Tipos, Penas y Defensa | STANS Abogados',
+    excerpt: 'Guía completa sobre el delito de amenazas: amenazas graves y leves, artículos 169-171 del Código Penal, penas, diferencias con coacciones y procedimiento penal en España.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '14 min',
+    image: '/images/blog/delito-amenazas.jpg',
+    slug: 'delito-amenazas-espana-tipos-penas-defensa',
+    tags: ['amenazas', 'art 169 CP', 'art 170 CP', 'art 171 CP', 'amenazas graves', 'amenazas leves', 'coacciones'],
+    content: {
+      introduction: 'El delito de amenazas es una de las infracciones penales contra la libertad más frecuentes en la práctica judicial española. Consiste en anunciar a otra persona un mal que constituya delito, con el propósito de atemorizarla o de condicionar su conducta. El Código Penal regula las amenazas en los artículos 169 a 171, diferenciando entre amenazas graves condicionales e incondicionales, amenazas leves y supuestos específicos vinculados al ámbito familiar. En la práctica, las amenazas aparecen con frecuencia en conflictos vecinales, discusiones de pareja, enfrentamientos laborales, disputas económicas y, cada vez más, a través de redes sociales y medios digitales.',
+      sections: [
+        {
+          title: '¿Qué es el delito de amenazas?',
+          content: 'El delito de amenazas consiste en el anuncio de un mal que constituya delito contra la vida, integridad física, libertad, libertad sexual, honor o patrimonio de la persona amenazada o de su familia. El bien jurídico protegido es la libertad personal en su vertiente de sentimiento de seguridad y tranquilidad. El artículo 169 del Código Penal regula las amenazas graves de un mal que constituya delitos de homicidio, lesiones, aborto, contra la libertad, torturas, contra la integridad moral, libertad sexual, intimidad, honor, patrimonio y orden socioeconómico. No es necesario que la amenaza llegue a ejecutarse; basta con que sea seria, creíble y capaz de producir intimidación en el destinatario.'
+        },
+        {
+          title: 'Tipos de amenazas y penas',
+          content: '**Amenazas graves condicionales (art. 169.1 CP)**: el autor exige una condición (dinero, silencio, una acción) a cambio de no ejecutar el mal anunciado. Pena: prisión de 1 a 5 años si la condición se cumple, y de 6 meses a 3 años si no se cumple. **Amenazas graves incondicionales (art. 169.2 CP)**: el autor anuncia el mal sin exigir nada a cambio. Pena: prisión de 6 meses a 2 años. **Amenazas leves (art. 171 CP)**: amenazas de menor entidad, con penas de multa. En determinados supuestos del ámbito familiar, el artículo 171.4 contempla penas de prisión de 6 meses a 1 año. **Amenazas con armas u objetos peligrosos**: el uso de armas puede cualificar la amenaza. **Chantaje (art. 171.2 CP)**: exigir cantidad o recompensa bajo amenaza de revelar hechos de la vida privada — prisión de 2 a 4 años si se cumple la condición.'
+        },
+        {
+          title: 'Diferencia entre amenazas y coacciones',
+          content: 'Las amenazas se centran en el anuncio futuro de un mal: lo relevante es el mensaje intimidatorio. Las coacciones, reguladas en el artículo 172 del Código Penal, consisten en impedir a otro hacer lo que la ley no prohíbe, o en obligarle a hacer lo que no quiere, mediante violencia. La diferencia clave: en las amenazas se anuncia un mal futuro; en las coacciones se ejerce violencia actual para doblegar la voluntad. Ejemplo de amenaza: "te voy a matar si hablas". Ejemplo de coacción: cerrar el paso físicamente a alguien para impedir que se mueva. En la práctica se confunden porque ambas afectan a la libertad, pero su estructura típica y sus penas son distintas.'
+        },
+        {
+          title: 'Amenazas por medios digitales y redes sociales',
+          content: 'Las amenazas vertidas a través de redes sociales, aplicaciones de mensajería, correos electrónicos o plataformas digitales tienen la misma relevancia penal que las realizadas en persona. En la práctica, constituyen una proporción creciente de los casos. La prueba suele centrarse en capturas de pantalla, registros de mensajes, informes periciales informáticos y metadatos. Es esencial conservar la prueba digital de forma íntegra, evitando alteraciones que puedan cuestionar su validez en juicio. La identificación del autor también puede plantear dificultades cuando se utilizan perfiles anónimos o cuentas falsas.'
+        },
+        {
+          title: 'Procedimiento penal y estrategia de defensa',
+          content: 'La víctima puede denunciar ante Policía Nacional, Guardia Civil, Fiscalía o Juzgado de guardia. El procedimiento dependerá de la gravedad de la amenaza: las amenazas graves se tramitan normalmente por procedimiento abreviado, mientras que las leves pueden seguirse como juicio por delito leve. La prueba suele girar en torno a mensajes, grabaciones, testigos presenciales y contexto previo entre las partes. Desde la defensa, es esencial valorar si la expresión reúne los requisitos del tipo penal (seriedad, credibilidad, capacidad intimidatoria), si se trata de una expresión exagerada en el contexto de una discusión o si existe falta de ánimo de amenazar. La estrategia puede incluir cuestionar la credibilidad de la denuncia, el contexto en que se produjo y la proporcionalidad de la calificación penal.'
+        }
+      ],
+      conclusion: 'El delito de amenazas protege la libertad y seguridad personal. El Código Penal diferencia entre amenazas graves y leves, condicionales e incondicionales, con penas que pueden ir desde multa hasta cinco años de prisión. Las amenazas en redes sociales y medios digitales tienen la misma relevancia penal que las realizadas en persona. Si necesitas asesoramiento por una denuncia por amenazas o por una acusación de este tipo, contar con un abogado penalista especializado es fundamental para valorar la viabilidad del caso y diseñar la estrategia adecuada. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 89,
+    title: 'Delito de Coacciones en España: Guía Completa | STANS Abogados',
+    excerpt: 'Todo sobre el delito de coacciones: artículos 172-172 ter del Código Penal, tipos, penas, diferencias con amenazas, coacciones en el ámbito familiar y procedimiento penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '14 min',
+    image: '/images/blog/delito-coacciones.jpg',
+    slug: 'delito-coacciones-espana-guia-completa',
+    tags: ['coacciones', 'art 172 CP', 'acoso', 'stalking', 'coacciones leves', 'violencia género', 'libertad'],
+    content: {
+      introduction: 'El delito de coacciones es una infracción contra la libertad personal que consiste en impedir a otra persona hacer lo que la ley no prohíbe o en obligarla a efectuar lo que no quiere, empleando violencia. Los artículos 172 y siguientes del Código Penal regulan las distintas modalidades de coacciones, incluyendo las coacciones graves, leves, las cometidas en el ámbito familiar y el acoso o stalking. Es uno de los delitos que aparece con más frecuencia en conflictos interpersonales, laborales, vecinales y de pareja.',
+      sections: [
+        {
+          title: '¿Qué es el delito de coacciones?',
+          content: 'El artículo 172 del Código Penal castiga a quien, sin estar legítimamente autorizado, impidiere a otro con violencia hacer lo que la ley no prohíbe, o le compeliere a efectuar lo que no quiere, sea justo o injusto. La pena base es prisión de 6 meses a 3 años o multa de 12 a 24 meses, según la gravedad de la coacción y de los medios empleados. El concepto de "violencia" en las coacciones se interpreta de forma amplia e incluye no solo la fuerza física directa sobre la persona, sino también la denominada violencia ambiental o la vis compulsiva, siempre que sea idónea para doblegar la voluntad de la víctima.'
+        },
+        {
+          title: 'Tipos de coacciones y penas',
+          content: '**Coacciones graves (art. 172.1 CP)**: impedir o compeler mediante violencia — prisión de 6 meses a 3 años o multa de 12 a 24 meses. Si la coacción impide el ejercicio de un derecho fundamental, se impone la pena en su mitad superior. **Coacciones leves (art. 172.3 CP)**: de menor entidad — multa de 1 a 3 meses. **Coacciones en el ámbito familiar (art. 172.2 CP)**: cuando la víctima es cónyuge, excónyuge, pareja o familiar — prisión de 6 meses a 1 año o trabajos en beneficio de la comunidad. **Acoso o stalking (art. 172 ter CP)**: acecho reiterado que altera gravemente la vida cotidiana de la víctima — prisión de 3 meses a 2 años o multa de 6 a 24 meses.'
+        },
+        {
+          title: 'Acoso o stalking: artículo 172 ter del Código Penal',
+          content: 'El artículo 172 ter castiga a quien acose a una persona llevando a cabo de forma insistente y reiterada alguna de las siguientes conductas y, con ello, altere gravemente el desarrollo de su vida cotidiana: vigilar, perseguir o buscar cercanía física; establecer o intentar establecer contacto por cualquier medio de comunicación; usar indebidamente sus datos personales para adquirir productos o contratar servicios; o atentar contra su libertad o patrimonio. Este delito se introdujo específicamente para combatir el acecho persistente. Es especialmente relevante en supuestos de exparejas que mantienen una conducta de control o seguimiento reiterado tras la ruptura.'
+        },
+        {
+          title: 'Diferencia entre coacciones y amenazas',
+          content: 'Las coacciones se caracterizan por el empleo actual de violencia para impedir o compeler a alguien. Las amenazas se centran en el anuncio futuro de un mal. Ejemplo de coacción: cambiar la cerradura de un domicilio compartido para impedir la entrada al otro titular, o bloquear físicamente a alguien para que no se mueva. Ejemplo de amenaza: decir "si vuelves a entrar, te mato". En la práctica, ambas figuras suelen concurrir en los mismos conflictos, pero tienen estructura típica distinta y penas diferentes. La correcta calificación del hecho es esencial para la estrategia de acusación o defensa.'
+        },
+        {
+          title: 'Procedimiento penal y defensa',
+          content: 'Las coacciones graves se tramitan normalmente por procedimiento abreviado. Las coacciones leves pueden seguirse como juicio por delito leve. El acoso o stalking se tramita según su entidad. La prueba suele centrarse en mensajes, grabaciones, testigos, denuncias previas, informes policiales y contexto previo entre las partes. Desde la defensa, es fundamental valorar si existió realmente violencia típica, si la conducta tenía relevancia penal suficiente o si se trata de un conflicto civil o vecinal reconducible a otra vía. La víctima puede denunciar ante Policía, Guardia Civil, Fiscalía o Juzgado de guardia.'
+        }
+      ],
+      conclusion: 'El delito de coacciones protege la libertad de obrar de las personas. El Código Penal diferencia entre coacciones graves, leves, las cometidas en el ámbito familiar y el acoso o stalking, con penas que van desde multa hasta tres años de prisión. Si necesitas asesoramiento por una denuncia por coacciones, acoso o stalking, o si te enfrentas a una acusación penal de este tipo, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 90,
+    title: 'Quebrantamiento de Condena y de Medida Cautelar en España | STANS Abogados',
+    excerpt: 'Guía completa sobre el delito de quebrantamiento de condena y medida cautelar: artículos 468-471 del Código Penal, orden de alejamiento, pulsera telemática, penas y defensa.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '14 min',
+    image: '/images/blog/quebrantamiento-condena.jpg',
+    slug: 'quebrantamiento-condena-medida-cautelar-espana',
+    tags: ['quebrantamiento condena', 'orden alejamiento', 'art 468 CP', 'medida cautelar', 'pulsera telemática', 'violencia género'],
+    content: {
+      introduction: 'El quebrantamiento de condena es un delito contra la Administración de Justicia que se produce cuando una persona incumple una pena, medida de seguridad, prisión, medida cautelar, conducción o custodia impuestas por resolución judicial. Los artículos 468 a 471 del Código Penal regulan las distintas modalidades de quebrantamiento. En la práctica, este delito aparece con enorme frecuencia en supuestos de incumplimiento de órdenes de alejamiento, prohibiciones de comunicación, privación del derecho a conducir y otras medidas cautelares o penas restrictivas de derechos.',
+      sections: [
+        {
+          title: '¿Qué es el quebrantamiento de condena?',
+          content: 'El artículo 468 del Código Penal castiga a quienes quebrantaren su condena, medida de seguridad, prisión, medida cautelar, conducción o custodia. La pena base es prisión de 6 meses a 1 año si el quebrantado estuviera privado de libertad, y multa de 12 a 24 meses en los demás casos. Cuando se trata de una pena de alejamiento o prohibición de comunicación en contextos de violencia de género o doméstica, la pena es de prisión de 6 meses a 1 año. El bien jurídico protegido es el correcto funcionamiento de la Administración de Justicia y la efectividad de las resoluciones judiciales.'
+        },
+        {
+          title: 'Supuestos más frecuentes de quebrantamiento',
+          content: '**Incumplimiento de orden de alejamiento**: la persona condenada o sometida a medida cautelar se acerca a la víctima pese a la prohibición judicial. Es el supuesto más habitual y puede producirse de forma presencial o a través de medios de comunicación. **Incumplimiento de prohibición de comunicación**: contactar con la víctima por teléfono, mensajería, redes sociales o a través de terceros. **Conducción con permiso retirado judicialmente**: conducir un vehículo pese a tener la privación del derecho a conducir impuesta por sentencia. **Incumplimiento de trabajos en beneficio de la comunidad**: no asistir a la prestación de trabajos cuando han sido impuestos como pena. **Evasión de prisión o de centro de internamiento**: supuesto menos frecuente pero también previsto.'
+        },
+        {
+          title: 'Quebrantamiento de orden de alejamiento en violencia de género',
+          content: 'El artículo 468.2 del Código Penal establece que se impondrá la pena de prisión de 6 meses a 1 año a quienes quebrantaren una pena del artículo 48 (alejamiento, prohibición de comunicación) o una medida cautelar o de seguridad de la misma naturaleza impuesta en procesos criminales en los que el ofendido sea alguna de las personas a las que se refiere el artículo 173.2. Esto incluye cónyuge, excónyuge, pareja, expareja o familiares. Un aspecto debatido jurisprudencialmente es el consentimiento de la víctima: el Tribunal Supremo ha establecido que el consentimiento de la víctima no elimina el delito, dado que la medida se impone por resolución judicial y su cumplimiento no depende de la voluntad de las partes.'
+        },
+        {
+          title: 'Penas y consecuencias legales',
+          content: '**Quebrantamiento estando privado de libertad**: prisión de 6 meses a 1 año. **Quebrantamiento en los demás casos**: multa de 12 a 24 meses. **Quebrantamiento de alejamiento o prohibición de comunicación en violencia de género o doméstica**: prisión de 6 meses a 1 año. Además de la pena, el quebrantamiento puede acarrear la revocación de beneficios penitenciarios, la agravación de la situación procesal del condenado, el endurecimiento de las condiciones de cumplimiento y nuevos antecedentes penales. En la práctica, un quebrantamiento de condena puede complicar gravemente la situación de la persona condenada en el procedimiento principal.'
+        },
+        {
+          title: 'Defensa y procedimiento penal',
+          content: 'La defensa frente a un quebrantamiento puede centrarse en distintos aspectos: la falta de efectiva notificación de la resolución judicial al condenado, la inexistencia de dolo (desconocimiento real de la medida vigente), el error sobre los límites geográficos o temporales de la prohibición, la ausencia de voluntariedad en el contacto, o circunstancias excepcionales acreditadas. La prueba suele basarse en informes policiales, registros telemáticos de la pulsera de control, capturas de mensajes, testimonios de la víctima y del investigado, y partes de incidencias de centros penitenciarios. El procedimiento puede tramitarse como juicio rápido en determinados supuestos.'
+        }
+      ],
+      conclusion: 'El quebrantamiento de condena y de medida cautelar es un delito grave contra la Administración de Justicia que puede complicar enormemente la situación penal de la persona afectada. El cumplimiento de las resoluciones judiciales no es opcional y su incumplimiento genera un nuevo delito con penas propias. Si te enfrentas a una acusación por quebrantamiento de orden de alejamiento, prohibición de comunicación o cualquier otra medida judicial, contar con un abogado penalista especializado es esencial para valorar la defensa y proteger tus derechos. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 91,
+    title: 'Delito de Daños en España: Tipos, Penas y Defensa | STANS Abogados',
+    excerpt: 'Guía completa sobre el delito de daños: artículos 263-267 del Código Penal, daños simples y agravados, daños informáticos, diferencias con otros delitos patrimoniales y procedimiento penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '13 min',
+    image: '/images/blog/delito-danos.jpg',
+    slug: 'delito-danos-espana-tipos-penas-defensa',
+    tags: ['daños', 'art 263 CP', 'art 264 CP', 'daños informáticos', 'daños agravados', 'delitos patrimoniales'],
+    content: {
+      introduction: 'El delito de daños consiste en la destrucción, deterioro o inutilización de bienes ajenos sin ánimo de apropiación. Se diferencia del hurto y del robo precisamente porque el autor no pretende quedarse con la cosa, sino dañarla o destruirla. Los artículos 263 a 267 del Código Penal regulan las distintas modalidades, incluyendo daños simples, daños agravados y daños informáticos. En la práctica, este delito aparece con frecuencia en conflictos vecinales, separaciones, disputas empresariales y actos vandálicos, así como en el ámbito digital cuando se destruyen datos o se inutilizan sistemas informáticos.',
+      sections: [
+        {
+          title: '¿Qué es el delito de daños?',
+          content: 'El artículo 263 del Código Penal castiga a quien causare daños en propiedad ajena no comprendidos en otros títulos del Código. La pena depende de la cuantía: si los daños superan los 400 euros, se trata de un delito menos grave con pena de multa de 6 a 24 meses, atendidas la condición económica de la víctima y la cuantía del daño. Si no exceden de 400 euros, se configura como delito leve con multa de 1 a 3 meses. Lo esencial es que se produzca un menoscabo patrimonial por destrucción, deterioro, menoscabo o inutilización de la cosa, sin que el autor pretenda apropiarse de ella.'
+        },
+        {
+          title: 'Daños agravados (art. 263.2 CP)',
+          content: 'El artículo 263 en su apartado segundo prevé penas de prisión de 1 a 3 años y multa de 12 a 24 meses cuando los daños se causan en determinadas circunstancias: mediante sustancias venenosas o corrosivas; afectando a bienes de dominio o uso público o comunal; con grave perjuicio para los intereses generales; en el contexto de una defraudación del fluido eléctrico o de telecomunicaciones de especial gravedad; o cuando revistan especial gravedad o afecten a bienes de reconocido valor artístico, histórico, cultural, científico o monumental. También se agravan cuando se cometen en el marco de una organización o grupo criminal.'
+        },
+        {
+          title: 'Daños informáticos (art. 264 y ss. CP)',
+          content: 'Los artículos 264 y siguientes del Código Penal regulan los daños informáticos: destruir, dañar, borrar, deteriorar, alterar, suprimir o hacer inaccesibles datos informáticos, programas o documentos electrónicos ajenos, causando resultados graves. La pena es de prisión de 6 meses a 3 años. Se agrava cuando los hechos se cometen en el marco de una organización criminal, causan daños de especial gravedad o afectan a infraestructuras críticas, servicios públicos esenciales o sistemas de seguridad. Estos delitos son cada vez más relevantes con la dependencia tecnológica de empresas y particulares.'
+        },
+        {
+          title: 'Diferencia entre daños y otros delitos patrimoniales',
+          content: 'La diferencia esencial con el hurto y el robo está en el ánimo de lucro. En los daños no existe intención de apropiarse de la cosa, sino de destruirla o deteriorarla. En el hurto se sustrae un bien ajeno sin fuerza ni violencia. En el robo con fuerza se emplean medios de fuerza sobre las cosas. Y en el robo con violencia se actúa sobre las personas. Cuando en un mismo hecho concurren sustracción y destrucción, la calificación penal dependerá de si existía ánimo de apropiación o no, y puede existir concurso de delitos si se dañan bienes distintos de los sustraídos.'
+        },
+        {
+          title: 'Procedimiento penal y defensa',
+          content: 'La víctima puede denunciar ante Policía, Guardia Civil, Fiscalía o Juzgado de guardia. La prueba suele centrarse en fotografías del daño, presupuestos de reparación, periciales de valoración, grabaciones de cámaras, testimonios y, en daños informáticos, informes periciales tecnológicos. Desde la defensa, puede cuestionarse la autoría, la cuantía del daño, la existencia de consentimiento o el carácter accidental del menoscabo. La responsabilidad civil derivada del delito de daños cobra especial importancia, ya que la víctima puede reclamar la reparación íntegra del perjuicio patrimonial sufrido.'
+        }
+      ],
+      conclusion: 'El delito de daños protege la propiedad ajena frente a conductas destructivas o deteriorantes. El Código Penal diferencia entre daños simples, agravados e informáticos, con penas que van desde multa hasta tres años de prisión. Si necesitas asesoramiento por una denuncia por daños o una acusación de este tipo, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 92,
+    title: 'Trata de Seres Humanos en España: Marco Penal y Defensa | STANS Abogados',
+    excerpt: 'Guía jurídica sobre la trata de seres humanos: artículo 177 bis del Código Penal, tipos, penas de hasta 12 años de prisión, protección de víctimas y procedimiento penal en España.',
+    category: 'Delitos Especializados',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '15 min',
+    image: '/images/blog/trata-seres-humanos.jpg',
+    slug: 'trata-seres-humanos-espana-marco-penal',
+    tags: ['trata de personas', 'art 177 bis CP', 'explotación', 'tráfico personas', 'derechos fundamentales', 'Audiencia Nacional'],
+    content: {
+      introduction: 'La trata de seres humanos es uno de los delitos más graves del ordenamiento penal español y una de las violaciones más severas de los derechos fundamentales. El artículo 177 bis del Código Penal castiga a quien, empleando violencia, intimidación, engaño, abuso de una situación de superioridad, de necesidad o de vulnerabilidad, capte, transporte, traslade, acoja, reciba o aloje a una persona con fines de explotación. La pena puede alcanzar hasta doce años de prisión. España ha reforzado progresivamente su legislación en esta materia, en línea con la normativa europea e internacional contra la trata.',
+      sections: [
+        {
+          title: '¿Qué es la trata de seres humanos?',
+          content: 'El artículo 177 bis del Código Penal define la trata de seres humanos como la captación, transporte, traslado, acogida, recepción o alojamiento de una persona, empleando violencia, intimidación o engaño, o abusando de una situación de superioridad, de necesidad o de vulnerabilidad de la víctima, con cualquiera de las siguientes finalidades: explotación laboral o de servicios, explotación sexual, explotación para la mendicidad, explotación para la realización de actividades delictivas, extracción de órganos corporales o celebración de matrimonios forzados. La pena base es de 5 a 8 años de prisión. No es necesario que la explotación llegue a consumarse; basta con que la captación o traslado se realicen con esa finalidad.'
+        },
+        {
+          title: 'Penas y circunstancias agravadas',
+          content: 'La pena básica es de **prisión de 5 a 8 años**. Se impone la pena en su mitad superior (hasta 12 años) cuando: se pone en peligro la vida o la integridad física o psíquica de las personas; la víctima es especialmente vulnerable por razón de enfermedad, discapacidad, situación personal o es menor de edad; o el culpable se ha prevalido de su condición de autoridad, agente o funcionario público. Si el autor pertenece a una organización o asociación que se dedica a la trata, la pena se impone en su mitad superior, y a los jefes, administradores o encargados se les aplica la pena superior en grado. También se prevé la inhabilitación para el ejercicio de profesión, oficio, industria o comercio.'
+        },
+        {
+          title: 'Diferencia entre trata de seres humanos y tráfico ilegal de personas',
+          content: 'La trata de seres humanos y el tráfico ilegal de personas son delitos distintos, aunque en la práctica pueden concurrir. En la **trata**, lo determinante es la finalidad de explotación de la víctima. En el **tráfico ilegal de personas** (art. 318 bis CP), lo esencial es el cruce ilegal de fronteras con ánimo de lucro, sin que necesariamente exista finalidad de explotación. La víctima de trata es, por definición, una persona explotada o destinada a serlo; la persona traficada puede ser un migrante que ha pagado por el traslado. Ambas figuras pueden coincidir cuando una persona es trasladada ilegalmente con el objetivo de ser explotada en el país de destino.'
+        },
+        {
+          title: 'Protección de las víctimas',
+          content: 'El artículo 177 bis establece expresamente que la víctima de trata de seres humanos queda exenta de responsabilidad por las infracciones penales que haya cometido en la situación de explotación sufrida, siempre que su participación haya sido consecuencia directa de la situación de violencia, intimidación, engaño o abuso a que ha sido sometida. Además, la legislación española prevé medidas de protección específicas para las víctimas de trata, como permisos de residencia, asistencia jurídica, atención social y sanitaria, y protección en el proceso penal.'
+        },
+        {
+          title: 'Procedimiento penal e investigación',
+          content: 'Las investigaciones por trata suelen ser complejas e implicar cooperación policial internacional, intervención de Europol o Interpol, análisis de comunicaciones, seguimientos y coordinación entre diferentes cuerpos policiales. La Audiencia Nacional puede asumir competencia en determinados supuestos por la dimensión de las redes de trata. La prueba suele centrarse en la declaración de las víctimas (que tiene un valor probatorio reforzado en estos casos), escuchas telefónicas, documentos de viaje, análisis financieros y testimonios de agentes policiales especializados.'
+        }
+      ],
+      conclusion: 'La trata de seres humanos es un delito de extrema gravedad que atenta contra la dignidad, la libertad y la integridad de las personas. El Código Penal español castiga con penas de hasta doce años de prisión la captación, transporte o acogida de personas con fines de explotación. Si necesitas asesoramiento en un procedimiento penal por trata de seres humanos, ya sea como víctima, como persona investigada o como parte afectada, contar con un abogado penalista especializado es fundamental. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 93,
+    title: 'Delito de Descubrimiento y Revelación de Secretos en España | STANS Abogados',
+    excerpt: 'Guía completa sobre el delito de descubrimiento y revelación de secretos: artículos 197-201 del Código Penal, intimidad, espionaje digital, datos personales, penas y defensa.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '14 min',
+    image: '/images/blog/descubrimiento-revelacion-secretos.jpg',
+    slug: 'descubrimiento-revelacion-secretos-espana',
+    tags: ['revelación secretos', 'art 197 CP', 'intimidad', 'datos personales', 'espionaje digital', 'privacidad', 'interceptación comunicaciones'],
+    content: {
+      introduction: 'El delito de descubrimiento y revelación de secretos protege la intimidad personal y familiar y el secreto de las comunicaciones. Los artículos 197 a 201 del Código Penal regulan un amplio abanico de conductas que van desde la interceptación de comunicaciones y el acceso no autorizado a datos personales hasta la difusión de imágenes íntimas sin consentimiento. Con el avance de las tecnologías digitales, este delito ha cobrado una relevancia práctica enorme, ya que las formas de intromisión en la intimidad ajena se han multiplicado a través de dispositivos electrónicos, redes sociales y sistemas de almacenamiento en la nube.',
+      sections: [
+        {
+          title: '¿Qué protege el delito de descubrimiento y revelación de secretos?',
+          content: 'Este delito protege el derecho fundamental a la intimidad personal y familiar reconocido en el artículo 18 de la Constitución Española, así como el secreto de las comunicaciones. El artículo 197.1 del Código Penal castiga a quien, para descubrir los secretos o vulnerar la intimidad de otro, se apodere de sus papeles, cartas, mensajes de correo electrónico o cualesquiera otros documentos o efectos personales, intercepte sus telecomunicaciones o utilice artificios técnicos de escucha, transmisión, grabación o reproducción del sonido o de la imagen. La pena es de prisión de 1 a 4 años y multa de 12 a 24 meses.'
+        },
+        {
+          title: 'Acceso no autorizado a datos personales y sistemas informáticos',
+          content: 'El artículo 197.2 del Código Penal castiga a quien, sin estar autorizado, se apodere, utilice o modifique datos reservados de carácter personal o familiar que se hallen registrados en ficheros o soportes informáticos, electrónicos o telemáticos, o acceda por cualquier medio a los mismos y a quien los altere o utilice en perjuicio del titular o de un tercero. La pena es igualmente de prisión de 1 a 4 años y multa de 12 a 24 meses. Este tipo penal abarca situaciones como acceder al correo electrónico de otra persona, espiar su teléfono móvil, instalar software espía o acceder a sus cuentas de redes sociales sin autorización.'
+        },
+        {
+          title: 'Difusión de imágenes íntimas sin consentimiento',
+          content: 'El artículo 197.7 del Código Penal castiga a quien, sin autorización de la persona afectada, difunda, revele o ceda a terceros imágenes o grabaciones audiovisuales obtenidas con su anuencia en un domicilio o lugar fuera del alcance de la mirada de terceros, cuando la divulgación menoscabe gravemente la intimidad personal de esa persona. La pena es de prisión de 3 meses a 1 año o multa de 6 a 12 meses. Este precepto es especialmente relevante para combatir la difusión no consentida de imágenes íntimas, conocida popularmente como revenge porn.'
+        },
+        {
+          title: 'Circunstancias agravantes y penas cualificadas',
+          content: 'Las penas se agravan cuando los hechos se cometen por las personas encargadas o responsables de los ficheros o datos (art. 197.4 CP — prisión de 3 a 5 años); cuando afectan a datos especialmente protegidos como ideología, religión, salud o vida sexual (art. 197.5 CP — pena en su mitad superior); cuando se difunden datos de menores o personas con discapacidad (agravación específica); o cuando se realizan con fines lucrativos (art. 197.6 CP — pena en su mitad superior). Además, el artículo 197 bis castiga el acceso no autorizado a un sistema informático y la interceptación de transmisiones no públicas de datos.'
+        },
+        {
+          title: 'Procedimiento penal y defensa',
+          content: 'La víctima puede denunciar ante Policía, Guardia Civil, Fiscalía o Juzgado. La prueba en estos delitos suele tener un componente tecnológico muy importante: informes periciales informáticos, análisis de dispositivos, registros de acceso, metadatos, capturas de pantalla y certificación de la cadena de custodia digital. Desde la defensa, puede cuestionarse la autoría del acceso, la existencia de autorización, el carácter reservado de los datos, el alcance del perjuicio o la ausencia de dolo. El artículo 201 establece que, salvo determinadas excepciones, estos delitos son perseguibles solo mediante denuncia del agraviado o su representante legal.'
+        }
+      ],
+      conclusion: 'El delito de descubrimiento y revelación de secretos protege la intimidad y el secreto de las comunicaciones frente a intromisiones ilegítimas. Con la expansión de las tecnologías digitales, estos delitos son cada vez más frecuentes y complejos. Si necesitas asesoramiento por un acceso no autorizado a tus datos, una interceptación de comunicaciones, una difusión de imágenes íntimas o cualquier otra vulneración de tu intimidad, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 94,
+    title: 'Homicidio por Imprudencia Grave en Accidente de Tráfico: Guía Actualizada | STANS',
+    excerpt: 'Guía actualizada sobre homicidio por imprudencia grave con vehículo a motor: artículo 142 CP, penas de hasta 4 años de prisión, retirada del carnet, procedimiento y estrategia de defensa.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '16 min',
+    image: '/images/blog/homicidio-imprudente-trafico.jpg',
+    slug: 'homicidio-imprudencia-grave-accidente-trafico',
+    tags: ['homicidio imprudente', 'art 142 CP', 'accidente tráfico', 'imprudencia grave', 'vehículo motor', 'retirada carnet', 'seguridad vial'],
+    content: {
+      introduction: 'El homicidio por imprudencia grave con vehículo a motor es uno de los delitos más graves del ámbito de la seguridad vial. Se produce cuando un conductor causa la muerte de otra persona como consecuencia de una conducción que infringe de forma muy relevante el deber objetivo de cuidado. No existe intención de matar, pero sí una imprudencia tan grave que la ley la castiga con penas severas de prisión y con la privación del derecho a conducir. El artículo 142 del Código Penal regula el homicidio imprudente, y su aplicación en el ámbito del tráfico rodado es especialmente frecuente y relevante tras las reformas legislativas recientes.',
+      sections: [
+        {
+          title: '¿Qué es el homicidio por imprudencia grave?',
+          content: 'El artículo 142.1 del Código Penal castiga a quien por imprudencia grave causare la muerte de otro. La pena es de prisión de 1 a 4 años. Cuando el homicidio se comete utilizando un vehículo a motor o ciclomotor, se impone además la pena de privación del derecho a conducir vehículos a motor y ciclomotores de 1 a 6 años. Al igual que en las lesiones imprudentes, la ley considera imprudencia grave, en todo caso, la conducción en la que concurra alguna de las circunstancias del artículo 379 del Código Penal y de ello resulte la muerte.'
+        },
+        {
+          title: 'Imprudencia grave vs. imprudencia menos grave en homicidio',
+          content: 'El artículo 142.2 castiga el homicidio por imprudencia menos grave con pena de multa de 3 a 18 meses, y cuando se comete con vehículo a motor, puede imponerse además la privación del derecho a conducir de 3 meses a 2 años. La diferencia entre imprudencia grave y menos grave es determinante: la imprudencia grave supone una infracción muy intensa del deber de cuidado con creación de riesgo especialmente alta, mientras que la imprudencia menos grave requiere una infracción grave de las normas de tráfico apreciada por el juez, pero sin alcanzar el nivel de la grave. Cuando concurre alguna circunstancia del artículo 379 (alcoholemia penal, exceso de velocidad penal), la ley reputa la imprudencia como grave.'
+        },
+        {
+          title: 'Supuestos habituales y prueba',
+          content: 'Los supuestos más frecuentes incluyen atropellos mortales en pasos de peatones, colisiones frontales por invasión de carril contrario, accidentes por exceso de velocidad, muertes en accidentes con alcoholemia del conductor, y atropellos en vías urbanas por distracción grave. La prueba es especialmente técnica: atestado policial, reconstrucción del siniestro, prueba de alcoholemia o drogas, pericial de biomecánica, informe médico-forense sobre la causa de la muerte, análisis de velocidad, datos del tacógrafo y grabaciones de cámaras.'
+        },
+        {
+          title: 'Penas y consecuencias legales',
+          content: '**Homicidio por imprudencia grave (art. 142.1 CP)**: prisión de 1 a 4 años. Con vehículo a motor: además, privación del derecho a conducir de 1 a 6 años. **Homicidio por imprudencia menos grave (art. 142.2 CP)**: multa de 3 a 18 meses. Con vehículo a motor: privación del derecho a conducir de 3 meses a 2 años. Además, pueden imponerse indemnizaciones a los familiares de la víctima, que suelen alcanzar cuantías muy elevadas conforme al baremo de indemnizaciones por accidentes de circulación, y antecedentes penales.'
+        },
+        {
+          title: 'Estrategia procesal y defensa',
+          content: 'La defensa en estos casos exige un análisis técnico exhaustivo de la mecánica del accidente. Es fundamental revisar: la regularidad del atestado, la correcta práctica de la prueba de alcoholemia, la existencia de factores concurrentes (conducta de la víctima, estado de la vía, señalización, visibilidad), la cadena de custodia de las pruebas y la proporcionalidad de la calificación jurídica. Puede ser determinante discutir si la imprudencia era grave o menos grave, si existía nexo causal directo entre la conducción y la muerte, o si concurrieron factores que rompan o aminoren la imputación objetiva del resultado. La representación letrada desde el primer momento es esencial.'
+        }
+      ],
+      conclusion: 'El homicidio por imprudencia grave con vehículo a motor es un delito con consecuencias penales muy severas. La diferencia entre imprudencia grave y menos grave, la prueba técnica del accidente y la estrategia procesal son factores decisivos. Si necesitas asesoramiento por una investigación o acusación penal por homicidio imprudente en accidente de tráfico, contar con un abogado penalista especializado es esencial para proteger tus derechos y diseñar la mejor defensa. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 95,
+    title: 'Suspensión y Sustitución de Penas de Prisión en España | STANS Abogados',
+    excerpt: 'Guía completa sobre la suspensión de la ejecución de penas de prisión: artículos 80-87 del Código Penal, requisitos, plazos, condiciones, revocación y sustitución de penas.',
+    category: 'Procedimiento Penal',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '15 min',
+    image: '/images/blog/suspension-penas.jpg',
+    slug: 'suspension-sustitucion-penas-prision-espana',
+    tags: ['suspensión pena', 'sustitución pena', 'art 80 CP', 'condena condicional', 'antecedentes penales', 'ejecución penal'],
+    content: {
+      introduction: 'La suspensión de la ejecución de la pena de prisión es una de las instituciones más relevantes del Derecho Penal español. Permite que una persona condenada a una pena de prisión no ingrese efectivamente en un centro penitenciario, siempre que se cumplan determinados requisitos legales y condiciones judiciales. Los artículos 80 a 87 del Código Penal regulan los supuestos de suspensión ordinaria, suspensión excepcional y sustitución de la pena de prisión. En la práctica, la suspensión es esencial para una gran cantidad de condenados, especialmente delincuentes primarios con penas de hasta dos años.',
+      sections: [
+        {
+          title: '¿Qué es la suspensión de la pena de prisión?',
+          content: 'La suspensión de la ejecución de la pena de prisión permite que el condenado no ingrese en prisión durante un plazo determinado, a condición de que cumpla ciertas obligaciones y no vuelva a delinquir. El artículo 80 del Código Penal establece que los jueces o tribunales podrán dejar en suspenso la ejecución de las penas privativas de libertad no superiores a dos años cuando sea razonable esperar que la ejecución de la pena no sea necesaria para evitar la comisión futura de delitos, atendiendo fundamentalmente a las circunstancias del delito cometido, las circunstancias personales del penado, sus antecedentes, su conducta posterior al hecho y sus circunstancias familiares y sociales.'
+        },
+        {
+          title: 'Requisitos de la suspensión ordinaria',
+          content: '**Que el condenado haya delinquido por primera vez**: no se tienen en cuenta las condenas anteriores por delitos imprudentes ni los antecedentes penales cancelados o que debieran serlo. **Que la pena no supere los dos años de prisión**: sin incluir la derivada del impago de multa. **Que se hayan satisfecho las responsabilidades civiles**: salvo que el juez declare la imposibilidad total o parcial de su cumplimiento. El plazo de suspensión se fija entre 2 y 5 años para penas de prisión y entre 3 meses y 1 año para penas leves. Si transcurre el plazo sin que el condenado cometa un nuevo delito y sin que incumpla las condiciones, la pena se remite definitivamente.'
+        },
+        {
+          title: 'Suspensión excepcional y supuestos especiales',
+          content: 'El artículo 80.3 CP permite excepcionalmente suspender penas de hasta 5 años de prisión cuando las circunstancias personales del reo, la naturaleza del hecho, su conducta y el esfuerzo por reparar el daño lo aconsejen. El artículo 80.4 CP contempla la suspensión para condenados que sean dependientes de sustancias, condicionada a que se sometan a tratamiento de deshabituación. El artículo 80.5 CP prevé la suspensión para enfermos muy graves con padecimientos incurables, salvo que en el momento de la comisión del delito ya tuvieran otra pena suspendida por el mismo motivo.'
+        },
+        {
+          title: 'Condiciones y obligaciones durante la suspensión',
+          content: 'El juez puede condicionar la suspensión al cumplimiento de obligaciones como: prohibición de acudir a determinados lugares, prohibición de aproximarse a la víctima o comunicarse con ella, comparecencias periódicas ante el juzgado, participación en programas formativos o de tratamiento, cumplimiento de los acuerdos alcanzados en mediación, pago de la responsabilidad civil y cumplimiento de multa. En casos de violencia de género, se imponen siempre determinadas prohibiciones de aproximación y comunicación con la víctima.'
+        },
+        {
+          title: 'Revocación de la suspensión y consecuencias',
+          content: 'El juez revocará la suspensión y ordenará el ingreso en prisión cuando el condenado: sea condenado por un delito cometido durante el período de suspensión de forma que ponga de manifiesto que la expectativa de reinserción no se ha cumplido; incumpla de forma grave o reiterada las condiciones impuestas; o facilite información inexacta o insuficiente sobre sus bienes. Si se revoca, el condenado debe cumplir la totalidad de la pena de prisión. La revocación puede ser parcial en ciertos supuestos. Es esencial cumplir escrupulosamente todas las condiciones para evitar la revocación.'
+        }
+      ],
+      conclusion: 'La suspensión de la pena de prisión es una herramienta fundamental del sistema penal español que permite evitar el ingreso en prisión cuando se cumplen los requisitos legales. Los artículos 80 a 87 del Código Penal regulan los distintos supuestos y condiciones. Si necesitas asesoramiento sobre la suspensión de una condena, el cumplimiento de condiciones o el riesgo de revocación, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 96,
+    title: 'Delito de Falsedad Documental en España: Tipos y Penas | STANS Abogados',
+    excerpt: 'Guía completa sobre el delito de falsedad documental: artículos 390-399 del Código Penal, falsedad en documento público, privado y mercantil, penas de hasta 6 años de prisión y defensa.',
+    category: 'Delitos Especializados',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '15 min',
+    image: '/images/blog/falsedad-documental.jpg',
+    slug: 'falsedad-documental-espana-tipos-penas',
+    tags: ['falsedad documental', 'art 390 CP', 'art 392 CP', 'documento público', 'documento privado', 'falsificación', 'estafa'],
+    content: {
+      introduction: 'El delito de falsedad documental es una infracción contra la fe pública que se produce cuando una persona altera, simula o fabrica un documento con la intención de introducirlo en el tráfico jurídico como si fuera auténtico. Los artículos 390 a 399 del Código Penal regulan las distintas modalidades, diferenciando entre falsedad en documento público, oficial o mercantil cometida por funcionario, falsedad cometida por particular, falsedad en documento privado y uso de documento falso. En la práctica, estos delitos aparecen en una enorme variedad de contextos: contratos falsificados, certificados fraudulentos, facturas simuladas, documentos de identidad alterados y títulos académicos falsos.',
+      sections: [
+        {
+          title: '¿Qué es la falsedad documental?',
+          content: 'La falsedad documental consiste en la alteración, simulación o fabricación total o parcial de un documento con la finalidad de hacerlo pasar por auténtico en el tráfico jurídico. El artículo 390 del Código Penal enumera las conductas típicas de falsedad: alterar un documento en alguno de sus elementos o requisitos esenciales, simular un documento induciendo a error sobre su autenticidad, suponer la intervención de personas que no la han tenido en el acto documentado, y faltar a la verdad en la narración de los hechos. La relevancia penal de la falsedad depende de la naturaleza del documento (público, oficial, mercantil o privado) y de la condición del autor (funcionario o particular).'
+        },
+        {
+          title: 'Falsedad en documento público, oficial o mercantil',
+          content: '**Cometida por funcionario público (art. 390 CP)**: prisión de 3 a 6 años, multa de 6 a 24 meses e inhabilitación especial de 2 a 6 años. Se aplica cuando la falsedad es cometida por autoridad o funcionario público en el ejercicio de sus funciones. **Cometida por particular (art. 392 CP)**: prisión de 6 meses a 3 años y multa de 6 a 12 meses. Se aplica cuando un particular comete falsedad en documento público, oficial o mercantil mediante alguna de las conductas del artículo 390, excepto la de faltar a la verdad en la narración de los hechos. Los documentos mercantiles incluyen facturas, letras de cambio, pagarés, pólizas de seguros y documentos contables.'
+        },
+        {
+          title: 'Falsedad en documento privado y uso de documento falso',
+          content: '**Falsedad en documento privado (art. 395 CP)**: prisión de 6 meses a 2 años, pero solo cuando se cometa para perjudicar a otro. A diferencia de la falsedad en documento público, en el privado se exige un elemento adicional de perjuicio. **Uso de documento falso (art. 393 CP)**: quien, a sabiendas de su falsedad, presenta en juicio o usa para perjudicar a otro un documento falso incurre en la pena inferior en grado a la prevista para los falsificadores. Esto significa que quien no falsifica pero utiliza conscientemente un documento que sabe falso también comete delito.'
+        },
+        {
+          title: 'Relación con otros delitos: estafa y delito fiscal',
+          content: 'La falsedad documental concurre con frecuencia con otros delitos, especialmente la estafa y el delito fiscal. En la estafa, los documentos falsos suelen ser el instrumento del engaño que provoca el error en la víctima. En el delito fiscal, las facturas falsas o la documentación contable simulada suelen ser el medio para defraudar a la Hacienda Pública. En estos supuestos puede existir concurso de delitos, lo que incrementa significativamente la responsabilidad penal. La jurisprudencia del Tribunal Supremo ha ido perfilando los criterios para determinar cuándo la falsedad es medio necesario para la estafa y cuándo constituye un delito autónomo.'
+        },
+        {
+          title: 'Procedimiento penal y defensa',
+          content: 'La prueba en los delitos de falsedad documental suele ser esencialmente pericial: análisis grafológico, pericial caligráfica, análisis de tintas y papel, peritaje informático cuando se trata de documentos digitales y cotejo con documentos auténticos. Desde la defensa, puede cuestionarse la autoría de la falsificación, el conocimiento de la falsedad en caso de uso, el carácter esencial de la alteración, la idoneidad del documento para inducir a error y la concurrencia de los elementos típicos específicos de cada modalidad. Es esencial intervenir con rapidez para preservar los documentos originales y solicitar las periciales oportunas.'
+        }
+      ],
+      conclusion: 'El delito de falsedad documental protege la fe pública y la fiabilidad de los documentos en el tráfico jurídico. El Código Penal castiga con penas de hasta seis años de prisión la falsificación de documentos públicos y con penas relevantes la falsedad en documentos privados y mercantiles. Si necesitas asesoramiento por una acusación de falsedad documental o por el uso de documentos presuntamente falsos, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 97,
+    title: 'Orden Europea de Investigación (OEI) en Materia Penal: Guía Completa | STANS',
+    excerpt: 'Guía sobre la Orden Europea de Investigación en materia penal: qué es, cómo funciona, diferencias con la Euroorden, marco legal, derechos del investigado y defensa.',
+    category: 'Extradiciones',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '14 min',
+    image: '/images/blog/orden-europea-investigacion.jpg',
+    slug: 'orden-europea-investigacion-oei-materia-penal',
+    tags: ['OEI', 'orden europea investigación', 'cooperación judicial', 'UE', 'Euroorden', 'prueba penal internacional', 'Eurojust'],
+    content: {
+      introduction: 'La Orden Europea de Investigación (OEI) es un instrumento de cooperación judicial en materia penal que permite a una autoridad judicial de un Estado miembro de la Unión Europea solicitar a otro Estado miembro la práctica de diligencias de investigación para obtener pruebas en procedimientos penales. La OEI fue introducida por la Directiva 2014/41/CE y transpuesta al ordenamiento español por la Ley 23/2014 de reconocimiento mutuo de resoluciones penales en la Unión Europea. Su importancia práctica es creciente en un contexto de criminalidad transnacional, delitos económicos internacionales, ciberdelincuencia y cooperación judicial europea.',
+      sections: [
+        {
+          title: '¿Qué es la Orden Europea de Investigación?',
+          content: 'La OEI es una resolución judicial emitida o validada por una autoridad judicial de un Estado miembro para que se lleven a cabo una o varias medidas de investigación en otro Estado miembro con el fin de obtener pruebas. Puede abarcar un amplio abanico de diligencias: toma de declaración de testigos o investigados, obtención de documentos, registros, interceptación de comunicaciones, entregas vigiladas, investigaciones encubiertas, obtención de información bancaria, análisis de objetos o acceso a bases de datos. La OEI sustituye en gran medida a los antiguos mecanismos de asistencia judicial mutua en la UE, aportando mayor rapidez y eficacia.'
+        },
+        {
+          title: 'Diferencia entre la OEI y la Euroorden',
+          content: 'La OEI y la Orden Europea de Detención y Entrega (Euroorden) son instrumentos de cooperación judicial distintos. La **Euroorden** se utiliza para la detención y entrega de personas buscadas para su enjuiciamiento o para el cumplimiento de una pena. La **OEI** se utiliza para la obtención de pruebas y la práctica de diligencias de investigación. La Euroorden afecta a la libertad personal del reclamado; la OEI afecta al desarrollo de la investigación penal. Ambas se basan en el principio de reconocimiento mutuo, pero tienen finalidades, procedimientos y garantías distintos.'
+        },
+        {
+          title: 'Procedimiento de emisión y ejecución de la OEI',
+          content: 'La OEI debe emitirse o validarse por una autoridad judicial del Estado emisor. En España, puede emitirla el juez de instrucción, la Audiencia Nacional, los tribunales superiores de justicia o el Tribunal Supremo, según el caso. La OEI se transmite a la autoridad competente del Estado de ejecución, que debe reconocerla y ejecutarla en los plazos establecidos. El plazo general de ejecución es de 90 días desde la recepción. El Estado de ejecución puede denegar el reconocimiento en supuestos tasados: cuando la ejecución sea contraria a derechos fundamentales, cuando la medida no esté prevista en su legislación para un caso similar, o cuando existan inmunidades o privilegios que lo impidan.'
+        },
+        {
+          title: 'Derechos del investigado frente a una OEI',
+          content: 'El investigado o acusado tiene derecho a ser informado de la existencia de la OEI cuando ello no perjudique la investigación, a recurrir la medida de investigación tanto en el Estado emisor como en el Estado de ejecución, a la asistencia letrada, a la traducción y a que se respeten sus derechos fundamentales. La Directiva establece que la ejecución de la OEI no puede vulnerar los derechos reconocidos en la Carta de los Derechos Fundamentales de la Unión Europea. En la práctica, la defensa puede impugnar la proporcionalidad de la medida, la competencia del Estado emisor, la regularidad del procedimiento y la afectación a derechos fundamentales.'
+        },
+        {
+          title: 'Relevancia práctica y defensa especializada',
+          content: 'La OEI es cada vez más utilizada en investigaciones por delitos económicos transnacionales, blanqueo de capitales, fraude fiscal con elemento internacional, ciberdelincuencia, tráfico de drogas con conexiones europeas y terrorismo. Su correcta comprensión es esencial tanto para la acusación como para la defensa, ya que las pruebas obtenidas mediante OEI pueden ser determinantes en el resultado del procedimiento penal. Desde la defensa, es fundamental verificar que la OEI se ha emitido y ejecutado conforme a la ley, que las diligencias practicadas respetan las garantías procesales y que la prueba obtenida es válida y admisible en el procedimiento principal.'
+        }
+      ],
+      conclusion: 'La Orden Europea de Investigación es un instrumento clave de la cooperación judicial penal en la Unión Europea. Permite obtener pruebas en otros Estados miembros de forma rápida y eficaz, pero su emisión y ejecución deben respetar los derechos fundamentales y las garantías procesales del investigado. Si necesitas asesoramiento ante una OEI emitida contra ti o si estás investigado en un procedimiento penal con elemento internacional, contar con un abogado penalista especializado en cooperación judicial es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
   }
 ];
 
@@ -3290,7 +3882,26 @@ export const allBlogSlugs = [
   'fraude-fiscal-delitos-hacienda-publica',
   'delitos-contra-seguridad-social-espana',
   'asociaciones-cannabicas-situacion-penal-espana',
-  'delito-lesiones-tipos-leves-graves-agravados'
+  'delito-lesiones-tipos-leves-graves-agravados',
+
+  // NUEVOS BLOGS MARZO 2026 - Artículos proporcionados
+  'robo-con-fuerza-espana-guia-completa',
+  'robo-con-violencia-espana-guia-completa',
+  'lesiones-imprudencia-grave-vehiculo-motor-espana',
+  'juicio-delito-leve-espana-guia-completa',
+  'delitos-juicio-rapido-espana-guia-completa',
+
+  // NUEVOS BLOGS MARZO 2026 - 10 artículos nuevos
+  'delito-amenazas-espana-tipos-penas-defensa',
+  'delito-coacciones-espana-guia-completa',
+  'quebrantamiento-condena-medida-cautelar-espana',
+  'delito-danos-espana-tipos-penas-defensa',
+  'trata-seres-humanos-espana-marco-penal',
+  'descubrimiento-revelacion-secretos-espana',
+  'homicidio-imprudencia-grave-accidente-trafico',
+  'suspension-sustitucion-penas-prision-espana',
+  'falsedad-documental-espana-tipos-penas',
+  'orden-europea-investigacion-oei-materia-penal'
 ];
 
 // Función helper para obtener un post por slug
