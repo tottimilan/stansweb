@@ -103,7 +103,7 @@ export default function BlogPostPage() {
 
   // Aplicar traducciones si existen para los nuevos blogs (IDs 40-97)
   let post = basePost;
-  if (language !== 'es' && basePost.id >= 40 && basePost.id <= 97) {
+  if (language !== 'es' && basePost.id >= 40 && basePost.id <= 104) {
     const translation = getNewBlogTranslation(basePost.id, language);
     if (translation) {
       post = {

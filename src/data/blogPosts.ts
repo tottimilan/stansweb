@@ -3761,6 +3761,274 @@ export const blogPosts: BlogPost[] = [
       ],
       conclusion: 'La Orden Europea de Investigación es un instrumento clave de la cooperación judicial penal en la Unión Europea. Permite obtener pruebas en otros Estados miembros de forma rápida y eficaz, pero su emisión y ejecución deben respetar los derechos fundamentales y las garantías procesales del investigado. Si necesitas asesoramiento ante una OEI emitida contra ti o si estás investigado en un procedimiento penal con elemento internacional, contar con un abogado penalista especializado en cooperación judicial es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
     }
+  },
+
+  // ========== NUEVOS BLOGS MARZO 2026 - SEGUNDA TANDA ==========
+  {
+    id: 98,
+    title: 'Amenazas y Coacciones en España: Diferencias, Penas y Denuncia | STANS',
+    excerpt: 'Guía completa sobre amenazas y coacciones en España. Diferencias entre ambos delitos, penas del Código Penal (arts. 169-172), cómo denunciar y estrategia de defensa.',
+    category: 'Defensa Penal',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '18 min',
+    image: '/images/blog/amenazas-coacciones.jpg',
+    slug: 'amenazas-coacciones-espana-diferencias-penas',
+    tags: ['amenazas', 'coacciones', 'delito amenazas', 'delito coacciones', 'acoso', 'stalking', 'violencia de género', 'denuncia amenazas'],
+    content: {
+      introduction: 'Las amenazas y las coacciones son dos de los delitos más frecuentes en la práctica penal española. Aunque muchas veces aparecen juntas en denuncias, discusiones familiares, conflictos vecinales, rupturas sentimentales o enfrentamientos laborales, jurídicamente no son lo mismo. La diferencia entre ambos delitos es importante porque afecta a la calificación penal, a la pena aplicable, a la estrategia de defensa y a la forma de denunciar los hechos. Las amenazas castigan el anuncio de un mal futuro (arts. 169-171 CP), mientras que las coacciones sancionan la imposición de una conducta mediante violencia o intimidación (art. 172 CP).',
+      sections: [
+        {
+          title: '¿Qué son las amenazas y las coacciones?',
+          content: 'Las amenazas consisten en anunciar a otra persona un mal futuro. Ese mal puede ser constitutivo de delito, como matar, lesionar, agredir sexualmente, dañar el patrimonio o atentar contra el honor, o puede no constituir delito. El artículo 169 castiga la amenaza de un mal que constituya determinados delitos, y el artículo 171 regula otras amenazas, incluidas las condicionales de un mal que no constituya delito. Las coacciones, en cambio, no se centran en el anuncio de un mal futuro, sino en doblegar la voluntad ajena en el presente. El artículo 172.1 castiga a quien, sin estar legítimamente autorizado, impide a otro con violencia hacer lo que la ley no prohíbe, o le obliga a hacer lo que no quiere.'
+        },
+        {
+          title: 'Elementos del delito de amenazas',
+          content: 'Para que exista delito de amenazas deben concurrir: **anuncio de un mal futuro** serio y creíble dirigido a la víctima, su familia u otras personas vinculadas; **seriedad y aptitud intimidatoria** valorada según contexto, relación entre partes, tono y antecedentes; **destinatario determinado** (persona concreta o, según el art. 170, colectivos); **modalidad condicional o no condicional** (art. 169.1 amenazas condicionadas, art. 169.2 no condicionales, art. 171.1 condicionales de mal no delictivo); y **dolo o voluntad de amenazar**. Ejemplos: "Si no me das 5.000 euros, te arruino la vida", "Si denuncias, voy a por ti", envío reiterado de mensajes anunciando agresión.'
+        },
+        {
+          title: 'Elementos del delito de coacciones',
+          content: 'El delito de coacciones requiere: **falta de autorización legítima** del autor; **conducta de impedir o compeler** (impedir hacer lo que la ley no prohíbe u obligar a hacer lo que no quiere); **violencia o medios coactivos suficientes**; **ataque a la libertad de actuación** de la víctima; y **dolo**. Ejemplos: cambiar la cerradura para impedir el acceso, bloquear físicamente a una persona para que no salga, forzar a alguien a abandonar una vivienda, obligar a firmar un documento. El art. 172.1 agrava la pena cuando la coacción impide el ejercicio de un derecho fundamental o el legítimo disfrute de la vivienda.'
+        },
+        {
+          title: 'Tipos de amenazas y coacciones y sus penas',
+          content: '**Amenazas de mal constitutivo de delito (art. 169)**: condicional con éxito, prisión 1-5 años; sin éxito, 6 meses-3 años; no condicional, 6 meses-2 años. **Amenazas de mal no delictivo (art. 171.1)**: prisión 3 meses-1 año o multa 6-24 meses. **Chantaje (art. 171.2-3)**: con entrega, prisión 2-4 años; sin entrega, 4 meses-2 años. **Coacciones básicas (art. 172.1)**: prisión 6 meses-3 años o multa 12-24 meses, con mitad superior si impide derecho fundamental. **Supuestos leves en pareja (arts. 171.4, 172.2)**: prisión 6 meses-1 año o TBC 31-80 días. **Acoso/stalking (art. 172 ter)**: prisión 3 meses-2 años o multa 6-24 meses.'
+        },
+        {
+          title: 'Cómo denunciar y estrategia procesal',
+          content: 'La víctima puede denunciar ante Policía, Guardia Civil, Fiscalía o Juzgado de Guardia. Conviene aportar: mensajes de WhatsApp, SMS o correo electrónico, grabaciones o audios legalmente utilizables, capturas de pantalla, partes médicos o informes psicológicos, datos de testigos y fotografías. **Si eres denunciante**: fijar bien los hechos, conservar prueba digital, evitar contradicciones y documentar el contexto. **Si eres denunciado**: analizar si el mensaje tiene verdadera relevancia penal, si existe discusión recíproca, si las expresiones son ambiguas, si la conducta encaja en otro tipo penal y si la prueba digital es íntegra y auténtica. En amenazas y coacciones, pequeños matices cambian mucho la calificación.'
+        }
+      ],
+      conclusion: 'Las amenazas y las coacciones son delitos cercanos pero jurídicamente distintos. Las amenazas castigan el anuncio de un mal futuro; las coacciones, la imposición ilegítima de una conducta. El contexto lo es casi todo en estos asuntos. Si necesitas asesoramiento por amenazas, coacciones, mensajes intimidatorios o conflictos de pareja, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 99,
+    title: 'Ley Orgánica 1/2026 y Multirreincidencia en España: Qué Cambia en Hurtos, Estafas y Medidas Cautelares | STANS',
+    excerpt: 'Análisis de la Ley Orgánica 1/2026: reforma del Código Penal en hurto leve multirreincidente, estafa reiterada, hurto de móviles, nuevas medidas cautelares y legitimación municipal.',
+    category: 'Defensa Penal',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '16 min',
+    image: '/images/blog/ley-organica-multirreincidencia.jpg',
+    slug: 'ley-organica-1-2026-multirreincidencia-hurtos-estafas',
+    tags: ['ley orgánica 1/2026', 'multirreincidencia', 'hurto leve', 'estafa leve', 'hurto móvil', 'medidas cautelares', 'reforma código penal', 'delitos patrimoniales'],
+    content: {
+      introduction: 'La Ley Orgánica 1/2026, de 8 de abril, ha introducido una reforma relevante del Código Penal y de la Ley de Enjuiciamiento Criminal para endurecer la respuesta frente a la multirreincidencia en España, especialmente en delitos patrimoniales como el hurto y la estafa. La norma modifica los artículos 22, 66, 80, 234, 235, 248, 250, 255 y 568 del Código Penal, y los artículos 13, 105 y 544 bis de la LECrim, reforzando también las medidas cautelares para evitar la reiteración delictiva.',
+      sections: [
+        {
+          title: 'Hurto leve multirreincidente: antes y ahora',
+          content: 'El nuevo artículo 234.2 CP mantiene que si lo sustraído no supera 400 euros, la pena será multa de 1-3 meses, salvo circunstancias del art. 235. Pero ahora añade expresamente que, si el culpable ha sido **condenado ejecutoriamente al menos por tres delitos de la misma naturaleza** (mismo título CP), siendo al menos uno leve, se impondrá la pena del hurto básico. No se computarán antecedentes cancelados o que debieran serlo. El cambio esencial: la ley fija con más claridad cuándo la multirreincidencia transforma un hurto leve en hurto básico.'
+        },
+        {
+          title: 'Estafa leve multirreincidente y nuevo peso de los delitos leves',
+          content: 'La nueva redacción del artículo 248 CP mantiene la multa de 1-3 meses cuando la cuantía no excede de 400 euros, pero añade que si el culpable ha sido condenado ejecutoriamente al menos por tres delitos de la misma naturaleza (mismo capítulo), siendo al menos uno leve, se impondrá la pena del tipo básico de estafa. Además, la reforma modifica los **artículos 22.8, 66.2 y 80.2.1.ª CP**: los delitos leves siguen sin computar como regla general para reincidencia, **salvo cuando formen parte de un tipo agravado por multirreincidencia de delitos leves**. Esto significa que los antecedentes leves pueden tener mucho más peso si forman parte de un patrón de reiteración.'
+        },
+        {
+          title: 'Hurto de teléfonos móviles: nuevo tipo agravado',
+          content: 'Se añade un nuevo artículo **235.1.10.º CP** que agrava el hurto cuando lo sustraído sea un teléfono móvil, otro dispositivo móvil de comunicación o un dispositivo de almacenamiento masivo de información digital que pueda contener datos personales. Se excluyen los dispositivos a la venta, en almacén o en exposición en establecimientos comerciales. La exposición de motivos reconoce que el hurto de un móvil no solo supone la pérdida del aparato, sino un perjuicio añadido en privacidad, datos, incomunicación, acceso a servicios bancarios y seguridad personal. Se simplifica también el artículo 235.1.4.º para explotaciones agrícolas y ganaderas.'
+        },
+        {
+          title: 'Medidas cautelares reforzadas y legitimación de ayuntamientos',
+          content: 'La reforma modifica los **artículos 13 y 544 bis LECrim**. El art. 13 ahora permite que las primeras diligencias se orienten a evitar la reiteración delictiva, y en delitos por internet el juzgado podrá acordar retirada, interrupción o bloqueo provisional de contenidos. El art. 544 bis permite imponer cautelarmente prohibición de residir, acudir, aproximarse o comunicarse con determinadas personas, con valoración de prisión provisional ante incumplimiento. Además, el nuevo **art. 105.3 LECrim** permite a los ayuntamientos ejercer la acción penal por delitos de hurto del capítulo I del título XIII del libro II del CP.'
+        },
+        {
+          title: 'Otros cambios relevantes',
+          content: 'La reforma también modifica el artículo 250.1.8.º para ajustar la agravación en estafa por antecedentes de delitos menos graves o graves. Añade un artículo 255.3 para castigar la defraudación eléctrica vinculada al abastecimiento de instalaciones utilizadas para cultivo de drogas (art. 368). Y modifica el artículo 568 para incorporar respuesta penal específica al llamado "petaqueo" cuando la sustancia inflamable sea combustible líquido. En conjunto, la diferencia entre antes y ahora es clara: regulación más detallada, más severa y más orientada a cortar la reincidencia desde fases tempranas.'
+        }
+      ],
+      conclusion: 'La Ley Orgánica 1/2026 endurece el tratamiento del hurto leve reiterado y la estafa leve reiterada, da más peso a antecedentes leves, crea un nuevo hurto agravado de teléfonos móviles y refuerza las medidas cautelares. Si te ves afectado por un procedimiento relacionado con multirreincidencia, nuevos subtipos agravados o medidas cautelares, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 100,
+    title: 'Orden Europea de Detención y Entrega (OEDE): Qué Es y Cómo Funciona | STANS',
+    excerpt: 'Guía completa sobre la OEDE o euroorden: qué es, cuándo puede emitirse, procedimiento en España ante la Audiencia Nacional, derechos del reclamado, causas de denegación y defensa.',
+    category: 'Extradiciones',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '20 min',
+    image: '/images/blog/orden-europea-detencion.jpg',
+    slug: 'orden-europea-detencion-entrega-oede-guia',
+    tags: ['OEDE', 'euroorden', 'orden europea de detención', 'Audiencia Nacional', 'extradición', 'cooperación judicial', 'Ley 23/2014', 'entrega judicial'],
+    content: {
+      introduction: 'La Orden Europea de Detención y Entrega (OEDE) o euroorden es el principal mecanismo de cooperación penal entre Estados miembros de la UE para localizar, detener y entregar a una persona reclamada por otro Estado miembro. La Decisión Marco 2002/584/JAI la define como una resolución judicial dictada por un Estado miembro para la detención y entrega por otro Estado miembro. En España, su regulación interna está en la Ley 23/2014, artículos 34 a 62. La OEDE es habitual en causas de narcotráfico, blanqueo, homicidio, criminalidad organizada, fraude, delitos sexuales y corrupción.',
+      sections: [
+        {
+          title: '¿Qué es la OEDE y para qué sirve?',
+          content: 'La OEDE es una resolución judicial, no una mera solicitud policial. Puede emitirse para el ejercicio de acciones penales (si la pena máxima prevista es de al menos 12 meses, art. 37.a Ley 23/2014) o para ejecutar una condena firme (si la pena pendiente es de al menos 4 meses, art. 37.b). En España, emite la OEDE el juez o tribunal que conoce de la causa; la ejecuta el Juez Central de Instrucción de la Audiencia Nacional (art. 35). Para 32 categorías delictivas, la entrega puede acordarse sin control de doble tipificación si la pena máxima en el Estado emisor es de al menos 3 años (art. 47).'
+        },
+        {
+          title: 'Procedimiento paso a paso en España',
+          content: '**1. Detención**: con garantías LECrim, puesta a disposición del Juez Central de Instrucción en máximo 72 horas (art. 50). **2. Información de derechos**: existencia de OEDE, contenido, posibilidad de consentir (irrevocable), resto de derechos. **3. Audiencia**: en 72 horas desde puesta a disposición, con Fiscal, abogado e intérprete (art. 51). **4. Consentimiento u oposición**: si consiente, resolución en 10 días; si no, resolución firme en 60 días desde detención, prorrogables 30 más (art. 54). **5. Entrega**: en 10 días siguientes a la decisión (art. 58), con posibilidad de suspensión por motivos humanitarios o aplazamiento por procesos pendientes.'
+        },
+        {
+          title: 'Causas de denegación obligatoria y facultativa',
+          content: '**Denegación obligatoria** (art. 48): indulto en España por los mismos hechos, sobreseimiento libre, resolución definitiva en otro Estado miembro por los mismos hechos, cosa juzgada en tercer Estado, falta de responsabilidad penal por edad. **Denegación facultativa**: procedimiento penal pendiente en España por el mismo hecho, orden para ejecutar pena y reclamado español o residente (salvo que consienta cumplirla en el Estado emisor), hechos fuera del Estado emisor cuando el Derecho español no permitiría perseguirlos. También puede denegarse por condena dictada en ausencia sin garantías (art. 49).'
+        },
+        {
+          title: 'Derechos del reclamado y principio de especialidad',
+          content: 'Derechos del reclamado: ser informado de la orden, derecho a abogado, a intérprete, a ser oído, a no consentir la entrega, a recurrir y, en ciertos casos, a pedir cumplir la pena en España. El **principio de especialidad** (art. 60) limita la posibilidad de perseguir o condenar a la persona entregada por hechos anteriores distintos de los que motivaron la OEDE, salvo excepciones o autorización adicional. Desde el punto de vista defensivo, este principio delimita el alcance real de la entrega y una renuncia inadvertida puede tener consecuencias graves.'
+        },
+        {
+          title: 'Diferencia entre OEDE y extradición',
+          content: 'La OEDE opera entre Estados miembros de la UE, se basa en reconocimiento mutuo judicial, tiene plazos más breves y está mucho más judicializada. La extradición se aplica normalmente con países terceros, depende de tratados y normativa interna de extradición, y tiene un componente gubernativo más intenso (la Ley 4/1985 permite al Gobierno denegar la extradición aunque el tribunal la declare procedente). En OEDE, para 32 categorías no se exige doble tipificación; en extradición, la doble incriminación es regla central (art. 2 Ley 4/1985). La OEDE permite entregar a nacionales; la Ley 4/1985 prohíbe con carácter general la extradición de españoles (art. 3).'
+        }
+      ],
+      conclusion: 'La OEDE es el instrumento central de cooperación penal en la UE. Su funcionamiento es más rápido que la extradición clásica, pero no elimina el control judicial ni los derechos de defensa. La clave está en la validez formal de la orden, los plazos, las causas de denegación y la estrategia defensiva desde la primera comparecencia. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 101,
+    title: 'Diferencia entre OEDE y Extradición: Claves Jurídicas y Procedimiento | STANS',
+    excerpt: 'Análisis completo de las diferencias entre la Orden Europea de Detención y Entrega (OEDE) y la extradición: ámbito, plazos, autoridad competente, doble tipificación y defensa.',
+    category: 'Extradiciones',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '18 min',
+    image: '/images/blog/oede-vs-extradicion.jpg',
+    slug: 'diferencia-oede-extradicion-claves-juridicas',
+    tags: ['OEDE', 'extradición', 'euroorden', 'cooperación judicial internacional', 'Ley 23/2014', 'Ley 4/1985', 'Audiencia Nacional', 'entrega de nacionales'],
+    content: {
+      introduction: 'La OEDE y la extradición sirven para reclamar a una persona que se encuentra en otro país, pero no son lo mismo. La OEDE funciona dentro de la UE como un mecanismo de cooperación judicial basado en el reconocimiento mutuo (Ley 23/2014, arts. 34-62), mientras que la extradición opera entre España y Estados no miembros, con un componente más marcado de soberanía estatal y decisión gubernativa (Ley 4/1985). Esta diferencia cambia casi todo: autoridad competente, plazos, margen de oposición, doble incriminación, papel del Gobierno y rapidez de la entrega.',
+      sections: [
+        {
+          title: 'Ámbito territorial y fundamento jurídico',
+          content: 'La OEDE solo opera entre Estados miembros de la UE y descansa sobre el reconocimiento mutuo de resoluciones judiciales. La extradición se utiliza con Estados no miembros y se apoya en reciprocidad, tratados internacionales y legislación interna. **Ejemplo**: si España reclama a una persona en Francia, Alemania o Italia, lo normal es OEDE. Si la reclama en Marruecos, México, EE.UU. o Reino Unido, lo habitual será extradición conforme al tratado aplicable y la Ley 4/1985.'
+        },
+        {
+          title: 'Autoridad competente y papel del Gobierno',
+          content: 'En la OEDE, tanto la emisión como la ejecución son esencialmente judiciales: emite el juez o tribunal; ejecuta el Juez Central de Instrucción de la Audiencia Nacional. En extradición pasiva, intervienen el Juzgado Central de Instrucción y la Sala de lo Penal de la AN, pero **el Gobierno tiene la última palabra**: el art. 6 de la Ley 4/1985 permite al Gobierno denegar la extradición por soberanía, reciprocidad, seguridad, orden público u otros intereses esenciales, incluso con auto judicial favorable.'
+        },
+        {
+          title: 'Plazos y doble tipificación',
+          content: '**OEDE**: resolución en 10 días con consentimiento; 60 días sin consentimiento (prorrogables 30); entrega en 10 días. **Extradición**: detención preventiva con 40 días para solicitud formal, fase gubernativa inicial, fase judicial y decisión final del Gobierno. La OEDE es mucho más rápida. En **doble tipificación**: la OEDE no la exige para 32 categorías delictivas si la pena máxima es ≥3 años (art. 47 Ley 23/2014). La extradición sí la exige como regla central (art. 2 Ley 4/1985).'
+        },
+        {
+          title: 'Entrega de nacionales y condena en ausencia',
+          content: 'En **extradición**, la Ley 4/1985 (art. 3) establece que no se concederá la extradición de españoles. En **OEDE**, España puede entregar a un español, aunque en ciertos supuestos de ejecución de pena la ley permite denegar para que cumpla en España. En **condena en ausencia**: en extradición se condiciona a garantías de nuevo juicio (art. 2 Ley 4/1985). En OEDE, la Ley 23/2014 regula específicamente la posible denegación cuando la resolución se dictó en ausencia, salvo garantías de citación personal, defensa letrada efectiva o derecho a nuevo juicio.'
+        },
+        {
+          title: 'Procedimiento de extradición pasiva en España',
+          content: '**1. Solicitud** del Estado requirente por vía diplomática (art. 7 Ley 4/1985). **2. Detención preventiva**: en urgencia, con puesta a disposición del Juzgado Central de Instrucción en 24 horas; si en 40 días no se presenta solicitud formal, la prisión queda sin efecto. **3. Fase gubernativa**: el Ministerio de Justicia eleva propuesta al Gobierno sobre si procede continuar en vía judicial. **4. Fase judicial**: comparecencia con abogado e intérprete ante la Audiencia Nacional. **5. Decisión final del Gobierno**: si el tribunal declara procedente, el Gobierno aún puede denegar; si deniega, no cabe recurso.'
+        }
+      ],
+      conclusion: 'La diferencia entre OEDE y extradición afecta a todo: quién decide, cuánto tarda, qué motivos de oposición existen, si se exige doble tipificación, qué ocurre con los nacionales y cómo debe plantearse la defensa. Un error inicial puede ser muy difícil de corregir. Si necesitas asesoramiento por una euroorden o una extradición pasiva, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 102,
+    title: 'Delito de Blanqueo de Capitales en España: Qué Es, Penas y Defensa Penal | STANS',
+    excerpt: 'Guía completa sobre el delito de blanqueo de capitales en España: artículos 301-304 CP, elementos del tipo, penas de hasta 6 años, decomiso ampliado y estrategia de defensa.',
+    category: 'Derecho Penal Económico',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '20 min',
+    image: '/images/blog/blanqueo-capitales-delito.jpg',
+    slug: 'delito-blanqueo-capitales-espana-penas-defensa',
+    tags: ['blanqueo de capitales', 'delito blanqueo', 'art. 301 CP', 'decomiso', 'decomiso ampliado', 'persona jurídica', 'imprudencia grave', 'Ley 10/2010'],
+    content: {
+      introduction: 'El delito de blanqueo de capitales se persigue cuando una persona adquiere, posee, utiliza, convierte o transmite bienes sabiendo que proceden de una actividad delictiva, o cuando realiza actos para ocultar su origen ilícito. El artículo 301 del Código Penal es el núcleo del tipo. Aparece en investigaciones patrimoniales, operaciones inmobiliarias, movimientos bancarios sin justificación, uso de testaferros, sociedades interpuestas e ingresos fraccionados. La Ley 10/2010 complementa el marco preventivo.',
+      sections: [
+        {
+          title: 'Elementos del delito de blanqueo de capitales',
+          content: 'Son cinco elementos esenciales: **1. Bienes o activos**: dinero, saldos bancarios, inmuebles, vehículos, participaciones, criptoactivos. **2. Origen en actividad delictiva**: tráfico de drogas, fraude, corrupción, trata, delitos urbanísticos, etc. **3. Conducta típica**: adquirir, poseer, utilizar, convertir, transmitir (art. 301.1) u ocultar la verdadera naturaleza, origen, ubicación, destino o titularidad (art. 301.2). **4. Conocimiento del origen ilícito**: saber que los bienes proceden de actividad delictiva (elemento subjetivo más discutido). **5. Dolo o imprudencia grave**: el art. 301.3 también castiga el blanqueo por imprudencia grave.'
+        },
+        {
+          title: 'Tipos de blanqueo y penas',
+          content: '**Blanqueo doloso básico (art. 301)**: prisión 6 meses-6 años y multa del tanto al triplo, más inhabilitación 1-3 años y clausura de establecimiento. **Agravado por origen en tráfico de drogas (arts. 368-372)**: pena en mitad superior. **Por imprudencia grave (art. 301.3)**: prisión 6 meses-2 años y multa del tanto al triplo. **En organización o sujetos obligados (art. 302)**: mitad superior para miembros, grado superior para jefes; mitad superior para sujetos obligados por Ley 10/2010. **Persona jurídica (art. 302.2)**: multa 2-5 años si pena >5 años prisión, o multa 6 meses-2 años. **Inhabilitación agravada (art. 303)**: 3-10 años para profesionales, 10-20 años para autoridades.'
+        },
+        {
+          title: 'Decomiso y consecuencias patrimoniales',
+          content: 'Además de la pena de prisión, pueden imponerse: **decomiso de ganancias** (art. 301.5 y art. 127); **decomiso ampliado** (art. 127 bis) cuando concurran indicios objetivos de origen delictivo y no se acredite origen lícito, considerando desproporción patrimonial, ocultación de titularidad y transferencias sin justificación; **decomiso por valor equivalente** (art. 127 septies); y **embargo desde primeras diligencias** (art. 127 octies). El art. 301.4 permite castigar el blanqueo aunque el delito previo se haya cometido total o parcialmente en el extranjero. Muchas veces el impacto real no está solo en la pena sino en la pérdida patrimonial.'
+        },
+        {
+          title: 'Blanqueo en el ámbito empresarial',
+          content: 'El blanqueo aparece de forma recurrente en: compraventa de inmuebles, sociedades instrumentales, operaciones sin lógica económica, movimientos de efectivo y estructuras con titulares interpuestos. La Ley 10/2010 impone obligaciones preventivas a sujetos obligados (entidades financieras, abogados, notarios, auditores, asesores fiscales, inmobiliarias). Cuando intervienen profesionales sometidos a deberes de prevención, la estrategia penal examina controles internos, diligencia empleada y grado de conocimiento real o imprudencia grave. Los procedimientos suelen implicar documentación bancaria, análisis contable, comisiones rogatorias y medidas cautelares patrimoniales.'
+        },
+        {
+          title: 'Estrategia de defensa penal',
+          content: '**1. Discutir el origen delictivo**: sin origen delictivo no hay blanqueo; cuestionar si está acreditado o solo hay sospechas. **2. Combatir el conocimiento**: el tipo doloso exige saber que los bienes proceden de delito; si no se prueba, la acusación pierde consistencia. **3. Justificar la lógica económica**: acreditar documentalmente cada operación cuestionada. **4. Controlar el frente del decomiso**: defender patrimonio frente a decomisos ampliados basados en indicios de desproporción. **5. Individualizar cada interviniente**: no es lo mismo autor del delito previo que tercero adquirente, administrador, profesional o persona jurídica.'
+        }
+      ],
+      conclusion: 'El blanqueo de capitales es una figura compleja con enorme trascendencia práctica. Permite una respuesta patrimonial muy intensa mediante decomiso, embargo temprano y responsabilidad de personas jurídicas. Si necesitas asesoramiento por blanqueo de capitales, embargo de bienes u operaciones patrimoniales cuestionadas, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 103,
+    title: 'Delito de Falsedad Documental en España: Tipos, Penas y Casos Frecuentes | STANS',
+    excerpt: 'Guía completa sobre el delito de falsedad documental: artículos 390-399 bis CP, tipos de documento, penas de hasta 6 años, diferencia con estafa y estrategia de defensa.',
+    category: 'Derecho Penal Económico',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '19 min',
+    image: '/images/blog/falsedad-documental-delito.jpg',
+    slug: 'delito-falsedad-documental-espana-tipos-penas',
+    tags: ['falsedad documental', 'documento falso', 'art. 390 CP', 'documento público', 'documento privado', 'uso documento falso', 'estafa', 'certificado falso'],
+    content: {
+      introduction: 'El delito de falsedad documental es una de las figuras más relevantes del Derecho Penal económico y patrimonial en España. Puede aparecer en contratos, facturas, certificados, nóminas, justificantes bancarios, documentos oficiales, escrituras, documentos mercantiles o en la utilización posterior de un documento falso. El Código Penal lo regula en los artículos 390 a 399 bis, distinguiendo entre documento público, oficial, mercantil y privado.',
+      sections: [
+        {
+          title: 'Elementos del delito de falsedad documental',
+          content: '**1. Documento con relevancia jurídica**: público, oficial, mercantil o privado (contratos, facturas, nóminas, certificados, escrituras, tarjetas bancarias). **2. Alteración, simulación o contenido falso**: alterar elementos esenciales, simular un documento, suponer intervención de personas inexistentes, faltar a la verdad (art. 390). **3. Aptitud para inducir a error**: la falsedad debe ser idónea para engañar sobre autenticidad o contenido (art. 390.1.2.º). **4. Intención dolosa**: conocimiento y voluntad de alterar o usar el documento falso. **5. Relevancia penal**: no toda inexactitud constituye delito, la alteración debe afectar a extremos esenciales.'
+        },
+        {
+          title: 'Tipos de falsedad y penas',
+          content: '**Por funcionario en documento público/oficial/mercantil (art. 390)**: prisión 3-6 años, multa 6-24 meses, inhabilitación 2-6 años. **Por particular en documento público/oficial/mercantil (art. 392)**: prisión 6 meses-3 años, multa 6-12 meses; agravada en organización criminal. **Uso de documento falso (art. 393)**: pena inferior en grado a la del falsificador. **En documento privado (art. 395)**: prisión 6 meses-2 años, solo para perjudicar a otro. **Certificados falsos (arts. 397-398)**: multa 3-12 meses (facultativo) o suspensión (funcionario). **Tarjetas e instrumentos de pago (art. 399 bis)**: penas específicas con agravaciones por organización.'
+        },
+        {
+          title: 'Diferencia entre falsedad documental y estafa',
+          content: 'La falsedad protege la autenticidad del tráfico jurídico documental; la estafa protege el patrimonio frente al engaño. La falsedad puede existir sin perjuicio económico; la estafa exige engaño con desplazamiento patrimonial. **Ejemplo de falsedad sin estafa**: crear una factura falsa que nunca se presenta ni produce pago. **Ejemplo de estafa con falsedad**: presentar una factura falsa para cobrar una cantidad y conseguir efectivamente el pago. No toda falsedad implica estafa, pero muchas estafas se apoyan en documentos falsos. La correcta calificación cambia la pena y la estrategia procesal.'
+        },
+        {
+          title: 'Casos frecuentes',
+          content: '**Nóminas alteradas para obtener financiación**: manipular ingresos o antigüedad para aparentar solvencia ante un banco. **Facturas falsas**: justificar gastos inexistentes o generar apariencia de operaciones no realizadas. **Certificados falsos**: médicos, laborales, académicos. **Firmas imitadas o documentos simulados**: en contratos, autorizaciones, reconocimientos de deuda. **Uso en juicio o ante administración**: tiene relevancia penal autónoma (art. 393 o 396). En ámbito empresarial: facturación simulada, documentación contable alterada, soporte documental de operaciones inexistentes, con posible concurso con estafa, delito fiscal, blanqueo o administración desleal.'
+        },
+        {
+          title: 'Defensa penal',
+          content: '**1. Discutir si existe verdadera falsedad penal**: no toda inexactitud o irregularidad constituye delito. **2. Cuestionar la autoría**: en muchos procedimientos no se puede acreditar con claridad quién manipuló el documento. **3. Analizar la naturaleza del documento**: la calificación cambia mucho según sea público, oficial, mercantil o privado. **4. Revisar el perjuicio exigido**: en documento privado (art. 395) se exige finalidad de perjudicar a otro. **5. Atacar el uso consciente**: en uso de documento falso, debe acreditarse que el acusado actuó a sabiendas de la falsedad. La prueba pericial documental (caligráfica, grafística, informática) suele ser el eje del procedimiento.'
+        }
+      ],
+      conclusion: 'La falsedad documental tiene enorme relevancia práctica porque afecta a la seguridad del tráfico jurídico. El Código Penal sanciona no solo la falsificación material sino también el uso de documentos falsos y la falsificación de certificados o instrumentos de pago. Si necesitas asesoramiento por falsedad documental, uso de documento falso o documentos cuestionados, contar con un abogado penalista especializado es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 104,
+    title: 'Cómo Oponerse a una OEDE en España: Motivos de Defensa y Estrategia | STANS',
+    excerpt: 'Guía práctica para oponerse a una Orden Europea de Detención y Entrega en España: causas de denegación, condena en ausencia, doble tipificación, plazos y estrategia de defensa.',
+    category: 'Extradiciones',
+    author: 'Equipo STANS Abogados',
+    date: '2026-03-30',
+    readTime: '19 min',
+    image: '/images/blog/oponerse-oede-defensa.jpg',
+    slug: 'como-oponerse-oede-espana-defensa-estrategia',
+    tags: ['OEDE', 'euroorden', 'oposición euroorden', 'denegación OEDE', 'condena en ausencia', 'Audiencia Nacional', 'defensa euroorden', 'cooperación judicial'],
+    content: {
+      introduction: 'Oponerse a una OEDE en España exige actuar con rapidez y con una estrategia jurídica precisa. La euroorden no significa entrega automática: la Ley 23/2014 prevé causas de denegación obligatoria y facultativa, garantías para condenas en ausencia y derechos procesales claros. La persona detenida debe ser puesta a disposición judicial en máximo 72 horas y la audiencia debe celebrarse en las 72 horas siguientes. Este artículo explica los motivos de defensa y la estrategia procesal más eficaz.',
+      sections: [
+        {
+          title: 'Causas de denegación obligatoria',
+          content: 'La Ley 23/2014 obliga a denegar la OEDE cuando: **indulto en España** por los mismos hechos y España tenía jurisdicción; **sobreseimiento libre** acordado en España por los mismos hechos; **cosa juzgada en otro Estado miembro** con pena cumplida, cumpliéndose o no ejecutable; **cosa juzgada en tercer Estado** en condiciones equivalentes; o **falta de responsabilidad penal por edad** conforme al Derecho español. La defensa debe acreditar documentalmente estas causas con la máxima rapidez, aportando resoluciones, certificaciones o datos procesales sólidos.'
+        },
+        {
+          title: 'Causas de denegación facultativa',
+          content: 'España puede denegar la OEDE cuando: **procedimiento penal pendiente en España** por el mismo hecho; **OEDE para ejecutar pena y reclamado español, residente o habitante en España** (salvo que consienta cumplirla en el Estado emisor; en otro caso, deberá cumplirla en España); o **hechos fuera del Estado emisor** cuando el Derecho español no permitiría perseguirlos extraterritorialmente. Estas causas no operan solas: hay que convencer al juez con argumentación sobre arraigo, residencia estable, vínculos personales y cumplimiento en España.'
+        },
+        {
+          title: 'Condena en ausencia y doble tipificación',
+          content: '**Condena en ausencia**: la Ley 23/2014 permite denegar si el reclamado no compareció personalmente en el juicio, salvo que la OEDE acredite: citación personal con conocimiento de fecha y lugar, designación de abogado que le defendió, o derecho a nuevo juicio con revisión del fondo y nueva prueba. La defensa debe examinar minuciosamente la documentación del Estado emisor. **Doble tipificación**: para 32 categorías, no se controla si la pena máxima es ≥3 años. Fuera de ellas, la entrega puede supeditarse a que los hechos sean delito en España. Importa mucho cómo están descritos los hechos, no solo la etiqueta del delito.'
+        },
+        {
+          title: 'Validez formal y principio de especialidad',
+          content: 'La OEDE debe contener: identidad y nacionalidad del reclamado, autoridad emisora, referencia a la sentencia o resolución ejecutiva, tipificación legal, descripción de hechos con tiempo, lugar y participación, y pena impuesta o escala aplicable (art. 36). Si faltan datos esenciales o hay incongruencias, la defensa puede cuestionar la ejecución. El **principio de especialidad** (art. 60) limita la persecución por hechos distintos a los que motivaron la entrega. Consentir sin valorar esto puede ser un error grave. A veces la mejor defensa no es una denegación total sino preservar este principio.'
+        },
+        {
+          title: 'Estrategia de defensa práctica',
+          content: '**No consentir a la ligera**: el consentimiento es irrevocable; revisar antes validez, causas de denegación, situación procesal y consecuencias reales. **Valorar entrega condicionada, suspendida o aplazada**: a veces más útil que oposición total (pena perpetua con garantía de revisión, español devuelto para cumplir en España, suspensión humanitaria, aplazamiento por procesos pendientes). **Revisar documentación del Estado emisor**: formulario OEDE, resolución base, datos de notificación, descripción de hechos, categoría, pena aplicable. **Construir oposición con prueba documental**: no basta retórica, hay que acreditar residencia, cosa juzgada, defectos formales. **Proteger situación personal**: medidas durante tramitación, prisión provisional u otras restricciones.'
+        }
+      ],
+      conclusion: 'Oponerse a una OEDE es posible pero exige defensa técnica, rápida y bien orientada. La clave está en las primeras horas: decidir si se consiente, revisar documentación, detectar defectos, invocar causas correctas y proteger la situación personal. Si necesitas asesoramiento por una OEDE o detención por euroorden, contar con un abogado penalista especializado en cooperación judicial internacional es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
   }
 ];
 
@@ -3901,7 +4169,16 @@ export const allBlogSlugs = [
   'homicidio-imprudencia-grave-accidente-trafico',
   'suspension-sustitucion-penas-prision-espana',
   'falsedad-documental-espana-tipos-penas',
-  'orden-europea-investigacion-oei-materia-penal'
+  'orden-europea-investigacion-oei-materia-penal',
+
+  // NUEVOS BLOGS MARZO 2026 - Segunda tanda
+  'amenazas-coacciones-espana-diferencias-penas',
+  'ley-organica-1-2026-multirreincidencia-hurtos-estafas',
+  'orden-europea-detencion-entrega-oede-guia',
+  'diferencia-oede-extradicion-claves-juridicas',
+  'delito-blanqueo-capitales-espana-penas-defensa',
+  'delito-falsedad-documental-espana-tipos-penas',
+  'como-oponerse-oede-espana-defensa-estrategia'
 ];
 
 // Función helper para obtener un post por slug
