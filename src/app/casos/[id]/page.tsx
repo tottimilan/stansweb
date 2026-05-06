@@ -27,7 +27,8 @@ const getTranslatedCategoria = (categoria: string, language: string) => {
       'Ejecución penal': 'التنفيذ الجنائي',
       'Delitos contra la vida': 'الجرائم ضد الحياة',
       'Pertenencia a organización criminal': 'الانتماء لمنظمة إجرامية',
-      'Delitos contra la integridad física': 'الجرائم ضد السلامة الجسدية'
+      'Delitos contra la integridad física': 'الجرائم ضد السلامة الجسدية',
+      'Delitos sexuales': 'الجرائم الجنسية'
     },
     en: {
       'Delitos de odio y libertad de expresión': 'Hate crimes and freedom of expression',
@@ -44,7 +45,8 @@ const getTranslatedCategoria = (categoria: string, language: string) => {
       'Ejecución penal': 'Criminal enforcement',
       'Delitos contra la vida': 'Crimes against life',
       'Pertenencia a organización criminal': 'Membership in criminal organization',
-      'Delitos contra la integridad física': 'Crimes against physical integrity'
+      'Delitos contra la integridad física': 'Crimes against physical integrity',
+      'Delitos sexuales': 'Sexual offenses'
     },
     fr: {
       'Delitos de odio y libertad de expresión': 'Crimes de haine et liberté d\'expression',
@@ -61,7 +63,8 @@ const getTranslatedCategoria = (categoria: string, language: string) => {
       'Ejecución penal': 'Exécution pénale',
       'Delitos contra la vida': 'Crimes contre la vie',
       'Pertenencia a organización criminal': 'Appartenance à une organisation criminelle',
-      'Delitos contra la integridad física': 'Crimes contre l\'intégrité physique'
+      'Delitos contra la integridad física': 'Crimes contre l\'intégrité physique',
+      'Delitos sexuales': 'Délits sexuels'
     }
   };
   return maps[language]?.[categoria] || categoria;
@@ -287,7 +290,7 @@ const getTranslatedOrgano = (organo: string, language: string) => {
   return maps[language]?.[organo] || organo;
 };
 
-import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown, Tv, Play, Newspaper } from 'lucide-react'
+import { ArrowLeft, Calendar, MapPin, FileText, Shield, Gavel, Scale, LinkIcon, CheckCircle, AlertTriangle, ImageIcon, ExternalLink, Clock, Award, Users, Globe, ChevronDown, Tv, Play, Newspaper, Volume2 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/FooterOptimized'
 import CasoSEOContent from '@/components/CasoSEOContent'
@@ -1164,27 +1167,49 @@ export default function CasoDetailPage() {
                            <FileText className="w-5 h-5" />
                            Documentos del Expediente:
                          </h3>
-                         <div className="bg-emerald-900/10 border border-emerald-500/20 rounded-lg p-4">
-                           <a
-                             href={caso.contenido.enlaces}
-                             target="_blank"
-                             rel="noopener noreferrer"
-                             className="flex items-start gap-3 hover:bg-emerald-900/20 -m-2 p-2 rounded-lg transition-colors"
-                           >
-                             <FileText className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
-                             <div className="flex-1">
-                               <h4 className="text-gold font-medium mb-1 hover:text-apricot transition-colors">
-                                 {caso.contenido.imagenes || 'Documento judicial'}
-                               </h4>
-                               <p className="text-xs text-offwhite/60 mb-2">
-                                 Auto de {caso.tipo_resolucion} • {caso.fecha}
-                               </p>
-                               <div className="flex items-center gap-2 text-sm text-emerald-400">
-                                 <ExternalLink className="w-4 h-4" />
-                                 Ver documento completo (PDF)
+                         <div className="space-y-3">
+                           {caso.contenido.enlaces.split('\n').filter((e: string) => e.trim()).map((enlace: string, idx: number) => {
+                             const trimmed = enlace.trim();
+                             const isAudio = /\.(mp3|mpeg|ogg|wav|m4a)$/i.test(trimmed);
+                             const isPdf = /\.pdf$/i.test(trimmed);
+                             return (
+                               <div key={idx} className="bg-emerald-900/10 border border-emerald-500/20 rounded-lg p-4">
+                                 {isAudio ? (
+                                   <div>
+                                     <div className="flex items-center gap-3 mb-3">
+                                       <Volume2 className="w-5 h-5 text-gold flex-shrink-0" />
+                                       <h4 className="text-gold font-medium">Audio – Cobertura en radio</h4>
+                                     </div>
+                                     <audio controls className="w-full" preload="metadata">
+                                       <source src={trimmed} type={trimmed.endsWith('.mpeg') ? 'audio/mpeg' : `audio/${trimmed.split('.').pop()}`} />
+                                       Tu navegador no soporta el elemento de audio.
+                                     </audio>
+                                   </div>
+                                 ) : (
+                                   <a
+                                     href={trimmed}
+                                     target="_blank"
+                                     rel="noopener noreferrer"
+                                     className="flex items-start gap-3 hover:bg-emerald-900/20 -m-2 p-2 rounded-lg transition-colors"
+                                   >
+                                     <FileText className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                                     <div className="flex-1">
+                                       <h4 className="text-gold font-medium mb-1 hover:text-apricot transition-colors">
+                                         {idx === 0 && caso.contenido?.imagenes ? caso.contenido.imagenes : (isPdf ? 'Documento judicial (PDF)' : 'Documento')}
+                                       </h4>
+                                       <p className="text-xs text-offwhite/60 mb-2">
+                                         {caso.tipo_resolucion} • {caso.fecha}
+                                       </p>
+                                       <div className="flex items-center gap-2 text-sm text-emerald-400">
+                                         <ExternalLink className="w-4 h-4" />
+                                         {isPdf ? 'Ver documento completo (PDF)' : 'Ver documento'}
+                                       </div>
+                                     </div>
+                                   </a>
+                                 )}
                                </div>
-                             </div>
-                           </a>
+                             );
+                           })}
                          </div>
                        </div>
                      )}

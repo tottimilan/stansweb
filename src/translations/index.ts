@@ -330,7 +330,8 @@ export const translations = {
         ejecucionPenal: 'Ejecución penal',
         delitosVida: 'Delitos contra la vida',
         organizacionCriminal: 'Pertenencia a organización criminal',
-        delitosIntegridad: 'Delitos contra la integridad física'
+        delitosIntegridad: 'Delitos contra la integridad física',
+        delitosSexuales: 'Delitos sexuales'
       },
       casos: {
         verDetalles: 'Ver detalles',
@@ -1177,7 +1178,8 @@ export const translations = {
         ejecucionPenal: 'التنفيذ الجنائي',
         delitosVida: 'الجرائم ضد الحياة',
         organizacionCriminal: 'الانتماء لمنظمة إجرامية',
-        delitosIntegridad: 'الجرائم ضد السلامة الجسدية'
+        delitosIntegridad: 'الجرائم ضد السلامة الجسدية',
+        delitosSexuales: 'الجرائم الجنسية'
       },
       casos: {
         verDetalles: 'عرض التفاصيل',
@@ -2739,7 +2741,8 @@ export const translations = {
         delitosVida: 'Crimes against life',
         organizacionCriminal: 'Membership in criminal organization',
         cibercrimen: 'Cybercrime and new technologies',
-        delitosIntegridad: 'Crimes against integrity and moral freedom'
+        delitosIntegridad: 'Crimes against integrity and moral freedom',
+        delitosSexuales: 'Sexual offenses'
       },
       camposCasos: {
         categoria: 'Category',
@@ -3409,7 +3412,8 @@ export const translations = {
         delitosVida: 'Crimes contre la vie',
         organizacionCriminal: 'Appartenance à organisation criminelle',
         cibercrimen: 'Cybercriminalité et nouvelles technologies',
-        delitosIntegridad: 'Crimes contre l\'intégrité et liberté morale'
+        delitosIntegridad: 'Crimes contre l\'intégrité et liberté morale',
+        delitosSexuales: 'Délits sexuels'
       },
       camposCasos: {
         categoria: 'Catégorie',

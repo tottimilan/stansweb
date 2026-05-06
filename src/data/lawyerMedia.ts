@@ -44,6 +44,25 @@ export const lawyerMediaData: LawyerMedia[] = [
         platform: 'YouTube - La Hora de Padri',
         thumbnail: 'https://img.youtube.com/vi/q6Ut_P8wioE/maxresdefault.jpg',
         date: '2024'
+      },
+      {
+        id: 'tv-canalsur-hoy-en-dia-2026',
+        type: 'tv',
+        title: 'Canal Sur - Hoy en Día (30/04/2026)',
+        description: 'Intervención de Rubén Vaquero en el programa "Hoy en Día" de Canal Sur, analizando el caso de Abderrahim Akkouh y la actuación policial en Torrejón de Ardoz. La intervención del despacho comienza a partir del minuto 2:07:00 del programa, donde se aborda la defensa de la familia, la valoración de las pruebas videográficas y los aspectos jurídicos del procedimiento abierto contra los agentes implicados.',
+        url: 'https://www.canalsurmas.es/videos/356652-hoy-en-dia-30042026',
+        platform: 'Canal Sur Más - Hoy en Día',
+        startTime: 7620,
+        date: '30 Abr 2026'
+      },
+      {
+        id: 'prensa-arainfo-abderrahim-2026',
+        type: 'prensa',
+        title: 'AraInfo - "A Abderrahim no nos lo devuelve nadie, pero podemos significarlo"',
+        description: 'Entrevista en AraInfo (Diario Libre d\'Aragón) a Rubén Vaquero, abogado de la familia de Abderrahim Akkouh, sobre el caso del joven de 36 años fallecido en Torrejón de Ardoz tras una intervención policial. Vaquero explica las líneas de trabajo judicial, la tesis de la "muerte violenta por homicidio" sostenida por la defensa, la criminalización de las personas migrantes y el papel de los medios en la deshumanización de la víctima.',
+        url: 'https://arainfo.org/ruben-vaquero-a-abderrahim-no-nos-lo-devuelve-nadie-pero-podemos-significarlo/',
+        platform: 'AraInfo · Diario Libre d\'Aragón',
+        date: '6 May 2026'
       }
     ]
   },

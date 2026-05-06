@@ -33,7 +33,8 @@ const getCategorias = (t: any) => [
   t.casos.categorias.ejecucionPenal,
   t.casos.categorias.delitosVida,
   t.casos.categorias.organizacionCriminal,
-  t.casos.categorias.delitosIntegridad
+  t.casos.categorias.delitosIntegridad,
+  t.casos.categorias.delitosSexuales
 ];
 
 // Funciones de traducción multiidioma para casos
@@ -298,7 +299,8 @@ const getTranslatedCategory = (categoria: string, language: string, t: any) => {
     'Ejecución penal': t.casos.categorias.ejecucionPenal,
     'Delitos contra la vida': t.casos.categorias.delitosVida,
     'Pertenencia a organización criminal': t.casos.categorias.organizacionCriminal,
-    'Delitos contra la integridad física': t.casos.categorias.delitosIntegridad
+    'Delitos contra la integridad física': t.casos.categorias.delitosIntegridad,
+    'Delitos sexuales': t.casos.categorias.delitosSexuales
   };
 
   return categoryMap[categoria] || categoria;
@@ -408,6 +410,7 @@ export default function CasosPage() {
     if (categoriaTraducida === t.casos.categorias.delitosVida) return 'delitos-vida';
     if (categoriaTraducida === t.casos.categorias.organizacionCriminal) return 'organizacion-criminal';
     if (categoriaTraducida === t.casos.categorias.delitosIntegridad) return 'delitos-integridad';
+    if (categoriaTraducida === t.casos.categorias.delitosSexuales) return 'delitos-sexuales';
     return 'todos';
   };
 

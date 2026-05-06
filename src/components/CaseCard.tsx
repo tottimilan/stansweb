@@ -60,7 +60,11 @@ const caseIdToSlug: { [key: number]: string } = {
   17: 'sobreseimiento-robo-fuerza-navalcarnero',
   18: 'ejecuciones-penales-revocacion-requisitorias',
   19: 'abderrahim-akkouh-homicidio-torrejon',
-  20: 'operacion-bop-trafico-drogas'
+  20: 'operacion-bop-trafico-drogas',
+  21: 'sobreseimiento-robo-violencia-pozuelo',
+  22: 'club-espejos-azules-sobreseimiento-cannabis',
+  23: 'operacion-antiterrorista-ceuta-libertad-provisional',
+  24: 'absolucion-agresion-sexual-villarrubia-ciudad-real'
 };
 
 const getCaseUrl = (caso: Case) => {
@@ -86,7 +90,8 @@ const getTranslatedCategory = (categoria: string, language: string, t: any) => {
     'Ejecución penal': t.casos.categorias.ejecucionPenal,
     'Delitos contra la vida': t.casos.categorias.delitosVida,
     'Pertenencia a organización criminal': t.casos.categorias.organizacionCriminal,
-    'Delitos contra la integridad física': t.casos.categorias.delitosIntegridad
+    'Delitos contra la integridad física': t.casos.categorias.delitosIntegridad,
+    'Delitos sexuales': t.casos.categorias.delitosSexuales
   };
 
   return categoryMap[categoria] || categoria;

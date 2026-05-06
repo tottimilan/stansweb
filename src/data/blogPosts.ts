@@ -4029,6 +4029,200 @@ export const blogPosts: BlogPost[] = [
       ],
       conclusion: 'Oponerse a una OEDE es posible pero exige defensa técnica, rápida y bien orientada. La clave está en las primeras horas: decidir si se consiente, revisar documentación, detectar defectos, invocar causas correctas y proteger la situación personal. Si necesitas asesoramiento por una OEDE o detención por euroorden, contar con un abogado penalista especializado en cooperación judicial internacional es esencial. En STANS Abogados te asesoramos. Contacta con nosotros.'
     }
+  },
+  {
+    id: 105,
+    title: 'CBD para Consumo Propio en España: Legalidad, Multa y Defensa | STANS',
+    excerpt: 'Guía sobre CBD y consumo propio en España: diferencia con el THC, flores de CBD, marco regulatorio AESAN/AEMPS, importancia de factura y envoltorio, y defensa penal si te interceptan en la calle.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-04-08',
+    readTime: '14 min',
+    image: '/images/blog/cbd-consumo-propio-defensa.jpg',
+    slug: 'cbd-autoconsumo-espana-defensa-penal',
+    tags: ['CBD', 'cannabidiol', 'consumo propio', 'autoconsumo', 'flores CBD', 'THC', 'AESAN', 'AEMPS', 'salud pública', 'tráfico drogas'],
+    content: {
+      introduction: 'El CBD o cannabidiol genera muchas dudas en España porque no se trata igual que otras sustancias como la cocaína, el MDMA o el cannabis con alto contenido en THC. La principal confusión está en distinguir entre el CBD como cannabinoide no psicoactivo, los productos que lo contienen, la presencia o no de THC y el formato (aceite, flor, cosmético, alimento o preparado sanitario). Cuando una persona es interceptada en la calle con un producto etiquetado como CBD, la cuestión jurídica no siempre es sencilla. La AESAN ha reiterado en 2026 que el cannabidiol sigue tratándose como nuevo alimento en la Unión Europea y que persisten incertidumbres sobre su seguridad, mientras que la AEMPS dispone de un marco específico para preparados estandarizados de cannabis de uso médico.',
+      sections: [
+        {
+          title: '¿Llevar CBD en la calle es delito?',
+          content: 'No necesariamente. El CBD no se trata igual que el THC y el análisis depende del producto concreto y de su composición real. El **Plan Nacional sobre Drogas** recuerda que la mera posesión de drogas por sí sola no es constitutiva de delito siempre que no se destine al tráfico ilegal, y con el CBD la cuestión previa suele ser todavía más básica: determinar si el producto intervenido es realmente un producto de CBD, si contiene THC y en qué proporción. Lo relevante es: **qué sustancia contiene realmente**, **si hay THC y en qué cantidad**, **qué formato tiene el producto** y **si existe algún indicio de venta o distribución**. Muchas veces el problema no es tanto penal como de calificación del producto y de encaje regulatorio.'
+        },
+        {
+          title: 'CBD y THC: por qué importa diferenciarlos',
+          content: 'El cannabidiol (CBD) es uno de los cannabinoides presentes en la planta de cannabis, pero no se identifica con el THC, principal compuesto psicoactivo. La AESAN ha señalado en 2026 que el CBD sigue bajo el marco de los nuevos alimentos en la UE y que la EFSA mantiene importantes incertidumbres sobre su seguridad. En términos prácticos: un producto con CBD **no equivale automáticamente a un producto ilícito**, pero **tampoco todo producto etiquetado como "CBD" está libre de problemas jurídicos**, y la presencia de THC puede cambiar por completo la valoración del caso. La diferencia entre CBD y THC no es una cuestión menor de etiquetado: puede ser determinante para saber si estamos ante un producto comercial discutible, intervenible por dudas regulatorias o un verdadero problema penal.'
+        },
+        {
+          title: 'CBD para consumo propio: cuándo puede defenderse',
+          content: '**1. Producto destinado al uso personal**: cantidad reducida, sin signos de fraccionamiento comercial y sin indicios de venta refuerza la idea de uso propio. **2. Ausencia de indicios de venta**: la falta de múltiples unidades preparadas, dinero fraccionado, listados de clientes, mensajes de venta o básculas reduce el riesgo de que el caso se construya como tráfico. **3. Importancia de la composición real**: con el CBD, más que en otras sustancias, la defensa debe fijarse en la analítica. No basta con que el envase diga "CBD"; lo relevante es qué contiene realmente y si hay o no THC. Las **flores de CBD** son uno de los formatos más conflictivos porque su aspecto es similar al cannabis tradicional y su tratamiento práctico es más problemático que el de cosméticos o aceites.'
+        },
+        {
+          title: 'CBD en alimentos, cosméticos y uso terapéutico',
+          content: '**CBD en alimentos**: la AESAN informó en 2026 que el CBD sigue siendo un nuevo alimento no autorizado en la UE si se utiliza como tal o se añade a aceites u otros productos alimentarios, salvo autorización conforme al régimen de nuevos alimentos. Solo ciertos alimentos derivados de semillas de cáñamo tienen historial de consumo seguro. **CBD en cosmética**: siguen una lógica regulatoria distinta supervisada por AEMPS; el análisis del caso depende de si cumple la normativa específica. **CBD con fines médicos**: España dispone de regulación para preparados estandarizados de cannabis bajo control de AEMPS, con registro específico. Esto no equivale a una autorización general de cualquier producto de CBD de venta libre, pero sí muestra que existe un canal sanitario oficial para ciertos preparados con cannabinoides.'
+        },
+        {
+          title: 'Importancia de conservar la factura y el envoltorio',
+          content: 'En supuestos relacionados con CBD es muy importante **conservar la factura de compra, el ticket, el pedido del comercio electrónico, el justificante de pago y el envase original**. Estos elementos permiten acreditar dónde se compró el producto, qué era, cómo estaba etiquetado, cuál era su composición declarada y que se adquirió como producto comercializado y no como sustancia preparada para distribución ilícita. Si compras CBD, conviene conservar: la factura o ticket, el correo de confirmación del pedido si fue online, el justificante de pago y el envase completo con su etiquetado. Cuando el producto aparece fuera de su envoltorio original y sin justificante de compra, la explicación del caso se complica. Esta documentación puede tener un valor defensivo decisivo para discutir cualquier interpretación automática sobre su naturaleza o destino.'
+        },
+        {
+          title: 'Cómo reducir el riesgo legal si te pillan con CBD',
+          content: '**1. Acreditar qué producto es realmente**: la defensa debe exigir claridad sobre composición, porcentaje de cannabinoides, presencia de THC y categoría real del producto. **2. Reforzar la idea de uso personal**: cantidad reducida, sin indicios de venta. **3. Aportar factura, pedido online y envoltorio**: puede ser decisivo para demostrar origen, trazabilidad, presentación comercial y etiquetado declarado. **4. Analizar bien el formato del producto**: no plantea el mismo problema un cosmético, un alimento no autorizado, una flor supuestamente rica en CBD o un preparado sanitario controlado por AEMPS. Esa distinción puede cambiar por completo la estrategia. En este terreno, una mala calificación inicial puede distorsionar todo el caso.'
+        }
+      ],
+      conclusion: 'El CBD ocupa una zona jurídicamente más compleja que otras sustancias porque no basta con hablar de "consumo" o "tráfico". Lo primero que hay que aclarar es qué producto es, qué contiene realmente y qué uso legal puede tener en España. Solo a partir de ahí puede valorarse si existe un simple problema administrativo, una intervención por dudas sobre la composición o, en casos más delicados, un verdadero riesgo penal por finalidad de distribución. Si te pillan con CBD en la calle, la estrategia de defensa debe centrarse en la analítica, en la composición real, en el tipo de producto, en la ausencia de indicios de tráfico y en algo muy práctico: conservar siempre la factura, el pedido online y el envoltorio original. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 106,
+    title: 'Marihuana y Hachís para Consumo Propio: Multa y Defensa Penal | STANS',
+    excerpt: 'Guía sobre marihuana y hachís para consumo propio en España: diferencia con el tráfico, cantidad orientativa, consumidor de fin de semana, consumo compartido y defensa penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-04-10',
+    readTime: '13 min',
+    image: '/images/blog/marihuana-hachis-consumo-propio.jpg',
+    slug: 'marihuana-hachis-autoconsumo-defensa-penal',
+    tags: ['marihuana', 'hachís', 'cannabis', 'consumo propio', 'autoconsumo', 'art 368 CP', 'consumo compartido', 'salud pública', 'tráfico drogas'],
+    content: {
+      introduction: 'Que te pillen en la calle con marihuana o hachís no significa automáticamente que hayas cometido un delito de tráfico de drogas. La cuestión jurídica principal no suele ser la mera tenencia, sino para qué estaba destinada la sustancia: si era para consumo propio o si existen indicios suficientes de venta, distribución o facilitación a terceros. Esa diferencia es la que separa una posible consecuencia administrativa de una acusación penal por delito contra la salud pública. En la práctica penal española, marihuana y hachís se tratan de forma distinta a sustancias como la cocaína, la heroína o el MDMA, porque no se encuadran en el grupo de drogas que causan grave daño a la salud a efectos de la pena base del artículo 368 CP. Aun así, si la posesión se considera orientada al tráfico, sigue existiendo delito.',
+      sections: [
+        {
+          title: '¿Llevar marihuana o hachís en la calle es delito?',
+          content: 'No siempre. El **Plan Nacional sobre Drogas** recuerda que en España el Código Penal castiga el cultivo, la elaboración, el tráfico ilícito, la posesión con fines de tráfico y las actividades que promuevan, favorezcan o faciliten el consumo ilegal, pero **no identifica la mera posesión como delito cuando no está destinada al tráfico**. Llevar marihuana o hachís puede dar lugar a una intervención policial y a una sanción administrativa, pero no toda posesión es tráfico. Lo que se valora es el conjunto de indicios: cantidad, número de envoltorios, dinero fraccionado, existencia de básculas, mensajes o contactos de venta y contexto del hallazgo. La cantidad importa, pero no decide por sí sola.'
+        },
+        {
+          title: 'Consumo propio: cuándo puede defenderse',
+          content: '**1. Cantidad reducida**: las **tablas forenses del Instituto Nacional de Toxicología** son referencia orientativa pero no sustituyen el análisis del conjunto del caso. Resoluciones recientes recuerdan que **25 gramos de hachís** suelen considerarse cantidad normalmente compatible con consumo habitual, aunque no es regla cerrada. **2. Ausencia de fraccionamiento**: no es lo mismo una sola bolsita que la sustancia repartida en múltiples dosis listas para entrega. **3. Falta de útiles de distribución**: la ausencia de básculas, bolsitas adicionales, dinero fraccionado, listas de clientes o instrumentos de preparación refuerza la tesis del consumo propio. **4. Contexto personal**: la figura del **consumidor de fin de semana** puede explicar el porte de pequeña cantidad en contexto recreativo. **5. Falta de actos de favorecimiento a terceros**: si no hay entregas, ofrecimientos ni mensajes de venta, la acusación por tráfico pierde fuerza.'
+        },
+        {
+          title: 'El acopio para el consumo y el cannabis',
+          content: 'El llamado **acopio** es especialmente relevante en supuestos de marihuana y hachís porque son sustancias muy asociadas al consumo habitual y periódico. Jurídicamente no es una excusa automática, pero puede ayudar a contextualizar la tenencia de una pequeña cantidad para fines de semana, ocio nocturno, reuniones privadas o momentos puntuales de consumo. Una persona que consume de forma habitual puede llevar una cantidad reducida para uso personal limitado en el tiempo sin que eso implique tráfico. Lo decisivo sigue siendo si el caso presenta o no indicios objetivos de venta. Esta es una distinción reconocida en la práctica entre posesión para tráfico y posesión para consumo propio.'
+        },
+        {
+          title: 'Consumo compartido de marihuana o hachís',
+          content: 'La teoría del **consumo compartido** ha tenido enorme relevancia práctica en cannabis, pero se aplica de forma restrictiva. El **Tribunal Supremo** dejó claro que para que la tesis defensiva tenga recorrido, el supuesto debe responder a un consumo conjunto, inmediato, cerrado y entre personas concretas ya consumidoras, sin difusión a terceros ni estructura abierta. No basta con decir que la marihuana "era para compartir". Si el contexto revela disponibilidad abierta, organización de abastecimiento estable, fraccionamiento para entrega o promoción del consumo a terceros, la línea del consumo compartido se debilita mucho. Esto es especialmente importante en causas relacionadas con asociaciones cannábicas o cultivos colectivos.'
+        },
+        {
+          title: 'Cómo reducir el riesgo penal',
+          content: '**1. Reforzar la tesis de consumo propio**: vía principal cuando la cantidad es reducida y no hay signos claros de venta. **2. Atacar los indicios de tráfico**: discutir si realmente existen dosis preparadas, dinero fraccionado, básculas, útiles de distribución, mensajes de venta o actos de suministro. **3. Contextualizar el patrón de consumo**: si el investigado es consumidor ocasional o de fin de semana, ese perfil ayuda a explicar la tenencia en contexto recreativo. **4. Evitar que todo se base en una presunción**: una buena defensa insiste en que la tenencia de una pequeña cantidad de cannabis, por sí sola, no acredita tráfico. Debe existir un cuadro indiciario coherente y suficiente para sostener la acusación.'
+        }
+      ],
+      conclusion: 'Que te pillen con marihuana o hachís en la calle no significa automáticamente que hayas cometido un delito de tráfico. En muchos casos, la defensa debe centrarse en demostrar que la sustancia estaba destinada al consumo propio, especialmente si la cantidad es reducida, no hay fraccionamiento sospechoso, no aparecen útiles de venta y no existen actos de distribución. En cannabis, la práctica judicial maneja referencias orientativas sobre cantidades y consumo habitual, pero ninguna funciona como frontera automática. Por eso, en este tipo de procedimientos, la estrategia técnica desde el primer momento es esencial para orientar el caso fuera del tráfico y hacia la tesis del autoconsumo cuando los hechos realmente lo permitan. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 107,
+    title: 'Ketamina para Consumo Propio: Multa, Defensa Penal y Qué Pasa | STANS',
+    excerpt: 'Guía sobre ketamina y consumo propio en España: sustancia psicotrópica controlada, grave daño a la salud, consumidor de fin de semana, consumo compartido y defensa penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-04-13',
+    readTime: '13 min',
+    image: '/images/blog/ketamina-consumo-propio.jpg',
+    slug: 'ketamina-autoconsumo-defensa-penal',
+    tags: ['ketamina', 'consumo propio', 'autoconsumo', 'sustancia psicotrópica', 'art 368 CP', 'grave daño salud', 'salud pública', 'tráfico drogas'],
+    content: {
+      introduction: 'Que te pillen en la calle con ketamina no significa automáticamente que hayas cometido un delito de tráfico de drogas. Como ocurre con otras sustancias, la cuestión jurídica principal no suele ser la mera tenencia, sino para qué estaba destinada: si era para consumo propio o si existen indicios suficientes de venta, distribución o favorecimiento del consumo ajeno. La ketamina está incluida en España dentro de las sustancias psicotrópicas sometidas a control por la **Orden SAS/2712/2010**, y su tráfico puede encajar en los delitos contra la salud pública del Código Penal. Además, la jurisprudencia la ha tratado como sustancia que **causa grave daño a la salud**, lo que tiene importancia directa si una causa acaba calificándose como tráfico.',
+      sections: [
+        {
+          title: '¿Llevar ketamina en la calle es delito?',
+          content: 'No siempre. Llevar ketamina en la calle puede dar lugar a una intervención policial y a consecuencias legales, pero no toda tenencia equivale a tráfico. Penalmente, lo decisivo es si la sustancia estaba destinada al **autoconsumo o al consumo ajeno**. La doctrina de Fiscalía sobre drogas y la práctica judicial diferencian entre posesión para tráfico y posesión para autoconsumo. En la práctica, lo que suele examinarse es el conjunto de indicios: cantidad intervenida, forma de presentación, número de dosis, dinero fraccionado, existencia de básculas o útiles de corte, mensajes o contactos y contexto general del hallazgo. Esa valoración global es la que inclina la balanza hacia el autoconsumo o hacia la sospecha de distribución.'
+        },
+        {
+          title: 'Ketamina y consumo propio: cuándo puede defenderse',
+          content: '**1. Cantidad reducida**: las **tablas orientativas del Instituto Nacional de Toxicología** sobre dosis mínimas psicoactivas son criterios orientativos, no un "límite mágico". **2. Ausencia de fraccionamiento**: no es lo mismo una pequeña cantidad en un único envoltorio que la ketamina repartida en múltiples dosis listas para entrega. **3. Falta de útiles de distribución**: ausencia de básculas, recortes, bolsitas adicionales, dinero fraccionado o instrumentos de preparación para venta refuerza la tesis del consumo propio. **4. Contexto personal de consumo**: el **consumidor de fin de semana** no es categoría legal autónoma, pero puede contextualizar por qué una persona lleva una cantidad pequeña o moderada en ocio recreativo. **5. Falta de actos de favorecimiento a terceros**: si no hay entregas, ofrecimientos, mensajes de venta o dinámica compatible con distribución, la acusación pierde fuerza.'
+        },
+        {
+          title: 'La ketamina y el consumidor de fin de semana',
+          content: 'El llamado **consumidor de fin de semana** es una figura útil en defensa. Describe a personas que no consumen necesariamente a diario, sino de forma esporádica, recreativa o concentrada en fines de semana, ocio nocturno, festivales o salidas puntuales. Jurídicamente no excluye por sí sola una acusación, pero puede ayudar a explicar por qué alguien lleva una cantidad que no se corresponde con una dosis instantánea única. Que una persona porte una pequeña cantidad de ketamina para usarla en un contexto de ocio no significa automáticamente que quiera venderla. Lo importante sigue siendo si el caso presenta o no indicios objetivos de distribución. Esa es la clave del análisis penal.'
+        },
+        {
+          title: 'Consumo compartido y grave daño a la salud',
+          content: 'La teoría del **consumo compartido** puede plantearse respecto de la ketamina, pero igual que en otras drogas se aplica de forma restrictiva. Para que sea una línea defensiva seria, el supuesto debe parecerse a un consumo conjunto, inmediato y cerrado entre personas concretas ya consumidoras, sin difusión a terceros ni ánimo de lucro. No basta con decir que "era para compartir". **¿La ketamina causa grave daño a la salud?** Sí. Está incluida en la lista de sustancias psicotrópicas sometidas a control en España por la Orden SAS/2712/2010, y existen resoluciones judiciales y doctrina que la tratan como sustancia que causa grave daño a la salud. Esto no cambia el análisis del autoconsumo, pero sí es crucial si el procedimiento deriva hacia una acusación por tráfico, porque la pena base sube.'
+        },
+        {
+          title: 'Cómo reducir el riesgo penal',
+          content: '**1. Reforzar la tesis de consumo propio**: vía principal cuando la cantidad es reducida y no hay signos claros de venta. **2. Atacar los indicios de tráfico**: discutir si realmente existen dosis preparadas, dinero fraccionado, básculas, útiles de corte, mensajes de venta o actos de suministro. **3. Contextualizar el patrón de consumo**: el perfil de consumidor ocasional, recreativo o de fin de semana puede ser importante para explicar la cantidad intervenida. **4. Evitar que todo se base en una presunción**: la tenencia de una pequeña cantidad, por sí sola, no acredita tráfico. Debe existir un cuadro indiciario coherente y suficiente. La estrategia técnica desde el primer momento es esencial porque la ketamina se trata como droga que causa grave daño a la salud y una mala calificación tiene consecuencias importantes.'
+        }
+      ],
+      conclusion: 'Que te pillen con ketamina en la calle no significa automáticamente que hayas cometido un delito de tráfico. En muchos casos, la defensa debe centrarse en demostrar que la sustancia estaba destinada al consumo propio, especialmente si la cantidad es reducida, no hay fraccionamiento, no aparecen útiles de venta ni existen actos de distribución. La ketamina es una sustancia legalmente controlada y tratada como droga que causa grave daño a la salud, de modo que una mala calificación del caso puede tener consecuencias penales importantes. Por eso, en este tipo de procedimientos, la estrategia técnica desde el primer momento es esencial para orientar el asunto fuera del tráfico y hacia la tesis del autoconsumo cuando los hechos realmente lo permitan. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 108,
+    title: 'MDMA para Consumo Propio: Multa, Defensa Penal y Qué Pasa | STANS',
+    excerpt: 'Guía sobre MDMA y consumo propio en España: grave daño a la salud, tablas orientativas del INT, consumidor de fin de semana, consumo compartido y defensa penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-04-16',
+    readTime: '13 min',
+    image: '/images/blog/mdma-consumo-propio.jpg',
+    slug: 'mdma-autoconsumo-defensa-penal',
+    tags: ['MDMA', 'éxtasis', 'consumo propio', 'autoconsumo', 'art 368 CP', 'grave daño salud', 'consumidor fin de semana', 'salud pública', 'tráfico drogas'],
+    content: {
+      introduction: 'Que te pillen en la calle con MDMA no significa automáticamente que hayas cometido un delito de tráfico de drogas. La cuestión jurídica principal no suele ser la mera tenencia, sino para qué estaba destinada: si era para consumo propio o si existen indicios suficientes de venta, distribución o facilitación a terceros. En la práctica, el MDMA suele aparecer en contextos de ocio nocturno, festivales, salidas de fin de semana y controles policiales en vía pública. Las **tablas del Instituto Nacional de Toxicología** usadas en la práctica judicial incluyen referencias sobre dosis mínimas psicoactivas, pero esas cifras no funcionan como un límite legal automático: ayudan a valorar el caso, pero no lo deciden por sí solas. Lo que importa es el conjunto de indicios.',
+      sections: [
+        {
+          title: '¿Llevar MDMA en la calle es delito?',
+          content: 'No siempre. Llevar MDMA en la calle puede dar lugar a una intervención policial y a consecuencias legales, pero no toda posesión equivale a tráfico. Penalmente, lo decisivo es si la sustancia estaba destinada al consumo propio o al consumo ajeno. La **doctrina de Fiscalía** diferencia precisamente entre la posesión para tráfico y la posesión para autoconsumo, considerando esta última fuera del núcleo típico del tráfico de drogas. Para valorar si existe o no finalidad de tráfico suelen examinarse: la cantidad intervenida, el número de pastillas, cápsulas o envoltorios, la pureza, el fraccionamiento, la existencia de dinero fraccionado, la presencia de básculas o útiles de distribución y el contexto general de la intervención. La cantidad importa, pero no decide por sí sola.'
+        },
+        {
+          title: 'MDMA y consumo propio: cuándo puede defenderse',
+          content: '**1. Cantidad reducida**: puede ser compatible con autoconsumo, pero no existe un "número mágico". Las tablas forenses ofrecen criterios orientativos, pero el caso se valora siempre en conjunto. **2. Ausencia de fraccionamiento para la venta**: no es lo mismo unas pocas unidades para uso personal que múltiples dosis claramente preparadas para entrega a terceros. **3. Falta de útiles de distribución**: ausencia de básculas, bolsitas adicionales, dinero fraccionado, listados de ventas o instrumentos de preparación refuerza la tesis del consumo propio. **4. Contexto personal de consumo**: la figura del **consumidor de fin de semana** puede contextualizar por qué una persona lleva una pequeña cantidad de MDMA en ocio sin que signifique necesariamente venta. **5. Falta de actos de favorecimiento a terceros**: si no hay entregas, ofrecimientos, mensajes de venta o dinámica compatible con distribución, la acusación por tráfico pierde mucha fuerza.'
+        },
+        {
+          title: 'El consumidor de fin de semana y el MDMA',
+          content: 'El llamado **consumidor de fin de semana** es especialmente relevante en supuestos de MDMA, porque esta sustancia aparece con frecuencia en contextos recreativos muy concretos: festivales, discotecas, ocio nocturno o eventos puntuales. Jurídicamente no es una excusa automática ni una categoría legal independiente, pero puede ayudar a contextualizar la cantidad intervenida y el patrón de uso. Una persona que consume MDMA de forma esporádica puede llevar una pequeña cantidad o varias unidades para uso personal limitado en el tiempo sin que eso implique necesariamente tráfico. Lo decisivo sigue siendo si el caso presenta o no **indicios objetivos de distribución**. La defensa debe construir una explicación coherente del contexto de consumo personal del investigado.'
+        },
+        {
+          title: 'Consumo compartido y grave daño a la salud',
+          content: 'La teoría del **consumo compartido** puede plantearse respecto del MDMA, pero igual que en otras drogas se aplica de forma restrictiva. Para que funcione como línea defensiva seria, el supuesto debe parecerse a un consumo conjunto, inmediato y cerrado entre personas concretas ya consumidoras, sin difusión a terceros ni ánimo de lucro. Si el contexto revela disponibilidad para terceros, un grupo abierto, fraccionamiento para entrega o cualquier dinámica de difusión, la línea del consumo compartido se debilita mucho. **¿El MDMA causa grave daño a la salud?** Sí. En la práctica penal española, el MDMA se trata dentro del grupo de sustancias que **causan grave daño a la salud**, lo que tiene relevancia directa si una causa termina calificándose como tráfico. Esto hace especialmente importante una buena defensa desde el inicio.'
+        },
+        {
+          title: 'Cómo reducir el riesgo penal',
+          content: '**1. Reforzar la tesis de consumo propio**: vía principal cuando la cantidad es reducida y no hay signos claros de venta. **2. Atacar los indicios de tráfico**: discutir si realmente existen dosis preparadas para terceros, dinero fraccionado, básculas, útiles de distribución, mensajes de venta o actos de suministro. **3. Contextualizar el patrón de consumo**: el perfil de consumidor ocasional o de fin de semana puede ser importante para explicar la cantidad intervenida y la forma de portarla. **4. Evitar que todo se base en una presunción**: la tenencia de una pequeña cantidad de MDMA, por sí sola, no acredita tráfico. Debe existir un cuadro indiciario más sólido. La estrategia técnica desde el primer momento es esencial para orientar el procedimiento hacia la tesis del autoconsumo cuando los hechos realmente lo permitan.'
+        }
+      ],
+      conclusion: 'Que te pillen con MDMA en la calle no significa automáticamente que hayas cometido un delito de tráfico. En muchos casos, la defensa debe centrarse en demostrar que la sustancia estaba destinada al consumo propio, especialmente si la cantidad es reducida, no hay fraccionamiento sospechoso, no aparecen útiles de venta y no existen actos de distribución a terceros. El MDMA se trata penalmente como sustancia que causa grave daño a la salud, de modo que una mala calificación del caso puede tener consecuencias importantes. Por eso, en este tipo de asuntos, la estrategia técnica desde el primer momento es esencial para orientar el procedimiento hacia la tesis del autoconsumo cuando los hechos realmente lo permitan. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
+  },
+  {
+    id: 109,
+    title: 'Tusi (Cocaína Rosa) para Consumo Propio: Defensa Penal | STANS',
+    excerpt: 'Guía sobre el tusi o "cocaína rosa" y consumo propio en España: composición variable (ketamina, MDMA, cafeína), importancia de la analítica, consumidor de fin de semana y defensa penal.',
+    category: 'Defensa Penal Urgente',
+    author: 'Equipo STANS Abogados',
+    date: '2026-04-20',
+    readTime: '13 min',
+    image: '/images/blog/tusi-cocaina-rosa-consumo-propio.jpg',
+    slug: 'tusi-cocaina-rosa-autoconsumo-defensa-penal',
+    tags: ['tusi', 'cocaína rosa', '2C-B', 'consumo propio', 'autoconsumo', 'mezcla variable', 'art 368 CP', 'salud pública', 'tráfico drogas'],
+    content: {
+      introduction: 'El tusi o "cocaína rosa" genera mucha confusión en la práctica penal porque su nombre comercial no siempre coincide con su composición real. En el ámbito sanitario se advierte que el tusi **no es una sustancia única y estable**, sino una mezcla variable que puede contener ketamina, MDMA, cafeína y otros compuestos, y muchas veces ni siquiera contiene 2C-B pese a la asociación popular con esa sustancia. Esa confusión es importante porque, en un procedimiento penal, no basta con el nombre con el que se conoce en la calle: lo que cuenta es **qué sustancia o mezcla concreta se intervino y cuál era su destino**. Que te pillen con tusi no significa automáticamente que hayas cometido un delito de tráfico: la cuestión sigue siendo si era para consumo propio o si existen indicios de venta o distribución.',
+      sections: [
+        {
+          title: '¿Llevar tusi en la calle es delito?',
+          content: 'No siempre. Llevar tusi en la calle puede dar lugar a una intervención policial y a consecuencias legales, pero no toda tenencia equivale a tráfico. Penalmente, lo decisivo es si la sustancia estaba destinada al **consumo propio o al consumo ajeno**. El **Plan Nacional sobre Drogas** recuerda que la mera posesión de drogas por sí sola no es constitutiva de delito siempre que no se destine al tráfico ilegal de estupefacientes. Para valorar si existe o no finalidad de tráfico suelen examinarse: la cantidad intervenida, el número de dosis o envoltorios, la **composición real de la mezcla**, el fraccionamiento, la existencia de dinero fraccionado, la presencia de básculas o útiles de distribución y el contexto general del hallazgo. Con el tusi, además, la analítica cobra todavía más importancia porque la mezcla puede variar mucho de un caso a otro.'
+        },
+        {
+          title: 'Qué es exactamente el tusi y por qué importa su composición',
+          content: 'Una de las claves de defensa con el tusi es que **no estamos ante una sustancia homogénea**. Las autoridades sanitarias y la información especializada del **Plan Nacional sobre Drogas** vienen alertando de que estas mezclas pueden incluir **ketamina, MDMA, cafeína y otros compuestos** en proporciones cambiantes. Por eso, jurídicamente, no basta con decir "era tusi": hay que saber qué había realmente en la muestra intervenida. Esto es importante por dos razones: porque la calificación penal no se apoya en el nombre comercial de la calle, sino en la sustancia concreta; y porque la valoración del caso puede cambiar mucho según la mezcla, la cantidad efectiva de principio activo y el contexto del hallazgo. La identificación analítica de la sustancia realmente intervenida es esencial.'
+        },
+        {
+          title: 'Tusi y consumo propio: cuándo puede defenderse',
+          content: '**1. Cantidad reducida**: las **tablas orientativas del Instituto Nacional de Toxicología** son criterios de referencia, no un "límite legal automático", y con el tusi su utilidad puede complicarse si la mezcla no es estable. **2. Ausencia de fraccionamiento**: no es lo mismo una pequeña cantidad en un único envoltorio que la sustancia repartida en múltiples dosis listas para entrega. **3. Falta de útiles de distribución**: ausencia de básculas, bolsitas adicionales, dinero fraccionado, listas de clientes o útiles de preparación para venta refuerza la tesis del consumo propio. **4. Contexto personal de consumo**: el **consumidor de fin de semana** puede explicar el porte de pequeña cantidad en entornos de ocio. **5. Falta de actos de favorecimiento a terceros**: si no hay entregas, ofrecimientos ni mensajes de venta, la acusación por tráfico pierde fuerza.'
+        },
+        {
+          title: 'El consumidor de fin de semana y consumo compartido',
+          content: 'El **consumidor de fin de semana** es especialmente relevante en supuestos de tusi porque esta mezcla aparece con frecuencia en contextos de ocio nocturno, discotecas, festivales y salidas recreativas. Jurídicamente no es una excusa automática, pero sí puede ayudar a explicar la tenencia de una pequeña cantidad sin signos de tráfico. Una persona que consume de forma esporádica puede llevar una cantidad pequeña para uso personal limitado en el tiempo sin que eso implique distribución. La teoría del **consumo compartido** puede plantearse, pero se aplica de forma restrictiva: el supuesto debe parecerse a un consumo conjunto, inmediato y cerrado entre personas concretas ya consumidoras, sin difusión a terceros ni ánimo de lucro. Si el contexto revela disponibilidad para terceros o un grupo abierto, esta línea defensiva se debilita mucho.'
+        },
+        {
+          title: 'Cómo reducir el riesgo penal',
+          content: '**1. Reforzar la tesis de consumo propio**: vía principal cuando la cantidad es reducida y no hay signos claros de venta. **2. Atacar los indicios de tráfico**: discutir si realmente existen dosis preparadas, dinero fraccionado, básculas, útiles de distribución, mensajes de venta o actos de suministro. **3. Exigir precisión sobre la composición**: con el tusi, la defensa debe fijarse en qué mezcla concreta ha identificado la analítica, porque el nombre comercial no basta. Esta es una diferencia importante respecto de otras drogas más estables. **4. Contextualizar el patrón de consumo**: el perfil de consumidor ocasional o de fin de semana puede explicar la tenencia en contexto recreativo. Una buena pericial o una correcta discusión de la sustancia realmente intervenida puede ser decisiva en estos procedimientos.'
+        }
+      ],
+      conclusion: 'Que te pillen con tusi en la calle no significa automáticamente que hayas cometido un delito de tráfico. En muchos casos, la defensa debe centrarse en demostrar que la sustancia estaba destinada al consumo propio, especialmente si la cantidad es reducida, no hay fraccionamiento sospechoso, no aparecen útiles de venta y no existen actos de distribución a terceros. Además, con el tusi hay una dificultad añadida: su composición es variable, y eso obliga a mirar muy bien la analítica y no quedarse solo con el nombre de la calle. Por eso, en este tipo de procedimientos, la estrategia técnica desde el primer momento es esencial para orientar el caso fuera del tráfico y hacia la tesis del autoconsumo cuando los hechos realmente lo permitan. En STANS Abogados te asesoramos. Contacta con nosotros.'
+    }
   }
 ];
 
@@ -4178,7 +4372,14 @@ export const allBlogSlugs = [
   'diferencia-oede-extradicion-claves-juridicas',
   'delito-blanqueo-capitales-espana-penas-defensa',
   'delito-falsedad-documental-espana-tipos-penas',
-  'como-oponerse-oede-espana-defensa-estrategia'
+  'como-oponerse-oede-espana-defensa-estrategia',
+
+  // NUEVOS BLOGS ABRIL 2026 - Autoconsumo de drogas
+  'cbd-autoconsumo-espana-defensa-penal',
+  'marihuana-hachis-autoconsumo-defensa-penal',
+  'ketamina-autoconsumo-defensa-penal',
+  'mdma-autoconsumo-defensa-penal',
+  'tusi-cocaina-rosa-autoconsumo-defensa-penal'
 ];
 
 // Función helper para obtener un post por slug
